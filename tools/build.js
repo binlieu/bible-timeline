@@ -488,7 +488,17 @@ function renderConnectionsPanel(rootPrefix, type, id) {
   });
 
   const sections = Array.from(buckets.entries()).sort((a, b) => a[0].localeCompare(b[0])).map(([label, items]) => {
-    const sorted = items.slice().sort((a, b) => {
+    // Symmetric relations (spouse-of, related-to) produce an edge in each
+    // direction; collapse them so the other endpoint is listed once, keeping
+    // whichever edge carries a note/reference.
+    const byOther = new Map();
+    items.forEach((item) => {
+      const existing = byOther.get(item.otherKey);
+      if (!existing || (!(existing.edge.note || existing.edge.ref) && (item.edge.note || item.edge.ref))) {
+        byOther.set(item.otherKey, item);
+      }
+    });
+    const sorted = Array.from(byOther.values()).sort((a, b) => {
       const aNode = graphModel.nodeMap.get(a.otherKey);
       const bNode = graphModel.nodeMap.get(b.otherKey);
       const aName = aNode ? aNode.name : a.otherKey;
