@@ -58,6 +58,71 @@ function escapeHtml(value) {
     .replace(/'/g, "&#39;");
 }
 
+// --- Bible reference -> bible.com (KJV) linker -------------------------------
+const BIBLE_VERSION_ID = 1;
+const BIBLE_VERSION = "KJV";
+const USFM = {
+  "Genesis":"GEN","Exodus":"EXO","Leviticus":"LEV","Numbers":"NUM","Deuteronomy":"DEU",
+  "Joshua":"JOS","Judges":"JDG","Ruth":"RUT","1 Samuel":"1SA","2 Samuel":"2SA","1 Kings":"1KI","2 Kings":"2KI",
+  "1 Chronicles":"1CH","2 Chronicles":"2CH","Ezra":"EZR","Nehemiah":"NEH","Esther":"EST","Job":"JOB",
+  "Psalms":"PSA","Psalm":"PSA","Proverbs":"PRO","Ecclesiastes":"ECC","Song of Solomon":"SNG","Song of Songs":"SNG",
+  "Isaiah":"ISA","Jeremiah":"JER","Lamentations":"LAM","Ezekiel":"EZK","Daniel":"DAN","Hosea":"HOS","Joel":"JOL",
+  "Amos":"AMO","Obadiah":"OBA","Jonah":"JON","Micah":"MIC","Nahum":"NAM","Habakkuk":"HAB","Zephaniah":"ZEP",
+  "Haggai":"HAG","Zechariah":"ZEC","Malachi":"MAL","Matthew":"MAT","Mark":"MRK","Luke":"LUK","John":"JHN",
+  "Acts":"ACT","Romans":"ROM","1 Corinthians":"1CO","2 Corinthians":"2CO","Galatians":"GAL","Ephesians":"EPH",
+  "Philippians":"PHP","Colossians":"COL","1 Thessalonians":"1TH","2 Thessalonians":"2TH","1 Timothy":"1TI",
+  "2 Timothy":"2TI","Titus":"TIT","Philemon":"PHM","Hebrews":"HEB","James":"JAS","1 Peter":"1PE","2 Peter":"2PE",
+  "1 John":"1JN","2 John":"2JN","3 John":"3JN","Jude":"JUD","Revelation":"REV","Revelations":"REV"
+};
+const BOOK_NAMES = Object.keys(USFM).sort((a, b) => b.length - a.length);
+function refEsc(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); }
+const BOOK_RE = new RegExp("\\b(" + BOOK_NAMES.map(refEsc).join("|") + ")\\b");
+const SPEC_RE = /\d+(?::\d+)?(?:\s*[-–]\s*\d+(?::\d+)?)?(?:\s*,\s*\d+(?::\d+)?)*/;
+function refUrl(usfm, spec) {
+  const m = /^(\d+)(?::(\d+))?/.exec(spec.replace(/\s+/g, ""));
+  if (!m) return null;
+  return "https://www.bible.com/bible/" + BIBLE_VERSION_ID + "/" + usfm + "." + m[1] + (m[2] ? "." + m[2] : "") + "." + BIBLE_VERSION;
+}
+function refAnchor(url, text) {
+  return '<a href="' + url + '" target="_blank" rel="noopener noreferrer" class="ref-link">' + escapeHtml(text) + "</a>";
+}
+function linkifySegment(segment, currentBook) {
+  const bookMatch = BOOK_RE.exec(segment);
+  let usfm = currentBook;
+  if (bookMatch) usfm = USFM[bookMatch[1]];
+  if (!usfm) return { html: escapeHtml(segment), book: currentBook };
+  const region = segment.slice(bookMatch ? bookMatch.index + bookMatch[1].length : 0);
+  const specMatch = SPEC_RE.exec(region);
+  let linkStart, linkEnd, display, url;
+  if (bookMatch && specMatch && region.slice(0, specMatch.index).trim() === "") {
+    linkStart = bookMatch.index;
+    linkEnd = bookMatch.index + bookMatch[1].length + specMatch.index + specMatch[0].length;
+    display = segment.slice(linkStart, linkEnd);
+    url = refUrl(usfm, specMatch[0]);
+  } else if (bookMatch) {
+    linkStart = bookMatch.index;
+    linkEnd = bookMatch.index + bookMatch[1].length;
+    display = segment.slice(linkStart, linkEnd);
+    url = "https://www.bible.com/bible/" + BIBLE_VERSION_ID + "/" + usfm + ".1." + BIBLE_VERSION;
+  } else {
+    const m = SPEC_RE.exec(segment);
+    if (!m) return { html: escapeHtml(segment), book: currentBook };
+    linkStart = m.index; linkEnd = m.index + m[0].length;
+    display = segment.slice(linkStart, linkEnd);
+    url = refUrl(usfm, m[0]);
+  }
+  if (!url) return { html: escapeHtml(segment), book: usfm };
+  return { html: escapeHtml(segment.slice(0, linkStart)) + refAnchor(url, display) + escapeHtml(segment.slice(linkEnd)), book: usfm };
+}
+// Returns SAFE HTML (escapes internally). Inject RAW -- never wrap in escapeHtml().
+function linkifyReference(refString) {
+  if (!refString || typeof refString !== "string") return escapeHtml(refString || "");
+  const parts = refString.split(";");
+  let currentBook = null; const out = [];
+  for (let i = 0; i < parts.length; i++) { const r = linkifySegment(parts[i], currentBook); currentBook = r.book; out.push(r.html); }
+  return out.join(";");
+}
+
 function slugPath(type, id) {
   if (type === "event") return "events/" + id + ".html";
   if (type === "person") return "people/" + id + ".html";
@@ -170,7 +235,7 @@ function listTypedLinks(rootPrefix, items, type, idField, noteField, refField) {
     const ref = typeof item === "string" ? "" : item[refField];
     return "<li>" + linkTo(rootPrefix, type, id) +
       (note ? ' <small class="muted">' + escapeHtml(note) + '</small>' : "") +
-      (ref ? ' <small class="muted">' + escapeHtml(ref) + '</small>' : "") +
+      (ref ? ' <small class="muted">' + linkifyReference(ref) + '</small>' : "") +
       "</li>";
   }).join("") + "</ul>";
 }
@@ -178,6 +243,11 @@ function listTypedLinks(rootPrefix, items, type, idField, noteField, refField) {
 function textList(items) {
   if (!items || !items.length) return "<p>None listed.</p>";
   return "<ul>" + items.map((item) => "<li>" + escapeHtml(item) + "</li>").join("") + "</ul>";
+}
+
+function referenceList(items) {
+  if (!items || !items.length) return "<p>None listed.</p>";
+  return "<ul>" + items.map((item) => "<li>" + linkifyReference(item) + "</li>").join("") + "</ul>";
 }
 
 function firstSentence(text) {
@@ -311,7 +381,7 @@ function renderConnectionsPanel(rootPrefix, type, id) {
     return '<div class="connection-group"><h3>' + escapeHtml(label) + '</h3><ul class="connection-list">' +
       shown.map(({ edge, otherKey }) => '<li>' + linkToKey(rootPrefix, otherKey) +
         (edge.note ? ' <small>' + escapeHtml(edge.note) + '</small>' : "") +
-        (edge.ref ? ' <small>' + escapeHtml(edge.ref) + '</small>' : "") +
+        (edge.ref ? ' <small>' + linkifyReference(edge.ref) + '</small>' : "") +
         '</li>').join("") +
       (more > 0 ? '<li class="muted">+' + escapeHtml(more) + ' more</li>' : "") +
       '</ul></div>';
@@ -670,7 +740,7 @@ function renderEventCard(event, rootPrefix) {
     '    <p><strong>Location:</strong> ' + escapeHtml(event.location ? event.location.name : "None listed") + '</p>\n' +
     '    <p><strong>Key People:</strong> ' + (event.mainPeople || []).map((id) => linkTo(rootPrefix, "person", id)).join(", ") + '</p>\n' +
     '  </div>\n' +
-    '  <p><strong>Bible References:</strong> ' + escapeHtml(event.reference) + '</p>\n' +
+    '  <p><strong>Bible References:</strong> ' + linkifyReference(event.reference) + '</p>\n' +
     '  <p>' + escapeHtml(event.summary) + '</p>\n' +
     '  <p><a href="' + escapeHtml(relativeUrl(rootPrefix, "event", event.id)) + '">Read More &rarr;</a></p>\n' +
     '</article>';
@@ -682,6 +752,7 @@ function renderTimelinePreview() {
     '  <span class="eyebrow">' + escapeHtml(event.era) + '</span>\n' +
     '  <h3><a href="events/' + escapeHtml(event.id) + '.html">' + escapeHtml(event.name) + '</a></h3>\n' +
     '  <p><strong>' + escapeHtml(event.date) + '</strong></p>\n' +
+    '  <p>' + linkifyReference(event.reference) + '</p>\n' +
     '  <p>' + escapeHtml(event.summary) + '</p>\n' +
     '</article>'
   )).join("\n") + '\n</div>';
@@ -860,7 +931,7 @@ function renderRoleBrowse(fileName, title, roleNames, description) {
 function renderMiraclesBrowse() {
   const rows = (data.categories.miracles || []).map((miracle) => {
     const event = lookup("event", miracle.eventId);
-    return '<tr><td>' + linkTo("", "event", miracle.eventId) + '</td><td>' + escapeHtml(event ? event.reference : "") + '</td><td>' + escapeHtml(miracle.note || "") + '</td></tr>';
+    return '<tr><td>' + linkTo("", "event", miracle.eventId) + '</td><td>' + linkifyReference(event ? event.reference : "") + '</td><td>' + escapeHtml(miracle.note || "") + '</td></tr>';
   }).join("");
   renderBrowsePage("miracles.html", "Miracles", "Events whose core action is miraculous or directly supernatural.",
     '<section class="content-panel"><h2>Miraculous Events</h2><div class="table-wrap"><table class="browse-table"><thead><tr><th>Event</th><th>Reference</th><th>Note</th></tr></thead><tbody>' + rows + '</tbody></table></div></section>\n'
@@ -875,8 +946,8 @@ function gospelBookFromReference(reference) {
 
 function renderParablesBrowse() {
   const rows = (data.categories.parables || []).map((parable) => {
-    const target = parable.eventId ? linkToWithLabel("", "event", parable.eventId, parable.reference) : linkToWithLabel("", "book", gospelBookFromReference(parable.reference), parable.reference);
-    return '<tr><td>' + escapeHtml(parable.name) + '</td><td>' + target + '</td></tr>';
+    const target = parable.eventId ? linkToWithLabel("", "event", parable.eventId, parable.name) : linkToWithLabel("", "book", gospelBookFromReference(parable.reference), parable.name);
+    return '<tr><td>' + target + '</td><td>' + linkifyReference(parable.reference) + '</td></tr>';
   }).join("");
   renderBrowsePage("parables.html", "Parables", "Major parables with references and event links where the dataset has a matching event page.",
     '<section class="content-panel"><h2>Major Parables</h2><div class="table-wrap"><table class="browse-table"><thead><tr><th>Parable</th><th>Reference</th></tr></thead><tbody>' + rows + '</tbody></table></div></section>\n'
@@ -955,7 +1026,7 @@ function precisionLabel(stop) {
 function renderStopsTable(rootPrefix, route) {
   const rows = (route.stops || []).map((stop, index) => {
     const name = stop.placeId ? linkTo(rootPrefix, "place", stop.placeId, stop.name) : escapeHtml(stop.name);
-    return '<tr><td>' + escapeHtml(index + 1) + '</td><td>' + name + precisionLabel(stop) + '</td><td>' + escapeHtml(stop.note || "") + '</td><td>' + escapeHtml(stop.reference || "") + '</td></tr>';
+    return '<tr><td>' + escapeHtml(index + 1) + '</td><td>' + name + precisionLabel(stop) + '</td><td>' + escapeHtml(stop.note || "") + '</td><td>' + linkifyReference(stop.reference || "") + '</td></tr>';
   }).join("");
   return '<div class="table-wrap"><table class="browse-table stops-table"><thead><tr><th>No.</th><th>Stop</th><th>Note</th><th>Reference</th></tr></thead><tbody>' + rows + '</tbody></table></div>';
 }
@@ -972,7 +1043,7 @@ function renderJourneyPage(journey, index) {
     (next ? '<a href="' + escapeHtml(next.id + ".html") + '">' + escapeHtml(next.name) + ' &rarr;</a>' : '<span></span>') +
     '</nav>';
   const body = '<section class="section"><div class="container">\n' +
-    '<div class="page-title"><span class="badge">' + escapeHtml(journey.era) + '</span><h1>' + escapeHtml(journey.name) + '</h1><p>' + escapeHtml(journey.reference) + '</p><p>' + escapeHtml(journey.summary) + '</p></div>\n' +
+    '<div class="page-title"><span class="badge">' + escapeHtml(journey.era) + '</span><h1>' + escapeHtml(journey.name) + '</h1><p>' + linkifyReference(journey.reference) + '</p><p>' + escapeHtml(journey.summary) + '</p></div>\n' +
     '<div class="map map-journey" data-journey="' + escapeHtml(journey.id) + '"><p class="map-fallback">' + escapeHtml(journeyFallbackText(journey)) + '</p></div>\n' +
     renderJourneyLegend(journey) + '\n' +
     '<aside class="accuracy-note"><h2>About this map</h2>' + paragraphs(journey.accuracyNote) + '</aside>\n' +
@@ -1056,7 +1127,7 @@ function renderEventPage(event) {
     ? '<section class="content-panel"><h2>Journey Maps</h2><ul class="link-list">' + eventJourneys.map((journey) => '<li>' + linkToJourney(rootPrefix, journey) + '</li>').join("") + '</ul></section>\n'
     : "";
   const body = '<section class="section"><div class="container">\n' +
-    '<div class="page-title"><span class="badge">' + escapeHtml(event.era) + '</span><h1>' + escapeHtml(event.name) + '</h1><p>' + escapeHtml(event.reference) + '</p></div>\n' +
+    '<div class="page-title"><span class="badge">' + escapeHtml(event.era) + '</span><h1>' + escapeHtml(event.name) + '</h1><p>' + linkifyReference(event.reference) + '</p></div>\n' +
     '<section class="content-panel"><h2>Timeline Information</h2>' + metaRows([
       ["Date", escapeHtml(event.date)],
       ["Date Precision", escapeHtml(event.datePrecision)],
@@ -1070,7 +1141,7 @@ function renderEventPage(event) {
       ["Longitude", escapeHtml(location.lng == null ? "unknown" : location.lng)]
     ]) + renderMiniMap(mapLat, mapLng, mapLabel, mapHref) + '</section>\n' +
     '<section class="content-panel"><h2>People Involved</h2>' + listLinks(rootPrefix, "person", (event.mainPeople || []).concat(event.relatedPeople || [])) + '</section>\n' +
-    '<section class="content-panel"><h2>Bible References</h2><p>' + escapeHtml(event.reference) + '</p>' + textList(event.crossReferences) + '</section>\n' +
+    '<section class="content-panel"><h2>Bible References</h2><p>' + linkifyReference(event.reference) + '</p>' + referenceList(event.crossReferences) + '</section>\n' +
     '<section class="content-panel"><h2>Summary</h2><p>' + escapeHtml(event.summary) + '</p>' + paragraphs(event.longDescription) + '</section>\n' +
     '<section class="content-panel"><h2>Historical Background</h2>' + paragraphs(event.historicalNotes) + '</section>\n' +
     '<section class="content-panel"><h2>Timeline Connections</h2><p>' +
@@ -1109,7 +1180,7 @@ function renderPersonPage(person) {
     ]) + '</section>\n' +
     '<section class="content-panel"><h2>Family</h2><h3>Parents</h3>' + listLinks(rootPrefix, "person", person.parents) + '<h3>Spouses</h3>' + listLinks(rootPrefix, "person", person.spouses) + '<h3>Children</h3>' + listLinks(rootPrefix, "person", person.children) + '</section>\n' +
     '<section class="content-panel"><h2>Life Events</h2>' + (events.length ? '<ul>' + events.map((event) => '<li>' + linkTo(rootPrefix, "event", event.id) + ' - ' + escapeHtml(event.date) + '</li>').join("") + '</ul>' : '<p>None listed.</p>') + '</section>\n' +
-    '<section class="content-panel"><h2>References</h2>' + textList(person.references) + '</section>\n' +
+    '<section class="content-panel"><h2>References</h2>' + referenceList(person.references) + '</section>\n' +
     '<section class="content-panel"><h2>Related People</h2>' + listLinks(rootPrefix, "person", person.relatedPeople) + '</section>\n' +
     '<section class="content-panel"><h2>Related Places</h2>' + listLinks(rootPrefix, "place", person.relatedPlaces) + '</section>\n' +
     '<section class="content-panel"><h2>Books Appeared In</h2>' + listLinks(rootPrefix, "book", person.books) + '</section>\n' +
@@ -1137,7 +1208,7 @@ function renderPlacePage(place) {
     '<section class="content-panel"><h2>Significance</h2><p>' + escapeHtml(place.significance) + '</p></section>\n' +
     '<section class="content-panel"><h2>Events Here</h2>' + listLinks(rootPrefix, "event", place.events) + '</section>\n' +
     '<section class="content-panel"><h2>People Associated</h2>' + listLinks(rootPrefix, "person", place.people) + '</section>\n' +
-    '<section class="content-panel"><h2>References</h2>' + textList(place.references) + '</section>\n' +
+    '<section class="content-panel"><h2>References</h2>' + referenceList(place.references) + '</section>\n' +
     '<section class="content-panel"><h2>Related Places</h2>' + listLinks(rootPrefix, "place", place.relatedPlaces) + '</section>\n' +
     '<section class="content-panel"><h2>Photo</h2><div class="photo-placeholder">Photo placeholder</div></section>\n' +
     renderConnectionsPanel(rootPrefix, "place", place.id) +
@@ -1166,7 +1237,7 @@ function renderBookPage(book) {
     '<section class="content-panel"><h2>Major People</h2>' + listLinks(rootPrefix, "person", book.majorPeople) + '</section>\n' +
     '<section class="content-panel"><h2>Major Places</h2>' + listLinks(rootPrefix, "place", book.majorPlaces) + '</section>\n' +
     '<section class="content-panel"><h2>Outline</h2>' + textList(book.outline) + '</section>\n' +
-    '<section class="content-panel"><h2>Key Verses</h2>' + textList(book.keyVerses) + '</section>\n' +
+    '<section class="content-panel"><h2>Key Verses</h2>' + referenceList(book.keyVerses) + '</section>\n' +
     '<section class="content-panel"><h2>Related Books</h2>' + ((book.connections || []).length ? '<ul>' + book.connections.map((connection) => '<li>' + linkTo(rootPrefix, "book", connection.bookId) + ' - ' + escapeHtml(connection.note) + '</li>').join("") + '</ul>' : '<p>None listed.</p>') + '</section>\n' +
     renderConnectionsPanel(rootPrefix, "book", book.id) +
     '</div></section>';
@@ -1201,7 +1272,7 @@ function renderNationPage(nation) {
     '<section class="content-panel"><h2>Prophets Sent to Them</h2>' + listTypedLinks(rootPrefix, nation.prophets, "person", "personId", "note", "reference") + '</section>\n' +
     '<section class="content-panel"><h2>Key Events</h2>' + listLinks(rootPrefix, "event", nation.events) + '</section>\n' +
     '<section class="content-panel"><h2>Related Nations</h2>' + listLinks(rootPrefix, "nation", nation.relatedNations) + '</section>\n' +
-    '<section class="content-panel"><h2>References</h2>' + textList(nation.references) + '</section>\n' +
+    '<section class="content-panel"><h2>References</h2>' + referenceList(nation.references) + '</section>\n' +
     renderConnectionsPanel(rootPrefix, "nation", nation.id) +
     '</div></section>';
 
@@ -1217,14 +1288,14 @@ function renderProphecyPage(prophecy) {
   const rootPrefix = "../";
   const subject = prophecy.subject ? linkTo(rootPrefix, prophecy.subject.type, prophecy.subject.id) : "None listed.";
   const fulfillments = (prophecy.fulfillments || []).length
-    ? '<ul>' + prophecy.fulfillments.map((fulfillment) => '<li><span class="badge">' + escapeHtml(prophecyTypeLabel(fulfillment.type)) + '</span> <strong>' + escapeHtml(fulfillment.reference) + '</strong>' +
+    ? '<ul>' + prophecy.fulfillments.map((fulfillment) => '<li><span class="badge">' + escapeHtml(prophecyTypeLabel(fulfillment.type)) + '</span> <strong>' + linkifyReference(fulfillment.reference) + '</strong>' +
       (fulfillment.eventId ? ' - ' + linkTo(rootPrefix, "event", fulfillment.eventId) : "") +
       (fulfillment.note ? '<br><span class="muted">' + escapeHtml(fulfillment.note) + '</span>' : "") + '</li>').join("") + '</ul>'
     : '<p>None listed.</p>';
   const body = '<section class="section"><div class="container">\n' +
     '<div class="page-title"><span class="badge">Prophecy</span><h1>' + escapeHtml(prophecy.name) + '</h1><p>' + escapeHtml(prophecy.summary) + '</p></div>\n' +
     '<section class="content-panel"><h2>Given</h2>' + metaRows([
-      ["Reference", escapeHtml(prophecy.givenReference)],
+      ["Reference", linkifyReference(prophecy.givenReference)],
       ["Spoken By", escapeHtml(prophecy.spokenBy || "None listed")],
       ["Prophet", prophecy.prophetId ? linkTo(rootPrefix, "person", prophecy.prophetId) : escapeHtml(prophecy.spokenBy || "None listed")],
       ["Given Event", prophecy.givenEvent ? linkTo(rootPrefix, "event", prophecy.givenEvent) : "None listed."],
@@ -1249,7 +1320,7 @@ function renderThemePage(theme) {
   const rootPrefix = "../";
   const prophecies = data.prophecies.filter((prophecy) => (prophecy.themes || []).indexOf(theme.id) !== -1);
   const verses = (theme.keyVerses || []).length
-    ? '<ul>' + theme.keyVerses.map((verse) => '<li><strong>' + escapeHtml(verse.reference) + '</strong> - ' + escapeHtml(verse.note || "") + '</li>').join("") + '</ul>'
+    ? '<ul>' + theme.keyVerses.map((verse) => '<li><strong>' + linkifyReference(verse.reference) + '</strong> - ' + escapeHtml(verse.note || "") + '</li>').join("") + '</ul>'
     : '<p>None listed.</p>';
   const body = '<section class="section"><div class="container">\n' +
     '<div class="page-title"><span class="badge">Theme</span><h1>' + escapeHtml(theme.name) + '</h1><p>' + escapeHtml(theme.description) + '</p></div>\n' +
@@ -1286,7 +1357,7 @@ function renderPropheciesBrowse() {
   const groups = ["Messianic", "National & historical", "Spoken by Jesus"].map((label) => {
     const prophecies = data.prophecies.filter((prophecy) => prophecyGroup(prophecy) === label).sort((a, b) => a.name.localeCompare(b.name));
     return '<section class="content-panel"><h2>' + escapeHtml(label) + '</h2><div class="grid">' + prophecies.map((prophecy) => (
-      '<article class="card"><h3>' + linkTo("", "prophecy", prophecy.id) + '</h3><p><strong>' + escapeHtml(prophecy.givenReference) + '</strong></p><p>' + escapeHtml(firstSentence(prophecy.summary)) + '</p></article>'
+      '<article class="card"><h3>' + linkTo("", "prophecy", prophecy.id) + '</h3><p><strong>' + linkifyReference(prophecy.givenReference) + '</strong></p><p>' + escapeHtml(firstSentence(prophecy.summary)) + '</p></article>'
     )).join("") + '</div></section>\n';
   }).join("");
   renderBrowsePage("prophecies.html", "Prophecies", "Prophecies with subjects, fulfillments, and theme links.", groups);

@@ -108,6 +108,22 @@ a:hover {
   color: var(--accent-strong);
 }
 
+.ref-link {
+  color: color-mix(in srgb, var(--blue) 82%, var(--text));
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+  white-space: nowrap;
+}
+
+.ref-link:hover,
+.ref-link:focus-visible {
+  color: var(--accent-strong);
+  text-decoration-style: solid;
+  text-decoration-thickness: 2px;
+}
+
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
@@ -975,6 +991,12 @@ main {
   a {
     color: #000;
     text-decoration: underline;
+  }
+
+  .ref-link {
+    color: #000;
+    text-decoration: underline;
+    white-space: normal;
   }
 
   .map,
