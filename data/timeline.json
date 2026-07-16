@@ -154,5 +154,67 @@
     "eventIds": [
       "intertestamental-period"
     ]
+  },
+  {
+    "era": "Life of Jesus",
+    "dateRange": "approx. 6 BC-AD 30",
+    "eventIds": [
+      "birth-of-john-the-baptist-foretold",
+      "annunciation",
+      "birth-of-jesus",
+      "visit-of-the-magi",
+      "flight-to-egypt",
+      "boy-jesus-in-the-temple",
+      "ministry-of-john-the-baptist",
+      "baptism-of-jesus",
+      "temptation-of-jesus",
+      "first-disciples-called",
+      "wedding-at-cana",
+      "nicodemus",
+      "samaritan-woman",
+      "sermon-on-the-mount",
+      "twelve-apostles-chosen",
+      "parables-of-the-kingdom",
+      "jesus-calms-the-storm",
+      "feeding-the-five-thousand",
+      "jesus-walks-on-water",
+      "peters-confession",
+      "transfiguration",
+      "lazarus-raised",
+      "triumphal-entry",
+      "temple-cleansing",
+      "olivet-discourse",
+      "last-supper",
+      "gethsemane",
+      "trials-of-jesus",
+      "crucifixion",
+      "burial-of-jesus",
+      "resurrection",
+      "great-commission",
+      "ascension"
+    ]
+  },
+  {
+    "era": "The Early Church",
+    "dateRange": "approx. AD 30-95",
+    "eventIds": [
+      "pentecost",
+      "early-church-in-jerusalem",
+      "stephen-martyred",
+      "philip-and-the-ethiopian",
+      "sauls-conversion",
+      "peter-and-cornelius",
+      "church-at-antioch",
+      "first-missionary-journey",
+      "jerusalem-council",
+      "second-missionary-journey",
+      "third-missionary-journey",
+      "pauls-arrest-in-jerusalem",
+      "voyage-and-shipwreck",
+      "pauls-roman-imprisonment",
+      "destruction-of-the-temple",
+      "john-exiled-on-patmos",
+      "revelation-given"
+    ]
   }
 ]

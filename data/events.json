@@ -4680,5 +4680,2437 @@
     "crossReferences": [],
     "prevEvent": "malachi-ministry",
     "nextEvent": "birth-of-john-the-baptist-foretold"
+  },
+  {
+    "id": "birth-of-john-the-baptist-foretold",
+    "name": "Birth of John the Baptist Foretold",
+    "order": 97,
+    "date": "approx. 6 BC",
+    "dateSort": -6,
+    "datePrecision": "approximate",
+    "era": "Life of Jesus",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Luke 1:5-25",
+    "location": {
+      "placeId": "jerusalem",
+      "name": "Jerusalem",
+      "modernCountry": "Israel",
+      "lat": 31.778,
+      "lng": 35.235
+    },
+    "mainPeople": [
+      "zechariah-the-priest"
+    ],
+    "relatedPeople": [
+      "elizabeth",
+      "john-the-baptist",
+      "god"
+    ],
+    "relatedPlaces": [
+      "jerusalem"
+    ],
+    "relatedEvents": [
+      "intertestamental-period",
+      "annunciation"
+    ],
+    "keywords": [
+      "birth",
+      "of",
+      "john",
+      "the",
+      "baptist",
+      "foretold"
+    ],
+    "summary": "Gabriel announces that Elizabeth will bear John, the forerunner who will prepare Israel for the Lord. Zechariah is made mute until the promised birth is fulfilled.",
+    "longDescription": "Gabriel announces that Elizabeth will bear John, the forerunner who will prepare Israel for the Lord. Zechariah is made mute until the promised birth is fulfilled.\n\nThe biblical account (Luke 1:5-25) gives the controlling details for birth of john the baptist foretold. The event is recorded as part of Life of Jesus, and its people, place, and sequence are linked here to show how the narrative develops without adding speculative detail.\n\nThis record emphasizes the event's role in the larger biblical timeline. It connects promise, fulfillment, witness, suffering, mission, and hope as the story moves from the ministry of Jesus into the spread of the early church.",
+    "historicalNotes": "Archaeological evidence: First-century sites connected with Jerusalem and the wider Roman-period Jewish world provide the geographical setting for this event, though the specific episode is known from the biblical text. Scholarly opinion: The chronology is approximate and follows the common placement of Jesus' public ministry and the Acts narrative. Historical reconstruction: The event fits the social, religious, and political environment reflected in the Gospels and Acts.",
+    "crossReferences": [],
+    "prevEvent": "intertestamental-period",
+    "nextEvent": "annunciation"
+  },
+  {
+    "id": "annunciation",
+    "name": "Annunciation to Mary",
+    "order": 98,
+    "date": "approx. 6-5 BC",
+    "dateSort": -5.8,
+    "datePrecision": "approximate",
+    "era": "Life of Jesus",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Luke 1:26-38",
+    "location": {
+      "placeId": "nazareth",
+      "name": "Nazareth",
+      "modernCountry": "Israel",
+      "lat": 32.699,
+      "lng": 35.304
+    },
+    "mainPeople": [
+      "mary"
+    ],
+    "relatedPeople": [
+      "jesus",
+      "joseph-of-nazareth",
+      "elizabeth",
+      "god"
+    ],
+    "relatedPlaces": [
+      "nazareth"
+    ],
+    "relatedEvents": [
+      "birth-of-john-the-baptist-foretold",
+      "birth-of-jesus"
+    ],
+    "keywords": [
+      "annunciation",
+      "to",
+      "mary"
+    ],
+    "summary": "Gabriel announces to Mary in Nazareth that she will bear Jesus, the Son of the Most High. Mary receives the word in faith as the servant of the Lord.",
+    "longDescription": "Gabriel announces to Mary in Nazareth that she will bear Jesus, the Son of the Most High. Mary receives the word in faith as the servant of the Lord.\n\nThe biblical account (Luke 1:26-38) gives the controlling details for annunciation to mary. The event is recorded as part of Life of Jesus, and its people, place, and sequence are linked here to show how the narrative develops without adding speculative detail.\n\nThis record emphasizes the event's role in the larger biblical timeline. It connects promise, fulfillment, witness, suffering, mission, and hope as the story moves from the ministry of Jesus into the spread of the early church.",
+    "historicalNotes": "Archaeological evidence: First-century sites connected with Nazareth and the wider Roman-period Jewish world provide the geographical setting for this event, though the specific episode is known from the biblical text. Scholarly opinion: The chronology is approximate and follows the common placement of Jesus' public ministry and the Acts narrative. Historical reconstruction: The event fits the social, religious, and political environment reflected in the Gospels and Acts.",
+    "crossReferences": [],
+    "prevEvent": "birth-of-john-the-baptist-foretold",
+    "nextEvent": "birth-of-jesus"
+  },
+  {
+    "id": "birth-of-jesus",
+    "name": "Birth of Jesus",
+    "order": 99,
+    "date": "approx. 5 BC",
+    "dateSort": -5,
+    "datePrecision": "approximate",
+    "era": "Life of Jesus",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Luke 2:1-20; Matthew 1:18-25",
+    "location": {
+      "placeId": "bethlehem",
+      "name": "Bethlehem",
+      "modernCountry": "West Bank",
+      "lat": 31.705,
+      "lng": 35.202
+    },
+    "mainPeople": [
+      "jesus",
+      "mary",
+      "joseph-of-nazareth"
+    ],
+    "relatedPeople": [
+      "herod-the-great",
+      "god"
+    ],
+    "relatedPlaces": [
+      "bethlehem",
+      "nazareth"
+    ],
+    "relatedEvents": [
+      "annunciation",
+      "visit-of-the-magi"
+    ],
+    "keywords": [
+      "birth",
+      "of",
+      "jesus"
+    ],
+    "summary": "Jesus is born in Bethlehem during the reign of Herod the Great. Luke emphasizes humble witnesses and angelic announcement, while Matthew frames the birth as fulfillment.",
+    "longDescription": "Jesus is born in Bethlehem during the reign of Herod the Great. Luke emphasizes humble witnesses and angelic announcement, while Matthew frames the birth as fulfillment.\n\nThe biblical account (Luke 2:1-20; Matthew 1:18-25) gives the controlling details for birth of jesus. The event is recorded as part of Life of Jesus, and its people, place, and sequence are linked here to show how the narrative develops without adding speculative detail.\n\nThis record emphasizes the event's role in the larger biblical timeline. It connects promise, fulfillment, witness, suffering, mission, and hope as the story moves from the ministry of Jesus into the spread of the early church.",
+    "historicalNotes": "Archaeological evidence: First-century sites connected with Bethlehem and the wider Roman-period Jewish world provide the geographical setting for this event, though the specific episode is known from the biblical text. Scholarly opinion: The chronology is approximate and follows the common placement of Jesus' public ministry and the Acts narrative. Historical reconstruction: The event fits the social, religious, and political environment reflected in the Gospels and Acts.",
+    "crossReferences": [],
+    "prevEvent": "annunciation",
+    "nextEvent": "visit-of-the-magi"
+  },
+  {
+    "id": "visit-of-the-magi",
+    "name": "Visit of the Magi",
+    "order": 100,
+    "date": "approx. 5-4 BC",
+    "dateSort": -4.8,
+    "datePrecision": "approximate",
+    "era": "Life of Jesus",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Matthew 2:1-12",
+    "location": {
+      "placeId": "bethlehem",
+      "name": "Bethlehem",
+      "modernCountry": "West Bank",
+      "lat": 31.705,
+      "lng": 35.202
+    },
+    "mainPeople": [
+      "jesus"
+    ],
+    "relatedPeople": [
+      "mary",
+      "joseph-of-nazareth",
+      "herod-the-great"
+    ],
+    "relatedPlaces": [
+      "bethlehem",
+      "jerusalem"
+    ],
+    "relatedEvents": [
+      "birth-of-jesus",
+      "flight-to-egypt"
+    ],
+    "keywords": [
+      "visit",
+      "of",
+      "the",
+      "magi"
+    ],
+    "summary": "Magi from the east come to honor the newborn king after seeing his star. Herod responds with fear and deception, but the visitors worship Jesus.",
+    "longDescription": "Magi from the east come to honor the newborn king after seeing his star. Herod responds with fear and deception, but the visitors worship Jesus.\n\nThe biblical account (Matthew 2:1-12) gives the controlling details for visit of the magi. The event is recorded as part of Life of Jesus, and its people, place, and sequence are linked here to show how the narrative develops without adding speculative detail.\n\nThis record emphasizes the event's role in the larger biblical timeline. It connects promise, fulfillment, witness, suffering, mission, and hope as the story moves from the ministry of Jesus into the spread of the early church.",
+    "historicalNotes": "Archaeological evidence: First-century sites connected with Bethlehem and the wider Roman-period Jewish world provide the geographical setting for this event, though the specific episode is known from the biblical text. Scholarly opinion: The chronology is approximate and follows the common placement of Jesus' public ministry and the Acts narrative. Historical reconstruction: The event fits the social, religious, and political environment reflected in the Gospels and Acts.",
+    "crossReferences": [],
+    "prevEvent": "birth-of-jesus",
+    "nextEvent": "flight-to-egypt"
+  },
+  {
+    "id": "flight-to-egypt",
+    "name": "Flight to Egypt",
+    "order": 101,
+    "date": "approx. 5-4 BC",
+    "dateSort": -4.7,
+    "datePrecision": "approximate",
+    "era": "Life of Jesus",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Matthew 2:13-23",
+    "location": {
+      "placeId": "egypt",
+      "name": "Egypt",
+      "modernCountry": "Egypt",
+      "lat": 26.82,
+      "lng": 30.8
+    },
+    "mainPeople": [
+      "jesus",
+      "mary",
+      "joseph-of-nazareth"
+    ],
+    "relatedPeople": [
+      "herod-the-great",
+      "god"
+    ],
+    "relatedPlaces": [
+      "egypt",
+      "bethlehem",
+      "nazareth"
+    ],
+    "relatedEvents": [
+      "visit-of-the-magi",
+      "boy-jesus-in-the-temple"
+    ],
+    "keywords": [
+      "flight",
+      "to",
+      "egypt"
+    ],
+    "summary": "Joseph takes Mary and Jesus to Egypt after a warning in a dream. The family later returns and settles in Nazareth after Herod's death.",
+    "longDescription": "Joseph takes Mary and Jesus to Egypt after a warning in a dream. The family later returns and settles in Nazareth after Herod's death.\n\nThe biblical account (Matthew 2:13-23) gives the controlling details for flight to egypt. The event is recorded as part of Life of Jesus, and its people, place, and sequence are linked here to show how the narrative develops without adding speculative detail.\n\nThis record emphasizes the event's role in the larger biblical timeline. It connects promise, fulfillment, witness, suffering, mission, and hope as the story moves from the ministry of Jesus into the spread of the early church.",
+    "historicalNotes": "Archaeological evidence: First-century sites connected with Egypt and the wider Roman-period Jewish world provide the geographical setting for this event, though the specific episode is known from the biblical text. Scholarly opinion: The chronology is approximate and follows the common placement of Jesus' public ministry and the Acts narrative. Historical reconstruction: The event fits the social, religious, and political environment reflected in the Gospels and Acts.",
+    "crossReferences": [],
+    "prevEvent": "visit-of-the-magi",
+    "nextEvent": "boy-jesus-in-the-temple"
+  },
+  {
+    "id": "boy-jesus-in-the-temple",
+    "name": "Boy Jesus in the Temple",
+    "order": 102,
+    "date": "approx. AD 8",
+    "dateSort": 8,
+    "datePrecision": "approximate",
+    "era": "Life of Jesus",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Luke 2:41-52",
+    "location": {
+      "placeId": "jerusalem",
+      "name": "Jerusalem",
+      "modernCountry": "Israel",
+      "lat": 31.778,
+      "lng": 35.235
+    },
+    "mainPeople": [
+      "jesus"
+    ],
+    "relatedPeople": [
+      "mary",
+      "joseph-of-nazareth"
+    ],
+    "relatedPlaces": [
+      "jerusalem",
+      "nazareth"
+    ],
+    "relatedEvents": [
+      "flight-to-egypt",
+      "ministry-of-john-the-baptist"
+    ],
+    "keywords": [
+      "boy",
+      "jesus",
+      "in",
+      "the",
+      "temple"
+    ],
+    "summary": "At twelve years old Jesus remains in the temple, listening to teachers and asking questions. His answer reveals his unique relation to the Father.",
+    "longDescription": "At twelve years old Jesus remains in the temple, listening to teachers and asking questions. His answer reveals his unique relation to the Father.\n\nThe biblical account (Luke 2:41-52) gives the controlling details for boy jesus in the temple. The event is recorded as part of Life of Jesus, and its people, place, and sequence are linked here to show how the narrative develops without adding speculative detail.\n\nThis record emphasizes the event's role in the larger biblical timeline. It connects promise, fulfillment, witness, suffering, mission, and hope as the story moves from the ministry of Jesus into the spread of the early church.",
+    "historicalNotes": "Archaeological evidence: First-century sites connected with Jerusalem and the wider Roman-period Jewish world provide the geographical setting for this event, though the specific episode is known from the biblical text. Scholarly opinion: The chronology is approximate and follows the common placement of Jesus' public ministry and the Acts narrative. Historical reconstruction: The event fits the social, religious, and political environment reflected in the Gospels and Acts.",
+    "crossReferences": [],
+    "prevEvent": "flight-to-egypt",
+    "nextEvent": "ministry-of-john-the-baptist"
+  },
+  {
+    "id": "ministry-of-john-the-baptist",
+    "name": "Ministry of John the Baptist",
+    "order": 103,
+    "date": "approx. AD 26",
+    "dateSort": 26,
+    "datePrecision": "approximate",
+    "era": "Life of Jesus",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Matthew 3; Luke 3",
+    "location": {
+      "placeId": "jordan-river",
+      "name": "Jordan River",
+      "modernCountry": "Israel/Jordan/West Bank",
+      "lat": 31.84,
+      "lng": 35.55
+    },
+    "mainPeople": [
+      "john-the-baptist"
+    ],
+    "relatedPeople": [
+      "jesus",
+      "herod-antipas",
+      "god"
+    ],
+    "relatedPlaces": [
+      "jordan-river",
+      "jerusalem"
+    ],
+    "relatedEvents": [
+      "boy-jesus-in-the-temple",
+      "baptism-of-jesus"
+    ],
+    "keywords": [
+      "ministry",
+      "of",
+      "john",
+      "the",
+      "baptist"
+    ],
+    "summary": "John preaches repentance and baptizes in the Jordan region as crowds come from Judea. His ministry prepares the way for Jesus and confronts covenant presumption.",
+    "longDescription": "John preaches repentance and baptizes in the Jordan region as crowds come from Judea. His ministry prepares the way for Jesus and confronts covenant presumption.\n\nThe biblical account (Matthew 3; Luke 3) gives the controlling details for ministry of john the baptist. The event is recorded as part of Life of Jesus, and its people, place, and sequence are linked here to show how the narrative develops without adding speculative detail.\n\nThis record emphasizes the event's role in the larger biblical timeline. It connects promise, fulfillment, witness, suffering, mission, and hope as the story moves from the ministry of Jesus into the spread of the early church.",
+    "historicalNotes": "Archaeological evidence: First-century sites connected with Jordan River and the wider Roman-period Jewish world provide the geographical setting for this event, though the specific episode is known from the biblical text. Scholarly opinion: The chronology is approximate and follows the common placement of Jesus' public ministry and the Acts narrative. Historical reconstruction: The event fits the social, religious, and political environment reflected in the Gospels and Acts.",
+    "crossReferences": [],
+    "prevEvent": "boy-jesus-in-the-temple",
+    "nextEvent": "baptism-of-jesus"
+  },
+  {
+    "id": "baptism-of-jesus",
+    "name": "Baptism of Jesus",
+    "order": 104,
+    "date": "approx. AD 26",
+    "dateSort": 26.1,
+    "datePrecision": "approximate",
+    "era": "Life of Jesus",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Matthew 3:13-17",
+    "location": {
+      "placeId": "jordan-river",
+      "name": "Jordan River",
+      "modernCountry": "Israel/Jordan/West Bank",
+      "lat": 31.84,
+      "lng": 35.55
+    },
+    "mainPeople": [
+      "jesus",
+      "john-the-baptist"
+    ],
+    "relatedPeople": [
+      "god"
+    ],
+    "relatedPlaces": [
+      "jordan-river"
+    ],
+    "relatedEvents": [
+      "ministry-of-john-the-baptist",
+      "temptation-of-jesus"
+    ],
+    "keywords": [
+      "baptism",
+      "of",
+      "jesus"
+    ],
+    "summary": "Jesus is baptized by John in the Jordan. The Spirit descends, and the Father identifies Jesus as his beloved Son.",
+    "longDescription": "Jesus is baptized by John in the Jordan. The Spirit descends, and the Father identifies Jesus as his beloved Son.\n\nThe biblical account (Matthew 3:13-17) gives the controlling details for baptism of jesus. The event is recorded as part of Life of Jesus, and its people, place, and sequence are linked here to show how the narrative develops without adding speculative detail.\n\nThis record emphasizes the event's role in the larger biblical timeline. It connects promise, fulfillment, witness, suffering, mission, and hope as the story moves from the ministry of Jesus into the spread of the early church.",
+    "historicalNotes": "Archaeological evidence: First-century sites connected with Jordan River and the wider Roman-period Jewish world provide the geographical setting for this event, though the specific episode is known from the biblical text. Scholarly opinion: The chronology is approximate and follows the common placement of Jesus' public ministry and the Acts narrative. Historical reconstruction: The event fits the social, religious, and political environment reflected in the Gospels and Acts.",
+    "crossReferences": [],
+    "prevEvent": "ministry-of-john-the-baptist",
+    "nextEvent": "temptation-of-jesus"
+  },
+  {
+    "id": "temptation-of-jesus",
+    "name": "Temptation of Jesus",
+    "order": 105,
+    "date": "approx. AD 26",
+    "dateSort": 26.2,
+    "datePrecision": "approximate",
+    "era": "Life of Jesus",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Matthew 4:1-11",
+    "location": {
+      "placeId": "jordan-river",
+      "name": "Jordan River",
+      "modernCountry": "Israel/Jordan/West Bank",
+      "lat": 31.84,
+      "lng": 35.55
+    },
+    "mainPeople": [
+      "jesus"
+    ],
+    "relatedPeople": [
+      "god"
+    ],
+    "relatedPlaces": [
+      "jordan-river"
+    ],
+    "relatedEvents": [
+      "baptism-of-jesus",
+      "first-disciples-called"
+    ],
+    "keywords": [
+      "temptation",
+      "of",
+      "jesus"
+    ],
+    "summary": "Jesus is led into the wilderness and tested after forty days of fasting. He answers each temptation with Scripture and remains faithful.",
+    "longDescription": "Jesus is led into the wilderness and tested after forty days of fasting. He answers each temptation with Scripture and remains faithful.\n\nThe biblical account (Matthew 4:1-11) gives the controlling details for temptation of jesus. The event is recorded as part of Life of Jesus, and its people, place, and sequence are linked here to show how the narrative develops without adding speculative detail.\n\nThis record emphasizes the event's role in the larger biblical timeline. It connects promise, fulfillment, witness, suffering, mission, and hope as the story moves from the ministry of Jesus into the spread of the early church.",
+    "historicalNotes": "Archaeological evidence: First-century sites connected with Jordan River and the wider Roman-period Jewish world provide the geographical setting for this event, though the specific episode is known from the biblical text. Scholarly opinion: The chronology is approximate and follows the common placement of Jesus' public ministry and the Acts narrative. Historical reconstruction: The event fits the social, religious, and political environment reflected in the Gospels and Acts.",
+    "crossReferences": [],
+    "prevEvent": "baptism-of-jesus",
+    "nextEvent": "first-disciples-called"
+  },
+  {
+    "id": "first-disciples-called",
+    "name": "First Disciples Called",
+    "order": 106,
+    "date": "approx. AD 27",
+    "dateSort": 27,
+    "datePrecision": "approximate",
+    "era": "Life of Jesus",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "John 1:35-51; Matthew 4:18-22",
+    "location": {
+      "placeId": "sea-of-galilee",
+      "name": "Sea of Galilee",
+      "modernCountry": "Israel",
+      "lat": 32.83,
+      "lng": 35.59
+    },
+    "mainPeople": [
+      "jesus",
+      "peter",
+      "andrew",
+      "james-son-of-zebedee",
+      "john-the-apostle"
+    ],
+    "relatedPeople": [
+      "philip-the-apostle",
+      "bartholomew",
+      "john-the-baptist"
+    ],
+    "relatedPlaces": [
+      "sea-of-galilee",
+      "bethsaida",
+      "capernaum"
+    ],
+    "relatedEvents": [
+      "temptation-of-jesus",
+      "wedding-at-cana"
+    ],
+    "keywords": [
+      "first",
+      "disciples",
+      "called"
+    ],
+    "summary": "Jesus begins gathering disciples, including fishermen by the Sea of Galilee and seekers first pointed to him by John. The call introduces the community that will witness his works.",
+    "longDescription": "Jesus begins gathering disciples, including fishermen by the Sea of Galilee and seekers first pointed to him by John. The call introduces the community that will witness his works.\n\nThe biblical account (John 1:35-51; Matthew 4:18-22) gives the controlling details for first disciples called. The event is recorded as part of Life of Jesus, and its people, place, and sequence are linked here to show how the narrative develops without adding speculative detail.\n\nThis record emphasizes the event's role in the larger biblical timeline. It connects promise, fulfillment, witness, suffering, mission, and hope as the story moves from the ministry of Jesus into the spread of the early church.",
+    "historicalNotes": "Archaeological evidence: First-century sites connected with Sea of Galilee and the wider Roman-period Jewish world provide the geographical setting for this event, though the specific episode is known from the biblical text. Scholarly opinion: The chronology is approximate and follows the common placement of Jesus' public ministry and the Acts narrative. Historical reconstruction: The event fits the social, religious, and political environment reflected in the Gospels and Acts.",
+    "crossReferences": [],
+    "prevEvent": "temptation-of-jesus",
+    "nextEvent": "wedding-at-cana"
+  },
+  {
+    "id": "wedding-at-cana",
+    "name": "Wedding at Cana",
+    "order": 107,
+    "date": "approx. AD 27",
+    "dateSort": 27.1,
+    "datePrecision": "approximate",
+    "era": "Life of Jesus",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "John 2:1-11",
+    "location": {
+      "placeId": "cana",
+      "name": "Cana",
+      "modernCountry": "Israel",
+      "lat": 32.75,
+      "lng": 35.34
+    },
+    "mainPeople": [
+      "jesus"
+    ],
+    "relatedPeople": [
+      "mary",
+      "john-the-apostle"
+    ],
+    "relatedPlaces": [
+      "cana",
+      "nazareth"
+    ],
+    "relatedEvents": [
+      "first-disciples-called",
+      "nicodemus"
+    ],
+    "keywords": [
+      "wedding",
+      "at",
+      "cana"
+    ],
+    "summary": "Jesus turns water into wine at a wedding in Cana. John presents this first sign as a revelation of Jesus' glory.",
+    "longDescription": "Jesus turns water into wine at a wedding in Cana. John presents this first sign as a revelation of Jesus' glory.\n\nThe biblical account (John 2:1-11) gives the controlling details for wedding at cana. The event is recorded as part of Life of Jesus, and its people, place, and sequence are linked here to show how the narrative develops without adding speculative detail.\n\nThis record emphasizes the event's role in the larger biblical timeline. It connects promise, fulfillment, witness, suffering, mission, and hope as the story moves from the ministry of Jesus into the spread of the early church.",
+    "historicalNotes": "Archaeological evidence: First-century sites connected with Cana and the wider Roman-period Jewish world provide the geographical setting for this event, though the specific episode is known from the biblical text. Scholarly opinion: The chronology is approximate and follows the common placement of Jesus' public ministry and the Acts narrative. Historical reconstruction: The event fits the social, religious, and political environment reflected in the Gospels and Acts.",
+    "crossReferences": [],
+    "prevEvent": "first-disciples-called",
+    "nextEvent": "nicodemus"
+  },
+  {
+    "id": "nicodemus",
+    "name": "Jesus and Nicodemus",
+    "order": 108,
+    "date": "approx. AD 27",
+    "dateSort": 27.2,
+    "datePrecision": "approximate",
+    "era": "Life of Jesus",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "John 3",
+    "location": {
+      "placeId": "jerusalem",
+      "name": "Jerusalem",
+      "modernCountry": "Israel",
+      "lat": 31.778,
+      "lng": 35.235
+    },
+    "mainPeople": [
+      "jesus",
+      "nicodemus"
+    ],
+    "relatedPeople": [
+      "john-the-apostle"
+    ],
+    "relatedPlaces": [
+      "jerusalem"
+    ],
+    "relatedEvents": [
+      "wedding-at-cana",
+      "samaritan-woman"
+    ],
+    "keywords": [
+      "jesus",
+      "and",
+      "nicodemus"
+    ],
+    "summary": "Nicodemus comes to Jesus by night and hears of the need to be born from above. Jesus speaks of the Spirit, the lifted-up Son of Man, and God's love.",
+    "longDescription": "Nicodemus comes to Jesus by night and hears of the need to be born from above. Jesus speaks of the Spirit, the lifted-up Son of Man, and God's love.\n\nThe biblical account (John 3) gives the controlling details for jesus and nicodemus. The event is recorded as part of Life of Jesus, and its people, place, and sequence are linked here to show how the narrative develops without adding speculative detail.\n\nThis record emphasizes the event's role in the larger biblical timeline. It connects promise, fulfillment, witness, suffering, mission, and hope as the story moves from the ministry of Jesus into the spread of the early church.",
+    "historicalNotes": "Archaeological evidence: First-century sites connected with Jerusalem and the wider Roman-period Jewish world provide the geographical setting for this event, though the specific episode is known from the biblical text. Scholarly opinion: The chronology is approximate and follows the common placement of Jesus' public ministry and the Acts narrative. Historical reconstruction: The event fits the social, religious, and political environment reflected in the Gospels and Acts.",
+    "crossReferences": [],
+    "prevEvent": "wedding-at-cana",
+    "nextEvent": "samaritan-woman"
+  },
+  {
+    "id": "samaritan-woman",
+    "name": "Jesus and the Samaritan Woman",
+    "order": 109,
+    "date": "approx. AD 27",
+    "dateSort": 27.3,
+    "datePrecision": "approximate",
+    "era": "Life of Jesus",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "John 4",
+    "location": {
+      "placeId": "samaria",
+      "name": "Samaria",
+      "modernCountry": "West Bank",
+      "lat": 32.28,
+      "lng": 35.2
+    },
+    "mainPeople": [
+      "jesus"
+    ],
+    "relatedPeople": [
+      "john-the-apostle"
+    ],
+    "relatedPlaces": [
+      "samaria",
+      "jerusalem"
+    ],
+    "relatedEvents": [
+      "nicodemus",
+      "sermon-on-the-mount"
+    ],
+    "keywords": [
+      "jesus",
+      "and",
+      "the",
+      "samaritan",
+      "woman"
+    ],
+    "summary": "Jesus speaks with a Samaritan woman at Jacob's well and reveals himself as the Messiah. Her witness brings many from the town to hear and believe.",
+    "longDescription": "Jesus speaks with a Samaritan woman at Jacob's well and reveals himself as the Messiah. Her witness brings many from the town to hear and believe.\n\nThe biblical account (John 4) gives the controlling details for jesus and the samaritan woman. The event is recorded as part of Life of Jesus, and its people, place, and sequence are linked here to show how the narrative develops without adding speculative detail.\n\nThis record emphasizes the event's role in the larger biblical timeline. It connects promise, fulfillment, witness, suffering, mission, and hope as the story moves from the ministry of Jesus into the spread of the early church.",
+    "historicalNotes": "Archaeological evidence: First-century sites connected with Samaria and the wider Roman-period Jewish world provide the geographical setting for this event, though the specific episode is known from the biblical text. Scholarly opinion: The chronology is approximate and follows the common placement of Jesus' public ministry and the Acts narrative. Historical reconstruction: The event fits the social, religious, and political environment reflected in the Gospels and Acts.",
+    "crossReferences": [],
+    "prevEvent": "nicodemus",
+    "nextEvent": "sermon-on-the-mount"
+  },
+  {
+    "id": "sermon-on-the-mount",
+    "name": "Sermon on the Mount",
+    "order": 110,
+    "date": "approx. AD 28",
+    "dateSort": 28,
+    "datePrecision": "approximate",
+    "era": "Life of Jesus",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Matthew 5-7",
+    "location": {
+      "placeId": "sea-of-galilee",
+      "name": "Sea of Galilee",
+      "modernCountry": "Israel",
+      "lat": 32.83,
+      "lng": 35.59
+    },
+    "mainPeople": [
+      "jesus"
+    ],
+    "relatedPeople": [
+      "peter",
+      "andrew",
+      "james-son-of-zebedee",
+      "john-the-apostle"
+    ],
+    "relatedPlaces": [
+      "sea-of-galilee",
+      "capernaum"
+    ],
+    "relatedEvents": [
+      "samaritan-woman",
+      "twelve-apostles-chosen"
+    ],
+    "keywords": [
+      "sermon",
+      "on",
+      "the",
+      "mount"
+    ],
+    "summary": "Jesus teaches the ethics of the kingdom, including the Beatitudes, prayer, mercy, integrity, and obedience. The sermon contrasts external religion with whole-hearted righteousness.",
+    "longDescription": "Jesus teaches the ethics of the kingdom, including the Beatitudes, prayer, mercy, integrity, and obedience. The sermon contrasts external religion with whole-hearted righteousness.\n\nThe biblical account (Matthew 5-7) gives the controlling details for sermon on the mount. The event is recorded as part of Life of Jesus, and its people, place, and sequence are linked here to show how the narrative develops without adding speculative detail.\n\nThis record emphasizes the event's role in the larger biblical timeline. It connects promise, fulfillment, witness, suffering, mission, and hope as the story moves from the ministry of Jesus into the spread of the early church.",
+    "historicalNotes": "Archaeological evidence: First-century sites connected with Sea of Galilee and the wider Roman-period Jewish world provide the geographical setting for this event, though the specific episode is known from the biblical text. Scholarly opinion: The chronology is approximate and follows the common placement of Jesus' public ministry and the Acts narrative. Historical reconstruction: The event fits the social, religious, and political environment reflected in the Gospels and Acts.",
+    "crossReferences": [],
+    "prevEvent": "samaritan-woman",
+    "nextEvent": "twelve-apostles-chosen"
+  },
+  {
+    "id": "twelve-apostles-chosen",
+    "name": "Twelve Apostles Chosen",
+    "order": 111,
+    "date": "approx. AD 28",
+    "dateSort": 28.1,
+    "datePrecision": "approximate",
+    "era": "Life of Jesus",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Mark 3:13-19; Luke 6:12-16",
+    "location": {
+      "placeId": "sea-of-galilee",
+      "name": "Sea of Galilee",
+      "modernCountry": "Israel",
+      "lat": 32.83,
+      "lng": 35.59
+    },
+    "mainPeople": [
+      "jesus",
+      "peter",
+      "andrew",
+      "james-son-of-zebedee",
+      "john-the-apostle",
+      "philip-the-apostle",
+      "bartholomew",
+      "thomas",
+      "matthew",
+      "james-son-of-alphaeus",
+      "thaddaeus",
+      "simon-the-zealot",
+      "judas-iscariot"
+    ],
+    "relatedPeople": [
+      "god"
+    ],
+    "relatedPlaces": [
+      "sea-of-galilee"
+    ],
+    "relatedEvents": [
+      "sermon-on-the-mount",
+      "parables-of-the-kingdom"
+    ],
+    "keywords": [
+      "twelve",
+      "apostles",
+      "chosen"
+    ],
+    "summary": "Jesus appoints twelve apostles to be with him and to be sent out to preach. The number evokes restored Israel and gives structure to his messianic mission.",
+    "longDescription": "Jesus appoints twelve apostles to be with him and to be sent out to preach. The number evokes restored Israel and gives structure to his messianic mission.\n\nThe biblical account (Mark 3:13-19; Luke 6:12-16) gives the controlling details for twelve apostles chosen. The event is recorded as part of Life of Jesus, and its people, place, and sequence are linked here to show how the narrative develops without adding speculative detail.\n\nThis record emphasizes the event's role in the larger biblical timeline. It connects promise, fulfillment, witness, suffering, mission, and hope as the story moves from the ministry of Jesus into the spread of the early church.",
+    "historicalNotes": "Archaeological evidence: First-century sites connected with Sea of Galilee and the wider Roman-period Jewish world provide the geographical setting for this event, though the specific episode is known from the biblical text. Scholarly opinion: The chronology is approximate and follows the common placement of Jesus' public ministry and the Acts narrative. Historical reconstruction: The event fits the social, religious, and political environment reflected in the Gospels and Acts.",
+    "crossReferences": [],
+    "prevEvent": "sermon-on-the-mount",
+    "nextEvent": "parables-of-the-kingdom"
+  },
+  {
+    "id": "parables-of-the-kingdom",
+    "name": "Parables of the Kingdom",
+    "order": 112,
+    "date": "approx. AD 28",
+    "dateSort": 28.2,
+    "datePrecision": "approximate",
+    "era": "Life of Jesus",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Matthew 13",
+    "location": {
+      "placeId": "sea-of-galilee",
+      "name": "Sea of Galilee",
+      "modernCountry": "Israel",
+      "lat": 32.83,
+      "lng": 35.59
+    },
+    "mainPeople": [
+      "jesus"
+    ],
+    "relatedPeople": [
+      "peter",
+      "john-the-apostle",
+      "matthew"
+    ],
+    "relatedPlaces": [
+      "sea-of-galilee",
+      "capernaum"
+    ],
+    "relatedEvents": [
+      "twelve-apostles-chosen",
+      "jesus-calms-the-storm"
+    ],
+    "keywords": [
+      "parables",
+      "of",
+      "the",
+      "kingdom"
+    ],
+    "summary": "Jesus teaches in parables about the kingdom of heaven, including the sower, weeds, mustard seed, treasure, pearl, and net. The parables reveal truth and expose hardened hearts.",
+    "longDescription": "Jesus teaches in parables about the kingdom of heaven, including the sower, weeds, mustard seed, treasure, pearl, and net. The parables reveal truth and expose hardened hearts.\n\nThe biblical account (Matthew 13) gives the controlling details for parables of the kingdom. The event is recorded as part of Life of Jesus, and its people, place, and sequence are linked here to show how the narrative develops without adding speculative detail.\n\nThis record emphasizes the event's role in the larger biblical timeline. It connects promise, fulfillment, witness, suffering, mission, and hope as the story moves from the ministry of Jesus into the spread of the early church.",
+    "historicalNotes": "Archaeological evidence: First-century sites connected with Sea of Galilee and the wider Roman-period Jewish world provide the geographical setting for this event, though the specific episode is known from the biblical text. Scholarly opinion: The chronology is approximate and follows the common placement of Jesus' public ministry and the Acts narrative. Historical reconstruction: The event fits the social, religious, and political environment reflected in the Gospels and Acts.",
+    "crossReferences": [],
+    "prevEvent": "twelve-apostles-chosen",
+    "nextEvent": "jesus-calms-the-storm"
+  },
+  {
+    "id": "jesus-calms-the-storm",
+    "name": "Jesus Calms the Storm",
+    "order": 113,
+    "date": "approx. AD 28",
+    "dateSort": 28.3,
+    "datePrecision": "approximate",
+    "era": "Life of Jesus",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Mark 4:35-41",
+    "location": {
+      "placeId": "sea-of-galilee",
+      "name": "Sea of Galilee",
+      "modernCountry": "Israel",
+      "lat": 32.83,
+      "lng": 35.59
+    },
+    "mainPeople": [
+      "jesus"
+    ],
+    "relatedPeople": [
+      "peter",
+      "andrew",
+      "james-son-of-zebedee",
+      "john-the-apostle"
+    ],
+    "relatedPlaces": [
+      "sea-of-galilee"
+    ],
+    "relatedEvents": [
+      "parables-of-the-kingdom",
+      "feeding-the-five-thousand"
+    ],
+    "keywords": [
+      "jesus",
+      "calms",
+      "the",
+      "storm"
+    ],
+    "summary": "Jesus rebukes wind and sea while crossing Galilee with his disciples. The miracle displays authority over creation and leads the disciples to ask who he is.",
+    "longDescription": "Jesus rebukes wind and sea while crossing Galilee with his disciples. The miracle displays authority over creation and leads the disciples to ask who he is.\n\nThe biblical account (Mark 4:35-41) gives the controlling details for jesus calms the storm. The event is recorded as part of Life of Jesus, and its people, place, and sequence are linked here to show how the narrative develops without adding speculative detail.\n\nThis record emphasizes the event's role in the larger biblical timeline. It connects promise, fulfillment, witness, suffering, mission, and hope as the story moves from the ministry of Jesus into the spread of the early church.",
+    "historicalNotes": "Archaeological evidence: First-century sites connected with Sea of Galilee and the wider Roman-period Jewish world provide the geographical setting for this event, though the specific episode is known from the biblical text. Scholarly opinion: The chronology is approximate and follows the common placement of Jesus' public ministry and the Acts narrative. Historical reconstruction: The event fits the social, religious, and political environment reflected in the Gospels and Acts.",
+    "crossReferences": [],
+    "prevEvent": "parables-of-the-kingdom",
+    "nextEvent": "feeding-the-five-thousand"
+  },
+  {
+    "id": "feeding-the-five-thousand",
+    "name": "Feeding the Five Thousand",
+    "order": 114,
+    "date": "approx. AD 29",
+    "dateSort": 29,
+    "datePrecision": "approximate",
+    "era": "Life of Jesus",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "John 6:1-15",
+    "location": {
+      "placeId": "bethsaida",
+      "name": "Bethsaida",
+      "modernCountry": "Israel",
+      "lat": 32.91,
+      "lng": 35.63
+    },
+    "mainPeople": [
+      "jesus"
+    ],
+    "relatedPeople": [
+      "peter",
+      "andrew",
+      "philip-the-apostle",
+      "john-the-apostle"
+    ],
+    "relatedPlaces": [
+      "bethsaida",
+      "sea-of-galilee"
+    ],
+    "relatedEvents": [
+      "jesus-calms-the-storm",
+      "jesus-walks-on-water"
+    ],
+    "keywords": [
+      "feeding",
+      "the",
+      "five",
+      "thousand"
+    ],
+    "summary": "Jesus feeds a large crowd with five loaves and two fish. John connects the sign with Passover themes and the crowd's expectation of a prophet-king.",
+    "longDescription": "Jesus feeds a large crowd with five loaves and two fish. John connects the sign with Passover themes and the crowd's expectation of a prophet-king.\n\nThe biblical account (John 6:1-15) gives the controlling details for feeding the five thousand. The event is recorded as part of Life of Jesus, and its people, place, and sequence are linked here to show how the narrative develops without adding speculative detail.\n\nThis record emphasizes the event's role in the larger biblical timeline. It connects promise, fulfillment, witness, suffering, mission, and hope as the story moves from the ministry of Jesus into the spread of the early church.",
+    "historicalNotes": "Archaeological evidence: First-century sites connected with Bethsaida and the wider Roman-period Jewish world provide the geographical setting for this event, though the specific episode is known from the biblical text. Scholarly opinion: The chronology is approximate and follows the common placement of Jesus' public ministry and the Acts narrative. Historical reconstruction: The event fits the social, religious, and political environment reflected in the Gospels and Acts.",
+    "crossReferences": [],
+    "prevEvent": "jesus-calms-the-storm",
+    "nextEvent": "jesus-walks-on-water"
+  },
+  {
+    "id": "jesus-walks-on-water",
+    "name": "Jesus Walks on Water",
+    "order": 115,
+    "date": "approx. AD 29",
+    "dateSort": 29.1,
+    "datePrecision": "approximate",
+    "era": "Life of Jesus",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Matthew 14:22-33",
+    "location": {
+      "placeId": "sea-of-galilee",
+      "name": "Sea of Galilee",
+      "modernCountry": "Israel",
+      "lat": 32.83,
+      "lng": 35.59
+    },
+    "mainPeople": [
+      "jesus",
+      "peter"
+    ],
+    "relatedPeople": [
+      "andrew",
+      "james-son-of-zebedee",
+      "john-the-apostle"
+    ],
+    "relatedPlaces": [
+      "sea-of-galilee"
+    ],
+    "relatedEvents": [
+      "feeding-the-five-thousand",
+      "peters-confession"
+    ],
+    "keywords": [
+      "jesus",
+      "walks",
+      "on",
+      "water"
+    ],
+    "summary": "Jesus comes to the disciples walking on the Sea of Galilee during a storm. Peter steps out toward him, falters, and is rescued.",
+    "longDescription": "Jesus comes to the disciples walking on the Sea of Galilee during a storm. Peter steps out toward him, falters, and is rescued.\n\nThe biblical account (Matthew 14:22-33) gives the controlling details for jesus walks on water. The event is recorded as part of Life of Jesus, and its people, place, and sequence are linked here to show how the narrative develops without adding speculative detail.\n\nThis record emphasizes the event's role in the larger biblical timeline. It connects promise, fulfillment, witness, suffering, mission, and hope as the story moves from the ministry of Jesus into the spread of the early church.",
+    "historicalNotes": "Archaeological evidence: First-century sites connected with Sea of Galilee and the wider Roman-period Jewish world provide the geographical setting for this event, though the specific episode is known from the biblical text. Scholarly opinion: The chronology is approximate and follows the common placement of Jesus' public ministry and the Acts narrative. Historical reconstruction: The event fits the social, religious, and political environment reflected in the Gospels and Acts.",
+    "crossReferences": [],
+    "prevEvent": "feeding-the-five-thousand",
+    "nextEvent": "peters-confession"
+  },
+  {
+    "id": "peters-confession",
+    "name": "Peter's Confession",
+    "order": 116,
+    "date": "approx. AD 29",
+    "dateSort": 29.2,
+    "datePrecision": "approximate",
+    "era": "Life of Jesus",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Matthew 16:13-20",
+    "location": {
+      "placeId": "caesarea-philippi",
+      "name": "Caesarea Philippi",
+      "modernCountry": "Golan Heights",
+      "lat": 33.25,
+      "lng": 35.69
+    },
+    "mainPeople": [
+      "jesus",
+      "peter"
+    ],
+    "relatedPeople": [
+      "andrew",
+      "james-son-of-zebedee",
+      "john-the-apostle"
+    ],
+    "relatedPlaces": [
+      "caesarea-philippi"
+    ],
+    "relatedEvents": [
+      "jesus-walks-on-water",
+      "transfiguration"
+    ],
+    "keywords": [
+      "peters",
+      "confession"
+    ],
+    "summary": "At Caesarea Philippi Peter confesses Jesus as the Christ, the Son of the living God. Jesus blesses Peter and begins speaking plainly about his coming suffering.",
+    "longDescription": "At Caesarea Philippi Peter confesses Jesus as the Christ, the Son of the living God. Jesus blesses Peter and begins speaking plainly about his coming suffering.\n\nThe biblical account (Matthew 16:13-20) gives the controlling details for peter's confession. The event is recorded as part of Life of Jesus, and its people, place, and sequence are linked here to show how the narrative develops without adding speculative detail.\n\nThis record emphasizes the event's role in the larger biblical timeline. It connects promise, fulfillment, witness, suffering, mission, and hope as the story moves from the ministry of Jesus into the spread of the early church.",
+    "historicalNotes": "Archaeological evidence: First-century sites connected with Caesarea Philippi and the wider Roman-period Jewish world provide the geographical setting for this event, though the specific episode is known from the biblical text. Scholarly opinion: The chronology is approximate and follows the common placement of Jesus' public ministry and the Acts narrative. Historical reconstruction: The event fits the social, religious, and political environment reflected in the Gospels and Acts.",
+    "crossReferences": [],
+    "prevEvent": "jesus-walks-on-water",
+    "nextEvent": "transfiguration"
+  },
+  {
+    "id": "transfiguration",
+    "name": "Transfiguration",
+    "order": 117,
+    "date": "approx. AD 29",
+    "dateSort": 29.3,
+    "datePrecision": "approximate",
+    "era": "Life of Jesus",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Matthew 17:1-13",
+    "location": {
+      "placeId": "caesarea-philippi",
+      "name": "Caesarea Philippi",
+      "modernCountry": "Golan Heights",
+      "lat": 33.25,
+      "lng": 35.69
+    },
+    "mainPeople": [
+      "jesus",
+      "peter",
+      "james-son-of-zebedee",
+      "john-the-apostle"
+    ],
+    "relatedPeople": [
+      "moses",
+      "elijah",
+      "god"
+    ],
+    "relatedPlaces": [
+      "caesarea-philippi"
+    ],
+    "relatedEvents": [
+      "peters-confession",
+      "lazarus-raised"
+    ],
+    "keywords": [
+      "transfiguration"
+    ],
+    "summary": "Jesus is transfigured before Peter, James, and John, and Moses and Elijah appear with him. The Father commands the disciples to listen to his beloved Son.",
+    "longDescription": "Jesus is transfigured before Peter, James, and John, and Moses and Elijah appear with him. The Father commands the disciples to listen to his beloved Son.\n\nThe biblical account (Matthew 17:1-13) gives the controlling details for transfiguration. The event is recorded as part of Life of Jesus, and its people, place, and sequence are linked here to show how the narrative develops without adding speculative detail.\n\nThis record emphasizes the event's role in the larger biblical timeline. It connects promise, fulfillment, witness, suffering, mission, and hope as the story moves from the ministry of Jesus into the spread of the early church.",
+    "historicalNotes": "Archaeological evidence: First-century sites connected with Caesarea Philippi and the wider Roman-period Jewish world provide the geographical setting for this event, though the specific episode is known from the biblical text. Scholarly opinion: The chronology is approximate and follows the common placement of Jesus' public ministry and the Acts narrative. Historical reconstruction: The event fits the social, religious, and political environment reflected in the Gospels and Acts.",
+    "crossReferences": [],
+    "prevEvent": "peters-confession",
+    "nextEvent": "lazarus-raised"
+  },
+  {
+    "id": "lazarus-raised",
+    "name": "Lazarus Raised",
+    "order": 118,
+    "date": "approx. AD 30",
+    "dateSort": 30,
+    "datePrecision": "approximate",
+    "era": "Life of Jesus",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "John 11",
+    "location": {
+      "placeId": "bethany",
+      "name": "Bethany",
+      "modernCountry": "West Bank",
+      "lat": 31.77,
+      "lng": 35.26
+    },
+    "mainPeople": [
+      "jesus",
+      "lazarus",
+      "martha",
+      "mary-of-bethany"
+    ],
+    "relatedPeople": [
+      "john-the-apostle"
+    ],
+    "relatedPlaces": [
+      "bethany",
+      "jerusalem"
+    ],
+    "relatedEvents": [
+      "transfiguration",
+      "triumphal-entry"
+    ],
+    "keywords": [
+      "lazarus",
+      "raised"
+    ],
+    "summary": "Jesus raises Lazarus from the dead after four days in the tomb. The sign strengthens faith among some witnesses and intensifies opposition among the leaders.",
+    "longDescription": "Jesus raises Lazarus from the dead after four days in the tomb. The sign strengthens faith among some witnesses and intensifies opposition among the leaders.\n\nThe biblical account (John 11) gives the controlling details for lazarus raised. The event is recorded as part of Life of Jesus, and its people, place, and sequence are linked here to show how the narrative develops without adding speculative detail.\n\nThis record emphasizes the event's role in the larger biblical timeline. It connects promise, fulfillment, witness, suffering, mission, and hope as the story moves from the ministry of Jesus into the spread of the early church.",
+    "historicalNotes": "Archaeological evidence: First-century sites connected with Bethany and the wider Roman-period Jewish world provide the geographical setting for this event, though the specific episode is known from the biblical text. Scholarly opinion: The chronology is approximate and follows the common placement of Jesus' public ministry and the Acts narrative. Historical reconstruction: The event fits the social, religious, and political environment reflected in the Gospels and Acts.",
+    "crossReferences": [],
+    "prevEvent": "transfiguration",
+    "nextEvent": "triumphal-entry"
+  },
+  {
+    "id": "triumphal-entry",
+    "name": "Triumphal Entry",
+    "order": 119,
+    "date": "approx. AD 30",
+    "dateSort": 30.01,
+    "datePrecision": "approximate",
+    "era": "Life of Jesus",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Matthew 21:1-11",
+    "location": {
+      "placeId": "mount-of-olives",
+      "name": "Mount of Olives",
+      "modernCountry": "Israel",
+      "lat": 31.778,
+      "lng": 35.243
+    },
+    "mainPeople": [
+      "jesus"
+    ],
+    "relatedPeople": [
+      "peter",
+      "john-the-apostle"
+    ],
+    "relatedPlaces": [
+      "mount-of-olives",
+      "jerusalem",
+      "bethany"
+    ],
+    "relatedEvents": [
+      "lazarus-raised",
+      "temple-cleansing"
+    ],
+    "keywords": [
+      "triumphal",
+      "entry"
+    ],
+    "summary": "Jesus enters Jerusalem on a donkey as crowds acclaim him with royal and messianic language. The event deliberately echoes prophetic hopes for Zion's king.",
+    "longDescription": "Jesus enters Jerusalem on a donkey as crowds acclaim him with royal and messianic language. The event deliberately echoes prophetic hopes for Zion's king.\n\nThe biblical account (Matthew 21:1-11) gives the controlling details for triumphal entry. The event is recorded as part of Life of Jesus, and its people, place, and sequence are linked here to show how the narrative develops without adding speculative detail.\n\nThis record emphasizes the event's role in the larger biblical timeline. It connects promise, fulfillment, witness, suffering, mission, and hope as the story moves from the ministry of Jesus into the spread of the early church.",
+    "historicalNotes": "Archaeological evidence: First-century sites connected with Mount of Olives and the wider Roman-period Jewish world provide the geographical setting for this event, though the specific episode is known from the biblical text. Scholarly opinion: The chronology is approximate and follows the common placement of Jesus' public ministry and the Acts narrative. Historical reconstruction: The event fits the social, religious, and political environment reflected in the Gospels and Acts.",
+    "crossReferences": [],
+    "prevEvent": "lazarus-raised",
+    "nextEvent": "temple-cleansing"
+  },
+  {
+    "id": "temple-cleansing",
+    "name": "Temple Cleansing",
+    "order": 120,
+    "date": "approx. AD 30",
+    "dateSort": 30.02,
+    "datePrecision": "approximate",
+    "era": "Life of Jesus",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Matthew 21:12-17",
+    "location": {
+      "placeId": "jerusalem",
+      "name": "Jerusalem",
+      "modernCountry": "Israel",
+      "lat": 31.778,
+      "lng": 35.235
+    },
+    "mainPeople": [
+      "jesus"
+    ],
+    "relatedPeople": [
+      "caiaphas",
+      "peter",
+      "john-the-apostle"
+    ],
+    "relatedPlaces": [
+      "jerusalem"
+    ],
+    "relatedEvents": [
+      "triumphal-entry",
+      "olivet-discourse"
+    ],
+    "keywords": [
+      "temple",
+      "cleansing"
+    ],
+    "summary": "Jesus drives merchants and money changers from the temple courts and calls the temple a house of prayer. The action challenges corrupt worship.",
+    "longDescription": "Jesus drives merchants and money changers from the temple courts and calls the temple a house of prayer. The action challenges corrupt worship.\n\nThe biblical account (Matthew 21:12-17) gives the controlling details for temple cleansing. The event is recorded as part of Life of Jesus, and its people, place, and sequence are linked here to show how the narrative develops without adding speculative detail.\n\nThis record emphasizes the event's role in the larger biblical timeline. It connects promise, fulfillment, witness, suffering, mission, and hope as the story moves from the ministry of Jesus into the spread of the early church.",
+    "historicalNotes": "Archaeological evidence: Excavations around the Temple Mount and first-century Jerusalem illuminate the scale of pilgrimage traffic, money exchange, and sacrificial activity. Scholarly opinion: Scholars debate whether John and the Synoptics describe one temple action or separate actions, but the act is consistently tied to Jesus' prophetic confrontation with the temple establishment. Historical reconstruction: The action belongs naturally in Passover week, when public temple symbolism carried maximum force.",
+    "crossReferences": [],
+    "prevEvent": "triumphal-entry",
+    "nextEvent": "olivet-discourse"
+  },
+  {
+    "id": "olivet-discourse",
+    "name": "Olivet Discourse",
+    "order": 121,
+    "date": "approx. AD 30",
+    "dateSort": 30.03,
+    "datePrecision": "approximate",
+    "era": "Life of Jesus",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Matthew 24-25",
+    "location": {
+      "placeId": "mount-of-olives",
+      "name": "Mount of Olives",
+      "modernCountry": "Israel",
+      "lat": 31.778,
+      "lng": 35.243
+    },
+    "mainPeople": [
+      "jesus"
+    ],
+    "relatedPeople": [
+      "peter",
+      "andrew",
+      "james-son-of-zebedee",
+      "john-the-apostle"
+    ],
+    "relatedPlaces": [
+      "mount-of-olives",
+      "jerusalem"
+    ],
+    "relatedEvents": [
+      "temple-cleansing",
+      "last-supper"
+    ],
+    "keywords": [
+      "olivet",
+      "discourse"
+    ],
+    "summary": "On the Mount of Olives Jesus teaches about the temple's destruction, coming distress, watchfulness, and final judgment. The discourse holds together historical judgment and ultimate hope.",
+    "longDescription": "On the Mount of Olives Jesus teaches about the temple's destruction, coming distress, watchfulness, and final judgment. The discourse holds together historical judgment and ultimate hope.\n\nThe biblical account (Matthew 24-25) gives the controlling details for olivet discourse. The event is recorded as part of Life of Jesus, and its people, place, and sequence are linked here to show how the narrative develops without adding speculative detail.\n\nThis record emphasizes the event's role in the larger biblical timeline. It connects promise, fulfillment, witness, suffering, mission, and hope as the story moves from the ministry of Jesus into the spread of the early church.",
+    "historicalNotes": "Archaeological evidence: The massive Herodian stones and later destruction layers around Jerusalem confirm the scale of the temple complex Jesus discussed. Scholarly opinion: Interpreters differ on how much of the discourse refers to AD 70 and how much to final consummation. Historical reconstruction: Jesus' warning would have been heard against the visible grandeur of Herod's temple and later remembered after its destruction.",
+    "crossReferences": [],
+    "prevEvent": "temple-cleansing",
+    "nextEvent": "last-supper"
+  },
+  {
+    "id": "last-supper",
+    "name": "Last Supper",
+    "order": 122,
+    "date": "approx. AD 30",
+    "dateSort": 30.04,
+    "datePrecision": "approximate",
+    "era": "Life of Jesus",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Matthew 26:17-30; John 13-17",
+    "location": {
+      "placeId": "jerusalem",
+      "name": "Jerusalem",
+      "modernCountry": "Israel",
+      "lat": 31.778,
+      "lng": 35.235
+    },
+    "mainPeople": [
+      "jesus",
+      "peter",
+      "john-the-apostle",
+      "judas-iscariot"
+    ],
+    "relatedPeople": [
+      "andrew",
+      "james-son-of-zebedee",
+      "thomas",
+      "philip-the-apostle"
+    ],
+    "relatedPlaces": [
+      "jerusalem"
+    ],
+    "relatedEvents": [
+      "olivet-discourse",
+      "gethsemane"
+    ],
+    "keywords": [
+      "last",
+      "supper"
+    ],
+    "summary": "Jesus shares Passover with his disciples, institutes the bread and cup, washes feet, and teaches about love and the Spirit. Judas departs to betray him.",
+    "longDescription": "Jesus shares Passover with his disciples, institutes the bread and cup, washes feet, and teaches about love and the Spirit. Judas departs to betray him.\n\nThe biblical account (Matthew 26:17-30; John 13-17) gives the controlling details for last supper. The event is recorded as part of Life of Jesus, and its people, place, and sequence are linked here to show how the narrative develops without adding speculative detail.\n\nThis record emphasizes the event's role in the larger biblical timeline. It connects promise, fulfillment, witness, suffering, mission, and hope as the story moves from the ministry of Jesus into the spread of the early church.",
+    "historicalNotes": "Archaeological evidence: First-century sites connected with Jerusalem and the wider Roman-period Jewish world provide the geographical setting for this event, though the specific episode is known from the biblical text. Scholarly opinion: The chronology is approximate and follows the common placement of Jesus' public ministry and the Acts narrative. Historical reconstruction: The event fits the social, religious, and political environment reflected in the Gospels and Acts.",
+    "crossReferences": [],
+    "prevEvent": "olivet-discourse",
+    "nextEvent": "gethsemane"
+  },
+  {
+    "id": "gethsemane",
+    "name": "Gethsemane",
+    "order": 123,
+    "date": "approx. AD 30",
+    "dateSort": 30.05,
+    "datePrecision": "approximate",
+    "era": "Life of Jesus",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Matthew 26:36-56",
+    "location": {
+      "placeId": "mount-of-olives",
+      "name": "Mount of Olives",
+      "modernCountry": "Israel",
+      "lat": 31.778,
+      "lng": 35.243
+    },
+    "mainPeople": [
+      "jesus",
+      "peter",
+      "james-son-of-zebedee",
+      "john-the-apostle",
+      "judas-iscariot"
+    ],
+    "relatedPeople": [
+      "caiaphas"
+    ],
+    "relatedPlaces": [
+      "mount-of-olives",
+      "jerusalem"
+    ],
+    "relatedEvents": [
+      "last-supper",
+      "trials-of-jesus"
+    ],
+    "keywords": [
+      "gethsemane"
+    ],
+    "summary": "Jesus prays in agony in Gethsemane and submits to the Father's will. Judas arrives with an armed party, and Jesus is arrested while his disciples scatter.",
+    "longDescription": "Jesus prays in agony in Gethsemane and submits to the Father's will. Judas arrives with an armed party, and Jesus is arrested while his disciples scatter.\n\nThe biblical account (Matthew 26:36-56) gives the controlling details for gethsemane. The event is recorded as part of Life of Jesus, and its people, place, and sequence are linked here to show how the narrative develops without adding speculative detail.\n\nThis record emphasizes the event's role in the larger biblical timeline. It connects promise, fulfillment, witness, suffering, mission, and hope as the story moves from the ministry of Jesus into the spread of the early church.",
+    "historicalNotes": "Archaeological evidence: First-century sites connected with Mount of Olives and the wider Roman-period Jewish world provide the geographical setting for this event, though the specific episode is known from the biblical text. Scholarly opinion: The chronology is approximate and follows the common placement of Jesus' public ministry and the Acts narrative. Historical reconstruction: The event fits the social, religious, and political environment reflected in the Gospels and Acts.",
+    "crossReferences": [],
+    "prevEvent": "last-supper",
+    "nextEvent": "trials-of-jesus"
+  },
+  {
+    "id": "trials-of-jesus",
+    "name": "Trials of Jesus",
+    "order": 124,
+    "date": "approx. AD 30",
+    "dateSort": 30.06,
+    "datePrecision": "approximate",
+    "era": "Life of Jesus",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Matthew 26:57-27:26",
+    "location": {
+      "placeId": "jerusalem",
+      "name": "Jerusalem",
+      "modernCountry": "Israel",
+      "lat": 31.778,
+      "lng": 35.235
+    },
+    "mainPeople": [
+      "jesus",
+      "pontius-pilate",
+      "caiaphas"
+    ],
+    "relatedPeople": [
+      "peter",
+      "judas-iscariot",
+      "herod-antipas"
+    ],
+    "relatedPlaces": [
+      "jerusalem"
+    ],
+    "relatedEvents": [
+      "gethsemane",
+      "crucifixion"
+    ],
+    "keywords": [
+      "trials",
+      "of",
+      "jesus"
+    ],
+    "summary": "Jesus is examined by Jewish leaders and by Pilate, who sentences him to crucifixion under public pressure. Peter denies Jesus, and Judas' betrayal ends in despair.",
+    "longDescription": "Jesus is examined by Jewish leaders and by Pilate, who sentences him to crucifixion under public pressure. Peter denies Jesus, and Judas' betrayal ends in despair.\n\nThe biblical account (Matthew 26:57-27:26) gives the controlling details for trials of jesus. The event is recorded as part of Life of Jesus, and its people, place, and sequence are linked here to show how the narrative develops without adding speculative detail.\n\nThis record emphasizes the event's role in the larger biblical timeline. It connects promise, fulfillment, witness, suffering, mission, and hope as the story moves from the ministry of Jesus into the spread of the early church.",
+    "historicalNotes": "Archaeological evidence: The Pilate stone anchors Pilate in first-century Judea, and the Caiaphas ossuary supports the historical setting of the priestly leadership named in the Gospels. Scholarly opinion: Details of the hearings are discussed in relation to Jewish and Roman legal practice, but the convergence on Pilate, priestly opposition, and execution is historically significant. Historical reconstruction: The trials move from temple leadership to Roman authority because only Rome could carry out capital punishment in this political setting.",
+    "crossReferences": [],
+    "prevEvent": "gethsemane",
+    "nextEvent": "crucifixion"
+  },
+  {
+    "id": "crucifixion",
+    "name": "Crucifixion of Jesus",
+    "order": 125,
+    "date": "approx. AD 30 or 33 (scholarly opinion divides)",
+    "dateSort": 30.07,
+    "datePrecision": "approximate",
+    "era": "Life of Jesus",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Matthew 27:27-56; John 19",
+    "location": {
+      "placeId": "golgotha",
+      "name": "Golgotha",
+      "modernCountry": "Israel",
+      "lat": 31.778,
+      "lng": 35.229
+    },
+    "mainPeople": [
+      "jesus",
+      "pontius-pilate"
+    ],
+    "relatedPeople": [
+      "mary",
+      "john-the-apostle",
+      "mary-magdalene",
+      "caiaphas"
+    ],
+    "relatedPlaces": [
+      "golgotha",
+      "jerusalem"
+    ],
+    "relatedEvents": [
+      "trials-of-jesus",
+      "burial-of-jesus"
+    ],
+    "keywords": [
+      "crucifixion",
+      "of",
+      "jesus"
+    ],
+    "summary": "Jesus is crucified at Golgotha under Pontius Pilate. The Gospels present his death as the climactic act of obedient suffering, atonement, and kingship.",
+    "longDescription": "Jesus is crucified at Golgotha under Pontius Pilate. The Gospels present his death as the climactic act of obedient suffering, atonement, and kingship.\n\nThe biblical account (Matthew 27:27-56; John 19) gives the controlling details for crucifixion of jesus. The event is recorded as part of Life of Jesus, and its people, place, and sequence are linked here to show how the narrative develops without adding speculative detail.\n\nThis record emphasizes the event's role in the larger biblical timeline. It connects promise, fulfillment, witness, suffering, mission, and hope as the story moves from the ministry of Jesus into the spread of the early church.",
+    "historicalNotes": "Archaeological evidence: The Pilate stone from Caesarea confirms Pontius Pilate as Roman prefect of Judea, and the Caiaphas ossuary is widely discussed as evidence for the high-priestly family known from the passion narratives. Scholarly opinion: The crucifixion is commonly dated either to AD 30 or AD 33, with arguments based on Passover chronology and Gospel sequence; this timeline uses AD 30 for sorting while preserving the divided scholarly date. Historical reconstruction: Roman crucifixion outside Jerusalem fits the political charge and the Gospel presentation of execution under Pilate.",
+    "crossReferences": [],
+    "prevEvent": "trials-of-jesus",
+    "nextEvent": "burial-of-jesus"
+  },
+  {
+    "id": "burial-of-jesus",
+    "name": "Burial of Jesus",
+    "order": 126,
+    "date": "approx. AD 30",
+    "dateSort": 30.08,
+    "datePrecision": "approximate",
+    "era": "Life of Jesus",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Matthew 27:57-66",
+    "location": {
+      "placeId": "jerusalem",
+      "name": "Jerusalem",
+      "modernCountry": "Israel",
+      "lat": 31.778,
+      "lng": 35.235
+    },
+    "mainPeople": [
+      "jesus"
+    ],
+    "relatedPeople": [
+      "mary-magdalene",
+      "pontius-pilate",
+      "caiaphas",
+      "nicodemus"
+    ],
+    "relatedPlaces": [
+      "jerusalem",
+      "golgotha"
+    ],
+    "relatedEvents": [
+      "crucifixion",
+      "resurrection"
+    ],
+    "keywords": [
+      "burial",
+      "of",
+      "jesus"
+    ],
+    "summary": "Jesus' body is placed in a new tomb before the Sabbath. Matthew records guards and a sealed stone, emphasizing the public finality of the burial.",
+    "longDescription": "Jesus' body is placed in a new tomb before the Sabbath. Matthew records guards and a sealed stone, emphasizing the public finality of the burial.\n\nThe biblical account (Matthew 27:57-66) gives the controlling details for burial of jesus. The event is recorded as part of Life of Jesus, and its people, place, and sequence are linked here to show how the narrative develops without adding speculative detail.\n\nThis record emphasizes the event's role in the larger biblical timeline. It connects promise, fulfillment, witness, suffering, mission, and hope as the story moves from the ministry of Jesus into the spread of the early church.",
+    "historicalNotes": "Archaeological evidence: First-century sites connected with Jerusalem and the wider Roman-period Jewish world provide the geographical setting for this event, though the specific episode is known from the biblical text. Scholarly opinion: The chronology is approximate and follows the common placement of Jesus' public ministry and the Acts narrative. Historical reconstruction: The event fits the social, religious, and political environment reflected in the Gospels and Acts.",
+    "crossReferences": [],
+    "prevEvent": "crucifixion",
+    "nextEvent": "resurrection"
+  },
+  {
+    "id": "resurrection",
+    "name": "Resurrection of Jesus",
+    "order": 127,
+    "date": "approx. AD 30",
+    "dateSort": 30.09,
+    "datePrecision": "approximate",
+    "era": "Life of Jesus",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Matthew 28; John 20",
+    "location": {
+      "placeId": "jerusalem",
+      "name": "Jerusalem",
+      "modernCountry": "Israel",
+      "lat": 31.778,
+      "lng": 35.235
+    },
+    "mainPeople": [
+      "jesus",
+      "mary-magdalene",
+      "peter",
+      "john-the-apostle"
+    ],
+    "relatedPeople": [
+      "mary"
+    ],
+    "relatedPlaces": [
+      "jerusalem",
+      "golgotha"
+    ],
+    "relatedEvents": [
+      "burial-of-jesus",
+      "great-commission"
+    ],
+    "keywords": [
+      "resurrection",
+      "of",
+      "jesus"
+    ],
+    "summary": "The tomb is found empty, and Jesus appears alive to Mary Magdalene and the disciples. The resurrection vindicates Jesus and becomes the foundation of apostolic witness.",
+    "longDescription": "The tomb is found empty, and Jesus appears alive to Mary Magdalene and the disciples. The resurrection vindicates Jesus and becomes the foundation of apostolic witness.\n\nThe biblical account (Matthew 28; John 20) gives the controlling details for resurrection of jesus. The event is recorded as part of Life of Jesus, and its people, place, and sequence are linked here to show how the narrative develops without adding speculative detail.\n\nThis record emphasizes the event's role in the larger biblical timeline. It connects promise, fulfillment, witness, suffering, mission, and hope as the story moves from the ministry of Jesus into the spread of the early church.",
+    "historicalNotes": "Archaeological evidence: First-century sites connected with Jerusalem and the wider Roman-period Jewish world provide the geographical setting for this event, though the specific episode is known from the biblical text. Scholarly opinion: The chronology is approximate and follows the common placement of Jesus' public ministry and the Acts narrative. Historical reconstruction: The event fits the social, religious, and political environment reflected in the Gospels and Acts.",
+    "crossReferences": [],
+    "prevEvent": "burial-of-jesus",
+    "nextEvent": "great-commission"
+  },
+  {
+    "id": "great-commission",
+    "name": "Great Commission",
+    "order": 128,
+    "date": "approx. AD 30",
+    "dateSort": 30.1,
+    "datePrecision": "approximate",
+    "era": "Life of Jesus",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Matthew 28:16-20",
+    "location": {
+      "placeId": "sea-of-galilee",
+      "name": "Sea of Galilee",
+      "modernCountry": "Israel",
+      "lat": 32.83,
+      "lng": 35.59
+    },
+    "mainPeople": [
+      "jesus",
+      "peter",
+      "john-the-apostle"
+    ],
+    "relatedPeople": [
+      "andrew",
+      "james-son-of-zebedee",
+      "matthew",
+      "thomas"
+    ],
+    "relatedPlaces": [
+      "sea-of-galilee"
+    ],
+    "relatedEvents": [
+      "resurrection",
+      "ascension"
+    ],
+    "keywords": [
+      "great",
+      "commission"
+    ],
+    "summary": "The risen Jesus commissions his disciples to make disciples of all nations. He commands baptism, teaching, and confidence in his continuing presence.",
+    "longDescription": "The risen Jesus commissions his disciples to make disciples of all nations. He commands baptism, teaching, and confidence in his continuing presence.\n\nThe biblical account (Matthew 28:16-20) gives the controlling details for great commission. The event is recorded as part of Life of Jesus, and its people, place, and sequence are linked here to show how the narrative develops without adding speculative detail.\n\nThis record emphasizes the event's role in the larger biblical timeline. It connects promise, fulfillment, witness, suffering, mission, and hope as the story moves from the ministry of Jesus into the spread of the early church.",
+    "historicalNotes": "Archaeological evidence: First-century sites connected with Sea of Galilee and the wider Roman-period Jewish world provide the geographical setting for this event, though the specific episode is known from the biblical text. Scholarly opinion: The chronology is approximate and follows the common placement of Jesus' public ministry and the Acts narrative. Historical reconstruction: The event fits the social, religious, and political environment reflected in the Gospels and Acts.",
+    "crossReferences": [],
+    "prevEvent": "resurrection",
+    "nextEvent": "ascension"
+  },
+  {
+    "id": "ascension",
+    "name": "Ascension",
+    "order": 129,
+    "date": "approx. AD 30",
+    "dateSort": 30.11,
+    "datePrecision": "approximate",
+    "era": "Life of Jesus",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Acts 1:1-11",
+    "location": {
+      "placeId": "mount-of-olives",
+      "name": "Mount of Olives",
+      "modernCountry": "Israel",
+      "lat": 31.778,
+      "lng": 35.243
+    },
+    "mainPeople": [
+      "jesus",
+      "peter",
+      "john-the-apostle"
+    ],
+    "relatedPeople": [
+      "andrew",
+      "james-son-of-zebedee",
+      "mary"
+    ],
+    "relatedPlaces": [
+      "mount-of-olives",
+      "jerusalem"
+    ],
+    "relatedEvents": [
+      "great-commission",
+      "pentecost"
+    ],
+    "keywords": [
+      "ascension"
+    ],
+    "summary": "Jesus is taken up from the Mount of Olives after promising the Spirit. The disciples are told that he will return in the same manner.",
+    "longDescription": "Jesus is taken up from the Mount of Olives after promising the Spirit. The disciples are told that he will return in the same manner.\n\nThe biblical account (Acts 1:1-11) gives the controlling details for ascension. The event is recorded as part of Life of Jesus, and its people, place, and sequence are linked here to show how the narrative develops without adding speculative detail.\n\nThis record emphasizes the event's role in the larger biblical timeline. It connects promise, fulfillment, witness, suffering, mission, and hope as the story moves from the ministry of Jesus into the spread of the early church.",
+    "historicalNotes": "Archaeological evidence: First-century sites connected with Mount of Olives and the wider Roman-period Jewish world provide the geographical setting for this event, though the specific episode is known from the biblical text. Scholarly opinion: The chronology is approximate and follows the common placement of Jesus' public ministry and the Acts narrative. Historical reconstruction: The event fits the social, religious, and political environment reflected in the Gospels and Acts.",
+    "crossReferences": [],
+    "prevEvent": "great-commission",
+    "nextEvent": "pentecost"
+  },
+  {
+    "id": "pentecost",
+    "name": "Pentecost",
+    "order": 130,
+    "date": "approx. AD 30",
+    "dateSort": 30.2,
+    "datePrecision": "approximate",
+    "era": "The Early Church",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Acts 2",
+    "location": {
+      "placeId": "jerusalem",
+      "name": "Jerusalem",
+      "modernCountry": "Israel",
+      "lat": 31.778,
+      "lng": 35.235
+    },
+    "mainPeople": [
+      "peter",
+      "john-the-apostle"
+    ],
+    "relatedPeople": [
+      "mary",
+      "matthias",
+      "jesus",
+      "god"
+    ],
+    "relatedPlaces": [
+      "jerusalem"
+    ],
+    "relatedEvents": [
+      "ascension",
+      "early-church-in-jerusalem"
+    ],
+    "keywords": [
+      "pentecost"
+    ],
+    "summary": "The Holy Spirit is poured out on the gathered believers at Pentecost. Peter preaches that Jesus has been raised and exalted, and about three thousand are added.",
+    "longDescription": "The Holy Spirit is poured out on the gathered believers at Pentecost. Peter preaches that Jesus has been raised and exalted, and about three thousand are added.\n\nThe biblical account (Acts 2) gives the controlling details for pentecost. The event is recorded as part of The Early Church, and its people, place, and sequence are linked here to show how the narrative develops without adding speculative detail.\n\nThis record emphasizes the event's role in the larger biblical timeline. It connects promise, fulfillment, witness, suffering, mission, and hope as the story moves from the ministry of Jesus into the spread of the early church.",
+    "historicalNotes": "Archaeological evidence: First-century sites connected with Jerusalem and the wider Roman-period Jewish world provide the geographical setting for this event, though the specific episode is known from the biblical text. Scholarly opinion: The chronology is approximate and follows the common placement of Jesus' public ministry and the Acts narrative. Historical reconstruction: The event fits the social, religious, and political environment reflected in the Gospels and Acts.",
+    "crossReferences": [],
+    "prevEvent": "ascension",
+    "nextEvent": "early-church-in-jerusalem"
+  },
+  {
+    "id": "early-church-in-jerusalem",
+    "name": "Early Church in Jerusalem",
+    "order": 131,
+    "date": "approx. AD 30",
+    "dateSort": 30.3,
+    "datePrecision": "approximate",
+    "era": "The Early Church",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Acts 2:42-47; 4:32-37",
+    "location": {
+      "placeId": "jerusalem",
+      "name": "Jerusalem",
+      "modernCountry": "Israel",
+      "lat": 31.778,
+      "lng": 35.235
+    },
+    "mainPeople": [
+      "peter",
+      "john-the-apostle"
+    ],
+    "relatedPeople": [
+      "mary",
+      "matthias",
+      "barnabas",
+      "james-brother-of-jesus"
+    ],
+    "relatedPlaces": [
+      "jerusalem"
+    ],
+    "relatedEvents": [
+      "pentecost",
+      "stephen-martyred"
+    ],
+    "keywords": [
+      "early",
+      "church",
+      "in",
+      "jerusalem"
+    ],
+    "summary": "The Jerusalem believers devote themselves to apostolic teaching, fellowship, breaking bread, and prayer. Their shared life and public witness draw attention in the city.",
+    "longDescription": "The Jerusalem believers devote themselves to apostolic teaching, fellowship, breaking bread, and prayer. Their shared life and public witness draw attention in the city.\n\nThe biblical account (Acts 2:42-47; 4:32-37) gives the controlling details for early church in jerusalem. The event is recorded as part of The Early Church, and its people, place, and sequence are linked here to show how the narrative develops without adding speculative detail.\n\nThis record emphasizes the event's role in the larger biblical timeline. It connects promise, fulfillment, witness, suffering, mission, and hope as the story moves from the ministry of Jesus into the spread of the early church.",
+    "historicalNotes": "Archaeological evidence: First-century sites connected with Jerusalem and the wider Roman-period Jewish world provide the geographical setting for this event, though the specific episode is known from the biblical text. Scholarly opinion: The chronology is approximate and follows the common placement of Jesus' public ministry and the Acts narrative. Historical reconstruction: The event fits the social, religious, and political environment reflected in the Gospels and Acts.",
+    "crossReferences": [],
+    "prevEvent": "pentecost",
+    "nextEvent": "stephen-martyred"
+  },
+  {
+    "id": "stephen-martyred",
+    "name": "Stephen Martyred",
+    "order": 132,
+    "date": "approx. AD 34",
+    "dateSort": 34,
+    "datePrecision": "approximate",
+    "era": "The Early Church",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Acts 6-7",
+    "location": {
+      "placeId": "jerusalem",
+      "name": "Jerusalem",
+      "modernCountry": "Israel",
+      "lat": 31.778,
+      "lng": 35.235
+    },
+    "mainPeople": [
+      "stephen"
+    ],
+    "relatedPeople": [
+      "paul",
+      "peter",
+      "john-the-apostle"
+    ],
+    "relatedPlaces": [
+      "jerusalem"
+    ],
+    "relatedEvents": [
+      "early-church-in-jerusalem",
+      "philip-and-the-ethiopian"
+    ],
+    "keywords": [
+      "stephen",
+      "martyred"
+    ],
+    "summary": "Stephen bears witness before the council and is killed after recounting Israel's history and accusing the leaders of resisting the Spirit. Saul approves of his death.",
+    "longDescription": "Stephen bears witness before the council and is killed after recounting Israel's history and accusing the leaders of resisting the Spirit. Saul approves of his death.\n\nThe biblical account (Acts 6-7) gives the controlling details for stephen martyred. The event is recorded as part of The Early Church, and its people, place, and sequence are linked here to show how the narrative develops without adding speculative detail.\n\nThis record emphasizes the event's role in the larger biblical timeline. It connects promise, fulfillment, witness, suffering, mission, and hope as the story moves from the ministry of Jesus into the spread of the early church.",
+    "historicalNotes": "Archaeological evidence: First-century sites connected with Jerusalem and the wider Roman-period Jewish world provide the geographical setting for this event, though the specific episode is known from the biblical text. Scholarly opinion: The chronology is approximate and follows the common placement of Jesus' public ministry and the Acts narrative. Historical reconstruction: The event fits the social, religious, and political environment reflected in the Gospels and Acts.",
+    "crossReferences": [],
+    "prevEvent": "early-church-in-jerusalem",
+    "nextEvent": "philip-and-the-ethiopian"
+  },
+  {
+    "id": "philip-and-the-ethiopian",
+    "name": "Philip and the Ethiopian",
+    "order": 133,
+    "date": "approx. AD 34",
+    "dateSort": 34.1,
+    "datePrecision": "approximate",
+    "era": "The Early Church",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Acts 8:26-40",
+    "location": {
+      "placeId": "gaza",
+      "name": "Gaza",
+      "modernCountry": "Palestinian Territories",
+      "lat": 31.5,
+      "lng": 34.47
+    },
+    "mainPeople": [
+      "philip-the-evangelist"
+    ],
+    "relatedPeople": [
+      "jesus"
+    ],
+    "relatedPlaces": [
+      "gaza",
+      "jerusalem"
+    ],
+    "relatedEvents": [
+      "stephen-martyred",
+      "sauls-conversion"
+    ],
+    "keywords": [
+      "philip",
+      "and",
+      "the",
+      "ethiopian"
+    ],
+    "summary": "Philip explains Isaiah to an Ethiopian official traveling from Jerusalem. The man believes, is baptized, and carries the witness of Jesus onward.",
+    "longDescription": "Philip explains Isaiah to an Ethiopian official traveling from Jerusalem. The man believes, is baptized, and carries the witness of Jesus onward.\n\nThe biblical account (Acts 8:26-40) gives the controlling details for philip and the ethiopian. The event is recorded as part of The Early Church, and its people, place, and sequence are linked here to show how the narrative develops without adding speculative detail.\n\nThis record emphasizes the event's role in the larger biblical timeline. It connects promise, fulfillment, witness, suffering, mission, and hope as the story moves from the ministry of Jesus into the spread of the early church.",
+    "historicalNotes": "Archaeological evidence: First-century sites connected with Gaza and the wider Roman-period Jewish world provide the geographical setting for this event, though the specific episode is known from the biblical text. Scholarly opinion: The chronology is approximate and follows the common placement of Jesus' public ministry and the Acts narrative. Historical reconstruction: The event fits the social, religious, and political environment reflected in the Gospels and Acts.",
+    "crossReferences": [],
+    "prevEvent": "stephen-martyred",
+    "nextEvent": "sauls-conversion"
+  },
+  {
+    "id": "sauls-conversion",
+    "name": "Saul's Conversion",
+    "order": 134,
+    "date": "approx. AD 34",
+    "dateSort": 34.2,
+    "datePrecision": "approximate",
+    "era": "The Early Church",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Acts 9:1-19",
+    "location": {
+      "placeId": "damascus",
+      "name": "Damascus",
+      "modernCountry": "Syria",
+      "lat": 33.51,
+      "lng": 36.29
+    },
+    "mainPeople": [
+      "paul",
+      "jesus"
+    ],
+    "relatedPeople": [
+      "peter",
+      "barnabas"
+    ],
+    "relatedPlaces": [
+      "damascus",
+      "jerusalem",
+      "tarsus"
+    ],
+    "relatedEvents": [
+      "philip-and-the-ethiopian",
+      "peter-and-cornelius"
+    ],
+    "keywords": [
+      "sauls",
+      "conversion"
+    ],
+    "summary": "Saul encounters the risen Jesus on the road to Damascus and is transformed from persecutor to witness. His conversion becomes central to the mission to the nations.",
+    "longDescription": "Saul encounters the risen Jesus on the road to Damascus and is transformed from persecutor to witness. His conversion becomes central to the mission to the nations.\n\nThe biblical account (Acts 9:1-19) gives the controlling details for saul's conversion. The event is recorded as part of The Early Church, and its people, place, and sequence are linked here to show how the narrative develops without adding speculative detail.\n\nThis record emphasizes the event's role in the larger biblical timeline. It connects promise, fulfillment, witness, suffering, mission, and hope as the story moves from the ministry of Jesus into the spread of the early church.",
+    "historicalNotes": "Archaeological evidence: First-century sites connected with Damascus and the wider Roman-period Jewish world provide the geographical setting for this event, though the specific episode is known from the biblical text. Scholarly opinion: The chronology is approximate and follows the common placement of Jesus' public ministry and the Acts narrative. Historical reconstruction: The event fits the social, religious, and political environment reflected in the Gospels and Acts.",
+    "crossReferences": [],
+    "prevEvent": "philip-and-the-ethiopian",
+    "nextEvent": "peter-and-cornelius"
+  },
+  {
+    "id": "peter-and-cornelius",
+    "name": "Peter and Cornelius",
+    "order": 135,
+    "date": "approx. AD 40",
+    "dateSort": 40,
+    "datePrecision": "approximate",
+    "era": "The Early Church",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Acts 10",
+    "location": {
+      "placeId": "caesarea",
+      "name": "Caesarea Maritima",
+      "modernCountry": "Israel",
+      "lat": 32.5,
+      "lng": 34.89
+    },
+    "mainPeople": [
+      "peter",
+      "cornelius"
+    ],
+    "relatedPeople": [
+      "jesus",
+      "god"
+    ],
+    "relatedPlaces": [
+      "caesarea",
+      "joppa"
+    ],
+    "relatedEvents": [
+      "sauls-conversion",
+      "church-at-antioch"
+    ],
+    "keywords": [
+      "peter",
+      "and",
+      "cornelius"
+    ],
+    "summary": "Peter visits Cornelius in Caesarea after visions prepare both men. The Spirit falls on Gentiles, showing that God receives them through faith in Jesus.",
+    "longDescription": "Peter visits Cornelius in Caesarea after visions prepare both men. The Spirit falls on Gentiles, showing that God receives them through faith in Jesus.\n\nThe biblical account (Acts 10) gives the controlling details for peter and cornelius. The event is recorded as part of The Early Church, and its people, place, and sequence are linked here to show how the narrative develops without adding speculative detail.\n\nThis record emphasizes the event's role in the larger biblical timeline. It connects promise, fulfillment, witness, suffering, mission, and hope as the story moves from the ministry of Jesus into the spread of the early church.",
+    "historicalNotes": "Archaeological evidence: Caesarea Maritima is well attested as the Roman administrative center of Judea, the same setting that produced the Pilate inscription. Scholarly opinion: Acts 10 is widely recognized as a decisive narrative for Gentile inclusion in Luke's theology. Historical reconstruction: A Roman centurion stationed at Caesarea fits the city's military and administrative role.",
+    "crossReferences": [],
+    "prevEvent": "sauls-conversion",
+    "nextEvent": "church-at-antioch"
+  },
+  {
+    "id": "church-at-antioch",
+    "name": "Church at Antioch",
+    "order": 136,
+    "date": "approx. AD 43",
+    "dateSort": 43,
+    "datePrecision": "approximate",
+    "era": "The Early Church",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Acts 11:19-30",
+    "location": {
+      "placeId": "antioch",
+      "name": "Antioch",
+      "modernCountry": "Turkey",
+      "lat": 36.2,
+      "lng": 36.16
+    },
+    "mainPeople": [
+      "barnabas",
+      "paul"
+    ],
+    "relatedPeople": [
+      "peter",
+      "james-brother-of-jesus"
+    ],
+    "relatedPlaces": [
+      "antioch",
+      "jerusalem",
+      "tarsus"
+    ],
+    "relatedEvents": [
+      "peter-and-cornelius",
+      "first-missionary-journey"
+    ],
+    "keywords": [
+      "church",
+      "at",
+      "antioch"
+    ],
+    "summary": "Believers scattered by persecution preach in Antioch, and a mixed Jewish-Gentile church grows there. Barnabas brings Saul from Tarsus, and the disciples are first called Christians.",
+    "longDescription": "Believers scattered by persecution preach in Antioch, and a mixed Jewish-Gentile church grows there. Barnabas brings Saul from Tarsus, and the disciples are first called Christians.\n\nThe biblical account (Acts 11:19-30) gives the controlling details for church at antioch. The event is recorded as part of The Early Church, and its people, place, and sequence are linked here to show how the narrative develops without adding speculative detail.\n\nThis record emphasizes the event's role in the larger biblical timeline. It connects promise, fulfillment, witness, suffering, mission, and hope as the story moves from the ministry of Jesus into the spread of the early church.",
+    "historicalNotes": "Archaeological evidence: First-century sites connected with Antioch and the wider Roman-period Jewish world provide the geographical setting for this event, though the specific episode is known from the biblical text. Scholarly opinion: The chronology is approximate and follows the common placement of Jesus' public ministry and the Acts narrative. Historical reconstruction: The event fits the social, religious, and political environment reflected in the Gospels and Acts.",
+    "crossReferences": [],
+    "prevEvent": "peter-and-cornelius",
+    "nextEvent": "first-missionary-journey"
+  },
+  {
+    "id": "first-missionary-journey",
+    "name": "First Missionary Journey",
+    "order": 137,
+    "date": "approx. AD 47",
+    "dateSort": 47,
+    "datePrecision": "approximate",
+    "era": "The Early Church",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Acts 13-14",
+    "location": {
+      "placeId": "cyprus",
+      "name": "Cyprus",
+      "modernCountry": "Cyprus",
+      "lat": 35.13,
+      "lng": 33.43
+    },
+    "mainPeople": [
+      "paul",
+      "barnabas",
+      "john-mark"
+    ],
+    "relatedPeople": [
+      "timothy"
+    ],
+    "relatedPlaces": [
+      "antioch",
+      "cyprus",
+      "lystra"
+    ],
+    "relatedEvents": [
+      "church-at-antioch",
+      "jerusalem-council"
+    ],
+    "keywords": [
+      "first",
+      "missionary",
+      "journey"
+    ],
+    "summary": "The Antioch church sends Barnabas and Saul on mission through Cyprus and southern Galatia. They preach to Jews and Gentiles, appoint elders, and report what God has done.",
+    "longDescription": "The Antioch church sends Barnabas and Saul on mission through Cyprus and southern Galatia. They preach to Jews and Gentiles, appoint elders, and report what God has done.\n\nThe biblical account (Acts 13-14) gives the controlling details for first missionary journey. The event is recorded as part of The Early Church, and its people, place, and sequence are linked here to show how the narrative develops without adding speculative detail.\n\nThis record emphasizes the event's role in the larger biblical timeline. It connects promise, fulfillment, witness, suffering, mission, and hope as the story moves from the ministry of Jesus into the spread of the early church.",
+    "historicalNotes": "Archaeological evidence: First-century sites connected with Cyprus and the wider Roman-period Jewish world provide the geographical setting for this event, though the specific episode is known from the biblical text. Scholarly opinion: The chronology is approximate and follows the common placement of Jesus' public ministry and the Acts narrative. Historical reconstruction: The event fits the social, religious, and political environment reflected in the Gospels and Acts.",
+    "crossReferences": [],
+    "prevEvent": "church-at-antioch",
+    "nextEvent": "jerusalem-council"
+  },
+  {
+    "id": "jerusalem-council",
+    "name": "Jerusalem Council",
+    "order": 138,
+    "date": "approx. AD 49",
+    "dateSort": 49,
+    "datePrecision": "approximate",
+    "era": "The Early Church",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Acts 15",
+    "location": {
+      "placeId": "jerusalem",
+      "name": "Jerusalem",
+      "modernCountry": "Israel",
+      "lat": 31.778,
+      "lng": 35.235
+    },
+    "mainPeople": [
+      "peter",
+      "paul",
+      "barnabas",
+      "james-brother-of-jesus"
+    ],
+    "relatedPeople": [
+      "titus",
+      "silas"
+    ],
+    "relatedPlaces": [
+      "jerusalem",
+      "antioch"
+    ],
+    "relatedEvents": [
+      "first-missionary-journey",
+      "second-missionary-journey"
+    ],
+    "keywords": [
+      "jerusalem",
+      "council"
+    ],
+    "summary": "The apostles and elders meet in Jerusalem to address whether Gentile believers must keep the law of Moses. The council affirms salvation by grace and sends a pastoral letter.",
+    "longDescription": "The apostles and elders meet in Jerusalem to address whether Gentile believers must keep the law of Moses. The council affirms salvation by grace and sends a pastoral letter.\n\nThe biblical account (Acts 15) gives the controlling details for jerusalem council. The event is recorded as part of The Early Church, and its people, place, and sequence are linked here to show how the narrative develops without adding speculative detail.\n\nThis record emphasizes the event's role in the larger biblical timeline. It connects promise, fulfillment, witness, suffering, mission, and hope as the story moves from the ministry of Jesus into the spread of the early church.",
+    "historicalNotes": "Archaeological evidence: First-century sites connected with Jerusalem and the wider Roman-period Jewish world provide the geographical setting for this event, though the specific episode is known from the biblical text. Scholarly opinion: The chronology is approximate and follows the common placement of Jesus' public ministry and the Acts narrative. Historical reconstruction: The event fits the social, religious, and political environment reflected in the Gospels and Acts.",
+    "crossReferences": [],
+    "prevEvent": "first-missionary-journey",
+    "nextEvent": "second-missionary-journey"
+  },
+  {
+    "id": "second-missionary-journey",
+    "name": "Second Missionary Journey",
+    "order": 139,
+    "date": "approx. AD 50-52",
+    "dateSort": 50,
+    "datePrecision": "approximate",
+    "era": "The Early Church",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Acts 16-18",
+    "location": {
+      "placeId": "philippi",
+      "name": "Philippi",
+      "modernCountry": "Greece",
+      "lat": 41.01,
+      "lng": 24.29
+    },
+    "mainPeople": [
+      "paul",
+      "silas",
+      "timothy",
+      "luke"
+    ],
+    "relatedPeople": [
+      "lydia",
+      "aquila",
+      "priscilla",
+      "apollos"
+    ],
+    "relatedPlaces": [
+      "philippi",
+      "thessalonica",
+      "berea",
+      "athens",
+      "corinth"
+    ],
+    "relatedEvents": [
+      "jerusalem-council",
+      "third-missionary-journey"
+    ],
+    "keywords": [
+      "second",
+      "missionary",
+      "journey"
+    ],
+    "summary": "Paul and Silas revisit churches and carry the gospel into Macedonia and Achaia. The journey includes Philippi, Thessalonica, Berea, Athens, and Corinth.",
+    "longDescription": "Paul and Silas revisit churches and carry the gospel into Macedonia and Achaia. The journey includes Philippi, Thessalonica, Berea, Athens, and Corinth.\n\nThe biblical account (Acts 16-18) gives the controlling details for second missionary journey. The event is recorded as part of The Early Church, and its people, place, and sequence are linked here to show how the narrative develops without adding speculative detail.\n\nThis record emphasizes the event's role in the larger biblical timeline. It connects promise, fulfillment, witness, suffering, mission, and hope as the story moves from the ministry of Jesus into the spread of the early church.",
+    "historicalNotes": "Archaeological evidence: The Delphi/Gallio inscription anchors Gallio's proconsulship in Achaia around AD 51-52, giving a key chronological fixed point for Acts 18 in Corinth. Scholarly opinion: This is one of the strongest external anchors for Pauline chronology. Historical reconstruction: Paul's Corinth ministry is therefore placed around AD 50-52, with surrounding travel dated accordingly.",
+    "crossReferences": [],
+    "prevEvent": "jerusalem-council",
+    "nextEvent": "third-missionary-journey"
+  },
+  {
+    "id": "third-missionary-journey",
+    "name": "Third Missionary Journey",
+    "order": 140,
+    "date": "approx. AD 53-57",
+    "dateSort": 53,
+    "datePrecision": "approximate",
+    "era": "The Early Church",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Acts 18:23-21:16",
+    "location": {
+      "placeId": "ephesus",
+      "name": "Ephesus",
+      "modernCountry": "Turkey",
+      "lat": 37.94,
+      "lng": 27.34
+    },
+    "mainPeople": [
+      "paul",
+      "timothy",
+      "luke"
+    ],
+    "relatedPeople": [
+      "apollos",
+      "priscilla",
+      "aquila"
+    ],
+    "relatedPlaces": [
+      "ephesus",
+      "corinth",
+      "jerusalem"
+    ],
+    "relatedEvents": [
+      "second-missionary-journey",
+      "pauls-arrest-in-jerusalem"
+    ],
+    "keywords": [
+      "third",
+      "missionary",
+      "journey"
+    ],
+    "summary": "Paul strengthens disciples and spends extended time in Ephesus, where the word spreads widely. The mission provokes opposition tied to idolatry and local economic interests.",
+    "longDescription": "Paul strengthens disciples and spends extended time in Ephesus, where the word spreads widely. The mission provokes opposition tied to idolatry and local economic interests.\n\nThe biblical account (Acts 18:23-21:16) gives the controlling details for third missionary journey. The event is recorded as part of The Early Church, and its people, place, and sequence are linked here to show how the narrative develops without adding speculative detail.\n\nThis record emphasizes the event's role in the larger biblical timeline. It connects promise, fulfillment, witness, suffering, mission, and hope as the story moves from the ministry of Jesus into the spread of the early church.",
+    "historicalNotes": "Archaeological evidence: First-century sites connected with Ephesus and the wider Roman-period Jewish world provide the geographical setting for this event, though the specific episode is known from the biblical text. Scholarly opinion: The chronology is approximate and follows the common placement of Jesus' public ministry and the Acts narrative. Historical reconstruction: The event fits the social, religious, and political environment reflected in the Gospels and Acts.",
+    "crossReferences": [],
+    "prevEvent": "second-missionary-journey",
+    "nextEvent": "pauls-arrest-in-jerusalem"
+  },
+  {
+    "id": "pauls-arrest-in-jerusalem",
+    "name": "Paul's Arrest in Jerusalem",
+    "order": 141,
+    "date": "approx. AD 57",
+    "dateSort": 57,
+    "datePrecision": "approximate",
+    "era": "The Early Church",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Acts 21-26",
+    "location": {
+      "placeId": "jerusalem",
+      "name": "Jerusalem",
+      "modernCountry": "Israel",
+      "lat": 31.778,
+      "lng": 35.235
+    },
+    "mainPeople": [
+      "paul"
+    ],
+    "relatedPeople": [
+      "james-brother-of-jesus",
+      "luke"
+    ],
+    "relatedPlaces": [
+      "jerusalem",
+      "caesarea"
+    ],
+    "relatedEvents": [
+      "third-missionary-journey",
+      "voyage-and-shipwreck"
+    ],
+    "keywords": [
+      "pauls",
+      "arrest",
+      "in",
+      "jerusalem"
+    ],
+    "summary": "Paul is arrested after a disturbance in the temple and gives testimony before Jewish and Roman authorities. His appeal to Caesar moves the narrative toward Rome.",
+    "longDescription": "Paul is arrested after a disturbance in the temple and gives testimony before Jewish and Roman authorities. His appeal to Caesar moves the narrative toward Rome.\n\nThe biblical account (Acts 21-26) gives the controlling details for paul's arrest in jerusalem. The event is recorded as part of The Early Church, and its people, place, and sequence are linked here to show how the narrative develops without adding speculative detail.\n\nThis record emphasizes the event's role in the larger biblical timeline. It connects promise, fulfillment, witness, suffering, mission, and hope as the story moves from the ministry of Jesus into the spread of the early church.",
+    "historicalNotes": "Archaeological evidence: First-century sites connected with Jerusalem and the wider Roman-period Jewish world provide the geographical setting for this event, though the specific episode is known from the biblical text. Scholarly opinion: The chronology is approximate and follows the common placement of Jesus' public ministry and the Acts narrative. Historical reconstruction: The event fits the social, religious, and political environment reflected in the Gospels and Acts.",
+    "crossReferences": [],
+    "prevEvent": "third-missionary-journey",
+    "nextEvent": "voyage-and-shipwreck"
+  },
+  {
+    "id": "voyage-and-shipwreck",
+    "name": "Voyage and Shipwreck",
+    "order": 142,
+    "date": "approx. AD 59",
+    "dateSort": 59,
+    "datePrecision": "approximate",
+    "era": "The Early Church",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Acts 27-28:10",
+    "location": {
+      "placeId": "malta",
+      "name": "Malta",
+      "modernCountry": "Malta",
+      "lat": 35.94,
+      "lng": 14.38
+    },
+    "mainPeople": [
+      "paul",
+      "luke"
+    ],
+    "relatedPeople": [
+      "jesus"
+    ],
+    "relatedPlaces": [
+      "caesarea",
+      "malta",
+      "rome"
+    ],
+    "relatedEvents": [
+      "pauls-arrest-in-jerusalem",
+      "pauls-roman-imprisonment"
+    ],
+    "keywords": [
+      "voyage",
+      "and",
+      "shipwreck"
+    ],
+    "summary": "Paul sails for Rome under guard and survives a severe storm and shipwreck on Malta. Luke presents God's preservation of Paul as part of promised witness before Caesar.",
+    "longDescription": "Paul sails for Rome under guard and survives a severe storm and shipwreck on Malta. Luke presents God's preservation of Paul as part of promised witness before Caesar.\n\nThe biblical account (Acts 27-28:10) gives the controlling details for voyage and shipwreck. The event is recorded as part of The Early Church, and its people, place, and sequence are linked here to show how the narrative develops without adding speculative detail.\n\nThis record emphasizes the event's role in the larger biblical timeline. It connects promise, fulfillment, witness, suffering, mission, and hope as the story moves from the ministry of Jesus into the spread of the early church.",
+    "historicalNotes": "Archaeological evidence: First-century sites connected with Malta and the wider Roman-period Jewish world provide the geographical setting for this event, though the specific episode is known from the biblical text. Scholarly opinion: The chronology is approximate and follows the common placement of Jesus' public ministry and the Acts narrative. Historical reconstruction: The event fits the social, religious, and political environment reflected in the Gospels and Acts.",
+    "crossReferences": [],
+    "prevEvent": "pauls-arrest-in-jerusalem",
+    "nextEvent": "pauls-roman-imprisonment"
+  },
+  {
+    "id": "pauls-roman-imprisonment",
+    "name": "Paul's Roman Imprisonment",
+    "order": 143,
+    "date": "approx. AD 60-62",
+    "dateSort": 60,
+    "datePrecision": "approximate",
+    "era": "The Early Church",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Acts 28:11-31",
+    "location": {
+      "placeId": "rome",
+      "name": "Rome",
+      "modernCountry": "Italy",
+      "lat": 41.89,
+      "lng": 12.49
+    },
+    "mainPeople": [
+      "paul",
+      "luke"
+    ],
+    "relatedPeople": [
+      "timothy",
+      "john-mark",
+      "jesus"
+    ],
+    "relatedPlaces": [
+      "rome",
+      "malta"
+    ],
+    "relatedEvents": [
+      "voyage-and-shipwreck",
+      "destruction-of-the-temple"
+    ],
+    "keywords": [
+      "pauls",
+      "roman",
+      "imprisonment"
+    ],
+    "summary": "Paul lives under house arrest in Rome and proclaims the kingdom of God and the Lord Jesus Christ. Acts closes with the gospel reaching the imperial capital.",
+    "longDescription": "Paul lives under house arrest in Rome and proclaims the kingdom of God and the Lord Jesus Christ. Acts closes with the gospel reaching the imperial capital.\n\nThe biblical account (Acts 28:11-31) gives the controlling details for paul's roman imprisonment. The event is recorded as part of The Early Church, and its people, place, and sequence are linked here to show how the narrative develops without adding speculative detail.\n\nThis record emphasizes the event's role in the larger biblical timeline. It connects promise, fulfillment, witness, suffering, mission, and hope as the story moves from the ministry of Jesus into the spread of the early church.",
+    "historicalNotes": "Archaeological evidence: Rome's first-century Jewish community, roads, ports, and imperial administration fit Acts' closing setting. Scholarly opinion: Acts ends before narrating Paul's death, so the house-arrest period is usually dated around AD 60-62. Historical reconstruction: Paul's appeal to Caesar explains the transfer from provincial custody to supervised residence in Rome.",
+    "crossReferences": [],
+    "prevEvent": "voyage-and-shipwreck",
+    "nextEvent": "destruction-of-the-temple"
+  },
+  {
+    "id": "destruction-of-the-temple",
+    "name": "Destruction of the Temple",
+    "order": 144,
+    "date": "AD 70",
+    "dateSort": 70,
+    "datePrecision": "historical",
+    "era": "The Early Church",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "(AD 70; prophesied Matthew 24:2)",
+    "location": {
+      "placeId": "jerusalem",
+      "name": "Jerusalem",
+      "modernCountry": "Israel",
+      "lat": 31.778,
+      "lng": 35.235
+    },
+    "mainPeople": [
+      "jesus"
+    ],
+    "relatedPeople": [
+      "john-the-apostle"
+    ],
+    "relatedPlaces": [
+      "jerusalem"
+    ],
+    "relatedEvents": [
+      "pauls-roman-imprisonment",
+      "john-exiled-on-patmos"
+    ],
+    "keywords": [
+      "destruction",
+      "of",
+      "the",
+      "temple"
+    ],
+    "summary": "Roman forces destroy Jerusalem and the Second Temple in AD 70 after the Jewish revolt. The event is historical and is included because Jesus explicitly foretold the temple's destruction.",
+    "longDescription": "Roman forces destroy Jerusalem and the Second Temple in AD 70 after the Jewish revolt. The event is historical and is included because Jesus explicitly foretold the temple's destruction.\n\nThe biblical account ((AD 70; prophesied Matthew 24:2)) gives the controlling details for destruction of the temple. The event is recorded as part of The Early Church, and its people, place, and sequence are linked here to show how the narrative develops without adding speculative detail.\n\nThis record emphasizes the event's role in the larger biblical timeline. It connects promise, fulfillment, witness, suffering, mission, and hope as the story moves from the ministry of Jesus into the spread of the early church.",
+    "historicalNotes": "Archaeological evidence: Burn layers, fallen stones, and excavated destruction debris in Jerusalem correspond to the Roman destruction of AD 70. Scholarly opinion: Josephus gives the fullest Jewish account of the siege, while Tacitus independently confirms Roman operations in Judea and the destruction context. Historical reconstruction: Titus' forces captured Jerusalem after a brutal siege, destroyed the temple, and permanently changed Jewish worship and the setting of early Christianity.",
+    "crossReferences": [],
+    "prevEvent": "pauls-roman-imprisonment",
+    "nextEvent": "john-exiled-on-patmos"
+  },
+  {
+    "id": "john-exiled-on-patmos",
+    "name": "John Exiled on Patmos",
+    "order": 145,
+    "date": "approx. AD 95",
+    "dateSort": 95,
+    "datePrecision": "approximate",
+    "era": "The Early Church",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Revelation 1:9",
+    "location": {
+      "placeId": "patmos",
+      "name": "Patmos",
+      "modernCountry": "Greece",
+      "lat": 37.31,
+      "lng": 26.55
+    },
+    "mainPeople": [
+      "john-the-apostle"
+    ],
+    "relatedPeople": [
+      "jesus"
+    ],
+    "relatedPlaces": [
+      "patmos",
+      "ephesus"
+    ],
+    "relatedEvents": [
+      "destruction-of-the-temple",
+      "revelation-given"
+    ],
+    "keywords": [
+      "john",
+      "exiled",
+      "on",
+      "patmos"
+    ],
+    "summary": "John says he was on Patmos because of the word of God and the testimony of Jesus. The setting frames Revelation as a message to suffering churches.",
+    "longDescription": "John says he was on Patmos because of the word of God and the testimony of Jesus. The setting frames Revelation as a message to suffering churches.\n\nThe biblical account (Revelation 1:9) gives the controlling details for john exiled on patmos. The event is recorded as part of The Early Church, and its people, place, and sequence are linked here to show how the narrative develops without adding speculative detail.\n\nThis record emphasizes the event's role in the larger biblical timeline. It connects promise, fulfillment, witness, suffering, mission, and hope as the story moves from the ministry of Jesus into the spread of the early church.",
+    "historicalNotes": "Archaeological evidence: Patmos was a small Aegean island within the Roman imperial world, suitable as a place of banishment or enforced isolation. Scholarly opinion: Many scholars date Revelation near the end of Domitian's reign, though some argue for earlier dates. Historical reconstruction: John's exile language fits a context of pressure on Christian witness in Asia Minor.",
+    "crossReferences": [],
+    "prevEvent": "destruction-of-the-temple",
+    "nextEvent": "revelation-given"
+  },
+  {
+    "id": "revelation-given",
+    "name": "Revelation Given",
+    "order": 146,
+    "date": "approx. AD 95",
+    "dateSort": 95.1,
+    "datePrecision": "approximate",
+    "era": "The Early Church",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Revelation 1-22",
+    "location": {
+      "placeId": "patmos",
+      "name": "Patmos",
+      "modernCountry": "Greece",
+      "lat": 37.31,
+      "lng": 26.55
+    },
+    "mainPeople": [
+      "john-the-apostle",
+      "jesus"
+    ],
+    "relatedPeople": [
+      "god"
+    ],
+    "relatedPlaces": [
+      "patmos",
+      "ephesus"
+    ],
+    "relatedEvents": [
+      "john-exiled-on-patmos"
+    ],
+    "keywords": [
+      "revelation",
+      "given"
+    ],
+    "summary": "John receives visions of the risen Christ, messages to seven churches, divine judgment, perseverance, and new creation. Revelation closes the biblical canon with hope in the Lamb's victory.",
+    "longDescription": "John receives visions of the risen Christ, messages to seven churches, divine judgment, perseverance, and new creation. Revelation closes the biblical canon with hope in the Lamb's victory.\n\nThe biblical account (Revelation 1-22) gives the controlling details for revelation given. The event is recorded as part of The Early Church, and its people, place, and sequence are linked here to show how the narrative develops without adding speculative detail.\n\nThis record emphasizes the event's role in the larger biblical timeline. It connects promise, fulfillment, witness, suffering, mission, and hope as the story moves from the ministry of Jesus into the spread of the early church.",
+    "historicalNotes": "Archaeological evidence: The seven cities addressed in Revelation were real urban centers of Roman Asia, many with visible remains and imperial-cult settings. Scholarly opinion: A late first-century date around AD 95 is common, though not unanimous. Historical reconstruction: Revelation speaks pastorally and prophetically to churches facing compromise, suffering, and imperial power.",
+    "crossReferences": [],
+    "prevEvent": "john-exiled-on-patmos",
+    "nextEvent": null
   }
 ]

@@ -406,7 +406,8 @@
       "burning-bush",
       "ten-plagues",
       "first-passover",
-      "red-sea-crossing"
+      "red-sea-crossing",
+      "flight-to-egypt"
     ],
     "people": [
       "abraham",
@@ -420,7 +421,11 @@
       "moses",
       "aaron",
       "miriam",
-      "jethro"
+      "jethro",
+      "jesus",
+      "mary",
+      "joseph-of-nazareth",
+      "herod-the-great"
     ],
     "references": [
       "Genesis 12:10-20",
@@ -435,12 +440,16 @@
       "Exodus 3-4",
       "Exodus 7-11",
       "Exodus 12",
-      "Exodus 14"
+      "Exodus 14",
+      "Matthew 2:13-23"
     ],
     "relatedPlaces": [
       "goshen",
       "mount-sinai",
-      "canaan"
+      "canaan",
+      "midian",
+      "bethlehem",
+      "nazareth"
     ]
   },
   {
@@ -625,7 +634,12 @@
     "events": [
       "jacob-wrestles-god",
       "joshua-commissioned",
-      "crossing-the-jordan"
+      "crossing-the-jordan",
+      "elijah-taken-to-heaven",
+      "elisha-ministry",
+      "ministry-of-john-the-baptist",
+      "baptism-of-jesus",
+      "temptation-of-jesus"
     ],
     "people": [
       "jacob",
@@ -635,17 +649,32 @@
       "rachel",
       "joshua",
       "moses",
-      "caleb"
+      "caleb",
+      "elijah",
+      "elisha",
+      "naaman",
+      "john-the-baptist",
+      "jesus",
+      "herod-antipas"
     ],
     "references": [
       "Genesis 32:22-32",
       "Joshua 1",
-      "Joshua 3-4"
+      "Joshua 3-4",
+      "2 Kings 2:1-14",
+      "2 Kings 2-13",
+      "Matthew 3; Luke 3",
+      "Matthew 3:13-17",
+      "Matthew 4:1-11"
     ],
     "relatedPlaces": [
       "moab",
       "jericho",
-      "gilgal"
+      "gilgal",
+      "canaan",
+      "samaria",
+      "damascus",
+      "jerusalem"
     ]
   },
   {
@@ -746,7 +775,8 @@
     "significance": "A major Philistine city associated with Samson and the ark narratives.",
     "events": [
       "samson",
-      "ark-captured-and-returned"
+      "ark-captured-and-returned",
+      "philip-and-the-ethiopian"
     ],
     "people": [
       "samson",
@@ -755,14 +785,19 @@
       "jephthah",
       "eli",
       "samuel",
-      "hannah"
+      "hannah",
+      "philip-the-evangelist",
+      "jesus"
     ],
     "references": [
       "Judges 13-16",
-      "1 Samuel 4-6"
+      "1 Samuel 4-6",
+      "Acts 8:26-40"
     ],
     "relatedPlaces": [
-      "shiloh"
+      "shiloh",
+      "canaan",
+      "jerusalem"
     ]
   },
   {
@@ -774,20 +809,42 @@
     "lng": 35.2,
     "significance": "The town where Ruth met Boaz and where the line leading to David is traced.",
     "events": [
-      "ruth-and-boaz"
+      "ruth-and-boaz",
+      "david-anointed",
+      "david-flees-saul",
+      "birth-of-jesus",
+      "visit-of-the-magi",
+      "flight-to-egypt"
     ],
     "people": [
       "ruth",
       "naomi",
       "boaz",
-      "god"
+      "god",
+      "samuel",
+      "david",
+      "saul",
+      "jonathan",
+      "jesus",
+      "mary",
+      "joseph-of-nazareth",
+      "herod-the-great"
     ],
     "references": [
-      "Ruth 1-4"
+      "Ruth 1-4",
+      "1 Samuel 16",
+      "1 Samuel 18-31",
+      "Luke 2:1-20; Matthew 1:18-25",
+      "Matthew 2:1-12",
+      "Matthew 2:13-23"
     ],
     "relatedPlaces": [
       "moab",
-      "canaan"
+      "canaan",
+      "en-gedi",
+      "nazareth",
+      "jerusalem",
+      "egypt"
     ]
   },
   {
@@ -821,7 +878,34 @@
       "ezra-returns",
       "nehemiah-rebuilds-walls",
       "malachi-ministry",
-      "intertestamental-period"
+      "intertestamental-period",
+      "birth-of-john-the-baptist-foretold",
+      "visit-of-the-magi",
+      "boy-jesus-in-the-temple",
+      "ministry-of-john-the-baptist",
+      "nicodemus",
+      "samaritan-woman",
+      "lazarus-raised",
+      "triumphal-entry",
+      "temple-cleansing",
+      "olivet-discourse",
+      "last-supper",
+      "gethsemane",
+      "trials-of-jesus",
+      "crucifixion",
+      "burial-of-jesus",
+      "resurrection",
+      "ascension",
+      "pentecost",
+      "early-church-in-jerusalem",
+      "stephen-martyred",
+      "philip-and-the-ethiopian",
+      "sauls-conversion",
+      "church-at-antioch",
+      "jerusalem-council",
+      "third-missionary-journey",
+      "pauls-arrest-in-jerusalem",
+      "destruction-of-the-temple"
     ],
     "people": [
       "david",
@@ -849,7 +933,42 @@
       "ezra",
       "ahasuerus",
       "nehemiah",
-      "malachi"
+      "malachi",
+      "zechariah-the-priest",
+      "elizabeth",
+      "john-the-baptist",
+      "jesus",
+      "mary",
+      "joseph-of-nazareth",
+      "herod-the-great",
+      "herod-antipas",
+      "nicodemus",
+      "john-the-apostle",
+      "lazarus",
+      "martha",
+      "mary-of-bethany",
+      "peter",
+      "caiaphas",
+      "andrew",
+      "james-son-of-zebedee",
+      "judas-iscariot",
+      "thomas",
+      "philip-the-apostle",
+      "pontius-pilate",
+      "mary-magdalene",
+      "matthias",
+      "barnabas",
+      "james-brother-of-jesus",
+      "stephen",
+      "paul",
+      "philip-the-evangelist",
+      "titus",
+      "silas",
+      "timothy",
+      "luke",
+      "apollos",
+      "priscilla",
+      "aquila"
     ],
     "references": [
       "2 Samuel 2; 5",
@@ -874,12 +993,53 @@
       "Ezra 7-10",
       "Nehemiah 1-6",
       "Malachi 1-4",
-      "(no canonical text; cf. Daniel 8; 11)"
+      "(no canonical text; cf. Daniel 8; 11)",
+      "Luke 1:5-25",
+      "Matthew 2:1-12",
+      "Luke 2:41-52",
+      "Matthew 3; Luke 3",
+      "John 3",
+      "John 4",
+      "John 11",
+      "Matthew 21:1-11",
+      "Matthew 21:12-17",
+      "Matthew 24-25",
+      "Matthew 26:17-30; John 13-17",
+      "Matthew 26:36-56",
+      "Matthew 26:57-27:26",
+      "Matthew 27:27-56; John 19",
+      "Matthew 27:57-66",
+      "Matthew 28; John 20",
+      "Acts 1:1-11",
+      "Acts 2",
+      "Acts 2:42-47; 4:32-37",
+      "Acts 6-7",
+      "Acts 8:26-40",
+      "Acts 9:1-19",
+      "Acts 11:19-30",
+      "Acts 15",
+      "Acts 18:23-21:16",
+      "Acts 21-26",
+      "(AD 70; prophesied Matthew 24:2)"
     ],
     "relatedPlaces": [
       "bethlehem",
       "samaria",
-      "babylon"
+      "babylon",
+      "hebron",
+      "susa",
+      "nazareth",
+      "jordan-river",
+      "bethany",
+      "mount-of-olives",
+      "golgotha",
+      "gaza",
+      "damascus",
+      "tarsus",
+      "antioch",
+      "ephesus",
+      "corinth",
+      "caesarea"
     ]
   },
   {
@@ -918,7 +1078,8 @@
       "elijah-on-mount-carmel",
       "elisha-ministry",
       "amos-and-hosea-warn-israel",
-      "fall-of-samaria"
+      "fall-of-samaria",
+      "samaritan-woman"
     ],
     "people": [
       "elijah",
@@ -928,17 +1089,22 @@
       "elisha",
       "naaman",
       "amos",
-      "hosea"
+      "hosea",
+      "jesus",
+      "john-the-apostle"
     ],
     "references": [
       "1 Kings 18",
       "2 Kings 2-13",
       "Amos; Hosea",
-      "2 Kings 17"
+      "2 Kings 17",
+      "John 4"
     ],
     "relatedPlaces": [
       "jerusalem",
-      "mount-carmel"
+      "mount-carmel",
+      "damascus",
+      "jordan-river"
     ]
   },
   {
@@ -1056,19 +1222,28 @@
     "lng": 36.29,
     "significance": "The Aramean capital connected with conflicts and contacts during Elisha's ministry.",
     "events": [
-      "elisha-ministry"
+      "elisha-ministry",
+      "sauls-conversion"
     ],
     "people": [
       "elisha",
       "naaman",
       "elijah",
-      "god"
+      "god",
+      "paul",
+      "jesus",
+      "peter",
+      "barnabas"
     ],
     "references": [
-      "2 Kings 2-13"
+      "2 Kings 2-13",
+      "Acts 9:1-19"
     ],
     "relatedPlaces": [
-      "samaria"
+      "samaria",
+      "jordan-river",
+      "jerusalem",
+      "tarsus"
     ]
   },
   {
@@ -1120,6 +1295,766 @@
     "relatedPlaces": [
       "bethlehem",
       "jerusalem"
+    ]
+  },
+  {
+    "id": "nazareth",
+    "name": "Nazareth",
+    "modernCountry": "Israel",
+    "ancientRegion": "Galilee",
+    "lat": 32.699,
+    "lng": 35.304,
+    "significance": "Hometown of Jesus and setting of Gabriel's announcement to Mary.",
+    "events": [
+      "annunciation",
+      "birth-of-jesus",
+      "flight-to-egypt",
+      "boy-jesus-in-the-temple",
+      "wedding-at-cana"
+    ],
+    "people": [
+      "mary",
+      "jesus",
+      "joseph-of-nazareth",
+      "elizabeth",
+      "god",
+      "herod-the-great",
+      "john-the-apostle"
+    ],
+    "references": [
+      "Luke 1:26-38",
+      "Luke 2:1-20; Matthew 1:18-25",
+      "Matthew 2:13-23",
+      "Luke 2:41-52",
+      "John 2:1-11"
+    ],
+    "relatedPlaces": [
+      "bethlehem",
+      "egypt",
+      "jerusalem",
+      "cana"
+    ]
+  },
+  {
+    "id": "capernaum",
+    "name": "Capernaum",
+    "modernCountry": "Israel",
+    "ancientRegion": "Galilee",
+    "lat": 32.88,
+    "lng": 35.58,
+    "significance": "A fishing village on the Sea of Galilee that became a major base for Jesus' ministry.",
+    "events": [
+      "first-disciples-called",
+      "sermon-on-the-mount",
+      "parables-of-the-kingdom"
+    ],
+    "people": [
+      "jesus",
+      "peter",
+      "andrew",
+      "james-son-of-zebedee",
+      "john-the-apostle",
+      "philip-the-apostle",
+      "bartholomew",
+      "john-the-baptist",
+      "matthew"
+    ],
+    "references": [
+      "John 1:35-51; Matthew 4:18-22",
+      "Matthew 5-7",
+      "Matthew 13"
+    ],
+    "relatedPlaces": [
+      "sea-of-galilee",
+      "bethsaida"
+    ]
+  },
+  {
+    "id": "sea-of-galilee",
+    "name": "Sea of Galilee",
+    "modernCountry": "Israel",
+    "ancientRegion": "Galilee",
+    "lat": 32.83,
+    "lng": 35.59,
+    "significance": "Freshwater lake central to Jesus' Galilean teaching, miracles, and calling of fishermen.",
+    "events": [
+      "first-disciples-called",
+      "sermon-on-the-mount",
+      "twelve-apostles-chosen",
+      "parables-of-the-kingdom",
+      "jesus-calms-the-storm",
+      "feeding-the-five-thousand",
+      "jesus-walks-on-water",
+      "great-commission"
+    ],
+    "people": [
+      "jesus",
+      "peter",
+      "andrew",
+      "james-son-of-zebedee",
+      "john-the-apostle",
+      "philip-the-apostle",
+      "bartholomew",
+      "john-the-baptist",
+      "thomas",
+      "matthew",
+      "james-son-of-alphaeus",
+      "thaddaeus",
+      "simon-the-zealot",
+      "judas-iscariot",
+      "god"
+    ],
+    "references": [
+      "John 1:35-51; Matthew 4:18-22",
+      "Matthew 5-7",
+      "Mark 3:13-19; Luke 6:12-16",
+      "Matthew 13",
+      "Mark 4:35-41",
+      "John 6:1-15",
+      "Matthew 14:22-33",
+      "Matthew 28:16-20"
+    ],
+    "relatedPlaces": [
+      "bethsaida",
+      "capernaum"
+    ]
+  },
+  {
+    "id": "cana",
+    "name": "Cana",
+    "modernCountry": "Israel",
+    "ancientRegion": "Galilee",
+    "lat": 32.75,
+    "lng": 35.34,
+    "significance": "Village associated with Jesus' first sign, turning water into wine at a wedding.",
+    "events": [
+      "wedding-at-cana"
+    ],
+    "people": [
+      "jesus",
+      "mary",
+      "john-the-apostle"
+    ],
+    "references": [
+      "John 2:1-11"
+    ],
+    "relatedPlaces": [
+      "nazareth"
+    ]
+  },
+  {
+    "id": "bethany",
+    "name": "Bethany",
+    "modernCountry": "West Bank",
+    "ancientRegion": "Judea",
+    "lat": 31.77,
+    "lng": 35.26,
+    "significance": "Village near Jerusalem associated with Mary, Martha, Lazarus, and Jesus' final week.",
+    "events": [
+      "lazarus-raised",
+      "triumphal-entry"
+    ],
+    "people": [
+      "jesus",
+      "lazarus",
+      "martha",
+      "mary-of-bethany",
+      "john-the-apostle",
+      "peter"
+    ],
+    "references": [
+      "John 11",
+      "Matthew 21:1-11"
+    ],
+    "relatedPlaces": [
+      "jerusalem",
+      "mount-of-olives"
+    ]
+  },
+  {
+    "id": "bethsaida",
+    "name": "Bethsaida",
+    "modernCountry": "Israel",
+    "ancientRegion": "Galilee",
+    "lat": 32.91,
+    "lng": 35.63,
+    "significance": "Fishing village connected with several apostles and the feeding of the five thousand.",
+    "events": [
+      "first-disciples-called",
+      "feeding-the-five-thousand"
+    ],
+    "people": [
+      "jesus",
+      "peter",
+      "andrew",
+      "james-son-of-zebedee",
+      "john-the-apostle",
+      "philip-the-apostle",
+      "bartholomew",
+      "john-the-baptist"
+    ],
+    "references": [
+      "John 1:35-51; Matthew 4:18-22",
+      "John 6:1-15"
+    ],
+    "relatedPlaces": [
+      "sea-of-galilee",
+      "capernaum"
+    ]
+  },
+  {
+    "id": "caesarea",
+    "name": "Caesarea Maritima",
+    "modernCountry": "Israel",
+    "ancientRegion": "Judean coast",
+    "lat": 32.5,
+    "lng": 34.89,
+    "significance": "Roman administrative city where Cornelius lived and Paul was held before his voyage to Rome.",
+    "events": [
+      "peter-and-cornelius",
+      "pauls-arrest-in-jerusalem",
+      "voyage-and-shipwreck"
+    ],
+    "people": [
+      "peter",
+      "cornelius",
+      "jesus",
+      "god",
+      "paul",
+      "james-brother-of-jesus",
+      "luke"
+    ],
+    "references": [
+      "Acts 10",
+      "Acts 21-26",
+      "Acts 27-28:10"
+    ],
+    "relatedPlaces": [
+      "joppa",
+      "jerusalem",
+      "malta",
+      "rome"
+    ]
+  },
+  {
+    "id": "caesarea-philippi",
+    "name": "Caesarea Philippi",
+    "modernCountry": "Golan Heights",
+    "ancientRegion": "Northern Galilee region",
+    "lat": 33.25,
+    "lng": 35.69,
+    "significance": "Northern setting of Peter's confession and the turning point toward Jesus' passion predictions.",
+    "events": [
+      "peters-confession",
+      "transfiguration"
+    ],
+    "people": [
+      "jesus",
+      "peter",
+      "andrew",
+      "james-son-of-zebedee",
+      "john-the-apostle",
+      "moses",
+      "elijah",
+      "god"
+    ],
+    "references": [
+      "Matthew 16:13-20",
+      "Matthew 17:1-13"
+    ],
+    "relatedPlaces": []
+  },
+  {
+    "id": "mount-of-olives",
+    "name": "Mount of Olives",
+    "modernCountry": "Israel",
+    "ancientRegion": "Jerusalem ridge",
+    "lat": 31.778,
+    "lng": 35.243,
+    "significance": "Ridge east of Jerusalem associated with Jesus' entry, teaching, Gethsemane, and ascension.",
+    "events": [
+      "triumphal-entry",
+      "olivet-discourse",
+      "gethsemane",
+      "ascension"
+    ],
+    "people": [
+      "jesus",
+      "peter",
+      "john-the-apostle",
+      "andrew",
+      "james-son-of-zebedee",
+      "judas-iscariot",
+      "caiaphas",
+      "mary"
+    ],
+    "references": [
+      "Matthew 21:1-11",
+      "Matthew 24-25",
+      "Matthew 26:36-56",
+      "Acts 1:1-11"
+    ],
+    "relatedPlaces": [
+      "jerusalem",
+      "bethany"
+    ]
+  },
+  {
+    "id": "golgotha",
+    "name": "Golgotha",
+    "modernCountry": "Israel",
+    "ancientRegion": "Jerusalem",
+    "lat": 31.778,
+    "lng": 35.229,
+    "significance": "Traditional site of Jesus' crucifixion; coordinates use the Church of the Holy Sepulchre area, with Gordon's Calvary noted as an alternative proposal.",
+    "events": [
+      "crucifixion",
+      "burial-of-jesus",
+      "resurrection"
+    ],
+    "people": [
+      "jesus",
+      "pontius-pilate",
+      "mary",
+      "john-the-apostle",
+      "mary-magdalene",
+      "caiaphas",
+      "nicodemus",
+      "peter"
+    ],
+    "references": [
+      "Matthew 27:27-56; John 19",
+      "Matthew 27:57-66",
+      "Matthew 28; John 20"
+    ],
+    "relatedPlaces": [
+      "jerusalem"
+    ]
+  },
+  {
+    "id": "emmaus",
+    "name": "Emmaus",
+    "modernCountry": "Israel",
+    "ancientRegion": "Judea",
+    "lat": 31.84,
+    "lng": 35.02,
+    "significance": "Village remembered from resurrection appearances on the road to Emmaus.",
+    "events": [],
+    "people": [],
+    "references": [],
+    "relatedPlaces": []
+  },
+  {
+    "id": "joppa",
+    "name": "Joppa",
+    "modernCountry": "Israel",
+    "ancientRegion": "Judean coast",
+    "lat": 32.05,
+    "lng": 34.75,
+    "significance": "Coastal town where Peter stayed before being summoned to Cornelius.",
+    "events": [
+      "peter-and-cornelius"
+    ],
+    "people": [
+      "peter",
+      "cornelius",
+      "jesus",
+      "god"
+    ],
+    "references": [
+      "Acts 10"
+    ],
+    "relatedPlaces": [
+      "caesarea"
+    ]
+  },
+  {
+    "id": "antioch",
+    "name": "Antioch",
+    "modernCountry": "Turkey",
+    "ancientRegion": "Syria",
+    "lat": 36.2,
+    "lng": 36.16,
+    "significance": "Major urban center where a mixed Jewish-Gentile church grew and sent missionaries.",
+    "events": [
+      "church-at-antioch",
+      "first-missionary-journey",
+      "jerusalem-council"
+    ],
+    "people": [
+      "barnabas",
+      "paul",
+      "peter",
+      "james-brother-of-jesus",
+      "john-mark",
+      "timothy",
+      "titus",
+      "silas"
+    ],
+    "references": [
+      "Acts 11:19-30",
+      "Acts 13-14",
+      "Acts 15"
+    ],
+    "relatedPlaces": [
+      "jerusalem",
+      "tarsus",
+      "cyprus",
+      "lystra"
+    ]
+  },
+  {
+    "id": "cyprus",
+    "name": "Cyprus",
+    "modernCountry": "Cyprus",
+    "ancientRegion": "Eastern Mediterranean",
+    "lat": 35.13,
+    "lng": 33.43,
+    "significance": "Island visited by Barnabas, Paul, and John Mark during the first missionary journey.",
+    "events": [
+      "first-missionary-journey"
+    ],
+    "people": [
+      "paul",
+      "barnabas",
+      "john-mark",
+      "timothy"
+    ],
+    "references": [
+      "Acts 13-14"
+    ],
+    "relatedPlaces": [
+      "antioch",
+      "lystra"
+    ]
+  },
+  {
+    "id": "lystra",
+    "name": "Lystra",
+    "modernCountry": "Turkey",
+    "ancientRegion": "Lycaonia",
+    "lat": 37.58,
+    "lng": 32.45,
+    "significance": "Galatian city visited during Paul's first missionary journey and associated with Timothy.",
+    "events": [
+      "first-missionary-journey"
+    ],
+    "people": [
+      "paul",
+      "barnabas",
+      "john-mark",
+      "timothy"
+    ],
+    "references": [
+      "Acts 13-14"
+    ],
+    "relatedPlaces": [
+      "cyprus",
+      "antioch"
+    ]
+  },
+  {
+    "id": "philippi",
+    "name": "Philippi",
+    "modernCountry": "Greece",
+    "ancientRegion": "Macedonia",
+    "lat": 41.01,
+    "lng": 24.29,
+    "significance": "Roman colony where Lydia believed and a church was planted during Paul's second journey.",
+    "events": [
+      "second-missionary-journey"
+    ],
+    "people": [
+      "paul",
+      "silas",
+      "timothy",
+      "luke",
+      "lydia",
+      "aquila",
+      "priscilla",
+      "apollos"
+    ],
+    "references": [
+      "Acts 16-18"
+    ],
+    "relatedPlaces": [
+      "thessalonica",
+      "berea",
+      "athens",
+      "corinth"
+    ]
+  },
+  {
+    "id": "thessalonica",
+    "name": "Thessalonica",
+    "modernCountry": "Greece",
+    "ancientRegion": "Macedonia",
+    "lat": 40.64,
+    "lng": 22.94,
+    "significance": "Important Macedonian city where Paul preached and a church was formed.",
+    "events": [
+      "second-missionary-journey"
+    ],
+    "people": [
+      "paul",
+      "silas",
+      "timothy",
+      "luke",
+      "lydia",
+      "aquila",
+      "priscilla",
+      "apollos"
+    ],
+    "references": [
+      "Acts 16-18"
+    ],
+    "relatedPlaces": [
+      "philippi",
+      "berea",
+      "athens",
+      "corinth"
+    ]
+  },
+  {
+    "id": "berea",
+    "name": "Berea",
+    "modernCountry": "Greece",
+    "ancientRegion": "Macedonia",
+    "lat": 40.52,
+    "lng": 22.2,
+    "significance": "City whose synagogue hearers examined the Scriptures in response to Paul's message.",
+    "events": [
+      "second-missionary-journey"
+    ],
+    "people": [
+      "paul",
+      "silas",
+      "timothy",
+      "luke",
+      "lydia",
+      "aquila",
+      "priscilla",
+      "apollos"
+    ],
+    "references": [
+      "Acts 16-18"
+    ],
+    "relatedPlaces": [
+      "philippi",
+      "thessalonica",
+      "athens",
+      "corinth"
+    ]
+  },
+  {
+    "id": "athens",
+    "name": "Athens",
+    "modernCountry": "Greece",
+    "ancientRegion": "Achaia",
+    "lat": 37.98,
+    "lng": 23.73,
+    "significance": "Greek intellectual center where Paul addressed the Areopagus.",
+    "events": [
+      "second-missionary-journey"
+    ],
+    "people": [
+      "paul",
+      "silas",
+      "timothy",
+      "luke",
+      "lydia",
+      "aquila",
+      "priscilla",
+      "apollos"
+    ],
+    "references": [
+      "Acts 16-18"
+    ],
+    "relatedPlaces": [
+      "philippi",
+      "thessalonica",
+      "berea",
+      "corinth"
+    ]
+  },
+  {
+    "id": "corinth",
+    "name": "Corinth",
+    "modernCountry": "Greece",
+    "ancientRegion": "Achaia",
+    "lat": 37.91,
+    "lng": 22.88,
+    "significance": "Commercial city where Paul ministered during Gallio's proconsulship, an anchor for Acts chronology.",
+    "events": [
+      "second-missionary-journey",
+      "third-missionary-journey"
+    ],
+    "people": [
+      "paul",
+      "silas",
+      "timothy",
+      "luke",
+      "lydia",
+      "aquila",
+      "priscilla",
+      "apollos"
+    ],
+    "references": [
+      "Acts 16-18",
+      "Acts 18:23-21:16"
+    ],
+    "relatedPlaces": [
+      "philippi",
+      "thessalonica",
+      "berea",
+      "athens",
+      "ephesus",
+      "jerusalem"
+    ]
+  },
+  {
+    "id": "ephesus",
+    "name": "Ephesus",
+    "modernCountry": "Turkey",
+    "ancientRegion": "Asia Minor",
+    "lat": 37.94,
+    "lng": 27.34,
+    "significance": "Major city of Roman Asia where Paul ministered extensively and where Revelation addresses a church.",
+    "events": [
+      "third-missionary-journey",
+      "john-exiled-on-patmos",
+      "revelation-given"
+    ],
+    "people": [
+      "paul",
+      "timothy",
+      "luke",
+      "apollos",
+      "priscilla",
+      "aquila",
+      "john-the-apostle",
+      "jesus",
+      "god"
+    ],
+    "references": [
+      "Acts 18:23-21:16",
+      "Revelation 1:9",
+      "Revelation 1-22"
+    ],
+    "relatedPlaces": [
+      "corinth",
+      "jerusalem",
+      "patmos"
+    ]
+  },
+  {
+    "id": "rome",
+    "name": "Rome",
+    "modernCountry": "Italy",
+    "ancientRegion": "Italy",
+    "lat": 41.89,
+    "lng": 12.49,
+    "significance": "Imperial capital where Paul arrived under guard and proclaimed the kingdom while under house arrest.",
+    "events": [
+      "voyage-and-shipwreck",
+      "pauls-roman-imprisonment"
+    ],
+    "people": [
+      "paul",
+      "luke",
+      "jesus",
+      "timothy",
+      "john-mark"
+    ],
+    "references": [
+      "Acts 27-28:10",
+      "Acts 28:11-31"
+    ],
+    "relatedPlaces": [
+      "malta",
+      "caesarea"
+    ]
+  },
+  {
+    "id": "malta",
+    "name": "Malta",
+    "modernCountry": "Malta",
+    "ancientRegion": "Central Mediterranean",
+    "lat": 35.94,
+    "lng": 14.38,
+    "significance": "Island where Paul and others survived shipwreck on the voyage to Rome.",
+    "events": [
+      "voyage-and-shipwreck",
+      "pauls-roman-imprisonment"
+    ],
+    "people": [
+      "paul",
+      "luke",
+      "jesus",
+      "timothy",
+      "john-mark"
+    ],
+    "references": [
+      "Acts 27-28:10",
+      "Acts 28:11-31"
+    ],
+    "relatedPlaces": [
+      "caesarea",
+      "rome"
+    ]
+  },
+  {
+    "id": "patmos",
+    "name": "Patmos",
+    "modernCountry": "Greece",
+    "ancientRegion": "Aegean Sea",
+    "lat": 37.31,
+    "lng": 26.55,
+    "significance": "Island where John says he received Revelation because of the word of God and testimony of Jesus.",
+    "events": [
+      "john-exiled-on-patmos",
+      "revelation-given"
+    ],
+    "people": [
+      "john-the-apostle",
+      "jesus",
+      "god"
+    ],
+    "references": [
+      "Revelation 1:9",
+      "Revelation 1-22"
+    ],
+    "relatedPlaces": [
+      "ephesus"
+    ]
+  },
+  {
+    "id": "tarsus",
+    "name": "Tarsus",
+    "modernCountry": "Turkey",
+    "ancientRegion": "Cilicia",
+    "lat": 36.92,
+    "lng": 34.9,
+    "significance": "Paul's home city and a significant center in Cilicia.",
+    "events": [
+      "sauls-conversion",
+      "church-at-antioch"
+    ],
+    "people": [
+      "paul",
+      "jesus",
+      "peter",
+      "barnabas",
+      "james-brother-of-jesus"
+    ],
+    "references": [
+      "Acts 9:1-19",
+      "Acts 11:19-30"
+    ],
+    "relatedPlaces": [
+      "damascus",
+      "jerusalem",
+      "antioch"
     ]
   }
 ]
