@@ -49,6 +49,10 @@ function writeFile(relativePath, content) {
   fs.writeFileSync(path.join(rootDir, relativePath), content, "utf8");
 }
 
+function readJsonFile(filePath) {
+  return JSON.parse(fs.readFileSync(filePath, "utf8"));
+}
+
 function escapeHtml(value) {
   return String(value == null ? "" : value)
     .replace(/&/g, "&amp;")
@@ -56,6 +60,15 @@ function escapeHtml(value) {
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&#39;");
+}
+
+function jsonForScript(value) {
+  return JSON.stringify(value)
+    .replace(/</g, "\\u003c")
+    .replace(/>/g, "\\u003e")
+    .replace(/&/g, "\\u0026")
+    .replace(/\u2028/g, "\\u2028")
+    .replace(/\u2029/g, "\\u2029");
 }
 
 // --- Bible reference -> bible.com (KJV) linker -------------------------------
@@ -74,15 +87,118 @@ const USFM = {
   "2 Timothy":"2TI","Titus":"TIT","Philemon":"PHM","Hebrews":"HEB","James":"JAS","1 Peter":"1PE","2 Peter":"2PE",
   "1 John":"1JN","2 John":"2JN","3 John":"3JN","Jude":"JUD","Revelation":"REV","Revelations":"REV"
 };
+const CANON_BOOK_NAMES = [
+  "Genesis","Exodus","Leviticus","Numbers","Deuteronomy","Joshua","Judges","Ruth","1 Samuel","2 Samuel",
+  "1 Kings","2 Kings","1 Chronicles","2 Chronicles","Ezra","Nehemiah","Esther","Job","Psalms","Proverbs",
+  "Ecclesiastes","Song of Solomon","Isaiah","Jeremiah","Lamentations","Ezekiel","Daniel","Hosea","Joel",
+  "Amos","Obadiah","Jonah","Micah","Nahum","Habakkuk","Zephaniah","Haggai","Zechariah","Malachi",
+  "Matthew","Mark","Luke","John","Acts","Romans","1 Corinthians","2 Corinthians","Galatians","Ephesians",
+  "Philippians","Colossians","1 Thessalonians","2 Thessalonians","1 Timothy","2 Timothy","Titus","Philemon",
+  "Hebrews","James","1 Peter","2 Peter","1 John","2 John","3 John","Jude","Revelation"
+];
+const CANON_USFM = CANON_BOOK_NAMES.map((bookName) => USFM[bookName]);
+const USFM_ORDER = new Map(CANON_USFM.map((usfm, index) => [usfm, index]));
 const BOOK_NAMES = Object.keys(USFM).sort((a, b) => b.length - a.length);
 function refEsc(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); }
 const BOOK_RE = new RegExp("\\b(" + BOOK_NAMES.map(refEsc).join("|") + ")\\b");
-const SPEC_RE = /\d+(?::\d+)?(?:\s*[-–]\s*\d+(?::\d+)?)?(?:\s*,\s*\d+(?::\d+)?)*/;
+const SPEC_RE = /\d+(?::\d+)?(?:\s*[-–]\s*\d+(?::\d+)?)?(?:\s*,\s*\d+(?::\d+)?(?:\s*[-–]\s*\d+(?::\d+)?)?)*/;
+let availableKjvBooks = new Set();
+
 function refUrl(usfm, spec) {
   const m = /^(\d+)(?::(\d+))?/.exec(spec.replace(/\s+/g, ""));
   if (!m) return null;
   return "https://www.bible.com/bible/" + BIBLE_VERSION_ID + "/" + usfm + "." + m[1] + (m[2] ? "." + m[2] : "") + "." + BIBLE_VERSION;
 }
+
+function normalizeRefSpec(spec) {
+  return String(spec || "").replace(/[–—]/g, "-").replace(/\s+/g, "");
+}
+
+function parseRefPoint(raw, context) {
+  const point = String(raw || "").trim();
+  if (!/^\d+(?::\d+)?$/.test(point)) return null;
+  if (point.indexOf(":") !== -1) {
+    const parts = point.split(":");
+    return { chapter: Number(parts[0]), verse: Number(parts[1]), verseMode: true };
+  }
+  const value = Number(point);
+  if (context && context.verseMode && context.chapter) {
+    return { chapter: context.chapter, verse: value, verseMode: true };
+  }
+  return { chapter: value, verse: null, verseMode: false };
+}
+
+function parseRefRange(raw, context) {
+  const parts = String(raw || "").split("-");
+  const start = parseRefPoint(parts[0], context);
+  if (!start) return null;
+  let end = null;
+  if (parts.length > 1) {
+    end = parseRefPoint(parts[1], { chapter: start.chapter, verseMode: start.verse != null });
+  }
+  if (!end) {
+    end = { chapter: start.chapter, verse: start.verse, verseMode: start.verse != null };
+  }
+  if (start.verse != null && end.verse == null) {
+    end = { chapter: start.chapter, verse: end.chapter, verseMode: true };
+  }
+  return {
+    startCh: start.chapter,
+    startV: start.verse == null ? 1 : start.verse,
+    endCh: end.chapter,
+    endV: end.verse == null ? "" : end.verse,
+    verseMode: start.verse != null || end.verse != null
+  };
+}
+
+function parseRefSpan(spec) {
+  const normalized = normalizeRefSpec(spec);
+  if (!normalized) return null;
+  const parts = normalized.split(",");
+  const ranges = [];
+  let context = null;
+  parts.forEach((part) => {
+    const range = parseRefRange(part, context);
+    if (!range) return;
+    ranges.push(range);
+    context = {
+      chapter: range.endCh,
+      verseMode: range.verseMode
+    };
+  });
+  if (!ranges.length) return null;
+  return {
+    startCh: ranges[0].startCh,
+    startV: ranges[0].startV,
+    endCh: ranges[ranges.length - 1].endCh,
+    endV: ranges[ranges.length - 1].endV,
+    ranges
+  };
+}
+
+function scriptureControl(usfm, spec, url) {
+  if (!availableKjvBooks.has(usfm)) return "";
+  const span = parseRefSpan(spec);
+  if (!span || !url) return "";
+  const id = "scripture-" + (++scriptureId);
+  const attrs = [
+    'id="' + id + '"',
+    'class="scripture-body"',
+    "hidden",
+    'data-book="' + escapeHtml(usfm) + '"',
+    'data-start-ch="' + escapeHtml(span.startCh) + '"',
+    'data-start-v="' + escapeHtml(span.startV) + '"',
+    'data-end-ch="' + escapeHtml(span.endCh) + '"',
+    'data-end-v="' + escapeHtml(span.endV) + '"',
+    'data-bible-url="' + escapeHtml(url) + '"',
+    'data-ranges="' + escapeHtml(JSON.stringify(span.ranges)) + '"'
+  ].join(" ");
+  return ' <button class="scripture-toggle" type="button" aria-expanded="false" aria-controls="' + id + '">show text</button>' +
+    '<div ' + attrs + '></div>';
+}
+
+let scriptureId = 0;
+
 function refAnchor(url, text) {
   return '<a href="' + url + '" target="_blank" rel="noopener noreferrer" class="ref-link">' + escapeHtml(text) + "</a>";
 }
@@ -93,12 +209,13 @@ function linkifySegment(segment, currentBook) {
   if (!usfm) return { html: escapeHtml(segment), book: currentBook };
   const region = segment.slice(bookMatch ? bookMatch.index + bookMatch[1].length : 0);
   const specMatch = SPEC_RE.exec(region);
-  let linkStart, linkEnd, display, url;
+  let linkStart, linkEnd, display, url, spec = "";
   if (bookMatch && specMatch && region.slice(0, specMatch.index).trim() === "") {
     linkStart = bookMatch.index;
     linkEnd = bookMatch.index + bookMatch[1].length + specMatch.index + specMatch[0].length;
     display = segment.slice(linkStart, linkEnd);
-    url = refUrl(usfm, specMatch[0]);
+    spec = specMatch[0];
+    url = refUrl(usfm, spec);
   } else if (bookMatch) {
     linkStart = bookMatch.index;
     linkEnd = bookMatch.index + bookMatch[1].length;
@@ -109,10 +226,11 @@ function linkifySegment(segment, currentBook) {
     if (!m) return { html: escapeHtml(segment), book: currentBook };
     linkStart = m.index; linkEnd = m.index + m[0].length;
     display = segment.slice(linkStart, linkEnd);
-    url = refUrl(usfm, m[0]);
+    spec = m[0];
+    url = refUrl(usfm, spec);
   }
   if (!url) return { html: escapeHtml(segment), book: usfm };
-  return { html: escapeHtml(segment.slice(0, linkStart)) + refAnchor(url, display) + escapeHtml(segment.slice(linkEnd)), book: usfm };
+  return { html: escapeHtml(segment.slice(0, linkStart)) + refAnchor(url, display) + scriptureControl(usfm, spec, url) + escapeHtml(segment.slice(linkEnd)), book: usfm };
 }
 // Returns SAFE HTML (escapes internally). Inject RAW -- never wrap in escapeHtml().
 function linkifyReference(refString) {
@@ -390,6 +508,91 @@ function renderConnectionsPanel(rootPrefix, type, id) {
   return '<section class="content-panel connections-panel"><div class="panel-heading"><h2>Connections</h2>' + explore + '</div>' + sections + '</section>\n';
 }
 
+function kjvDataDir() {
+  return path.join(dataDir, "kjv");
+}
+
+function kjvFiles() {
+  const dir = kjvDataDir();
+  if (!fs.existsSync(dir)) return [];
+  return fs.readdirSync(dir)
+    .filter((file) => file.endsWith(".json"))
+    .sort((a, b) => {
+      const aCode = a.slice(0, -".json".length);
+      const bCode = b.slice(0, -".json".length);
+      return (USFM_ORDER.get(aCode) ?? 999) - (USFM_ORDER.get(bCode) ?? 999) || a.localeCompare(b);
+    });
+}
+
+function readKjvBook(fileName) {
+  return readJsonFile(path.join(kjvDataDir(), fileName));
+}
+
+function countKjvVerses(book) {
+  if (!book || !book.chapters || typeof book.chapters !== "object") return 0;
+  return Object.keys(book.chapters).reduce((bookTotal, chapter) => {
+    const verses = book.chapters[chapter];
+    if (!verses || typeof verses !== "object") return bookTotal;
+    return bookTotal + Object.keys(verses).length;
+  }, 0);
+}
+
+function validateKjvData() {
+  const files = kjvFiles();
+  if (!files.length) return new Set();
+  const seen = new Set();
+  let totalVerses = 0;
+  const booksByCode = new Map();
+
+  files.forEach((fileName) => {
+    const expectedCode = fileName.slice(0, -".json".length);
+    const book = readKjvBook(fileName);
+    if (!USFM_ORDER.has(expectedCode)) throw new Error("KJV validation failed: unknown USFM file " + fileName + ".");
+    if (!book || book.book !== expectedCode) throw new Error("KJV validation failed: " + fileName + " has book code " + (book && book.book) + ".");
+    if (seen.has(expectedCode)) throw new Error("KJV validation failed: duplicate book " + expectedCode + ".");
+    seen.add(expectedCode);
+    totalVerses += countKjvVerses(book);
+    booksByCode.set(expectedCode, book);
+  });
+
+  if (files.length !== 66) throw new Error("KJV validation failed: expected 66 books, found " + files.length + ".");
+  CANON_USFM.forEach((code) => {
+    if (!seen.has(code)) throw new Error("KJV validation failed: missing book " + code + ".");
+  });
+  if (totalVerses < 31000) throw new Error("KJV validation failed: expected 31102 verses, found " + totalVerses + ".");
+
+  const genesis = booksByCode.get("GEN");
+  const john = booksByCode.get("JHN");
+  const genesisOneOne = genesis && genesis.chapters && genesis.chapters["1"] && genesis.chapters["1"]["1"];
+  const johnThreeSixteen = john && john.chapters && john.chapters["3"] && john.chapters["3"]["16"];
+  if (genesisOneOne !== "In the beginning God created the heaven and the earth.") {
+    throw new Error("KJV validation failed: Genesis 1:1 spot-check mismatch.");
+  }
+  if (!String(johnThreeSixteen || "").startsWith("For God so loved the world")) {
+    throw new Error("KJV validation failed: John 3:16 spot-check mismatch.");
+  }
+
+  return seen;
+}
+
+function emitKjvJs() {
+  ensureDir("js/kjv");
+  kjvFiles().forEach((fileName) => {
+    const book = readKjvBook(fileName);
+    writeFile("js/kjv/" + book.book + ".js", "window.KJV=window.KJV||{};window.KJV." + book.book + "=" + jsonForScript(book) + ";\n");
+  });
+}
+
+function scriptureBooksInHtml(html) {
+  const books = new Set();
+  const re = /class="scripture-body"[^>]*\bdata-book="([A-Z0-9]+)"/g;
+  let match;
+  while ((match = re.exec(html))) {
+    if (availableKjvBooks.has(match[1])) books.add(match[1]);
+  }
+  return Array.from(books).sort((a, b) => (USFM_ORDER.get(a) ?? 999) - (USFM_ORDER.get(b) ?? 999) || a.localeCompare(b));
+}
+
 function pageLayout(options) {
   const rootPrefix = options.rootPrefix || "";
   let scripts = options.timelineScript
@@ -400,6 +603,11 @@ function pageLayout(options) {
   }
   if (options.graphScript) {
     scripts += '\n<script src="' + rootPrefix + 'js/graph-data.js"></script>\n<script src="' + rootPrefix + 'js/graph.js"></script>';
+  }
+  const scriptureBooks = scriptureBooksInHtml(options.body || "");
+  if (scriptureBooks.length) {
+    scripts += "\n" + scriptureBooks.map((book) => '<script src="' + rootPrefix + 'js/kjv/' + book + '.js"></script>').join("\n") +
+      '\n<script src="' + rootPrefix + 'js/scripture.js"></script>';
   }
 
   return '<!doctype html>\n' +
@@ -1565,8 +1773,10 @@ function pruneOrphanPages() {
 }
 
 function build() {
-  ["events", "people", "locations", "journeys", "books", "nations", "prophecies", "themes", "js"].forEach(ensureDir);
+  ["events", "people", "locations", "journeys", "books", "nations", "prophecies", "themes", "js", "js/kjv"].forEach(ensureDir);
   validateData();
+  availableKjvBooks = validateKjvData();
+  emitKjvJs();
   graphModel = buildGraphModel();
   pruneOrphanPages();
   renderIndex();
