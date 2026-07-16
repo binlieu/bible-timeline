@@ -1,0 +1,6 @@
+[
+  { "era": "Primeval History", "dateRange": "Creation-c. 2100 BC", "eventIds": ["creation", "fall", "cain-abel", "flood", "babel"] },
+  { "era": "Patriarchs", "dateRange": "c. 2166-c. 1805 BC (traditional)", "eventIds": ["call-of-abraham", "isaac-born", "jacob-esau", "joseph-egypt"] },
+  { "era": "Exodus & Wilderness", "dateRange": "c. 1446-c. 1406 BC (traditional)", "eventIds": ["exodus-egypt", "ten-commandments"] },
+  { "era": "United Kingdom", "dateRange": "c. 1010-c. 970 BC", "eventIds": ["davids-reign"] }
+]
