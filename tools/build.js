@@ -579,7 +579,7 @@ function emitKjvJs() {
   ensureDir("js/kjv");
   kjvFiles().forEach((fileName) => {
     const book = readKjvBook(fileName);
-    writeFile("js/kjv/" + book.book + ".js", "window.KJV=window.KJV||{};window.KJV." + book.book + "=" + jsonForScript(book) + ";\n");
+    writeFile("js/kjv/" + book.book + ".js", "window.KJV=window.KJV||{};window.KJV[\"" + book.book + "\"]=" + jsonForScript(book) + ";\n");
   });
 }
 
