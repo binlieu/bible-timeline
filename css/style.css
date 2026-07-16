@@ -750,6 +750,122 @@ main {
   margin-top: 0.35rem;
 }
 
+/* --- Interactive genealogy family trees --------------------------------- */
+.tree-controls {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0.25rem 0 1rem;
+}
+
+.genealogy-forest {
+  display: grid;
+  gap: 1.4rem;
+}
+
+.genealogy-tree,
+.genealogy-tree ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.genealogy-tree ul {
+  margin-left: 0.75rem;
+  padding-left: 0.9rem;
+  border-left: 1px solid var(--border);
+}
+
+.genealogy-tree li {
+  position: relative;
+  padding: 0.12rem 0;
+}
+
+/* short connector from the vertical guide line to each node */
+.genealogy-tree ul > li::before {
+  content: "";
+  position: absolute;
+  left: -0.9rem;
+  top: 1.05em;
+  width: 0.7rem;
+  height: 1px;
+  background: var(--border);
+}
+
+.tree-node {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  padding: 0.1rem 0.15rem;
+  border-radius: 6px;
+}
+
+.tree-node a {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.tree-node a:hover {
+  text-decoration: underline;
+}
+
+.tree-spouse {
+  color: var(--muted);
+  font-weight: 400;
+  font-size: 0.94em;
+}
+
+.tree-meaning {
+  color: var(--muted);
+  font-size: 0.82em;
+  font-style: italic;
+}
+
+.tree-toggle {
+  flex: none;
+  width: 1.15em;
+  height: 1.15em;
+  margin-right: 0.1rem;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  font: inherit;
+  line-height: 1;
+  align-self: center;
+}
+
+.tree-toggle::before {
+  content: "\25BE"; /* down triangle when expanded */
+  display: inline-block;
+  font-size: 0.7em;
+  transition: transform 0.15s ease;
+}
+
+.has-children.collapsed > .tree-node > .tree-toggle::before {
+  transform: rotate(-90deg); /* points right when collapsed */
+}
+
+.has-children.collapsed > ul {
+  display: none;
+}
+
+/* leaf nodes: pad where the toggle would be so names align */
+.genealogy-tree li:not(.has-children) > .tree-node {
+  padding-left: calc(1.15em + 0.25rem);
+}
+
+@media print {
+  .tree-controls,
+  .tree-toggle {
+    display: none;
+  }
+  .has-children.collapsed > ul {
+    display: block; /* print fully expanded */
+  }
+}
+
 .muted {
   color: var(--muted);
 }

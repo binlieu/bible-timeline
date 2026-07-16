@@ -8260,11 +8260,6 @@
     },
     {
       "s": "person:seth",
-      "r": "parent-of",
-      "t": "person:enoch"
-    },
-    {
-      "s": "person:seth",
       "r": "appears-in",
       "t": "book:genesis"
     },
@@ -8614,6 +8609,26 @@
       "t": "book:1-samuel"
     },
     {
+      "s": "person:saul",
+      "r": "parent-of",
+      "t": "person:jonathan"
+    },
+    {
+      "s": "person:david",
+      "r": "parent-of",
+      "t": "person:solomon"
+    },
+    {
+      "s": "person:david",
+      "r": "parent-of",
+      "t": "person:absalom"
+    },
+    {
+      "s": "person:david",
+      "r": "spouse-of",
+      "t": "person:bathsheba"
+    },
+    {
       "s": "person:david",
       "r": "appears-in",
       "t": "book:1-samuel"
@@ -8632,6 +8647,21 @@
       "s": "person:david",
       "r": "appears-in",
       "t": "book:psalms"
+    },
+    {
+      "s": "person:bathsheba",
+      "r": "parent-of",
+      "t": "person:solomon"
+    },
+    {
+      "s": "person:bathsheba",
+      "r": "spouse-of",
+      "t": "person:david"
+    },
+    {
+      "s": "person:solomon",
+      "r": "parent-of",
+      "t": "person:rehoboam"
     },
     {
       "s": "person:solomon",
@@ -8774,6 +8804,16 @@
       "t": "book:malachi"
     },
     {
+      "s": "person:mary",
+      "r": "parent-of",
+      "t": "person:jesus"
+    },
+    {
+      "s": "person:joseph-of-nazareth",
+      "r": "parent-of",
+      "t": "person:jesus"
+    },
+    {
       "s": "person:jesus",
       "r": "appears-in",
       "t": "book:matthew"
@@ -8815,18 +8855,8 @@
     },
     {
       "s": "person:mary",
-      "r": "parent-of",
-      "t": "person:jesus"
-    },
-    {
-      "s": "person:mary",
       "r": "spouse-of",
       "t": "person:joseph-of-nazareth"
-    },
-    {
-      "s": "person:joseph-of-nazareth",
-      "r": "parent-of",
-      "t": "person:jesus"
     },
     {
       "s": "person:joseph-of-nazareth",
@@ -8839,9 +8869,24 @@
       "t": "person:john-the-baptist"
     },
     {
+      "s": "person:zechariah-the-priest",
+      "r": "spouse-of",
+      "t": "person:elizabeth"
+    },
+    {
       "s": "person:elizabeth",
       "r": "parent-of",
       "t": "person:john-the-baptist"
+    },
+    {
+      "s": "person:elizabeth",
+      "r": "spouse-of",
+      "t": "person:zechariah-the-priest"
+    },
+    {
+      "s": "person:herod-the-great",
+      "r": "parent-of",
+      "t": "person:herod-antipas"
     },
     {
       "s": "person:simeon",

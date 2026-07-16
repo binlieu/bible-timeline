@@ -485,9 +485,7 @@
       "adam",
       "eve"
     ],
-    "children": [
-      "enoch"
-    ],
+    "children": [],
     "spouses": [],
     "occupation": null,
     "nationality": null,
@@ -2458,7 +2456,9 @@
     "birth": null,
     "death": null,
     "parents": [],
-    "children": [],
+    "children": [
+      "jonathan"
+    ],
     "spouses": [],
     "occupation": "First king of Israel",
     "nationality": "Israelite",
@@ -2508,7 +2508,9 @@
     "nameMeaning": "The Lord has given",
     "birth": null,
     "death": null,
-    "parents": [],
+    "parents": [
+      "saul"
+    ],
     "children": [],
     "spouses": [],
     "occupation": "Prince and warrior",
@@ -2551,8 +2553,13 @@
     "birth": null,
     "death": null,
     "parents": [],
-    "children": [],
-    "spouses": [],
+    "children": [
+      "solomon",
+      "absalom"
+    ],
+    "spouses": [
+      "bathsheba"
+    ],
     "occupation": "King of Israel",
     "nationality": "Israelite",
     "tribe": "Judah",
@@ -2652,8 +2659,12 @@
     "birth": null,
     "death": null,
     "parents": [],
-    "children": [],
-    "spouses": [],
+    "children": [
+      "solomon"
+    ],
+    "spouses": [
+      "david"
+    ],
     "occupation": "Queen mother",
     "nationality": "Israelite",
     "tribe": null,
@@ -2730,7 +2741,9 @@
     "nameMeaning": "Father of peace",
     "birth": null,
     "death": null,
-    "parents": [],
+    "parents": [
+      "david"
+    ],
     "children": [],
     "spouses": [],
     "occupation": "Prince",
@@ -2807,8 +2820,13 @@
     "nameMeaning": "Peaceful",
     "birth": null,
     "death": null,
-    "parents": [],
-    "children": [],
+    "parents": [
+      "david",
+      "bathsheba"
+    ],
+    "children": [
+      "rehoboam"
+    ],
     "spouses": [],
     "occupation": "King of Israel",
     "nationality": "Israelite",
@@ -2865,7 +2883,9 @@
     "nameMeaning": "The people enlarge",
     "birth": null,
     "death": null,
-    "parents": [],
+    "parents": [
+      "solomon"
+    ],
     "children": [],
     "spouses": [],
     "occupation": "King of Judah",
@@ -4092,7 +4112,10 @@
     "nameMeaning": "Ἰησοῦς (Iesous), from Hebrew Yeshua, the Lord saves",
     "birth": "approx. 5 BC",
     "death": "approx. AD 30 or 33 (crucifixion); risen",
-    "parents": [],
+    "parents": [
+      "mary",
+      "joseph-of-nazareth"
+    ],
     "children": [],
     "spouses": [],
     "occupation": "Teacher, Messiah, Son of God",
@@ -4397,8 +4420,12 @@
     "birth": null,
     "death": null,
     "parents": [],
-    "children": [],
-    "spouses": [],
+    "children": [
+      "john-the-baptist"
+    ],
+    "spouses": [
+      "elizabeth"
+    ],
     "occupation": "Priest",
     "nationality": "Jewish",
     "tribe": "Levi",
@@ -4430,8 +4457,12 @@
     "birth": null,
     "death": null,
     "parents": [],
-    "children": [],
-    "spouses": [],
+    "children": [
+      "john-the-baptist"
+    ],
+    "spouses": [
+      "zechariah-the-priest"
+    ],
     "occupation": null,
     "nationality": "Jewish",
     "tribe": "Levi",
@@ -4523,7 +4554,9 @@
     "birth": "approx. 73 BC",
     "death": "4 BC",
     "parents": [],
-    "children": [],
+    "children": [
+      "herod-antipas"
+    ],
     "spouses": [],
     "occupation": "King of Judea",
     "nationality": "Idumean/Jewish",
@@ -5743,7 +5776,9 @@
     "nameMeaning": "Herod, heroic",
     "birth": "approx. 20 BC",
     "death": "after AD 39",
-    "parents": [],
+    "parents": [
+      "herod-the-great"
+    ],
     "children": [],
     "spouses": [],
     "occupation": "Tetrarch",

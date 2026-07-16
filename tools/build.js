@@ -608,6 +608,9 @@ function pageLayout(options) {
   if (options.timelineVisualScript) {
     scripts += '\n<script src="' + rootPrefix + 'js/timeline-visual.js"></script>';
   }
+  if (options.genealogyScript) {
+    scripts += '\n<script src="' + rootPrefix + 'js/genealogy.js"></script>';
+  }
   const scriptureBooks = scriptureBooksInHtml(options.body || "");
   if (scriptureBooks.length) {
     scripts += "\n" + scriptureBooks.map((book) => '<script src="' + rootPrefix + 'js/kjv/' + book + '.js"></script>').join("\n") +
@@ -1087,6 +1090,7 @@ function renderIndex() {
 
 function renderBrowsePage(fileName, title, description, bodyContent) {
   const hasFullMap = bodyContent.indexOf('id="full-map"') !== -1;
+  const hasGenealogyTree = bodyContent.indexOf('data-genealogy-tree') !== -1;
   const body = '<section class="section"><div class="container">\n' +
     '<div class="page-title"><span class="badge">Browse</span><h1>' + escapeHtml(title) + '</h1><p>' + escapeHtml(description) + '</p></div>\n' +
     bodyContent +
@@ -1097,6 +1101,7 @@ function renderBrowsePage(fileName, title, description, bodyContent) {
     description,
     rootPrefix: "",
     mapScript: hasFullMap,
+    genealogyScript: hasGenealogyTree,
     body
   }));
 }
@@ -1208,6 +1213,46 @@ function genealogyNode(personId, note) {
   return '<li>' + label + (note ? ' <span class="muted">(' + escapeHtml(note) + ')</span>' : '');
 }
 
+// Recursively render a person as a family-tree <li>. Each child is rendered
+// under exactly one parent (its parents[0]) so no one appears twice; spouses
+// are shown inline.
+function renderGenealogyPerson(personId, seen) {
+  const person = maps.people.get(personId);
+  if (!person || seen.has(personId)) return "";
+  seen.add(personId);
+  const nameLink = linkTo("", "person", person.id);
+  const spouses = (person.spouses || [])
+    .map((sid) => maps.people.get(sid) ? linkTo("", "person", sid) : null)
+    .filter(Boolean);
+  const spouseHtml = spouses.length
+    ? ' <span class="tree-spouse">&amp; ' + spouses.join(', ') + '</span>'
+    : "";
+  const meaning = person.nameMeaning ? '<span class="tree-meaning">' + escapeHtml(String(person.nameMeaning).split("(")[0].trim()) + '</span>' : "";
+  // children rendered here = those whose primary parent (parents[0]) is this person
+  const children = (person.children || []).filter((cid) => {
+    const child = maps.people.get(cid);
+    return child && (child.parents || [])[0] === person.id;
+  });
+  const childHtml = children.length
+    ? '<ul>' + children.map((cid) => renderGenealogyPerson(cid, seen)).join("") + '</ul>'
+    : "";
+  const cls = children.length ? ' class="has-children"' : "";
+  return '<li' + cls + '><span class="tree-node">' + nameLink + spouseHtml +
+    (meaning ? ' ' + meaning : '') + '</span>' + childHtml + '</li>';
+}
+
+function renderGenealogyForest() {
+  const roots = data.people
+    .filter((p) => (p.children || []).length && !(p.parents || []).length &&
+      (p.children || []).some((cid) => {
+        const child = maps.people.get(cid);
+        return child && (child.parents || [])[0] === p.id;
+      }))
+    .sort((a, b) => (a.order || 0) - (b.order || 0));
+  const seen = new Set();
+  return roots.map((root) => '<ul class="genealogy-tree">' + renderGenealogyPerson(root.id, seen) + '</ul>').join("\n");
+}
+
 function renderGenealogyBrowse() {
   const line = [
     ["adam", ""],
@@ -1237,8 +1282,14 @@ function renderGenealogyBrowse() {
   });
   nested += "</ul></li>".repeat(line.length);
 
-  renderBrowsePage("genealogy.html", "Genealogy", "Messianic line summary using available person parent/child records, with gaps labeled from biblical genealogies.",
-    '<section class="content-panel"><h2>Messianic Line</h2><p>Line summarized from Adam to Jesus with Matthew 1 and Luke 3 in view. Differences between Matthew and Luke are noted as a matter of scholarly discussion.</p><ul class="genealogy-list">' + nested + '</ul></section>\n'
+  const forest = renderGenealogyForest();
+  renderBrowsePage("genealogy.html", "Genealogy", "Interactive family trees built from the recorded parent/child relationships, plus the messianic line from Adam to Jesus.",
+    '<section class="content-panel"><h2>Family Trees</h2>' +
+    '<p>Collapsible family trees built directly from the parent, child, and spouse records in the dataset. Click a name to open that person; use the triangles to expand or collapse a branch. These are the relationships Scripture records explicitly, so the trees are focused rather than exhaustive.</p>' +
+    '<div class="tree-controls"><button type="button" class="button" data-tree-expand>Expand all</button> <button type="button" class="button" data-tree-collapse>Collapse all</button></div>' +
+    '<div class="genealogy-forest" data-genealogy-tree>' + forest + '</div>' +
+    '</section>\n' +
+    '<section class="content-panel"><h2>Messianic Line</h2><p>The line from Adam to Jesus with Matthew 1 and Luke 3 in view, bridging the generations Scripture lists but this dataset does not name individually. Differences between Matthew and Luke are a matter of scholarly discussion.</p><ul class="genealogy-list">' + nested + '</ul></section>\n'
   );
 }
 
