@@ -3,6 +3,7 @@ const path = require("path");
 
 const rootDir = path.resolve(__dirname, "..");
 const dataDir = path.join(rootDir, "data");
+const strict = process.argv.includes("--strict");
 
 function readJson(fileName) {
   return JSON.parse(fs.readFileSync(path.join(dataDir, fileName), "utf8"));
@@ -703,6 +704,7 @@ function renderFooter() {
   return '<footer class="site-footer">\n' +
     '  <div class="container">\n' +
     '    <p>Bible Timeline is a static, offline-capable study site generated from local JSON data.</p>\n' +
+    '    <p class="footer-credit">Developed by <a href="https://www.simonlieu.com/" target="_blank" rel="noopener noreferrer">Simon Lieu</a></p>\n' +
     '  </div>\n' +
     '</footer>';
 }
@@ -2106,6 +2108,9 @@ function build() {
 
   if (warnings > 0) {
     console.log("Completed with " + warnings + " warning(s).");
+    if (strict) {
+      process.exit(1);
+    }
   } else {
     console.log("Completed with no warnings.");
   }

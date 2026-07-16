@@ -1,5 +1,7 @@
 # Bible Timeline
 
+![CI](https://github.com/binlieu/bible-timeline/actions/workflows/ci.yml/badge.svg)
+
 A self-contained, offline-capable Bible study website: a chronological timeline of Scripture from Creation to Revelation, cross-linked into an explorable graph of people, places, nations, books, prophecies, and themes — with historical maps and journey routes. Built with only HTML5, CSS3, and vanilla JavaScript. No frameworks, no build-time dependencies beyond Node's standard library, no runtime dependencies, and no network calls — every page works opened directly from `file://`.
 
 ## Features
@@ -24,6 +26,22 @@ node tools/build.js
 `data/*.json` is the single source of truth. The build validates all cross-references, then regenerates every entity page, the timeline, browse/index pages, journey and map pages, the graph explorer data, and the offline data globals (`js/data.js`, `js/map-data.js`, `js/graph-data.js`). Generated HTML is committed so the site is browsable without a build step. The build is idempotent.
 
 Regenerating the map basemap (rarely needed) requires the public-domain [Natural Earth](https://www.naturalearthdata.com/) 50m GeoJSON inputs; see `tools/make-basemap.js`.
+
+## Development
+
+Build generated pages and data:
+
+```sh
+node tools/build.js
+```
+
+Run integrity checks:
+
+```sh
+node tools/test.js
+```
+
+`data/*.json` is the source of truth. After editing data, run the build and commit the regenerated files. CI enforces that generated output stays in sync.
 
 ## Project layout
 

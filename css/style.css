@@ -1195,6 +1195,11 @@ main {
   padding: 2rem 0;
 }
 
+.footer-credit {
+  margin-top: 0.35rem;
+  font-size: 0.9rem;
+}
+
 @media (max-width: 880px) {
   .nav-wrap {
     min-height: 64px;
