@@ -4022,5 +4022,2397 @@
       "jerusalem"
     ],
     "books": []
+  },
+  {
+    "id": "jesus",
+    "name": "Jesus",
+    "nameMeaning": "Ἰησοῦς (Iesous), from Hebrew Yeshua, the Lord saves",
+    "birth": "approx. 5 BC",
+    "death": "approx. AD 30 or 33 (crucifixion); risen",
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Teacher, Messiah, Son of God",
+    "nationality": "Jewish",
+    "tribe": "Judah",
+    "kingdom": null,
+    "roles": [
+      "messiah",
+      "teacher",
+      "king"
+    ],
+    "summary": "Jesus of Nazareth is presented in the New Testament as the promised Messiah, crucified under Pontius Pilate and raised from the dead.",
+    "events": [
+      "annunciation",
+      "birth-of-jesus",
+      "visit-of-the-magi",
+      "flight-to-egypt",
+      "boy-jesus-in-the-temple",
+      "ministry-of-john-the-baptist",
+      "baptism-of-jesus",
+      "temptation-of-jesus",
+      "first-disciples-called",
+      "wedding-at-cana",
+      "nicodemus",
+      "samaritan-woman",
+      "sermon-on-the-mount",
+      "twelve-apostles-chosen",
+      "parables-of-the-kingdom",
+      "jesus-calms-the-storm",
+      "feeding-the-five-thousand",
+      "jesus-walks-on-water",
+      "peters-confession",
+      "transfiguration",
+      "lazarus-raised",
+      "triumphal-entry",
+      "temple-cleansing",
+      "olivet-discourse",
+      "last-supper",
+      "gethsemane",
+      "trials-of-jesus",
+      "crucifixion",
+      "burial-of-jesus",
+      "resurrection",
+      "great-commission",
+      "ascension",
+      "pentecost",
+      "philip-and-the-ethiopian",
+      "sauls-conversion",
+      "peter-and-cornelius",
+      "voyage-and-shipwreck",
+      "pauls-roman-imprisonment",
+      "destruction-of-the-temple",
+      "john-exiled-on-patmos",
+      "revelation-given"
+    ],
+    "references": [
+      "Luke 1:26-38",
+      "Luke 2:1-20; Matthew 1:18-25",
+      "Matthew 2:1-12",
+      "Matthew 2:13-23",
+      "Luke 2:41-52",
+      "Matthew 3; Luke 3",
+      "Matthew 3:13-17",
+      "Matthew 4:1-11",
+      "John 1:35-51; Matthew 4:18-22",
+      "John 2:1-11",
+      "John 3",
+      "John 4",
+      "Matthew 5-7",
+      "Mark 3:13-19; Luke 6:12-16",
+      "Matthew 13",
+      "Mark 4:35-41",
+      "John 6:1-15",
+      "Matthew 14:22-33",
+      "Matthew 16:13-20",
+      "Matthew 17:1-13",
+      "John 11",
+      "Matthew 21:1-11",
+      "Matthew 21:12-17",
+      "Matthew 24-25",
+      "Matthew 26:17-30; John 13-17",
+      "Matthew 26:36-56",
+      "Matthew 26:57-27:26",
+      "Matthew 27:27-56; John 19",
+      "Matthew 27:57-66",
+      "Matthew 28; John 20",
+      "Matthew 28:16-20",
+      "Acts 1:1-11",
+      "Acts 2",
+      "Acts 8:26-40",
+      "Acts 9:1-19",
+      "Acts 10",
+      "Acts 27-28:10",
+      "Acts 28:11-31",
+      "(AD 70; prophesied Matthew 24:2)",
+      "Revelation 1:9",
+      "Revelation 1-22"
+    ],
+    "relatedPeople": [
+      "mary",
+      "joseph-of-nazareth",
+      "elizabeth",
+      "god",
+      "herod-the-great",
+      "john-the-baptist",
+      "herod-antipas",
+      "peter",
+      "andrew",
+      "james-son-of-zebedee",
+      "john-the-apostle",
+      "philip-the-apostle",
+      "bartholomew",
+      "nicodemus",
+      "thomas",
+      "matthew",
+      "james-son-of-alphaeus",
+      "thaddaeus",
+      "simon-the-zealot",
+      "judas-iscariot",
+      "moses",
+      "elijah",
+      "lazarus",
+      "martha",
+      "mary-of-bethany",
+      "caiaphas",
+      "pontius-pilate",
+      "mary-magdalene",
+      "matthias",
+      "philip-the-evangelist",
+      "paul",
+      "barnabas",
+      "cornelius",
+      "luke",
+      "timothy",
+      "john-mark"
+    ],
+    "relatedPlaces": [
+      "nazareth",
+      "bethlehem",
+      "jerusalem",
+      "egypt",
+      "jordan-river",
+      "sea-of-galilee",
+      "bethsaida",
+      "capernaum",
+      "cana",
+      "samaria",
+      "caesarea-philippi",
+      "bethany",
+      "mount-of-olives",
+      "golgotha",
+      "gaza",
+      "damascus",
+      "tarsus",
+      "caesarea",
+      "joppa",
+      "malta",
+      "rome",
+      "patmos",
+      "ephesus"
+    ],
+    "books": []
+  },
+  {
+    "id": "mary",
+    "name": "Mary",
+    "nameMeaning": "Miryam, likely beloved or bitter",
+    "birth": "first century BC",
+    "death": null,
+    "parents": [],
+    "children": [
+      "jesus"
+    ],
+    "spouses": [
+      "joseph-of-nazareth"
+    ],
+    "occupation": "Mother of Jesus",
+    "nationality": "Jewish",
+    "tribe": "Judah",
+    "kingdom": null,
+    "roles": [
+      "mother"
+    ],
+    "summary": "Mary was the mother of Jesus and a faithful witness from the birth narratives through the early church.",
+    "events": [
+      "annunciation",
+      "birth-of-jesus",
+      "visit-of-the-magi",
+      "flight-to-egypt",
+      "boy-jesus-in-the-temple",
+      "wedding-at-cana",
+      "crucifixion",
+      "resurrection",
+      "ascension",
+      "pentecost",
+      "early-church-in-jerusalem"
+    ],
+    "references": [
+      "Luke 1:26-38",
+      "Luke 2:1-20; Matthew 1:18-25",
+      "Matthew 2:1-12",
+      "Matthew 2:13-23",
+      "Luke 2:41-52",
+      "John 2:1-11",
+      "Matthew 27:27-56; John 19",
+      "Matthew 28; John 20",
+      "Acts 1:1-11",
+      "Acts 2",
+      "Acts 2:42-47; 4:32-37"
+    ],
+    "relatedPeople": [
+      "jesus",
+      "joseph-of-nazareth",
+      "elizabeth",
+      "god",
+      "herod-the-great",
+      "john-the-apostle",
+      "pontius-pilate",
+      "mary-magdalene",
+      "caiaphas",
+      "peter",
+      "andrew",
+      "james-son-of-zebedee",
+      "matthias",
+      "barnabas",
+      "james-brother-of-jesus"
+    ],
+    "relatedPlaces": [
+      "nazareth",
+      "bethlehem",
+      "jerusalem",
+      "egypt",
+      "cana",
+      "golgotha",
+      "mount-of-olives"
+    ],
+    "books": []
+  },
+  {
+    "id": "joseph-of-nazareth",
+    "name": "Joseph of Nazareth",
+    "nameMeaning": "Yosef, may he add",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [
+      "jesus"
+    ],
+    "spouses": [
+      "mary"
+    ],
+    "occupation": "Carpenter",
+    "nationality": "Jewish",
+    "tribe": "Judah",
+    "kingdom": null,
+    "roles": [
+      "guardian"
+    ],
+    "summary": "Joseph was Mary's husband and the legal guardian of Jesus.",
+    "events": [
+      "annunciation",
+      "birth-of-jesus",
+      "visit-of-the-magi",
+      "flight-to-egypt",
+      "boy-jesus-in-the-temple"
+    ],
+    "references": [
+      "Luke 1:26-38",
+      "Luke 2:1-20; Matthew 1:18-25",
+      "Matthew 2:1-12",
+      "Matthew 2:13-23",
+      "Luke 2:41-52"
+    ],
+    "relatedPeople": [
+      "mary",
+      "jesus",
+      "elizabeth",
+      "god",
+      "herod-the-great"
+    ],
+    "relatedPlaces": [
+      "nazareth",
+      "bethlehem",
+      "jerusalem",
+      "egypt"
+    ],
+    "books": []
+  },
+  {
+    "id": "zechariah-the-priest",
+    "name": "Zechariah the Priest",
+    "nameMeaning": "The Lord remembers",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Priest",
+    "nationality": "Jewish",
+    "tribe": "Levi",
+    "kingdom": null,
+    "roles": [
+      "priest"
+    ],
+    "summary": "Zechariah was a priest who received Gabriel's announcement of John the Baptist's birth.",
+    "events": [
+      "birth-of-john-the-baptist-foretold"
+    ],
+    "references": [
+      "Luke 1:5-25"
+    ],
+    "relatedPeople": [
+      "elizabeth",
+      "john-the-baptist",
+      "god"
+    ],
+    "relatedPlaces": [
+      "jerusalem"
+    ],
+    "books": []
+  },
+  {
+    "id": "elizabeth",
+    "name": "Elizabeth",
+    "nameMeaning": "My God is oath",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": null,
+    "nationality": "Jewish",
+    "tribe": "Levi",
+    "kingdom": null,
+    "roles": [
+      "mother"
+    ],
+    "summary": "Elizabeth was the mother of John the Baptist and a relative of Mary.",
+    "events": [
+      "birth-of-john-the-baptist-foretold",
+      "annunciation"
+    ],
+    "references": [
+      "Luke 1:5-25",
+      "Luke 1:26-38"
+    ],
+    "relatedPeople": [
+      "zechariah-the-priest",
+      "john-the-baptist",
+      "god",
+      "mary",
+      "jesus",
+      "joseph-of-nazareth"
+    ],
+    "relatedPlaces": [
+      "jerusalem",
+      "nazareth"
+    ],
+    "books": []
+  },
+  {
+    "id": "john-the-baptist",
+    "name": "John the Baptist",
+    "nameMeaning": "Yohanan, the Lord is gracious",
+    "birth": "approx. 6 BC",
+    "death": "first century AD",
+    "parents": [
+      "zechariah-the-priest",
+      "elizabeth"
+    ],
+    "children": [],
+    "spouses": [],
+    "occupation": "Prophet",
+    "nationality": "Jewish",
+    "tribe": "Levi",
+    "kingdom": null,
+    "roles": [
+      "prophet"
+    ],
+    "summary": "John the Baptist prepared the way for Jesus by preaching repentance and baptizing in the Jordan.",
+    "events": [
+      "birth-of-john-the-baptist-foretold",
+      "ministry-of-john-the-baptist",
+      "baptism-of-jesus",
+      "first-disciples-called"
+    ],
+    "references": [
+      "Luke 1:5-25",
+      "Matthew 3; Luke 3",
+      "Matthew 3:13-17",
+      "John 1:35-51; Matthew 4:18-22"
+    ],
+    "relatedPeople": [
+      "zechariah-the-priest",
+      "elizabeth",
+      "god",
+      "jesus",
+      "herod-antipas",
+      "peter",
+      "andrew",
+      "james-son-of-zebedee",
+      "john-the-apostle",
+      "philip-the-apostle",
+      "bartholomew"
+    ],
+    "relatedPlaces": [
+      "jerusalem",
+      "jordan-river",
+      "sea-of-galilee",
+      "bethsaida",
+      "capernaum"
+    ],
+    "books": []
+  },
+  {
+    "id": "herod-the-great",
+    "name": "Herod the Great",
+    "nameMeaning": "Herod, heroic",
+    "birth": "approx. 73 BC",
+    "death": "4 BC",
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "King of Judea",
+    "nationality": "Idumean/Jewish",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "king"
+    ],
+    "summary": "Herod the Great ruled Judea at the time of Jesus' birth.",
+    "events": [
+      "birth-of-jesus",
+      "visit-of-the-magi",
+      "flight-to-egypt"
+    ],
+    "references": [
+      "Luke 2:1-20; Matthew 1:18-25",
+      "Matthew 2:1-12",
+      "Matthew 2:13-23"
+    ],
+    "relatedPeople": [
+      "jesus",
+      "mary",
+      "joseph-of-nazareth",
+      "god"
+    ],
+    "relatedPlaces": [
+      "bethlehem",
+      "nazareth",
+      "jerusalem",
+      "egypt"
+    ],
+    "books": []
+  },
+  {
+    "id": "simeon",
+    "name": "Simeon",
+    "nameMeaning": "Hearing",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": null,
+    "nationality": "Jewish",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "witness"
+    ],
+    "summary": "Simeon blessed the infant Jesus and spoke of salvation for Israel and the nations.",
+    "events": [
+      "birth-of-jesus"
+    ],
+    "references": [
+      "Luke 2:25-35"
+    ],
+    "relatedPeople": [
+      "jesus",
+      "mary",
+      "joseph-of-nazareth",
+      "anna",
+      "god"
+    ],
+    "relatedPlaces": [
+      "jerusalem"
+    ],
+    "books": []
+  },
+  {
+    "id": "anna",
+    "name": "Anna",
+    "nameMeaning": "Grace",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Prophetess",
+    "nationality": "Jewish",
+    "tribe": "Asher",
+    "kingdom": null,
+    "roles": [
+      "prophetess"
+    ],
+    "summary": "Anna gave thanks for Jesus and spoke about him to those awaiting redemption.",
+    "events": [
+      "birth-of-jesus"
+    ],
+    "references": [
+      "Luke 2:36-38"
+    ],
+    "relatedPeople": [
+      "jesus",
+      "mary",
+      "joseph-of-nazareth",
+      "simeon",
+      "god"
+    ],
+    "relatedPlaces": [
+      "jerusalem"
+    ],
+    "books": []
+  },
+  {
+    "id": "peter",
+    "name": "Peter",
+    "nameMeaning": "Πέτρος (Petros), rock",
+    "birth": null,
+    "death": "first century AD",
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Fisherman and apostle",
+    "nationality": "Jewish",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "apostle"
+    ],
+    "summary": "Peter was one of the Twelve and a leading witness in the Jerusalem church.",
+    "events": [
+      "first-disciples-called",
+      "sermon-on-the-mount",
+      "twelve-apostles-chosen",
+      "parables-of-the-kingdom",
+      "jesus-calms-the-storm",
+      "feeding-the-five-thousand",
+      "jesus-walks-on-water",
+      "peters-confession",
+      "transfiguration",
+      "triumphal-entry",
+      "temple-cleansing",
+      "olivet-discourse",
+      "last-supper",
+      "gethsemane",
+      "trials-of-jesus",
+      "resurrection",
+      "great-commission",
+      "ascension",
+      "pentecost",
+      "early-church-in-jerusalem",
+      "stephen-martyred",
+      "sauls-conversion",
+      "peter-and-cornelius",
+      "church-at-antioch",
+      "jerusalem-council"
+    ],
+    "references": [
+      "John 1:35-51; Matthew 4:18-22",
+      "Matthew 5-7",
+      "Mark 3:13-19; Luke 6:12-16",
+      "Matthew 13",
+      "Mark 4:35-41",
+      "John 6:1-15",
+      "Matthew 14:22-33",
+      "Matthew 16:13-20",
+      "Matthew 17:1-13",
+      "Matthew 21:1-11",
+      "Matthew 21:12-17",
+      "Matthew 24-25",
+      "Matthew 26:17-30; John 13-17",
+      "Matthew 26:36-56",
+      "Matthew 26:57-27:26",
+      "Matthew 28; John 20",
+      "Matthew 28:16-20",
+      "Acts 1:1-11",
+      "Acts 2",
+      "Acts 2:42-47; 4:32-37",
+      "Acts 6-7",
+      "Acts 9:1-19",
+      "Acts 10",
+      "Acts 11:19-30",
+      "Acts 15"
+    ],
+    "relatedPeople": [
+      "jesus",
+      "andrew",
+      "james-son-of-zebedee",
+      "john-the-apostle",
+      "philip-the-apostle",
+      "bartholomew",
+      "john-the-baptist",
+      "thomas",
+      "matthew",
+      "james-son-of-alphaeus",
+      "thaddaeus",
+      "simon-the-zealot",
+      "judas-iscariot",
+      "god",
+      "moses",
+      "elijah",
+      "caiaphas",
+      "pontius-pilate",
+      "herod-antipas",
+      "mary-magdalene",
+      "mary",
+      "matthias",
+      "barnabas",
+      "james-brother-of-jesus",
+      "stephen",
+      "paul",
+      "cornelius",
+      "titus",
+      "silas"
+    ],
+    "relatedPlaces": [
+      "sea-of-galilee",
+      "bethsaida",
+      "capernaum",
+      "caesarea-philippi",
+      "mount-of-olives",
+      "jerusalem",
+      "bethany",
+      "golgotha",
+      "damascus",
+      "tarsus",
+      "caesarea",
+      "joppa",
+      "antioch"
+    ],
+    "books": []
+  },
+  {
+    "id": "andrew",
+    "name": "Andrew",
+    "nameMeaning": "Manly",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Fisherman and apostle",
+    "nationality": "Jewish",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "apostle"
+    ],
+    "summary": "Andrew, Peter's brother, was among the first disciples called by Jesus.",
+    "events": [
+      "first-disciples-called",
+      "sermon-on-the-mount",
+      "twelve-apostles-chosen",
+      "jesus-calms-the-storm",
+      "feeding-the-five-thousand",
+      "jesus-walks-on-water",
+      "peters-confession",
+      "olivet-discourse",
+      "last-supper",
+      "great-commission",
+      "ascension"
+    ],
+    "references": [
+      "John 1:35-51; Matthew 4:18-22",
+      "Matthew 5-7",
+      "Mark 3:13-19; Luke 6:12-16",
+      "Mark 4:35-41",
+      "John 6:1-15",
+      "Matthew 14:22-33",
+      "Matthew 16:13-20",
+      "Matthew 24-25",
+      "Matthew 26:17-30; John 13-17",
+      "Matthew 28:16-20",
+      "Acts 1:1-11"
+    ],
+    "relatedPeople": [
+      "jesus",
+      "peter",
+      "james-son-of-zebedee",
+      "john-the-apostle",
+      "philip-the-apostle",
+      "bartholomew",
+      "john-the-baptist",
+      "thomas",
+      "matthew",
+      "james-son-of-alphaeus",
+      "thaddaeus",
+      "simon-the-zealot",
+      "judas-iscariot",
+      "god",
+      "mary"
+    ],
+    "relatedPlaces": [
+      "sea-of-galilee",
+      "bethsaida",
+      "capernaum",
+      "caesarea-philippi",
+      "mount-of-olives",
+      "jerusalem"
+    ],
+    "books": []
+  },
+  {
+    "id": "james-son-of-zebedee",
+    "name": "James son of Zebedee",
+    "nameMeaning": "Jacob/James, supplanter",
+    "birth": null,
+    "death": "approx. AD 44",
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Fisherman and apostle",
+    "nationality": "Jewish",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "apostle"
+    ],
+    "summary": "James son of Zebedee was one of the Twelve and part of Jesus' inner circle.",
+    "events": [
+      "first-disciples-called",
+      "sermon-on-the-mount",
+      "twelve-apostles-chosen",
+      "jesus-calms-the-storm",
+      "jesus-walks-on-water",
+      "peters-confession",
+      "transfiguration",
+      "olivet-discourse",
+      "last-supper",
+      "gethsemane",
+      "great-commission",
+      "ascension"
+    ],
+    "references": [
+      "John 1:35-51; Matthew 4:18-22",
+      "Matthew 5-7",
+      "Mark 3:13-19; Luke 6:12-16",
+      "Mark 4:35-41",
+      "Matthew 14:22-33",
+      "Matthew 16:13-20",
+      "Matthew 17:1-13",
+      "Matthew 24-25",
+      "Matthew 26:17-30; John 13-17",
+      "Matthew 26:36-56",
+      "Matthew 28:16-20",
+      "Acts 1:1-11"
+    ],
+    "relatedPeople": [
+      "jesus",
+      "peter",
+      "andrew",
+      "john-the-apostle",
+      "philip-the-apostle",
+      "bartholomew",
+      "john-the-baptist",
+      "thomas",
+      "matthew",
+      "james-son-of-alphaeus",
+      "thaddaeus",
+      "simon-the-zealot",
+      "judas-iscariot",
+      "god",
+      "moses",
+      "elijah",
+      "caiaphas",
+      "mary"
+    ],
+    "relatedPlaces": [
+      "sea-of-galilee",
+      "bethsaida",
+      "capernaum",
+      "caesarea-philippi",
+      "mount-of-olives",
+      "jerusalem"
+    ],
+    "books": []
+  },
+  {
+    "id": "john-the-apostle",
+    "name": "John the Apostle",
+    "nameMeaning": "The Lord is gracious",
+    "birth": null,
+    "death": "late first century AD",
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Apostle",
+    "nationality": "Jewish",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "apostle",
+      "prophet"
+    ],
+    "summary": "John was one of the Twelve and the recipient of Revelation on Patmos.",
+    "events": [
+      "first-disciples-called",
+      "wedding-at-cana",
+      "nicodemus",
+      "samaritan-woman",
+      "sermon-on-the-mount",
+      "twelve-apostles-chosen",
+      "parables-of-the-kingdom",
+      "jesus-calms-the-storm",
+      "feeding-the-five-thousand",
+      "jesus-walks-on-water",
+      "peters-confession",
+      "transfiguration",
+      "lazarus-raised",
+      "triumphal-entry",
+      "temple-cleansing",
+      "olivet-discourse",
+      "last-supper",
+      "gethsemane",
+      "crucifixion",
+      "resurrection",
+      "great-commission",
+      "ascension",
+      "pentecost",
+      "early-church-in-jerusalem",
+      "stephen-martyred",
+      "destruction-of-the-temple",
+      "john-exiled-on-patmos",
+      "revelation-given"
+    ],
+    "references": [
+      "John 1:35-51; Matthew 4:18-22",
+      "John 2:1-11",
+      "John 3",
+      "John 4",
+      "Matthew 5-7",
+      "Mark 3:13-19; Luke 6:12-16",
+      "Matthew 13",
+      "Mark 4:35-41",
+      "John 6:1-15",
+      "Matthew 14:22-33",
+      "Matthew 16:13-20",
+      "Matthew 17:1-13",
+      "John 11",
+      "Matthew 21:1-11",
+      "Matthew 21:12-17",
+      "Matthew 24-25",
+      "Matthew 26:17-30; John 13-17",
+      "Matthew 26:36-56",
+      "Matthew 27:27-56; John 19",
+      "Matthew 28; John 20",
+      "Matthew 28:16-20",
+      "Acts 1:1-11",
+      "Acts 2",
+      "Acts 2:42-47; 4:32-37",
+      "Acts 6-7",
+      "(AD 70; prophesied Matthew 24:2)",
+      "Revelation 1:9",
+      "Revelation 1-22"
+    ],
+    "relatedPeople": [
+      "jesus",
+      "peter",
+      "andrew",
+      "james-son-of-zebedee",
+      "philip-the-apostle",
+      "bartholomew",
+      "john-the-baptist",
+      "mary",
+      "nicodemus",
+      "thomas",
+      "matthew",
+      "james-son-of-alphaeus",
+      "thaddaeus",
+      "simon-the-zealot",
+      "judas-iscariot",
+      "god",
+      "moses",
+      "elijah",
+      "lazarus",
+      "martha",
+      "mary-of-bethany",
+      "caiaphas",
+      "pontius-pilate",
+      "mary-magdalene",
+      "matthias",
+      "barnabas",
+      "james-brother-of-jesus",
+      "stephen",
+      "paul"
+    ],
+    "relatedPlaces": [
+      "sea-of-galilee",
+      "bethsaida",
+      "capernaum",
+      "cana",
+      "nazareth",
+      "jerusalem",
+      "samaria",
+      "caesarea-philippi",
+      "bethany",
+      "mount-of-olives",
+      "golgotha",
+      "patmos",
+      "ephesus"
+    ],
+    "books": []
+  },
+  {
+    "id": "philip-the-apostle",
+    "name": "Philip the Apostle",
+    "nameMeaning": "Lover of horses",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Apostle",
+    "nationality": "Jewish",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "apostle"
+    ],
+    "summary": "Philip was one of the Twelve and appears in John as a disciple who brings others to Jesus.",
+    "events": [
+      "first-disciples-called",
+      "twelve-apostles-chosen",
+      "feeding-the-five-thousand",
+      "last-supper"
+    ],
+    "references": [
+      "John 1:35-51; Matthew 4:18-22",
+      "Mark 3:13-19; Luke 6:12-16",
+      "John 6:1-15",
+      "Matthew 26:17-30; John 13-17"
+    ],
+    "relatedPeople": [
+      "jesus",
+      "peter",
+      "andrew",
+      "james-son-of-zebedee",
+      "john-the-apostle",
+      "bartholomew",
+      "john-the-baptist",
+      "thomas",
+      "matthew",
+      "james-son-of-alphaeus",
+      "thaddaeus",
+      "simon-the-zealot",
+      "judas-iscariot",
+      "god"
+    ],
+    "relatedPlaces": [
+      "sea-of-galilee",
+      "bethsaida",
+      "capernaum",
+      "jerusalem"
+    ],
+    "books": []
+  },
+  {
+    "id": "bartholomew",
+    "name": "Bartholomew",
+    "nameMeaning": "Son of Tolmai",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Apostle",
+    "nationality": "Jewish",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "apostle"
+    ],
+    "summary": "Bartholomew was one of the Twelve apostles.",
+    "events": [
+      "first-disciples-called",
+      "twelve-apostles-chosen"
+    ],
+    "references": [
+      "John 1:35-51; Matthew 4:18-22",
+      "Mark 3:13-19; Luke 6:12-16"
+    ],
+    "relatedPeople": [
+      "jesus",
+      "peter",
+      "andrew",
+      "james-son-of-zebedee",
+      "john-the-apostle",
+      "philip-the-apostle",
+      "john-the-baptist",
+      "thomas",
+      "matthew",
+      "james-son-of-alphaeus",
+      "thaddaeus",
+      "simon-the-zealot",
+      "judas-iscariot",
+      "god"
+    ],
+    "relatedPlaces": [
+      "sea-of-galilee",
+      "bethsaida",
+      "capernaum"
+    ],
+    "books": []
+  },
+  {
+    "id": "thomas",
+    "name": "Thomas",
+    "nameMeaning": "Twin",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Apostle",
+    "nationality": "Jewish",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "apostle"
+    ],
+    "summary": "Thomas was one of the Twelve and confessed the risen Jesus as Lord and God.",
+    "events": [
+      "twelve-apostles-chosen",
+      "last-supper",
+      "great-commission"
+    ],
+    "references": [
+      "Mark 3:13-19; Luke 6:12-16",
+      "Matthew 26:17-30; John 13-17",
+      "Matthew 28:16-20"
+    ],
+    "relatedPeople": [
+      "jesus",
+      "peter",
+      "andrew",
+      "james-son-of-zebedee",
+      "john-the-apostle",
+      "philip-the-apostle",
+      "bartholomew",
+      "matthew",
+      "james-son-of-alphaeus",
+      "thaddaeus",
+      "simon-the-zealot",
+      "judas-iscariot",
+      "god"
+    ],
+    "relatedPlaces": [
+      "sea-of-galilee",
+      "jerusalem"
+    ],
+    "books": []
+  },
+  {
+    "id": "matthew",
+    "name": "Matthew",
+    "nameMeaning": "Gift of the Lord",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Tax collector and apostle",
+    "nationality": "Jewish",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "apostle"
+    ],
+    "summary": "Matthew was a tax collector called by Jesus and named among the Twelve.",
+    "events": [
+      "twelve-apostles-chosen",
+      "parables-of-the-kingdom",
+      "great-commission"
+    ],
+    "references": [
+      "Mark 3:13-19; Luke 6:12-16",
+      "Matthew 13",
+      "Matthew 28:16-20"
+    ],
+    "relatedPeople": [
+      "jesus",
+      "peter",
+      "andrew",
+      "james-son-of-zebedee",
+      "john-the-apostle",
+      "philip-the-apostle",
+      "bartholomew",
+      "thomas",
+      "james-son-of-alphaeus",
+      "thaddaeus",
+      "simon-the-zealot",
+      "judas-iscariot",
+      "god"
+    ],
+    "relatedPlaces": [
+      "sea-of-galilee",
+      "capernaum"
+    ],
+    "books": []
+  },
+  {
+    "id": "james-son-of-alphaeus",
+    "name": "James son of Alphaeus",
+    "nameMeaning": "Jacob/James, supplanter",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Apostle",
+    "nationality": "Jewish",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "apostle"
+    ],
+    "summary": "James son of Alphaeus was one of the Twelve apostles.",
+    "events": [
+      "twelve-apostles-chosen"
+    ],
+    "references": [
+      "Mark 3:13-19; Luke 6:12-16"
+    ],
+    "relatedPeople": [
+      "jesus",
+      "peter",
+      "andrew",
+      "james-son-of-zebedee",
+      "john-the-apostle",
+      "philip-the-apostle",
+      "bartholomew",
+      "thomas",
+      "matthew",
+      "thaddaeus",
+      "simon-the-zealot",
+      "judas-iscariot",
+      "god"
+    ],
+    "relatedPlaces": [
+      "sea-of-galilee"
+    ],
+    "books": []
+  },
+  {
+    "id": "thaddaeus",
+    "name": "Thaddaeus",
+    "nameMeaning": "Possibly courageous heart",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Apostle",
+    "nationality": "Jewish",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "apostle"
+    ],
+    "summary": "Thaddaeus was one of the Twelve.",
+    "events": [
+      "twelve-apostles-chosen"
+    ],
+    "references": [
+      "Mark 3:13-19; Luke 6:12-16"
+    ],
+    "relatedPeople": [
+      "jesus",
+      "peter",
+      "andrew",
+      "james-son-of-zebedee",
+      "john-the-apostle",
+      "philip-the-apostle",
+      "bartholomew",
+      "thomas",
+      "matthew",
+      "james-son-of-alphaeus",
+      "simon-the-zealot",
+      "judas-iscariot",
+      "god"
+    ],
+    "relatedPlaces": [
+      "sea-of-galilee"
+    ],
+    "books": []
+  },
+  {
+    "id": "simon-the-zealot",
+    "name": "Simon the Zealot",
+    "nameMeaning": "Hearing",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Apostle",
+    "nationality": "Jewish",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "apostle"
+    ],
+    "summary": "Simon the Zealot was one of the Twelve apostles.",
+    "events": [
+      "twelve-apostles-chosen"
+    ],
+    "references": [
+      "Mark 3:13-19; Luke 6:12-16"
+    ],
+    "relatedPeople": [
+      "jesus",
+      "peter",
+      "andrew",
+      "james-son-of-zebedee",
+      "john-the-apostle",
+      "philip-the-apostle",
+      "bartholomew",
+      "thomas",
+      "matthew",
+      "james-son-of-alphaeus",
+      "thaddaeus",
+      "judas-iscariot",
+      "god"
+    ],
+    "relatedPlaces": [
+      "sea-of-galilee"
+    ],
+    "books": []
+  },
+  {
+    "id": "judas-iscariot",
+    "name": "Judas Iscariot",
+    "nameMeaning": "Judah, praised",
+    "birth": null,
+    "death": "approx. AD 30",
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Apostle and betrayer",
+    "nationality": "Jewish",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "apostle"
+    ],
+    "summary": "Judas Iscariot was one of the Twelve who betrayed Jesus.",
+    "events": [
+      "twelve-apostles-chosen",
+      "last-supper",
+      "gethsemane",
+      "trials-of-jesus"
+    ],
+    "references": [
+      "Mark 3:13-19; Luke 6:12-16",
+      "Matthew 26:17-30; John 13-17",
+      "Matthew 26:36-56",
+      "Matthew 26:57-27:26"
+    ],
+    "relatedPeople": [
+      "jesus",
+      "peter",
+      "andrew",
+      "james-son-of-zebedee",
+      "john-the-apostle",
+      "philip-the-apostle",
+      "bartholomew",
+      "thomas",
+      "matthew",
+      "james-son-of-alphaeus",
+      "thaddaeus",
+      "simon-the-zealot",
+      "god",
+      "caiaphas",
+      "pontius-pilate",
+      "herod-antipas"
+    ],
+    "relatedPlaces": [
+      "sea-of-galilee",
+      "jerusalem",
+      "mount-of-olives"
+    ],
+    "books": []
+  },
+  {
+    "id": "matthias",
+    "name": "Matthias",
+    "nameMeaning": "Gift of the Lord",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Apostle",
+    "nationality": "Jewish",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "apostle"
+    ],
+    "summary": "Matthias was chosen to replace Judas as a witness to Jesus' resurrection.",
+    "events": [
+      "pentecost",
+      "early-church-in-jerusalem"
+    ],
+    "references": [
+      "Acts 2",
+      "Acts 2:42-47; 4:32-37"
+    ],
+    "relatedPeople": [
+      "peter",
+      "john-the-apostle",
+      "mary",
+      "jesus",
+      "god",
+      "barnabas",
+      "james-brother-of-jesus"
+    ],
+    "relatedPlaces": [
+      "jerusalem"
+    ],
+    "books": []
+  },
+  {
+    "id": "mary-magdalene",
+    "name": "Mary Magdalene",
+    "nameMeaning": "Mary from Magdala",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Disciple",
+    "nationality": "Jewish",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "disciple",
+      "witness"
+    ],
+    "summary": "Mary Magdalene was among the first witnesses of the empty tomb and risen Christ.",
+    "events": [
+      "crucifixion",
+      "burial-of-jesus",
+      "resurrection"
+    ],
+    "references": [
+      "Matthew 27:27-56; John 19",
+      "Matthew 27:57-66",
+      "Matthew 28; John 20"
+    ],
+    "relatedPeople": [
+      "jesus",
+      "pontius-pilate",
+      "mary",
+      "john-the-apostle",
+      "caiaphas",
+      "nicodemus",
+      "peter"
+    ],
+    "relatedPlaces": [
+      "golgotha",
+      "jerusalem"
+    ],
+    "books": []
+  },
+  {
+    "id": "martha",
+    "name": "Martha",
+    "nameMeaning": "Lady or mistress",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Disciple",
+    "nationality": "Jewish",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "disciple"
+    ],
+    "summary": "Martha of Bethany was the sister of Mary and Lazarus.",
+    "events": [
+      "lazarus-raised"
+    ],
+    "references": [
+      "John 11"
+    ],
+    "relatedPeople": [
+      "jesus",
+      "lazarus",
+      "mary-of-bethany",
+      "john-the-apostle"
+    ],
+    "relatedPlaces": [
+      "bethany",
+      "jerusalem"
+    ],
+    "books": []
+  },
+  {
+    "id": "mary-of-bethany",
+    "name": "Mary of Bethany",
+    "nameMeaning": "Mary from Bethany",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Disciple",
+    "nationality": "Jewish",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "disciple"
+    ],
+    "summary": "Mary of Bethany was the sister of Martha and Lazarus.",
+    "events": [
+      "lazarus-raised"
+    ],
+    "references": [
+      "John 11"
+    ],
+    "relatedPeople": [
+      "jesus",
+      "lazarus",
+      "martha",
+      "john-the-apostle"
+    ],
+    "relatedPlaces": [
+      "bethany",
+      "jerusalem"
+    ],
+    "books": []
+  },
+  {
+    "id": "lazarus",
+    "name": "Lazarus",
+    "nameMeaning": "God has helped",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": null,
+    "nationality": "Jewish",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "disciple"
+    ],
+    "summary": "Lazarus of Bethany was raised by Jesus after four days in the tomb.",
+    "events": [
+      "lazarus-raised"
+    ],
+    "references": [
+      "John 11"
+    ],
+    "relatedPeople": [
+      "jesus",
+      "martha",
+      "mary-of-bethany",
+      "john-the-apostle"
+    ],
+    "relatedPlaces": [
+      "bethany",
+      "jerusalem"
+    ],
+    "books": []
+  },
+  {
+    "id": "nicodemus",
+    "name": "Nicodemus",
+    "nameMeaning": "Victory of the people",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Pharisee and teacher",
+    "nationality": "Jewish",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "teacher"
+    ],
+    "summary": "Nicodemus was a Jewish teacher who came to Jesus by night and later helped with his burial.",
+    "events": [
+      "nicodemus",
+      "burial-of-jesus"
+    ],
+    "references": [
+      "John 3",
+      "Matthew 27:57-66"
+    ],
+    "relatedPeople": [
+      "jesus",
+      "john-the-apostle",
+      "mary-magdalene",
+      "pontius-pilate",
+      "caiaphas"
+    ],
+    "relatedPlaces": [
+      "jerusalem",
+      "golgotha"
+    ],
+    "books": []
+  },
+  {
+    "id": "pontius-pilate",
+    "name": "Pontius Pilate",
+    "nameMeaning": "Pilate, possibly armed with a spear",
+    "birth": null,
+    "death": "after AD 36",
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Roman prefect",
+    "nationality": "Roman",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "governor"
+    ],
+    "summary": "Pontius Pilate was the Roman prefect who sentenced Jesus to crucifixion.",
+    "events": [
+      "trials-of-jesus",
+      "crucifixion",
+      "burial-of-jesus"
+    ],
+    "references": [
+      "Matthew 26:57-27:26",
+      "Matthew 27:27-56; John 19",
+      "Matthew 27:57-66"
+    ],
+    "relatedPeople": [
+      "jesus",
+      "caiaphas",
+      "peter",
+      "judas-iscariot",
+      "herod-antipas",
+      "mary",
+      "john-the-apostle",
+      "mary-magdalene",
+      "nicodemus"
+    ],
+    "relatedPlaces": [
+      "jerusalem",
+      "golgotha"
+    ],
+    "books": []
+  },
+  {
+    "id": "caiaphas",
+    "name": "Caiaphas",
+    "nameMeaning": "Possibly depression or searcher",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "High priest",
+    "nationality": "Jewish",
+    "tribe": "Levi",
+    "kingdom": null,
+    "roles": [
+      "high-priest"
+    ],
+    "summary": "Caiaphas was high priest during the final trial of Jesus.",
+    "events": [
+      "temple-cleansing",
+      "gethsemane",
+      "trials-of-jesus",
+      "crucifixion",
+      "burial-of-jesus"
+    ],
+    "references": [
+      "Matthew 21:12-17",
+      "Matthew 26:36-56",
+      "Matthew 26:57-27:26",
+      "Matthew 27:27-56; John 19",
+      "Matthew 27:57-66"
+    ],
+    "relatedPeople": [
+      "jesus",
+      "peter",
+      "john-the-apostle",
+      "james-son-of-zebedee",
+      "judas-iscariot",
+      "pontius-pilate",
+      "herod-antipas",
+      "mary",
+      "mary-magdalene",
+      "nicodemus"
+    ],
+    "relatedPlaces": [
+      "jerusalem",
+      "mount-of-olives",
+      "golgotha"
+    ],
+    "books": []
+  },
+  {
+    "id": "herod-antipas",
+    "name": "Herod Antipas",
+    "nameMeaning": "Herod, heroic",
+    "birth": "approx. 20 BC",
+    "death": "after AD 39",
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Tetrarch",
+    "nationality": "Idumean/Jewish",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "ruler"
+    ],
+    "summary": "Herod Antipas ruled Galilee and Perea during the ministries of John and Jesus.",
+    "events": [
+      "ministry-of-john-the-baptist",
+      "trials-of-jesus"
+    ],
+    "references": [
+      "Matthew 3; Luke 3",
+      "Matthew 26:57-27:26"
+    ],
+    "relatedPeople": [
+      "john-the-baptist",
+      "jesus",
+      "god",
+      "pontius-pilate",
+      "caiaphas",
+      "peter",
+      "judas-iscariot"
+    ],
+    "relatedPlaces": [
+      "jordan-river",
+      "jerusalem"
+    ],
+    "books": []
+  },
+  {
+    "id": "stephen",
+    "name": "Stephen",
+    "nameMeaning": "Crown",
+    "birth": null,
+    "death": "approx. AD 34",
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Servant and witness",
+    "nationality": "Jewish",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "martyr"
+    ],
+    "summary": "Stephen was one of the seven appointed servants and the first Christian martyr in Acts.",
+    "events": [
+      "stephen-martyred"
+    ],
+    "references": [
+      "Acts 6-7"
+    ],
+    "relatedPeople": [
+      "paul",
+      "peter",
+      "john-the-apostle"
+    ],
+    "relatedPlaces": [
+      "jerusalem"
+    ],
+    "books": []
+  },
+  {
+    "id": "philip-the-evangelist",
+    "name": "Philip the Evangelist",
+    "nameMeaning": "Lover of horses",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Evangelist",
+    "nationality": "Jewish",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "evangelist"
+    ],
+    "summary": "Philip preached in Samaria and explained Isaiah to the Ethiopian official.",
+    "events": [
+      "philip-and-the-ethiopian"
+    ],
+    "references": [
+      "Acts 8:26-40"
+    ],
+    "relatedPeople": [
+      "jesus"
+    ],
+    "relatedPlaces": [
+      "gaza",
+      "jerusalem"
+    ],
+    "books": []
+  },
+  {
+    "id": "paul",
+    "name": "Paul",
+    "nameMeaning": "Small or humble",
+    "birth": null,
+    "death": "first century AD",
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Apostle and missionary",
+    "nationality": "Jewish",
+    "tribe": "Benjamin",
+    "kingdom": null,
+    "roles": [
+      "apostle",
+      "missionary"
+    ],
+    "summary": "Paul, formerly Saul, became the leading apostolic missionary to the Gentiles.",
+    "events": [
+      "stephen-martyred",
+      "sauls-conversion",
+      "church-at-antioch",
+      "first-missionary-journey",
+      "jerusalem-council",
+      "second-missionary-journey",
+      "third-missionary-journey",
+      "pauls-arrest-in-jerusalem",
+      "voyage-and-shipwreck",
+      "pauls-roman-imprisonment"
+    ],
+    "references": [
+      "Acts 6-7",
+      "Acts 9:1-19",
+      "Acts 11:19-30",
+      "Acts 13-14",
+      "Acts 15",
+      "Acts 16-18",
+      "Acts 18:23-21:16",
+      "Acts 21-26",
+      "Acts 27-28:10",
+      "Acts 28:11-31"
+    ],
+    "relatedPeople": [
+      "stephen",
+      "peter",
+      "john-the-apostle",
+      "jesus",
+      "barnabas",
+      "james-brother-of-jesus",
+      "john-mark",
+      "timothy",
+      "titus",
+      "silas",
+      "luke",
+      "lydia",
+      "aquila",
+      "priscilla",
+      "apollos"
+    ],
+    "relatedPlaces": [
+      "jerusalem",
+      "damascus",
+      "tarsus",
+      "antioch",
+      "cyprus",
+      "lystra",
+      "philippi",
+      "thessalonica",
+      "berea",
+      "athens",
+      "corinth",
+      "ephesus",
+      "caesarea",
+      "malta",
+      "rome"
+    ],
+    "books": []
+  },
+  {
+    "id": "barnabas",
+    "name": "Barnabas",
+    "nameMeaning": "Son of encouragement",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Missionary",
+    "nationality": "Jewish",
+    "tribe": "Levi",
+    "kingdom": null,
+    "roles": [
+      "missionary"
+    ],
+    "summary": "Barnabas encouraged the early church and joined the first missionary journey.",
+    "events": [
+      "early-church-in-jerusalem",
+      "sauls-conversion",
+      "church-at-antioch",
+      "first-missionary-journey",
+      "jerusalem-council"
+    ],
+    "references": [
+      "Acts 2:42-47; 4:32-37",
+      "Acts 9:1-19",
+      "Acts 11:19-30",
+      "Acts 13-14",
+      "Acts 15"
+    ],
+    "relatedPeople": [
+      "peter",
+      "john-the-apostle",
+      "mary",
+      "matthias",
+      "james-brother-of-jesus",
+      "paul",
+      "jesus",
+      "john-mark",
+      "timothy",
+      "titus",
+      "silas"
+    ],
+    "relatedPlaces": [
+      "jerusalem",
+      "damascus",
+      "tarsus",
+      "antioch",
+      "cyprus",
+      "lystra"
+    ],
+    "books": []
+  },
+  {
+    "id": "silas",
+    "name": "Silas",
+    "nameMeaning": "Possibly asked for",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Prophet and missionary",
+    "nationality": "Jewish",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "missionary",
+      "prophet"
+    ],
+    "summary": "Silas carried the Jerusalem council letter and traveled with Paul.",
+    "events": [
+      "jerusalem-council",
+      "second-missionary-journey"
+    ],
+    "references": [
+      "Acts 15",
+      "Acts 16-18"
+    ],
+    "relatedPeople": [
+      "peter",
+      "paul",
+      "barnabas",
+      "james-brother-of-jesus",
+      "titus",
+      "timothy",
+      "luke",
+      "lydia",
+      "aquila",
+      "priscilla",
+      "apollos"
+    ],
+    "relatedPlaces": [
+      "jerusalem",
+      "antioch",
+      "philippi",
+      "thessalonica",
+      "berea",
+      "athens",
+      "corinth"
+    ],
+    "books": []
+  },
+  {
+    "id": "timothy",
+    "name": "Timothy",
+    "nameMeaning": "Honoring God",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Missionary coworker",
+    "nationality": "Jewish/Greek",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "missionary"
+    ],
+    "summary": "Timothy was Paul's trusted coworker.",
+    "events": [
+      "first-missionary-journey",
+      "second-missionary-journey",
+      "third-missionary-journey",
+      "pauls-roman-imprisonment"
+    ],
+    "references": [
+      "Acts 13-14",
+      "Acts 16-18",
+      "Acts 18:23-21:16",
+      "Acts 28:11-31"
+    ],
+    "relatedPeople": [
+      "paul",
+      "barnabas",
+      "john-mark",
+      "silas",
+      "luke",
+      "lydia",
+      "aquila",
+      "priscilla",
+      "apollos",
+      "jesus"
+    ],
+    "relatedPlaces": [
+      "cyprus",
+      "antioch",
+      "lystra",
+      "philippi",
+      "thessalonica",
+      "berea",
+      "athens",
+      "corinth",
+      "ephesus",
+      "jerusalem",
+      "rome",
+      "malta"
+    ],
+    "books": []
+  },
+  {
+    "id": "luke",
+    "name": "Luke",
+    "nameMeaning": "Lucanus or light-giving",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Physician and companion",
+    "nationality": "Greek",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "author",
+      "missionary"
+    ],
+    "summary": "Luke was Paul's companion and the narrator associated with Luke-Acts.",
+    "events": [
+      "second-missionary-journey",
+      "third-missionary-journey",
+      "pauls-arrest-in-jerusalem",
+      "voyage-and-shipwreck",
+      "pauls-roman-imprisonment"
+    ],
+    "references": [
+      "Acts 16-18",
+      "Acts 18:23-21:16",
+      "Acts 21-26",
+      "Acts 27-28:10",
+      "Acts 28:11-31"
+    ],
+    "relatedPeople": [
+      "paul",
+      "silas",
+      "timothy",
+      "lydia",
+      "aquila",
+      "priscilla",
+      "apollos",
+      "james-brother-of-jesus",
+      "jesus",
+      "john-mark"
+    ],
+    "relatedPlaces": [
+      "philippi",
+      "thessalonica",
+      "berea",
+      "athens",
+      "corinth",
+      "ephesus",
+      "jerusalem",
+      "caesarea",
+      "malta",
+      "rome"
+    ],
+    "books": []
+  },
+  {
+    "id": "john-mark",
+    "name": "John Mark",
+    "nameMeaning": "The Lord is gracious; Mark, hammer or dedicated to Mars",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Missionary coworker",
+    "nationality": "Jewish",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "missionary"
+    ],
+    "summary": "John Mark accompanied Barnabas and Paul early in the mission.",
+    "events": [
+      "first-missionary-journey",
+      "pauls-roman-imprisonment"
+    ],
+    "references": [
+      "Acts 13-14",
+      "Acts 28:11-31"
+    ],
+    "relatedPeople": [
+      "paul",
+      "barnabas",
+      "timothy",
+      "luke",
+      "jesus"
+    ],
+    "relatedPlaces": [
+      "cyprus",
+      "antioch",
+      "lystra",
+      "rome",
+      "malta"
+    ],
+    "books": []
+  },
+  {
+    "id": "apollos",
+    "name": "Apollos",
+    "nameMeaning": "Related to Apollo",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Teacher",
+    "nationality": "Jewish",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "teacher"
+    ],
+    "summary": "Apollos was an eloquent teacher from Alexandria.",
+    "events": [
+      "second-missionary-journey",
+      "third-missionary-journey"
+    ],
+    "references": [
+      "Acts 16-18",
+      "Acts 18:23-21:16"
+    ],
+    "relatedPeople": [
+      "paul",
+      "silas",
+      "timothy",
+      "luke",
+      "lydia",
+      "aquila",
+      "priscilla"
+    ],
+    "relatedPlaces": [
+      "philippi",
+      "thessalonica",
+      "berea",
+      "athens",
+      "corinth",
+      "ephesus",
+      "jerusalem"
+    ],
+    "books": []
+  },
+  {
+    "id": "priscilla",
+    "name": "Priscilla",
+    "nameMeaning": "Ancient or venerable",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [
+      "aquila"
+    ],
+    "occupation": "Tentmaker and teacher",
+    "nationality": "Jewish",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "teacher"
+    ],
+    "summary": "Priscilla, with Aquila, instructed Apollos more accurately.",
+    "events": [
+      "second-missionary-journey",
+      "third-missionary-journey"
+    ],
+    "references": [
+      "Acts 16-18",
+      "Acts 18:23-21:16"
+    ],
+    "relatedPeople": [
+      "paul",
+      "silas",
+      "timothy",
+      "luke",
+      "lydia",
+      "aquila",
+      "apollos"
+    ],
+    "relatedPlaces": [
+      "philippi",
+      "thessalonica",
+      "berea",
+      "athens",
+      "corinth",
+      "ephesus",
+      "jerusalem"
+    ],
+    "books": []
+  },
+  {
+    "id": "aquila",
+    "name": "Aquila",
+    "nameMeaning": "Eagle",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [
+      "priscilla"
+    ],
+    "occupation": "Tentmaker and teacher",
+    "nationality": "Jewish",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "teacher"
+    ],
+    "summary": "Aquila, with Priscilla, worked with Paul and helped teach Apollos.",
+    "events": [
+      "second-missionary-journey",
+      "third-missionary-journey"
+    ],
+    "references": [
+      "Acts 16-18",
+      "Acts 18:23-21:16"
+    ],
+    "relatedPeople": [
+      "paul",
+      "silas",
+      "timothy",
+      "luke",
+      "lydia",
+      "priscilla",
+      "apollos"
+    ],
+    "relatedPlaces": [
+      "philippi",
+      "thessalonica",
+      "berea",
+      "athens",
+      "corinth",
+      "ephesus",
+      "jerusalem"
+    ],
+    "books": []
+  },
+  {
+    "id": "lydia",
+    "name": "Lydia",
+    "nameMeaning": "From Lydia",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Merchant",
+    "nationality": "Gentile",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "believer"
+    ],
+    "summary": "Lydia was a seller of purple goods in Philippi.",
+    "events": [
+      "second-missionary-journey"
+    ],
+    "references": [
+      "Acts 16-18"
+    ],
+    "relatedPeople": [
+      "paul",
+      "silas",
+      "timothy",
+      "luke",
+      "aquila",
+      "priscilla",
+      "apollos"
+    ],
+    "relatedPlaces": [
+      "philippi",
+      "thessalonica",
+      "berea",
+      "athens",
+      "corinth"
+    ],
+    "books": []
+  },
+  {
+    "id": "titus",
+    "name": "Titus",
+    "nameMeaning": "Title of honor",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Missionary coworker",
+    "nationality": "Gentile",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "missionary"
+    ],
+    "summary": "Titus was Paul's Gentile coworker.",
+    "events": [
+      "jerusalem-council"
+    ],
+    "references": [
+      "Acts 15"
+    ],
+    "relatedPeople": [
+      "peter",
+      "paul",
+      "barnabas",
+      "james-brother-of-jesus",
+      "silas"
+    ],
+    "relatedPlaces": [
+      "jerusalem",
+      "antioch"
+    ],
+    "books": []
+  },
+  {
+    "id": "cornelius",
+    "name": "Cornelius",
+    "nameMeaning": "Of the Cornelii family",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Centurion",
+    "nationality": "Roman",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "centurion"
+    ],
+    "summary": "Cornelius was a God-fearing Roman centurion whose household received the Spirit.",
+    "events": [
+      "peter-and-cornelius"
+    ],
+    "references": [
+      "Acts 10"
+    ],
+    "relatedPeople": [
+      "peter",
+      "jesus",
+      "god"
+    ],
+    "relatedPlaces": [
+      "caesarea",
+      "joppa"
+    ],
+    "books": []
+  },
+  {
+    "id": "james-brother-of-jesus",
+    "name": "James brother of Jesus",
+    "nameMeaning": "Jacob/James, supplanter",
+    "birth": null,
+    "death": "approx. AD 62",
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Leader of the Jerusalem church",
+    "nationality": "Jewish",
+    "tribe": "Judah",
+    "kingdom": null,
+    "roles": [
+      "church-leader"
+    ],
+    "summary": "James, the brother of Jesus, became a leading elder in Jerusalem.",
+    "events": [
+      "early-church-in-jerusalem",
+      "church-at-antioch",
+      "jerusalem-council",
+      "pauls-arrest-in-jerusalem"
+    ],
+    "references": [
+      "Acts 2:42-47; 4:32-37",
+      "Acts 11:19-30",
+      "Acts 15",
+      "Acts 21-26"
+    ],
+    "relatedPeople": [
+      "peter",
+      "john-the-apostle",
+      "mary",
+      "matthias",
+      "barnabas",
+      "paul",
+      "titus",
+      "silas",
+      "luke"
+    ],
+    "relatedPlaces": [
+      "jerusalem",
+      "antioch",
+      "tarsus",
+      "caesarea"
+    ],
+    "books": []
+  },
+  {
+    "id": "jude",
+    "name": "Jude",
+    "nameMeaning": "Judah, praised",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Servant of Jesus Christ",
+    "nationality": "Jewish",
+    "tribe": "Judah",
+    "kingdom": null,
+    "roles": [
+      "teacher"
+    ],
+    "summary": "Jude was a brother of James and is associated with the New Testament letter of Jude.",
+    "events": [],
+    "references": [
+      "Jude 1"
+    ],
+    "relatedPeople": [
+      "james-brother-of-jesus",
+      "jesus"
+    ],
+    "relatedPlaces": [
+      "jerusalem"
+    ],
+    "books": []
   }
 ]
