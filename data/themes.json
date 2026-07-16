@@ -1,0 +1,206 @@
+[
+  {
+    "id": "covenant",
+    "name": "Covenant",
+    "description": "God binds himself to his people by solemn promise: preservation to Noah, land and offspring and blessing to Abraham, law and belonging at Sinai, an everlasting throne to David, and the new covenant of the heart promised through Jeremiah and claimed at the Last Supper.",
+    "keyVerses": [
+      { "reference": "Genesis 9:8–17", "note": "The covenant with Noah and every living creature — the bow in the clouds" },
+      { "reference": "Genesis 15:17–21; 17:1–8", "note": "The covenant with Abraham: land, offspring, blessing" },
+      { "reference": "Exodus 19:4–6", "note": "Sinai: a kingdom of priests and a holy nation" },
+      { "reference": "2 Samuel 7:12–16", "note": "The covenant with David: a throne established forever" },
+      { "reference": "Jeremiah 31:31–34", "note": "The new covenant: law within, sins remembered no more" },
+      { "reference": "Luke 22:20", "note": "'This cup is the new covenant in my blood'" }
+    ],
+    "events": ["noahic-covenant", "abrahamic-covenant", "ten-commandments", "davidic-covenant", "last-supper"],
+    "people": ["noah", "abraham", "moses", "david", "jesus"],
+    "relatedThemes": ["redemption", "kingdom-of-god", "law-and-grace"]
+  },
+  {
+    "id": "redemption",
+    "name": "Redemption",
+    "description": "God buys back what was lost: Israel out of Egypt by the blood of the lamb, Ruth by her kinsman-redeemer, the exiles out of Babylon, and — in the New Testament's proclamation — sinners by the blood of Christ.",
+    "keyVerses": [
+      { "reference": "Exodus 6:6", "note": "'I will redeem you with an outstretched arm'" },
+      { "reference": "Ruth 4:9–14", "note": "Boaz the kinsman-redeemer" },
+      { "reference": "Isaiah 43:1", "note": "'I have redeemed you; I have called you by name'" },
+      { "reference": "Mark 10:45", "note": "The Son of Man came to give his life as a ransom for many" },
+      { "reference": "Ephesians 1:7", "note": "Redemption through his blood, the forgiveness of trespasses" }
+    ],
+    "events": ["first-passover", "red-sea-crossing", "ruth-and-boaz", "cyrus-decree", "crucifixion"],
+    "people": ["moses", "boaz", "ruth", "jesus"],
+    "relatedThemes": ["covenant", "sacrifice-and-atonement", "exile-and-return"]
+  },
+  {
+    "id": "messiah",
+    "name": "Messiah",
+    "description": "The anointed one promised across the whole canon: the seed of the woman, the blessing of Abraham, the prophet like Moses, the son of David, the suffering servant, the ruler from Bethlehem — a hope the New Testament proclaims fulfilled in Jesus.",
+    "keyVerses": [
+      { "reference": "Genesis 3:15", "note": "The seed of the woman — the first promise" },
+      { "reference": "Deuteronomy 18:15", "note": "A prophet like Moses" },
+      { "reference": "Isaiah 9:6–7", "note": "A child born, government on his shoulder, David's throne forever" },
+      { "reference": "Micah 5:2", "note": "The ruler from Bethlehem" },
+      { "reference": "Matthew 16:16", "note": "'You are the Christ, the Son of the living God'" },
+      { "reference": "Luke 24:27", "note": "'Beginning with Moses and all the Prophets, he interpreted... the things concerning himself'" }
+    ],
+    "events": ["davidic-covenant", "birth-of-jesus", "peters-confession", "triumphal-entry", "crucifixion", "resurrection"],
+    "people": ["jesus", "david", "isaiah", "john-the-baptist"],
+    "relatedThemes": ["kingdom-of-god", "covenant", "sacrifice-and-atonement"]
+  },
+  {
+    "id": "kingdom-of-god",
+    "name": "The Kingdom of God",
+    "description": "God's reign asserted over all rival kingdoms: promised to David's line, dramatized in Daniel's visions of empires overthrown, announced by Jesus as 'at hand,' taught in parables, and consummated in the vision of Revelation.",
+    "keyVerses": [
+      { "reference": "Exodus 15:18", "note": "'The LORD will reign forever and ever' — the song at the sea" },
+      { "reference": "Psalm 2", "note": "The LORD and his anointed against the raging nations" },
+      { "reference": "Daniel 2:44", "note": "A kingdom that shall never be destroyed" },
+      { "reference": "Mark 1:15", "note": "'The kingdom of God is at hand; repent and believe'" },
+      { "reference": "Matthew 13:31–33", "note": "Mustard seed and leaven — the kingdom's hidden growth" },
+      { "reference": "Revelation 11:15", "note": "'The kingdom of the world has become the kingdom of our Lord'" }
+    ],
+    "events": ["davidic-covenant", "nebuchadnezzars-dream", "sermon-on-the-mount", "parables-of-the-kingdom", "triumphal-entry", "revelation-given"],
+    "people": ["david", "daniel", "jesus"],
+    "relatedThemes": ["messiah", "covenant", "judgment-and-mercy"]
+  },
+  {
+    "id": "presence-of-god",
+    "name": "The Presence of God",
+    "description": "God dwelling with his people: Eden, the burning bush, the pillar of cloud and fire, the tabernacle and temple filled with glory, the glory departing before the exile, the Word made flesh who 'tabernacled' among us, the Spirit at Pentecost, and the city where God is all in all.",
+    "keyVerses": [
+      { "reference": "Exodus 3:5", "note": "Holy ground at the burning bush" },
+      { "reference": "Exodus 40:34–38", "note": "The glory fills the tabernacle" },
+      { "reference": "1 Kings 8:10–11", "note": "The cloud fills Solomon's temple" },
+      { "reference": "Ezekiel 10:18–19; 43:1–5", "note": "The glory departs — and returns" },
+      { "reference": "John 1:14", "note": "The Word became flesh and dwelt among us" },
+      { "reference": "Revelation 21:3", "note": "'Behold, the dwelling place of God is with man'" }
+    ],
+    "events": ["creation", "burning-bush", "tabernacle-built", "temple-built", "birth-of-jesus", "pentecost"],
+    "people": ["god", "moses", "solomon", "jesus"],
+    "relatedThemes": ["covenant", "sacrifice-and-atonement"]
+  },
+  {
+    "id": "sacrifice-and-atonement",
+    "name": "Sacrifice and Atonement",
+    "description": "Sin costs life, and God provides the substitute: the ram in Isaac's place, the Passover lamb, the Day of Atonement, the servant who bears the sin of many, and 'the Lamb of God who takes away the sin of the world.'",
+    "keyVerses": [
+      { "reference": "Genesis 22:13–14", "note": "'The LORD will provide' — the ram in Isaac's place" },
+      { "reference": "Exodus 12:13", "note": "'When I see the blood, I will pass over you'" },
+      { "reference": "Leviticus 16", "note": "The Day of Atonement" },
+      { "reference": "Isaiah 53:5–6", "note": "'The LORD has laid on him the iniquity of us all'" },
+      { "reference": "John 1:29", "note": "'Behold, the Lamb of God'" },
+      { "reference": "Hebrews 9:22–28", "note": "Christ offered once to bear the sins of many" }
+    ],
+    "events": ["sacrifice-of-isaac", "first-passover", "tabernacle-built", "crucifixion"],
+    "people": ["abraham", "isaac", "moses", "aaron", "jesus"],
+    "relatedThemes": ["redemption", "messiah", "presence-of-god"]
+  },
+  {
+    "id": "resurrection-and-life",
+    "name": "Resurrection and Life",
+    "description": "God's power over death: sons restored by Elijah and Elisha, Israel's national resurrection in Ezekiel's valley of bones, Daniel's awakening of those who sleep in the dust, Lazarus called from the tomb, and the empty tomb on the third day — 'the firstfruits of those who have fallen asleep.'",
+    "keyVerses": [
+      { "reference": "Job 19:25–26", "note": "'I know that my Redeemer lives'" },
+      { "reference": "Ezekiel 37:1–14", "note": "The valley of dry bones" },
+      { "reference": "Daniel 12:2", "note": "Many who sleep in the dust shall awake" },
+      { "reference": "John 11:25", "note": "'I am the resurrection and the life'" },
+      { "reference": "1 Corinthians 15:20–22", "note": "Christ the firstfruits" }
+    ],
+    "events": ["elijah-taken-to-heaven", "ezekiel-ministry", "lazarus-raised", "resurrection"],
+    "people": ["elijah", "elisha", "ezekiel", "lazarus", "jesus"],
+    "relatedThemes": ["messiah", "faith-and-doubt"]
+  },
+  {
+    "id": "exile-and-return",
+    "name": "Exile and Return",
+    "description": "Banishment and homecoming as the Bible's recurring shape: Eden lost, Egypt and exodus, Babylon and the return under Cyrus — and the New Testament's claim that in Christ the true return from exile begins.",
+    "keyVerses": [
+      { "reference": "Genesis 3:23–24", "note": "Driven from the garden — the first exile" },
+      { "reference": "Deuteronomy 30:1–5", "note": "Scattering and regathering foretold" },
+      { "reference": "Psalm 137:1", "note": "'By the waters of Babylon... we wept'" },
+      { "reference": "Jeremiah 29:10–14", "note": "Seventy years, then a future and a hope" },
+      { "reference": "Ezra 1:1–3", "note": "Cyrus' decree: let him go up" },
+      { "reference": "Luke 15:11–24", "note": "The prodigal's far country and the father's welcome" }
+    ],
+    "events": ["fall", "israel-enslaved-in-egypt", "fall-of-samaria", "fall-of-jerusalem", "cyrus-decree", "temple-rebuilt", "nehemiah-rebuilds-walls"],
+    "people": ["adam", "moses", "jeremiah", "daniel", "ezra", "nehemiah", "zerubbabel"],
+    "relatedThemes": ["judgment-and-mercy", "redemption", "remnant"]
+  },
+  {
+    "id": "law-and-grace",
+    "name": "Law and Grace",
+    "description": "The commandments given at Sinai as covenant charter, Israel's long failure to keep them, and the promise of a law written on the heart — the tension the New Testament resolves in 'grace and truth through Jesus Christ.'",
+    "keyVerses": [
+      { "reference": "Exodus 20:1–17", "note": "The Ten Commandments" },
+      { "reference": "Deuteronomy 6:4–9", "note": "The Shema: love the LORD with all your heart" },
+      { "reference": "Psalm 19:7", "note": "'The law of the LORD is perfect, reviving the soul'" },
+      { "reference": "Jeremiah 31:33", "note": "The law written within" },
+      { "reference": "John 1:17", "note": "Law through Moses; grace and truth through Jesus Christ" },
+      { "reference": "Romans 3:20–24", "note": "Justified by grace as a gift" }
+    ],
+    "events": ["ten-commandments", "golden-calf", "josiahs-reforms", "sermon-on-the-mount", "jerusalem-council"],
+    "people": ["moses", "ezra", "jesus", "paul"],
+    "relatedThemes": ["covenant", "judgment-and-mercy"]
+  },
+  {
+    "id": "judgment-and-mercy",
+    "name": "Judgment and Mercy",
+    "description": "The flood and the ark, Sodom and Lot's rescue, exile and return, Nineveh spared at Jonah's preaching: judgment announced, and mercy triumphing wherever there is repentance — 'in wrath remember mercy.'",
+    "keyVerses": [
+      { "reference": "Genesis 18:25", "note": "'Shall not the Judge of all the earth do what is just?'" },
+      { "reference": "Exodus 34:6–7", "note": "Merciful and gracious, yet by no means clearing the guilty" },
+      { "reference": "Jonah 4:2", "note": "Jonah's complaint: 'I knew that you are a gracious God'" },
+      { "reference": "Habakkuk 3:2", "note": "'In wrath remember mercy'" },
+      { "reference": "James 2:13", "note": "Mercy triumphs over judgment" }
+    ],
+    "events": ["flood", "sodom-and-gomorrah", "jonah-and-nineveh", "fall-of-jerusalem", "hezekiah-and-sennacherib"],
+    "people": ["noah", "lot", "jonah", "jeremiah"],
+    "relatedThemes": ["exile-and-return", "law-and-grace"]
+  },
+  {
+    "id": "faith-and-doubt",
+    "name": "Faith and Doubt",
+    "description": "Abraham believing against hope, Israel doubting at Kadesh, Gideon's fleece, Elijah's despair, Peter sinking and denying, Thomas demanding to see — and faith counted as righteousness throughout.",
+    "keyVerses": [
+      { "reference": "Genesis 15:6", "note": "'He believed the LORD, and he counted it to him as righteousness'" },
+      { "reference": "Numbers 14:11", "note": "'How long will they not believe in me?' — Kadesh" },
+      { "reference": "Habakkuk 2:4", "note": "'The righteous shall live by his faith'" },
+      { "reference": "Mark 9:24", "note": "'I believe; help my unbelief!'" },
+      { "reference": "John 20:27–29", "note": "Thomas: 'blessed are those who have not seen and yet have believed'" },
+      { "reference": "Hebrews 11", "note": "The roll call of faith" }
+    ],
+    "events": ["abrahamic-covenant", "sacrifice-of-isaac", "twelve-spies", "gideon", "jesus-walks-on-water", "resurrection"],
+    "people": ["abraham", "gideon", "elijah", "peter", "thomas"],
+    "relatedThemes": ["covenant", "resurrection-and-life"]
+  },
+  {
+    "id": "shepherd-and-flock",
+    "name": "The Shepherd and the Flock",
+    "description": "From the shepherd-king David and the LORD as shepherd of Psalm 23, through the failed shepherds of Ezekiel 34 and the promise that God himself will seek the lost, to Jesus the good shepherd who lays down his life for the sheep.",
+    "keyVerses": [
+      { "reference": "Psalm 23", "note": "'The LORD is my shepherd'" },
+      { "reference": "Ezekiel 34:11–16, 23", "note": "God himself will shepherd; 'my servant David' set over them" },
+      { "reference": "Zechariah 13:7", "note": "'Strike the shepherd, and the sheep will be scattered'" },
+      { "reference": "Luke 15:3–7", "note": "The shepherd who leaves the ninety-nine" },
+      { "reference": "John 10:11", "note": "'I am the good shepherd'" },
+      { "reference": "1 Peter 5:2–4", "note": "The chief Shepherd and the elders under him" }
+    ],
+    "events": ["david-anointed", "gethsemane", "resurrection"],
+    "people": ["david", "ezekiel", "jesus", "peter"],
+    "relatedThemes": ["kingdom-of-god", "messiah"]
+  },
+  {
+    "id": "remnant",
+    "name": "The Remnant",
+    "description": "God preserves a faithful few through every judgment: Noah's household, the seven thousand who never bowed to Baal, the survivors of exile who return, and the remnant chosen by grace of Paul's argument.",
+    "keyVerses": [
+      { "reference": "Genesis 7:23", "note": "Only Noah was left, and those with him in the ark" },
+      { "reference": "1 Kings 19:18", "note": "'Yet I will leave seven thousand in Israel'" },
+      { "reference": "Isaiah 10:20–22", "note": "A remnant will return — Shear-jashub" },
+      { "reference": "Ezra 9:8", "note": "'A brief moment of favor... a remnant'" },
+      { "reference": "Romans 11:4–5", "note": "A remnant, chosen by grace" }
+    ],
+    "events": ["flood", "elijah-on-mount-carmel", "cyrus-decree", "ezra-returns"],
+    "people": ["noah", "elijah", "ezra", "zerubbabel", "paul"],
+    "relatedThemes": ["exile-and-return", "judgment-and-mercy", "covenant"]
+  }
+]

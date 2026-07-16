@@ -1,0 +1,515 @@
+[
+  {
+    "id": "seed-of-the-woman",
+    "name": "The Seed of the Woman",
+    "prophetId": null,
+    "spokenBy": "God, in the judgment on the serpent",
+    "givenReference": "Genesis 3:15",
+    "givenEvent": "fall",
+    "recordedBook": "genesis",
+    "subject": { "type": "person", "id": "jesus" },
+    "summary": "The offspring of the woman will crush the serpent's head while being struck himself — read from earliest times as the first gospel promise (the protoevangelium).",
+    "fulfillments": [
+      { "reference": "Galatians 4:4; Romans 16:20; Hebrews 2:14", "eventId": "crucifixion", "note": "The New Testament reads Christ's death and resurrection as the serpent-crushing victory", "type": "nt-cited" }
+    ],
+    "status": "fulfilled (as interpreted in the New Testament)",
+    "themes": ["messiah", "redemption"]
+  },
+  {
+    "id": "blessing-to-all-nations",
+    "name": "Blessing to All Nations through Abraham's Seed",
+    "prophetId": null,
+    "spokenBy": "God, to Abraham",
+    "givenReference": "Genesis 12:3; 22:18",
+    "givenEvent": "call-of-abraham",
+    "recordedBook": "genesis",
+    "subject": { "type": "person", "id": "jesus" },
+    "summary": "In Abraham and his offspring all the families of the earth will be blessed.",
+    "fulfillments": [
+      { "reference": "Galatians 3:8–16; Acts 3:25–26", "eventId": "pentecost", "note": "Paul identifies the singular 'seed' with Christ; the gospel to the nations as the blessing", "type": "nt-cited" }
+    ],
+    "status": "fulfilled (as interpreted in the New Testament)",
+    "themes": ["covenant", "messiah"]
+  },
+  {
+    "id": "egypt-bondage-foretold",
+    "name": "Four Hundred Years in a Foreign Land",
+    "prophetId": null,
+    "spokenBy": "God, in the covenant vision to Abram",
+    "givenReference": "Genesis 15:13–16",
+    "givenEvent": "abrahamic-covenant",
+    "recordedBook": "genesis",
+    "subject": { "type": "nation", "id": "israel" },
+    "summary": "Abram's offspring will be sojourners and slaves in a land not theirs four hundred years, then come out with great possessions and return in the fourth generation.",
+    "fulfillments": [
+      { "reference": "Exodus 12:35–41", "eventId": "red-sea-crossing", "note": "The exodus narrative presents the deliverance and the plundering of Egypt as this promise kept", "type": "narrative" }
+    ],
+    "status": "fulfilled within the biblical narrative",
+    "themes": ["covenant", "exile-and-return", "redemption"]
+  },
+  {
+    "id": "davidic-covenant-prophecy",
+    "name": "An Everlasting Throne for David's House",
+    "prophetId": "nathan",
+    "spokenBy": "Nathan the prophet",
+    "givenReference": "2 Samuel 7:12–16",
+    "givenEvent": "davidic-covenant",
+    "recordedBook": "2-samuel",
+    "subject": { "type": "person", "id": "jesus" },
+    "summary": "God will raise up David's offspring, establish his kingdom, and make his throne endure forever.",
+    "fulfillments": [
+      { "reference": "1 Kings 8:20", "eventId": "temple-built", "note": "Immediate horizon: Solomon builds the house", "type": "narrative" },
+      { "reference": "Luke 1:32–33; Acts 2:29–36", "eventId": "resurrection", "note": "The New Testament proclaims Jesus, son of David, enthroned forever", "type": "nt-cited" }
+    ],
+    "status": "fulfilled in stages (Solomon; ultimately Christ in NT reading)",
+    "themes": ["covenant", "kingdom-of-god", "messiah"]
+  },
+  {
+    "id": "immanuel-sign",
+    "name": "The Immanuel Sign",
+    "prophetId": "isaiah",
+    "spokenBy": "Isaiah, to king Ahaz",
+    "givenReference": "Isaiah 7:14",
+    "givenEvent": "isaiah-ministry",
+    "recordedBook": "isaiah",
+    "subject": { "type": "person", "id": "jesus" },
+    "summary": "The virgin (Heb. almah, 'young woman') will conceive and bear a son called Immanuel — 'God with us.'",
+    "fulfillments": [
+      { "reference": "Matthew 1:22–23", "eventId": "birth-of-jesus", "note": "Matthew cites the Greek (Septuagint) parthenos of the virgin birth. Scholarly opinion: many hold a near fulfillment in Isaiah's own day with a fuller sense claimed by Matthew", "type": "nt-cited" }
+    ],
+    "status": "fulfilled (as cited in Matthew; near/far dual reference is discussed among scholars)",
+    "themes": ["messiah", "presence-of-god"]
+  },
+  {
+    "id": "bethlehem-birth",
+    "name": "The Ruler from Bethlehem",
+    "prophetId": null,
+    "spokenBy": "Micah of Moresheth",
+    "givenReference": "Micah 5:2",
+    "givenEvent": null,
+    "recordedBook": "micah",
+    "subject": { "type": "event", "id": "birth-of-jesus" },
+    "summary": "From Bethlehem Ephrathah, little among Judah's clans, will come forth a ruler whose origins are from of old.",
+    "fulfillments": [
+      { "reference": "Matthew 2:5–6; John 7:42", "eventId": "birth-of-jesus", "note": "The chief priests cite this to Herod when the magi ask where the Christ is born", "type": "nt-cited" }
+    ],
+    "status": "fulfilled (as cited in the New Testament)",
+    "themes": ["messiah", "kingdom-of-god"]
+  },
+  {
+    "id": "galilee-great-light",
+    "name": "A Great Light in Galilee",
+    "prophetId": "isaiah",
+    "spokenBy": "Isaiah",
+    "givenReference": "Isaiah 9:1–2",
+    "givenEvent": "isaiah-ministry",
+    "recordedBook": "isaiah",
+    "subject": { "type": "place", "id": "capernaum" },
+    "summary": "The land of Zebulun and Naphtali, Galilee of the nations, once in gloom, will see a great light.",
+    "fulfillments": [
+      { "reference": "Matthew 4:13–16", "eventId": "first-disciples-called", "note": "Matthew applies the oracle to Jesus settling in Capernaum and beginning the Galilean ministry", "type": "nt-cited" }
+    ],
+    "status": "fulfilled (as cited in Matthew)",
+    "themes": ["messiah", "kingdom-of-god"]
+  },
+  {
+    "id": "forerunner-in-the-wilderness",
+    "name": "The Voice in the Wilderness",
+    "prophetId": "isaiah",
+    "spokenBy": "Isaiah; and Malachi ('my messenger')",
+    "givenReference": "Isaiah 40:3; Malachi 3:1; 4:5–6",
+    "givenEvent": "isaiah-ministry",
+    "recordedBook": "isaiah",
+    "subject": { "type": "person", "id": "john-the-baptist" },
+    "summary": "A voice cries: prepare the way of the LORD; the messenger comes before him, in the spirit of Elijah.",
+    "fulfillments": [
+      { "reference": "Matthew 3:1–3; 11:10–14; Mark 1:2–4", "eventId": "ministry-of-john-the-baptist", "note": "All four Gospels identify John the Baptist as the voice; Jesus names him the Elijah to come", "type": "nt-cited" }
+    ],
+    "status": "fulfilled (as cited in the Gospels)",
+    "themes": ["messiah"]
+  },
+  {
+    "id": "king-on-a-donkey",
+    "name": "The King Comes on a Donkey",
+    "prophetId": "zechariah",
+    "spokenBy": "Zechariah",
+    "givenReference": "Zechariah 9:9",
+    "givenEvent": null,
+    "recordedBook": "zechariah",
+    "subject": { "type": "event", "id": "triumphal-entry" },
+    "summary": "Zion's king comes righteous and victorious, humble and mounted on a donkey, on a colt.",
+    "fulfillments": [
+      { "reference": "Matthew 21:4–5; John 12:14–16", "eventId": "triumphal-entry", "note": "Cited at the triumphal entry on Palm Sunday", "type": "nt-cited" }
+    ],
+    "status": "fulfilled (as cited in the Gospels)",
+    "themes": ["messiah", "kingdom-of-god"]
+  },
+  {
+    "id": "thirty-pieces-of-silver",
+    "name": "Thirty Pieces of Silver",
+    "prophetId": "zechariah",
+    "spokenBy": "Zechariah",
+    "givenReference": "Zechariah 11:12–13",
+    "givenEvent": null,
+    "recordedBook": "zechariah",
+    "subject": { "type": "event", "id": "trials-of-jesus" },
+    "summary": "The shepherd's wage — thirty pieces of silver — is thrown to the potter in the house of the LORD.",
+    "fulfillments": [
+      { "reference": "Matthew 26:14–15; 27:3–10", "eventId": "trials-of-jesus", "note": "Judas' betrayal price and the potter's field; Matthew's citation blends Zechariah with Jeremiah's imagery", "type": "nt-cited" }
+    ],
+    "status": "fulfilled (as cited in Matthew)",
+    "themes": ["messiah", "sacrifice-and-atonement"]
+  },
+  {
+    "id": "suffering-servant",
+    "name": "The Suffering Servant",
+    "prophetId": "isaiah",
+    "spokenBy": "Isaiah",
+    "givenReference": "Isaiah 52:13–53:12",
+    "givenEvent": "isaiah-ministry",
+    "recordedBook": "isaiah",
+    "subject": { "type": "event", "id": "crucifixion" },
+    "summary": "The servant is despised, pierced for our transgressions, silent before his shearers, numbered with transgressors, buried with the rich, and yet will see his offspring and justify many.",
+    "fulfillments": [
+      { "reference": "Acts 8:32–35; 1 Peter 2:22–25; Matthew 8:17", "eventId": "crucifixion", "note": "The passage Philip expounds to the Ethiopian official 'beginning with this Scripture... the good news about Jesus.' Jewish interpretation has historically read the servant corporately of Israel — a live scholarly discussion", "type": "nt-cited" }
+    ],
+    "status": "fulfilled (in New Testament reading; interpretation of the servant is discussed)",
+    "themes": ["messiah", "sacrifice-and-atonement", "redemption"]
+  },
+  {
+    "id": "psalm-22-the-forsaken-one",
+    "name": "The Psalm of the Forsaken One",
+    "prophetId": "david",
+    "spokenBy": "David, in psalm",
+    "givenReference": "Psalm 22",
+    "givenEvent": null,
+    "recordedBook": "psalms",
+    "subject": { "type": "event", "id": "crucifixion" },
+    "summary": "'My God, my God, why have you forsaken me?' — mocked by onlookers, hands and feet pierced, garments divided by lot; yet ending in praise before the nations.",
+    "fulfillments": [
+      { "reference": "Matthew 27:35–46; John 19:23–24", "eventId": "crucifixion", "note": "Jesus prays the psalm's opening from the cross; the Gospels note the divided garments", "type": "nt-cited" }
+    ],
+    "status": "fulfilled (as cited in the Gospels)",
+    "themes": ["messiah", "sacrifice-and-atonement"]
+  },
+  {
+    "id": "not-abandoned-to-the-grave",
+    "name": "Not Abandoned to the Grave",
+    "prophetId": "david",
+    "spokenBy": "David, in psalm",
+    "givenReference": "Psalm 16:8–11",
+    "givenEvent": null,
+    "recordedBook": "psalms",
+    "subject": { "type": "event", "id": "resurrection" },
+    "summary": "'You will not abandon my soul to Sheol, or let your holy one see corruption.'",
+    "fulfillments": [
+      { "reference": "Acts 2:24–32; 13:34–37", "eventId": "resurrection", "note": "Peter at Pentecost and Paul at Pisidian Antioch argue David died and was buried — the psalm speaks of the Christ's resurrection", "type": "nt-cited" }
+    ],
+    "status": "fulfilled (as cited in Acts)",
+    "themes": ["resurrection-and-life", "messiah"]
+  },
+  {
+    "id": "new-covenant-promised",
+    "name": "The New Covenant",
+    "prophetId": "jeremiah",
+    "spokenBy": "Jeremiah",
+    "givenReference": "Jeremiah 31:31–34",
+    "givenEvent": "jeremiah-ministry",
+    "recordedBook": "jeremiah",
+    "subject": { "type": "event", "id": "last-supper" },
+    "summary": "Days are coming when God will make a new covenant — law written on hearts, sins remembered no more.",
+    "fulfillments": [
+      { "reference": "Luke 22:20; 1 Corinthians 11:25; Hebrews 8:8–13", "eventId": "last-supper", "note": "'This cup is the new covenant in my blood' — the words of institution take up Jeremiah's promise", "type": "nt-cited" }
+    ],
+    "status": "fulfilled (as claimed at the Last Supper and in Hebrews)",
+    "themes": ["covenant", "redemption", "law-and-grace"]
+  },
+  {
+    "id": "spirit-on-all-flesh",
+    "name": "The Spirit Poured on All Flesh",
+    "prophetId": null,
+    "spokenBy": "Joel",
+    "givenReference": "Joel 2:28–32",
+    "givenEvent": null,
+    "recordedBook": "joel",
+    "subject": { "type": "event", "id": "pentecost" },
+    "summary": "Afterward God will pour out his Spirit on all flesh — sons and daughters prophesying — and everyone who calls on the name of the LORD will be saved.",
+    "fulfillments": [
+      { "reference": "Acts 2:16–21", "eventId": "pentecost", "note": "'This is what was uttered through the prophet Joel' — Peter's Pentecost sermon", "type": "nt-cited" }
+    ],
+    "status": "fulfilled at Pentecost (as cited by Peter)",
+    "themes": ["presence-of-god", "kingdom-of-god"]
+  },
+  {
+    "id": "seventy-years-of-exile",
+    "name": "Seventy Years for Babylon",
+    "prophetId": "jeremiah",
+    "spokenBy": "Jeremiah",
+    "givenReference": "Jeremiah 25:11–12; 29:10",
+    "givenEvent": "jeremiah-ministry",
+    "recordedBook": "jeremiah",
+    "subject": { "type": "nation", "id": "judah" },
+    "summary": "Judah will serve Babylon seventy years; then Babylon will be punished and the exiles brought home.",
+    "fulfillments": [
+      { "reference": "2 Chronicles 36:20–23; Ezra 1:1; Daniel 9:2", "eventId": "cyrus-decree", "note": "Cyrus' decree 'that the word of the LORD by Jeremiah might be fulfilled'; Daniel counts the years in prayer. Approx. 605–538 BC (first deportation to decree) or 586–516 BC (temple to temple)", "type": "narrative" }
+    ],
+    "status": "fulfilled within the biblical narrative (538 BC)",
+    "themes": ["exile-and-return", "judgment-and-mercy"]
+  },
+  {
+    "id": "cyrus-named",
+    "name": "Cyrus Named as Restorer",
+    "prophetId": "isaiah",
+    "spokenBy": "Isaiah",
+    "givenReference": "Isaiah 44:28–45:13",
+    "givenEvent": "isaiah-ministry",
+    "recordedBook": "isaiah",
+    "subject": { "type": "person", "id": "cyrus" },
+    "summary": "God names Cyrus as his 'shepherd' and 'anointed' who will subdue nations and order Jerusalem and the temple rebuilt.",
+    "fulfillments": [
+      { "reference": "Ezra 1:1–4", "eventId": "cyrus-decree", "note": "Cyrus' decree of 538 BC. Scholarly opinion: critical scholarship dates Isaiah 40–55 to the exile (naming a contemporary), while conservative scholarship holds eighth-century predictive prophecy — presented here as recorded", "type": "narrative" }
+    ],
+    "status": "fulfilled within the biblical narrative (dating of the oracle is debated)",
+    "themes": ["exile-and-return", "kingdom-of-god"]
+  },
+  {
+    "id": "josiah-named",
+    "name": "Josiah Named at Bethel's Altar",
+    "prophetId": null,
+    "spokenBy": "An unnamed man of God from Judah",
+    "givenReference": "1 Kings 13:1–3",
+    "givenEvent": "kingdom-divides",
+    "recordedBook": "1-kings",
+    "subject": { "type": "person", "id": "josiah" },
+    "summary": "Against Jeroboam's new altar at Bethel: a son named Josiah, born to the house of David, will defile this altar — some three centuries in advance.",
+    "fulfillments": [
+      { "reference": "2 Kings 23:15–18", "eventId": "josiahs-reforms", "note": "Josiah defiles the Bethel altar in his reform, 'according to the word of the LORD that the man of God proclaimed'", "type": "narrative" }
+    ],
+    "status": "fulfilled within the biblical narrative (approx. 622 BC)",
+    "themes": ["judgment-and-mercy", "kingdom-of-god"]
+  },
+  {
+    "id": "israels-fall-prophesied",
+    "name": "The Fall of the Northern Kingdom",
+    "prophetId": "amos",
+    "spokenBy": "Amos and Hosea",
+    "givenReference": "Amos 5:27; 7:17; Hosea 10:5–8; 13:16",
+    "givenEvent": "amos-and-hosea-warn-israel",
+    "recordedBook": "amos",
+    "subject": { "type": "nation", "id": "israel-northern" },
+    "summary": "Israel will go into exile beyond Damascus; Samaria's calf will be carried to Assyria and her king cut off.",
+    "fulfillments": [
+      { "reference": "2 Kings 17:5–23", "eventId": "fall-of-samaria", "note": "Samaria fell to Assyria in 722 BC; the narrative explicitly recalls the prophets' warnings", "type": "narrative" }
+    ],
+    "status": "fulfilled within the biblical narrative (722 BC; historically corroborated by Assyrian records)",
+    "themes": ["judgment-and-mercy", "exile-and-return"]
+  },
+  {
+    "id": "sennacherib-turned-back",
+    "name": "Sennacherib Will Not Enter the City",
+    "prophetId": "isaiah",
+    "spokenBy": "Isaiah, to Hezekiah",
+    "givenReference": "2 Kings 19:20–34; Isaiah 37:33–35",
+    "givenEvent": "hezekiah-and-sennacherib",
+    "recordedBook": "isaiah",
+    "subject": { "type": "nation", "id": "assyria" },
+    "summary": "The king of Assyria will not enter Jerusalem or shoot an arrow there; he will return the way he came.",
+    "fulfillments": [
+      { "reference": "2 Kings 19:35–37", "eventId": "hezekiah-and-sennacherib", "note": "The army is struck in the night and Sennacherib withdraws, later assassinated at Nineveh. Archaeological evidence: Sennacherib's prism claims tribute but records no capture of Jerusalem", "type": "narrative" }
+    ],
+    "status": "fulfilled within the biblical narrative (701 BC)",
+    "themes": ["judgment-and-mercy", "presence-of-god"]
+  },
+  {
+    "id": "jerusalems-fall-prophesied",
+    "name": "Jerusalem Given to Babylon",
+    "prophetId": "jeremiah",
+    "spokenBy": "Jeremiah (and Ezekiel among the exiles)",
+    "givenReference": "Jeremiah 25:8–11; 32:28–29; Ezekiel 24:1–14",
+    "givenEvent": "jeremiah-ministry",
+    "recordedBook": "jeremiah",
+    "subject": { "type": "place", "id": "jerusalem" },
+    "summary": "Because Judah would not listen, Nebuchadnezzar will take the city; it will be burned and the land left desolate.",
+    "fulfillments": [
+      { "reference": "2 Kings 25:1–21; Jeremiah 39; 52", "eventId": "fall-of-jerusalem", "note": "Jerusalem fell in 586 BC. Archaeological evidence: Babylonian Chronicle for 597 BC; burn layers and Lachish letters for the final campaign", "type": "narrative" }
+    ],
+    "status": "fulfilled within the biblical narrative (586 BC; historically corroborated)",
+    "themes": ["judgment-and-mercy", "exile-and-return"]
+  },
+  {
+    "id": "tyres-fall",
+    "name": "The Oracle against Tyre",
+    "prophetId": "ezekiel",
+    "spokenBy": "Ezekiel",
+    "givenReference": "Ezekiel 26",
+    "givenEvent": "ezekiel-ministry",
+    "recordedBook": "ezekiel",
+    "subject": { "type": "nation", "id": "phoenicia" },
+    "summary": "Many nations will come against Tyre; her stones and timber will be cast into the sea and her site scraped bare like a rock.",
+    "fulfillments": [
+      { "reference": "Ezekiel 29:17–20", "eventId": null, "note": "Historical fulfillment: Nebuchadnezzar besieged mainland Tyre thirteen years (Ezekiel itself notes the limited spoil); Alexander the Great in 332 BC built a causeway from the mainland rubble to take the island city — recorded by ancient historians (Arrian, Curtius)", "type": "historical" }
+    ],
+    "status": "fulfilled historically (staged: Babylon, then Greece)",
+    "themes": ["judgment-and-mercy"]
+  },
+  {
+    "id": "four-kingdoms",
+    "name": "The Four Kingdoms",
+    "prophetId": "daniel",
+    "spokenBy": "Daniel, interpreting Nebuchadnezzar's dream and his own visions",
+    "givenReference": "Daniel 2:31–45; 7:1–27",
+    "givenEvent": "nebuchadnezzars-dream",
+    "recordedBook": "daniel",
+    "subject": { "type": "nation", "id": "babylon-empire" },
+    "summary": "A succession of four kingdoms — gold, silver, bronze, iron — after which the God of heaven sets up a kingdom that will never be destroyed.",
+    "fulfillments": [
+      { "reference": "Daniel 5:28–31; 8:20–21", "eventId": "belshazzars-feast", "note": "Common interpretation: Babylon → Medo-Persia → Greece → Rome, with God's kingdom in Christ. Scholarly opinion: critical scholarship reads the visions from a second-century BC Maccabean vantage (Babylon–Media–Persia–Greece); conservative scholarship holds sixth-century predictive prophecy", "type": "historical" }
+    ],
+    "status": "interpreted of the empire succession (interpretation and dating debated)",
+    "themes": ["kingdom-of-god", "judgment-and-mercy"]
+  },
+  {
+    "id": "seventy-weeks",
+    "name": "The Seventy Weeks",
+    "prophetId": "daniel",
+    "spokenBy": "The angel Gabriel, to Daniel",
+    "givenReference": "Daniel 9:24–27",
+    "givenEvent": null,
+    "recordedBook": "daniel",
+    "subject": { "type": "person", "id": "jesus" },
+    "summary": "Seventy 'weeks' are decreed: from the word to restore Jerusalem until an anointed one, atonement made, and desolations decreed.",
+    "fulfillments": [
+      { "reference": "(interpretations vary)", "eventId": null, "note": "Scholarly opinion: interpretations divide sharply — messianic readings count to Christ's ministry and death; critical readings center on the Antiochene crisis (167–164 BC); others see patterns extending further. Listed as a prophecy whose interpretation is debated rather than assigned a single fulfillment", "type": "debated" }
+    ],
+    "status": "interpretation debated",
+    "themes": ["messiah", "exile-and-return"]
+  },
+  {
+    "id": "temple-destruction-foretold",
+    "name": "Not One Stone upon Another",
+    "prophetId": "jesus",
+    "spokenBy": "Jesus, on the Mount of Olives",
+    "givenReference": "Matthew 24:1–2; Luke 19:41–44; 21:5–6, 20–24",
+    "givenEvent": "olivet-discourse",
+    "recordedBook": "matthew",
+    "subject": { "type": "place", "id": "jerusalem" },
+    "summary": "Of the temple buildings: not one stone will be left upon another; Jerusalem will be surrounded by armies and trodden down.",
+    "fulfillments": [
+      { "reference": "(AD 70)", "eventId": "destruction-of-the-temple", "note": "Historical fulfillment: Titus' legions destroyed the temple in AD 70, recorded in detail by Josephus (Jewish War 6)", "type": "historical" }
+    ],
+    "status": "fulfilled historically (AD 70)",
+    "themes": ["judgment-and-mercy", "presence-of-god"]
+  },
+  {
+    "id": "peters-denial-foretold",
+    "name": "Before the Rooster Crows",
+    "prophetId": "jesus",
+    "spokenBy": "Jesus, at the Last Supper",
+    "givenReference": "Matthew 26:34; John 13:38",
+    "givenEvent": "last-supper",
+    "recordedBook": "matthew",
+    "subject": { "type": "person", "id": "peter" },
+    "summary": "Before the rooster crows, Peter will deny Jesus three times.",
+    "fulfillments": [
+      { "reference": "Matthew 26:69–75", "eventId": "trials-of-jesus", "note": "Peter denies three times in the high priest's courtyard and weeps bitterly", "type": "narrative" }
+    ],
+    "status": "fulfilled within the biblical narrative",
+    "themes": ["faith-and-doubt"]
+  },
+  {
+    "id": "resurrection-on-the-third-day",
+    "name": "The Son of Man Raised on the Third Day",
+    "prophetId": "jesus",
+    "spokenBy": "Jesus, repeatedly to the Twelve",
+    "givenReference": "Matthew 16:21; 17:22–23; 20:18–19; John 2:19–22",
+    "givenEvent": "peters-confession",
+    "recordedBook": "matthew",
+    "subject": { "type": "event", "id": "resurrection" },
+    "summary": "The Son of Man must suffer, be killed, and on the third day be raised; 'destroy this temple, and in three days I will raise it up.'",
+    "fulfillments": [
+      { "reference": "Matthew 28:1–10; Luke 24:6–8", "eventId": "resurrection", "note": "The angel at the tomb: 'he has risen, as he said' — the disciples remember his words", "type": "narrative" }
+    ],
+    "status": "fulfilled within the biblical narrative",
+    "themes": ["resurrection-and-life", "messiah"]
+  },
+  {
+    "id": "flood-announced",
+    "name": "The Flood Announced",
+    "prophetId": "noah",
+    "spokenBy": "God, to Noah",
+    "givenReference": "Genesis 6:13–21",
+    "givenEvent": "flood",
+    "recordedBook": "genesis",
+    "subject": { "type": "event", "id": "flood" },
+    "summary": "God announces the end of all flesh and instructs Noah to build the ark — 'a herald of righteousness' to his generation.",
+    "fulfillments": [
+      { "reference": "Genesis 7–8; 2 Peter 2:5", "eventId": "flood", "note": "The flood comes as announced; Noah and his household preserved", "type": "narrative" }
+    ],
+    "status": "fulfilled within the biblical narrative",
+    "themes": ["judgment-and-mercy", "covenant"]
+  },
+  {
+    "id": "pierced-and-mourned",
+    "name": "They Will Look on Him Whom They Pierced",
+    "prophetId": "zechariah",
+    "spokenBy": "Zechariah",
+    "givenReference": "Zechariah 12:10",
+    "givenEvent": null,
+    "recordedBook": "zechariah",
+    "subject": { "type": "event", "id": "crucifixion" },
+    "summary": "They will look on me, on him whom they have pierced, and mourn as for an only child.",
+    "fulfillments": [
+      { "reference": "John 19:34–37; Revelation 1:7", "eventId": "crucifixion", "note": "John cites it of the spear-thrust at the cross; Revelation extends it to the coming of Christ", "type": "nt-cited" }
+    ],
+    "status": "fulfilled (as cited in John; Revelation applies it forward)",
+    "themes": ["messiah", "sacrifice-and-atonement"]
+  },
+  {
+    "id": "out-of-egypt",
+    "name": "Out of Egypt I Called My Son",
+    "prophetId": "hosea",
+    "spokenBy": "Hosea",
+    "givenReference": "Hosea 11:1",
+    "givenEvent": null,
+    "recordedBook": "hosea",
+    "subject": { "type": "event", "id": "flight-to-egypt" },
+    "summary": "'When Israel was a child, I loved him, and out of Egypt I called my son' — spoken of the exodus.",
+    "fulfillments": [
+      { "reference": "Matthew 2:14–15", "eventId": "flight-to-egypt", "note": "Matthew reads Jesus' return from Egypt as recapitulating Israel's story — a typological (pattern) fulfillment rather than simple prediction", "type": "nt-cited" }
+    ],
+    "status": "fulfilled typologically (as cited in Matthew)",
+    "themes": ["messiah", "exile-and-return"]
+  },
+  {
+    "id": "bones-not-broken",
+    "name": "Not One of His Bones Broken",
+    "prophetId": "david",
+    "spokenBy": "David, in psalm; and the Passover statute",
+    "givenReference": "Psalm 34:20; Exodus 12:46",
+    "givenEvent": "first-passover",
+    "recordedBook": "psalms",
+    "subject": { "type": "event", "id": "crucifixion" },
+    "summary": "The righteous one's bones are kept — not one broken; the Passover lamb's bones must not be broken.",
+    "fulfillments": [
+      { "reference": "John 19:31–36", "eventId": "crucifixion", "note": "The soldiers break the others' legs but find Jesus already dead — John cites both the psalm and the Passover rule, presenting Jesus as the true lamb", "type": "nt-cited" }
+    ],
+    "status": "fulfilled (as cited in John)",
+    "themes": ["sacrifice-and-atonement", "messiah"]
+  },
+  {
+    "id": "priest-after-melchizedek",
+    "name": "A Priest Forever after Melchizedek",
+    "prophetId": "david",
+    "spokenBy": "David, in psalm",
+    "givenReference": "Psalm 110:1–4",
+    "givenEvent": null,
+    "recordedBook": "psalms",
+    "subject": { "type": "person", "id": "jesus" },
+    "summary": "'The LORD says to my Lord: sit at my right hand'; 'you are a priest forever after the order of Melchizedek.'",
+    "fulfillments": [
+      { "reference": "Matthew 22:41–46; Acts 2:34–36; Hebrews 5–7", "eventId": "ascension", "note": "The most-quoted psalm in the New Testament: Jesus poses it to the Pharisees; Hebrews builds its priesthood argument on Melchizedek", "type": "nt-cited" }
+    ],
+    "status": "fulfilled (as interpreted in the New Testament)",
+    "themes": ["messiah", "kingdom-of-god", "sacrifice-and-atonement"]
+  }
+]

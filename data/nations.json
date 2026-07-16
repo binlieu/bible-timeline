@@ -1,0 +1,266 @@
+[
+  {
+    "id": "israel",
+    "name": "Israel (United Kingdom)",
+    "dateRange": "approx. 1050–930 BC (united monarchy); the people from Jacob onward",
+    "description": "The covenant people descended from Jacob (renamed Israel), organized as twelve tribes, delivered from Egypt, and united as one kingdom under Saul, David, and Solomon with Jerusalem as capital from David's reign.",
+    "fate": "Divided after Solomon's death (approx. 930 BC) into the northern kingdom of Israel and the southern kingdom of Judah.",
+    "capital": "jerusalem",
+    "territoryPlaces": ["jerusalem", "hebron", "beersheba", "bethel", "shechem", "shiloh", "jericho", "bethlehem"],
+    "kings": ["saul", "david", "solomon"],
+    "prophets": [
+      { "personId": "samuel", "note": "Kingmaker prophet: anointed both Saul and David", "reference": "1 Samuel 10; 16" },
+      { "personId": "nathan", "note": "Court prophet to David: covenant promise and confrontation over Bathsheba", "reference": "2 Samuel 7; 12" }
+    ],
+    "events": ["saul-anointed-king", "david-becomes-king", "temple-built", "kingdom-divides"],
+    "references": ["Genesis 32:28", "Exodus 19:5–6", "2 Samuel 5:1–5", "1 Kings 4:20–21"],
+    "relatedNations": ["judah", "israel-northern", "philistia", "moab-nation", "edom", "ammon", "aram"]
+  },
+  {
+    "id": "israel-northern",
+    "name": "Israel (Northern Kingdom)",
+    "dateRange": "approx. 930–722 BC",
+    "description": "The ten northern tribes that broke from the house of David under Jeroboam I, with capitals at Shechem, Tirzah, and finally Samaria. Every northern king continued the calf shrines of Bethel and Dan; the dynasty of Omri and Ahab brought Baal worship to a crisis met by Elijah and Elisha.",
+    "fate": "Conquered by Assyria; Samaria fell in 722 BC and the population was deported and resettled (2 Kings 17).",
+    "capital": "samaria",
+    "territoryPlaces": ["samaria", "bethel", "shechem", "mount-carmel"],
+    "kings": ["jeroboam", "ahab"],
+    "prophets": [
+      { "personId": "elijah", "note": "Confronted Ahab and the prophets of Baal", "reference": "1 Kings 17–21" },
+      { "personId": "elisha", "note": "Double portion of Elijah's spirit; ministry through five reigns", "reference": "2 Kings 2–13" },
+      { "personId": "amos", "note": "Judean shepherd sent north against Israel's injustice", "reference": "Amos 1–9" },
+      { "personId": "hosea", "note": "His marriage a sign of Israel's unfaithfulness", "reference": "Hosea 1–14" }
+    ],
+    "events": ["kingdom-divides", "elijah-on-mount-carmel", "fall-of-samaria"],
+    "references": ["1 Kings 12", "2 Kings 17:6–23"],
+    "relatedNations": ["israel", "judah", "assyria", "aram"]
+  },
+  {
+    "id": "judah",
+    "name": "Judah (Southern Kingdom)",
+    "dateRange": "approx. 930–586 BC",
+    "description": "The southern kingdom under the unbroken Davidic dynasty at Jerusalem, comprising Judah and Benjamin. Its history alternates between reforming kings (Hezekiah, Josiah) and apostasy; it survived Assyria's invasion in 701 BC but fell to Babylon.",
+    "fate": "Jerusalem and the temple destroyed by Nebuchadnezzar in 586 BC; the people exiled to Babylon; restored under Persia from 538 BC.",
+    "capital": "jerusalem",
+    "territoryPlaces": ["jerusalem", "bethlehem", "hebron", "beersheba", "en-gedi", "valley-of-elah"],
+    "kings": ["rehoboam", "hezekiah", "josiah"],
+    "prophets": [
+      { "personId": "isaiah", "note": "Counseled Ahaz and Hezekiah; visions of judgment and the Servant", "reference": "Isaiah 1–39; 2 Kings 19" },
+      { "personId": "jeremiah", "note": "Forty years warning of Babylon; the new covenant", "reference": "Jeremiah 1–52" },
+      { "personId": "haggai", "note": "Stirred the returned exiles to rebuild the temple", "reference": "Haggai 1–2" },
+      { "personId": "zechariah", "note": "Visions of restoration and the coming king", "reference": "Zechariah 1–14" },
+      { "personId": "malachi", "note": "Final canonical voice to restored Judah", "reference": "Malachi 1–4" }
+    ],
+    "events": ["kingdom-divides", "hezekiah-and-sennacherib", "josiahs-reforms", "fall-of-jerusalem", "cyrus-decree", "temple-rebuilt"],
+    "references": ["1 Kings 12:21–24", "2 Kings 18–25", "Ezra 1–6"],
+    "relatedNations": ["israel", "israel-northern", "assyria", "babylon-empire", "persia"]
+  },
+  {
+    "id": "egypt-nation",
+    "name": "Egypt",
+    "dateRange": "throughout the biblical period",
+    "description": "The great Nile kingdom: refuge in famine for Abraham and Jacob's family, then the house of bondage whose Pharaoh (unnamed in the text) enslaved Israel until the ten plagues and the exodus. Later a tempting but unreliable ally against Assyria and Babylon, and a refuge again for the infant Jesus.",
+    "fate": "Humbled in the exodus; conquered successively by Assyria, Babylon, Persia, Greece, and Rome, as the prophets had declared (Ezekiel 29–32).",
+    "capital": null,
+    "territoryPlaces": ["egypt", "goshen"],
+    "kings": [],
+    "prophets": [
+      { "personId": "moses", "note": "Confronted Pharaoh with signs and plagues", "reference": "Exodus 5–12" },
+      { "personId": "jeremiah", "note": "Taken to Egypt after Jerusalem's fall; prophesied there", "reference": "Jeremiah 43–44" }
+    ],
+    "events": ["abram-in-egypt", "jacob-moves-to-egypt", "israel-enslaved-in-egypt", "ten-plagues", "red-sea-crossing", "flight-to-egypt"],
+    "references": ["Genesis 12:10", "Exodus 1–14", "Isaiah 19", "Matthew 2:13–15"],
+    "relatedNations": ["israel", "assyria", "babylon-empire"]
+  },
+  {
+    "id": "assyria",
+    "name": "Assyria",
+    "dateRange": "dominant approx. 900–612 BC",
+    "description": "The Mesopotamian empire from Nineveh whose armies destroyed the northern kingdom (722 BC) and devastated Judah under Sennacherib (701 BC). Jonah's reluctant mission brought Nineveh a generation of repentance; Nahum later announced its doom.",
+    "fate": "Nineveh fell to the Babylonians and Medes in 612 BC, as Nahum and Zephaniah had declared.",
+    "capital": "nineveh",
+    "territoryPlaces": ["nineveh"],
+    "kings": ["sennacherib"],
+    "prophets": [
+      { "personId": "jonah", "note": "Sent to Nineveh; the city repented", "reference": "Jonah 3" },
+      { "personId": "isaiah", "note": "Declared Sennacherib's army would not enter Jerusalem", "reference": "2 Kings 19:20–37; Isaiah 37" }
+    ],
+    "events": ["jonah-and-nineveh", "fall-of-samaria", "hezekiah-and-sennacherib"],
+    "references": ["2 Kings 17; 18–19", "Jonah 1–4", "Nahum 1–3"],
+    "relatedNations": ["israel-northern", "judah", "babylon-empire", "egypt-nation"]
+  },
+  {
+    "id": "babylon-empire",
+    "name": "Babylon",
+    "dateRange": "dominant approx. 626–539 BC",
+    "description": "The Neo-Babylonian empire of Nebuchadnezzar II, God's declared instrument of judgment on Judah: three deportations (605, 597, 586 BC), the temple burned, and the exile in which Daniel served and Ezekiel prophesied. In Scripture Babylon also becomes the enduring symbol of human pride from Babel to Revelation.",
+    "fate": "Fell to Cyrus of Persia in a single night in 539 BC (Daniel 5), as Isaiah and Jeremiah had foretold.",
+    "capital": "babylon",
+    "territoryPlaces": ["babylon", "ur"],
+    "kings": ["nebuchadnezzar", "belshazzar"],
+    "prophets": [
+      { "personId": "daniel", "note": "Interpreted the king's dreams; served to the empire's last night", "reference": "Daniel 1–5" },
+      { "personId": "ezekiel", "note": "Prophesied among the exiles by the Chebar canal", "reference": "Ezekiel 1:1–3" },
+      { "personId": "jeremiah", "note": "Declared Babylon's seventy years and its fall", "reference": "Jeremiah 25; 50–51" }
+    ],
+    "events": ["fall-of-jerusalem", "daniel-in-babylon", "nebuchadnezzars-dream", "fiery-furnace", "belshazzars-feast"],
+    "references": ["2 Kings 24–25", "Daniel 1–5", "Isaiah 13; 47", "Jeremiah 50–51"],
+    "relatedNations": ["judah", "assyria", "persia"]
+  },
+  {
+    "id": "persia",
+    "name": "Persia (Medo-Persia)",
+    "dateRange": "dominant 539–331 BC",
+    "description": "The empire of Cyrus the Great and his successors, which overthrew Babylon and reversed its policy of exile: Cyrus decreed the return and temple rebuilding (538 BC), Darius confirmed it, Xerxes (Ahasuerus) reigned in Esther's day, and Artaxerxes commissioned Ezra and Nehemiah.",
+    "fate": "Fell to Alexander the Great (331 BC) — in the common reading, the third kingdom of Daniel's visions giving way to Greece.",
+    "capital": "susa",
+    "territoryPlaces": ["susa"],
+    "kings": ["cyrus", "darius-the-mede", "ahasuerus"],
+    "prophets": [
+      { "personId": "daniel", "note": "Served under Darius; the lions' den", "reference": "Daniel 6" },
+      { "personId": "haggai", "note": "Prophesied in Darius' second year", "reference": "Haggai 1:1" },
+      { "personId": "zechariah", "note": "Contemporary of Haggai under Persian rule", "reference": "Zechariah 1:1" }
+    ],
+    "events": ["belshazzars-feast", "daniel-in-the-lions-den", "cyrus-decree", "temple-rebuilt", "esther-saves-her-people", "ezra-returns", "nehemiah-rebuilds-walls"],
+    "references": ["Ezra 1; 6–7", "Esther 1–10", "Daniel 6; 10–11", "Isaiah 44:28–45:13"],
+    "relatedNations": ["babylon-empire", "greece", "judah"]
+  },
+  {
+    "id": "philistia",
+    "name": "Philistia",
+    "dateRange": "dominant conflict approx. 1200–960 BC",
+    "description": "The five-city league of the southern coast (Gaza, Ashkelon, Ashdod, Ekron, Gath), Israel's chief rival in the days of the judges and Saul: Samson's exploits, the ark's capture, and Goliath of Gath. David broke their power.",
+    "fate": "Subdued by David; the cities declined under later empires and the prophets pronounced their end (Amos 1:6–8; Zephaniah 2:4–7).",
+    "capital": null,
+    "territoryPlaces": ["gaza", "valley-of-elah"],
+    "kings": [],
+    "prophets": [],
+    "events": ["samson", "ark-captured-and-returned", "david-and-goliath"],
+    "references": ["Judges 13–16", "1 Samuel 4–6; 17", "2 Samuel 5:17–25"],
+    "relatedNations": ["israel", "judah"],
+    "notablePeople": ["goliath", "delilah"]
+  },
+  {
+    "id": "moab-nation",
+    "name": "Moab",
+    "dateRange": "throughout the Old Testament period",
+    "description": "The people east of the Dead Sea descended from Lot. Balak of Moab hired Balaam to curse Israel; Ruth the Moabitess entered the line of David; David later made Moab tributary. The Mesha stele records Moab's ninth-century revolt against Israel.",
+    "fate": "Made tributary by David; oracles of judgment in Isaiah 15–16, Jeremiah 48, and Amos 2:1–3; absorbed into later empires.",
+    "capital": null,
+    "territoryPlaces": ["moab"],
+    "kings": [],
+    "prophets": [],
+    "events": ["balaam", "ruth-and-boaz", "death-of-moses"],
+    "references": ["Genesis 19:37", "Numbers 22–24", "Ruth 1", "2 Samuel 8:2"],
+    "relatedNations": ["israel", "ammon", "edom"],
+    "notablePeople": ["balaam", "ruth"]
+  },
+  {
+    "id": "edom",
+    "name": "Edom",
+    "dateRange": "throughout the Old Testament period",
+    "description": "The nation descended from Esau, in the red mountains south of the Dead Sea. Edom refused Israel passage at the exodus, was garrisoned by David, and gloated over Jerusalem's fall — the burden of Obadiah's oracle. The Herodian dynasty of the New Testament was Idumean (Edomite) in origin.",
+    "fate": "Judgment pronounced by Obadiah and Malachi 1:2–4; displaced into Idumea; the people fade from history after the Jewish wars.",
+    "capital": null,
+    "territoryPlaces": [],
+    "kings": [],
+    "prophets": [],
+    "events": ["jacob-and-esau-born", "wilderness-wanderings"],
+    "references": ["Genesis 25:30; 36", "Numbers 20:14–21", "Obadiah", "Malachi 1:2–4"],
+    "relatedNations": ["israel", "judah", "moab-nation"],
+    "notablePeople": ["esau", "herod-the-great"]
+  },
+  {
+    "id": "ammon",
+    "name": "Ammon",
+    "dateRange": "throughout the Old Testament period",
+    "description": "The people east of the Jordan descended from Lot, centered at Rabbah. Jephthah fought them in the judges' era; their siege of Rabbah was the backdrop to David's sin with Bathsheba; Nehemiah's opponent Tobiah was an Ammonite official.",
+    "fate": "Defeated by Jephthah and by David; oracles in Jeremiah 49:1–6, Ezekiel 25:1–7, and Amos 1:13–15.",
+    "capital": null,
+    "territoryPlaces": [],
+    "kings": [],
+    "prophets": [],
+    "events": ["jephthah", "david-and-bathsheba", "absaloms-rebellion"],
+    "references": ["Genesis 19:38", "Judges 11", "2 Samuel 11–12", "Nehemiah 2:10"],
+    "relatedNations": ["israel", "moab-nation"]
+  },
+  {
+    "id": "aram",
+    "name": "Aram (Syria)",
+    "dateRange": "dominant conflict approx. 950–732 BC",
+    "description": "The Aramean kingdoms centered on Damascus: subdued by David, then Israel's persistent northern rival — the wars of Ahab's era, Naaman the healed commander, and Hazael's oppression, until Assyria took Damascus in 732 BC. Aramaic became the common tongue of the later biblical world.",
+    "fate": "Damascus fell to Tiglath-pileser III in 732 BC, as Amos 1:3–5 and Isaiah 17 declared.",
+    "capital": "damascus",
+    "territoryPlaces": ["damascus"],
+    "kings": [],
+    "prophets": [
+      { "personId": "elisha", "note": "Healed Naaman the Aramean; wept over Hazael's future cruelty", "reference": "2 Kings 5; 8:7–15" }
+    ],
+    "events": ["elisha-ministry"],
+    "references": ["2 Samuel 8:5–6", "1 Kings 20; 22", "2 Kings 5–8", "Amos 1:3–5"],
+    "relatedNations": ["israel", "israel-northern", "assyria"],
+    "notablePeople": ["naaman"]
+  },
+  {
+    "id": "greece",
+    "name": "Greece",
+    "dateRange": "dominant 331–63 BC; cultural influence through the NT era",
+    "description": "Alexander's empire and its successor kingdoms, which Hellenized the biblical world between the Testaments — the Septuagint, the Maccabean crisis under the Seleucids, and the Greek language of the New Testament. Daniel's visions of the goat and the third kingdom are commonly read of Greece; Paul preached in its great cities.",
+    "fate": "Successor kingdoms absorbed by Rome (Macedonia 146 BC; Egypt 30 BC); Greek culture and language endured as the medium of the gospel.",
+    "capital": null,
+    "territoryPlaces": ["athens", "corinth", "thessalonica", "philippi", "berea"],
+    "kings": [],
+    "prophets": [],
+    "events": ["intertestamental-period", "second-missionary-journey"],
+    "references": ["Daniel 8:21; 11:2–4", "Zechariah 9:13", "Acts 17"],
+    "relatedNations": ["persia", "rome-empire"]
+  },
+  {
+    "id": "rome-empire",
+    "name": "Rome",
+    "dateRange": "dominant from 63 BC through the New Testament era",
+    "description": "The empire ruling the biblical world of the New Testament: Pompey took Jerusalem in 63 BC, Herod ruled as client king, a census brought Joseph and Mary to Bethlehem, a Roman prefect crucified Jesus, Roman roads and peace carried the gospel, and Roman armies destroyed the temple in AD 70.",
+    "fate": "Persecutor and unwitting servant of the gospel's spread; in Christian reading, the fourth kingdom of Daniel and the Babylon of Revelation's visions.",
+    "capital": "rome",
+    "territoryPlaces": ["rome", "caesarea", "malta"],
+    "kings": ["herod-the-great", "herod-antipas"],
+    "prophets": [],
+    "events": ["birth-of-jesus", "trials-of-jesus", "crucifixion", "pauls-roman-imprisonment", "destruction-of-the-temple"],
+    "references": ["Luke 2:1", "John 19", "Acts 25–28", "Daniel 2:40 (common interpretation)"],
+    "relatedNations": ["greece", "judah"],
+    "notablePeople": ["pontius-pilate", "cornelius", "paul"]
+  },
+  {
+    "id": "canaanites",
+    "name": "Canaan (the Canaanite peoples)",
+    "dateRange": "before and during the conquest, approx. 2100–1000 BC",
+    "description": "The peoples of the land promised to Abraham — Canaanites, Amorites, Hittites, Hivites, Jebusites, and others — whose iniquity was 'not yet complete' in Abraham's day (Genesis 15:16). Their fortified cities fell to Joshua, but surviving enclaves (and their gods) ensnared Israel throughout the judges' era.",
+    "fate": "Dispossessed in the conquest; remnants like the Jebusites of Jerusalem absorbed under David; Baal worship remained Israel's recurring temptation.",
+    "capital": null,
+    "territoryPlaces": ["canaan", "jericho", "shechem", "hebron"],
+    "kings": [],
+    "prophets": [],
+    "events": ["abrahamic-covenant", "fall-of-jericho", "sun-stands-still", "cycle-of-the-judges"],
+    "references": ["Genesis 15:16–21", "Joshua 3:10", "Judges 2:1–5"],
+    "relatedNations": ["israel", "philistia", "phoenicia"],
+    "notablePeople": ["rahab"]
+  },
+  {
+    "id": "phoenicia",
+    "name": "Phoenicia (Tyre and Sidon)",
+    "dateRange": "throughout the biblical period",
+    "description": "The maritime cities of the northern coast. Hiram of Tyre supplied cedar and craftsmen for David's palace and Solomon's temple; Jezebel of Sidon brought Baal worship into Israel; Elijah lodged with a Sidonian widow; Jesus ministered in the region and Paul landed at Tyre.",
+    "fate": "Ezekiel 26–28 pronounced Tyre's fall: besieged by Nebuchadnezzar, and its island stronghold taken by Alexander's causeway in 332 BC (historical fulfillment noted by ancient historians).",
+    "capital": null,
+    "territoryPlaces": [],
+    "kings": [],
+    "prophets": [
+      { "personId": "elijah", "note": "Sustained by the widow of Zarephath in Sidon's territory", "reference": "1 Kings 17:8–24" },
+      { "personId": "ezekiel", "note": "Oracles against Tyre and its prince", "reference": "Ezekiel 26–28" }
+    ],
+    "events": ["temple-built", "elijah-on-mount-carmel", "third-missionary-journey"],
+    "references": ["1 Kings 5; 16:31", "Ezekiel 26–28", "Mark 7:24–31", "Acts 21:3–6"],
+    "relatedNations": ["israel", "israel-northern", "greece"],
+    "notablePeople": ["jezebel"]
+  }
+]

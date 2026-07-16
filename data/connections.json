@@ -1,0 +1,21 @@
+{
+  "description": "Explicit typed edges that don't live inside an entity file. Types used elsewhere are derived at build time (person-event participation, event-place occurrence, prophecy-fulfillment, nation-king, nation-prophet, nation-territory, theme links).",
+  "edges": [
+    { "from": { "type": "person", "id": "samuel" }, "rel": "prophet-to-king", "to": { "type": "person", "id": "saul" }, "note": "Anointed Saul, then announced the kingdom torn from him", "reference": "1 Samuel 10:1; 13:13–14; 15:26–28" },
+    { "from": { "type": "person", "id": "nathan" }, "rel": "prophet-to-king", "to": { "type": "person", "id": "david" }, "note": "Brought the covenant promise and the parable that convicted the king", "reference": "2 Samuel 7; 12:1–15" },
+    { "from": { "type": "person", "id": "elijah" }, "rel": "prophet-to-king", "to": { "type": "person", "id": "ahab" }, "note": "Announced the drought, confronted him at Carmel and over Naboth's vineyard", "reference": "1 Kings 17:1; 18; 21:17–29" },
+    { "from": { "type": "person", "id": "elijah" }, "rel": "prophet-to-king", "to": { "type": "person", "id": "jezebel" }, "note": "Fled her death threat; pronounced her doom at Jezreel", "reference": "1 Kings 19:1–3; 21:23" },
+    { "from": { "type": "person", "id": "isaiah" }, "rel": "prophet-to-king", "to": { "type": "person", "id": "hezekiah" }, "note": "Counseled him through Sennacherib's siege and his illness", "reference": "2 Kings 19–20; Isaiah 37–39" },
+    { "from": { "type": "person", "id": "jeremiah" }, "rel": "prophet-to-king", "to": { "type": "person", "id": "josiah" }, "note": "Began prophesying in Josiah's thirteenth year; lamented his death", "reference": "Jeremiah 1:2; 2 Chronicles 35:25" },
+    { "from": { "type": "person", "id": "daniel" }, "rel": "prophet-to-king", "to": { "type": "person", "id": "nebuchadnezzar" }, "note": "Interpreted his dreams; witnessed his humbling and confession", "reference": "Daniel 2; 4" },
+    { "from": { "type": "person", "id": "daniel" }, "rel": "prophet-to-king", "to": { "type": "person", "id": "belshazzar" }, "note": "Read the writing on the wall on Babylon's last night", "reference": "Daniel 5" },
+    { "from": { "type": "person", "id": "daniel" }, "rel": "prophet-to-king", "to": { "type": "person", "id": "darius-the-mede" }, "note": "Served under him; delivered from the lions' den", "reference": "Daniel 6" },
+    { "from": { "type": "person", "id": "moses" }, "rel": "prophet-to-nation", "to": { "type": "nation", "id": "egypt-nation" }, "note": "Confronted Pharaoh: 'Let my people go'", "reference": "Exodus 5–12" },
+    { "from": { "type": "person", "id": "jonah" }, "rel": "prophet-to-nation", "to": { "type": "nation", "id": "assyria" }, "note": "Preached to Nineveh; the city repented", "reference": "Jonah 3" },
+    { "from": { "type": "person", "id": "john-the-baptist" }, "rel": "prophet-to-king", "to": { "type": "person", "id": "herod-antipas" }, "note": "Rebuked the king's marriage; imprisoned and beheaded", "reference": "Matthew 14:1–12; Mark 6:14–29" },
+    { "from": { "type": "person", "id": "haggai" }, "rel": "prophet-to-king", "to": { "type": "person", "id": "zerubbabel" }, "note": "Stirred the governor of Judah to rebuild; 'my signet ring'", "reference": "Haggai 1:1, 12–14; 2:20–23" },
+    { "from": { "type": "person", "id": "zechariah" }, "rel": "prophet-to-king", "to": { "type": "person", "id": "zerubbabel" }, "note": "'Not by might, nor by power, but by my Spirit' — for Zerubbabel", "reference": "Zechariah 4:6–10" },
+    { "from": { "type": "person", "id": "samuel" }, "rel": "prophet-to-king", "to": { "type": "person", "id": "david" }, "note": "Anointed him at Bethlehem while Saul still reigned", "reference": "1 Samuel 16:1–13" },
+    { "from": { "type": "nation", "id": "israel" }, "rel": "nation-of-person", "to": { "type": "person", "id": "jesus" }, "note": "Born king of the Jews, of David's line", "reference": "Matthew 1:1; 2:2" }
+  ]
+}
