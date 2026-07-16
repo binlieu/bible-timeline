@@ -124,6 +124,50 @@ a:hover {
   text-decoration-thickness: 2px;
 }
 
+.scripture-toggle {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 0.35rem;
+  padding: 0.12rem 0.45rem;
+  color: var(--accent-strong);
+  background: var(--surface-muted);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.78em;
+  line-height: 1.3;
+}
+
+.scripture-toggle:hover,
+.scripture-toggle:focus-visible {
+  background: var(--accent-soft);
+}
+
+.scripture-body {
+  margin: 0.5rem 0 0.85rem 1rem;
+  padding: 0.65rem 0.8rem;
+  color: var(--text);
+  background: color-mix(in srgb, var(--surface-muted) 72%, var(--surface));
+  border-left: 3px solid var(--accent);
+  border-radius: 0 6px 6px 0;
+  font-size: 0.95rem;
+}
+
+.scripture-body p {
+  margin: 0.35rem 0;
+}
+
+.scripture-body sup {
+  color: var(--accent-strong);
+  font-weight: 700;
+}
+
+.scripture-note {
+  color: var(--muted);
+  font-style: italic;
+}
+
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
@@ -1168,6 +1212,19 @@ main {
     color: #000;
     text-decoration: underline;
     white-space: normal;
+  }
+
+  .scripture-toggle {
+    display: none;
+  }
+
+  .scripture-body,
+  .scripture-body[hidden] {
+    display: block !important;
+    break-inside: avoid;
+    color: #000;
+    background: #fff;
+    border-color: #999;
   }
 
   .map,
