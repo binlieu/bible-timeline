@@ -2029,6 +2029,174 @@
     ]
   },
   {
+    "id": "smyrna",
+    "name": "Smyrna",
+    "modernCountry": "Turkey",
+    "ancientRegion": "Asia Minor / province of Asia",
+    "lat": 38.42,
+    "lng": 27.14,
+    "significance": "One of the seven churches addressed in Revelation, located at modern Izmir.",
+    "events": [
+      "revelation-given"
+    ],
+    "people": [
+      "john-the-apostle"
+    ],
+    "references": [
+      "Revelation 1:11",
+      "Revelation 2:8-11"
+    ],
+    "relatedPlaces": [
+      "ephesus",
+      "pergamum",
+      "thyatira",
+      "sardis",
+      "philadelphia",
+      "laodicea",
+      "patmos"
+    ]
+  },
+  {
+    "id": "pergamum",
+    "name": "Pergamum",
+    "modernCountry": "Turkey",
+    "ancientRegion": "Asia Minor / province of Asia",
+    "lat": 39.13,
+    "lng": 27.18,
+    "significance": "One of the seven churches addressed in Revelation, located at modern Bergama.",
+    "events": [
+      "revelation-given"
+    ],
+    "people": [
+      "john-the-apostle"
+    ],
+    "references": [
+      "Revelation 1:11",
+      "Revelation 2:12-17"
+    ],
+    "relatedPlaces": [
+      "ephesus",
+      "smyrna",
+      "thyatira",
+      "sardis",
+      "philadelphia",
+      "laodicea",
+      "patmos"
+    ]
+  },
+  {
+    "id": "thyatira",
+    "name": "Thyatira",
+    "modernCountry": "Turkey",
+    "ancientRegion": "Asia Minor / province of Asia",
+    "lat": 38.92,
+    "lng": 27.84,
+    "significance": "One of the seven churches addressed in Revelation, located at modern Akhisar.",
+    "events": [
+      "revelation-given"
+    ],
+    "people": [
+      "john-the-apostle"
+    ],
+    "references": [
+      "Revelation 1:11",
+      "Revelation 2:18-29"
+    ],
+    "relatedPlaces": [
+      "ephesus",
+      "smyrna",
+      "pergamum",
+      "sardis",
+      "philadelphia",
+      "laodicea",
+      "patmos"
+    ]
+  },
+  {
+    "id": "sardis",
+    "name": "Sardis",
+    "modernCountry": "Turkey",
+    "ancientRegion": "Asia Minor / province of Asia",
+    "lat": 38.49,
+    "lng": 28.04,
+    "significance": "One of the seven churches addressed in Revelation, located at modern Sart.",
+    "events": [
+      "revelation-given"
+    ],
+    "people": [
+      "john-the-apostle"
+    ],
+    "references": [
+      "Revelation 1:11",
+      "Revelation 3:1-6"
+    ],
+    "relatedPlaces": [
+      "ephesus",
+      "smyrna",
+      "pergamum",
+      "thyatira",
+      "philadelphia",
+      "laodicea",
+      "patmos"
+    ]
+  },
+  {
+    "id": "philadelphia",
+    "name": "Philadelphia",
+    "modernCountry": "Turkey",
+    "ancientRegion": "Asia Minor / province of Asia",
+    "lat": 38.35,
+    "lng": 28.52,
+    "significance": "One of the seven churches addressed in Revelation, located at modern Alasehir.",
+    "events": [
+      "revelation-given"
+    ],
+    "people": [
+      "john-the-apostle"
+    ],
+    "references": [
+      "Revelation 1:11",
+      "Revelation 3:7-13"
+    ],
+    "relatedPlaces": [
+      "ephesus",
+      "smyrna",
+      "pergamum",
+      "thyatira",
+      "sardis",
+      "laodicea",
+      "patmos"
+    ]
+  },
+  {
+    "id": "laodicea",
+    "name": "Laodicea",
+    "modernCountry": "Turkey",
+    "ancientRegion": "Asia Minor / Lycus valley",
+    "lat": 37.84,
+    "lng": 29.11,
+    "significance": "One of the seven churches addressed in Revelation, located near modern Denizli.",
+    "events": [
+      "revelation-given"
+    ],
+    "people": [
+      "john-the-apostle"
+    ],
+    "references": [
+      "Revelation 1:11",
+      "Revelation 3:14-22"
+    ],
+    "relatedPlaces": [
+      "ephesus",
+      "smyrna",
+      "pergamum",
+      "thyatira",
+      "sardis",
+      "philadelphia",
+      "patmos"
+    ]
+  },
+  {
     "id": "tarsus",
     "name": "Tarsus",
     "modernCountry": "Turkey",

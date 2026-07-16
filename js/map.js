@@ -235,6 +235,240 @@
     svg.appendChild(text);
   }
 
+  function allJourneyPoints(journey) {
+    var points = [];
+    (journey.routes || []).forEach(function (route) {
+      (route.stops || []).forEach(function (stop) {
+        if (isFinite(Number(stop.lat)) && isFinite(Number(stop.lng))) {
+          points.push([Number(stop.lng), Number(stop.lat)]);
+        }
+      });
+    });
+    (journey.regions || []).forEach(function (region) {
+      (region.ring || []).forEach(function (point) {
+        if (isFinite(Number(point[0])) && isFinite(Number(point[1]))) {
+          points.push([Number(point[0]), Number(point[1])]);
+        }
+      });
+    });
+    return points;
+  }
+
+  function fittedBbox(journey, world) {
+    var points = allJourneyPoints(journey);
+    if (!points.length) {
+      return world;
+    }
+
+    var west = points[0][0];
+    var east = points[0][0];
+    var south = points[0][1];
+    var north = points[0][1];
+    points.forEach(function (point) {
+      west = Math.min(west, point[0]);
+      east = Math.max(east, point[0]);
+      south = Math.min(south, point[1]);
+      north = Math.max(north, point[1]);
+    });
+
+    var lonPad = Math.max((east - west) * 0.16, 0.35);
+    var latPad = Math.max((north - south) * 0.16, 0.25);
+    west = Math.max(world.W, west - lonPad);
+    east = Math.min(world.E, east + lonPad);
+    south = Math.max(world.S, south - latPad);
+    north = Math.min(world.N, north + latPad);
+
+    if (east <= west) east = west + 1;
+    if (north <= south) north = south + 1;
+    return { W: west, E: east, S: south, N: north };
+  }
+
+  function routeColor(route, index) {
+    return route.colorKey || "route" + ((index % 4) + 1);
+  }
+
+  function stopPoint(stop) {
+    return [Number(stop.lng), Number(stop.lat)];
+  }
+
+  function dashForLeg(route, stop) {
+    if (stop && stop.precision === "disputed") {
+      return "2 3";
+    }
+    if (route.lineStyle === "dashed" || (stop && stop.travel === "sea")) {
+      return "6 4";
+    }
+    if (route.lineStyle === "dotted") {
+      return "2 3";
+    }
+    return "";
+  }
+
+  function pointKey(point) {
+    return point[0].toFixed(4) + "," + point[1].toFixed(4);
+  }
+
+  function legKey(a, b) {
+    var first = pointKey(a);
+    var second = pointKey(b);
+    return first < second ? first + "|" + second : second + "|" + first;
+  }
+
+  function offsetSegment(a, b, amount) {
+    if (!amount) {
+      return [a, b];
+    }
+    var dx = b.x - a.x;
+    var dy = b.y - a.y;
+    var length = Math.sqrt(dx * dx + dy * dy);
+    if (!length) {
+      return [a, b];
+    }
+    var ox = -dy / length * amount;
+    var oy = dx / length * amount;
+    return [
+      { x: a.x + ox, y: a.y + oy },
+      { x: b.x + ox, y: b.y + oy }
+    ];
+  }
+
+  function appendJourneyRegion(svg, region, bbox, width, height) {
+    var path = document.createElementNS(SVG_NS, "path");
+    path.setAttribute("class", "map-region");
+    path.setAttribute("d", ringPath(region.ring, bbox, width, height));
+    path.setAttribute("style", "fill: var(--map-region); fill-opacity: 0.35; stroke: var(--map-region-line); stroke-dasharray: 8 5");
+    var title = document.createElementNS(SVG_NS, "title");
+    title.textContent = region.name || "Region";
+    path.appendChild(title);
+    svg.appendChild(path);
+  }
+
+  function appendJourneyLeg(svg, route, routeIndex, fromStop, toStop, bbox, width, height, amount) {
+    var from = project(stopPoint(fromStop), bbox, width, height);
+    var to = project(stopPoint(toStop), bbox, width, height);
+    var segment = offsetSegment(from, to, amount);
+    var path = document.createElementNS(SVG_NS, "path");
+    path.setAttribute("class", "map-journey-route");
+    path.setAttribute("d", "M" + segment[0].x.toFixed(2) + " " + segment[0].y.toFixed(2) + " L" + segment[1].x.toFixed(2) + " " + segment[1].y.toFixed(2));
+    var style = "fill: none; stroke: var(--map-" + routeColor(route, routeIndex) + "); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round";
+    var dash = dashForLeg(route, toStop);
+    if (dash) {
+      style += "; stroke-dasharray: " + dash;
+    }
+    path.setAttribute("style", style);
+    svg.appendChild(path);
+  }
+
+  function appendJourneyMarker(svg, route, routeIndex, stop, index, bbox, width, height, labelStops) {
+    var p = project(stopPoint(stop), bbox, width, height);
+    var marker = document.createElementNS(SVG_NS, stop.placeId ? "a" : "g");
+    marker.setAttribute("class", stop.placeId ? "map-marker-link map-journey-marker-link" : "map-journey-marker-link");
+    if (stop.placeId) {
+      setHref(marker, rootPrefix() + "locations/" + stop.placeId + ".html");
+    }
+
+    var title = document.createElementNS(SVG_NS, "title");
+    title.textContent = (index + 1) + ". " + stop.name + (stop.note ? " - " + stop.note : "");
+    marker.appendChild(title);
+
+    var circle = document.createElementNS(SVG_NS, "circle");
+    circle.setAttribute("class", "map-journey-stop");
+    circle.setAttribute("cx", p.x.toFixed(2));
+    circle.setAttribute("cy", p.y.toFixed(2));
+    circle.setAttribute("r", (width * 0.009).toFixed(2));
+    circle.setAttribute("style", "fill: var(--map-" + routeColor(route, routeIndex) + ")");
+    marker.appendChild(circle);
+
+    var number = document.createElementNS(SVG_NS, "text");
+    number.setAttribute("class", "map-journey-stop-number");
+    number.setAttribute("x", p.x.toFixed(2));
+    number.setAttribute("y", (p.y + width * 0.0038).toFixed(2));
+    number.setAttribute("text-anchor", "middle");
+    number.setAttribute("style", "fill: #fff; font-size: " + (width * 0.011).toFixed(2) + "px");
+    number.textContent = String(index + 1);
+    marker.appendChild(number);
+    svg.appendChild(marker);
+
+    if (!labelStops) {
+      return;
+    }
+    var left = index % 2 === 1;
+    var label = document.createElementNS(SVG_NS, "text");
+    label.setAttribute("class", "map-journey-label");
+    label.setAttribute("x", (p.x + (left ? -14 : 14)).toFixed(2));
+    label.setAttribute("y", (p.y - 12).toFixed(2));
+    label.setAttribute("text-anchor", left ? "end" : "start");
+    label.setAttribute("style", "fill: var(--map-label)");
+    label.textContent = stop.name;
+    svg.appendChild(label);
+  }
+
+  function renderJourneyMap(container) {
+    var data = mapData();
+    var journeyId = container.dataset.journey;
+    var journeys = data && data.journeys ? data.journeys : [];
+    var journey = journeys.find(function (item) {
+      return item.id === journeyId;
+    });
+    if (!journey) {
+      return;
+    }
+
+    var bbox = fittedBbox(journey, data.bbox);
+    var height = mapHeight(FULL_WIDTH, bbox);
+    var svg = createSvg(FULL_WIDTH, height, "map-svg map-svg-journey", "Journey map for " + journey.name);
+    appendBasemap(svg, bbox, FULL_WIDTH, height);
+
+    (journey.regions || []).forEach(function (region) {
+      appendJourneyRegion(svg, region, bbox, FULL_WIDTH, height);
+    });
+
+    // Anchors of labels already placed on this map (across ALL routes), so
+    // revisited cities (Antioch, Corinth, ...) and tight clusters label once.
+    var labeledAnchors = [];
+    var minLabelGap = FULL_WIDTH * 0.035;
+
+    function farFromLabeled(p) {
+      return labeledAnchors.every(function (a) {
+        return Math.hypot(a.x - p.x, a.y - p.y) >= minLabelGap;
+      });
+    }
+
+    (journey.routes || []).forEach(function (route, routeIndex) {
+      var pairCounts = {};
+      if (route.drawLine !== false) {
+        (route.stops || []).forEach(function (stop, index) {
+          if (index === 0) return;
+          var previous = route.stops[index - 1];
+          var key = legKey(stopPoint(previous), stopPoint(stop));
+          var count = pairCounts[key] || 0;
+          pairCounts[key] = count + 1;
+          appendJourneyLeg(svg, route, routeIndex, previous, stop, bbox, FULL_WIDTH, height, count ? FULL_WIDTH * 0.004 * count : 0);
+        });
+      }
+
+      var seenStops = {};
+      var stopCount = (route.stops || []).length;
+      (route.stops || []).forEach(function (stop, index) {
+        var key = pointKey(stopPoint(stop));
+        if (seenStops[key]) {
+          return;
+        }
+        seenStops[key] = true;
+        var wantLabel = stopCount <= 12 || stop.placeId || index % 2 === 0;
+        var p = project(stopPoint(stop), bbox, FULL_WIDTH, height);
+        var labelIt = wantLabel && farFromLabeled(p);
+        if (labelIt) {
+          labeledAnchors.push(p);
+        }
+        appendJourneyMarker(svg, route, routeIndex, stop, index, bbox, FULL_WIDTH, height, labelIt);
+      });
+    });
+
+    container.innerHTML = "";
+    container.appendChild(svg);
+  }
+
   function renderMiniMap(container) {
     var data = mapData();
     var lat = Number(container.dataset.lat);
@@ -272,5 +506,6 @@
     }
     renderFullMap();
     document.querySelectorAll("[data-map]").forEach(renderMiniMap);
+    document.querySelectorAll("[data-journey]").forEach(renderJourneyMap);
   });
 })();

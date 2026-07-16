@@ -12,6 +12,7 @@ const data = {
   events: readJson("events.json"),
   people: readJson("people.json"),
   places: readJson("places.json"),
+  journeys: readJson("journeys.json"),
   books: readJson("books.json"),
   timeline: readJson("timeline.json"),
   categories: readJson("categories.json"),
@@ -94,6 +95,23 @@ function linkToWithLabel(rootPrefix, type, id, label) {
   const item = lookup(type, id);
   if (!item) return escapeHtml(label || id);
   return '<a href="' + escapeHtml(relativeUrl(rootPrefix, type, canonicalId(type, id))) + '">' + escapeHtml(label || item.name) + "</a>";
+}
+
+const journeysByEvent = new Map();
+data.journeys.forEach((journey) => {
+  (journey.relatedEvents || []).forEach((eventId) => {
+    const canonical = canonicalId("event", eventId);
+    if (!journeysByEvent.has(canonical)) journeysByEvent.set(canonical, []);
+    journeysByEvent.get(canonical).push(journey);
+  });
+});
+
+function journeyUrl(rootPrefix, journeyId) {
+  return rootPrefix + "journeys/" + journeyId + ".html";
+}
+
+function linkToJourney(rootPrefix, journey) {
+  return '<a href="' + escapeHtml(journeyUrl(rootPrefix, journey.id)) + '">' + escapeHtml(journey.name) + "</a>";
 }
 
 function listLinks(rootPrefix, type, ids) {
@@ -255,6 +273,7 @@ function validateData() {
   validateUnique("events", data.events);
   validateUnique("people", data.people);
   validateUnique("places", data.places);
+  validateUnique("journeys", data.journeys);
   validateUnique("books", data.books);
 
   data.events.forEach((event) => {
@@ -308,6 +327,19 @@ function validateData() {
     if (parable.eventId && !maps.events.has(canonicalId("event", parable.eventId))) {
       warn("parable category references missing event id: " + parable.eventId);
     }
+  });
+
+  data.journeys.forEach((journey) => {
+    const label = "journey " + journey.id;
+    checkRefs(label, journey.relatedEvents, "event", maps.events);
+    checkRefs(label, journey.relatedPeople, "person", maps.people);
+    (journey.routes || []).forEach((route) => {
+      (route.stops || []).forEach((stop) => {
+        if (stop.placeId && !maps.places.has(stop.placeId)) {
+          warn(label + " references missing place id: " + stop.placeId);
+        }
+      });
+    });
   });
 }
 
@@ -366,13 +398,14 @@ function renderIndex() {
     '  <div class="container">\n' +
     '    <nav class="content-panel" aria-label="Study navigation">\n' +
     '      <ul class="link-list">' +
-    ['Timeline', 'People', 'Places', 'Books', 'Maps', 'Kings', 'Prophets', 'Miracles', 'Parables', 'Genealogy'].map((label) => {
+    ['Timeline', 'People', 'Places', 'Books', 'Maps', 'Journeys', 'Kings', 'Prophets', 'Miracles', 'Parables', 'Genealogy'].map((label) => {
       const hrefs = {
         Timeline: 'timeline.html',
         People: 'people.html',
         Places: 'locations.html',
         Books: 'books.html',
         Maps: 'maps.html',
+        Journeys: 'journeys.html',
         Kings: 'kings.html',
         Prophets: 'prophets.html',
         Miracles: 'miracles.html',
@@ -577,14 +610,94 @@ function renderGenealogyBrowse() {
   );
 }
 
+function journeyFallbackText(journey) {
+  const names = [];
+  (journey.routes || []).forEach((route) => {
+    (route.stops || []).forEach((stop) => names.push(stop.name));
+  });
+  return names.length ? names.join(" -> ") : "No stops listed.";
+}
+
+function renderJourneyLegend(journey) {
+  const routeItems = (journey.routes || []).map((route, index) => {
+    const colorKey = route.colorKey || ("route" + ((index % 4) + 1));
+    return '<li><span class="journey-swatch journey-swatch-' + escapeHtml(colorKey) + '"></span>' + escapeHtml(route.name) + '</li>';
+  }).join("");
+  const hasSea = (journey.routes || []).some((route) => (route.stops || []).some((stop) => stop.travel === "sea"));
+  const hasDisputed = (journey.routes || []).some((route) => (route.stops || []).some((stop) => stop.precision === "disputed"));
+  const hasDashed = (journey.routes || []).some((route) => route.lineStyle === "dashed");
+  const notes = [];
+  if (journey.type === "region" || (journey.regions || []).length) notes.push("Shaded areas mark approximate regional extent.");
+  if (hasSea || hasDashed) notes.push("Dashed segments mark sea travel or a dashed route circuit.");
+  if (hasDisputed) notes.push("Dotted segments mark disputed locations or uncertain segments.");
+  if (!notes.length) notes.push("Solid segments mark land travel.");
+
+  return '<section class="journey-legend" aria-label="Map legend"><ul>' + routeItems + '</ul><p>' + notes.map(escapeHtml).join(" ") + '</p></section>';
+}
+
+function precisionLabel(stop) {
+  return stop.precision ? ' <sup class="precision-label">' + escapeHtml(stop.precision) + '</sup>' : '';
+}
+
+function renderStopsTable(rootPrefix, route) {
+  const rows = (route.stops || []).map((stop, index) => {
+    const name = stop.placeId ? linkTo(rootPrefix, "place", stop.placeId, stop.name) : escapeHtml(stop.name);
+    return '<tr><td>' + escapeHtml(index + 1) + '</td><td>' + name + precisionLabel(stop) + '</td><td>' + escapeHtml(stop.note || "") + '</td><td>' + escapeHtml(stop.reference || "") + '</td></tr>';
+  }).join("");
+  return '<div class="table-wrap"><table class="browse-table stops-table"><thead><tr><th>No.</th><th>Stop</th><th>Note</th><th>Reference</th></tr></thead><tbody>' + rows + '</tbody></table></div>';
+}
+
+function renderJourneyPage(journey, index) {
+  const rootPrefix = "../";
+  const previous = data.journeys[index - 1];
+  const next = data.journeys[index + 1];
+  const routeSections = (journey.routes || []).map((route) => (
+    '<section class="content-panel"><h2>' + escapeHtml(route.name) + '</h2>' + renderStopsTable(rootPrefix, route) + '</section>'
+  )).join("\n");
+  const nav = '<nav class="journey-pager" aria-label="Journey navigation">' +
+    (previous ? '<a href="' + escapeHtml(previous.id + ".html") + '">&larr; ' + escapeHtml(previous.name) + '</a>' : '<span></span>') +
+    (next ? '<a href="' + escapeHtml(next.id + ".html") + '">' + escapeHtml(next.name) + ' &rarr;</a>' : '<span></span>') +
+    '</nav>';
+  const body = '<section class="section"><div class="container">\n' +
+    '<div class="page-title"><span class="badge">' + escapeHtml(journey.era) + '</span><h1>' + escapeHtml(journey.name) + '</h1><p>' + escapeHtml(journey.reference) + '</p><p>' + escapeHtml(journey.summary) + '</p></div>\n' +
+    '<div class="map map-journey" data-journey="' + escapeHtml(journey.id) + '"><p class="map-fallback">' + escapeHtml(journeyFallbackText(journey)) + '</p></div>\n' +
+    renderJourneyLegend(journey) + '\n' +
+    '<aside class="accuracy-note"><h2>About this map</h2>' + paragraphs(journey.accuracyNote) + '</aside>\n' +
+    '<section class="content-panel"><h2>Description</h2>' + paragraphs(journey.description) + '</section>\n' +
+    routeSections + '\n' +
+    '<section class="content-panel"><h2>Related Events</h2>' + listLinks(rootPrefix, "event", journey.relatedEvents) + '</section>\n' +
+    '<section class="content-panel"><h2>Related People</h2>' + listLinks(rootPrefix, "person", journey.relatedPeople) + '</section>\n' +
+    nav + '\n' +
+    '</div></section>';
+
+  writeFile("journeys/" + journey.id + ".html", pageLayout({
+    title: journey.name + " - Bible Timeline",
+    description: journey.summary,
+    rootPrefix,
+    mapScript: true,
+    body
+  }));
+}
+
+function renderJourneysBrowse() {
+  const cards = data.journeys.map((journey) => (
+    '<article class="card journey-card"><span class="badge">' + escapeHtml(journey.era) + '</span><h2><a href="' + escapeHtml(journeyUrl("", journey.id)) + '">' + escapeHtml(journey.name) + '</a></h2><p>' + escapeHtml(journey.summary) + '</p><p><a href="' + escapeHtml(journeyUrl("", journey.id)) + '">Open map &rarr;</a></p></article>'
+  )).join("");
+  renderBrowsePage("journeys.html", "Journeys", "Route and region maps for seven major biblical journeys and ministry circuits.",
+    '<section class="content-panel"><h2>Journey Maps</h2><p>Explore fitted maps with route lines, numbered stops, and notes about historical certainty.</p><div class="grid journey-grid">' + cards + '</div></section>\n'
+  );
+}
+
 function renderMapsBrowse() {
   const withCoordinates = sortByName(data.places.filter((place) => place.lat != null && place.lng != null));
   const uncertain = sortByName(data.places.filter((place) => place.lat == null || place.lng == null));
   const rows = withCoordinates.map((place) => (
     '<tr><td>' + linkTo("", "place", place.id) + '</td><td>' + escapeHtml(place.modernCountry || "None listed") + '</td><td>' + escapeHtml(place.lat) + '</td><td>' + escapeHtml(place.lng) + '</td></tr>'
   )).join("");
+  const journeyLinks = '<ul class="link-list">' + data.journeys.map((journey) => '<li>' + linkToJourney("", journey) + '</li>').join("") + '</ul>';
   renderBrowsePage("maps.html", "Maps", "Coordinate index for places in the Bible timeline dataset.",
     '<section class="content-panel"><h2>Mapped Places</h2><div id="full-map"><p class="map-fallback">Map requires JavaScript. The coordinate table is listed below.</p></div><p class="map-caption">Basemap: Natural Earth (public domain). Locations with uncertain identification are listed below without markers.</p><div class="table-wrap"><table class="browse-table"><thead><tr><th>Name</th><th>Modern Country</th><th>Lat</th><th>Lng</th></tr></thead><tbody>' + rows + '</tbody></table></div></section>\n' +
+    '<section class="content-panel"><h2>Journey Maps</h2>' + journeyLinks + '</section>\n' +
     '<section class="content-panel"><h2>Location Uncertain</h2>' + listLinks("", "place", uncertain.map((place) => place.id)) + '</section>\n'
   );
 }
@@ -624,6 +737,10 @@ function renderEventPage(event) {
   const mapLng = location.lng != null ? location.lng : (hasCoords(place) ? place.lng : null);
   const mapLabel = place ? place.name : (location.name || "Event location");
   const mapHref = place ? relativeUrl(rootPrefix, "place", place.id) : "";
+  const eventJourneys = journeysByEvent.get(event.id) || [];
+  const journeySection = eventJourneys.length
+    ? '<section class="content-panel"><h2>Journey Maps</h2><ul class="link-list">' + eventJourneys.map((journey) => '<li>' + linkToJourney(rootPrefix, journey) + '</li>').join("") + '</ul></section>\n'
+    : "";
   const body = '<section class="section"><div class="container">\n' +
     '<div class="page-title"><span class="badge">' + escapeHtml(event.era) + '</span><h1>' + escapeHtml(event.name) + '</h1><p>' + escapeHtml(event.reference) + '</p></div>\n' +
     '<section class="content-panel"><h2>Timeline Information</h2>' + metaRows([
@@ -647,6 +764,7 @@ function renderEventPage(event) {
       " | " +
       (event.nextEvent ? linkTo(rootPrefix, "event", event.nextEvent) + " &rarr;" : "No next event") +
       '</p><h3>Related Events</h3>' + listLinks(rootPrefix, "event", event.relatedEvents) + '</section>\n' +
+    journeySection +
     '<section class="content-panel"><h2>Related People</h2>' + listLinks(rootPrefix, "person", event.relatedPeople) + '</section>\n' +
     '<section class="content-panel"><h2>Related Locations</h2>' + listLinks(rootPrefix, "place", event.relatedPlaces) + '</section>\n' +
     '</div></section>';
@@ -805,7 +923,8 @@ function emitMapDataJs() {
       lat: place.lat,
       lng: place.lng,
       url: slugPath("place", place.id)
-    }))
+    })),
+    journeys: data.journeys
   };
 
   writeFile("js/map-data.js", "window.BIBLE_MAP = " + JSON.stringify(mapData) + ";\n");
@@ -816,6 +935,7 @@ function pruneOrphanPages() {
     events: new Set(data.events.map((item) => item.id)),
     people: new Set(data.people.map((item) => item.id)),
     locations: new Set(data.places.map((item) => item.id)),
+    journeys: new Set(data.journeys.map((item) => item.id)),
     books: new Set(data.books.map((item) => item.id))
   };
   Object.keys(dirToIds).forEach((dir) => {
@@ -832,7 +952,7 @@ function pruneOrphanPages() {
 }
 
 function build() {
-  ["events", "people", "locations", "books", "js"].forEach(ensureDir);
+  ["events", "people", "locations", "journeys", "books", "js"].forEach(ensureDir);
   validateData();
   pruneOrphanPages();
   renderIndex();
@@ -847,10 +967,12 @@ function build() {
   renderMiraclesBrowse();
   renderParablesBrowse();
   renderGenealogyBrowse();
+  renderJourneysBrowse();
   renderMapsBrowse();
   data.events.forEach(renderEventPage);
   data.people.forEach(renderPersonPage);
   data.places.forEach(renderPlacePage);
+  data.journeys.forEach(renderJourneyPage);
   data.books.forEach(renderBookPage);
   emitDataJs();
   emitMapDataJs();
@@ -858,6 +980,7 @@ function build() {
   console.log("Generated " + data.events.length + " event pages.");
   console.log("Generated " + data.people.length + " person pages.");
   console.log("Generated " + data.places.length + " location pages.");
+  console.log("Generated " + data.journeys.length + " journey pages.");
   console.log("Generated " + data.books.length + " book pages.");
   console.log("Generated timeline.html, index.html, browse pages, js/data.js, and js/map-data.js.");
 

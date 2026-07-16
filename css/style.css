@@ -16,6 +16,13 @@
   --map-water-line: #7aa0c0;
   --map-marker: #a03030;
   --map-label: #1f2328;
+  --map-label-halo: #fbfaf7;
+  --map-route1: #a03030;
+  --map-route2: #255f85;
+  --map-route3: #2f7a4f;
+  --map-route4: #7042a3;
+  --map-region: #c79a3c;
+  --map-region-line: #8a641f;
   --shadow: 0 12px 30px rgba(31, 35, 40, 0.12);
   --radius: 8px;
   --max: 1120px;
@@ -39,6 +46,13 @@
     --map-water-line: #4a6a8a;
     --map-marker: #e06060;
     --map-label: #e8e8e8;
+    --map-label-halo: #161819;
+    --map-route1: #f06a6a;
+    --map-route2: #84bee2;
+    --map-route3: #7ed49d;
+    --map-route4: #c39af0;
+    --map-region: #d7a84b;
+    --map-region-line: #f0c66b;
     --shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
   }
 }
@@ -60,6 +74,13 @@
   --map-water-line: #4a6a8a;
   --map-marker: #e06060;
   --map-label: #e8e8e8;
+  --map-label-halo: #161819;
+  --map-route1: #f06a6a;
+  --map-route2: #84bee2;
+  --map-route3: #7ed49d;
+  --map-route4: #c39af0;
+  --map-region: #d7a84b;
+  --map-region-line: #f0c66b;
   --shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
 }
 
@@ -442,6 +463,12 @@ main {
   margin-top: 1rem;
 }
 
+.map-journey {
+  max-height: 70vh;
+  min-height: 340px;
+  margin: 1rem 0;
+}
+
 #full-map {
   width: 100%;
   margin-bottom: 0.6rem;
@@ -463,6 +490,10 @@ main {
 
 .map-svg-mini {
   max-height: 260px;
+}
+
+.map-svg-journey {
+  max-height: 70vh;
 }
 
 .map-land {
@@ -493,6 +524,39 @@ main {
 .map-marker-link:hover .map-marker,
 .map-marker-link:focus .map-marker {
   r: 5.5px;
+}
+
+.map-journey-route {
+  vector-effect: non-scaling-stroke;
+}
+
+.map-region {
+  vector-effect: non-scaling-stroke;
+}
+
+.map-journey-stop {
+  stroke: #fff;
+  stroke-width: 1.6;
+}
+
+.map-journey-marker-link {
+  outline: none;
+  text-decoration: none;
+}
+
+.map-journey-stop-number {
+  font-weight: 700;
+  pointer-events: none;
+}
+
+.map-journey-label {
+  font-size: 15px;
+  font-weight: 700;
+  paint-order: stroke;
+  pointer-events: none;
+  stroke: var(--map-label-halo);
+  stroke-linejoin: round;
+  stroke-width: 4px;
 }
 
 .map-marker-ring {
@@ -529,6 +593,103 @@ main {
 .map-fallback,
 .map-uncertain {
   margin-top: 1rem;
+}
+
+.journey-legend,
+.accuracy-note {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
+.journey-legend {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.journey-legend ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.journey-legend li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.journey-legend p {
+  flex: 1 1 260px;
+  margin: 0;
+  color: var(--muted);
+}
+
+.journey-swatch {
+  width: 2.2rem;
+  height: 0.35rem;
+  border-radius: 999px;
+  background: var(--map-route1);
+}
+
+.journey-swatch-route1 {
+  background: var(--map-route1);
+}
+
+.journey-swatch-route2 {
+  background: var(--map-route2);
+}
+
+.journey-swatch-route3 {
+  background: var(--map-route3);
+}
+
+.journey-swatch-route4 {
+  background: var(--map-route4);
+}
+
+.accuracy-note {
+  border-left: 4px solid var(--accent);
+}
+
+.accuracy-note h2 {
+  margin-top: 0;
+}
+
+.stops-table td:first-child,
+.stops-table th:first-child {
+  width: 4.5rem;
+  text-align: center;
+}
+
+.precision-label {
+  color: var(--muted);
+  font-size: 0.75em;
+  font-weight: 700;
+}
+
+.journey-grid {
+  margin-top: 1rem;
+}
+
+.journey-card h2 {
+  font-size: 1.2rem;
+  margin: 0.75rem 0 0.5rem;
+}
+
+.journey-pager {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1.5rem;
 }
 
 .timeline-shell {
@@ -644,6 +805,13 @@ main {
     --map-water-line: #7aa0c0;
     --map-marker: #a03030;
     --map-label: #000;
+    --map-label-halo: #fff;
+    --map-route1: #000;
+    --map-route2: #444;
+    --map-route3: #666;
+    --map-route4: #888;
+    --map-region: #ccc;
+    --map-region-line: #555;
     --shadow: none;
   }
 
