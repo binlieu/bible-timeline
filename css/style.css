@@ -11,6 +11,11 @@
   --accent-soft: #f5dfc6;
   --blue: #255f85;
   --green: #376b4f;
+  --map-sea: #aecbe3;
+  --map-land: #ece5cf;
+  --map-water-line: #7aa0c0;
+  --map-marker: #a03030;
+  --map-label: #1f2328;
   --shadow: 0 12px 30px rgba(31, 35, 40, 0.12);
   --radius: 8px;
   --max: 1120px;
@@ -29,6 +34,11 @@
     --accent-soft: #3b2b1b;
     --blue: #84bee2;
     --green: #91c7a6;
+    --map-sea: #1d2a38;
+    --map-land: #3a3627;
+    --map-water-line: #4a6a8a;
+    --map-marker: #e06060;
+    --map-label: #e8e8e8;
     --shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
   }
 }
@@ -45,6 +55,11 @@
   --accent-soft: #3b2b1b;
   --blue: #84bee2;
   --green: #91c7a6;
+  --map-sea: #1d2a38;
+  --map-land: #3a3627;
+  --map-water-line: #4a6a8a;
+  --map-marker: #e06060;
+  --map-label: #e8e8e8;
   --shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
 }
 
@@ -399,7 +414,6 @@ main {
   color: var(--muted);
 }
 
-.map-placeholder,
 .photo-placeholder {
   display: grid;
   min-height: 180px;
@@ -412,6 +426,109 @@ main {
   border: 1px dashed var(--border);
   border-radius: var(--radius);
   color: var(--muted);
+}
+
+.map,
+#full-map {
+  overflow: hidden;
+  background: var(--map-sea);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.map {
+  width: 100%;
+  max-height: 260px;
+  margin-top: 1rem;
+}
+
+#full-map {
+  width: 100%;
+  margin-bottom: 0.6rem;
+}
+
+.map-link {
+  display: block;
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.map-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: var(--map-sea);
+}
+
+.map-svg-mini {
+  max-height: 260px;
+}
+
+.map-land {
+  stroke: color-mix(in srgb, var(--map-land) 70%, #000);
+  stroke-width: 0.35;
+}
+
+.map-lake {
+  stroke-width: 0.6;
+}
+
+.map-river {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.1;
+}
+
+.map-marker-link {
+  outline: none;
+}
+
+.map-marker {
+  stroke: #fff;
+  stroke-width: 1.4;
+  transition: r 140ms ease, transform 140ms ease;
+}
+
+.map-marker-link:hover .map-marker,
+.map-marker-link:focus .map-marker {
+  r: 5.5px;
+}
+
+.map-marker-ring {
+  opacity: 0.35;
+  stroke-width: 4;
+}
+
+.map-place-label,
+.map-orientation-label {
+  font-size: 17px;
+  font-weight: 700;
+  paint-order: stroke;
+  pointer-events: none;
+  stroke: var(--surface);
+  stroke-linejoin: round;
+  stroke-width: 4px;
+}
+
+.map-orientation-label {
+  font-size: 16px;
+}
+
+.map-caption,
+.map-fallback,
+.map-uncertain {
+  color: var(--muted);
+}
+
+.map-caption {
+  margin: 0 0 1rem;
+  font-size: 0.94rem;
+}
+
+.map-fallback,
+.map-uncertain {
+  margin-top: 1rem;
 }
 
 .timeline-shell {
@@ -522,6 +639,11 @@ main {
     --text: #000;
     --muted: #000;
     --border: #999;
+    --map-sea: #aecbe3;
+    --map-land: #ece5cf;
+    --map-water-line: #7aa0c0;
+    --map-marker: #a03030;
+    --map-label: #000;
     --shadow: none;
   }
 
@@ -542,5 +664,11 @@ main {
   a {
     color: #000;
     text-decoration: underline;
+  }
+
+  .map,
+  #full-map {
+    break-inside: avoid;
+    max-height: none;
   }
 }

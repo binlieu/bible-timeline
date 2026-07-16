@@ -14,7 +14,8 @@ const data = {
   places: readJson("places.json"),
   books: readJson("books.json"),
   timeline: readJson("timeline.json"),
-  categories: readJson("categories.json")
+  categories: readJson("categories.json"),
+  basemap: readJson("geo/basemap.json")
 };
 
 const maps = {
@@ -142,6 +143,24 @@ function paragraphs(text) {
   return String(text).split(/\n\s*\n/).map((part) => "<p>" + escapeHtml(part) + "</p>").join("");
 }
 
+function hasCoords(item) {
+  return item && item.lat != null && item.lng != null;
+}
+
+function formatCoord(value) {
+  return Number(value).toFixed(4).replace(/\.?0+$/, "");
+}
+
+function renderMiniMap(lat, lng, label, href) {
+  if (lat == null || lng == null) {
+    return '<p class="map-uncertain">Location uncertain; no coordinates available.</p>';
+  }
+
+  return '<div class="map" data-map data-lat="' + escapeHtml(lat) + '" data-lng="' + escapeHtml(lng) + '" data-label="' + escapeHtml(label) + '" data-href="' + escapeHtml(href || "") + '">' +
+    '<p class="map-fallback">Coordinates: ' + escapeHtml(formatCoord(lat)) + ', ' + escapeHtml(formatCoord(lng)) + '</p>' +
+    '</div>';
+}
+
 function metaRows(rows) {
   return '<dl class="meta-list">' + rows.map(([label, value]) => (
     "<dt>" + escapeHtml(label) + "</dt><dd>" + (value || "None listed.") + "</dd>"
@@ -150,9 +169,12 @@ function metaRows(rows) {
 
 function pageLayout(options) {
   const rootPrefix = options.rootPrefix || "";
-  const scripts = options.timelineScript
+  let scripts = options.timelineScript
     ? '<script src="' + rootPrefix + 'js/data.js"></script>\n<script src="' + rootPrefix + 'js/search.js"></script>\n<script src="' + rootPrefix + 'js/timeline.js"></script>'
     : '<script src="' + rootPrefix + 'js/data.js"></script>\n<script src="' + rootPrefix + 'js/search.js"></script>';
+  if (options.mapScript) {
+    scripts += '\n<script src="' + rootPrefix + 'js/map-data.js"></script>\n<script src="' + rootPrefix + 'js/map.js"></script>';
+  }
 
   return '<!doctype html>\n' +
     '<html lang="en">\n' +
@@ -399,6 +421,7 @@ function renderIndex() {
 }
 
 function renderBrowsePage(fileName, title, description, bodyContent) {
+  const hasFullMap = bodyContent.indexOf('id="full-map"') !== -1;
   const body = '<section class="section"><div class="container">\n' +
     '<div class="page-title"><span class="badge">Browse</span><h1>' + escapeHtml(title) + '</h1><p>' + escapeHtml(description) + '</p></div>\n' +
     bodyContent +
@@ -408,6 +431,7 @@ function renderBrowsePage(fileName, title, description, bodyContent) {
     title: title + " - Bible Timeline",
     description,
     rootPrefix: "",
+    mapScript: hasFullMap,
     body
   }));
 }
@@ -560,7 +584,7 @@ function renderMapsBrowse() {
     '<tr><td>' + linkTo("", "place", place.id) + '</td><td>' + escapeHtml(place.modernCountry || "None listed") + '</td><td>' + escapeHtml(place.lat) + '</td><td>' + escapeHtml(place.lng) + '</td></tr>'
   )).join("");
   renderBrowsePage("maps.html", "Maps", "Coordinate index for places in the Bible timeline dataset.",
-    '<section class="content-panel"><h2>Mapped Places</h2><div class="map-placeholder">Interactive map is a future enhancement.</div><div class="table-wrap"><table class="browse-table"><thead><tr><th>Name</th><th>Modern Country</th><th>Lat</th><th>Lng</th></tr></thead><tbody>' + rows + '</tbody></table></div></section>\n' +
+    '<section class="content-panel"><h2>Mapped Places</h2><div id="full-map"><p class="map-fallback">Map requires JavaScript. The coordinate table is listed below.</p></div><p class="map-caption">Basemap: Natural Earth (public domain). Locations with uncertain identification are listed below without markers.</p><div class="table-wrap"><table class="browse-table"><thead><tr><th>Name</th><th>Modern Country</th><th>Lat</th><th>Lng</th></tr></thead><tbody>' + rows + '</tbody></table></div></section>\n' +
     '<section class="content-panel"><h2>Location Uncertain</h2>' + listLinks("", "place", uncertain.map((place) => place.id)) + '</section>\n'
   );
 }
@@ -595,6 +619,11 @@ function renderTimeline() {
 function renderEventPage(event) {
   const rootPrefix = "../";
   const location = event.location || {};
+  const place = location.placeId ? maps.places.get(location.placeId) : null;
+  const mapLat = location.lat != null ? location.lat : (hasCoords(place) ? place.lat : null);
+  const mapLng = location.lng != null ? location.lng : (hasCoords(place) ? place.lng : null);
+  const mapLabel = place ? place.name : (location.name || "Event location");
+  const mapHref = place ? relativeUrl(rootPrefix, "place", place.id) : "";
   const body = '<section class="section"><div class="container">\n' +
     '<div class="page-title"><span class="badge">' + escapeHtml(event.era) + '</span><h1>' + escapeHtml(event.name) + '</h1><p>' + escapeHtml(event.reference) + '</p></div>\n' +
     '<section class="content-panel"><h2>Timeline Information</h2>' + metaRows([
@@ -608,7 +637,7 @@ function renderEventPage(event) {
       ["Modern Country", escapeHtml(location.modernCountry || "uncertain")],
       ["Latitude", escapeHtml(location.lat == null ? "unknown" : location.lat)],
       ["Longitude", escapeHtml(location.lng == null ? "unknown" : location.lng)]
-    ]) + '<div class="map-placeholder">Map placeholder</div></section>\n' +
+    ]) + renderMiniMap(mapLat, mapLng, mapLabel, mapHref) + '</section>\n' +
     '<section class="content-panel"><h2>People Involved</h2>' + listLinks(rootPrefix, "person", (event.mainPeople || []).concat(event.relatedPeople || [])) + '</section>\n' +
     '<section class="content-panel"><h2>Bible References</h2><p>' + escapeHtml(event.reference) + '</p>' + textList(event.crossReferences) + '</section>\n' +
     '<section class="content-panel"><h2>Summary</h2><p>' + escapeHtml(event.summary) + '</p>' + paragraphs(event.longDescription) + '</section>\n' +
@@ -625,6 +654,7 @@ function renderEventPage(event) {
   writeFile("events/" + event.id + ".html", pageLayout({
     title: event.name + " - Bible Timeline",
     rootPrefix,
+    mapScript: mapLat != null && mapLng != null,
     body
   }));
 }
@@ -661,6 +691,7 @@ function renderPersonPage(person) {
 
 function renderPlacePage(place) {
   const rootPrefix = "../";
+  const mapMarkup = renderMiniMap(place.lat, place.lng, place.name, relativeUrl(rootPrefix, "place", place.id));
   const body = '<section class="section"><div class="container">\n' +
     '<div class="page-title"><span class="badge">Place</span><h1>' + escapeHtml(place.name) + '</h1><p>' + escapeHtml(place.significance) + '</p></div>\n' +
     '<section class="content-panel"><h2>Location Details</h2>' + metaRows([
@@ -668,7 +699,7 @@ function renderPlacePage(place) {
       ["Ancient Region", escapeHtml(place.ancientRegion || "None listed")],
       ["Latitude", escapeHtml(place.lat == null ? "unknown" : place.lat)],
       ["Longitude", escapeHtml(place.lng == null ? "unknown" : place.lng)]
-    ]) + '<div class="map-placeholder">Map placeholder</div></section>\n' +
+    ]) + mapMarkup + '</section>\n' +
     '<section class="content-panel"><h2>Significance</h2><p>' + escapeHtml(place.significance) + '</p></section>\n' +
     '<section class="content-panel"><h2>Events Here</h2>' + listLinks(rootPrefix, "event", place.events) + '</section>\n' +
     '<section class="content-panel"><h2>People Associated</h2>' + listLinks(rootPrefix, "person", place.people) + '</section>\n' +
@@ -680,6 +711,7 @@ function renderPlacePage(place) {
   writeFile("locations/" + place.id + ".html", pageLayout({
     title: place.name + " - Bible Timeline",
     rootPrefix,
+    mapScript: hasCoords(place),
     body
   }));
 }
@@ -761,6 +793,24 @@ function emitDataJs() {
   writeFile("js/data.js", "window.BIBLE_DATA = " + JSON.stringify(compact) + ";\n");
 }
 
+function emitMapDataJs() {
+  const mapData = {
+    bbox: data.basemap.bbox,
+    land: data.basemap.land || [],
+    lakes: data.basemap.lakes || [],
+    rivers: data.basemap.rivers || [],
+    places: sortByName(data.places).filter(hasCoords).map((place) => ({
+      id: place.id,
+      name: place.name,
+      lat: place.lat,
+      lng: place.lng,
+      url: slugPath("place", place.id)
+    }))
+  };
+
+  writeFile("js/map-data.js", "window.BIBLE_MAP = " + JSON.stringify(mapData) + ";\n");
+}
+
 function pruneOrphanPages() {
   const dirToIds = {
     events: new Set(data.events.map((item) => item.id)),
@@ -803,12 +853,13 @@ function build() {
   data.places.forEach(renderPlacePage);
   data.books.forEach(renderBookPage);
   emitDataJs();
+  emitMapDataJs();
 
   console.log("Generated " + data.events.length + " event pages.");
   console.log("Generated " + data.people.length + " person pages.");
   console.log("Generated " + data.places.length + " location pages.");
   console.log("Generated " + data.books.length + " book pages.");
-  console.log("Generated timeline.html, index.html, browse pages, and js/data.js.");
+  console.log("Generated timeline.html, index.html, browse pages, js/data.js, and js/map-data.js.");
 
   if (warnings > 0) {
     console.log("Completed with " + warnings + " warning(s).");
