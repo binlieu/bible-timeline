@@ -84,5 +84,75 @@
       "samuel-called",
       "ark-captured-and-returned"
     ]
+  },
+  {
+    "era": "United Kingdom",
+    "dateRange": "approx. 1050-930 BC",
+    "eventIds": [
+      "saul-anointed-king",
+      "saul-rejected",
+      "david-anointed",
+      "david-and-goliath",
+      "david-flees-saul",
+      "david-becomes-king",
+      "ark-brought-to-jerusalem",
+      "davidic-covenant",
+      "david-and-bathsheba",
+      "absaloms-rebellion",
+      "solomon-becomes-king",
+      "solomons-wisdom",
+      "temple-built",
+      "queen-of-sheba",
+      "solomons-decline"
+    ]
+  },
+  {
+    "era": "Divided Kingdom",
+    "dateRange": "930-586 BC",
+    "eventIds": [
+      "kingdom-divides",
+      "elijah-on-mount-carmel",
+      "elijah-taken-to-heaven",
+      "elisha-ministry",
+      "jonah-and-nineveh",
+      "amos-and-hosea-warn-israel",
+      "fall-of-samaria",
+      "hezekiah-and-sennacherib",
+      "isaiah-ministry",
+      "josiahs-reforms",
+      "jeremiah-ministry",
+      "fall-of-jerusalem"
+    ]
+  },
+  {
+    "era": "Exile",
+    "dateRange": "605-538 BC",
+    "eventIds": [
+      "daniel-in-babylon",
+      "nebuchadnezzars-dream",
+      "fiery-furnace",
+      "ezekiel-ministry",
+      "belshazzars-feast",
+      "daniel-in-the-lions-den"
+    ]
+  },
+  {
+    "era": "Return from Exile",
+    "dateRange": "538-400 BC",
+    "eventIds": [
+      "cyrus-decree",
+      "temple-rebuilt",
+      "esther-saves-her-people",
+      "ezra-returns",
+      "nehemiah-rebuilds-walls",
+      "malachi-ministry"
+    ]
+  },
+  {
+    "era": "Between the Testaments",
+    "dateRange": "approx. 400-4 BC",
+    "eventIds": [
+      "intertestamental-period"
+    ]
   }
 ]

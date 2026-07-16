@@ -789,5 +789,337 @@
       "moab",
       "canaan"
     ]
+  },
+  {
+    "id": "jerusalem",
+    "name": "Jerusalem",
+    "modernCountry": "Israel",
+    "ancientRegion": "Judah / Jerusalem",
+    "lat": 31.778,
+    "lng": 35.235,
+    "significance": "David's capital, the site of Solomon's temple, the city destroyed by Babylon, and the center of postexilic restoration.",
+    "events": [
+      "david-becomes-king",
+      "ark-brought-to-jerusalem",
+      "davidic-covenant",
+      "david-and-bathsheba",
+      "absaloms-rebellion",
+      "solomon-becomes-king",
+      "solomons-wisdom",
+      "temple-built",
+      "queen-of-sheba",
+      "solomons-decline",
+      "kingdom-divides",
+      "hezekiah-and-sennacherib",
+      "isaiah-ministry",
+      "josiahs-reforms",
+      "jeremiah-ministry",
+      "fall-of-jerusalem",
+      "ezekiel-ministry",
+      "cyrus-decree",
+      "temple-rebuilt",
+      "ezra-returns",
+      "nehemiah-rebuilds-walls",
+      "malachi-ministry",
+      "intertestamental-period"
+    ],
+    "people": [
+      "david",
+      "joab",
+      "saul",
+      "jonathan",
+      "god",
+      "nathan",
+      "solomon",
+      "bathsheba",
+      "absalom",
+      "rehoboam",
+      "jeroboam",
+      "hezekiah",
+      "sennacherib",
+      "isaiah",
+      "josiah",
+      "jeremiah",
+      "nebuchadnezzar",
+      "ezekiel",
+      "cyrus",
+      "zerubbabel",
+      "haggai",
+      "zechariah",
+      "ezra",
+      "ahasuerus",
+      "nehemiah",
+      "malachi"
+    ],
+    "references": [
+      "2 Samuel 2; 5",
+      "2 Samuel 6",
+      "2 Samuel 7",
+      "2 Samuel 11-12",
+      "2 Samuel 15-18",
+      "1 Kings 1-2",
+      "1 Kings 3",
+      "1 Kings 6-8",
+      "1 Kings 10",
+      "1 Kings 11",
+      "1 Kings 12",
+      "2 Kings 18-19",
+      "Isaiah 1-66",
+      "2 Kings 22-23",
+      "Jeremiah 1-52",
+      "2 Kings 25",
+      "Ezekiel 1-48",
+      "Ezra 1",
+      "Ezra 3-6",
+      "Ezra 7-10",
+      "Nehemiah 1-6",
+      "Malachi 1-4",
+      "(no canonical text; cf. Daniel 8; 11)"
+    ],
+    "relatedPlaces": [
+      "bethlehem",
+      "samaria",
+      "babylon"
+    ]
+  },
+  {
+    "id": "mount-carmel",
+    "name": "Mount Carmel",
+    "modernCountry": "Israel",
+    "ancientRegion": "Carmel range",
+    "lat": 32.73,
+    "lng": 35.05,
+    "significance": "The mountain region where Elijah confronted the prophets of Baal.",
+    "events": [
+      "elijah-on-mount-carmel"
+    ],
+    "people": [
+      "elijah",
+      "ahab",
+      "jezebel",
+      "god"
+    ],
+    "references": [
+      "1 Kings 18"
+    ],
+    "relatedPlaces": [
+      "samaria"
+    ]
+  },
+  {
+    "id": "samaria",
+    "name": "Samaria",
+    "modernCountry": "West Bank",
+    "ancientRegion": "Northern kingdom of Israel",
+    "lat": 32.28,
+    "lng": 35.2,
+    "significance": "The capital region of the northern kingdom of Israel and the site of its Assyrian fall.",
+    "events": [
+      "elijah-on-mount-carmel",
+      "elisha-ministry",
+      "amos-and-hosea-warn-israel",
+      "fall-of-samaria"
+    ],
+    "people": [
+      "elijah",
+      "ahab",
+      "jezebel",
+      "god",
+      "elisha",
+      "naaman",
+      "amos",
+      "hosea"
+    ],
+    "references": [
+      "1 Kings 18",
+      "2 Kings 2-13",
+      "Amos; Hosea",
+      "2 Kings 17"
+    ],
+    "relatedPlaces": [
+      "jerusalem",
+      "mount-carmel"
+    ]
+  },
+  {
+    "id": "nineveh",
+    "name": "Nineveh",
+    "modernCountry": "Iraq",
+    "ancientRegion": "Assyria",
+    "lat": 36.36,
+    "lng": 43.15,
+    "significance": "The Assyrian city to which Jonah was sent with a warning of judgment.",
+    "events": [
+      "jonah-and-nineveh"
+    ],
+    "people": [
+      "jonah",
+      "god"
+    ],
+    "references": [
+      "Jonah 1-4"
+    ],
+    "relatedPlaces": [
+      "babylon"
+    ]
+  },
+  {
+    "id": "babylon",
+    "name": "Babylon",
+    "modernCountry": "Iraq",
+    "ancientRegion": "Babylonia",
+    "lat": 32.54,
+    "lng": 44.42,
+    "significance": "The imperial city associated with Judah's exile, Daniel's court service, and the Persian decree after Babylon's fall.",
+    "events": [
+      "jeremiah-ministry",
+      "fall-of-jerusalem",
+      "daniel-in-babylon",
+      "nebuchadnezzars-dream",
+      "fiery-furnace",
+      "ezekiel-ministry",
+      "belshazzars-feast",
+      "daniel-in-the-lions-den",
+      "cyrus-decree",
+      "ezra-returns"
+    ],
+    "people": [
+      "jeremiah",
+      "nebuchadnezzar",
+      "josiah",
+      "god",
+      "daniel",
+      "shadrach",
+      "meshach",
+      "abednego",
+      "ezekiel",
+      "belshazzar",
+      "darius-the-mede",
+      "cyrus",
+      "zerubbabel",
+      "ezra",
+      "ahasuerus"
+    ],
+    "references": [
+      "Jeremiah 1-52",
+      "2 Kings 25",
+      "Daniel 1",
+      "Daniel 2",
+      "Daniel 3",
+      "Ezekiel 1-48",
+      "Daniel 5",
+      "Daniel 6",
+      "Ezra 1",
+      "Ezra 7-10"
+    ],
+    "relatedPlaces": [
+      "jerusalem",
+      "susa",
+      "nineveh"
+    ]
+  },
+  {
+    "id": "susa",
+    "name": "Susa",
+    "modernCountry": "Iran",
+    "ancientRegion": "Elam / Persia",
+    "lat": 32.19,
+    "lng": 48.25,
+    "significance": "A Persian royal city where Esther became queen and Nehemiah served before going to Jerusalem.",
+    "events": [
+      "esther-saves-her-people",
+      "nehemiah-rebuilds-walls"
+    ],
+    "people": [
+      "esther",
+      "mordecai",
+      "ahasuerus",
+      "god",
+      "nehemiah",
+      "ezra"
+    ],
+    "references": [
+      "Esther 1-10",
+      "Nehemiah 1-6"
+    ],
+    "relatedPlaces": [
+      "babylon",
+      "jerusalem"
+    ]
+  },
+  {
+    "id": "damascus",
+    "name": "Damascus",
+    "modernCountry": "Syria",
+    "ancientRegion": "Aram",
+    "lat": 33.51,
+    "lng": 36.29,
+    "significance": "The Aramean capital connected with conflicts and contacts during Elisha's ministry.",
+    "events": [
+      "elisha-ministry"
+    ],
+    "people": [
+      "elisha",
+      "naaman",
+      "elijah",
+      "god"
+    ],
+    "references": [
+      "2 Kings 2-13"
+    ],
+    "relatedPlaces": [
+      "samaria"
+    ]
+  },
+  {
+    "id": "en-gedi",
+    "name": "En-gedi",
+    "modernCountry": "Israel",
+    "ancientRegion": "Wilderness of Judah",
+    "lat": 31.46,
+    "lng": 35.39,
+    "significance": "A Dead Sea oasis and wilderness refuge where David spared Saul.",
+    "events": [
+      "david-flees-saul"
+    ],
+    "people": [
+      "david",
+      "saul",
+      "jonathan",
+      "samuel",
+      "god"
+    ],
+    "references": [
+      "1 Samuel 18-31"
+    ],
+    "relatedPlaces": [
+      "jerusalem"
+    ]
+  },
+  {
+    "id": "valley-of-elah",
+    "name": "Valley of Elah",
+    "modernCountry": "Israel",
+    "ancientRegion": "Shephelah of Judah",
+    "lat": 31.69,
+    "lng": 34.98,
+    "significance": "The valley where David confronted Goliath and Israel faced the Philistines.",
+    "events": [
+      "david-and-goliath"
+    ],
+    "people": [
+      "david",
+      "goliath",
+      "saul",
+      "jonathan",
+      "god"
+    ],
+    "references": [
+      "1 Samuel 17"
+    ],
+    "relatedPlaces": [
+      "bethlehem",
+      "jerusalem"
+    ]
   }
 ]
