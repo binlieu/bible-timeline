@@ -61,15 +61,31 @@ function relativeUrl(rootPrefix, type, id) {
 
 const typeToCollection = { event: "events", person: "people", place: "places", book: "books" };
 
+const idAliases = {
+  event: {
+    babel: "tower-of-babel",
+    "isaac-born": "birth-of-isaac",
+    "jacob-esau": "jacob-and-esau-born",
+    "joseph-egypt": "joseph-sold-into-slavery",
+    "exodus-egypt": "first-passover"
+  }
+};
+
+function canonicalId(type, id) {
+  if (!id) return id;
+  return idAliases[type] && idAliases[type][id] ? idAliases[type][id] : id;
+}
+
 function lookup(type, id) {
   const key = typeToCollection[type];
-  return maps[key] ? maps[key].get(id) : null;
+  return maps[key] ? maps[key].get(canonicalId(type, id)) : null;
 }
 
 function linkTo(rootPrefix, type, id, fallback) {
   const item = lookup(type, id);
   const label = item ? item.name : fallback || id;
-  return '<a href="' + escapeHtml(relativeUrl(rootPrefix, type, id)) + '">' + escapeHtml(label) + "</a>";
+  if (!item) return escapeHtml(label);
+  return '<a href="' + escapeHtml(relativeUrl(rootPrefix, type, canonicalId(type, id))) + '">' + escapeHtml(label) + "</a>";
 }
 
 function listLinks(rootPrefix, type, ids) {
@@ -167,7 +183,8 @@ function validateUnique(collectionName, records) {
 
 function checkRefs(sourceLabel, ids, targetName, targetMap) {
   (ids || []).forEach((id) => {
-    if (!targetMap.has(id)) {
+    const canonical = canonicalId(targetName, id);
+    if (!targetMap.has(canonical)) {
       warn(sourceLabel + " references missing " + targetName + " id: " + id);
     }
   });
@@ -222,7 +239,7 @@ function validateData() {
 }
 
 function sortedEvents(ids) {
-  const events = ids ? ids.map((id) => maps.events.get(id)).filter(Boolean) : data.events.slice();
+  const events = ids ? ids.map((id) => maps.events.get(canonicalId("event", id))).filter(Boolean) : data.events.slice();
   return events.sort((a, b) => {
     if (a.order !== b.order) return a.order - b.order;
     return a.id.localeCompare(b.id);
@@ -526,9 +543,30 @@ function emitDataJs() {
   writeFile("js/data.js", "window.BIBLE_DATA = " + JSON.stringify(compact) + ";\n");
 }
 
+function pruneOrphanPages() {
+  const dirToIds = {
+    events: new Set(data.events.map((item) => item.id)),
+    people: new Set(data.people.map((item) => item.id)),
+    locations: new Set(data.places.map((item) => item.id)),
+    books: new Set(data.books.map((item) => item.id))
+  };
+  Object.keys(dirToIds).forEach((dir) => {
+    const dirPath = path.join(rootDir, dir);
+    fs.readdirSync(dirPath).forEach((file) => {
+      if (!file.endsWith(".html")) return;
+      const id = file.slice(0, -".html".length);
+      if (!dirToIds[dir].has(id)) {
+        fs.unlinkSync(path.join(dirPath, file));
+        console.log("Pruned orphan page: " + dir + "/" + file);
+      }
+    });
+  });
+}
+
 function build() {
   ["events", "people", "locations", "books", "js"].forEach(ensureDir);
   validateData();
+  pruneOrphanPages();
   renderIndex();
   renderTimeline();
   data.events.forEach(renderEventPage);

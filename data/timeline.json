@@ -1,6 +1,88 @@
 [
-  { "era": "Primeval History", "dateRange": "Creation-c. 2100 BC", "eventIds": ["creation", "fall", "cain-abel", "flood", "babel"] },
-  { "era": "Patriarchs", "dateRange": "c. 2166-c. 1805 BC (traditional)", "eventIds": ["call-of-abraham", "isaac-born", "jacob-esau", "joseph-egypt"] },
-  { "era": "Exodus & Wilderness", "dateRange": "c. 1446-c. 1406 BC (traditional)", "eventIds": ["exodus-egypt", "ten-commandments"] },
-  { "era": "United Kingdom", "dateRange": "c. 1010-c. 970 BC", "eventIds": ["davids-reign"] }
+  {
+    "era": "Primeval History",
+    "dateRange": "Creation-approx. 2400 BC",
+    "eventIds": [
+      "creation",
+      "fall",
+      "cain-abel",
+      "godly-line-of-seth",
+      "flood",
+      "noahic-covenant",
+      "tower-of-babel"
+    ]
+  },
+  {
+    "era": "The Patriarchs",
+    "dateRange": "approx. 2091-1805 BC",
+    "eventIds": [
+      "call-of-abraham",
+      "abram-in-egypt",
+      "abram-lot-separate",
+      "abrahamic-covenant",
+      "hagar-and-ishmael",
+      "sodom-and-gomorrah",
+      "birth-of-isaac",
+      "sacrifice-of-isaac",
+      "isaac-marries-rebekah",
+      "jacob-and-esau-born",
+      "jacob-steals-blessing",
+      "jacobs-ladder",
+      "jacob-marries-leah-rachel",
+      "jacob-wrestles-god",
+      "joseph-sold-into-slavery",
+      "joseph-interprets-dreams",
+      "joseph-rules-egypt",
+      "jacob-moves-to-egypt",
+      "deaths-of-jacob-and-joseph"
+    ]
+  },
+  {
+    "era": "Exodus & Wilderness",
+    "dateRange": "approx. 1805-1406 BC",
+    "eventIds": [
+      "israel-enslaved-in-egypt",
+      "birth-of-moses",
+      "moses-flees-to-midian",
+      "burning-bush",
+      "ten-plagues",
+      "first-passover",
+      "red-sea-crossing",
+      "manna-and-quail",
+      "ten-commandments",
+      "golden-calf",
+      "tabernacle-built",
+      "twelve-spies",
+      "wilderness-wanderings",
+      "bronze-serpent",
+      "balaam",
+      "death-of-moses"
+    ]
+  },
+  {
+    "era": "Conquest of Canaan",
+    "dateRange": "approx. 1406-1375 BC",
+    "eventIds": [
+      "joshua-commissioned",
+      "crossing-the-jordan",
+      "fall-of-jericho",
+      "sun-stands-still",
+      "land-divided-among-tribes",
+      "joshuas-farewell"
+    ]
+  },
+  {
+    "era": "The Judges",
+    "dateRange": "approx. 1375-1050 BC",
+    "eventIds": [
+      "cycle-of-the-judges",
+      "deborah-and-barak",
+      "gideon",
+      "jephthah",
+      "samson",
+      "ruth-and-boaz",
+      "samuel-called",
+      "ark-captured-and-returned"
+    ]
+  }
 ]

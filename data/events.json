@@ -3,25 +3,49 @@
     "id": "creation",
     "name": "Creation",
     "order": 1,
-    "date": "Beginning",
-    "dateSort": -4000,
+    "date": "approx. symbolic beginning",
+    "dateSort": -4004,
     "datePrecision": "symbolic",
     "era": "Primeval History",
     "book": "genesis",
     "chapter": 1,
     "verseStart": 1,
-    "verseEnd": null,
+    "verseEnd": 2,
     "reference": "Genesis 1:1-2:3",
-    "location": { "placeId": "eden", "name": "Universe", "modernCountry": null, "lat": null, "lng": null },
-    "mainPeople": ["god"],
-    "relatedPeople": ["adam", "eve"],
-    "relatedPlaces": ["eden"],
-    "relatedEvents": ["fall"],
-    "keywords": ["creation", "beginning", "six days"],
-    "summary": "God creates the heavens, the earth, and all living things, declaring creation good.",
-    "longDescription": "Genesis opens with God bringing order, light, life, and humanity into existence by his word. The account presents creation as purposeful, structured, and good.\n\nHumanity is made in God's image and given responsibility over the created world. The seventh day is blessed as a day of rest, setting a rhythm that echoes through Scripture.",
-    "historicalNotes": "The account speaks into an ancient Near Eastern world but presents one sovereign Creator rather than competing deities.",
-    "crossReferences": ["Psalm 104", "John 1:1-3", "Romans 5"],
+    "location": {
+      "placeId": "eden",
+      "name": "Garden of Eden",
+      "modernCountry": "uncertain",
+      "lat": null,
+      "lng": null
+    },
+    "mainPeople": [
+      "god"
+    ],
+    "relatedPeople": [
+      "adam",
+      "eve"
+    ],
+    "relatedPlaces": [
+      "eden"
+    ],
+    "relatedEvents": [
+      "fall"
+    ],
+    "keywords": [
+      "creation",
+      "beginning",
+      "image of God",
+      "Sabbath"
+    ],
+    "summary": "God creates the heavens and the earth, forming an ordered world and making humanity in his image. The seventh day is blessed as the pattern of divine rest.",
+    "longDescription": "God creates the heavens and the earth, forming an ordered world and making humanity in his image. The seventh day is blessed as the pattern of divine rest.\n\nThe biblical text (Genesis 1:1-2:3) places creation in the setting of Garden of Eden and connects it with God, Adam, Eve. The record keeps to the details supplied by Scripture: the action, the response of faith or rebellion, and the way the event moves the covenant story forward.\n\nWithin Primeval History, this event helps explain the next stage of the timeline by showing God’s judgment, provision, promise, or leadership at a specific point in the biblical story. Later biblical writers often return to these themes when they interpret creation, covenant, exodus, conquest, worship, faith, and kingship.",
+    "historicalNotes": "Scholarly opinion: Genesis 1 uses ordered literary structure that contrasts sharply with polytheistic ancient Near Eastern creation stories by presenting one sovereign Creator.",
+    "crossReferences": [
+      "Psalm 104",
+      "John 1:1-3",
+      "Hebrews 11:3"
+    ],
     "prevEvent": null,
     "nextEvent": "fall"
   },
@@ -29,25 +53,50 @@
     "id": "fall",
     "name": "The Fall",
     "order": 2,
-    "date": "After creation",
-    "dateSort": -3999,
+    "date": "approx. symbolic early human history",
+    "dateSort": -4003,
     "datePrecision": "symbolic",
     "era": "Primeval History",
     "book": "genesis",
     "chapter": 3,
-    "verseStart": 1,
-    "verseEnd": 24,
+    "verseStart": null,
+    "verseEnd": null,
     "reference": "Genesis 3",
-    "location": { "placeId": "eden", "name": "Garden of Eden", "modernCountry": "uncertain", "lat": null, "lng": null },
-    "mainPeople": ["adam", "eve"],
-    "relatedPeople": ["god"],
-    "relatedPlaces": ["eden"],
-    "relatedEvents": ["creation", "cain-abel"],
-    "keywords": ["sin", "eden", "serpent"],
-    "summary": "Adam and Eve disobey God, bringing sin, death, and exile from Eden into human history.",
-    "longDescription": "The man and woman reject God's command and eat from the tree of the knowledge of good and evil. Their disobedience fractures fellowship with God, one another, and creation.\n\nGod judges the serpent, the woman, and the man, yet the passage also contains hope that the offspring of the woman will defeat the serpent.",
+    "location": {
+      "placeId": "eden",
+      "name": "Garden of Eden",
+      "modernCountry": "uncertain",
+      "lat": null,
+      "lng": null
+    },
+    "mainPeople": [
+      "adam",
+      "eve"
+    ],
+    "relatedPeople": [
+      "god"
+    ],
+    "relatedPlaces": [
+      "eden"
+    ],
+    "relatedEvents": [
+      "creation",
+      "cain-abel"
+    ],
+    "keywords": [
+      "fall",
+      "sin",
+      "serpent",
+      "eden"
+    ],
+    "summary": "Adam and Eve disobey God in Eden and are exiled from the garden. The chapter explains the entrance of sin, shame, death, and hope into the human story.",
+    "longDescription": "Adam and Eve disobey God in Eden and are exiled from the garden. The chapter explains the entrance of sin, shame, death, and hope into the human story.\n\nThe biblical text (Genesis 3) places the fall in the setting of Garden of Eden and connects it with Adam, Eve, God. The record keeps to the details supplied by Scripture: the action, the response of faith or rebellion, and the way the event moves the covenant story forward.\n\nWithin Primeval History, this event helps explain the next stage of the timeline by showing God’s judgment, provision, promise, or leadership at a specific point in the biblical story. Later biblical writers often return to these themes when they interpret creation, covenant, exodus, conquest, worship, faith, and kingship.",
     "historicalNotes": null,
-    "crossReferences": ["Romans 5:12-21", "1 Corinthians 15:21-22"],
+    "crossReferences": [
+      "Romans 5:12-21",
+      "1 Corinthians 15:21-22",
+      "Revelation 12:9"
+    ],
     "prevEvent": "creation",
     "nextEvent": "cain-abel"
   },
@@ -55,8 +104,8 @@
     "id": "cain-abel",
     "name": "Cain and Abel",
     "order": 3,
-    "date": "Early human history",
-    "dateSort": -3998,
+    "date": "approx. symbolic early human history",
+    "dateSort": -4002,
     "datePrecision": "symbolic",
     "era": "Primeval History",
     "book": "genesis",
@@ -64,252 +113,2652 @@
     "verseStart": 1,
     "verseEnd": 16,
     "reference": "Genesis 4:1-16",
-    "location": { "placeId": "eden", "name": "East of Eden", "modernCountry": "uncertain", "lat": null, "lng": null },
-    "mainPeople": ["adam", "eve"],
-    "relatedPeople": ["god"],
-    "relatedPlaces": ["eden"],
-    "relatedEvents": ["fall", "flood"],
-    "keywords": ["cain", "abel", "murder", "sacrifice"],
-    "summary": "Cain murders Abel after God accepts Abel's offering and warns Cain about sin.",
-    "longDescription": "Genesis 4 traces sin's spread from disobedience to violence. Cain becomes angry when God regards Abel's offering and not his own.\n\nGod warns Cain that sin is crouching at the door, but Cain kills his brother. Cain is judged and sent out, yet God protects him from vengeance.",
+    "location": {
+      "placeId": "eden",
+      "name": "Garden of Eden",
+      "modernCountry": "uncertain",
+      "lat": null,
+      "lng": null
+    },
+    "mainPeople": [
+      "cain",
+      "abel"
+    ],
+    "relatedPeople": [
+      "adam",
+      "eve",
+      "god"
+    ],
+    "relatedPlaces": [
+      "eden"
+    ],
+    "relatedEvents": [
+      "fall",
+      "godly-line-of-seth"
+    ],
+    "keywords": [
+      "cain",
+      "abel",
+      "murder",
+      "offering"
+    ],
+    "summary": "Cain murders his brother Abel after God regards Abel and his offering. God judges Cain, yet also marks him so vengeance will not consume him.",
+    "longDescription": "Cain murders his brother Abel after God regards Abel and his offering. God judges Cain, yet also marks him so vengeance will not consume him.\n\nThe biblical text (Genesis 4:1-16) places cain and abel in the setting of Garden of Eden and connects it with Cain, Abel, Adam, Eve, God. The record keeps to the details supplied by Scripture: the action, the response of faith or rebellion, and the way the event moves the covenant story forward.\n\nWithin Primeval History, this event helps explain the next stage of the timeline by showing God’s judgment, provision, promise, or leadership at a specific point in the biblical story. Later biblical writers often return to these themes when they interpret creation, covenant, exodus, conquest, worship, faith, and kingship.",
     "historicalNotes": null,
-    "crossReferences": ["Hebrews 11:4", "1 John 3:12"],
+    "crossReferences": [],
     "prevEvent": "fall",
+    "nextEvent": "godly-line-of-seth"
+  },
+  {
+    "id": "godly-line-of-seth",
+    "name": "Godly Line of Seth",
+    "order": 4,
+    "date": "approx. symbolic early human history",
+    "dateSort": -4001,
+    "datePrecision": "symbolic",
+    "era": "Primeval History",
+    "book": "genesis",
+    "chapter": 4,
+    "verseStart": 25,
+    "verseEnd": 5,
+    "reference": "Genesis 4:25-5:32",
+    "location": {
+      "placeId": "eden",
+      "name": "Garden of Eden",
+      "modernCountry": "uncertain",
+      "lat": null,
+      "lng": null
+    },
+    "mainPeople": [
+      "seth",
+      "enoch",
+      "methuselah",
+      "noah"
+    ],
+    "relatedPeople": [
+      "adam",
+      "eve",
+      "god"
+    ],
+    "relatedPlaces": [
+      "eden"
+    ],
+    "relatedEvents": [
+      "cain-abel",
+      "flood"
+    ],
+    "keywords": [
+      "seth",
+      "genealogy",
+      "enoch",
+      "noah"
+    ],
+    "summary": "Genesis traces the line from Seth to Noah, preserving the family through which the later flood narrative will move. The genealogy emphasizes both human mortality and God’s continuing purposes.",
+    "longDescription": "Genesis traces the line from Seth to Noah, preserving the family through which the later flood narrative will move. The genealogy emphasizes both human mortality and God’s continuing purposes.\n\nThe biblical text (Genesis 4:25-5:32) places godly line of seth in the setting of Garden of Eden and connects it with Seth, Enoch, Methuselah, Noah, Adam, Eve. The record keeps to the details supplied by Scripture: the action, the response of faith or rebellion, and the way the event moves the covenant story forward.\n\nWithin Primeval History, this event helps explain the next stage of the timeline by showing God’s judgment, provision, promise, or leadership at a specific point in the biblical story. Later biblical writers often return to these themes when they interpret creation, covenant, exodus, conquest, worship, faith, and kingship.",
+    "historicalNotes": null,
+    "crossReferences": [],
+    "prevEvent": "cain-abel",
     "nextEvent": "flood"
   },
   {
     "id": "flood",
     "name": "The Flood",
-    "order": 4,
-    "date": "Traditional primeval period",
+    "order": 5,
+    "date": "approx. symbolic primeval period",
     "dateSort": -3000,
-    "datePrecision": "traditional",
+    "datePrecision": "symbolic",
     "era": "Primeval History",
     "book": "genesis",
     "chapter": 6,
-    "verseStart": 5,
-    "verseEnd": 22,
-    "reference": "Genesis 6:5-9:17",
-    "location": { "placeId": "canaan", "name": "Ancient Near East", "modernCountry": null, "lat": null, "lng": null },
-    "mainPeople": ["noah", "god"],
-    "relatedPeople": [],
-    "relatedPlaces": ["canaan"],
-    "relatedEvents": ["babel"],
-    "keywords": ["flood", "ark", "noah", "covenant"],
-    "summary": "God judges widespread human corruption with a flood and preserves Noah's family through the ark.",
-    "longDescription": "Human violence and corruption fill the earth, and God announces judgment through a great flood. Noah is described as righteous in his generation and obeys God's command to build the ark.\n\nAfter the flood, God establishes a covenant with Noah, promising not to destroy all flesh by flood again and giving the rainbow as the sign.",
-    "historicalNotes": "Flood traditions appear in several ancient Near Eastern texts, though Genesis gives the event a distinct covenantal and moral focus.",
-    "crossReferences": ["Matthew 24:37-39", "Hebrews 11:7", "1 Peter 3:20"],
-    "prevEvent": "cain-abel",
-    "nextEvent": "babel"
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Genesis 6-8",
+    "location": {
+      "placeId": "mount-ararat",
+      "name": "Mount Ararat region",
+      "modernCountry": "Turkey (traditional region)",
+      "lat": 39.7,
+      "lng": 44.3
+    },
+    "mainPeople": [
+      "noah",
+      "god"
+    ],
+    "relatedPeople": [
+      "shem",
+      "ham",
+      "japheth"
+    ],
+    "relatedPlaces": [
+      "mount-ararat"
+    ],
+    "relatedEvents": [
+      "godly-line-of-seth",
+      "noahic-covenant"
+    ],
+    "keywords": [
+      "flood",
+      "ark",
+      "judgment",
+      "Noah"
+    ],
+    "summary": "God judges the earth’s violence and corruption with a flood while preserving Noah, his family, and living creatures in the ark. The ark comes to rest in the mountains of Ararat as the waters recede.",
+    "longDescription": "God judges the earth’s violence and corruption with a flood while preserving Noah, his family, and living creatures in the ark. The ark comes to rest in the mountains of Ararat as the waters recede.\n\nThe biblical text (Genesis 6-8) places the flood in the setting of Mount Ararat region and connects it with Noah, God, Shem, Ham, Japheth. The record keeps to the details supplied by Scripture: the action, the response of faith or rebellion, and the way the event moves the covenant story forward.\n\nWithin Primeval History, this event helps explain the next stage of the timeline by showing God’s judgment, provision, promise, or leadership at a specific point in the biblical story. Later biblical writers often return to these themes when they interpret creation, covenant, exodus, conquest, worship, faith, and kingship.",
+    "historicalNotes": "Archaeological evidence: Flood traditions are known from Mesopotamian texts such as Atrahasis and the Gilgamesh Epic, though Genesis gives the event a distinct moral and covenantal interpretation.",
+    "crossReferences": [],
+    "prevEvent": "godly-line-of-seth",
+    "nextEvent": "noahic-covenant"
   },
   {
-    "id": "babel",
+    "id": "noahic-covenant",
+    "name": "Noahic Covenant",
+    "order": 6,
+    "date": "approx. symbolic post-flood period",
+    "dateSort": -2999,
+    "datePrecision": "symbolic",
+    "era": "Primeval History",
+    "book": "genesis",
+    "chapter": 9,
+    "verseStart": 1,
+    "verseEnd": 17,
+    "reference": "Genesis 9:1-17",
+    "location": {
+      "placeId": "mount-ararat",
+      "name": "Mount Ararat region",
+      "modernCountry": "Turkey (traditional region)",
+      "lat": 39.7,
+      "lng": 44.3
+    },
+    "mainPeople": [
+      "god",
+      "noah"
+    ],
+    "relatedPeople": [
+      "shem",
+      "ham",
+      "japheth"
+    ],
+    "relatedPlaces": [
+      "mount-ararat"
+    ],
+    "relatedEvents": [
+      "flood",
+      "tower-of-babel"
+    ],
+    "keywords": [
+      "covenant",
+      "rainbow",
+      "Noah"
+    ],
+    "summary": "God blesses Noah’s family, renews the command to fill the earth, and establishes a covenant with all flesh. The rainbow is given as the sign that God will not again destroy all flesh by flood.",
+    "longDescription": "God blesses Noah’s family, renews the command to fill the earth, and establishes a covenant with all flesh. The rainbow is given as the sign that God will not again destroy all flesh by flood.\n\nThe biblical text (Genesis 9:1-17) places noahic covenant in the setting of Mount Ararat region and connects it with God, Noah, Shem, Ham, Japheth. The record keeps to the details supplied by Scripture: the action, the response of faith or rebellion, and the way the event moves the covenant story forward.\n\nWithin Primeval History, this event helps explain the next stage of the timeline by showing God’s judgment, provision, promise, or leadership at a specific point in the biblical story. Later biblical writers often return to these themes when they interpret creation, covenant, exodus, conquest, worship, faith, and kingship.",
+    "historicalNotes": null,
+    "crossReferences": [
+      "Isaiah 54:9",
+      "1 Peter 3:20"
+    ],
+    "prevEvent": "flood",
+    "nextEvent": "tower-of-babel"
+  },
+  {
+    "id": "tower-of-babel",
     "name": "Tower of Babel",
-    "order": 5,
-    "date": "Traditional primeval period",
-    "dateSort": -2500,
-    "datePrecision": "traditional",
+    "order": 7,
+    "date": "approx. symbolic primeval period",
+    "dateSort": -2400,
+    "datePrecision": "symbolic",
     "era": "Primeval History",
     "book": "genesis",
     "chapter": 11,
     "verseStart": 1,
     "verseEnd": 9,
     "reference": "Genesis 11:1-9",
-    "location": { "placeId": "babel", "name": "Babel", "modernCountry": "Iraq region", "lat": null, "lng": null },
-    "mainPeople": ["god"],
-    "relatedPeople": ["noah"],
-    "relatedPlaces": ["babel"],
-    "relatedEvents": ["flood", "call-of-abraham"],
-    "keywords": ["babel", "languages", "scattering"],
-    "summary": "Humanity gathers to build a city and tower, and God confuses their language and scatters them.",
-    "longDescription": "The people of Babel seek to make a name for themselves and avoid being scattered across the earth. Their project becomes a symbol of unified human pride apart from God.\n\nGod confuses their language, halting the project and scattering the peoples. The narrative prepares for God's call of Abram and the promise to bless all nations.",
-    "historicalNotes": "Babel is associated with Babylon and the Mesopotamian world, where temple towers known as ziggurats were prominent.",
-    "crossReferences": ["Acts 2:1-11", "Revelation 18"],
-    "prevEvent": "flood",
+    "location": {
+      "placeId": "babel",
+      "name": "Babel",
+      "modernCountry": "Iraq region",
+      "lat": 32.54,
+      "lng": 44.42
+    },
+    "mainPeople": [
+      "god"
+    ],
+    "relatedPeople": [
+      "shem",
+      "ham",
+      "japheth"
+    ],
+    "relatedPlaces": [
+      "babel"
+    ],
+    "relatedEvents": [
+      "noahic-covenant",
+      "call-of-abraham"
+    ],
+    "keywords": [
+      "babel",
+      "languages",
+      "tower",
+      "scattering"
+    ],
+    "summary": "Humanity gathers in Shinar to build a city and tower in order to make a name for itself. God confuses their language and scatters them over the earth.",
+    "longDescription": "Humanity gathers in Shinar to build a city and tower in order to make a name for itself. God confuses their language and scatters them over the earth.\n\nThe biblical text (Genesis 11:1-9) places tower of babel in the setting of Babel and connects it with God, Shem, Ham, Japheth. The record keeps to the details supplied by Scripture: the action, the response of faith or rebellion, and the way the event moves the covenant story forward.\n\nWithin Primeval History, this event helps explain the next stage of the timeline by showing God’s judgment, provision, promise, or leadership at a specific point in the biblical story. Later biblical writers often return to these themes when they interpret creation, covenant, exodus, conquest, worship, faith, and kingship.",
+    "historicalNotes": "Archaeological evidence: Babel is commonly associated with Babylon, where ziggurat temple towers were prominent in Mesopotamian urban religion.",
+    "crossReferences": [],
+    "prevEvent": "noahic-covenant",
     "nextEvent": "call-of-abraham"
   },
   {
     "id": "call-of-abraham",
     "name": "Call of Abraham",
-    "order": 6,
-    "date": "approx. 2166 BC (traditional)",
-    "dateSort": -2166,
+    "order": 8,
+    "date": "approx. 2091 BC",
+    "dateSort": -2091,
     "datePrecision": "traditional",
-    "era": "Patriarchs",
+    "era": "The Patriarchs",
     "book": "genesis",
     "chapter": 12,
     "verseStart": 1,
     "verseEnd": 9,
     "reference": "Genesis 12:1-9",
-    "location": { "placeId": "ur", "name": "Ur to Canaan", "modernCountry": "Iraq to Israel/Palestinian territories", "lat": null, "lng": null },
-    "mainPeople": ["abraham", "god"],
-    "relatedPeople": [],
-    "relatedPlaces": ["ur", "canaan"],
-    "relatedEvents": ["isaac-born"],
-    "keywords": ["abraham", "promise", "covenant", "canaan"],
-    "summary": "God calls Abram to leave his country and promises land, descendants, and blessing to all families of the earth.",
-    "longDescription": "Abram is called from his homeland to a land God will show him. The promises of land, great nationhood, blessing, and worldwide blessing become a central thread in biblical history.\n\nAbram obeys and travels to Canaan, building altars as he moves through the land. The patriarchal narrative develops God's covenant faithfulness through his family.",
-    "historicalNotes": "Traditional chronology places Abraham in the early second millennium BC, though exact dating is debated.",
-    "crossReferences": ["Genesis 15", "Galatians 3:6-9", "Hebrews 11:8-10"],
-    "prevEvent": "babel",
-    "nextEvent": "isaac-born"
+    "location": {
+      "placeId": "ur",
+      "name": "Ur",
+      "modernCountry": "Iraq",
+      "lat": 30.96,
+      "lng": 46.1
+    },
+    "mainPeople": [
+      "abraham",
+      "god"
+    ],
+    "relatedPeople": [
+      "sarah",
+      "lot"
+    ],
+    "relatedPlaces": [
+      "ur",
+      "haran",
+      "canaan",
+      "shechem",
+      "bethel"
+    ],
+    "relatedEvents": [
+      "tower-of-babel",
+      "abram-in-egypt"
+    ],
+    "keywords": [
+      "abraham",
+      "promise",
+      "canaan",
+      "blessing"
+    ],
+    "summary": "God calls Abram to leave his land and promises him land, descendants, blessing, and worldwide blessing through his family. Abram travels through Canaan and builds altars at Shechem and near Bethel.",
+    "longDescription": "God calls Abram to leave his land and promises him land, descendants, blessing, and worldwide blessing through his family. Abram travels through Canaan and builds altars at Shechem and near Bethel.\n\nThe biblical text (Genesis 12:1-9) places call of abraham in the setting of Ur, Haran, Canaan, Shechem and connects it with Abraham, God, Sarah, Lot. The record keeps to the details supplied by Scripture: the action, the response of faith or rebellion, and the way the event moves the covenant story forward.\n\nWithin The Patriarchs, this event helps explain the next stage of the timeline by showing God’s judgment, provision, promise, or leadership at a specific point in the biblical story. Later biblical writers often return to these themes when they interpret creation, covenant, exodus, conquest, worship, faith, and kingship.",
+    "historicalNotes": "Historical reconstruction: The patriarchal narratives fit a second-millennium BC setting of clan migration, pastoral life, treaties, and movement between Mesopotamia, Canaan, and Egypt.",
+    "crossReferences": [
+      "Genesis 15",
+      "Acts 7:2-5",
+      "Galatians 3:6-9",
+      "Hebrews 11:8-10"
+    ],
+    "prevEvent": "tower-of-babel",
+    "nextEvent": "abram-in-egypt"
   },
   {
-    "id": "isaac-born",
+    "id": "abram-in-egypt",
+    "name": "Abram in Egypt",
+    "order": 9,
+    "date": "approx. 2091 BC",
+    "dateSort": -2090.9,
+    "datePrecision": "traditional",
+    "era": "The Patriarchs",
+    "book": "genesis",
+    "chapter": 12,
+    "verseStart": 10,
+    "verseEnd": 20,
+    "reference": "Genesis 12:10-20",
+    "location": {
+      "placeId": "egypt",
+      "name": "Egypt",
+      "modernCountry": "Egypt",
+      "lat": 26.82,
+      "lng": 30.8
+    },
+    "mainPeople": [
+      "abraham",
+      "sarah"
+    ],
+    "relatedPeople": [
+      "god"
+    ],
+    "relatedPlaces": [
+      "egypt",
+      "canaan"
+    ],
+    "relatedEvents": [
+      "call-of-abraham",
+      "abram-lot-separate"
+    ],
+    "keywords": [
+      "egypt",
+      "famine",
+      "sarah"
+    ],
+    "summary": "A famine drives Abram into Egypt, where fear leads him to present Sarai as his sister. God protects Sarai and sends Abram back toward Canaan with the episode exposing both human weakness and divine preservation.",
+    "longDescription": "A famine drives Abram into Egypt, where fear leads him to present Sarai as his sister. God protects Sarai and sends Abram back toward Canaan with the episode exposing both human weakness and divine preservation.\n\nThe biblical text (Genesis 12:10-20) places abram in egypt in the setting of Egypt, Canaan and connects it with Abraham, Sarah, God. The record keeps to the details supplied by Scripture: the action, the response of faith or rebellion, and the way the event moves the covenant story forward.\n\nWithin The Patriarchs, this event helps explain the next stage of the timeline by showing God’s judgment, provision, promise, or leadership at a specific point in the biblical story. Later biblical writers often return to these themes when they interpret creation, covenant, exodus, conquest, worship, faith, and kingship.",
+    "historicalNotes": "Historical reconstruction: Egypt was a natural refuge during Levantine famine because the Nile system often provided food when Canaan suffered drought.",
+    "crossReferences": [],
+    "prevEvent": "call-of-abraham",
+    "nextEvent": "abram-lot-separate"
+  },
+  {
+    "id": "abram-lot-separate",
+    "name": "Abram and Lot Separate",
+    "order": 10,
+    "date": "approx. 2090 BC",
+    "dateSort": -2090,
+    "datePrecision": "traditional",
+    "era": "The Patriarchs",
+    "book": "genesis",
+    "chapter": 13,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Genesis 13",
+    "location": {
+      "placeId": "bethel",
+      "name": "Bethel",
+      "modernCountry": "West Bank",
+      "lat": 31.93,
+      "lng": 35.22
+    },
+    "mainPeople": [
+      "abraham",
+      "lot"
+    ],
+    "relatedPeople": [
+      "sarah"
+    ],
+    "relatedPlaces": [
+      "bethel",
+      "hebron",
+      "sodom",
+      "canaan"
+    ],
+    "relatedEvents": [
+      "abram-in-egypt",
+      "abrahamic-covenant"
+    ],
+    "keywords": [
+      "abraham",
+      "lot",
+      "land",
+      "canaan"
+    ],
+    "summary": "Abram and Lot separate because their households have grown too large for the same pastureland. Lot chooses the Jordan plain near Sodom, while Abram remains in Canaan and receives renewed assurance of the land promise.",
+    "longDescription": "Abram and Lot separate because their households have grown too large for the same pastureland. Lot chooses the Jordan plain near Sodom, while Abram remains in Canaan and receives renewed assurance of the land promise.\n\nThe biblical text (Genesis 13) places abram and lot separate in the setting of Bethel, Hebron, Sodom region, Canaan and connects it with Abraham, Lot, Sarah. The record keeps to the details supplied by Scripture: the action, the response of faith or rebellion, and the way the event moves the covenant story forward.\n\nWithin The Patriarchs, this event helps explain the next stage of the timeline by showing God’s judgment, provision, promise, or leadership at a specific point in the biblical story. Later biblical writers often return to these themes when they interpret creation, covenant, exodus, conquest, worship, faith, and kingship.",
+    "historicalNotes": null,
+    "crossReferences": [],
+    "prevEvent": "abram-in-egypt",
+    "nextEvent": "abrahamic-covenant"
+  },
+  {
+    "id": "abrahamic-covenant",
+    "name": "Abrahamic Covenant",
+    "order": 11,
+    "date": "approx. 2081-2067 BC",
+    "dateSort": -2081,
+    "datePrecision": "traditional",
+    "era": "The Patriarchs",
+    "book": "genesis",
+    "chapter": 15,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Genesis 15; 17",
+    "location": {
+      "placeId": "hebron",
+      "name": "Hebron",
+      "modernCountry": "West Bank",
+      "lat": 31.53,
+      "lng": 35.09
+    },
+    "mainPeople": [
+      "abraham",
+      "god"
+    ],
+    "relatedPeople": [
+      "sarah",
+      "ishmael",
+      "isaac"
+    ],
+    "relatedPlaces": [
+      "hebron",
+      "canaan"
+    ],
+    "relatedEvents": [
+      "abram-lot-separate",
+      "hagar-and-ishmael"
+    ],
+    "keywords": [
+      "covenant",
+      "stars",
+      "circumcision",
+      "promise"
+    ],
+    "summary": "God formally makes covenant promises to Abram, promising offspring, land, and a future deliverance after oppression. Abram is renamed Abraham, Sarai is renamed Sarah, and circumcision is given as the covenant sign.",
+    "longDescription": "God formally makes covenant promises to Abram, promising offspring, land, and a future deliverance after oppression. Abram is renamed Abraham, Sarai is renamed Sarah, and circumcision is given as the covenant sign.\n\nThe biblical text (Genesis 15; 17) places abrahamic covenant in the setting of Hebron, Canaan and connects it with Abraham, God, Sarah, Ishmael, Isaac. The record keeps to the details supplied by Scripture: the action, the response of faith or rebellion, and the way the event moves the covenant story forward.\n\nWithin The Patriarchs, this event helps explain the next stage of the timeline by showing God’s judgment, provision, promise, or leadership at a specific point in the biblical story. Later biblical writers often return to these themes when they interpret creation, covenant, exodus, conquest, worship, faith, and kingship.",
+    "historicalNotes": null,
+    "crossReferences": [],
+    "prevEvent": "abram-lot-separate",
+    "nextEvent": "hagar-and-ishmael"
+  },
+  {
+    "id": "hagar-and-ishmael",
+    "name": "Hagar and Ishmael",
+    "order": 12,
+    "date": "approx. 2080-2066 BC",
+    "dateSort": -2080,
+    "datePrecision": "traditional",
+    "era": "The Patriarchs",
+    "book": "genesis",
+    "chapter": 16,
+    "verseStart": 8,
+    "verseEnd": 21,
+    "reference": "Genesis 16; 21:8-21",
+    "location": {
+      "placeId": "beersheba",
+      "name": "Beersheba",
+      "modernCountry": "Israel",
+      "lat": 31.25,
+      "lng": 34.79
+    },
+    "mainPeople": [
+      "hagar",
+      "ishmael"
+    ],
+    "relatedPeople": [
+      "abraham",
+      "sarah",
+      "god"
+    ],
+    "relatedPlaces": [
+      "beersheba",
+      "canaan"
+    ],
+    "relatedEvents": [
+      "abrahamic-covenant",
+      "sodom-and-gomorrah"
+    ],
+    "keywords": [
+      "hagar",
+      "ishmael",
+      "wilderness",
+      "promise"
+    ],
+    "summary": "Hagar bears Ishmael after Sarah gives her to Abraham, and family conflict follows. God sees Hagar in distress and later preserves Ishmael in the wilderness, promising to make him a great nation.",
+    "longDescription": "Hagar bears Ishmael after Sarah gives her to Abraham, and family conflict follows. God sees Hagar in distress and later preserves Ishmael in the wilderness, promising to make him a great nation.\n\nThe biblical text (Genesis 16; 21:8-21) places hagar and ishmael in the setting of Beersheba, Canaan and connects it with Hagar, Ishmael, Abraham, Sarah, God. The record keeps to the details supplied by Scripture: the action, the response of faith or rebellion, and the way the event moves the covenant story forward.\n\nWithin The Patriarchs, this event helps explain the next stage of the timeline by showing God’s judgment, provision, promise, or leadership at a specific point in the biblical story. Later biblical writers often return to these themes when they interpret creation, covenant, exodus, conquest, worship, faith, and kingship.",
+    "historicalNotes": null,
+    "crossReferences": [],
+    "prevEvent": "abrahamic-covenant",
+    "nextEvent": "sodom-and-gomorrah"
+  },
+  {
+    "id": "sodom-and-gomorrah",
+    "name": "Sodom and Gomorrah",
+    "order": 13,
+    "date": "approx. 2067 BC",
+    "dateSort": -2067,
+    "datePrecision": "traditional",
+    "era": "The Patriarchs",
+    "book": "genesis",
+    "chapter": 18,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Genesis 18-19",
+    "location": {
+      "placeId": "sodom",
+      "name": "Sodom region",
+      "modernCountry": "uncertain, Dead Sea region",
+      "lat": null,
+      "lng": null
+    },
+    "mainPeople": [
+      "god",
+      "abraham",
+      "lot"
+    ],
+    "relatedPeople": [
+      "sarah"
+    ],
+    "relatedPlaces": [
+      "sodom",
+      "hebron"
+    ],
+    "relatedEvents": [
+      "hagar-and-ishmael",
+      "birth-of-isaac"
+    ],
+    "keywords": [
+      "sodom",
+      "judgment",
+      "intercession",
+      "Lot"
+    ],
+    "summary": "God announces judgment on Sodom and Gomorrah while Abraham intercedes for the righteous. Angels rescue Lot’s household before the cities are destroyed for their grave wickedness.",
+    "longDescription": "God announces judgment on Sodom and Gomorrah while Abraham intercedes for the righteous. Angels rescue Lot’s household before the cities are destroyed for their grave wickedness.\n\nThe biblical text (Genesis 18-19) places sodom and gomorrah in the setting of Sodom region, Hebron and connects it with God, Abraham, Lot, Sarah. The record keeps to the details supplied by Scripture: the action, the response of faith or rebellion, and the way the event moves the covenant story forward.\n\nWithin The Patriarchs, this event helps explain the next stage of the timeline by showing God’s judgment, provision, promise, or leadership at a specific point in the biblical story. Later biblical writers often return to these themes when they interpret creation, covenant, exodus, conquest, worship, faith, and kingship.",
+    "historicalNotes": "Scholarly opinion: Proposed locations for Sodom vary around the Dead Sea region, and no identification is certain enough to treat as settled archaeology.",
+    "crossReferences": [],
+    "prevEvent": "hagar-and-ishmael",
+    "nextEvent": "birth-of-isaac"
+  },
+  {
+    "id": "birth-of-isaac",
     "name": "Birth of Isaac",
-    "order": 7,
-    "date": "approx. 2066 BC (traditional)",
+    "order": 14,
+    "date": "approx. 2066 BC",
     "dateSort": -2066,
     "datePrecision": "traditional",
-    "era": "Patriarchs",
+    "era": "The Patriarchs",
     "book": "genesis",
     "chapter": 21,
     "verseStart": 1,
     "verseEnd": 7,
     "reference": "Genesis 21:1-7",
-    "location": { "placeId": "canaan", "name": "Canaan", "modernCountry": "Israel/Palestinian territories", "lat": null, "lng": null },
-    "mainPeople": ["abraham", "isaac"],
-    "relatedPeople": ["god"],
-    "relatedPlaces": ["canaan"],
-    "relatedEvents": ["call-of-abraham", "jacob-esau"],
-    "keywords": ["isaac", "promise", "birth"],
-    "summary": "Isaac is born to Abraham and Sarah as the promised child through whom the covenant line continues.",
-    "longDescription": "God keeps his promise to Abraham and Sarah by giving them a son in their old age. Isaac's birth demonstrates that the covenant family exists because of God's faithfulness, not human strength.\n\nThe name Isaac, connected with laughter, recalls both the seeming impossibility of the promise and the joy of its fulfillment.",
+    "location": {
+      "placeId": "beersheba",
+      "name": "Beersheba",
+      "modernCountry": "Israel",
+      "lat": 31.25,
+      "lng": 34.79
+    },
+    "mainPeople": [
+      "abraham",
+      "sarah",
+      "isaac"
+    ],
+    "relatedPeople": [
+      "god",
+      "hagar",
+      "ishmael"
+    ],
+    "relatedPlaces": [
+      "beersheba",
+      "canaan"
+    ],
+    "relatedEvents": [
+      "sodom-and-gomorrah",
+      "sacrifice-of-isaac"
+    ],
+    "keywords": [
+      "isaac",
+      "birth",
+      "promise",
+      "laughter"
+    ],
+    "summary": "Isaac is born to Abraham and Sarah in their old age, exactly as God promised. His birth confirms that the covenant line rests on God’s faithfulness rather than human ability.",
+    "longDescription": "Isaac is born to Abraham and Sarah in their old age, exactly as God promised. His birth confirms that the covenant line rests on God’s faithfulness rather than human ability.\n\nThe biblical text (Genesis 21:1-7) places birth of isaac in the setting of Beersheba, Canaan and connects it with Abraham, Sarah, Isaac, God, Hagar, Ishmael. The record keeps to the details supplied by Scripture: the action, the response of faith or rebellion, and the way the event moves the covenant story forward.\n\nWithin The Patriarchs, this event helps explain the next stage of the timeline by showing God’s judgment, provision, promise, or leadership at a specific point in the biblical story. Later biblical writers often return to these themes when they interpret creation, covenant, exodus, conquest, worship, faith, and kingship.",
     "historicalNotes": null,
-    "crossReferences": ["Romans 9:7-9", "Hebrews 11:11-12"],
-    "prevEvent": "call-of-abraham",
-    "nextEvent": "jacob-esau"
+    "crossReferences": [],
+    "prevEvent": "sodom-and-gomorrah",
+    "nextEvent": "sacrifice-of-isaac"
   },
   {
-    "id": "jacob-esau",
-    "name": "Jacob and Esau",
-    "order": 8,
-    "date": "approx. 2006 BC (traditional)",
+    "id": "sacrifice-of-isaac",
+    "name": "Sacrifice of Isaac",
+    "order": 15,
+    "date": "approx. 2050 BC",
+    "dateSort": -2050,
+    "datePrecision": "traditional",
+    "era": "The Patriarchs",
+    "book": "genesis",
+    "chapter": 22,
+    "verseStart": 1,
+    "verseEnd": 19,
+    "reference": "Genesis 22:1-19",
+    "location": {
+      "placeId": "beersheba",
+      "name": "Beersheba",
+      "modernCountry": "Israel",
+      "lat": 31.25,
+      "lng": 34.79
+    },
+    "mainPeople": [
+      "abraham",
+      "isaac",
+      "god"
+    ],
+    "relatedPeople": [
+      "sarah"
+    ],
+    "relatedPlaces": [
+      "beersheba",
+      "canaan"
+    ],
+    "relatedEvents": [
+      "birth-of-isaac",
+      "isaac-marries-rebekah"
+    ],
+    "keywords": [
+      "isaac",
+      "testing",
+      "ram",
+      "Moriah"
+    ],
+    "summary": "God tests Abraham by commanding him to offer Isaac, the son of promise. Abraham obeys, but God provides a ram and renews the promise that Abraham’s offspring will bless the nations.",
+    "longDescription": "God tests Abraham by commanding him to offer Isaac, the son of promise. Abraham obeys, but God provides a ram and renews the promise that Abraham’s offspring will bless the nations.\n\nThe biblical text (Genesis 22:1-19) places sacrifice of isaac in the setting of Beersheba, Canaan and connects it with Abraham, Isaac, God, Sarah. The record keeps to the details supplied by Scripture: the action, the response of faith or rebellion, and the way the event moves the covenant story forward.\n\nWithin The Patriarchs, this event helps explain the next stage of the timeline by showing God’s judgment, provision, promise, or leadership at a specific point in the biblical story. Later biblical writers often return to these themes when they interpret creation, covenant, exodus, conquest, worship, faith, and kingship.",
+    "historicalNotes": null,
+    "crossReferences": [
+      "Hebrews 11:17-19",
+      "James 2:21-23"
+    ],
+    "prevEvent": "birth-of-isaac",
+    "nextEvent": "isaac-marries-rebekah"
+  },
+  {
+    "id": "isaac-marries-rebekah",
+    "name": "Isaac Marries Rebekah",
+    "order": 16,
+    "date": "approx. 2026 BC",
+    "dateSort": -2026,
+    "datePrecision": "traditional",
+    "era": "The Patriarchs",
+    "book": "genesis",
+    "chapter": 24,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Genesis 24",
+    "location": {
+      "placeId": "beersheba",
+      "name": "Beersheba",
+      "modernCountry": "Israel",
+      "lat": 31.25,
+      "lng": 34.79
+    },
+    "mainPeople": [
+      "isaac",
+      "rebekah",
+      "abraham"
+    ],
+    "relatedPeople": [
+      "god"
+    ],
+    "relatedPlaces": [
+      "beersheba",
+      "haran",
+      "canaan"
+    ],
+    "relatedEvents": [
+      "sacrifice-of-isaac",
+      "jacob-and-esau-born"
+    ],
+    "keywords": [
+      "isaac",
+      "rebekah",
+      "marriage",
+      "promise"
+    ],
+    "summary": "Abraham’s servant travels to his kin and asks God to guide him to a wife for Isaac. Rebekah willingly returns to Canaan, and Isaac receives her as his wife in the covenant family.",
+    "longDescription": "Abraham’s servant travels to his kin and asks God to guide him to a wife for Isaac. Rebekah willingly returns to Canaan, and Isaac receives her as his wife in the covenant family.\n\nThe biblical text (Genesis 24) places isaac marries rebekah in the setting of Beersheba, Haran, Canaan and connects it with Isaac, Rebekah, Abraham, God. The record keeps to the details supplied by Scripture: the action, the response of faith or rebellion, and the way the event moves the covenant story forward.\n\nWithin The Patriarchs, this event helps explain the next stage of the timeline by showing God’s judgment, provision, promise, or leadership at a specific point in the biblical story. Later biblical writers often return to these themes when they interpret creation, covenant, exodus, conquest, worship, faith, and kingship.",
+    "historicalNotes": null,
+    "crossReferences": [],
+    "prevEvent": "sacrifice-of-isaac",
+    "nextEvent": "jacob-and-esau-born"
+  },
+  {
+    "id": "jacob-and-esau-born",
+    "name": "Jacob and Esau Born",
+    "order": 17,
+    "date": "approx. 2006 BC",
     "dateSort": -2006,
     "datePrecision": "traditional",
-    "era": "Patriarchs",
+    "era": "The Patriarchs",
     "book": "genesis",
     "chapter": 25,
     "verseStart": 19,
     "verseEnd": 34,
-    "reference": "Genesis 25:19-34; 27",
-    "location": { "placeId": "canaan", "name": "Canaan", "modernCountry": "Israel/Palestinian territories", "lat": null, "lng": null },
-    "mainPeople": ["isaac", "jacob"],
-    "relatedPeople": ["abraham"],
-    "relatedPlaces": ["canaan"],
-    "relatedEvents": ["isaac-born", "joseph-egypt"],
-    "keywords": ["jacob", "esau", "birthright", "blessing"],
-    "summary": "Jacob receives the birthright and blessing, continuing the covenant line through a troubled family story.",
-    "longDescription": "Jacob and Esau struggle from birth, and their rivalry shapes the next generation of the patriarchal family. Esau despises his birthright, and Jacob later receives Isaac's blessing through deception.\n\nDespite human conflict and sin, the covenant promise continues through Jacob, who will later be named Israel.",
+    "reference": "Genesis 25:19-34",
+    "location": {
+      "placeId": "beersheba",
+      "name": "Beersheba",
+      "modernCountry": "Israel",
+      "lat": 31.25,
+      "lng": 34.79
+    },
+    "mainPeople": [
+      "isaac",
+      "rebekah",
+      "jacob",
+      "esau"
+    ],
+    "relatedPeople": [
+      "god",
+      "abraham"
+    ],
+    "relatedPlaces": [
+      "beersheba",
+      "canaan"
+    ],
+    "relatedEvents": [
+      "isaac-marries-rebekah",
+      "jacob-steals-blessing"
+    ],
+    "keywords": [
+      "jacob",
+      "esau",
+      "birthright",
+      "twins"
+    ],
+    "summary": "Rebekah bears twin sons, Jacob and Esau, after Isaac prays for her. The struggle between them begins before birth and continues when Esau sells his birthright to Jacob.",
+    "longDescription": "Rebekah bears twin sons, Jacob and Esau, after Isaac prays for her. The struggle between them begins before birth and continues when Esau sells his birthright to Jacob.\n\nThe biblical text (Genesis 25:19-34) places jacob and esau born in the setting of Beersheba, Canaan and connects it with Isaac, Rebekah, Jacob, Esau, God, Abraham. The record keeps to the details supplied by Scripture: the action, the response of faith or rebellion, and the way the event moves the covenant story forward.\n\nWithin The Patriarchs, this event helps explain the next stage of the timeline by showing God’s judgment, provision, promise, or leadership at a specific point in the biblical story. Later biblical writers often return to these themes when they interpret creation, covenant, exodus, conquest, worship, faith, and kingship.",
     "historicalNotes": null,
-    "crossReferences": ["Malachi 1:2-3", "Romans 9:10-13"],
-    "prevEvent": "isaac-born",
-    "nextEvent": "joseph-egypt"
+    "crossReferences": [],
+    "prevEvent": "isaac-marries-rebekah",
+    "nextEvent": "jacob-steals-blessing"
   },
   {
-    "id": "joseph-egypt",
-    "name": "Joseph in Egypt",
-    "order": 9,
-    "date": "approx. 1898-1805 BC (traditional)",
+    "id": "jacob-steals-blessing",
+    "name": "Jacob Steals the Blessing",
+    "order": 18,
+    "date": "approx. 1929 BC",
+    "dateSort": -1929,
+    "datePrecision": "traditional",
+    "era": "The Patriarchs",
+    "book": "genesis",
+    "chapter": 27,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Genesis 27",
+    "location": {
+      "placeId": "beersheba",
+      "name": "Beersheba",
+      "modernCountry": "Israel",
+      "lat": 31.25,
+      "lng": 34.79
+    },
+    "mainPeople": [
+      "jacob",
+      "isaac",
+      "rebekah",
+      "esau"
+    ],
+    "relatedPeople": [
+      "god"
+    ],
+    "relatedPlaces": [
+      "beersheba",
+      "canaan"
+    ],
+    "relatedEvents": [
+      "jacob-and-esau-born",
+      "jacobs-ladder"
+    ],
+    "keywords": [
+      "blessing",
+      "deception",
+      "Jacob",
+      "Esau"
+    ],
+    "summary": "Rebekah and Jacob deceive Isaac so Jacob receives the patriarchal blessing intended for Esau. Esau’s anger forces Jacob to leave home, yet the covenant line continues through him.",
+    "longDescription": "Rebekah and Jacob deceive Isaac so Jacob receives the patriarchal blessing intended for Esau. Esau’s anger forces Jacob to leave home, yet the covenant line continues through him.\n\nThe biblical text (Genesis 27) places jacob steals the blessing in the setting of Beersheba, Canaan and connects it with Jacob, Isaac, Rebekah, Esau, God. The record keeps to the details supplied by Scripture: the action, the response of faith or rebellion, and the way the event moves the covenant story forward.\n\nWithin The Patriarchs, this event helps explain the next stage of the timeline by showing God’s judgment, provision, promise, or leadership at a specific point in the biblical story. Later biblical writers often return to these themes when they interpret creation, covenant, exodus, conquest, worship, faith, and kingship.",
+    "historicalNotes": null,
+    "crossReferences": [],
+    "prevEvent": "jacob-and-esau-born",
+    "nextEvent": "jacobs-ladder"
+  },
+  {
+    "id": "jacobs-ladder",
+    "name": "Jacob's Ladder",
+    "order": 19,
+    "date": "approx. 1929 BC",
+    "dateSort": -1928.9,
+    "datePrecision": "traditional",
+    "era": "The Patriarchs",
+    "book": "genesis",
+    "chapter": 28,
+    "verseStart": 10,
+    "verseEnd": 22,
+    "reference": "Genesis 28:10-22",
+    "location": {
+      "placeId": "bethel",
+      "name": "Bethel",
+      "modernCountry": "West Bank",
+      "lat": 31.93,
+      "lng": 35.22
+    },
+    "mainPeople": [
+      "jacob",
+      "god"
+    ],
+    "relatedPeople": [
+      "isaac",
+      "rebekah"
+    ],
+    "relatedPlaces": [
+      "bethel",
+      "haran"
+    ],
+    "relatedEvents": [
+      "jacob-steals-blessing",
+      "jacob-marries-leah-rachel"
+    ],
+    "keywords": [
+      "bethel",
+      "dream",
+      "ladder",
+      "promise"
+    ],
+    "summary": "As Jacob travels toward Haran, God appears to him in a dream of a stairway reaching to heaven. God repeats the Abrahamic promises, and Jacob names the place Bethel.",
+    "longDescription": "As Jacob travels toward Haran, God appears to him in a dream of a stairway reaching to heaven. God repeats the Abrahamic promises, and Jacob names the place Bethel.\n\nThe biblical text (Genesis 28:10-22) places jacob's ladder in the setting of Bethel, Haran and connects it with Jacob, God, Isaac, Rebekah. The record keeps to the details supplied by Scripture: the action, the response of faith or rebellion, and the way the event moves the covenant story forward.\n\nWithin The Patriarchs, this event helps explain the next stage of the timeline by showing God’s judgment, provision, promise, or leadership at a specific point in the biblical story. Later biblical writers often return to these themes when they interpret creation, covenant, exodus, conquest, worship, faith, and kingship.",
+    "historicalNotes": null,
+    "crossReferences": [],
+    "prevEvent": "jacob-steals-blessing",
+    "nextEvent": "jacob-marries-leah-rachel"
+  },
+  {
+    "id": "jacob-marries-leah-rachel",
+    "name": "Jacob Marries Leah and Rachel",
+    "order": 20,
+    "date": "approx. 1922-1915 BC",
+    "dateSort": -1922,
+    "datePrecision": "traditional",
+    "era": "The Patriarchs",
+    "book": "genesis",
+    "chapter": 29,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Genesis 29",
+    "location": {
+      "placeId": "haran",
+      "name": "Haran",
+      "modernCountry": "Turkey",
+      "lat": 36.87,
+      "lng": 39.03
+    },
+    "mainPeople": [
+      "jacob",
+      "leah",
+      "rachel"
+    ],
+    "relatedPeople": [
+      "god"
+    ],
+    "relatedPlaces": [
+      "haran"
+    ],
+    "relatedEvents": [
+      "jacobs-ladder",
+      "jacob-wrestles-god"
+    ],
+    "keywords": [
+      "leah",
+      "rachel",
+      "marriage",
+      "tribes"
+    ],
+    "summary": "Jacob serves Laban for Rachel but is first given Leah, then also marries Rachel. The beginnings of the family that will become Israel’s tribes unfold amid rivalry and hardship.",
+    "longDescription": "Jacob serves Laban for Rachel but is first given Leah, then also marries Rachel. The beginnings of the family that will become Israel’s tribes unfold amid rivalry and hardship.\n\nThe biblical text (Genesis 29) places jacob marries leah and rachel in the setting of Haran and connects it with Jacob, Leah, Rachel, God. The record keeps to the details supplied by Scripture: the action, the response of faith or rebellion, and the way the event moves the covenant story forward.\n\nWithin The Patriarchs, this event helps explain the next stage of the timeline by showing God’s judgment, provision, promise, or leadership at a specific point in the biblical story. Later biblical writers often return to these themes when they interpret creation, covenant, exodus, conquest, worship, faith, and kingship.",
+    "historicalNotes": null,
+    "crossReferences": [],
+    "prevEvent": "jacobs-ladder",
+    "nextEvent": "jacob-wrestles-god"
+  },
+  {
+    "id": "jacob-wrestles-god",
+    "name": "Jacob Wrestles with God",
+    "order": 21,
+    "date": "approx. 1909 BC",
+    "dateSort": -1909,
+    "datePrecision": "traditional",
+    "era": "The Patriarchs",
+    "book": "genesis",
+    "chapter": 32,
+    "verseStart": 22,
+    "verseEnd": 32,
+    "reference": "Genesis 32:22-32",
+    "location": {
+      "placeId": "canaan",
+      "name": "Canaan",
+      "modernCountry": "Israel/Palestinian territories and surrounding region",
+      "lat": null,
+      "lng": null
+    },
+    "mainPeople": [
+      "jacob",
+      "god"
+    ],
+    "relatedPeople": [
+      "esau",
+      "leah",
+      "rachel"
+    ],
+    "relatedPlaces": [
+      "canaan",
+      "jordan-river"
+    ],
+    "relatedEvents": [
+      "jacob-marries-leah-rachel",
+      "joseph-sold-into-slavery"
+    ],
+    "keywords": [
+      "Jacob",
+      "Israel",
+      "wrestling",
+      "Peniel"
+    ],
+    "summary": "On his return to Canaan, Jacob wrestles through the night with a mysterious man and receives the name Israel. The encounter marks a turning point before Jacob meets Esau again.",
+    "longDescription": "On his return to Canaan, Jacob wrestles through the night with a mysterious man and receives the name Israel. The encounter marks a turning point before Jacob meets Esau again.\n\nThe biblical text (Genesis 32:22-32) places jacob wrestles with god in the setting of Canaan, Jordan River and connects it with Jacob, God, Esau, Leah, Rachel. The record keeps to the details supplied by Scripture: the action, the response of faith or rebellion, and the way the event moves the covenant story forward.\n\nWithin The Patriarchs, this event helps explain the next stage of the timeline by showing God’s judgment, provision, promise, or leadership at a specific point in the biblical story. Later biblical writers often return to these themes when they interpret creation, covenant, exodus, conquest, worship, faith, and kingship.",
+    "historicalNotes": null,
+    "crossReferences": [],
+    "prevEvent": "jacob-marries-leah-rachel",
+    "nextEvent": "joseph-sold-into-slavery"
+  },
+  {
+    "id": "joseph-sold-into-slavery",
+    "name": "Joseph Sold into Slavery",
+    "order": 22,
+    "date": "approx. 1898 BC",
     "dateSort": -1898,
     "datePrecision": "traditional",
-    "era": "Patriarchs",
+    "era": "The Patriarchs",
     "book": "genesis",
     "chapter": 37,
-    "verseStart": 1,
-    "verseEnd": 36,
-    "reference": "Genesis 37-50",
-    "location": { "placeId": "egypt", "name": "Egypt", "modernCountry": "Egypt", "lat": null, "lng": null },
-    "mainPeople": ["joseph", "jacob"],
-    "relatedPeople": ["god"],
-    "relatedPlaces": ["canaan", "egypt"],
-    "relatedEvents": ["jacob-esau", "exodus-egypt"],
-    "keywords": ["joseph", "egypt", "famine", "providence"],
-    "summary": "Joseph is sold into Egypt, rises to authority, and preserves his family during famine.",
-    "longDescription": "Joseph's brothers sell him into slavery, but God works through suffering, false accusation, and imprisonment to bring Joseph before Pharaoh. Joseph interprets dreams and becomes a ruler in Egypt.\n\nDuring famine, Joseph reconciles with his brothers and provides for Jacob's family. Genesis closes with Israel's family in Egypt and with hope that God will bring them back to the promised land.",
-    "historicalNotes": "The Joseph narratives fit a setting of movement between Canaan and Egypt during periods when famine made Egypt a refuge.",
-    "crossReferences": ["Psalm 105:16-22", "Acts 7:9-16"],
-    "prevEvent": "jacob-esau",
-    "nextEvent": "exodus-egypt"
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Genesis 37",
+    "location": {
+      "placeId": "canaan",
+      "name": "Canaan",
+      "modernCountry": "Israel/Palestinian territories and surrounding region",
+      "lat": null,
+      "lng": null
+    },
+    "mainPeople": [
+      "joseph",
+      "jacob",
+      "judah"
+    ],
+    "relatedPeople": [
+      "benjamin"
+    ],
+    "relatedPlaces": [
+      "canaan",
+      "egypt"
+    ],
+    "relatedEvents": [
+      "jacob-wrestles-god",
+      "joseph-interprets-dreams"
+    ],
+    "keywords": [
+      "joseph",
+      "dreams",
+      "slavery",
+      "brothers"
+    ],
+    "summary": "Joseph’s brothers hate him because of Jacob’s favoritism and Joseph’s dreams. They sell him to traders bound for Egypt, while Jacob is led to believe Joseph has died.",
+    "longDescription": "Joseph’s brothers hate him because of Jacob’s favoritism and Joseph’s dreams. They sell him to traders bound for Egypt, while Jacob is led to believe Joseph has died.\n\nThe biblical text (Genesis 37) places joseph sold into slavery in the setting of Canaan, Egypt and connects it with Joseph, Jacob, Judah, Benjamin. The record keeps to the details supplied by Scripture: the action, the response of faith or rebellion, and the way the event moves the covenant story forward.\n\nWithin The Patriarchs, this event helps explain the next stage of the timeline by showing God’s judgment, provision, promise, or leadership at a specific point in the biblical story. Later biblical writers often return to these themes when they interpret creation, covenant, exodus, conquest, worship, faith, and kingship.",
+    "historicalNotes": null,
+    "crossReferences": [],
+    "prevEvent": "jacob-wrestles-god",
+    "nextEvent": "joseph-interprets-dreams"
   },
   {
-    "id": "exodus-egypt",
-    "name": "Exodus from Egypt",
-    "order": 10,
-    "date": "approx. 1446 BC (traditional)",
-    "dateSort": -1446,
+    "id": "joseph-interprets-dreams",
+    "name": "Joseph Interprets Dreams",
+    "order": 23,
+    "date": "approx. 1886 BC",
+    "dateSort": -1886,
+    "datePrecision": "traditional",
+    "era": "The Patriarchs",
+    "book": "genesis",
+    "chapter": 40,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Genesis 40-41",
+    "location": {
+      "placeId": "egypt",
+      "name": "Egypt",
+      "modernCountry": "Egypt",
+      "lat": 26.82,
+      "lng": 30.8
+    },
+    "mainPeople": [
+      "joseph",
+      "god"
+    ],
+    "relatedPeople": [
+      "potiphar"
+    ],
+    "relatedPlaces": [
+      "egypt"
+    ],
+    "relatedEvents": [
+      "joseph-sold-into-slavery",
+      "joseph-rules-egypt"
+    ],
+    "keywords": [
+      "dreams",
+      "Pharaoh",
+      "prison",
+      "wisdom"
+    ],
+    "summary": "After suffering in Egypt, Joseph interprets dreams in prison and then Pharaoh’s dreams of coming plenty and famine. Joseph credits God with the interpretation rather than claiming power for himself.",
+    "longDescription": "After suffering in Egypt, Joseph interprets dreams in prison and then Pharaoh’s dreams of coming plenty and famine. Joseph credits God with the interpretation rather than claiming power for himself.\n\nThe biblical text (Genesis 40-41) places joseph interprets dreams in the setting of Egypt and connects it with Joseph, God, Potiphar. The record keeps to the details supplied by Scripture: the action, the response of faith or rebellion, and the way the event moves the covenant story forward.\n\nWithin The Patriarchs, this event helps explain the next stage of the timeline by showing God’s judgment, provision, promise, or leadership at a specific point in the biblical story. Later biblical writers often return to these themes when they interpret creation, covenant, exodus, conquest, worship, faith, and kingship.",
+    "historicalNotes": null,
+    "crossReferences": [],
+    "prevEvent": "joseph-sold-into-slavery",
+    "nextEvent": "joseph-rules-egypt"
+  },
+  {
+    "id": "joseph-rules-egypt",
+    "name": "Joseph Rules Egypt",
+    "order": 24,
+    "date": "approx. 1885 BC",
+    "dateSort": -1885,
+    "datePrecision": "traditional",
+    "era": "The Patriarchs",
+    "book": "genesis",
+    "chapter": 41,
+    "verseStart": 37,
+    "verseEnd": 57,
+    "reference": "Genesis 41:37-57",
+    "location": {
+      "placeId": "egypt",
+      "name": "Egypt",
+      "modernCountry": "Egypt",
+      "lat": 26.82,
+      "lng": 30.8
+    },
+    "mainPeople": [
+      "joseph"
+    ],
+    "relatedPeople": [
+      "god",
+      "jacob"
+    ],
+    "relatedPlaces": [
+      "egypt"
+    ],
+    "relatedEvents": [
+      "joseph-interprets-dreams",
+      "jacob-moves-to-egypt"
+    ],
+    "keywords": [
+      "joseph",
+      "egypt",
+      "famine",
+      "providence"
+    ],
+    "summary": "Pharaoh sets Joseph over Egypt because God has given him wisdom. Joseph stores grain during seven years of plenty and preserves many lives during the famine.",
+    "longDescription": "Pharaoh sets Joseph over Egypt because God has given him wisdom. Joseph stores grain during seven years of plenty and preserves many lives during the famine.\n\nThe biblical text (Genesis 41:37-57) places joseph rules egypt in the setting of Egypt and connects it with Joseph, God, Jacob. The record keeps to the details supplied by Scripture: the action, the response of faith or rebellion, and the way the event moves the covenant story forward.\n\nWithin The Patriarchs, this event helps explain the next stage of the timeline by showing God’s judgment, provision, promise, or leadership at a specific point in the biblical story. Later biblical writers often return to these themes when they interpret creation, covenant, exodus, conquest, worship, faith, and kingship.",
+    "historicalNotes": "Historical reconstruction: The Joseph story reflects known Egyptian administrative concerns with grain storage, famine management, and royal officials, though Joseph himself is not securely identified in Egyptian records.",
+    "crossReferences": [],
+    "prevEvent": "joseph-interprets-dreams",
+    "nextEvent": "jacob-moves-to-egypt"
+  },
+  {
+    "id": "jacob-moves-to-egypt",
+    "name": "Jacob Moves to Egypt",
+    "order": 25,
+    "date": "approx. 1876 BC",
+    "dateSort": -1876,
+    "datePrecision": "traditional",
+    "era": "The Patriarchs",
+    "book": "genesis",
+    "chapter": 46,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Genesis 46-47",
+    "location": {
+      "placeId": "goshen",
+      "name": "Goshen",
+      "modernCountry": "Egypt (eastern Nile Delta)",
+      "lat": null,
+      "lng": null
+    },
+    "mainPeople": [
+      "jacob",
+      "joseph",
+      "judah",
+      "benjamin"
+    ],
+    "relatedPeople": [
+      "god"
+    ],
+    "relatedPlaces": [
+      "canaan",
+      "egypt",
+      "goshen"
+    ],
+    "relatedEvents": [
+      "joseph-rules-egypt",
+      "deaths-of-jacob-and-joseph"
+    ],
+    "keywords": [
+      "Jacob",
+      "Egypt",
+      "Goshen",
+      "family"
+    ],
+    "summary": "Jacob’s family moves to Egypt after Joseph reveals himself and provides for them during famine. God assures Jacob that he should not fear going down to Egypt and that God will bring his family up again.",
+    "longDescription": "Jacob’s family moves to Egypt after Joseph reveals himself and provides for them during famine. God assures Jacob that he should not fear going down to Egypt and that God will bring his family up again.\n\nThe biblical text (Genesis 46-47) places jacob moves to egypt in the setting of Goshen, Canaan, Egypt and connects it with Jacob, Joseph, Judah, Benjamin, God. The record keeps to the details supplied by Scripture: the action, the response of faith or rebellion, and the way the event moves the covenant story forward.\n\nWithin The Patriarchs, this event helps explain the next stage of the timeline by showing God’s judgment, provision, promise, or leadership at a specific point in the biblical story. Later biblical writers often return to these themes when they interpret creation, covenant, exodus, conquest, worship, faith, and kingship.",
+    "historicalNotes": "Historical reconstruction: Semitic groups are well attested in Egypt during the second millennium BC, especially in Delta contexts, though the biblical family migration cannot be independently verified by name.",
+    "crossReferences": [],
+    "prevEvent": "joseph-rules-egypt",
+    "nextEvent": "deaths-of-jacob-and-joseph"
+  },
+  {
+    "id": "deaths-of-jacob-and-joseph",
+    "name": "Deaths of Jacob and Joseph",
+    "order": 26,
+    "date": "approx. 1859-1805 BC",
+    "dateSort": -1859,
+    "datePrecision": "traditional",
+    "era": "The Patriarchs",
+    "book": "genesis",
+    "chapter": 49,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Genesis 49-50",
+    "location": {
+      "placeId": "egypt",
+      "name": "Egypt",
+      "modernCountry": "Egypt",
+      "lat": 26.82,
+      "lng": 30.8
+    },
+    "mainPeople": [
+      "jacob",
+      "joseph"
+    ],
+    "relatedPeople": [
+      "judah",
+      "benjamin"
+    ],
+    "relatedPlaces": [
+      "egypt",
+      "canaan"
+    ],
+    "relatedEvents": [
+      "jacob-moves-to-egypt",
+      "israel-enslaved-in-egypt"
+    ],
+    "keywords": [
+      "Jacob",
+      "Joseph",
+      "blessing",
+      "burial"
+    ],
+    "summary": "Jacob blesses his sons and is buried in Canaan, while Joseph reassures his brothers that God meant their evil for good. Joseph dies in Egypt, still trusting God’s promise to bring Israel back to the land.",
+    "longDescription": "Jacob blesses his sons and is buried in Canaan, while Joseph reassures his brothers that God meant their evil for good. Joseph dies in Egypt, still trusting God’s promise to bring Israel back to the land.\n\nThe biblical text (Genesis 49-50) places deaths of jacob and joseph in the setting of Egypt, Canaan and connects it with Jacob, Joseph, Judah, Benjamin. The record keeps to the details supplied by Scripture: the action, the response of faith or rebellion, and the way the event moves the covenant story forward.\n\nWithin The Patriarchs, this event helps explain the next stage of the timeline by showing God’s judgment, provision, promise, or leadership at a specific point in the biblical story. Later biblical writers often return to these themes when they interpret creation, covenant, exodus, conquest, worship, faith, and kingship.",
+    "historicalNotes": null,
+    "crossReferences": [],
+    "prevEvent": "jacob-moves-to-egypt",
+    "nextEvent": "israel-enslaved-in-egypt"
+  },
+  {
+    "id": "israel-enslaved-in-egypt",
+    "name": "Israel Enslaved in Egypt",
+    "order": 27,
+    "date": "approx. 1805-1526 BC",
+    "dateSort": -1805,
+    "datePrecision": "traditional",
+    "era": "Exodus & Wilderness",
+    "book": "exodus",
+    "chapter": 1,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Exodus 1",
+    "location": {
+      "placeId": "egypt",
+      "name": "Egypt",
+      "modernCountry": "Egypt",
+      "lat": 26.82,
+      "lng": 30.8
+    },
+    "mainPeople": [
+      "god"
+    ],
+    "relatedPeople": [
+      "moses",
+      "aaron",
+      "miriam"
+    ],
+    "relatedPlaces": [
+      "egypt",
+      "goshen"
+    ],
+    "relatedEvents": [
+      "deaths-of-jacob-and-joseph",
+      "birth-of-moses"
+    ],
+    "keywords": [
+      "slavery",
+      "Egypt",
+      "Israel",
+      "Pharaoh"
+    ],
+    "summary": "A new king arises in Egypt who does not know Joseph and enslaves the Israelites. Pharaoh’s oppression includes forced labor and a command that Hebrew baby boys be killed.",
+    "longDescription": "A new king arises in Egypt who does not know Joseph and enslaves the Israelites. Pharaoh’s oppression includes forced labor and a command that Hebrew baby boys be killed.\n\nThe biblical text (Exodus 1) places israel enslaved in egypt in the setting of Egypt, Goshen and connects it with God, Moses, Aaron, Miriam. The record keeps to the details supplied by Scripture: the action, the response of faith or rebellion, and the way the event moves the covenant story forward.\n\nWithin Exodus & Wilderness, this event helps explain the next stage of the timeline by showing God’s judgment, provision, promise, or leadership at a specific point in the biblical story. Later biblical writers often return to these themes when they interpret creation, covenant, exodus, conquest, worship, faith, and kingship.",
+    "historicalNotes": "Historical reconstruction: The eastern Nile Delta is the likely background for Goshen and store-city labor; Egyptian texts attest forced labor, though they do not name Moses.",
+    "crossReferences": [],
+    "prevEvent": "deaths-of-jacob-and-joseph",
+    "nextEvent": "birth-of-moses"
+  },
+  {
+    "id": "birth-of-moses",
+    "name": "Birth of Moses",
+    "order": 28,
+    "date": "approx. 1526 BC",
+    "dateSort": -1526,
+    "datePrecision": "traditional",
+    "era": "Exodus & Wilderness",
+    "book": "exodus",
+    "chapter": 2,
+    "verseStart": 1,
+    "verseEnd": 10,
+    "reference": "Exodus 2:1-10",
+    "location": {
+      "placeId": "egypt",
+      "name": "Egypt",
+      "modernCountry": "Egypt",
+      "lat": 26.82,
+      "lng": 30.8
+    },
+    "mainPeople": [
+      "moses",
+      "miriam"
+    ],
+    "relatedPeople": [
+      "god"
+    ],
+    "relatedPlaces": [
+      "egypt"
+    ],
+    "relatedEvents": [
+      "israel-enslaved-in-egypt",
+      "moses-flees-to-midian"
+    ],
+    "keywords": [
+      "Moses",
+      "birth",
+      "Nile",
+      "deliverer"
+    ],
+    "summary": "Moses is born under Pharaoh’s death decree, hidden by his mother, and placed in a basket on the Nile. Pharaoh’s daughter draws him out of the water and raises him in the Egyptian court.",
+    "longDescription": "Moses is born under Pharaoh’s death decree, hidden by his mother, and placed in a basket on the Nile. Pharaoh’s daughter draws him out of the water and raises him in the Egyptian court.\n\nThe biblical text (Exodus 2:1-10) places birth of moses in the setting of Egypt and connects it with Moses, Miriam, God. The record keeps to the details supplied by Scripture: the action, the response of faith or rebellion, and the way the event moves the covenant story forward.\n\nWithin Exodus & Wilderness, this event helps explain the next stage of the timeline by showing God’s judgment, provision, promise, or leadership at a specific point in the biblical story. Later biblical writers often return to these themes when they interpret creation, covenant, exodus, conquest, worship, faith, and kingship.",
+    "historicalNotes": null,
+    "crossReferences": [],
+    "prevEvent": "israel-enslaved-in-egypt",
+    "nextEvent": "moses-flees-to-midian"
+  },
+  {
+    "id": "moses-flees-to-midian",
+    "name": "Moses Flees to Midian",
+    "order": 29,
+    "date": "approx. 1486 BC",
+    "dateSort": -1486,
+    "datePrecision": "traditional",
+    "era": "Exodus & Wilderness",
+    "book": "exodus",
+    "chapter": 2,
+    "verseStart": 11,
+    "verseEnd": 25,
+    "reference": "Exodus 2:11-25",
+    "location": {
+      "placeId": "midian",
+      "name": "Midian",
+      "modernCountry": "northwestern Arabia region",
+      "lat": null,
+      "lng": null
+    },
+    "mainPeople": [
+      "moses",
+      "jethro"
+    ],
+    "relatedPeople": [
+      "god"
+    ],
+    "relatedPlaces": [
+      "egypt",
+      "midian"
+    ],
+    "relatedEvents": [
+      "birth-of-moses",
+      "burning-bush"
+    ],
+    "keywords": [
+      "Moses",
+      "Midian",
+      "Jethro",
+      "exile"
+    ],
+    "summary": "After killing an Egyptian who was beating a Hebrew, Moses flees from Pharaoh to Midian. There he helps Jethro’s daughters, marries into Jethro’s family, and remains while Israel groans under slavery.",
+    "longDescription": "After killing an Egyptian who was beating a Hebrew, Moses flees from Pharaoh to Midian. There he helps Jethro’s daughters, marries into Jethro’s family, and remains while Israel groans under slavery.\n\nThe biblical text (Exodus 2:11-25) places moses flees to midian in the setting of Midian, Egypt and connects it with Moses, Jethro, God. The record keeps to the details supplied by Scripture: the action, the response of faith or rebellion, and the way the event moves the covenant story forward.\n\nWithin Exodus & Wilderness, this event helps explain the next stage of the timeline by showing God’s judgment, provision, promise, or leadership at a specific point in the biblical story. Later biblical writers often return to these themes when they interpret creation, covenant, exodus, conquest, worship, faith, and kingship.",
+    "historicalNotes": null,
+    "crossReferences": [],
+    "prevEvent": "birth-of-moses",
+    "nextEvent": "burning-bush"
+  },
+  {
+    "id": "burning-bush",
+    "name": "The Burning Bush",
+    "order": 30,
+    "date": "approx. 1446 BC",
+    "dateSort": -1446.9,
+    "datePrecision": "traditional",
+    "era": "Exodus & Wilderness",
+    "book": "exodus",
+    "chapter": 3,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Exodus 3-4",
+    "location": {
+      "placeId": "mount-sinai",
+      "name": "Mount Sinai",
+      "modernCountry": "Egypt (traditional Jebel Musa)",
+      "lat": 28.54,
+      "lng": 33.97
+    },
+    "mainPeople": [
+      "moses",
+      "god",
+      "aaron"
+    ],
+    "relatedPeople": [
+      "jethro"
+    ],
+    "relatedPlaces": [
+      "midian",
+      "mount-sinai",
+      "egypt"
+    ],
+    "relatedEvents": [
+      "moses-flees-to-midian",
+      "ten-plagues"
+    ],
+    "keywords": [
+      "burning bush",
+      "YHWH",
+      "Moses",
+      "calling"
+    ],
+    "summary": "God appears to Moses in a burning bush near the mountain of God and reveals his covenant name. Moses is commissioned to return to Egypt, confront Pharaoh, and lead Israel out.",
+    "longDescription": "God appears to Moses in a burning bush near the mountain of God and reveals his covenant name. Moses is commissioned to return to Egypt, confront Pharaoh, and lead Israel out.\n\nThe biblical text (Exodus 3-4) places the burning bush in the setting of Mount Sinai, Midian, Egypt and connects it with Moses, God, Aaron, Jethro. The record keeps to the details supplied by Scripture: the action, the response of faith or rebellion, and the way the event moves the covenant story forward.\n\nWithin Exodus & Wilderness, this event helps explain the next stage of the timeline by showing God’s judgment, provision, promise, or leadership at a specific point in the biblical story. Later biblical writers often return to these themes when they interpret creation, covenant, exodus, conquest, worship, faith, and kingship.",
+    "historicalNotes": "Scholarly opinion: The traditional identification of Mount Sinai with Jebel Musa is ancient but not certain; other Sinai and northwest Arabian locations have been proposed.",
+    "crossReferences": [],
+    "prevEvent": "moses-flees-to-midian",
+    "nextEvent": "ten-plagues"
+  },
+  {
+    "id": "ten-plagues",
+    "name": "The Ten Plagues",
+    "order": 31,
+    "date": "approx. 1446 BC",
+    "dateSort": -1446.8,
+    "datePrecision": "traditional",
+    "era": "Exodus & Wilderness",
+    "book": "exodus",
+    "chapter": 7,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Exodus 7-11",
+    "location": {
+      "placeId": "egypt",
+      "name": "Egypt",
+      "modernCountry": "Egypt",
+      "lat": 26.82,
+      "lng": 30.8
+    },
+    "mainPeople": [
+      "moses",
+      "aaron",
+      "god"
+    ],
+    "relatedPeople": [
+      "miriam"
+    ],
+    "relatedPlaces": [
+      "egypt",
+      "goshen"
+    ],
+    "relatedEvents": [
+      "burning-bush",
+      "first-passover"
+    ],
+    "keywords": [
+      "plagues",
+      "Pharaoh",
+      "judgment",
+      "Egypt"
+    ],
+    "summary": "Through Moses and Aaron, God strikes Egypt with ten plagues that expose Pharaoh’s resistance and display divine power. The judgments distinguish Israel from Egypt and lead toward the Passover.",
+    "longDescription": "Through Moses and Aaron, God strikes Egypt with ten plagues that expose Pharaoh’s resistance and display divine power. The judgments distinguish Israel from Egypt and lead toward the Passover.\n\nThe biblical text (Exodus 7-11) places the ten plagues in the setting of Egypt, Goshen and connects it with Moses, Aaron, God, Miriam. The record keeps to the details supplied by Scripture: the action, the response of faith or rebellion, and the way the event moves the covenant story forward.\n\nWithin Exodus & Wilderness, this event helps explain the next stage of the timeline by showing God’s judgment, provision, promise, or leadership at a specific point in the biblical story. Later biblical writers often return to these themes when they interpret creation, covenant, exodus, conquest, worship, faith, and kingship.",
+    "historicalNotes": "Scholarly opinion: Some interpreters seek naturalistic Egyptian plague sequences, while the biblical text presents them primarily as divine judgments against Pharaoh and Egypt’s gods.",
+    "crossReferences": [],
+    "prevEvent": "burning-bush",
+    "nextEvent": "first-passover"
+  },
+  {
+    "id": "first-passover",
+    "name": "The First Passover",
+    "order": 32,
+    "date": "approx. 1446 BC",
+    "dateSort": -1446.7,
     "datePrecision": "traditional",
     "era": "Exodus & Wilderness",
     "book": "exodus",
     "chapter": 12,
-    "verseStart": 31,
-    "verseEnd": 42,
-    "reference": "Exodus 12:31-42",
-    "location": { "placeId": "egypt", "name": "Egypt", "modernCountry": "Egypt", "lat": null, "lng": null },
-    "mainPeople": ["moses", "god"],
-    "relatedPeople": ["joseph"],
-    "relatedPlaces": ["egypt", "mount-sinai"],
-    "relatedEvents": ["joseph-egypt", "ten-commandments"],
-    "keywords": ["exodus", "moses", "passover", "deliverance"],
-    "summary": "God delivers Israel from slavery in Egypt through Moses after the Passover judgment.",
-    "longDescription": "After generations in Egypt, Israel is enslaved and cries out to God. Through Moses, God confronts Pharaoh with signs and judgments, culminating in the Passover.\n\nIsrael leaves Egypt as a redeemed people, beginning the journey toward Sinai and the land promised to Abraham.",
-    "historicalNotes": "Traditional early-date chronology places the exodus in the fifteenth century BC, while other chronologies propose later dates.",
-    "crossReferences": ["Exodus 20:2", "Psalm 78", "Hebrews 11:27-29"],
-    "prevEvent": "joseph-egypt",
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Exodus 12",
+    "location": {
+      "placeId": "egypt",
+      "name": "Egypt",
+      "modernCountry": "Egypt",
+      "lat": 26.82,
+      "lng": 30.8
+    },
+    "mainPeople": [
+      "moses",
+      "aaron",
+      "god"
+    ],
+    "relatedPeople": [
+      "miriam"
+    ],
+    "relatedPlaces": [
+      "egypt",
+      "goshen"
+    ],
+    "relatedEvents": [
+      "ten-plagues",
+      "red-sea-crossing"
+    ],
+    "keywords": [
+      "Passover",
+      "lamb",
+      "deliverance",
+      "Egypt"
+    ],
+    "summary": "Israel marks its doors with the blood of the Passover lamb while God judges Egypt’s firstborn. The night becomes a lasting memorial of deliverance from slavery.",
+    "longDescription": "Israel marks its doors with the blood of the Passover lamb while God judges Egypt’s firstborn. The night becomes a lasting memorial of deliverance from slavery.\n\nThe biblical text (Exodus 12) places the first passover in the setting of Egypt, Goshen and connects it with Moses, Aaron, God, Miriam. The record keeps to the details supplied by Scripture: the action, the response of faith or rebellion, and the way the event moves the covenant story forward.\n\nWithin Exodus & Wilderness, this event helps explain the next stage of the timeline by showing God’s judgment, provision, promise, or leadership at a specific point in the biblical story. Later biblical writers often return to these themes when they interpret creation, covenant, exodus, conquest, worship, faith, and kingship.",
+    "historicalNotes": "Historical reconstruction: Passover is presented as Israel’s founding deliverance meal, later embedded in Israel’s annual worship calendar. Scholarly opinion: The traditional early Exodus date is approx. 1446 BC, while a late-date alternative places the Exodus in the thirteenth century BC.",
+    "crossReferences": [],
+    "prevEvent": "ten-plagues",
+    "nextEvent": "red-sea-crossing"
+  },
+  {
+    "id": "red-sea-crossing",
+    "name": "The Red Sea Crossing",
+    "order": 33,
+    "date": "approx. 1446 BC",
+    "dateSort": -1446.6,
+    "datePrecision": "traditional",
+    "era": "Exodus & Wilderness",
+    "book": "exodus",
+    "chapter": 14,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Exodus 14",
+    "location": {
+      "placeId": "egypt",
+      "name": "Egypt",
+      "modernCountry": "Egypt",
+      "lat": 26.82,
+      "lng": 30.8
+    },
+    "mainPeople": [
+      "moses",
+      "god",
+      "miriam"
+    ],
+    "relatedPeople": [
+      "aaron"
+    ],
+    "relatedPlaces": [
+      "egypt"
+    ],
+    "relatedEvents": [
+      "first-passover",
+      "manna-and-quail"
+    ],
+    "keywords": [
+      "Red Sea",
+      "deliverance",
+      "Pharaoh",
+      "Moses"
+    ],
+    "summary": "Pharaoh pursues Israel after the exodus, trapping them by the sea. God parts the waters for Israel and brings the sea back over the Egyptian army.",
+    "longDescription": "Pharaoh pursues Israel after the exodus, trapping them by the sea. God parts the waters for Israel and brings the sea back over the Egyptian army.\n\nThe biblical text (Exodus 14) places the red sea crossing in the setting of Egypt and connects it with Moses, God, Miriam, Aaron. The record keeps to the details supplied by Scripture: the action, the response of faith or rebellion, and the way the event moves the covenant story forward.\n\nWithin Exodus & Wilderness, this event helps explain the next stage of the timeline by showing God’s judgment, provision, promise, or leadership at a specific point in the biblical story. Later biblical writers often return to these themes when they interpret creation, covenant, exodus, conquest, worship, faith, and kingship.",
+    "historicalNotes": "Scholarly opinion: The Hebrew phrase can be rendered Sea of Reeds, and proposed crossing locations vary; the text emphasizes deliverance rather than providing a modern site marker. Scholarly opinion: The Exodus is often dated by an early chronology to approx. 1446 BC, while a late-date alternative places it in the thirteenth century BC.",
+    "crossReferences": [],
+    "prevEvent": "first-passover",
+    "nextEvent": "manna-and-quail"
+  },
+  {
+    "id": "manna-and-quail",
+    "name": "Manna and Quail",
+    "order": 34,
+    "date": "approx. 1446 BC",
+    "dateSort": -1446.5,
+    "datePrecision": "traditional",
+    "era": "Exodus & Wilderness",
+    "book": "exodus",
+    "chapter": 16,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Exodus 16",
+    "location": {
+      "placeId": "mount-sinai",
+      "name": "Mount Sinai",
+      "modernCountry": "Egypt (traditional Jebel Musa)",
+      "lat": 28.54,
+      "lng": 33.97
+    },
+    "mainPeople": [
+      "moses",
+      "aaron",
+      "god"
+    ],
+    "relatedPeople": [
+      "miriam"
+    ],
+    "relatedPlaces": [
+      "mount-sinai"
+    ],
+    "relatedEvents": [
+      "red-sea-crossing",
+      "ten-commandments"
+    ],
+    "keywords": [
+      "manna",
+      "quail",
+      "wilderness",
+      "provision"
+    ],
+    "summary": "In the wilderness, Israel grumbles for food, and God provides quail and daily manna. The provision teaches Israel to depend on God and prepares them for Sabbath obedience.",
+    "longDescription": "In the wilderness, Israel grumbles for food, and God provides quail and daily manna. The provision teaches Israel to depend on God and prepares them for Sabbath obedience.\n\nThe biblical text (Exodus 16) places manna and quail in the setting of Mount Sinai and connects it with Moses, Aaron, God, Miriam. The record keeps to the details supplied by Scripture: the action, the response of faith or rebellion, and the way the event moves the covenant story forward.\n\nWithin Exodus & Wilderness, this event helps explain the next stage of the timeline by showing God’s judgment, provision, promise, or leadership at a specific point in the biblical story. Later biblical writers often return to these themes when they interpret creation, covenant, exodus, conquest, worship, faith, and kingship.",
+    "historicalNotes": null,
+    "crossReferences": [],
+    "prevEvent": "red-sea-crossing",
     "nextEvent": "ten-commandments"
   },
   {
     "id": "ten-commandments",
     "name": "The Ten Commandments",
-    "order": 11,
-    "date": "approx. 1446 BC (traditional)",
-    "dateSort": -1445,
+    "order": 35,
+    "date": "approx. 1446 BC",
+    "dateSort": -1446.4,
     "datePrecision": "traditional",
     "era": "Exodus & Wilderness",
     "book": "exodus",
-    "chapter": 20,
-    "verseStart": 1,
-    "verseEnd": 17,
-    "reference": "Exodus 20:1-17",
-    "location": { "placeId": "mount-sinai", "name": "Mount Sinai", "modernCountry": "traditional Sinai region", "lat": null, "lng": null },
-    "mainPeople": ["moses", "god"],
-    "relatedPeople": [],
-    "relatedPlaces": ["mount-sinai"],
-    "relatedEvents": ["exodus-egypt", "davids-reign"],
-    "keywords": ["law", "sinai", "commandments", "covenant"],
-    "summary": "God gives Israel the covenant law at Sinai, beginning with the Ten Commandments.",
-    "longDescription": "At Mount Sinai, God speaks the words of the covenant to Israel. The commandments define worship of the Lord and justice toward neighbor for the redeemed people.\n\nThe law follows deliverance, showing Israel how to live as God's covenant nation after being brought out of Egypt.",
-    "historicalNotes": null,
-    "crossReferences": ["Deuteronomy 5:6-21", "Matthew 5:17-20", "Romans 13:8-10"],
-    "prevEvent": "exodus-egypt",
-    "nextEvent": "davids-reign"
+    "chapter": 19,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Exodus 19-20",
+    "location": {
+      "placeId": "mount-sinai",
+      "name": "Mount Sinai",
+      "modernCountry": "Egypt (traditional Jebel Musa)",
+      "lat": 28.54,
+      "lng": 33.97
+    },
+    "mainPeople": [
+      "moses",
+      "god",
+      "aaron"
+    ],
+    "relatedPeople": [
+      "miriam"
+    ],
+    "relatedPlaces": [
+      "mount-sinai"
+    ],
+    "relatedEvents": [
+      "manna-and-quail",
+      "golden-calf"
+    ],
+    "keywords": [
+      "Sinai",
+      "law",
+      "commandments",
+      "covenant"
+    ],
+    "summary": "Israel camps at Sinai, where God descends on the mountain and gives the covenant law. The Ten Commandments summarize Israel’s obligations to God and neighbor.",
+    "longDescription": "Israel camps at Sinai, where God descends on the mountain and gives the covenant law. The Ten Commandments summarize Israel’s obligations to God and neighbor.\n\nThe biblical text (Exodus 19-20) places the ten commandments in the setting of Mount Sinai and connects it with Moses, God, Aaron, Miriam. The record keeps to the details supplied by Scripture: the action, the response of faith or rebellion, and the way the event moves the covenant story forward.\n\nWithin Exodus & Wilderness, this event helps explain the next stage of the timeline by showing God’s judgment, provision, promise, or leadership at a specific point in the biblical story. Later biblical writers often return to these themes when they interpret creation, covenant, exodus, conquest, worship, faith, and kingship.",
+    "historicalNotes": "Archaeological evidence: Ancient Near Eastern treaty forms provide useful background for covenant structure, though Israel’s covenant is framed as revelation from the Lord at Sinai.",
+    "crossReferences": [
+      "Deuteronomy 5",
+      "Matthew 22:36-40",
+      "Romans 13:8-10"
+    ],
+    "prevEvent": "manna-and-quail",
+    "nextEvent": "golden-calf"
   },
   {
-    "id": "davids-reign",
-    "name": "David's Reign",
-    "order": 12,
-    "date": "approx. 1010-970 BC",
-    "dateSort": -1010,
-    "datePrecision": "approximate",
-    "era": "United Kingdom",
-    "book": "2-samuel",
-    "chapter": 5,
-    "verseStart": 1,
-    "verseEnd": 5,
-    "reference": "2 Samuel 5:1-5; 7:1-17",
-    "location": { "placeId": "jerusalem", "name": "Jerusalem", "modernCountry": "Israel/Palestinian territories", "lat": 31.778,
-      "lng": 35.235 },
-    "mainPeople": ["david", "god"],
-    "relatedPeople": ["moses"],
-    "relatedPlaces": ["jerusalem", "bethlehem"],
-    "relatedEvents": ["ten-commandments"],
-    "keywords": ["david", "king", "jerusalem", "covenant"],
-    "summary": "David rules Israel from Jerusalem and receives the covenant promise of an enduring dynasty.",
-    "longDescription": "David is anointed king over all Israel and establishes Jerusalem as his capital. His reign marks the high point of the united monarchy and shapes Israel's worship, politics, and hope.\n\nIn 2 Samuel 7, God promises David a house and kingdom, creating the expectation of a future Davidic king.",
-    "historicalNotes": "David is commonly placed in the early tenth century BC. Archaeological discussions continue around the scale of the united monarchy.",
-    "crossReferences": ["Psalm 89", "Matthew 1:1", "Luke 1:32-33"],
+    "id": "golden-calf",
+    "name": "The Golden Calf",
+    "order": 36,
+    "date": "approx. 1446 BC",
+    "dateSort": -1446.3,
+    "datePrecision": "traditional",
+    "era": "Exodus & Wilderness",
+    "book": "exodus",
+    "chapter": 32,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Exodus 32",
+    "location": {
+      "placeId": "mount-sinai",
+      "name": "Mount Sinai",
+      "modernCountry": "Egypt (traditional Jebel Musa)",
+      "lat": 28.54,
+      "lng": 33.97
+    },
+    "mainPeople": [
+      "aaron",
+      "moses",
+      "god"
+    ],
+    "relatedPeople": [
+      "miriam"
+    ],
+    "relatedPlaces": [
+      "mount-sinai"
+    ],
+    "relatedEvents": [
+      "ten-commandments",
+      "tabernacle-built"
+    ],
+    "keywords": [
+      "golden calf",
+      "idolatry",
+      "Sinai",
+      "intercession"
+    ],
+    "summary": "While Moses is on the mountain, Israel makes a golden calf and worships it. Moses intercedes for the people, judges the sin, and the covenant crisis reveals both Israel’s rebellion and God’s mercy.",
+    "longDescription": "While Moses is on the mountain, Israel makes a golden calf and worships it. Moses intercedes for the people, judges the sin, and the covenant crisis reveals both Israel’s rebellion and God’s mercy.\n\nThe biblical text (Exodus 32) places the golden calf in the setting of Mount Sinai and connects it with Aaron, Moses, God, Miriam. The record keeps to the details supplied by Scripture: the action, the response of faith or rebellion, and the way the event moves the covenant story forward.\n\nWithin Exodus & Wilderness, this event helps explain the next stage of the timeline by showing God’s judgment, provision, promise, or leadership at a specific point in the biblical story. Later biblical writers often return to these themes when they interpret creation, covenant, exodus, conquest, worship, faith, and kingship.",
+    "historicalNotes": null,
+    "crossReferences": [],
     "prevEvent": "ten-commandments",
-    "nextEvent": null
+    "nextEvent": "tabernacle-built"
+  },
+  {
+    "id": "tabernacle-built",
+    "name": "The Tabernacle Built",
+    "order": 37,
+    "date": "approx. 1446 BC",
+    "dateSort": -1446.2,
+    "datePrecision": "traditional",
+    "era": "Exodus & Wilderness",
+    "book": "exodus",
+    "chapter": 35,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Exodus 35-40",
+    "location": {
+      "placeId": "mount-sinai",
+      "name": "Mount Sinai",
+      "modernCountry": "Egypt (traditional Jebel Musa)",
+      "lat": 28.54,
+      "lng": 33.97
+    },
+    "mainPeople": [
+      "moses",
+      "aaron",
+      "god"
+    ],
+    "relatedPeople": [
+      "miriam"
+    ],
+    "relatedPlaces": [
+      "mount-sinai"
+    ],
+    "relatedEvents": [
+      "golden-calf",
+      "twelve-spies"
+    ],
+    "keywords": [
+      "tabernacle",
+      "worship",
+      "glory",
+      "Sinai"
+    ],
+    "summary": "Israel brings offerings and skilled work for the tabernacle exactly as God commanded Moses. When the work is completed, the glory of the Lord fills the tabernacle.",
+    "longDescription": "Israel brings offerings and skilled work for the tabernacle exactly as God commanded Moses. When the work is completed, the glory of the Lord fills the tabernacle.\n\nThe biblical text (Exodus 35-40) places the tabernacle built in the setting of Mount Sinai and connects it with Moses, Aaron, God, Miriam. The record keeps to the details supplied by Scripture: the action, the response of faith or rebellion, and the way the event moves the covenant story forward.\n\nWithin Exodus & Wilderness, this event helps explain the next stage of the timeline by showing God’s judgment, provision, promise, or leadership at a specific point in the biblical story. Later biblical writers often return to these themes when they interpret creation, covenant, exodus, conquest, worship, faith, and kingship.",
+    "historicalNotes": "Historical reconstruction: Portable shrines and tent sanctuaries are known in ancient Near Eastern settings, but the tabernacle’s meaning is governed by the biblical worship instructions.",
+    "crossReferences": [],
+    "prevEvent": "golden-calf",
+    "nextEvent": "twelve-spies"
+  },
+  {
+    "id": "twelve-spies",
+    "name": "The Twelve Spies",
+    "order": 38,
+    "date": "approx. 1445 BC",
+    "dateSort": -1445,
+    "datePrecision": "traditional",
+    "era": "Exodus & Wilderness",
+    "book": null,
+    "chapter": 13,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Numbers 13-14",
+    "location": {
+      "placeId": "kadesh-barnea",
+      "name": "Kadesh-barnea",
+      "modernCountry": "uncertain, Negev/Sinai border region",
+      "lat": null,
+      "lng": null
+    },
+    "mainPeople": [
+      "moses",
+      "joshua",
+      "caleb"
+    ],
+    "relatedPeople": [
+      "aaron",
+      "miriam"
+    ],
+    "relatedPlaces": [
+      "kadesh-barnea",
+      "canaan"
+    ],
+    "relatedEvents": [
+      "tabernacle-built",
+      "wilderness-wanderings"
+    ],
+    "keywords": [
+      "spies",
+      "Canaan",
+      "Caleb",
+      "Joshua"
+    ],
+    "summary": "Twelve spies explore Canaan, but ten spread fear while Joshua and Caleb urge trust in God. Israel refuses to enter the land, and God sentences that generation to wander in the wilderness.",
+    "longDescription": "Twelve spies explore Canaan, but ten spread fear while Joshua and Caleb urge trust in God. Israel refuses to enter the land, and God sentences that generation to wander in the wilderness.\n\nThe biblical text (Numbers 13-14) places the twelve spies in the setting of Kadesh-barnea, Canaan and connects it with Moses, Joshua, Caleb, Aaron, Miriam. The record keeps to the details supplied by Scripture: the action, the response of faith or rebellion, and the way the event moves the covenant story forward.\n\nWithin Exodus & Wilderness, this event helps explain the next stage of the timeline by showing God’s judgment, provision, promise, or leadership at a specific point in the biblical story. Later biblical writers often return to these themes when they interpret creation, covenant, exodus, conquest, worship, faith, and kingship.",
+    "historicalNotes": "Historical reconstruction: Kadesh-barnea is usually placed in the Negev/Sinai border region, but exact identification remains debated.",
+    "crossReferences": [],
+    "prevEvent": "tabernacle-built",
+    "nextEvent": "wilderness-wanderings"
+  },
+  {
+    "id": "wilderness-wanderings",
+    "name": "Wilderness Wanderings",
+    "order": 39,
+    "date": "approx. 1445-1406 BC",
+    "dateSort": -1444,
+    "datePrecision": "traditional",
+    "era": "Exodus & Wilderness",
+    "book": null,
+    "chapter": 15,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Numbers 15-36",
+    "location": {
+      "placeId": "kadesh-barnea",
+      "name": "Kadesh-barnea",
+      "modernCountry": "uncertain, Negev/Sinai border region",
+      "lat": null,
+      "lng": null
+    },
+    "mainPeople": [
+      "moses",
+      "aaron",
+      "miriam",
+      "god"
+    ],
+    "relatedPeople": [
+      "joshua",
+      "caleb"
+    ],
+    "relatedPlaces": [
+      "kadesh-barnea",
+      "moab",
+      "mount-sinai"
+    ],
+    "relatedEvents": [
+      "twelve-spies",
+      "bronze-serpent"
+    ],
+    "keywords": [
+      "wilderness",
+      "wandering",
+      "Numbers",
+      "discipline"
+    ],
+    "summary": "Israel spends decades in the wilderness under God’s discipline and care. Numbers records laws, rebellions, deaths, victories, and preparations for a new generation to enter Canaan.",
+    "longDescription": "Israel spends decades in the wilderness under God’s discipline and care. Numbers records laws, rebellions, deaths, victories, and preparations for a new generation to enter Canaan.\n\nThe biblical text (Numbers 15-36) places wilderness wanderings in the setting of Kadesh-barnea, Moab, Mount Sinai and connects it with Moses, Aaron, Miriam, God, Joshua, Caleb. The record keeps to the details supplied by Scripture: the action, the response of faith or rebellion, and the way the event moves the covenant story forward.\n\nWithin Exodus & Wilderness, this event helps explain the next stage of the timeline by showing God’s judgment, provision, promise, or leadership at a specific point in the biblical story. Later biblical writers often return to these themes when they interpret creation, covenant, exodus, conquest, worship, faith, and kingship.",
+    "historicalNotes": null,
+    "crossReferences": [],
+    "prevEvent": "twelve-spies",
+    "nextEvent": "bronze-serpent"
+  },
+  {
+    "id": "bronze-serpent",
+    "name": "The Bronze Serpent",
+    "order": 40,
+    "date": "approx. 1407 BC",
+    "dateSort": -1407,
+    "datePrecision": "traditional",
+    "era": "Exodus & Wilderness",
+    "book": null,
+    "chapter": 21,
+    "verseStart": 4,
+    "verseEnd": 9,
+    "reference": "Numbers 21:4-9",
+    "location": {
+      "placeId": "moab",
+      "name": "Moab",
+      "modernCountry": "Jordan",
+      "lat": 31.5,
+      "lng": 35.75
+    },
+    "mainPeople": [
+      "moses",
+      "god"
+    ],
+    "relatedPeople": [
+      "aaron"
+    ],
+    "relatedPlaces": [
+      "moab"
+    ],
+    "relatedEvents": [
+      "wilderness-wanderings",
+      "balaam"
+    ],
+    "keywords": [
+      "bronze serpent",
+      "healing",
+      "wilderness",
+      "faith"
+    ],
+    "summary": "When Israel complains again, venomous serpents strike the camp. God commands Moses to lift up a bronze serpent, and those who look at it live.",
+    "longDescription": "When Israel complains again, venomous serpents strike the camp. God commands Moses to lift up a bronze serpent, and those who look at it live.\n\nThe biblical text (Numbers 21:4-9) places the bronze serpent in the setting of Moab and connects it with Moses, God, Aaron. The record keeps to the details supplied by Scripture: the action, the response of faith or rebellion, and the way the event moves the covenant story forward.\n\nWithin Exodus & Wilderness, this event helps explain the next stage of the timeline by showing God’s judgment, provision, promise, or leadership at a specific point in the biblical story. Later biblical writers often return to these themes when they interpret creation, covenant, exodus, conquest, worship, faith, and kingship.",
+    "historicalNotes": null,
+    "crossReferences": [
+      "John 3:14-15",
+      "2 Kings 18:4"
+    ],
+    "prevEvent": "wilderness-wanderings",
+    "nextEvent": "balaam"
+  },
+  {
+    "id": "balaam",
+    "name": "Balaam",
+    "order": 41,
+    "date": "approx. 1407 BC",
+    "dateSort": -1406.5,
+    "datePrecision": "traditional",
+    "era": "Exodus & Wilderness",
+    "book": null,
+    "chapter": 22,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Numbers 22-24",
+    "location": {
+      "placeId": "moab",
+      "name": "Moab",
+      "modernCountry": "Jordan",
+      "lat": 31.5,
+      "lng": 35.75
+    },
+    "mainPeople": [
+      "balaam",
+      "god"
+    ],
+    "relatedPeople": [
+      "moses"
+    ],
+    "relatedPlaces": [
+      "moab"
+    ],
+    "relatedEvents": [
+      "bronze-serpent",
+      "death-of-moses"
+    ],
+    "keywords": [
+      "Balaam",
+      "Balak",
+      "Moab",
+      "blessing"
+    ],
+    "summary": "Balak of Moab hires Balaam to curse Israel, but God turns the intended curse into blessing. Balaam’s oracles affirm that Israel’s future rests under God’s sovereign purpose.",
+    "longDescription": "Balak of Moab hires Balaam to curse Israel, but God turns the intended curse into blessing. Balaam’s oracles affirm that Israel’s future rests under God’s sovereign purpose.\n\nThe biblical text (Numbers 22-24) places balaam in the setting of Moab and connects it with Balaam, God, Moses. The record keeps to the details supplied by Scripture: the action, the response of faith or rebellion, and the way the event moves the covenant story forward.\n\nWithin Exodus & Wilderness, this event helps explain the next stage of the timeline by showing God’s judgment, provision, promise, or leadership at a specific point in the biblical story. Later biblical writers often return to these themes when they interpret creation, covenant, exodus, conquest, worship, faith, and kingship.",
+    "historicalNotes": "Archaeological evidence: The Deir Alla inscription mentions a seer named Balaam son of Beor, showing that a Balaam tradition was known in the region, though the inscription is not the biblical text itself.",
+    "crossReferences": [],
+    "prevEvent": "bronze-serpent",
+    "nextEvent": "death-of-moses"
+  },
+  {
+    "id": "death-of-moses",
+    "name": "Death of Moses",
+    "order": 42,
+    "date": "approx. 1406 BC",
+    "dateSort": -1406,
+    "datePrecision": "traditional",
+    "era": "Exodus & Wilderness",
+    "book": null,
+    "chapter": 34,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Deuteronomy 34",
+    "location": {
+      "placeId": "moab",
+      "name": "Moab",
+      "modernCountry": "Jordan",
+      "lat": 31.5,
+      "lng": 35.75
+    },
+    "mainPeople": [
+      "moses",
+      "god",
+      "joshua"
+    ],
+    "relatedPeople": [
+      "aaron",
+      "miriam"
+    ],
+    "relatedPlaces": [
+      "moab"
+    ],
+    "relatedEvents": [
+      "balaam",
+      "joshua-commissioned"
+    ],
+    "keywords": [
+      "Moses",
+      "death",
+      "Nebo",
+      "Joshua"
+    ],
+    "summary": "Moses views the promised land from Moab but dies before entering it. The text honors him as the prophet whom the Lord knew face to face and points to Joshua as his successor.",
+    "longDescription": "Moses views the promised land from Moab but dies before entering it. The text honors him as the prophet whom the Lord knew face to face and points to Joshua as his successor.\n\nThe biblical text (Deuteronomy 34) places death of moses in the setting of Moab and connects it with Moses, God, Joshua, Aaron, Miriam. The record keeps to the details supplied by Scripture: the action, the response of faith or rebellion, and the way the event moves the covenant story forward.\n\nWithin Exodus & Wilderness, this event helps explain the next stage of the timeline by showing God’s judgment, provision, promise, or leadership at a specific point in the biblical story. Later biblical writers often return to these themes when they interpret creation, covenant, exodus, conquest, worship, faith, and kingship.",
+    "historicalNotes": "Historical reconstruction: Mount Nebo in Moab is the traditional region associated with Moses viewing the land, though Deuteronomy says his burial place was unknown.",
+    "crossReferences": [],
+    "prevEvent": "balaam",
+    "nextEvent": "joshua-commissioned"
+  },
+  {
+    "id": "joshua-commissioned",
+    "name": "Joshua Commissioned",
+    "order": 43,
+    "date": "approx. 1406 BC",
+    "dateSort": -1405.9,
+    "datePrecision": "traditional",
+    "era": "Conquest of Canaan",
+    "book": null,
+    "chapter": 1,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Joshua 1",
+    "location": {
+      "placeId": "jordan-river",
+      "name": "Jordan River",
+      "modernCountry": "Israel/Jordan/West Bank",
+      "lat": 31.84,
+      "lng": 35.55
+    },
+    "mainPeople": [
+      "joshua",
+      "god"
+    ],
+    "relatedPeople": [
+      "moses",
+      "caleb"
+    ],
+    "relatedPlaces": [
+      "jordan-river",
+      "canaan"
+    ],
+    "relatedEvents": [
+      "death-of-moses",
+      "crossing-the-jordan"
+    ],
+    "keywords": [
+      "Joshua",
+      "commission",
+      "courage",
+      "law"
+    ],
+    "summary": "After Moses’ death, God commissions Joshua to lead Israel across the Jordan. Joshua is commanded to be strong and courageous and to meditate on the law.",
+    "longDescription": "After Moses’ death, God commissions Joshua to lead Israel across the Jordan. Joshua is commanded to be strong and courageous and to meditate on the law.\n\nThe biblical text (Joshua 1) places joshua commissioned in the setting of Jordan River, Canaan and connects it with Joshua, God, Moses, Caleb. The record keeps to the details supplied by Scripture: the action, the response of faith or rebellion, and the way the event moves the covenant story forward.\n\nWithin Conquest of Canaan, this event helps explain the next stage of the timeline by showing God’s judgment, provision, promise, or leadership at a specific point in the biblical story. Later biblical writers often return to these themes when they interpret creation, covenant, exodus, conquest, worship, faith, and kingship.",
+    "historicalNotes": "Historical reconstruction: The early-date chronology places the conquest around 1406 BC; a late-date Exodus model moves related events into the thirteenth century BC.",
+    "crossReferences": [],
+    "prevEvent": "death-of-moses",
+    "nextEvent": "crossing-the-jordan"
+  },
+  {
+    "id": "crossing-the-jordan",
+    "name": "Crossing the Jordan",
+    "order": 44,
+    "date": "approx. 1406 BC",
+    "dateSort": -1405.8,
+    "datePrecision": "traditional",
+    "era": "Conquest of Canaan",
+    "book": null,
+    "chapter": 3,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Joshua 3-4",
+    "location": {
+      "placeId": "jordan-river",
+      "name": "Jordan River",
+      "modernCountry": "Israel/Jordan/West Bank",
+      "lat": 31.84,
+      "lng": 35.55
+    },
+    "mainPeople": [
+      "joshua",
+      "god"
+    ],
+    "relatedPeople": [
+      "caleb"
+    ],
+    "relatedPlaces": [
+      "jordan-river",
+      "gilgal"
+    ],
+    "relatedEvents": [
+      "joshua-commissioned",
+      "fall-of-jericho"
+    ],
+    "keywords": [
+      "Jordan",
+      "crossing",
+      "Gilgal",
+      "memorial"
+    ],
+    "summary": "The priests carry the ark into the Jordan, and the waters stop so Israel can cross on dry ground. Twelve stones are set up as a memorial at Gilgal.",
+    "longDescription": "The priests carry the ark into the Jordan, and the waters stop so Israel can cross on dry ground. Twelve stones are set up as a memorial at Gilgal.\n\nThe biblical text (Joshua 3-4) places crossing the jordan in the setting of Jordan River, Gilgal and connects it with Joshua, God, Caleb. The record keeps to the details supplied by Scripture: the action, the response of faith or rebellion, and the way the event moves the covenant story forward.\n\nWithin Conquest of Canaan, this event helps explain the next stage of the timeline by showing God’s judgment, provision, promise, or leadership at a specific point in the biblical story. Later biblical writers often return to these themes when they interpret creation, covenant, exodus, conquest, worship, faith, and kingship.",
+    "historicalNotes": null,
+    "crossReferences": [],
+    "prevEvent": "joshua-commissioned",
+    "nextEvent": "fall-of-jericho"
+  },
+  {
+    "id": "fall-of-jericho",
+    "name": "Fall of Jericho",
+    "order": 45,
+    "date": "approx. 1406 BC",
+    "dateSort": -1405.7,
+    "datePrecision": "traditional",
+    "era": "Conquest of Canaan",
+    "book": null,
+    "chapter": 6,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Joshua 6",
+    "location": {
+      "placeId": "jericho",
+      "name": "Jericho",
+      "modernCountry": "West Bank",
+      "lat": 31.87,
+      "lng": 35.44
+    },
+    "mainPeople": [
+      "joshua",
+      "rahab",
+      "god"
+    ],
+    "relatedPeople": [
+      "caleb"
+    ],
+    "relatedPlaces": [
+      "jericho",
+      "gilgal"
+    ],
+    "relatedEvents": [
+      "crossing-the-jordan",
+      "sun-stands-still"
+    ],
+    "keywords": [
+      "Jericho",
+      "Rahab",
+      "conquest",
+      "walls"
+    ],
+    "summary": "Israel marches around Jericho according to God’s command, and the city falls after the seventh day’s trumpet blast. Rahab and her household are spared because she protected the spies.",
+    "longDescription": "Israel marches around Jericho according to God’s command, and the city falls after the seventh day’s trumpet blast. Rahab and her household are spared because she protected the spies.\n\nThe biblical text (Joshua 6) places fall of jericho in the setting of Jericho, Gilgal and connects it with Joshua, Rahab, God, Caleb. The record keeps to the details supplied by Scripture: the action, the response of faith or rebellion, and the way the event moves the covenant story forward.\n\nWithin Conquest of Canaan, this event helps explain the next stage of the timeline by showing God’s judgment, provision, promise, or leadership at a specific point in the biblical story. Later biblical writers often return to these themes when they interpret creation, covenant, exodus, conquest, worship, faith, and kingship.",
+    "historicalNotes": "Archaeological evidence: Jericho is a real ancient city with complex destruction layers; scholars debate how those layers relate to Joshua 6 and to early versus late conquest chronologies.",
+    "crossReferences": [
+      "Hebrews 11:30",
+      "James 2:25"
+    ],
+    "prevEvent": "crossing-the-jordan",
+    "nextEvent": "sun-stands-still"
+  },
+  {
+    "id": "sun-stands-still",
+    "name": "The Sun Stands Still",
+    "order": 46,
+    "date": "approx. 1406 BC",
+    "dateSort": -1405.6,
+    "datePrecision": "traditional",
+    "era": "Conquest of Canaan",
+    "book": null,
+    "chapter": 10,
+    "verseStart": 1,
+    "verseEnd": 15,
+    "reference": "Joshua 10:1-15",
+    "location": {
+      "placeId": "canaan",
+      "name": "Canaan",
+      "modernCountry": "Israel/Palestinian territories and surrounding region",
+      "lat": null,
+      "lng": null
+    },
+    "mainPeople": [
+      "joshua",
+      "god"
+    ],
+    "relatedPeople": [
+      "caleb"
+    ],
+    "relatedPlaces": [
+      "canaan",
+      "gilgal"
+    ],
+    "relatedEvents": [
+      "fall-of-jericho",
+      "land-divided-among-tribes"
+    ],
+    "keywords": [
+      "Joshua",
+      "sun",
+      "Gibeon",
+      "battle"
+    ],
+    "summary": "When southern kings attack Gibeon, Joshua leads Israel in battle and asks God for extended daylight. The narrative emphasizes that the Lord fought for Israel.",
+    "longDescription": "When southern kings attack Gibeon, Joshua leads Israel in battle and asks God for extended daylight. The narrative emphasizes that the Lord fought for Israel.\n\nThe biblical text (Joshua 10:1-15) places the sun stands still in the setting of Canaan, Gilgal and connects it with Joshua, God, Caleb. The record keeps to the details supplied by Scripture: the action, the response of faith or rebellion, and the way the event moves the covenant story forward.\n\nWithin Conquest of Canaan, this event helps explain the next stage of the timeline by showing God’s judgment, provision, promise, or leadership at a specific point in the biblical story. Later biblical writers often return to these themes when they interpret creation, covenant, exodus, conquest, worship, faith, and kingship.",
+    "historicalNotes": null,
+    "crossReferences": [],
+    "prevEvent": "fall-of-jericho",
+    "nextEvent": "land-divided-among-tribes"
+  },
+  {
+    "id": "land-divided-among-tribes",
+    "name": "Land Divided among the Tribes",
+    "order": 47,
+    "date": "approx. 1406-1390 BC",
+    "dateSort": -1390,
+    "datePrecision": "traditional",
+    "era": "Conquest of Canaan",
+    "book": null,
+    "chapter": 13,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Joshua 13-21",
+    "location": {
+      "placeId": "shiloh",
+      "name": "Shiloh",
+      "modernCountry": "West Bank",
+      "lat": 32.06,
+      "lng": 35.29
+    },
+    "mainPeople": [
+      "joshua",
+      "caleb"
+    ],
+    "relatedPeople": [
+      "god"
+    ],
+    "relatedPlaces": [
+      "canaan",
+      "shiloh",
+      "hebron"
+    ],
+    "relatedEvents": [
+      "sun-stands-still",
+      "joshuas-farewell"
+    ],
+    "keywords": [
+      "land",
+      "tribes",
+      "inheritance",
+      "Shiloh"
+    ],
+    "summary": "Joshua oversees the division of the land among Israel’s tribes, with the tabernacle set up at Shiloh. Caleb receives Hebron, and cities are assigned across the land.",
+    "longDescription": "Joshua oversees the division of the land among Israel’s tribes, with the tabernacle set up at Shiloh. Caleb receives Hebron, and cities are assigned across the land.\n\nThe biblical text (Joshua 13-21) places land divided among the tribes in the setting of Shiloh, Canaan, Hebron and connects it with Joshua, Caleb, God. The record keeps to the details supplied by Scripture: the action, the response of faith or rebellion, and the way the event moves the covenant story forward.\n\nWithin Conquest of Canaan, this event helps explain the next stage of the timeline by showing God’s judgment, provision, promise, or leadership at a specific point in the biblical story. Later biblical writers often return to these themes when they interpret creation, covenant, exodus, conquest, worship, faith, and kingship.",
+    "historicalNotes": "Historical reconstruction: The allotment lists preserve ancient territorial memory, though matching every boundary marker to modern geography is difficult.",
+    "crossReferences": [],
+    "prevEvent": "sun-stands-still",
+    "nextEvent": "joshuas-farewell"
+  },
+  {
+    "id": "joshuas-farewell",
+    "name": "Joshua's Farewell",
+    "order": 48,
+    "date": "approx. 1375 BC",
+    "dateSort": -1375,
+    "datePrecision": "traditional",
+    "era": "Conquest of Canaan",
+    "book": null,
+    "chapter": 23,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Joshua 23-24",
+    "location": {
+      "placeId": "shechem",
+      "name": "Shechem",
+      "modernCountry": "West Bank",
+      "lat": 32.21,
+      "lng": 35.28
+    },
+    "mainPeople": [
+      "joshua",
+      "god"
+    ],
+    "relatedPeople": [
+      "caleb"
+    ],
+    "relatedPlaces": [
+      "shechem",
+      "canaan"
+    ],
+    "relatedEvents": [
+      "land-divided-among-tribes",
+      "cycle-of-the-judges"
+    ],
+    "keywords": [
+      "Joshua",
+      "farewell",
+      "covenant",
+      "Shechem"
+    ],
+    "summary": "Joshua gathers Israel and calls the people to serve the Lord faithfully. At Shechem he rehearses God’s acts and renews the covenant before his death.",
+    "longDescription": "Joshua gathers Israel and calls the people to serve the Lord faithfully. At Shechem he rehearses God’s acts and renews the covenant before his death.\n\nThe biblical text (Joshua 23-24) places joshua's farewell in the setting of Shechem, Canaan and connects it with Joshua, God, Caleb. The record keeps to the details supplied by Scripture: the action, the response of faith or rebellion, and the way the event moves the covenant story forward.\n\nWithin Conquest of Canaan, this event helps explain the next stage of the timeline by showing God’s judgment, provision, promise, or leadership at a specific point in the biblical story. Later biblical writers often return to these themes when they interpret creation, covenant, exodus, conquest, worship, faith, and kingship.",
+    "historicalNotes": null,
+    "crossReferences": [],
+    "prevEvent": "land-divided-among-tribes",
+    "nextEvent": "cycle-of-the-judges"
+  },
+  {
+    "id": "cycle-of-the-judges",
+    "name": "Cycle of the Judges",
+    "order": 49,
+    "date": "approx. 1375-1050 BC",
+    "dateSort": -1374,
+    "datePrecision": "approximate",
+    "era": "The Judges",
+    "book": null,
+    "chapter": 2,
+    "verseStart": 6,
+    "verseEnd": 23,
+    "reference": "Judges 2:6-23",
+    "location": {
+      "placeId": "shiloh",
+      "name": "Shiloh",
+      "modernCountry": "West Bank",
+      "lat": 32.06,
+      "lng": 35.29
+    },
+    "mainPeople": [
+      "god"
+    ],
+    "relatedPeople": [
+      "joshua"
+    ],
+    "relatedPlaces": [
+      "canaan",
+      "shiloh"
+    ],
+    "relatedEvents": [
+      "joshuas-farewell",
+      "deborah-and-barak"
+    ],
+    "keywords": [
+      "judges",
+      "cycle",
+      "apostasy",
+      "deliverance"
+    ],
+    "summary": "After Joshua’s generation dies, Israel repeatedly turns to other gods, suffers oppression, cries out, and receives deliverers. Judges 2 summarizes the pattern that frames the book.",
+    "longDescription": "After Joshua’s generation dies, Israel repeatedly turns to other gods, suffers oppression, cries out, and receives deliverers. Judges 2 summarizes the pattern that frames the book.\n\nThe biblical text (Judges 2:6-23) places cycle of the judges in the setting of Shiloh, Canaan and connects it with God, Joshua. The record keeps to the details supplied by Scripture: the action, the response of faith or rebellion, and the way the event moves the covenant story forward.\n\nWithin The Judges, this event helps explain the next stage of the timeline by showing God’s judgment, provision, promise, or leadership at a specific point in the biblical story. Later biblical writers often return to these themes when they interpret creation, covenant, exodus, conquest, worship, faith, and kingship.",
+    "historicalNotes": "Historical reconstruction: Judges depicts decentralized tribal life before monarchy, matching a period when Israel did not have a central royal administration.",
+    "crossReferences": [],
+    "prevEvent": "joshuas-farewell",
+    "nextEvent": "deborah-and-barak"
+  },
+  {
+    "id": "deborah-and-barak",
+    "name": "Deborah and Barak",
+    "order": 50,
+    "date": "approx. 12th century BC",
+    "dateSort": -1200,
+    "datePrecision": "approximate",
+    "era": "The Judges",
+    "book": null,
+    "chapter": 4,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Judges 4-5",
+    "location": {
+      "placeId": "canaan",
+      "name": "Canaan",
+      "modernCountry": "Israel/Palestinian territories and surrounding region",
+      "lat": null,
+      "lng": null
+    },
+    "mainPeople": [
+      "deborah",
+      "barak",
+      "god"
+    ],
+    "relatedPeople": [
+      "joshua"
+    ],
+    "relatedPlaces": [
+      "canaan"
+    ],
+    "relatedEvents": [
+      "cycle-of-the-judges",
+      "gideon"
+    ],
+    "keywords": [
+      "Deborah",
+      "Barak",
+      "judge",
+      "Sisera"
+    ],
+    "summary": "Deborah, a prophet and judge, summons Barak to fight Sisera’s forces. God gives Israel victory, and the song of Deborah celebrates the Lord’s deliverance.",
+    "longDescription": "Deborah, a prophet and judge, summons Barak to fight Sisera’s forces. God gives Israel victory, and the song of Deborah celebrates the Lord’s deliverance.\n\nThe biblical text (Judges 4-5) places deborah and barak in the setting of Canaan and connects it with Deborah, Barak, God, Joshua. The record keeps to the details supplied by Scripture: the action, the response of faith or rebellion, and the way the event moves the covenant story forward.\n\nWithin The Judges, this event helps explain the next stage of the timeline by showing God’s judgment, provision, promise, or leadership at a specific point in the biblical story. Later biblical writers often return to these themes when they interpret creation, covenant, exodus, conquest, worship, faith, and kingship.",
+    "historicalNotes": null,
+    "crossReferences": [],
+    "prevEvent": "cycle-of-the-judges",
+    "nextEvent": "gideon"
+  },
+  {
+    "id": "gideon",
+    "name": "Gideon",
+    "order": 51,
+    "date": "approx. 12th century BC",
+    "dateSort": -1175,
+    "datePrecision": "approximate",
+    "era": "The Judges",
+    "book": null,
+    "chapter": 6,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Judges 6-8",
+    "location": {
+      "placeId": "canaan",
+      "name": "Canaan",
+      "modernCountry": "Israel/Palestinian territories and surrounding region",
+      "lat": null,
+      "lng": null
+    },
+    "mainPeople": [
+      "gideon",
+      "god"
+    ],
+    "relatedPeople": [
+      "deborah"
+    ],
+    "relatedPlaces": [
+      "canaan"
+    ],
+    "relatedEvents": [
+      "deborah-and-barak",
+      "jephthah"
+    ],
+    "keywords": [
+      "Gideon",
+      "Midian",
+      "judge",
+      "deliverance"
+    ],
+    "summary": "God calls Gideon while Israel is oppressed by Midian and reduces his army so the victory cannot be credited to human strength. Gideon defeats Midian, but his later ephod becomes a snare.",
+    "longDescription": "God calls Gideon while Israel is oppressed by Midian and reduces his army so the victory cannot be credited to human strength. Gideon defeats Midian, but his later ephod becomes a snare.\n\nThe biblical text (Judges 6-8) places gideon in the setting of Canaan and connects it with Gideon, God, Deborah. The record keeps to the details supplied by Scripture: the action, the response of faith or rebellion, and the way the event moves the covenant story forward.\n\nWithin The Judges, this event helps explain the next stage of the timeline by showing God’s judgment, provision, promise, or leadership at a specific point in the biblical story. Later biblical writers often return to these themes when they interpret creation, covenant, exodus, conquest, worship, faith, and kingship.",
+    "historicalNotes": null,
+    "crossReferences": [],
+    "prevEvent": "deborah-and-barak",
+    "nextEvent": "jephthah"
+  },
+  {
+    "id": "jephthah",
+    "name": "Jephthah",
+    "order": 52,
+    "date": "approx. 11th century BC",
+    "dateSort": -1100,
+    "datePrecision": "approximate",
+    "era": "The Judges",
+    "book": null,
+    "chapter": 11,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Judges 11",
+    "location": {
+      "placeId": "moab",
+      "name": "Moab",
+      "modernCountry": "Jordan",
+      "lat": 31.5,
+      "lng": 35.75
+    },
+    "mainPeople": [
+      "jephthah",
+      "god"
+    ],
+    "relatedPeople": [
+      "gideon"
+    ],
+    "relatedPlaces": [
+      "moab",
+      "canaan"
+    ],
+    "relatedEvents": [
+      "gideon",
+      "samson"
+    ],
+    "keywords": [
+      "Jephthah",
+      "judge",
+      "vow",
+      "Ammon"
+    ],
+    "summary": "Jephthah is called to lead Gilead against the Ammonites and recounts Israel’s history east of the Jordan. His rash vow brings tragedy after God grants victory.",
+    "longDescription": "Jephthah is called to lead Gilead against the Ammonites and recounts Israel’s history east of the Jordan. His rash vow brings tragedy after God grants victory.\n\nThe biblical text (Judges 11) places jephthah in the setting of Moab, Canaan and connects it with Jephthah, God, Gideon. The record keeps to the details supplied by Scripture: the action, the response of faith or rebellion, and the way the event moves the covenant story forward.\n\nWithin The Judges, this event helps explain the next stage of the timeline by showing God’s judgment, provision, promise, or leadership at a specific point in the biblical story. Later biblical writers often return to these themes when they interpret creation, covenant, exodus, conquest, worship, faith, and kingship.",
+    "historicalNotes": null,
+    "crossReferences": [],
+    "prevEvent": "gideon",
+    "nextEvent": "samson"
+  },
+  {
+    "id": "samson",
+    "name": "Samson",
+    "order": 53,
+    "date": "approx. 11th century BC",
+    "dateSort": -1080,
+    "datePrecision": "approximate",
+    "era": "The Judges",
+    "book": null,
+    "chapter": 13,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Judges 13-16",
+    "location": {
+      "placeId": "gaza",
+      "name": "Gaza",
+      "modernCountry": "Gaza Strip",
+      "lat": 31.5,
+      "lng": 34.47
+    },
+    "mainPeople": [
+      "samson",
+      "delilah",
+      "god"
+    ],
+    "relatedPeople": [
+      "jephthah"
+    ],
+    "relatedPlaces": [
+      "gaza",
+      "canaan"
+    ],
+    "relatedEvents": [
+      "jephthah",
+      "ruth-and-boaz"
+    ],
+    "keywords": [
+      "Samson",
+      "Delilah",
+      "Philistines",
+      "judge"
+    ],
+    "summary": "Samson is set apart from birth and begins to deliver Israel from the Philistines. His strength, failures, betrayal by Delilah, and final act in Gaza show both human weakness and God’s purpose.",
+    "longDescription": "Samson is set apart from birth and begins to deliver Israel from the Philistines. His strength, failures, betrayal by Delilah, and final act in Gaza show both human weakness and God’s purpose.\n\nThe biblical text (Judges 13-16) places samson in the setting of Gaza, Canaan and connects it with Samson, Delilah, God, Jephthah. The record keeps to the details supplied by Scripture: the action, the response of faith or rebellion, and the way the event moves the covenant story forward.\n\nWithin The Judges, this event helps explain the next stage of the timeline by showing God’s judgment, provision, promise, or leadership at a specific point in the biblical story. Later biblical writers often return to these themes when they interpret creation, covenant, exodus, conquest, worship, faith, and kingship.",
+    "historicalNotes": null,
+    "crossReferences": [],
+    "prevEvent": "jephthah",
+    "nextEvent": "ruth-and-boaz"
+  },
+  {
+    "id": "ruth-and-boaz",
+    "name": "Ruth and Boaz",
+    "order": 54,
+    "date": "approx. 1100 BC",
+    "dateSort": -1075,
+    "datePrecision": "approximate",
+    "era": "The Judges",
+    "book": null,
+    "chapter": 1,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Ruth 1-4",
+    "location": {
+      "placeId": "bethlehem",
+      "name": "Bethlehem",
+      "modernCountry": "West Bank",
+      "lat": 31.705,
+      "lng": 35.2
+    },
+    "mainPeople": [
+      "ruth",
+      "naomi",
+      "boaz"
+    ],
+    "relatedPeople": [
+      "god"
+    ],
+    "relatedPlaces": [
+      "bethlehem",
+      "moab"
+    ],
+    "relatedEvents": [
+      "samson",
+      "samuel-called"
+    ],
+    "keywords": [
+      "Ruth",
+      "Boaz",
+      "Naomi",
+      "Bethlehem"
+    ],
+    "summary": "During the days of the judges, Ruth the Moabite clings to Naomi and comes to Bethlehem. Boaz redeems the family line, and the story ends by connecting Ruth to David’s ancestry.",
+    "longDescription": "During the days of the judges, Ruth the Moabite clings to Naomi and comes to Bethlehem. Boaz redeems the family line, and the story ends by connecting Ruth to David’s ancestry.\n\nThe biblical text (Ruth 1-4) places ruth and boaz in the setting of Bethlehem, Moab and connects it with Ruth, Naomi, Boaz, God. The record keeps to the details supplied by Scripture: the action, the response of faith or rebellion, and the way the event moves the covenant story forward.\n\nWithin The Judges, this event helps explain the next stage of the timeline by showing God’s judgment, provision, promise, or leadership at a specific point in the biblical story. Later biblical writers often return to these themes when they interpret creation, covenant, exodus, conquest, worship, faith, and kingship.",
+    "historicalNotes": "Historical reconstruction: Bethlehem and Moab are real locations, and the story’s levirate and redemption themes fit Israelite family and land concerns.",
+    "crossReferences": [
+      "Matthew 1:5-6"
+    ],
+    "prevEvent": "samson",
+    "nextEvent": "samuel-called"
+  },
+  {
+    "id": "samuel-called",
+    "name": "Samuel Called",
+    "order": 55,
+    "date": "approx. 1105 BC",
+    "dateSort": -1060,
+    "datePrecision": "approximate",
+    "era": "The Judges",
+    "book": null,
+    "chapter": 1,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "1 Samuel 1-3",
+    "location": {
+      "placeId": "shiloh",
+      "name": "Shiloh",
+      "modernCountry": "West Bank",
+      "lat": 32.06,
+      "lng": 35.29
+    },
+    "mainPeople": [
+      "samuel",
+      "hannah",
+      "eli",
+      "god"
+    ],
+    "relatedPeople": [
+      "ruth",
+      "boaz"
+    ],
+    "relatedPlaces": [
+      "shiloh"
+    ],
+    "relatedEvents": [
+      "ruth-and-boaz",
+      "ark-captured-and-returned"
+    ],
+    "keywords": [
+      "Samuel",
+      "Hannah",
+      "Eli",
+      "Shiloh"
+    ],
+    "summary": "Hannah prays for a son and gives Samuel to the Lord’s service at Shiloh. God calls Samuel as a prophet in a time when Eli’s house is under judgment.",
+    "longDescription": "Hannah prays for a son and gives Samuel to the Lord’s service at Shiloh. God calls Samuel as a prophet in a time when Eli’s house is under judgment.\n\nThe biblical text (1 Samuel 1-3) places samuel called in the setting of Shiloh and connects it with Samuel, Hannah, Eli, God, Ruth, Boaz. The record keeps to the details supplied by Scripture: the action, the response of faith or rebellion, and the way the event moves the covenant story forward.\n\nWithin The Judges, this event helps explain the next stage of the timeline by showing God’s judgment, provision, promise, or leadership at a specific point in the biblical story. Later biblical writers often return to these themes when they interpret creation, covenant, exodus, conquest, worship, faith, and kingship.",
+    "historicalNotes": null,
+    "crossReferences": [],
+    "prevEvent": "ruth-and-boaz",
+    "nextEvent": "ark-captured-and-returned"
+  },
+  {
+    "id": "ark-captured-and-returned",
+    "name": "Ark Captured and Returned",
+    "order": 56,
+    "date": "approx. 1050 BC",
+    "dateSort": -1050,
+    "datePrecision": "approximate",
+    "era": "The Judges",
+    "book": null,
+    "chapter": 4,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "1 Samuel 4-6",
+    "location": {
+      "placeId": "shiloh",
+      "name": "Shiloh",
+      "modernCountry": "West Bank",
+      "lat": 32.06,
+      "lng": 35.29
+    },
+    "mainPeople": [
+      "eli",
+      "samuel",
+      "god"
+    ],
+    "relatedPeople": [
+      "hannah"
+    ],
+    "relatedPlaces": [
+      "shiloh",
+      "gaza"
+    ],
+    "relatedEvents": [
+      "samuel-called"
+    ],
+    "keywords": [
+      "ark",
+      "Philistines",
+      "Eli",
+      "Samuel"
+    ],
+    "summary": "The Philistines capture the ark after defeating Israel, and Eli dies when he hears the news. God afflicts the Philistines, and they return the ark with offerings, showing that Israel’s God is not defeated.",
+    "longDescription": "The Philistines capture the ark after defeating Israel, and Eli dies when he hears the news. God afflicts the Philistines, and they return the ark with offerings, showing that Israel’s God is not defeated.\n\nThe biblical text (1 Samuel 4-6) places ark captured and returned in the setting of Shiloh, Gaza and connects it with Eli, Samuel, God, Hannah. The record keeps to the details supplied by Scripture: the action, the response of faith or rebellion, and the way the event moves the covenant story forward.\n\nWithin The Judges, this event helps explain the next stage of the timeline by showing God’s judgment, provision, promise, or leadership at a specific point in the biblical story. Later biblical writers often return to these themes when they interpret creation, covenant, exodus, conquest, worship, faith, and kingship.",
+    "historicalNotes": "Historical reconstruction: Philistine city-states were major coastal powers in the Iron Age, providing the setting for Israel’s conflicts in 1 Samuel.",
+    "crossReferences": [],
+    "prevEvent": "samuel-called",
+    "nextEvent": "saul-anointed-king"
   }
 ]

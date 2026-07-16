@@ -1,10 +1,793 @@
 [
-  { "id": "eden", "name": "Garden of Eden", "modernCountry": "uncertain (possibly Iraq region)", "ancientRegion": "Mesopotamia (traditional)", "lat": null, "lng": null, "significance": "The garden where God placed the first humans and where the fall occurred.", "events": ["creation", "fall", "cain-abel"], "people": ["adam", "eve", "god"], "references": ["Genesis 2-3", "Ezekiel 28:13"], "relatedPlaces": [] },
-  { "id": "ur", "name": "Ur", "modernCountry": "Iraq", "ancientRegion": "Sumer / southern Mesopotamia", "lat": 30.96, "lng": 46.1, "significance": "Traditional homeland region associated with Abram before his journey toward Canaan.", "events": ["call-of-abraham"], "people": ["abraham"], "references": ["Genesis 11:31", "Genesis 15:7"], "relatedPlaces": ["canaan"] },
-  { "id": "canaan", "name": "Canaan", "modernCountry": "Israel/Palestinian territories and surrounding region", "ancientRegion": "Levant", "lat": null, "lng": null, "significance": "The land promised to Abraham's descendants and setting for many patriarchal events.", "events": ["flood", "call-of-abraham", "isaac-born", "jacob-esau", "joseph-egypt"], "people": ["abraham", "isaac", "jacob", "joseph"], "references": ["Genesis 12:5-7"], "relatedPlaces": ["ur", "egypt"] },
-  { "id": "egypt", "name": "Egypt", "modernCountry": "Egypt", "ancientRegion": "Nile Valley", "lat": 26.82, "lng": 30.8, "significance": "Refuge during famine, later place of Israelite slavery and divine deliverance.", "events": ["joseph-egypt", "exodus-egypt"], "people": ["joseph", "jacob", "moses"], "references": ["Genesis 37-50", "Exodus 1-14"], "relatedPlaces": ["canaan", "mount-sinai"] },
-  { "id": "mount-sinai", "name": "Mount Sinai", "modernCountry": "traditional Sinai region", "ancientRegion": "Wilderness of Sinai", "lat": null, "lng": null, "significance": "Mountain where Israel received the covenant law after the exodus.", "events": ["ten-commandments"], "people": ["moses", "god"], "references": ["Exodus 19-20"], "relatedPlaces": ["egypt"] },
-  { "id": "jerusalem", "name": "Jerusalem", "modernCountry": "Israel/Palestinian territories", "ancientRegion": "Judah", "lat": 31.778, "lng": 35.235, "significance": "David's capital and later the central city of Israel's worship and kingship.", "events": ["davids-reign"], "people": ["david", "god"], "references": ["2 Samuel 5", "Psalm 122"], "relatedPlaces": ["bethlehem"] },
-  { "id": "bethlehem", "name": "Bethlehem", "modernCountry": "Palestinian territories", "ancientRegion": "Judah", "lat": 31.705, "lng": 35.2, "significance": "David's hometown and an important location in the Davidic line.", "events": ["davids-reign"], "people": ["david"], "references": ["1 Samuel 16:1", "Micah 5:2"], "relatedPlaces": ["jerusalem"] },
-  { "id": "babel", "name": "Babel", "modernCountry": "Iraq region", "ancientRegion": "Shinar / Mesopotamia", "lat": null, "lng": null, "significance": "Site associated with humanity's proud tower-building and the confusion of languages.", "events": ["babel"], "people": ["god", "noah"], "references": ["Genesis 11:1-9"], "relatedPlaces": ["ur"] }
+  {
+    "id": "eden",
+    "name": "Garden of Eden",
+    "modernCountry": "uncertain; location not identified",
+    "ancientRegion": "Primeval world / Eden",
+    "lat": null,
+    "lng": null,
+    "significance": "The garden where God placed the first humans and from which they were exiled after disobedience.",
+    "events": [
+      "creation",
+      "fall",
+      "cain-abel",
+      "godly-line-of-seth"
+    ],
+    "people": [
+      "god",
+      "adam",
+      "eve",
+      "cain",
+      "abel",
+      "seth",
+      "enoch",
+      "methuselah",
+      "noah"
+    ],
+    "references": [
+      "Genesis 1:1-2:3",
+      "Genesis 3",
+      "Genesis 4:1-16",
+      "Genesis 4:25-5:32"
+    ],
+    "relatedPlaces": []
+  },
+  {
+    "id": "mount-ararat",
+    "name": "Mount Ararat region",
+    "modernCountry": "Turkey (traditional region)",
+    "ancientRegion": "Mountains of Ararat",
+    "lat": 39.7,
+    "lng": 44.3,
+    "significance": "The region where the ark came to rest after the flood; the exact mountain is not identified in Genesis.",
+    "events": [
+      "flood",
+      "noahic-covenant"
+    ],
+    "people": [
+      "noah",
+      "god",
+      "shem",
+      "ham",
+      "japheth"
+    ],
+    "references": [
+      "Genesis 6-8",
+      "Genesis 9:1-17"
+    ],
+    "relatedPlaces": [
+      "babel"
+    ]
+  },
+  {
+    "id": "babel",
+    "name": "Babel",
+    "modernCountry": "Iraq region",
+    "ancientRegion": "Shinar / Mesopotamia",
+    "lat": 32.54,
+    "lng": 44.42,
+    "significance": "The city and tower site where God confused human language and scattered the people.",
+    "events": [
+      "tower-of-babel"
+    ],
+    "people": [
+      "god",
+      "shem",
+      "ham",
+      "japheth"
+    ],
+    "references": [
+      "Genesis 11:1-9"
+    ],
+    "relatedPlaces": [
+      "ur"
+    ]
+  },
+  {
+    "id": "ur",
+    "name": "Ur",
+    "modernCountry": "Iraq",
+    "ancientRegion": "Sumer / southern Mesopotamia",
+    "lat": 30.96,
+    "lng": 46.1,
+    "significance": "The Mesopotamian city associated with Abram’s origins before the journey toward Canaan.",
+    "events": [
+      "call-of-abraham"
+    ],
+    "people": [
+      "abraham",
+      "god",
+      "sarah",
+      "lot"
+    ],
+    "references": [
+      "Genesis 12:1-9"
+    ],
+    "relatedPlaces": [
+      "haran",
+      "canaan"
+    ]
+  },
+  {
+    "id": "haran",
+    "name": "Haran",
+    "modernCountry": "Turkey",
+    "ancientRegion": "Upper Mesopotamia",
+    "lat": 36.87,
+    "lng": 39.03,
+    "significance": "A northern Mesopotamian stop in Abraham’s family story and the region connected with Rebekah, Leah, and Rachel.",
+    "events": [
+      "call-of-abraham",
+      "isaac-marries-rebekah",
+      "jacobs-ladder",
+      "jacob-marries-leah-rachel"
+    ],
+    "people": [
+      "abraham",
+      "god",
+      "sarah",
+      "lot",
+      "isaac",
+      "rebekah",
+      "jacob",
+      "leah",
+      "rachel"
+    ],
+    "references": [
+      "Genesis 12:1-9",
+      "Genesis 24",
+      "Genesis 28:10-22",
+      "Genesis 29"
+    ],
+    "relatedPlaces": [
+      "ur",
+      "canaan"
+    ]
+  },
+  {
+    "id": "shechem",
+    "name": "Shechem",
+    "modernCountry": "West Bank",
+    "ancientRegion": "Central hill country of Canaan",
+    "lat": 32.21,
+    "lng": 35.28,
+    "significance": "A covenant and worship location where Abram built an altar and Joshua later renewed Israel’s covenant.",
+    "events": [
+      "call-of-abraham",
+      "joshuas-farewell"
+    ],
+    "people": [
+      "abraham",
+      "god",
+      "sarah",
+      "lot",
+      "joshua",
+      "caleb"
+    ],
+    "references": [
+      "Genesis 12:1-9",
+      "Joshua 23-24"
+    ],
+    "relatedPlaces": [
+      "bethel",
+      "canaan"
+    ]
+  },
+  {
+    "id": "bethel",
+    "name": "Bethel",
+    "modernCountry": "West Bank",
+    "ancientRegion": "Central hill country of Canaan",
+    "lat": 31.93,
+    "lng": 35.22,
+    "significance": "A patriarchal worship site where Abram built an altar and Jacob received the dream of the heavenly stairway.",
+    "events": [
+      "call-of-abraham",
+      "abram-lot-separate",
+      "jacobs-ladder"
+    ],
+    "people": [
+      "abraham",
+      "god",
+      "sarah",
+      "lot",
+      "jacob",
+      "isaac",
+      "rebekah"
+    ],
+    "references": [
+      "Genesis 12:1-9",
+      "Genesis 13",
+      "Genesis 28:10-22"
+    ],
+    "relatedPlaces": [
+      "shechem",
+      "canaan"
+    ]
+  },
+  {
+    "id": "hebron",
+    "name": "Hebron",
+    "modernCountry": "West Bank",
+    "ancientRegion": "Hill country of Judah",
+    "lat": 31.53,
+    "lng": 35.09,
+    "significance": "A patriarchal center near Mamre and later Caleb’s inheritance.",
+    "events": [
+      "abram-lot-separate",
+      "abrahamic-covenant",
+      "sodom-and-gomorrah",
+      "land-divided-among-tribes"
+    ],
+    "people": [
+      "abraham",
+      "lot",
+      "sarah",
+      "god",
+      "ishmael",
+      "isaac",
+      "joshua",
+      "caleb"
+    ],
+    "references": [
+      "Genesis 13",
+      "Genesis 15; 17",
+      "Genesis 18-19",
+      "Joshua 13-21"
+    ],
+    "relatedPlaces": [
+      "beersheba",
+      "canaan"
+    ]
+  },
+  {
+    "id": "sodom",
+    "name": "Sodom region",
+    "modernCountry": "uncertain, Dead Sea region",
+    "ancientRegion": "Jordan plain / Dead Sea area",
+    "lat": null,
+    "lng": null,
+    "significance": "The doomed city associated with Lot and divine judgment; its exact site is disputed.",
+    "events": [
+      "abram-lot-separate",
+      "sodom-and-gomorrah"
+    ],
+    "people": [
+      "abraham",
+      "lot",
+      "sarah",
+      "god"
+    ],
+    "references": [
+      "Genesis 13",
+      "Genesis 18-19"
+    ],
+    "relatedPlaces": [
+      "canaan"
+    ]
+  },
+  {
+    "id": "beersheba",
+    "name": "Beersheba",
+    "modernCountry": "Israel",
+    "ancientRegion": "Negev",
+    "lat": 31.25,
+    "lng": 34.79,
+    "significance": "A southern patriarchal location tied to Abraham, Isaac, Hagar, and covenant family stories.",
+    "events": [
+      "hagar-and-ishmael",
+      "birth-of-isaac",
+      "sacrifice-of-isaac",
+      "isaac-marries-rebekah",
+      "jacob-and-esau-born",
+      "jacob-steals-blessing"
+    ],
+    "people": [
+      "hagar",
+      "ishmael",
+      "abraham",
+      "sarah",
+      "god",
+      "isaac",
+      "rebekah",
+      "jacob",
+      "esau"
+    ],
+    "references": [
+      "Genesis 16; 21:8-21",
+      "Genesis 21:1-7",
+      "Genesis 22:1-19",
+      "Genesis 24",
+      "Genesis 25:19-34",
+      "Genesis 27"
+    ],
+    "relatedPlaces": [
+      "hebron",
+      "canaan"
+    ]
+  },
+  {
+    "id": "canaan",
+    "name": "Canaan",
+    "modernCountry": "Israel/Palestinian territories and surrounding region",
+    "ancientRegion": "Levant",
+    "lat": null,
+    "lng": null,
+    "significance": "The land promised to Abraham’s descendants and the setting for patriarchal, conquest, and judges narratives.",
+    "events": [
+      "call-of-abraham",
+      "abram-in-egypt",
+      "abram-lot-separate",
+      "abrahamic-covenant",
+      "hagar-and-ishmael",
+      "birth-of-isaac",
+      "sacrifice-of-isaac",
+      "isaac-marries-rebekah",
+      "jacob-and-esau-born",
+      "jacob-steals-blessing",
+      "jacob-wrestles-god",
+      "joseph-sold-into-slavery",
+      "jacob-moves-to-egypt",
+      "deaths-of-jacob-and-joseph",
+      "twelve-spies",
+      "joshua-commissioned",
+      "sun-stands-still",
+      "land-divided-among-tribes",
+      "joshuas-farewell",
+      "cycle-of-the-judges",
+      "deborah-and-barak",
+      "gideon",
+      "jephthah",
+      "samson"
+    ],
+    "people": [
+      "abraham",
+      "god",
+      "sarah",
+      "lot",
+      "ishmael",
+      "isaac",
+      "hagar",
+      "rebekah",
+      "jacob",
+      "esau",
+      "leah",
+      "rachel"
+    ],
+    "references": [
+      "Genesis 12:1-9",
+      "Genesis 12:10-20",
+      "Genesis 13",
+      "Genesis 15; 17",
+      "Genesis 16; 21:8-21",
+      "Genesis 21:1-7",
+      "Genesis 22:1-19",
+      "Genesis 24",
+      "Genesis 25:19-34",
+      "Genesis 27",
+      "Genesis 32:22-32",
+      "Genesis 37",
+      "Genesis 46-47",
+      "Genesis 49-50",
+      "Numbers 13-14",
+      "Joshua 1",
+      "Joshua 10:1-15",
+      "Joshua 13-21",
+      "Joshua 23-24",
+      "Judges 2:6-23",
+      "Judges 4-5",
+      "Judges 6-8",
+      "Judges 11",
+      "Judges 13-16"
+    ],
+    "relatedPlaces": [
+      "egypt",
+      "jordan-river"
+    ]
+  },
+  {
+    "id": "egypt",
+    "name": "Egypt",
+    "modernCountry": "Egypt",
+    "ancientRegion": "Nile Valley and Delta",
+    "lat": 26.82,
+    "lng": 30.8,
+    "significance": "A place of famine refuge, Joseph’s rise, Israelite slavery, and God’s exodus deliverance.",
+    "events": [
+      "abram-in-egypt",
+      "joseph-sold-into-slavery",
+      "joseph-interprets-dreams",
+      "joseph-rules-egypt",
+      "jacob-moves-to-egypt",
+      "deaths-of-jacob-and-joseph",
+      "israel-enslaved-in-egypt",
+      "birth-of-moses",
+      "moses-flees-to-midian",
+      "burning-bush",
+      "ten-plagues",
+      "first-passover",
+      "red-sea-crossing"
+    ],
+    "people": [
+      "abraham",
+      "sarah",
+      "god",
+      "joseph",
+      "jacob",
+      "judah",
+      "benjamin",
+      "potiphar",
+      "moses",
+      "aaron",
+      "miriam",
+      "jethro"
+    ],
+    "references": [
+      "Genesis 12:10-20",
+      "Genesis 37",
+      "Genesis 40-41",
+      "Genesis 41:37-57",
+      "Genesis 46-47",
+      "Genesis 49-50",
+      "Exodus 1",
+      "Exodus 2:1-10",
+      "Exodus 2:11-25",
+      "Exodus 3-4",
+      "Exodus 7-11",
+      "Exodus 12",
+      "Exodus 14"
+    ],
+    "relatedPlaces": [
+      "goshen",
+      "mount-sinai",
+      "canaan"
+    ]
+  },
+  {
+    "id": "goshen",
+    "name": "Goshen",
+    "modernCountry": "Egypt (eastern Nile Delta)",
+    "ancientRegion": "Eastern Nile Delta",
+    "lat": null,
+    "lng": null,
+    "significance": "The region where Jacob’s family settled in Egypt and where Israel later multiplied.",
+    "events": [
+      "jacob-moves-to-egypt",
+      "israel-enslaved-in-egypt",
+      "ten-plagues",
+      "first-passover"
+    ],
+    "people": [
+      "jacob",
+      "joseph",
+      "judah",
+      "benjamin",
+      "god",
+      "moses",
+      "aaron",
+      "miriam"
+    ],
+    "references": [
+      "Genesis 46-47",
+      "Exodus 1",
+      "Exodus 7-11",
+      "Exodus 12"
+    ],
+    "relatedPlaces": [
+      "egypt"
+    ]
+  },
+  {
+    "id": "midian",
+    "name": "Midian",
+    "modernCountry": "northwestern Arabia region",
+    "ancientRegion": "Midian",
+    "lat": null,
+    "lng": null,
+    "significance": "The region where Moses fled, married into Jethro’s family, and encountered God’s call near the mountain of God.",
+    "events": [
+      "moses-flees-to-midian",
+      "burning-bush"
+    ],
+    "people": [
+      "moses",
+      "jethro",
+      "god",
+      "aaron"
+    ],
+    "references": [
+      "Exodus 2:11-25",
+      "Exodus 3-4"
+    ],
+    "relatedPlaces": [
+      "mount-sinai",
+      "moab"
+    ]
+  },
+  {
+    "id": "mount-sinai",
+    "name": "Mount Sinai",
+    "modernCountry": "Egypt (traditional Jebel Musa)",
+    "ancientRegion": "Wilderness of Sinai",
+    "lat": 28.54,
+    "lng": 33.97,
+    "significance": "The traditional mountain where God called Moses and later gave Israel the covenant law.",
+    "events": [
+      "burning-bush",
+      "manna-and-quail",
+      "ten-commandments",
+      "golden-calf",
+      "tabernacle-built",
+      "wilderness-wanderings"
+    ],
+    "people": [
+      "moses",
+      "god",
+      "aaron",
+      "jethro",
+      "miriam",
+      "joshua",
+      "caleb"
+    ],
+    "references": [
+      "Exodus 3-4",
+      "Exodus 16",
+      "Exodus 19-20",
+      "Exodus 32",
+      "Exodus 35-40",
+      "Numbers 15-36"
+    ],
+    "relatedPlaces": [
+      "midian",
+      "egypt"
+    ]
+  },
+  {
+    "id": "kadesh-barnea",
+    "name": "Kadesh-barnea",
+    "modernCountry": "uncertain, Negev/Sinai border region",
+    "ancientRegion": "Wilderness of Paran / Zin",
+    "lat": null,
+    "lng": null,
+    "significance": "The wilderness location associated with the spies episode and Israel’s long delay before entering Canaan.",
+    "events": [
+      "twelve-spies",
+      "wilderness-wanderings"
+    ],
+    "people": [
+      "moses",
+      "joshua",
+      "caleb",
+      "aaron",
+      "miriam",
+      "god"
+    ],
+    "references": [
+      "Numbers 13-14",
+      "Numbers 15-36"
+    ],
+    "relatedPlaces": [
+      "canaan",
+      "moab"
+    ]
+  },
+  {
+    "id": "moab",
+    "name": "Moab",
+    "modernCountry": "Jordan",
+    "ancientRegion": "Transjordan east of the Dead Sea",
+    "lat": 31.5,
+    "lng": 35.75,
+    "significance": "The region east of the Jordan where Balaam blessed Israel and Moses died before the conquest.",
+    "events": [
+      "wilderness-wanderings",
+      "bronze-serpent",
+      "balaam",
+      "death-of-moses",
+      "jephthah",
+      "ruth-and-boaz"
+    ],
+    "people": [
+      "moses",
+      "aaron",
+      "miriam",
+      "god",
+      "joshua",
+      "caleb",
+      "balaam",
+      "jephthah",
+      "gideon",
+      "ruth",
+      "naomi",
+      "boaz"
+    ],
+    "references": [
+      "Numbers 15-36",
+      "Numbers 21:4-9",
+      "Numbers 22-24",
+      "Deuteronomy 34",
+      "Judges 11",
+      "Ruth 1-4"
+    ],
+    "relatedPlaces": [
+      "jordan-river",
+      "canaan"
+    ]
+  },
+  {
+    "id": "jordan-river",
+    "name": "Jordan River",
+    "modernCountry": "Israel/Jordan/West Bank",
+    "ancientRegion": "Jordan Valley",
+    "lat": 31.84,
+    "lng": 35.55,
+    "significance": "The river Israel crossed under Joshua to enter Canaan.",
+    "events": [
+      "jacob-wrestles-god",
+      "joshua-commissioned",
+      "crossing-the-jordan"
+    ],
+    "people": [
+      "jacob",
+      "god",
+      "esau",
+      "leah",
+      "rachel",
+      "joshua",
+      "moses",
+      "caleb"
+    ],
+    "references": [
+      "Genesis 32:22-32",
+      "Joshua 1",
+      "Joshua 3-4"
+    ],
+    "relatedPlaces": [
+      "moab",
+      "jericho",
+      "gilgal"
+    ]
+  },
+  {
+    "id": "jericho",
+    "name": "Jericho",
+    "modernCountry": "West Bank",
+    "ancientRegion": "Jordan Valley",
+    "lat": 31.87,
+    "lng": 35.44,
+    "significance": "The fortified city that fell to Israel after the Jordan crossing, with Rahab’s household spared.",
+    "events": [
+      "fall-of-jericho"
+    ],
+    "people": [
+      "joshua",
+      "rahab",
+      "god",
+      "caleb"
+    ],
+    "references": [
+      "Joshua 6"
+    ],
+    "relatedPlaces": [
+      "jordan-river",
+      "gilgal"
+    ]
+  },
+  {
+    "id": "gilgal",
+    "name": "Gilgal",
+    "modernCountry": "uncertain, near Jericho",
+    "ancientRegion": "Jordan Valley",
+    "lat": null,
+    "lng": null,
+    "significance": "Israel’s first camp west of the Jordan and the place of the memorial stones after the crossing.",
+    "events": [
+      "crossing-the-jordan",
+      "fall-of-jericho",
+      "sun-stands-still"
+    ],
+    "people": [
+      "joshua",
+      "god",
+      "caleb",
+      "rahab"
+    ],
+    "references": [
+      "Joshua 3-4",
+      "Joshua 6",
+      "Joshua 10:1-15"
+    ],
+    "relatedPlaces": [
+      "jordan-river",
+      "jericho"
+    ]
+  },
+  {
+    "id": "shiloh",
+    "name": "Shiloh",
+    "modernCountry": "West Bank",
+    "ancientRegion": "Hill country of Ephraim",
+    "lat": 32.06,
+    "lng": 35.29,
+    "significance": "The worship center where the tabernacle stood and where Samuel served under Eli.",
+    "events": [
+      "land-divided-among-tribes",
+      "cycle-of-the-judges",
+      "samuel-called",
+      "ark-captured-and-returned"
+    ],
+    "people": [
+      "joshua",
+      "caleb",
+      "god",
+      "samuel",
+      "hannah",
+      "eli",
+      "ruth",
+      "boaz"
+    ],
+    "references": [
+      "Joshua 13-21",
+      "Judges 2:6-23",
+      "1 Samuel 1-3",
+      "1 Samuel 4-6"
+    ],
+    "relatedPlaces": [
+      "canaan"
+    ]
+  },
+  {
+    "id": "gaza",
+    "name": "Gaza",
+    "modernCountry": "Gaza Strip",
+    "ancientRegion": "Philistine plain",
+    "lat": 31.5,
+    "lng": 34.47,
+    "significance": "A major Philistine city associated with Samson and the ark narratives.",
+    "events": [
+      "samson",
+      "ark-captured-and-returned"
+    ],
+    "people": [
+      "samson",
+      "delilah",
+      "god",
+      "jephthah",
+      "eli",
+      "samuel",
+      "hannah"
+    ],
+    "references": [
+      "Judges 13-16",
+      "1 Samuel 4-6"
+    ],
+    "relatedPlaces": [
+      "shiloh"
+    ]
+  },
+  {
+    "id": "bethlehem",
+    "name": "Bethlehem",
+    "modernCountry": "West Bank",
+    "ancientRegion": "Judah",
+    "lat": 31.705,
+    "lng": 35.2,
+    "significance": "The town where Ruth met Boaz and where the line leading to David is traced.",
+    "events": [
+      "ruth-and-boaz"
+    ],
+    "people": [
+      "ruth",
+      "naomi",
+      "boaz",
+      "god"
+    ],
+    "references": [
+      "Ruth 1-4"
+    ],
+    "relatedPlaces": [
+      "moab",
+      "canaan"
+    ]
+  }
 ]
