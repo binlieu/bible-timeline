@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bible Timeline</title>
+  <meta name="description" content="Offline Bible timeline website generated from local JSON data.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-root="">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="index.html">Bible Timeline</a>
+    <nav aria-label="Main navigation">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="timeline.html">Timeline</a></li>
+        <li><a href="index.html#people">People</a></li>
+        <li><a href="index.html#places">Places</a></li>
+        <li><a href="index.html#books">Books</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <form class="search-form" data-search-form role="search">
+        <label class="visually-hidden" for="site-search">Search</label>
+        <input id="site-search" data-search-input type="search" autocomplete="off" placeholder="Search timeline">
+        <div class="search-results" data-search-results hidden></div>
+      </form>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">Theme</button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<section class="hero">
+  <div class="container">
+    <div>
+      <span class="eyebrow">Offline Bible Study</span>
+      <h1>Bible Timeline</h1>
+      <p>Explore biblical events, people, places, and books through a local static website generated from JSON data.</p>
+      <p><a class="button primary" href="timeline.html">Open Timeline</a></p>
+    </div>
+    <div class="hero-search">
+      <label for="home-search">Search the seed dataset</label>
+      <input id="home-search" data-index-search type="search" autocomplete="off" placeholder="Try Moses, Eden, Genesis">
+      <div class="search-results" data-index-search-results hidden></div>
+    </div>
+  </div>
+</section>
+<section class="section" aria-label="Homepage navigation">
+  <div class="container">
+    <nav class="content-panel" aria-label="Study navigation">
+      <ul class="link-list"><li><a href="timeline.html">Timeline</a></li><li><a href="#people">People</a></li><li><a href="#places">Places</a></li><li><a href="#books">Books</a></li><li><a href="timeline.html#maps">Maps</a></li><li><a href="timeline.html#kings">Kings</a></li><li><a href="timeline.html#prophets">Prophets</a></li><li><a href="timeline.html#miracles">Miracles</a></li><li><a href="timeline.html#parables">Parables</a></li><li><a href="timeline.html#genealogy">Genealogy</a></li></ul>
+    </nav>
+  </div>
+</section>
+<section class="section" id="timeline-preview">
+  <div class="container">
+    <div class="section-header">
+      <h2>Timeline Preview</h2>
+      <a href="timeline.html">View full timeline</a>
+    </div>
+    <!-- BUILD:TIMELINE_PREVIEW -->
+<div class="grid">
+<article class="card">
+  <span class="eyebrow">Primeval History</span>
+  <h3><a href="events/creation.html">Creation</a></h3>
+  <p><strong>Beginning</strong></p>
+  <p>God creates the heavens, the earth, and all living things, declaring creation good.</p>
+</article>
+<article class="card">
+  <span class="eyebrow">Primeval History</span>
+  <h3><a href="events/fall.html">The Fall</a></h3>
+  <p><strong>After creation</strong></p>
+  <p>Adam and Eve disobey God, bringing sin, death, and exile from Eden into human history.</p>
+</article>
+<article class="card">
+  <span class="eyebrow">Primeval History</span>
+  <h3><a href="events/cain-abel.html">Cain and Abel</a></h3>
+  <p><strong>Early human history</strong></p>
+  <p>Cain murders Abel after God accepts Abel&#39;s offering and warns Cain about sin.</p>
+</article>
+<article class="card">
+  <span class="eyebrow">Primeval History</span>
+  <h3><a href="events/flood.html">The Flood</a></h3>
+  <p><strong>Traditional primeval period</strong></p>
+  <p>God judges widespread human corruption with a flood and preserves Noah&#39;s family through the ark.</p>
+</article>
+<article class="card">
+  <span class="eyebrow">Primeval History</span>
+  <h3><a href="events/babel.html">Tower of Babel</a></h3>
+  <p><strong>Traditional primeval period</strong></p>
+  <p>Humanity gathers to build a city and tower, and God confuses their language and scatters them.</p>
+</article>
+<article class="card">
+  <span class="eyebrow">Patriarchs</span>
+  <h3><a href="events/call-of-abraham.html">Call of Abraham</a></h3>
+  <p><strong>approx. 2166 BC (traditional)</strong></p>
+  <p>God calls Abram to leave his country and promises land, descendants, and blessing to all families of the earth.</p>
+</article>
+<article class="card">
+  <span class="eyebrow">Patriarchs</span>
+  <h3><a href="events/isaac-born.html">Birth of Isaac</a></h3>
+  <p><strong>approx. 2066 BC (traditional)</strong></p>
+  <p>Isaac is born to Abraham and Sarah as the promised child through whom the covenant line continues.</p>
+</article>
+<article class="card">
+  <span class="eyebrow">Patriarchs</span>
+  <h3><a href="events/jacob-esau.html">Jacob and Esau</a></h3>
+  <p><strong>approx. 2006 BC (traditional)</strong></p>
+  <p>Jacob receives the birthright and blessing, continuing the covenant line through a troubled family story.</p>
+</article>
+</div>
+    <!-- /BUILD:TIMELINE_PREVIEW -->
+  </div>
+</section>
+<section class="section" id="people">
+  <div class="container"><div class="section-header"><h2>People</h2></div><div class="grid"><article class="card"><h3><a href="people/god.html">God</a></h3><p>God creates, judges, redeems, and keeps covenant throughout the biblical timeline.</p></article><article class="card"><h3><a href="people/adam.html">Adam</a></h3><p>Adam is the first man, created in God&#39;s image and placed in Eden.</p></article><article class="card"><h3><a href="people/eve.html">Eve</a></h3><p>Eve is the first woman and mother of all living.</p></article><article class="card"><h3><a href="people/noah.html">Noah</a></h3><p>Noah obeys God and is preserved with his family through the flood.</p></article><article class="card"><h3><a href="people/abraham.html">Abraham</a></h3><p>Abraham receives God&#39;s covenant promises of land, offspring, and blessing to the nations.</p></article><article class="card"><h3><a href="people/isaac.html">Isaac</a></h3><p>Isaac is the promised son of Abraham through whom the covenant line continues.</p></article><article class="card"><h3><a href="people/jacob.html">Jacob</a></h3><p>Jacob becomes Israel and fathers the family that becomes the twelve tribes.</p></article><article class="card"><h3><a href="people/joseph.html">Joseph</a></h3><p>Joseph is sold into Egypt and later preserves his family during famine.</p></article><article class="card"><h3><a href="people/moses.html">Moses</a></h3><p>Moses leads Israel out of Egypt and receives the law at Sinai.</p></article><article class="card"><h3><a href="people/david.html">David</a></h3><p>David becomes Israel&#39;s king and receives the promise of an enduring dynasty.</p></article></div></div>
+</section>
+<section class="section" id="places">
+  <div class="container"><div class="section-header"><h2>Places</h2></div><div class="grid"><article class="card"><h3><a href="locations/eden.html">Garden of Eden</a></h3><p>The garden where God placed the first humans and where the fall occurred.</p></article><article class="card"><h3><a href="locations/ur.html">Ur</a></h3><p>Traditional homeland region associated with Abram before his journey toward Canaan.</p></article><article class="card"><h3><a href="locations/canaan.html">Canaan</a></h3><p>The land promised to Abraham&#39;s descendants and setting for many patriarchal events.</p></article><article class="card"><h3><a href="locations/egypt.html">Egypt</a></h3><p>Refuge during famine, later place of Israelite slavery and divine deliverance.</p></article><article class="card"><h3><a href="locations/mount-sinai.html">Mount Sinai</a></h3><p>Mountain where Israel received the covenant law after the exodus.</p></article><article class="card"><h3><a href="locations/jerusalem.html">Jerusalem</a></h3><p>David&#39;s capital and later the central city of Israel&#39;s worship and kingship.</p></article><article class="card"><h3><a href="locations/bethlehem.html">Bethlehem</a></h3><p>David&#39;s hometown and an important location in the Davidic line.</p></article><article class="card"><h3><a href="locations/babel.html">Babel</a></h3><p>Site associated with humanity&#39;s proud tower-building and the confusion of languages.</p></article></div></div>
+</section>
+<section class="section" id="books">
+  <div class="container"><div class="section-header"><h2>Books</h2></div><div class="grid"><article class="card"><h3><a href="books/genesis.html">Genesis</a></h3><p>Creation to Joseph&#39;s death</p></article><article class="card"><h3><a href="books/exodus.html">Exodus</a></h3><p>From slavery in Egypt to Sinai</p></article><article class="card"><h3><a href="books/2-samuel.html">2 Samuel</a></h3><p>David&#39;s reign over Judah and Israel</p></article></div></div>
+</section>
+<section class="section" id="maps"><div class="container"><h2>Study Index</h2><div class="grid"><article class="card"><h3>Maps</h3><p><a href="timeline.html#maps">Maps timeline anchor</a></p></article><article class="card"><h3>Kings</h3><p><a href="timeline.html#kings">Kings timeline anchor</a></p></article><article class="card"><h3>Prophets</h3><p><a href="timeline.html#prophets">Prophets timeline anchor</a></p></article><article class="card"><h3>Miracles</h3><p><a href="timeline.html#miracles">Miracles timeline anchor</a></p></article><article class="card"><h3>Parables</h3><p><a href="timeline.html#parables">Parables timeline anchor</a></p></article><article class="card"><h3>Genealogy</h3><p><a href="timeline.html#genealogy">Genealogy timeline anchor</a></p></article></div></div></section>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <p>Bible Timeline is a static, offline-capable study site generated from local JSON data.</p>
+  </div>
+</footer>
+<script src="js/data.js"></script>
+<script src="js/search.js"></script>
+</body>
+</html>

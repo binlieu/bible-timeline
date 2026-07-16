@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Timeline - Bible Timeline</title>
+  <meta name="description" content="Full chronological Bible timeline with client-side filters.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-root="">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="index.html">Bible Timeline</a>
+    <nav aria-label="Main navigation">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="timeline.html">Timeline</a></li>
+        <li><a href="index.html#people">People</a></li>
+        <li><a href="index.html#places">Places</a></li>
+        <li><a href="index.html#books">Books</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <form class="search-form" data-search-form role="search">
+        <label class="visually-hidden" for="site-search">Search</label>
+        <input id="site-search" data-search-input type="search" autocomplete="off" placeholder="Search timeline">
+        <div class="search-results" data-search-results hidden></div>
+      </form>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">Theme</button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<section class="section"><div class="container">
+<div class="page-title"><span class="eyebrow">Chronological Listing</span><h1>Bible Timeline</h1><p>Filter events by era or text. All data is loaded from generated local JavaScript for file:// support.</p></div>
+<div class="filter-panel">
+  <label>Era <select data-era-filter><option value="">All eras</option><option value="Primeval History">Primeval History</option><option value="Patriarchs">Patriarchs</option><option value="Exodus &amp; Wilderness">Exodus &amp; Wilderness</option><option value="United Kingdom">United Kingdom</option></select></label>
+  <label>Text <input data-timeline-filter type="search" placeholder="Filter by event, person, place, reference"></label>
+</div>
+<div class="timeline-shell">
+<section class="era-group" data-era-group id="primeval-history">
+<div class="era-marker"><span class="badge">Creation-c. 2100 BC</span><h2>Primeval History</h2></div>
+<article class="timeline-card" data-timeline-entry data-era="Primeval History">
+  <h3><a href="events/creation.html">Creation</a></h3>
+  <div class="detail-grid">
+    <p><strong>Estimated Date:</strong> Beginning</p>
+    <p><strong>Bible Period:</strong> Primeval History</p>
+    <p><strong>Location:</strong> Universe</p>
+    <p><strong>Key People:</strong> <a href="people/god.html">God</a></p>
+  </div>
+  <p><strong>Bible References:</strong> Genesis 1:1-2:3</p>
+  <p>God creates the heavens, the earth, and all living things, declaring creation good.</p>
+  <p><a href="events/creation.html">Read More &rarr;</a></p>
+</article>
+<article class="timeline-card" data-timeline-entry data-era="Primeval History">
+  <h3><a href="events/fall.html">The Fall</a></h3>
+  <div class="detail-grid">
+    <p><strong>Estimated Date:</strong> After creation</p>
+    <p><strong>Bible Period:</strong> Primeval History</p>
+    <p><strong>Location:</strong> Garden of Eden</p>
+    <p><strong>Key People:</strong> <a href="people/adam.html">Adam</a>, <a href="people/eve.html">Eve</a></p>
+  </div>
+  <p><strong>Bible References:</strong> Genesis 3</p>
+  <p>Adam and Eve disobey God, bringing sin, death, and exile from Eden into human history.</p>
+  <p><a href="events/fall.html">Read More &rarr;</a></p>
+</article>
+<article class="timeline-card" data-timeline-entry data-era="Primeval History">
+  <h3><a href="events/cain-abel.html">Cain and Abel</a></h3>
+  <div class="detail-grid">
+    <p><strong>Estimated Date:</strong> Early human history</p>
+    <p><strong>Bible Period:</strong> Primeval History</p>
+    <p><strong>Location:</strong> East of Eden</p>
+    <p><strong>Key People:</strong> <a href="people/adam.html">Adam</a>, <a href="people/eve.html">Eve</a></p>
+  </div>
+  <p><strong>Bible References:</strong> Genesis 4:1-16</p>
+  <p>Cain murders Abel after God accepts Abel&#39;s offering and warns Cain about sin.</p>
+  <p><a href="events/cain-abel.html">Read More &rarr;</a></p>
+</article>
+<article class="timeline-card" data-timeline-entry data-era="Primeval History">
+  <h3><a href="events/flood.html">The Flood</a></h3>
+  <div class="detail-grid">
+    <p><strong>Estimated Date:</strong> Traditional primeval period</p>
+    <p><strong>Bible Period:</strong> Primeval History</p>
+    <p><strong>Location:</strong> Ancient Near East</p>
+    <p><strong>Key People:</strong> <a href="people/noah.html">Noah</a>, <a href="people/god.html">God</a></p>
+  </div>
+  <p><strong>Bible References:</strong> Genesis 6:5-9:17</p>
+  <p>God judges widespread human corruption with a flood and preserves Noah&#39;s family through the ark.</p>
+  <p><a href="events/flood.html">Read More &rarr;</a></p>
+</article>
+<article class="timeline-card" data-timeline-entry data-era="Primeval History">
+  <h3><a href="events/babel.html">Tower of Babel</a></h3>
+  <div class="detail-grid">
+    <p><strong>Estimated Date:</strong> Traditional primeval period</p>
+    <p><strong>Bible Period:</strong> Primeval History</p>
+    <p><strong>Location:</strong> Babel</p>
+    <p><strong>Key People:</strong> <a href="people/god.html">God</a></p>
+  </div>
+  <p><strong>Bible References:</strong> Genesis 11:1-9</p>
+  <p>Humanity gathers to build a city and tower, and God confuses their language and scatters them.</p>
+  <p><a href="events/babel.html">Read More &rarr;</a></p>
+</article>
+</section>
+<section class="era-group" data-era-group id="patriarchs">
+<div class="era-marker"><span class="badge">c. 2166-c. 1805 BC (traditional)</span><h2>Patriarchs</h2></div>
+<article class="timeline-card" data-timeline-entry data-era="Patriarchs">
+  <h3><a href="events/call-of-abraham.html">Call of Abraham</a></h3>
+  <div class="detail-grid">
+    <p><strong>Estimated Date:</strong> approx. 2166 BC (traditional)</p>
+    <p><strong>Bible Period:</strong> Patriarchs</p>
+    <p><strong>Location:</strong> Ur to Canaan</p>
+    <p><strong>Key People:</strong> <a href="people/abraham.html">Abraham</a>, <a href="people/god.html">God</a></p>
+  </div>
+  <p><strong>Bible References:</strong> Genesis 12:1-9</p>
+  <p>God calls Abram to leave his country and promises land, descendants, and blessing to all families of the earth.</p>
+  <p><a href="events/call-of-abraham.html">Read More &rarr;</a></p>
+</article>
+<article class="timeline-card" data-timeline-entry data-era="Patriarchs">
+  <h3><a href="events/isaac-born.html">Birth of Isaac</a></h3>
+  <div class="detail-grid">
+    <p><strong>Estimated Date:</strong> approx. 2066 BC (traditional)</p>
+    <p><strong>Bible Period:</strong> Patriarchs</p>
+    <p><strong>Location:</strong> Canaan</p>
+    <p><strong>Key People:</strong> <a href="people/abraham.html">Abraham</a>, <a href="people/isaac.html">Isaac</a></p>
+  </div>
+  <p><strong>Bible References:</strong> Genesis 21:1-7</p>
+  <p>Isaac is born to Abraham and Sarah as the promised child through whom the covenant line continues.</p>
+  <p><a href="events/isaac-born.html">Read More &rarr;</a></p>
+</article>
+<article class="timeline-card" data-timeline-entry data-era="Patriarchs">
+  <h3><a href="events/jacob-esau.html">Jacob and Esau</a></h3>
+  <div class="detail-grid">
+    <p><strong>Estimated Date:</strong> approx. 2006 BC (traditional)</p>
+    <p><strong>Bible Period:</strong> Patriarchs</p>
+    <p><strong>Location:</strong> Canaan</p>
+    <p><strong>Key People:</strong> <a href="people/isaac.html">Isaac</a>, <a href="people/jacob.html">Jacob</a></p>
+  </div>
+  <p><strong>Bible References:</strong> Genesis 25:19-34; 27</p>
+  <p>Jacob receives the birthright and blessing, continuing the covenant line through a troubled family story.</p>
+  <p><a href="events/jacob-esau.html">Read More &rarr;</a></p>
+</article>
+<article class="timeline-card" data-timeline-entry data-era="Patriarchs">
+  <h3><a href="events/joseph-egypt.html">Joseph in Egypt</a></h3>
+  <div class="detail-grid">
+    <p><strong>Estimated Date:</strong> approx. 1898-1805 BC (traditional)</p>
+    <p><strong>Bible Period:</strong> Patriarchs</p>
+    <p><strong>Location:</strong> Egypt</p>
+    <p><strong>Key People:</strong> <a href="people/joseph.html">Joseph</a>, <a href="people/jacob.html">Jacob</a></p>
+  </div>
+  <p><strong>Bible References:</strong> Genesis 37-50</p>
+  <p>Joseph is sold into Egypt, rises to authority, and preserves his family during famine.</p>
+  <p><a href="events/joseph-egypt.html">Read More &rarr;</a></p>
+</article>
+</section>
+<section class="era-group" data-era-group id="exodus-wilderness">
+<div class="era-marker"><span class="badge">c. 1446-c. 1406 BC (traditional)</span><h2>Exodus &amp; Wilderness</h2></div>
+<article class="timeline-card" data-timeline-entry data-era="Exodus &amp; Wilderness">
+  <h3><a href="events/exodus-egypt.html">Exodus from Egypt</a></h3>
+  <div class="detail-grid">
+    <p><strong>Estimated Date:</strong> approx. 1446 BC (traditional)</p>
+    <p><strong>Bible Period:</strong> Exodus &amp; Wilderness</p>
+    <p><strong>Location:</strong> Egypt</p>
+    <p><strong>Key People:</strong> <a href="people/moses.html">Moses</a>, <a href="people/god.html">God</a></p>
+  </div>
+  <p><strong>Bible References:</strong> Exodus 12:31-42</p>
+  <p>God delivers Israel from slavery in Egypt through Moses after the Passover judgment.</p>
+  <p><a href="events/exodus-egypt.html">Read More &rarr;</a></p>
+</article>
+<article class="timeline-card" data-timeline-entry data-era="Exodus &amp; Wilderness">
+  <h3><a href="events/ten-commandments.html">The Ten Commandments</a></h3>
+  <div class="detail-grid">
+    <p><strong>Estimated Date:</strong> approx. 1446 BC (traditional)</p>
+    <p><strong>Bible Period:</strong> Exodus &amp; Wilderness</p>
+    <p><strong>Location:</strong> Mount Sinai</p>
+    <p><strong>Key People:</strong> <a href="people/moses.html">Moses</a>, <a href="people/god.html">God</a></p>
+  </div>
+  <p><strong>Bible References:</strong> Exodus 20:1-17</p>
+  <p>God gives Israel the covenant law at Sinai, beginning with the Ten Commandments.</p>
+  <p><a href="events/ten-commandments.html">Read More &rarr;</a></p>
+</article>
+</section>
+<section class="era-group" data-era-group id="united-kingdom">
+<div class="era-marker"><span class="badge">c. 1010-c. 970 BC</span><h2>United Kingdom</h2></div>
+<article class="timeline-card" data-timeline-entry data-era="United Kingdom">
+  <h3><a href="events/davids-reign.html">David&#39;s Reign</a></h3>
+  <div class="detail-grid">
+    <p><strong>Estimated Date:</strong> approx. 1010-970 BC</p>
+    <p><strong>Bible Period:</strong> United Kingdom</p>
+    <p><strong>Location:</strong> Jerusalem</p>
+    <p><strong>Key People:</strong> <a href="people/david.html">David</a>, <a href="people/god.html">God</a></p>
+  </div>
+  <p><strong>Bible References:</strong> 2 Samuel 5:1-5; 7:1-17</p>
+  <p>David rules Israel from Jerusalem and receives the covenant promise of an enduring dynasty.</p>
+  <p><a href="events/davids-reign.html">Read More &rarr;</a></p>
+</article>
+</section>
+</div></div></section>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <p>Bible Timeline is a static, offline-capable study site generated from local JSON data.</p>
+  </div>
+</footer>
+<script src="js/data.js"></script>
+<script src="js/search.js"></script>
+<script src="js/timeline.js"></script>
+</body>
+</html>
