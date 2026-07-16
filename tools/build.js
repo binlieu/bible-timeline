@@ -13,7 +13,8 @@ const data = {
   people: readJson("people.json"),
   places: readJson("places.json"),
   books: readJson("books.json"),
-  timeline: readJson("timeline.json")
+  timeline: readJson("timeline.json"),
+  categories: readJson("categories.json")
 };
 
 const maps = {
@@ -88,6 +89,12 @@ function linkTo(rootPrefix, type, id, fallback) {
   return '<a href="' + escapeHtml(relativeUrl(rootPrefix, type, canonicalId(type, id))) + '">' + escapeHtml(label) + "</a>";
 }
 
+function linkToWithLabel(rootPrefix, type, id, label) {
+  const item = lookup(type, id);
+  if (!item) return escapeHtml(label || id);
+  return '<a href="' + escapeHtml(relativeUrl(rootPrefix, type, canonicalId(type, id))) + '">' + escapeHtml(label || item.name) + "</a>";
+}
+
 function listLinks(rootPrefix, type, ids) {
   if (!ids || !ids.length) return "<p>None listed.</p>";
   return '<ul class="link-list">' + ids.map((id) => "<li>" + linkTo(rootPrefix, type, id) + "</li>").join("") + "</ul>";
@@ -96,6 +103,38 @@ function listLinks(rootPrefix, type, ids) {
 function textList(items) {
   if (!items || !items.length) return "<p>None listed.</p>";
   return "<ul>" + items.map((item) => "<li>" + escapeHtml(item) + "</li>").join("") + "</ul>";
+}
+
+function firstSentence(text) {
+  if (!text) return "None listed.";
+  const match = String(text).match(/^.*?[.!?](?:\s|$)/);
+  return match ? match[0].trim() : String(text).trim();
+}
+
+function hasRole(person, roles) {
+  const wanted = new Set(roles.map((role) => role.toLowerCase()));
+  return (person.roles || []).some((role) => wanted.has(String(role).toLowerCase()));
+}
+
+function sortByName(items) {
+  return items.slice().sort((a, b) => a.name.localeCompare(b.name));
+}
+
+function firstEventOrder(person) {
+  const orders = (person.events || [])
+    .map((id) => maps.events.get(canonicalId("event", id)))
+    .filter(Boolean)
+    .map((event) => event.order);
+  return orders.length ? Math.min.apply(null, orders) : null;
+}
+
+function compareByTimelineThenName(a, b) {
+  const aOrder = firstEventOrder(a);
+  const bOrder = firstEventOrder(b);
+  if (aOrder != null && bOrder != null && aOrder !== bOrder) return aOrder - bOrder;
+  if (aOrder != null && bOrder == null) return -1;
+  if (aOrder == null && bOrder != null) return 1;
+  return a.name.localeCompare(b.name);
 }
 
 function paragraphs(text) {
@@ -142,9 +181,9 @@ function renderHeader(rootPrefix) {
     '      <ul class="nav-links">\n' +
     '        <li><a href="' + rootPrefix + 'index.html">Home</a></li>\n' +
     '        <li><a href="' + rootPrefix + 'timeline.html">Timeline</a></li>\n' +
-    '        <li><a href="' + rootPrefix + 'index.html#people">People</a></li>\n' +
-    '        <li><a href="' + rootPrefix + 'index.html#places">Places</a></li>\n' +
-    '        <li><a href="' + rootPrefix + 'index.html#books">Books</a></li>\n' +
+    '        <li><a href="' + rootPrefix + 'people.html">People</a></li>\n' +
+    '        <li><a href="' + rootPrefix + 'locations.html">Places</a></li>\n' +
+    '        <li><a href="' + rootPrefix + 'books.html">Books</a></li>\n' +
     '      </ul>\n' +
     '    </nav>\n' +
     '    <div class="header-actions">\n' +
@@ -236,6 +275,18 @@ function validateData() {
   data.timeline.forEach((group) => {
     checkRefs("timeline group " + group.era, group.eventIds, "event", maps.events);
   });
+
+  (data.categories.miracles || []).forEach((miracle) => {
+    if (!maps.events.has(canonicalId("event", miracle.eventId))) {
+      warn("miracle category references missing event id: " + miracle.eventId);
+    }
+  });
+
+  (data.categories.parables || []).forEach((parable) => {
+    if (parable.eventId && !maps.events.has(canonicalId("event", parable.eventId))) {
+      warn("parable category references missing event id: " + parable.eventId);
+    }
+  });
 }
 
 function sortedEvents(ids) {
@@ -296,15 +347,15 @@ function renderIndex() {
     ['Timeline', 'People', 'Places', 'Books', 'Maps', 'Kings', 'Prophets', 'Miracles', 'Parables', 'Genealogy'].map((label) => {
       const hrefs = {
         Timeline: 'timeline.html',
-        People: '#people',
-        Places: '#places',
-        Books: '#books',
-        Maps: 'timeline.html#maps',
-        Kings: 'timeline.html#kings',
-        Prophets: 'timeline.html#prophets',
-        Miracles: 'timeline.html#miracles',
-        Parables: 'timeline.html#parables',
-        Genealogy: 'timeline.html#genealogy'
+        People: 'people.html',
+        Places: 'locations.html',
+        Books: 'books.html',
+        Maps: 'maps.html',
+        Kings: 'kings.html',
+        Prophets: 'prophets.html',
+        Miracles: 'miracles.html',
+        Parables: 'parables.html',
+        Genealogy: 'genealogy.html'
       };
       return '<li><a href="' + hrefs[label] + '">' + escapeHtml(label) + '</a></li>';
     }).join('') +
@@ -336,7 +387,7 @@ function renderIndex() {
     '<div class="grid">' + data.books.map((book) => '<article class="card"><h3>' + linkTo("", "book", book.id) + '</h3><p>' + escapeHtml(book.timelinePlacement) + '</p></article>').join("") + '</div></div>\n' +
     '</section>\n' +
     '<section class="section" id="maps"><div class="container"><h2>Study Index</h2><div class="grid">' +
-    ["Maps", "Kings", "Prophets", "Miracles", "Parables", "Genealogy"].map((label) => '<article class="card"><h3>' + escapeHtml(label) + '</h3><p><a href="timeline.html#' + label.toLowerCase() + '">' + escapeHtml(label) + ' timeline anchor</a></p></article>').join("") +
+    ["Maps", "Kings", "Prophets", "Miracles", "Parables", "Genealogy"].map((label) => '<article class="card"><h3>' + escapeHtml(label) + '</h3><p><a href="' + label.toLowerCase() + '.html">Browse ' + escapeHtml(label) + '</a></p></article>').join("") +
     '</div></div></section>';
 
   writeFile("index.html", pageLayout({
@@ -345,6 +396,173 @@ function renderIndex() {
     rootPrefix: "",
     body
   }));
+}
+
+function renderBrowsePage(fileName, title, description, bodyContent) {
+  const body = '<section class="section"><div class="container">\n' +
+    '<div class="page-title"><span class="badge">Browse</span><h1>' + escapeHtml(title) + '</h1><p>' + escapeHtml(description) + '</p></div>\n' +
+    bodyContent +
+    '</div></section>';
+
+  writeFile(fileName, pageLayout({
+    title: title + " - Bible Timeline",
+    description,
+    rootPrefix: "",
+    body
+  }));
+}
+
+function renderPersonList(items) {
+  if (!items.length) return "<p>None listed.</p>";
+  return '<div class="grid">' + sortByName(items).map((person) => (
+    '<article class="card"><h3>' + linkTo("", "person", person.id) + '</h3><p>' + escapeHtml(firstSentence(person.summary)) + '</p></article>'
+  )).join("") + '</div>';
+}
+
+function renderPeopleBrowse() {
+  const sections = [
+    ["Patriarchs & Matriarchs", ["patriarch", "matriarch"]],
+    ["Prophets", ["prophet", "prophetess"]],
+    ["Judges", ["judge"]],
+    ["Kings & Queens", ["king", "queen", "queen mother"]],
+    ["Apostles", ["apostle"]],
+    ["Priests & Scribes", ["priest", "high-priest", "scribe"]]
+  ];
+  const assigned = new Set();
+  const parts = sections.map(([label, roles]) => {
+    const people = data.people.filter((person) => !assigned.has(person.id) && hasRole(person, roles));
+    people.forEach((person) => assigned.add(person.id));
+    return '<section class="content-panel"><h2>' + escapeHtml(label) + '</h2>' + renderPersonList(people) + '</section>\n';
+  });
+  const others = data.people.filter((person) => !assigned.has(person.id));
+  parts.push('<section class="content-panel"><h2>Others</h2>' + renderPersonList(others) + '</section>\n');
+  renderBrowsePage("people.html", "People", "All people in the Bible timeline dataset, grouped by primary role.", parts.join(""));
+}
+
+function renderLocationsBrowse() {
+  const rows = sortByName(data.places).map((place) => (
+    '<tr><td>' + linkTo("", "place", place.id) + '</td><td>' + escapeHtml(place.modernCountry || "None listed") + '</td><td>' +
+    escapeHtml(place.lat == null || place.lng == null ? "unknown" : place.lat + ", " + place.lng) + '</td></tr>'
+  )).join("");
+  renderBrowsePage("locations.html", "Places", "All places in the Bible timeline dataset, sorted alphabetically.",
+    '<section class="content-panel"><h2>All Places</h2><div class="table-wrap"><table class="browse-table"><thead><tr><th>Name</th><th>Modern Country</th><th>Coordinates</th></tr></thead><tbody>' + rows + '</tbody></table></div></section>\n'
+  );
+}
+
+function renderBooksBrowse() {
+  const section = (label, testament) => {
+    const books = data.books.filter((book) => book.testament === testament).sort((a, b) => a.orderInCanon - b.orderInCanon);
+    return '<section class="content-panel"><h2>' + escapeHtml(label) + '</h2><div class="table-wrap"><table class="browse-table"><thead><tr><th>Book</th><th>Author</th><th>Timeline Placement</th></tr></thead><tbody>' +
+      books.map((book) => '<tr><td>' + linkTo("", "book", book.id) + '</td><td>' + escapeHtml(book.author) + '</td><td>' + escapeHtml(book.timelinePlacement) + '</td></tr>').join("") +
+      '</tbody></table></div></section>\n';
+  };
+  renderBrowsePage("books.html", "Books", "Books grouped by testament in canon order.", section("Old Testament", "OT") + section("New Testament", "NT"));
+}
+
+function renderKingsBrowse() {
+  const personRow = (person) => '<tr><td>' + linkTo("", "person", person.id) + '</td><td>' + escapeHtml(person.kingdom || person.nationality || "None listed") + '</td></tr>';
+  const section = (label, people) => '<section class="content-panel"><h2>' + escapeHtml(label) + '</h2><div class="table-wrap"><table class="browse-table"><thead><tr><th>Name</th><th>Kingdom / Nationality</th></tr></thead><tbody>' + people.sort(compareByTimelineThenName).map(personRow).join("") + '</tbody></table></div></section>\n';
+  renderBrowsePage("kings.html", "Kings & Queens", "Royal figures ordered by first timeline appearance when available.",
+    section("Kings", data.people.filter((person) => hasRole(person, ["king"]))) +
+    section("Queens", data.people.filter((person) => hasRole(person, ["queen", "queen mother"])))
+  );
+}
+
+function eventEraSummary(person) {
+  const events = sortedEvents(person.events);
+  const eras = [];
+  events.forEach((event) => {
+    if (eras.indexOf(event.era) === -1) eras.push(event.era);
+  });
+  return eras.length ? eras.join(", ") : "None listed";
+}
+
+function renderRoleBrowse(fileName, title, roleNames, description) {
+  const people = data.people.filter((person) => hasRole(person, roleNames)).sort(compareByTimelineThenName);
+  const rows = people.map((person) => (
+    '<tr><td>' + linkTo("", "person", person.id) + '</td><td>' + escapeHtml(eventEraSummary(person)) + '</td><td>' + escapeHtml((person.events || []).length) + '</td></tr>'
+  )).join("");
+  renderBrowsePage(fileName, title, description,
+    '<section class="content-panel"><h2>' + escapeHtml(title) + '</h2><div class="table-wrap"><table class="browse-table"><thead><tr><th>Name</th><th>Era of Ministry</th><th>Linked Events</th></tr></thead><tbody>' + rows + '</tbody></table></div></section>\n'
+  );
+}
+
+function renderMiraclesBrowse() {
+  const rows = (data.categories.miracles || []).map((miracle) => {
+    const event = lookup("event", miracle.eventId);
+    return '<tr><td>' + linkTo("", "event", miracle.eventId) + '</td><td>' + escapeHtml(event ? event.reference : "") + '</td><td>' + escapeHtml(miracle.note || "") + '</td></tr>';
+  }).join("");
+  renderBrowsePage("miracles.html", "Miracles", "Events whose core action is miraculous or directly supernatural.",
+    '<section class="content-panel"><h2>Miraculous Events</h2><div class="table-wrap"><table class="browse-table"><thead><tr><th>Event</th><th>Reference</th><th>Note</th></tr></thead><tbody>' + rows + '</tbody></table></div></section>\n'
+  );
+}
+
+function gospelBookFromReference(reference) {
+  const firstWord = String(reference || "").split(/\s+/)[0].toLowerCase();
+  if (["matthew", "mark", "luke", "john"].indexOf(firstWord) !== -1) return firstWord;
+  return "matthew";
+}
+
+function renderParablesBrowse() {
+  const rows = (data.categories.parables || []).map((parable) => {
+    const target = parable.eventId ? linkToWithLabel("", "event", parable.eventId, parable.reference) : linkToWithLabel("", "book", gospelBookFromReference(parable.reference), parable.reference);
+    return '<tr><td>' + escapeHtml(parable.name) + '</td><td>' + target + '</td></tr>';
+  }).join("");
+  renderBrowsePage("parables.html", "Parables", "Major parables with references and event links where the dataset has a matching event page.",
+    '<section class="content-panel"><h2>Major Parables</h2><div class="table-wrap"><table class="browse-table"><thead><tr><th>Parable</th><th>Reference</th></tr></thead><tbody>' + rows + '</tbody></table></div></section>\n'
+  );
+}
+
+function genealogyNode(personId, note) {
+  const person = maps.people.get(personId);
+  const label = person ? linkTo("", "person", person.id) : escapeHtml(personId);
+  return '<li>' + label + (note ? ' <span class="muted">(' + escapeHtml(note) + ')</span>' : '');
+}
+
+function renderGenealogyBrowse() {
+  const line = [
+    ["adam", ""],
+    ["seth", ""],
+    [null, "...generations per Genesis 5"],
+    ["noah", ""],
+    ["shem", ""],
+    [null, "...generations per Genesis 11"],
+    ["abraham", ""],
+    ["isaac", ""],
+    ["jacob", ""],
+    ["judah", ""],
+    [null, "...generations per Ruth 4:18-22"],
+    ["boaz", ""],
+    ["david", ""],
+    ["solomon", ""],
+    [null, "...generations per Matthew 1"],
+    ["jesus", "Messiah"]
+  ];
+  let nested = "";
+  line.forEach(([id, note]) => {
+    if (id) {
+      nested += genealogyNode(id, note) + "<ul>";
+    } else {
+      nested += '<li><span class="muted">' + escapeHtml(note) + '</span><ul>';
+    }
+  });
+  nested += "</ul></li>".repeat(line.length);
+
+  renderBrowsePage("genealogy.html", "Genealogy", "Messianic line summary using available person parent/child records, with gaps labeled from biblical genealogies.",
+    '<section class="content-panel"><h2>Messianic Line</h2><p>Line summarized from Adam to Jesus with Matthew 1 and Luke 3 in view. Differences between Matthew and Luke are noted as a matter of scholarly discussion.</p><ul class="genealogy-list">' + nested + '</ul></section>\n'
+  );
+}
+
+function renderMapsBrowse() {
+  const withCoordinates = sortByName(data.places.filter((place) => place.lat != null && place.lng != null));
+  const uncertain = sortByName(data.places.filter((place) => place.lat == null || place.lng == null));
+  const rows = withCoordinates.map((place) => (
+    '<tr><td>' + linkTo("", "place", place.id) + '</td><td>' + escapeHtml(place.modernCountry || "None listed") + '</td><td>' + escapeHtml(place.lat) + '</td><td>' + escapeHtml(place.lng) + '</td></tr>'
+  )).join("");
+  renderBrowsePage("maps.html", "Maps", "Coordinate index for places in the Bible timeline dataset.",
+    '<section class="content-panel"><h2>Mapped Places</h2><div class="map-placeholder">Interactive map is a future enhancement.</div><div class="table-wrap"><table class="browse-table"><thead><tr><th>Name</th><th>Modern Country</th><th>Lat</th><th>Lng</th></tr></thead><tbody>' + rows + '</tbody></table></div></section>\n' +
+    '<section class="content-panel"><h2>Location Uncertain</h2>' + listLinks("", "place", uncertain.map((place) => place.id)) + '</section>\n'
+  );
 }
 
 function renderTimeline() {
@@ -569,6 +787,17 @@ function build() {
   pruneOrphanPages();
   renderIndex();
   renderTimeline();
+  renderPeopleBrowse();
+  renderLocationsBrowse();
+  renderBooksBrowse();
+  renderKingsBrowse();
+  renderRoleBrowse("prophets.html", "Prophets", ["prophet", "prophetess"], "Prophets and prophetesses with ministry eras derived from linked timeline events.");
+  renderRoleBrowse("judges.html", "Judges", ["judge"], "Judges with eras derived from linked timeline events.");
+  renderRoleBrowse("apostles.html", "Apostles", ["apostle"], "Apostles with eras derived from linked timeline events.");
+  renderMiraclesBrowse();
+  renderParablesBrowse();
+  renderGenealogyBrowse();
+  renderMapsBrowse();
   data.events.forEach(renderEventPage);
   data.people.forEach(renderPersonPage);
   data.places.forEach(renderPlacePage);
@@ -579,7 +808,7 @@ function build() {
   console.log("Generated " + data.people.length + " person pages.");
   console.log("Generated " + data.places.length + " location pages.");
   console.log("Generated " + data.books.length + " book pages.");
-  console.log("Generated timeline.html, index.html, and js/data.js.");
+  console.log("Generated timeline.html, index.html, browse pages, and js/data.js.");
 
   if (warnings > 0) {
     console.log("Completed with " + warnings + " warning(s).");

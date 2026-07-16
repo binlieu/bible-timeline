@@ -370,6 +370,35 @@ main {
   text-decoration: none;
 }
 
+.table-wrap {
+  overflow-x: auto;
+}
+
+.browse-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.browse-table th,
+.browse-table td {
+  padding: 0.65rem 0.75rem;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--border);
+}
+
+.browse-table th {
+  color: var(--muted);
+}
+
+.genealogy-list ul {
+  margin-top: 0.35rem;
+}
+
+.muted {
+  color: var(--muted);
+}
+
 .map-placeholder,
 .photo-placeholder {
   display: grid;
