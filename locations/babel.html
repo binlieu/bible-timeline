@@ -12,28 +12,52 @@
 <header class="site-header">
   <div class="nav-wrap">
     <a class="brand" href="../index.html">Bible Timeline</a>
-    <nav aria-label="Main navigation">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Menu"><span></span><span></span><span></span></button>
+    <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
       <ul class="nav-links">
-        <li><a href="../index.html">Home</a></li>
         <li><a href="../timeline.html">Timeline</a></li>
-        <li><a href="../people.html">People</a></li>
-        <li><a href="../locations.html">Places</a></li>
-        <li><a href="../books.html">Books</a></li>
-        <li><a href="../prophecies.html">Prophecies</a></li>
-        <li><a href="../nations.html">Nations</a></li>
-        <li><a href="../themes.html">Themes</a></li>
-        <li><a href="../graph.html">Graph</a></li>
+        <li class="nav-group">
+          <button type="button" class="nav-group-toggle" aria-expanded="false" aria-controls="menu-people">People <span class="caret" aria-hidden="true"></span></button>
+          <ul class="nav-menu" id="menu-people" role="menu">
+            <li role="none"><a role="menuitem" href="../people.html">All People</a></li>
+            <li role="none"><a role="menuitem" href="../kings.html">Kings</a></li>
+            <li role="none"><a role="menuitem" href="../prophets.html">Prophets</a></li>
+            <li role="none"><a role="menuitem" href="../judges.html">Judges</a></li>
+            <li role="none"><a role="menuitem" href="../apostles.html">Apostles</a></li>
+            <li role="none"><a role="menuitem" href="../genealogy.html">Genealogy</a></li>
+          </ul>
+        </li>
+        <li class="nav-group">
+          <button type="button" class="nav-group-toggle" aria-expanded="false" aria-controls="menu-places">Places <span class="caret" aria-hidden="true"></span></button>
+          <ul class="nav-menu" id="menu-places" role="menu">
+            <li role="none"><a role="menuitem" href="../locations.html">All Places</a></li>
+            <li role="none"><a role="menuitem" href="../maps.html">Maps</a></li>
+            <li role="none"><a role="menuitem" href="../journeys.html">Journeys</a></li>
+            <li role="none"><a role="menuitem" href="../nations.html">Nations</a></li>
+          </ul>
+        </li>
+        <li class="nav-group">
+          <button type="button" class="nav-group-toggle" aria-expanded="false" aria-controls="menu-study">Study <span class="caret" aria-hidden="true"></span></button>
+          <ul class="nav-menu" id="menu-study" role="menu">
+            <li role="none"><a role="menuitem" href="../books.html">Books</a></li>
+            <li role="none"><a role="menuitem" href="../prophecies.html">Prophecies</a></li>
+            <li role="none"><a role="menuitem" href="../themes.html">Themes</a></li>
+            <li role="none"><a role="menuitem" href="../miracles.html">Miracles</a></li>
+            <li role="none"><a role="menuitem" href="../parables.html">Parables</a></li>
+            <li role="none"><a role="menuitem" href="../graph.html">Graph</a></li>
+          </ul>
+        </li>
       </ul>
-    </nav>
-    <div class="header-actions">
+      <div class="header-actions">
       <form class="search-form" data-search-form role="search">
         <label class="visually-hidden" for="site-search">Search</label>
         <input id="site-search" data-search-input type="search" autocomplete="off" placeholder="Search timeline">
         <div class="search-results" data-search-results hidden></div>
       </form>
-      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">Theme</button>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+      </div>
+    </nav>
     </div>
-  </div>
 </header>
 <main id="main">
 <section class="section"><div class="container">
@@ -55,6 +79,7 @@
 </footer>
 <script src="../js/data.js"></script>
 <script src="../js/search.js"></script>
+<script src="../js/nav.js"></script>
 <script src="../js/map-data.js"></script>
 <script src="../js/map.js"></script>
 </body>
