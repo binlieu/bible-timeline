@@ -1627,7 +1627,11 @@
       "jordan-river"
     ],
     "books": [
-      "exodus"
+      "exodus",
+      "genesis",
+      "leviticus",
+      "numbers",
+      "deuteronomy"
     ]
   },
   {
@@ -1864,7 +1868,12 @@
       "hebron",
       "shechem"
     ],
-    "books": []
+    "books": [
+      "exodus",
+      "numbers",
+      "deuteronomy",
+      "joshua"
+    ]
   },
   {
     "id": "caleb",
@@ -2231,7 +2240,9 @@
       "moab",
       "shiloh"
     ],
-    "books": []
+    "books": [
+      "ruth"
+    ]
   },
   {
     "id": "naomi",
@@ -2303,7 +2314,9 @@
       "moab",
       "shiloh"
     ],
-    "books": []
+    "books": [
+      "ruth"
+    ]
   },
   {
     "id": "eli",
@@ -2434,7 +2447,9 @@
       "bethlehem",
       "en-gedi"
     ],
-    "books": []
+    "books": [
+      "1-samuel"
+    ]
   },
   {
     "id": "saul",
@@ -2589,7 +2604,12 @@
       "jerusalem",
       "hebron"
     ],
-    "books": []
+    "books": [
+      "1-samuel",
+      "2-samuel",
+      "1-chronicles",
+      "psalms"
+    ]
   },
   {
     "id": "goliath",
@@ -2830,7 +2850,14 @@
     "relatedPlaces": [
       "jerusalem"
     ],
-    "books": []
+    "books": [
+      "2-samuel",
+      "1-kings",
+      "2-chronicles",
+      "proverbs",
+      "ecclesiastes",
+      "song-of-solomon"
+    ]
   },
   {
     "id": "rehoboam",
@@ -3113,7 +3140,9 @@
     "relatedPlaces": [
       "nineveh"
     ],
-    "books": []
+    "books": [
+      "jonah"
+    ]
   },
   {
     "id": "amos",
@@ -3145,7 +3174,9 @@
     "relatedPlaces": [
       "samaria"
     ],
-    "books": []
+    "books": [
+      "amos"
+    ]
   },
   {
     "id": "hosea",
@@ -3179,7 +3210,9 @@
     "relatedPlaces": [
       "samaria"
     ],
-    "books": []
+    "books": [
+      "hosea"
+    ]
   },
   {
     "id": "isaiah",
@@ -3214,7 +3247,11 @@
     "relatedPlaces": [
       "jerusalem"
     ],
-    "books": []
+    "books": [
+      "2-kings",
+      "2-chronicles",
+      "isaiah"
+    ]
   },
   {
     "id": "hezekiah",
@@ -3359,7 +3396,12 @@
       "jerusalem",
       "babylon"
     ],
-    "books": []
+    "books": [
+      "2-kings",
+      "2-chronicles",
+      "jeremiah",
+      "lamentations"
+    ]
   },
   {
     "id": "nebuchadnezzar",
@@ -3451,7 +3493,9 @@
     "relatedPlaces": [
       "babylon"
     ],
-    "books": []
+    "books": [
+      "daniel"
+    ]
   },
   {
     "id": "shadrach",
@@ -3596,7 +3640,9 @@
       "babylon",
       "jerusalem"
     ],
-    "books": []
+    "books": [
+      "ezekiel"
+    ]
   },
   {
     "id": "belshazzar",
@@ -3772,7 +3818,9 @@
     "relatedPlaces": [
       "susa"
     ],
-    "books": []
+    "books": [
+      "esther"
+    ]
   },
   {
     "id": "mordecai",
@@ -3803,7 +3851,9 @@
     "relatedPlaces": [
       "susa"
     ],
-    "books": []
+    "books": [
+      "esther"
+    ]
   },
   {
     "id": "ahasuerus",
@@ -3882,7 +3932,10 @@
       "babylon",
       "susa"
     ],
-    "books": []
+    "books": [
+      "ezra",
+      "nehemiah"
+    ]
   },
   {
     "id": "nehemiah",
@@ -3918,7 +3971,9 @@
       "jerusalem",
       "susa"
     ],
-    "books": []
+    "books": [
+      "nehemiah"
+    ]
   },
   {
     "id": "haggai",
@@ -3952,7 +4007,10 @@
     "relatedPlaces": [
       "jerusalem"
     ],
-    "books": []
+    "books": [
+      "ezra",
+      "haggai"
+    ]
   },
   {
     "id": "zechariah",
@@ -3986,7 +4044,10 @@
     "relatedPlaces": [
       "jerusalem"
     ],
-    "books": []
+    "books": [
+      "ezra",
+      "zechariah"
+    ]
   },
   {
     "id": "malachi",
@@ -4021,7 +4082,9 @@
     "relatedPlaces": [
       "jerusalem"
     ],
-    "books": []
+    "books": [
+      "malachi"
+    ]
   },
   {
     "id": "jesus",
@@ -4191,7 +4254,16 @@
       "patmos",
       "ephesus"
     ],
-    "books": []
+    "books": [
+      "matthew",
+      "mark",
+      "luke",
+      "john",
+      "acts",
+      "romans",
+      "hebrews",
+      "revelation"
+    ]
   },
   {
     "id": "mary",
@@ -4672,7 +4744,15 @@
       "joppa",
       "antioch"
     ],
-    "books": []
+    "books": [
+      "matthew",
+      "mark",
+      "luke",
+      "john",
+      "acts",
+      "1-peter",
+      "2-peter"
+    ]
   },
   {
     "id": "andrew",
@@ -4943,7 +5023,17 @@
       "patmos",
       "ephesus"
     ],
-    "books": []
+    "books": [
+      "matthew",
+      "mark",
+      "luke",
+      "john",
+      "acts",
+      "1-john",
+      "2-john",
+      "3-john",
+      "revelation"
+    ]
   },
   {
     "id": "philip-the-apostle",
@@ -5140,7 +5230,10 @@
       "sea-of-galilee",
       "capernaum"
     ],
-    "books": []
+    "books": [
+      "matthew",
+      "acts"
+    ]
   },
   {
     "id": "james-son-of-alphaeus",
@@ -5825,7 +5918,22 @@
       "malta",
       "rome"
     ],
-    "books": []
+    "books": [
+      "acts",
+      "romans",
+      "1-corinthians",
+      "2-corinthians",
+      "galatians",
+      "ephesians",
+      "philippians",
+      "colossians",
+      "1-thessalonians",
+      "2-thessalonians",
+      "1-timothy",
+      "2-timothy",
+      "titus",
+      "philemon"
+    ]
   },
   {
     "id": "barnabas",
@@ -5879,7 +5987,10 @@
       "cyprus",
       "lystra"
     ],
-    "books": []
+    "books": [
+      "acts",
+      "galatians"
+    ]
   },
   {
     "id": "silas",
@@ -5929,7 +6040,11 @@
       "athens",
       "corinth"
     ],
-    "books": []
+    "books": [
+      "acts",
+      "1-thessalonians",
+      "2-thessalonians"
+    ]
   },
   {
     "id": "timothy",
@@ -5986,7 +6101,17 @@
       "rome",
       "malta"
     ],
-    "books": []
+    "books": [
+      "acts",
+      "1-thessalonians",
+      "2-thessalonians",
+      "2-corinthians",
+      "philippians",
+      "colossians",
+      "1-timothy",
+      "2-timothy",
+      "philemon"
+    ]
   },
   {
     "id": "luke",
@@ -6044,7 +6169,13 @@
       "malta",
       "rome"
     ],
-    "books": []
+    "books": [
+      "luke",
+      "acts",
+      "colossians",
+      "2-timothy",
+      "philemon"
+    ]
   },
   {
     "id": "john-mark",
@@ -6085,7 +6216,13 @@
       "rome",
       "malta"
     ],
-    "books": []
+    "books": [
+      "acts",
+      "mark",
+      "colossians",
+      "2-timothy",
+      "1-peter"
+    ]
   },
   {
     "id": "apollos",
@@ -6301,7 +6438,11 @@
       "jerusalem",
       "antioch"
     ],
-    "books": []
+    "books": [
+      "2-corinthians",
+      "galatians",
+      "titus"
+    ]
   },
   {
     "id": "cornelius",
@@ -6383,7 +6524,13 @@
       "tarsus",
       "caesarea"
     ],
-    "books": []
+    "books": [
+      "acts",
+      "1-corinthians",
+      "galatians",
+      "james",
+      "jude"
+    ]
   },
   {
     "id": "jude",
@@ -6413,6 +6560,8 @@
     "relatedPlaces": [
       "jerusalem"
     ],
-    "books": []
+    "books": [
+      "jude"
+    ]
   }
 ]
