@@ -393,8 +393,8 @@ function renderConnectionsPanel(rootPrefix, type, id) {
 function pageLayout(options) {
   const rootPrefix = options.rootPrefix || "";
   let scripts = options.timelineScript
-    ? '<script src="' + rootPrefix + 'js/data.js"></script>\n<script src="' + rootPrefix + 'js/search.js"></script>\n<script src="' + rootPrefix + 'js/timeline.js"></script>'
-    : '<script src="' + rootPrefix + 'js/data.js"></script>\n<script src="' + rootPrefix + 'js/search.js"></script>';
+    ? '<script src="' + rootPrefix + 'js/data.js"></script>\n<script src="' + rootPrefix + 'js/search.js"></script>\n<script src="' + rootPrefix + 'js/nav.js"></script>\n<script src="' + rootPrefix + 'js/timeline.js"></script>'
+    : '<script src="' + rootPrefix + 'js/data.js"></script>\n<script src="' + rootPrefix + 'js/search.js"></script>\n<script src="' + rootPrefix + 'js/nav.js"></script>';
   if (options.mapScript) {
     scripts += '\n<script src="' + rootPrefix + 'js/map-data.js"></script>\n<script src="' + rootPrefix + 'js/map.js"></script>';
   }
@@ -425,28 +425,52 @@ function renderHeader(rootPrefix) {
   return '<header class="site-header">\n' +
     '  <div class="nav-wrap">\n' +
     '    <a class="brand" href="' + rootPrefix + 'index.html">Bible Timeline</a>\n' +
-    '    <nav aria-label="Main navigation">\n' +
+    '    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Menu"><span></span><span></span><span></span></button>\n' +
+    '    <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">\n' +
     '      <ul class="nav-links">\n' +
-    '        <li><a href="' + rootPrefix + 'index.html">Home</a></li>\n' +
     '        <li><a href="' + rootPrefix + 'timeline.html">Timeline</a></li>\n' +
-    '        <li><a href="' + rootPrefix + 'people.html">People</a></li>\n' +
-    '        <li><a href="' + rootPrefix + 'locations.html">Places</a></li>\n' +
-    '        <li><a href="' + rootPrefix + 'books.html">Books</a></li>\n' +
-    '        <li><a href="' + rootPrefix + 'prophecies.html">Prophecies</a></li>\n' +
-    '        <li><a href="' + rootPrefix + 'nations.html">Nations</a></li>\n' +
-    '        <li><a href="' + rootPrefix + 'themes.html">Themes</a></li>\n' +
-    '        <li><a href="' + rootPrefix + 'graph.html">Graph</a></li>\n' +
+    '        <li class="nav-group">\n' +
+    '          <button type="button" class="nav-group-toggle" aria-expanded="false" aria-controls="menu-people">People <span class="caret" aria-hidden="true"></span></button>\n' +
+    '          <ul class="nav-menu" id="menu-people" role="menu">\n' +
+    '            <li role="none"><a role="menuitem" href="' + rootPrefix + 'people.html">All People</a></li>\n' +
+    '            <li role="none"><a role="menuitem" href="' + rootPrefix + 'kings.html">Kings</a></li>\n' +
+    '            <li role="none"><a role="menuitem" href="' + rootPrefix + 'prophets.html">Prophets</a></li>\n' +
+    '            <li role="none"><a role="menuitem" href="' + rootPrefix + 'judges.html">Judges</a></li>\n' +
+    '            <li role="none"><a role="menuitem" href="' + rootPrefix + 'apostles.html">Apostles</a></li>\n' +
+    '            <li role="none"><a role="menuitem" href="' + rootPrefix + 'genealogy.html">Genealogy</a></li>\n' +
+    '          </ul>\n' +
+    '        </li>\n' +
+    '        <li class="nav-group">\n' +
+    '          <button type="button" class="nav-group-toggle" aria-expanded="false" aria-controls="menu-places">Places <span class="caret" aria-hidden="true"></span></button>\n' +
+    '          <ul class="nav-menu" id="menu-places" role="menu">\n' +
+    '            <li role="none"><a role="menuitem" href="' + rootPrefix + 'locations.html">All Places</a></li>\n' +
+    '            <li role="none"><a role="menuitem" href="' + rootPrefix + 'maps.html">Maps</a></li>\n' +
+    '            <li role="none"><a role="menuitem" href="' + rootPrefix + 'journeys.html">Journeys</a></li>\n' +
+    '            <li role="none"><a role="menuitem" href="' + rootPrefix + 'nations.html">Nations</a></li>\n' +
+    '          </ul>\n' +
+    '        </li>\n' +
+    '        <li class="nav-group">\n' +
+    '          <button type="button" class="nav-group-toggle" aria-expanded="false" aria-controls="menu-study">Study <span class="caret" aria-hidden="true"></span></button>\n' +
+    '          <ul class="nav-menu" id="menu-study" role="menu">\n' +
+    '            <li role="none"><a role="menuitem" href="' + rootPrefix + 'books.html">Books</a></li>\n' +
+    '            <li role="none"><a role="menuitem" href="' + rootPrefix + 'prophecies.html">Prophecies</a></li>\n' +
+    '            <li role="none"><a role="menuitem" href="' + rootPrefix + 'themes.html">Themes</a></li>\n' +
+    '            <li role="none"><a role="menuitem" href="' + rootPrefix + 'miracles.html">Miracles</a></li>\n' +
+    '            <li role="none"><a role="menuitem" href="' + rootPrefix + 'parables.html">Parables</a></li>\n' +
+    '            <li role="none"><a role="menuitem" href="' + rootPrefix + 'graph.html">Graph</a></li>\n' +
+    '          </ul>\n' +
+    '        </li>\n' +
     '      </ul>\n' +
-    '    </nav>\n' +
-    '    <div class="header-actions">\n' +
+    '      <div class="header-actions">\n' +
     '      <form class="search-form" data-search-form role="search">\n' +
     '        <label class="visually-hidden" for="site-search">Search</label>\n' +
     '        <input id="site-search" data-search-input type="search" autocomplete="off" placeholder="Search timeline">\n' +
     '        <div class="search-results" data-search-results hidden></div>\n' +
     '      </form>\n' +
-    '      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">Theme</button>\n' +
+    '      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>\n' +
+    '      </div>\n' +
+    '    </nav>\n' +
     '    </div>\n' +
-    '  </div>\n' +
     '</header>\n';
 }
 
