@@ -5,47 +5,69 @@
     "testament": "OT",
     "orderInCanon": 1,
     "author": "Traditionally Moses",
-    "date": "approx. 1445-1405 BC (traditional)",
+    "date": "approx. 1445-1405 BC (traditional); some scholarly opinion places final composition/editing in the exilic or postexilic period",
     "period": "Creation through the patriarchs",
     "timelinePlacement": "Creation to Joseph's death",
     "majorEvents": [
       "creation",
       "fall",
+      "cain-abel",
+      "godly-line-of-seth",
       "flood",
-      "babel",
+      "noahic-covenant",
+      "tower-of-babel",
       "call-of-abraham",
-      "isaac-born",
-      "jacob-esau",
-      "joseph-egypt"
+      "abram-in-egypt",
+      "abram-lot-separate",
+      "abrahamic-covenant",
+      "hagar-and-ishmael"
     ],
     "majorPeople": [
+      "god",
       "adam",
       "eve",
+      "cain",
+      "abel",
+      "seth",
+      "enoch",
+      "methuselah",
       "noah",
-      "abraham",
-      "isaac",
-      "jacob",
-      "joseph"
+      "shem",
+      "ham",
+      "japheth"
     ],
     "majorPlaces": [
       "eden",
+      "mount-ararat",
+      "babel",
       "ur",
+      "haran",
       "canaan",
+      "shechem",
+      "bethel",
       "egypt",
-      "babel"
+      "hebron"
     ],
     "outline": [
       "1-11 Primeval history",
-      "12-50 Patriarchs"
+      "12-25 Abraham and covenant promise",
+      "25-36 Isaac, Jacob, and Esau",
+      "37-50 Joseph and Israel in Egypt"
     ],
     "keyVerses": [
       "Genesis 1:1",
-      "Genesis 12:1-3"
+      "Genesis 3:15",
+      "Genesis 12:1-3",
+      "Genesis 50:20"
     ],
     "connections": [
       {
         "bookId": "exodus",
-        "note": "Exodus continues Israel's story from family in Egypt to redeemed nation."
+        "note": "Genesis connects with Exodus through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "romans",
+        "note": "Genesis connects with Romans through shared history, theology, or literary development."
       }
     ]
   },
@@ -55,33 +77,416 @@
     "testament": "OT",
     "orderInCanon": 2,
     "author": "Traditionally Moses",
-    "date": "approx. 1445-1405 BC (traditional)",
+    "date": "approx. 1445-1405 BC (traditional); some scholarly opinion places final form later in Israel's history",
     "period": "Israel's deliverance from Egypt and covenant at Sinai",
-    "timelinePlacement": "From slavery in Egypt to Sinai",
+    "timelinePlacement": "From slavery in Egypt to the tabernacle at Sinai",
     "majorEvents": [
-      "exodus-egypt",
-      "ten-commandments"
+      "israel-enslaved-in-egypt",
+      "birth-of-moses",
+      "moses-flees-to-midian",
+      "burning-bush",
+      "ten-plagues",
+      "first-passover",
+      "red-sea-crossing",
+      "manna-and-quail",
+      "ten-commandments",
+      "golden-calf",
+      "tabernacle-built"
     ],
     "majorPeople": [
-      "moses"
+      "god",
+      "moses",
+      "aaron",
+      "miriam",
+      "jethro"
     ],
     "majorPlaces": [
       "egypt",
+      "goshen",
+      "midian",
       "mount-sinai"
     ],
     "outline": [
-      "1-18 Deliverance from Egypt",
+      "1-6 Oppression and Moses' call",
+      "7-13 Plagues and Passover",
+      "14-18 Exodus journey to Sinai",
       "19-24 Covenant at Sinai",
-      "25-40 Tabernacle instructions and construction"
+      "25-31 Tabernacle instructions",
+      "32-34 Covenant breach and renewal",
+      "35-40 Tabernacle construction"
     ],
     "keyVerses": [
       "Exodus 3:14",
+      "Exodus 12:13",
+      "Exodus 19:5-6",
       "Exodus 20:2"
     ],
     "connections": [
       {
         "bookId": "genesis",
-        "note": "Exodus fulfills God's promise to remember Abraham, Isaac, and Jacob."
+        "note": "Exodus connects with Genesis through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "leviticus",
+        "note": "Exodus connects with Leviticus through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "leviticus",
+    "name": "Leviticus",
+    "testament": "OT",
+    "orderInCanon": 3,
+    "author": "Traditionally Moses",
+    "date": "approx. 1445-1405 BC (traditional); some scholarly opinion places final priestly shaping later",
+    "period": "Sinai covenant worship and holiness",
+    "timelinePlacement": "At Mount Sinai after the tabernacle is established",
+    "majorEvents": [],
+    "majorPeople": [
+      "moses",
+      "aaron",
+      "god"
+    ],
+    "majorPlaces": [
+      "mount-sinai"
+    ],
+    "outline": [
+      "1-7 Offerings",
+      "8-10 Priesthood and worship",
+      "11-15 Clean and unclean laws",
+      "16 Day of Atonement",
+      "17-22 Holiness in worship and life",
+      "23-27 Feasts, vows, blessings, and warnings"
+    ],
+    "keyVerses": [
+      "Leviticus 11:45",
+      "Leviticus 16:30",
+      "Leviticus 19:2",
+      "Leviticus 19:18"
+    ],
+    "connections": [
+      {
+        "bookId": "exodus",
+        "note": "Leviticus connects with Exodus through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "hebrews",
+        "note": "Leviticus connects with Hebrews through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "numbers",
+    "name": "Numbers",
+    "testament": "OT",
+    "orderInCanon": 4,
+    "author": "Traditionally Moses",
+    "date": "approx. 1445-1405 BC (traditional); some scholarly opinion places final form later",
+    "period": "Israel's wilderness generation",
+    "timelinePlacement": "approx. 1445-1405 BC from Sinai to Moab",
+    "majorEvents": [
+      "twelve-spies",
+      "wilderness-wanderings",
+      "bronze-serpent",
+      "balaam"
+    ],
+    "majorPeople": [
+      "moses",
+      "joshua",
+      "caleb",
+      "aaron",
+      "miriam",
+      "god",
+      "balaam"
+    ],
+    "majorPlaces": [
+      "kadesh-barnea",
+      "canaan",
+      "moab",
+      "mount-sinai"
+    ],
+    "outline": [
+      "1-10 Preparing to leave Sinai",
+      "11-14 Rebellion and unbelief",
+      "15-19 Wilderness laws and priestly matters",
+      "20-25 Journey to Moab and Balaam",
+      "26-36 New generation and land preparation"
+    ],
+    "keyVerses": [
+      "Numbers 6:24-26",
+      "Numbers 14:18",
+      "Numbers 21:8-9",
+      "Numbers 23:19"
+    ],
+    "connections": [
+      {
+        "bookId": "leviticus",
+        "note": "Numbers connects with Leviticus through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "deuteronomy",
+        "note": "Numbers connects with Deuteronomy through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "deuteronomy",
+    "name": "Deuteronomy",
+    "testament": "OT",
+    "orderInCanon": 5,
+    "author": "Traditionally Moses; final notice of Moses' death may reflect later inspired editorial work",
+    "date": "approx. 1405 BC (traditional); some scholarly opinion places significant composition or editing in the monarchic/exilic period",
+    "period": "Moses' covenant renewal on the plains of Moab",
+    "timelinePlacement": "Moses' final speeches before Israel enters Canaan",
+    "majorEvents": [
+      "death-of-moses",
+      "joshua-commissioned"
+    ],
+    "majorPeople": [
+      "moses",
+      "god",
+      "joshua",
+      "aaron",
+      "miriam",
+      "caleb"
+    ],
+    "majorPlaces": [
+      "moab",
+      "jordan-river",
+      "canaan"
+    ],
+    "outline": [
+      "1-4 Historical prologue and appeal",
+      "5-11 Covenant commands and love for God",
+      "12-26 Laws for life in the land",
+      "27-30 Blessings, curses, and covenant renewal",
+      "31-34 Joshua commissioned and Moses' death"
+    ],
+    "keyVerses": [
+      "Deuteronomy 6:4-5",
+      "Deuteronomy 10:12-13",
+      "Deuteronomy 18:15",
+      "Deuteronomy 30:19-20"
+    ],
+    "connections": [
+      {
+        "bookId": "numbers",
+        "note": "Deuteronomy connects with Numbers through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "joshua",
+        "note": "Deuteronomy connects with Joshua through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "joshua",
+    "name": "Joshua",
+    "testament": "OT",
+    "orderInCanon": 6,
+    "author": "Anonymous; traditionally linked with Joshua and later prophetic/editorial sources",
+    "date": "events approx. 1405-1375 BC; final composition uncertain",
+    "period": "Conquest and settlement of Canaan",
+    "timelinePlacement": "approx. 1405-1375 BC",
+    "majorEvents": [
+      "crossing-the-jordan",
+      "fall-of-jericho",
+      "sun-stands-still",
+      "land-divided-among-tribes",
+      "joshuas-farewell"
+    ],
+    "majorPeople": [
+      "joshua",
+      "god",
+      "caleb",
+      "rahab"
+    ],
+    "majorPlaces": [
+      "jordan-river",
+      "gilgal",
+      "jericho",
+      "canaan",
+      "shiloh",
+      "hebron",
+      "shechem"
+    ],
+    "outline": [
+      "1-5 Entry into Canaan",
+      "6-12 Major conquest campaigns",
+      "13-21 Land allotments",
+      "22-24 Covenant renewal and Joshua's farewell"
+    ],
+    "keyVerses": [
+      "Joshua 1:8-9",
+      "Joshua 21:45",
+      "Joshua 24:15"
+    ],
+    "connections": [
+      {
+        "bookId": "deuteronomy",
+        "note": "Joshua connects with Deuteronomy through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "judges",
+        "note": "Joshua connects with Judges through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "judges",
+    "name": "Judges",
+    "testament": "OT",
+    "orderInCanon": 7,
+    "author": "Anonymous; traditionally associated with Samuel",
+    "date": "events approx. 1375-1050 BC; composition likely during or after the early monarchy",
+    "period": "Cycles of apostasy, oppression, deliverance, and relapse",
+    "timelinePlacement": "approx. 1375-1050 BC",
+    "majorEvents": [
+      "cycle-of-the-judges",
+      "deborah-and-barak",
+      "gideon",
+      "jephthah",
+      "samson"
+    ],
+    "majorPeople": [
+      "god",
+      "joshua",
+      "deborah",
+      "barak",
+      "gideon",
+      "jephthah",
+      "samson",
+      "delilah"
+    ],
+    "majorPlaces": [
+      "shiloh",
+      "canaan",
+      "moab",
+      "gaza"
+    ],
+    "outline": [
+      "1-2 Israel after Joshua",
+      "3-16 Major judges and deliverances",
+      "17-18 Idolatry in Israel",
+      "19-21 Moral collapse and civil conflict"
+    ],
+    "keyVerses": [
+      "Judges 2:16-19",
+      "Judges 17:6",
+      "Judges 21:25"
+    ],
+    "connections": [
+      {
+        "bookId": "joshua",
+        "note": "Judges connects with Joshua through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "ruth",
+        "note": "Judges connects with Ruth through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "ruth",
+    "name": "Ruth",
+    "testament": "OT",
+    "orderInCanon": 8,
+    "author": "Anonymous; traditionally associated with Samuel",
+    "date": "events during the judges, approx. 12th-11th century BC; composition likely during the monarchy",
+    "period": "Family redemption in the days of the judges",
+    "timelinePlacement": "During the judges, leading toward David's line",
+    "majorEvents": [
+      "ruth-and-boaz"
+    ],
+    "majorPeople": [
+      "ruth",
+      "naomi",
+      "boaz",
+      "god"
+    ],
+    "majorPlaces": [
+      "bethlehem",
+      "moab"
+    ],
+    "outline": [
+      "1 Ruth's loyalty to Naomi",
+      "2 Ruth gleans in Boaz's field",
+      "3 Naomi seeks redemption",
+      "4 Boaz redeems and David's line is traced"
+    ],
+    "keyVerses": [
+      "Ruth 1:16-17",
+      "Ruth 2:12",
+      "Ruth 4:14-17"
+    ],
+    "connections": [
+      {
+        "bookId": "judges",
+        "note": "Ruth connects with Judges through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "1-samuel",
+        "note": "Ruth connects with 1 Samuel through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "1-samuel",
+    "name": "1 Samuel",
+    "testament": "OT",
+    "orderInCanon": 9,
+    "author": "Anonymous; traditionally associated with Samuel, Nathan, and Gad as sources",
+    "date": "events approx. 1100-1010 BC; final composition after the kingdom divided",
+    "period": "Transition from judges to monarchy",
+    "timelinePlacement": "Samuel's birth through Saul's decline and David's rise",
+    "majorEvents": [
+      "samuel-called",
+      "ark-captured-and-returned",
+      "saul-anointed-king",
+      "saul-rejected",
+      "david-anointed",
+      "david-and-goliath",
+      "david-flees-saul"
+    ],
+    "majorPeople": [
+      "samuel",
+      "hannah",
+      "eli",
+      "god",
+      "ruth",
+      "boaz",
+      "saul",
+      "david",
+      "goliath",
+      "jonathan"
+    ],
+    "majorPlaces": [
+      "shiloh",
+      "gaza",
+      "bethlehem",
+      "valley-of-elah",
+      "en-gedi"
+    ],
+    "outline": [
+      "1-7 Samuel and the ark",
+      "8-12 Israel asks for a king",
+      "13-15 Saul's failure",
+      "16-31 David rises while Saul declines"
+    ],
+    "keyVerses": [
+      "1 Samuel 2:30",
+      "1 Samuel 8:7",
+      "1 Samuel 15:22",
+      "1 Samuel 16:7"
+    ],
+    "connections": [
+      {
+        "bookId": "ruth",
+        "note": "1 Samuel connects with Ruth through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "2-samuel",
+        "note": "1 Samuel connects with 2 Samuel through shared history, theology, or literary development."
       }
     ]
   },
@@ -90,32 +495,2439 @@
     "name": "2 Samuel",
     "testament": "OT",
     "orderInCanon": 10,
-    "author": "Traditionally associated with prophetic sources",
-    "date": "final form after David's reign",
+    "author": "Anonymous; traditionally associated with Samuel, Nathan, and Gad as sources",
+    "date": "events approx. 1010-970 BC; final composition after David's reign",
     "period": "United monarchy under David",
     "timelinePlacement": "David's reign over Judah and Israel",
     "majorEvents": [
-      "david-becomes-king"
+      "david-becomes-king",
+      "ark-brought-to-jerusalem",
+      "davidic-covenant",
+      "david-and-bathsheba",
+      "absaloms-rebellion"
     ],
     "majorPeople": [
-      "david"
+      "david",
+      "joab",
+      "saul",
+      "jonathan",
+      "god",
+      "nathan",
+      "solomon",
+      "bathsheba",
+      "absalom"
     ],
     "majorPlaces": [
+      "jerusalem",
+      "hebron"
+    ],
+    "outline": [
+      "1-5 David becomes king",
+      "6-10 Jerusalem, covenant, and victories",
+      "11-12 David's sin and rebuke",
+      "13-20 Trouble in David's house",
+      "21-24 Final reflections on David's reign"
+    ],
+    "keyVerses": [
+      "2 Samuel 7:12-16",
+      "2 Samuel 12:13",
+      "2 Samuel 22:31"
+    ],
+    "connections": [
+      {
+        "bookId": "1-samuel",
+        "note": "2 Samuel connects with 1 Samuel through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "1-kings",
+        "note": "2 Samuel connects with 1 Kings through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "1-kings",
+    "name": "1 Kings",
+    "testament": "OT",
+    "orderInCanon": 11,
+    "author": "Anonymous; Jewish tradition associates Kings with Jeremiah",
+    "date": "events approx. 970-853 BC; final form during or after the exile",
+    "period": "Solomon and the divided kingdom",
+    "timelinePlacement": "Solomon's reign through early divided monarchy",
+    "majorEvents": [
+      "solomon-becomes-king",
+      "solomons-wisdom",
+      "temple-built",
+      "queen-of-sheba",
+      "solomons-decline",
+      "kingdom-divides",
+      "elijah-on-mount-carmel"
+    ],
+    "majorPeople": [
+      "solomon",
+      "david",
+      "bathsheba",
+      "nathan",
+      "joab",
+      "god",
+      "rehoboam",
+      "jeroboam",
+      "elijah",
+      "ahab",
+      "jezebel"
+    ],
+    "majorPlaces": [
+      "jerusalem",
+      "mount-carmel",
+      "samaria"
+    ],
+    "outline": [
+      "1-2 David's final days",
+      "3-11 Solomon's reign and decline",
+      "12-16 Kingdom divides and early kings",
+      "17-22 Elijah and Ahab"
+    ],
+    "keyVerses": [
+      "1 Kings 3:9",
+      "1 Kings 8:27",
+      "1 Kings 12:16",
+      "1 Kings 18:21"
+    ],
+    "connections": [
+      {
+        "bookId": "2-samuel",
+        "note": "1 Kings connects with 2 Samuel through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "2-kings",
+        "note": "1 Kings connects with 2 Kings through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "2-kings",
+    "name": "2 Kings",
+    "testament": "OT",
+    "orderInCanon": 12,
+    "author": "Anonymous; Jewish tradition associates Kings with Jeremiah",
+    "date": "events approx. 853-561 BC; final form during or after the exile",
+    "period": "Divided kingdom, exile of Israel, and fall of Judah",
+    "timelinePlacement": "Elijah's departure to Jerusalem's fall and exile",
+    "majorEvents": [
+      "elijah-taken-to-heaven",
+      "elisha-ministry",
+      "fall-of-samaria",
+      "hezekiah-and-sennacherib",
+      "josiahs-reforms",
+      "fall-of-jerusalem"
+    ],
+    "majorPeople": [
+      "elijah",
+      "elisha",
+      "god",
+      "naaman",
+      "hosea",
+      "hezekiah",
+      "sennacherib",
+      "isaiah",
+      "josiah",
+      "jeremiah",
+      "nebuchadnezzar"
+    ],
+    "majorPlaces": [
+      "jordan-river",
+      "samaria",
+      "damascus",
+      "jerusalem",
+      "babylon"
+    ],
+    "outline": [
+      "1-2 Elijah's final ministry",
+      "2-13 Elisha and Israel's kings",
+      "14-17 Decline and fall of Israel",
+      "18-20 Hezekiah and Assyria",
+      "21-25 Judah's decline and Jerusalem's fall"
+    ],
+    "keyVerses": [
+      "2 Kings 17:13-14",
+      "2 Kings 19:19",
+      "2 Kings 22:2",
+      "2 Kings 25:21"
+    ],
+    "connections": [
+      {
+        "bookId": "1-kings",
+        "note": "2 Kings connects with 1 Kings through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "jeremiah",
+        "note": "2 Kings connects with Jeremiah through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "1-chronicles",
+    "name": "1 Chronicles",
+    "testament": "OT",
+    "orderInCanon": 13,
+    "author": "Anonymous; traditionally associated with Ezra or the Chronicler",
+    "date": "postexilic, approx. 450-400 BC",
+    "period": "Genealogies and David's reign retold for restored Judah",
+    "timelinePlacement": "Adam to David's preparations for the temple",
+    "majorEvents": [],
+    "majorPeople": [],
+    "majorPlaces": [],
+    "outline": [
+      "1-9 Genealogies from Adam to restored Judah",
+      "10 Saul's death",
+      "11-21 David's rise and reign",
+      "22-29 Temple preparations and Solomon commissioned"
+    ],
+    "keyVerses": [
+      "1 Chronicles 16:8-11",
+      "1 Chronicles 17:11-14",
+      "1 Chronicles 29:11"
+    ],
+    "connections": [
+      {
+        "bookId": "2-samuel",
+        "note": "1 Chronicles connects with 2 Samuel through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "2-chronicles",
+        "note": "1 Chronicles connects with 2 Chronicles through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "2-chronicles",
+    "name": "2 Chronicles",
+    "testament": "OT",
+    "orderInCanon": 14,
+    "author": "Anonymous; traditionally associated with Ezra or the Chronicler",
+    "date": "postexilic, approx. 450-400 BC",
+    "period": "Solomon, Judah's kings, exile, and return hope",
+    "timelinePlacement": "Solomon's reign to Cyrus' decree",
+    "majorEvents": [],
+    "majorPeople": [],
+    "majorPlaces": [],
+    "outline": [
+      "1-9 Solomon and the temple",
+      "10-28 Judah's kings from Rehoboam to Ahaz",
+      "29-32 Hezekiah's reforms",
+      "33-36 Judah's final kings, exile, and Cyrus' decree"
+    ],
+    "keyVerses": [
+      "2 Chronicles 7:14",
+      "2 Chronicles 20:20",
+      "2 Chronicles 36:22-23"
+    ],
+    "connections": [
+      {
+        "bookId": "1-chronicles",
+        "note": "2 Chronicles connects with 1 Chronicles through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "ezra",
+        "note": "2 Chronicles connects with Ezra through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "ezra",
+    "name": "Ezra",
+    "testament": "OT",
+    "orderInCanon": 15,
+    "author": "Anonymous; traditionally associated with Ezra",
+    "date": "postexilic, approx. 450-400 BC",
+    "period": "Return from exile and temple restoration",
+    "timelinePlacement": "538-458 BC",
+    "majorEvents": [
+      "cyrus-decree",
+      "temple-rebuilt",
+      "ezra-returns"
+    ],
+    "majorPeople": [
+      "cyrus",
+      "zerubbabel",
+      "god",
+      "haggai",
+      "zechariah",
+      "ezra",
+      "ahasuerus"
+    ],
+    "majorPlaces": [
+      "babylon",
+      "jerusalem"
+    ],
+    "outline": [
+      "1-2 Cyrus' decree and first return",
+      "3-6 Altar, opposition, and rebuilt temple",
+      "7-8 Ezra's return",
+      "9-10 Covenant reform"
+    ],
+    "keyVerses": [
+      "Ezra 1:1-3",
+      "Ezra 7:10",
+      "Ezra 9:9"
+    ],
+    "connections": [
+      {
+        "bookId": "2-chronicles",
+        "note": "Ezra connects with 2 Chronicles through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "nehemiah",
+        "note": "Ezra connects with Nehemiah through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "haggai",
+        "note": "Ezra connects with Haggai through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "nehemiah",
+    "name": "Nehemiah",
+    "testament": "OT",
+    "orderInCanon": 16,
+    "author": "Anonymous; traditionally associated with Nehemiah and Ezra",
+    "date": "postexilic, approx. 430-400 BC",
+    "period": "Jerusalem's wall rebuilding and covenant renewal",
+    "timelinePlacement": "445-432 BC",
+    "majorEvents": [
+      "nehemiah-rebuilds-walls"
+    ],
+    "majorPeople": [
+      "nehemiah",
+      "ezra",
+      "god"
+    ],
+    "majorPlaces": [
+      "jerusalem",
+      "susa"
+    ],
+    "outline": [
+      "1-2 Nehemiah's burden and return",
+      "3-7 Wall rebuilding amid opposition",
+      "8-10 Law read and covenant renewed",
+      "11-13 Repopulation, dedication, and reforms"
+    ],
+    "keyVerses": [
+      "Nehemiah 2:17-18",
+      "Nehemiah 6:15-16",
+      "Nehemiah 8:10"
+    ],
+    "connections": [
+      {
+        "bookId": "ezra",
+        "note": "Nehemiah connects with Ezra through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "malachi",
+        "note": "Nehemiah connects with Malachi through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "esther",
+    "name": "Esther",
+    "testament": "OT",
+    "orderInCanon": 17,
+    "author": "Anonymous",
+    "date": "events approx. 483-473 BC; composition likely Persian or early Hellenistic period",
+    "period": "Jewish preservation in Persia",
+    "timelinePlacement": "During the Persian Empire before or around Ezra's return",
+    "majorEvents": [
+      "esther-saves-her-people"
+    ],
+    "majorPeople": [
+      "esther",
+      "mordecai",
+      "ahasuerus",
+      "god"
+    ],
+    "majorPlaces": [
+      "susa"
+    ],
+    "outline": [
+      "1-2 Esther becomes queen",
+      "3-4 Haman's plot and Mordecai's appeal",
+      "5-7 Esther intercedes and Haman falls",
+      "8-10 Jewish deliverance and Purim"
+    ],
+    "keyVerses": [
+      "Esther 4:14",
+      "Esther 8:17",
+      "Esther 9:22"
+    ],
+    "connections": [
+      {
+        "bookId": "ezra",
+        "note": "Esther connects with Ezra through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "daniel",
+        "note": "Esther connects with Daniel through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "job",
+    "name": "Job",
+    "testament": "OT",
+    "orderInCanon": 18,
+    "author": "Anonymous",
+    "date": "unknown; often placed in patriarchal setting, with composition proposed from early to postexilic periods",
+    "period": "Wisdom reflection on suffering and God's sovereignty",
+    "timelinePlacement": "Narrative setting outside Israel's national timeline, often viewed as patriarchal-era",
+    "majorEvents": [],
+    "majorPeople": [
+      "god"
+    ],
+    "majorPlaces": [],
+    "outline": [
+      "1-2 Prologue: Job tested",
+      "3-31 Dialogues with friends",
+      "32-37 Elihu's speeches",
+      "38-41 The Lord answers Job",
+      "42 Job's repentance and restoration"
+    ],
+    "keyVerses": [
+      "Job 1:21",
+      "Job 19:25-26",
+      "Job 38:4",
+      "Job 42:5-6"
+    ],
+    "connections": [
+      {
+        "bookId": "psalms",
+        "note": "Job connects with Psalms through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "james",
+        "note": "Job connects with James through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "psalms",
+    "name": "Psalms",
+    "testament": "OT",
+    "orderInCanon": 19,
+    "author": "Multiple authors; many traditionally attributed to David, with Asaph, sons of Korah, Solomon, Moses, and anonymous psalms",
+    "date": "approx. 15th-5th centuries BC, collected over time",
+    "period": "Israel's worship, lament, wisdom, and royal hope",
+    "timelinePlacement": "From Moses through postexilic worship collection",
+    "majorEvents": [],
+    "majorPeople": [
+      "david",
+      "solomon",
+      "moses",
+      "god"
+    ],
+    "majorPlaces": [
+      "jerusalem",
+      "mount-sinai"
+    ],
+    "outline": [
+      "1-41 Book I",
+      "42-72 Book II",
+      "73-89 Book III",
+      "90-106 Book IV",
+      "107-150 Book V"
+    ],
+    "keyVerses": [
+      "Psalm 1:1-2",
+      "Psalm 23:1",
+      "Psalm 51:10",
+      "Psalm 110:1"
+    ],
+    "connections": [
+      {
+        "bookId": "2-samuel",
+        "note": "Psalms connects with 2 Samuel through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "hebrews",
+        "note": "Psalms connects with Hebrews through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "proverbs",
+    "name": "Proverbs",
+    "testament": "OT",
+    "orderInCanon": 20,
+    "author": "Primarily Solomon; also sayings of Agur, Lemuel, and other wise contributors",
+    "date": "core Solomonic material approx. 10th century BC; final collection likely later monarchic period",
+    "period": "Wisdom instruction for covenant life",
+    "timelinePlacement": "Wisdom collection associated chiefly with Solomon's era and later editors",
+    "majorEvents": [],
+    "majorPeople": [
+      "solomon"
+    ],
+    "majorPlaces": [
+      "jerusalem"
+    ],
+    "outline": [
+      "1-9 Wisdom speeches",
+      "10-22:16 Proverbs of Solomon",
+      "22:17-24:34 Sayings of the wise",
+      "25-29 More Solomonic proverbs collected under Hezekiah",
+      "30 Agur's sayings",
+      "31 Lemuel and the excellent wife"
+    ],
+    "keyVerses": [
+      "Proverbs 1:7",
+      "Proverbs 3:5-6",
+      "Proverbs 9:10",
+      "Proverbs 31:30"
+    ],
+    "connections": [
+      {
+        "bookId": "1-kings",
+        "note": "Proverbs connects with 1 Kings through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "ecclesiastes",
+        "note": "Proverbs connects with Ecclesiastes through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "ecclesiastes",
+    "name": "Ecclesiastes",
+    "testament": "OT",
+    "orderInCanon": 21,
+    "author": "Anonymous voice of Qoheleth; traditionally associated with Solomon",
+    "date": "traditional Solomonic setting approx. 10th century BC; many scholars date composition later, possibly postexilic",
+    "period": "Wisdom meditation on life, mortality, and fearing God",
+    "timelinePlacement": "Wisdom setting associated with Solomon, with debated final composition",
+    "majorEvents": [],
+    "majorPeople": [
+      "solomon",
+      "god"
+    ],
+    "majorPlaces": [
+      "jerusalem"
+    ],
+    "outline": [
+      "1-2 Vanity and the search for meaning",
+      "3-5 Times, toil, and worship",
+      "6-8 Limits of wisdom and power",
+      "9-11 Mortality and wise living",
+      "12 Final exhortation to fear God"
+    ],
+    "keyVerses": [
+      "Ecclesiastes 1:2",
+      "Ecclesiastes 3:11",
+      "Ecclesiastes 12:13-14"
+    ],
+    "connections": [
+      {
+        "bookId": "proverbs",
+        "note": "Ecclesiastes connects with Proverbs through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "song-of-solomon",
+        "note": "Ecclesiastes connects with Song of Solomon through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "song-of-solomon",
+    "name": "Song of Solomon",
+    "testament": "OT",
+    "orderInCanon": 22,
+    "author": "Traditionally Solomon",
+    "date": "traditional Solomonic date approx. 10th century BC; some scholarly opinion places final form later",
+    "period": "Poetic celebration of covenant love",
+    "timelinePlacement": "Wisdom/poetic setting associated with Solomon's era",
+    "majorEvents": [],
+    "majorPeople": [
+      "solomon"
+    ],
+    "majorPlaces": [
+      "jerusalem"
+    ],
+    "outline": [
+      "1:1-2:7 Opening desire and delight",
+      "2:8-3:5 Seeking and finding",
+      "3:6-5:1 Wedding imagery",
+      "5:2-6:13 Separation and renewed praise",
+      "7-8 Mature love and conclusion"
+    ],
+    "keyVerses": [
+      "Song of Solomon 2:16",
+      "Song of Solomon 8:6-7"
+    ],
+    "connections": [
+      {
+        "bookId": "1-kings",
+        "note": "Song of Solomon connects with 1 Kings through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "ecclesiastes",
+        "note": "Song of Solomon connects with Ecclesiastes through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "isaiah",
+    "name": "Isaiah",
+    "testament": "OT",
+    "orderInCanon": 23,
+    "author": "Isaiah son of Amoz; scholarly opinion often discusses later editorial shaping, especially for chapters 40-66",
+    "date": "ministry approx. 740-680 BC (traditional); many scholars place parts of final composition in exilic/postexilic periods",
+    "period": "Judah under Assyrian threat with promises of comfort and restoration",
+    "timelinePlacement": "8th-century BC ministry with future restoration vision",
+    "majorEvents": [
+      "isaiah-ministry"
+    ],
+    "majorPeople": [
+      "isaiah",
+      "hezekiah",
+      "god"
+    ],
+    "majorPlaces": [
+      "jerusalem"
+    ],
+    "outline": [
+      "1-12 Judgment and hope for Judah",
+      "13-27 Oracles against nations and future hope",
+      "28-35 Warnings and promises",
+      "36-39 Hezekiah and Assyria",
+      "40-55 Comfort, servant, and return",
+      "56-66 Restoration, justice, and new creation"
+    ],
+    "keyVerses": [
+      "Isaiah 6:8",
+      "Isaiah 7:14",
+      "Isaiah 53:5",
+      "Isaiah 61:1"
+    ],
+    "connections": [
+      {
+        "bookId": "2-kings",
+        "note": "Isaiah connects with 2 Kings through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "matthew",
+        "note": "Isaiah connects with Matthew through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "jeremiah",
+    "name": "Jeremiah",
+    "testament": "OT",
+    "orderInCanon": 24,
+    "author": "Jeremiah, with Baruch associated as scribe",
+    "date": "approx. 627-580 BC",
+    "period": "Judah's final decades and the fall of Jerusalem",
+    "timelinePlacement": "Late 7th to early 6th century BC",
+    "majorEvents": [
+      "jeremiah-ministry"
+    ],
+    "majorPeople": [
+      "jeremiah",
+      "nebuchadnezzar",
+      "josiah",
+      "god"
+    ],
+    "majorPlaces": [
+      "jerusalem",
+      "babylon"
+    ],
+    "outline": [
+      "1 Jeremiah's call",
+      "2-25 Judah's sin and coming judgment",
+      "26-29 Conflict and exile letters",
+      "30-33 Book of comfort and new covenant",
+      "34-45 Jerusalem's fall and aftermath",
+      "46-51 Oracles against nations",
+      "52 Historical appendix"
+    ],
+    "keyVerses": [
+      "Jeremiah 1:5",
+      "Jeremiah 17:9",
+      "Jeremiah 29:11",
+      "Jeremiah 31:31-34"
+    ],
+    "connections": [
+      {
+        "bookId": "2-kings",
+        "note": "Jeremiah connects with 2 Kings through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "lamentations",
+        "note": "Jeremiah connects with Lamentations through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "lamentations",
+    "name": "Lamentations",
+    "testament": "OT",
+    "orderInCanon": 25,
+    "author": "Anonymous; traditionally attributed to Jeremiah",
+    "date": "shortly after Jerusalem's fall, approx. 586 BC",
+    "period": "Mourning Jerusalem's destruction",
+    "timelinePlacement": "After the fall of Jerusalem in 586 BC",
+    "majorEvents": [],
+    "majorPeople": [],
+    "majorPlaces": [],
+    "outline": [
+      "1 Desolate Jerusalem",
+      "2 The Lord's judgment on Zion",
+      "3 Hope amid affliction",
+      "4 Siege and collapse",
+      "5 Communal plea for restoration"
+    ],
+    "keyVerses": [
+      "Lamentations 3:22-23",
+      "Lamentations 3:31-33",
+      "Lamentations 5:21"
+    ],
+    "connections": [
+      {
+        "bookId": "jeremiah",
+        "note": "Lamentations connects with Jeremiah through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "2-kings",
+        "note": "Lamentations connects with 2 Kings through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "ezekiel",
+    "name": "Ezekiel",
+    "testament": "OT",
+    "orderInCanon": 26,
+    "author": "Ezekiel the priest-prophet",
+    "date": "approx. 593-571 BC",
+    "period": "Exile in Babylon with judgment and restoration visions",
+    "timelinePlacement": "Early 6th century BC among the exiles",
+    "majorEvents": [
+      "ezekiel-ministry"
+    ],
+    "majorPeople": [
+      "ezekiel",
+      "jeremiah",
+      "god"
+    ],
+    "majorPlaces": [
+      "babylon",
+      "jerusalem"
+    ],
+    "outline": [
+      "1-3 Ezekiel's call",
+      "4-24 Judgment against Jerusalem",
+      "25-32 Oracles against nations",
+      "33-39 Restoration of Israel",
+      "40-48 Vision of renewed temple and land"
+    ],
+    "keyVerses": [
+      "Ezekiel 11:19-20",
+      "Ezekiel 36:26-27",
+      "Ezekiel 37:5",
+      "Ezekiel 48:35"
+    ],
+    "connections": [
+      {
+        "bookId": "jeremiah",
+        "note": "Ezekiel connects with Jeremiah through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "revelation",
+        "note": "Ezekiel connects with Revelation through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "daniel",
+    "name": "Daniel",
+    "testament": "OT",
+    "orderInCanon": 27,
+    "author": "Traditionally Daniel; scholarly opinion often dates final form to the 2nd century BC",
+    "date": "traditional setting and authorship approx. 6th century BC; critical dating often approx. 167-164 BC for final form",
+    "period": "Exile and visions of God's kingdom over empires",
+    "timelinePlacement": "Babylonian and Persian courts, with visions reaching beyond them",
+    "majorEvents": [
+      "daniel-in-babylon",
+      "nebuchadnezzars-dream",
+      "fiery-furnace",
+      "belshazzars-feast",
+      "daniel-in-the-lions-den"
+    ],
+    "majorPeople": [
+      "daniel",
+      "nebuchadnezzar",
+      "shadrach",
+      "meshach",
+      "abednego",
+      "god",
+      "belshazzar",
+      "darius-the-mede",
+      "cyrus"
+    ],
+    "majorPlaces": [
+      "babylon"
+    ],
+    "outline": [
+      "1 Faithfulness in exile",
+      "2-6 Court stories under foreign kings",
+      "7 Vision of four beasts",
+      "8 Ram and goat vision",
+      "9 Seventy weeks prayer and vision",
+      "10-12 Final visions and hope"
+    ],
+    "keyVerses": [
+      "Daniel 2:44",
+      "Daniel 3:17-18",
+      "Daniel 6:10",
+      "Daniel 7:13-14"
+    ],
+    "connections": [
+      {
+        "bookId": "ezekiel",
+        "note": "Daniel connects with Ezekiel through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "revelation",
+        "note": "Daniel connects with Revelation through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "hosea",
+    "name": "Hosea",
+    "testament": "OT",
+    "orderInCanon": 28,
+    "author": "Hosea son of Beeri",
+    "date": "approx. 755-715 BC",
+    "period": "Northern kingdom's final generation",
+    "timelinePlacement": "Before the fall of Samaria in 722 BC",
+    "majorEvents": [],
+    "majorPeople": [],
+    "majorPlaces": [],
+    "outline": [
+      "1-3 Hosea's marriage as prophetic sign",
+      "4-7 Israel's covenant unfaithfulness",
+      "8-10 Judgment on Israel",
+      "11-14 God's love, discipline, and restoration"
+    ],
+    "keyVerses": [
+      "Hosea 2:19-20",
+      "Hosea 6:6",
+      "Hosea 11:1",
+      "Hosea 14:4"
+    ],
+    "connections": [
+      {
+        "bookId": "2-kings",
+        "note": "Hosea connects with 2 Kings through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "amos",
+        "note": "Hosea connects with Amos through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "joel",
+    "name": "Joel",
+    "testament": "OT",
+    "orderInCanon": 29,
+    "author": "Joel son of Pethuel",
+    "date": "uncertain; proposals range from early monarchic to postexilic, often approx. 9th-5th century BC",
+    "period": "Day of the Lord, repentance, and Spirit promise",
+    "timelinePlacement": "Undated prophetic crisis in Judah",
+    "majorEvents": [],
+    "majorPeople": [
+      "god"
+    ],
+    "majorPlaces": [
+      "jerusalem"
+    ],
+    "outline": [
+      "1 Locust plague and lament",
+      "2 Call to repentance and promised restoration",
+      "3 Judgment of nations and Zion's hope"
+    ],
+    "keyVerses": [
+      "Joel 2:12-13",
+      "Joel 2:28-32",
+      "Joel 3:16"
+    ],
+    "connections": [
+      {
+        "bookId": "acts",
+        "note": "Joel connects with Acts through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "zephaniah",
+        "note": "Joel connects with Zephaniah through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "amos",
+    "name": "Amos",
+    "testament": "OT",
+    "orderInCanon": 30,
+    "author": "Amos of Tekoa",
+    "date": "approx. 760-750 BC",
+    "period": "Prosperous but unjust northern kingdom before exile",
+    "timelinePlacement": "8th century BC before Samaria's fall",
+    "majorEvents": [
+      "amos-and-hosea-warn-israel"
+    ],
+    "majorPeople": [
+      "amos",
+      "hosea",
+      "god"
+    ],
+    "majorPlaces": [
+      "samaria"
+    ],
+    "outline": [
+      "1-2 Oracles against nations and Israel",
+      "3-6 Judgment speeches against Israel",
+      "7-9 Visions, confrontation, and restoration hope"
+    ],
+    "keyVerses": [
+      "Amos 3:2",
+      "Amos 5:24",
+      "Amos 9:11-12"
+    ],
+    "connections": [
+      {
+        "bookId": "hosea",
+        "note": "Amos connects with Hosea through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "acts",
+        "note": "Amos connects with Acts through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "obadiah",
+    "name": "Obadiah",
+    "testament": "OT",
+    "orderInCanon": 31,
+    "author": "Obadiah",
+    "date": "uncertain; often linked either to 9th-century conflict with Edom or to the aftermath of 586 BC",
+    "period": "Judgment on Edom and hope for Zion",
+    "timelinePlacement": "A crisis involving Edom and Jerusalem, date debated",
+    "majorEvents": [],
+    "majorPeople": [
+      "god"
+    ],
+    "majorPlaces": [
+      "jerusalem"
+    ],
+    "outline": [
+      "1-9 Edom's pride judged",
+      "10-14 Edom's violence against Jacob",
+      "15-21 Day of the Lord and Zion's kingdom"
+    ],
+    "keyVerses": [
+      "Obadiah 1:3-4",
+      "Obadiah 1:15",
+      "Obadiah 1:21"
+    ],
+    "connections": [
+      {
+        "bookId": "jeremiah",
+        "note": "Obadiah connects with Jeremiah through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "malachi",
+        "note": "Obadiah connects with Malachi through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "jonah",
+    "name": "Jonah",
+    "testament": "OT",
+    "orderInCanon": 32,
+    "author": "Anonymous; traditionally associated with Jonah son of Amittai",
+    "date": "Jonah's ministry often placed in the 8th century BC; composition date debated",
+    "period": "Prophetic mission to Nineveh",
+    "timelinePlacement": "Assyrian period, before Nineveh's later fall",
+    "majorEvents": [
+      "jonah-and-nineveh"
+    ],
+    "majorPeople": [
+      "jonah",
+      "god"
+    ],
+    "majorPlaces": [
+      "nineveh"
+    ],
+    "outline": [
+      "1 Jonah flees the Lord's call",
+      "2 Jonah prays from the fish",
+      "3 Nineveh repents",
+      "4 Jonah resents God's mercy"
+    ],
+    "keyVerses": [
+      "Jonah 2:9",
+      "Jonah 3:10",
+      "Jonah 4:2"
+    ],
+    "connections": [
+      {
+        "bookId": "nahum",
+        "note": "Jonah connects with Nahum through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "matthew",
+        "note": "Jonah connects with Matthew through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "micah",
+    "name": "Micah",
+    "testament": "OT",
+    "orderInCanon": 33,
+    "author": "Micah of Moresheth",
+    "date": "approx. 735-700 BC",
+    "period": "Judah and Israel under threat from Assyria",
+    "timelinePlacement": "8th century BC during Jotham, Ahaz, and Hezekiah",
+    "majorEvents": [],
+    "majorPeople": [
+      "hezekiah",
+      "god"
+    ],
+    "majorPlaces": [
+      "samaria",
       "jerusalem",
       "bethlehem"
     ],
     "outline": [
-      "1-5 David becomes king",
-      "6-10 Jerusalem and covenant promises",
-      "11-24 David's sin, consequences, and final years"
+      "1-2 Judgment on Samaria and Judah",
+      "3 Leaders condemned",
+      "4-5 Future Zion and ruler from Bethlehem",
+      "6 Covenant lawsuit",
+      "7 Lament, hope, and mercy"
     ],
     "keyVerses": [
-      "2 Samuel 7:12-16"
+      "Micah 5:2",
+      "Micah 6:8",
+      "Micah 7:18-19"
+    ],
+    "connections": [
+      {
+        "bookId": "isaiah",
+        "note": "Micah connects with Isaiah through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "matthew",
+        "note": "Micah connects with Matthew through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "nahum",
+    "name": "Nahum",
+    "testament": "OT",
+    "orderInCanon": 34,
+    "author": "Nahum the Elkoshite",
+    "date": "approx. 663-612 BC",
+    "period": "Judgment against Nineveh",
+    "timelinePlacement": "Between Thebes' fall and Nineveh's fall",
+    "majorEvents": [],
+    "majorPeople": [
+      "god"
+    ],
+    "majorPlaces": [
+      "nineveh"
+    ],
+    "outline": [
+      "1 The Lord's wrath and refuge",
+      "2 Siege and fall of Nineveh",
+      "3 Woe against the bloody city"
+    ],
+    "keyVerses": [
+      "Nahum 1:7",
+      "Nahum 1:15",
+      "Nahum 3:5"
+    ],
+    "connections": [
+      {
+        "bookId": "jonah",
+        "note": "Nahum connects with Jonah through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "zephaniah",
+        "note": "Nahum connects with Zephaniah through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "habakkuk",
+    "name": "Habakkuk",
+    "testament": "OT",
+    "orderInCanon": 35,
+    "author": "Habakkuk",
+    "date": "approx. 609-597 BC",
+    "period": "Judah facing Babylonian judgment",
+    "timelinePlacement": "Late 7th century BC before Babylon's invasion",
+    "majorEvents": [],
+    "majorPeople": [
+      "god"
+    ],
+    "majorPlaces": [
+      "jerusalem",
+      "babylon"
+    ],
+    "outline": [
+      "1 Habakkuk's complaints and God's answer",
+      "2 Waiting, faith, and woes",
+      "3 Prayer and trust"
+    ],
+    "keyVerses": [
+      "Habakkuk 2:4",
+      "Habakkuk 2:14",
+      "Habakkuk 3:17-19"
+    ],
+    "connections": [
+      {
+        "bookId": "jeremiah",
+        "note": "Habakkuk connects with Jeremiah through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "romans",
+        "note": "Habakkuk connects with Romans through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "zephaniah",
+    "name": "Zephaniah",
+    "testament": "OT",
+    "orderInCanon": 36,
+    "author": "Zephaniah son of Cushi",
+    "date": "approx. 640-609 BC during Josiah's reign",
+    "period": "Judah before exile and the day of the Lord",
+    "timelinePlacement": "Late 7th century BC",
+    "majorEvents": [],
+    "majorPeople": [],
+    "majorPlaces": [],
+    "outline": [
+      "1 Coming day of the Lord against Judah",
+      "2 Call to seek the Lord and nations judged",
+      "3 Jerusalem judged and restored"
+    ],
+    "keyVerses": [
+      "Zephaniah 1:14-15",
+      "Zephaniah 2:3",
+      "Zephaniah 3:17"
+    ],
+    "connections": [
+      {
+        "bookId": "2-kings",
+        "note": "Zephaniah connects with 2 Kings through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "joel",
+        "note": "Zephaniah connects with Joel through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "haggai",
+    "name": "Haggai",
+    "testament": "OT",
+    "orderInCanon": 37,
+    "author": "Haggai",
+    "date": "520 BC",
+    "period": "Postexilic temple rebuilding",
+    "timelinePlacement": "520 BC during the rebuilding of the second temple",
+    "majorEvents": [],
+    "majorPeople": [],
+    "majorPlaces": [],
+    "outline": [
+      "1 Call to rebuild the temple",
+      "2:1-9 Encouragement and future glory",
+      "2:10-19 Covenant impurity and blessing",
+      "2:20-23 Promise to Zerubbabel"
+    ],
+    "keyVerses": [
+      "Haggai 1:8",
+      "Haggai 2:7-9",
+      "Haggai 2:23"
+    ],
+    "connections": [
+      {
+        "bookId": "ezra",
+        "note": "Haggai connects with Ezra through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "zechariah",
+        "note": "Haggai connects with Zechariah through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "zechariah",
+    "name": "Zechariah",
+    "testament": "OT",
+    "orderInCanon": 38,
+    "author": "Zechariah son of Berechiah; scholarly discussion often notes possible later shaping of chapters 9-14",
+    "date": "520-518 BC for dated visions; final form may include later material",
+    "period": "Postexilic restoration and messianic hope",
+    "timelinePlacement": "Second-temple rebuilding era with future kingdom visions",
+    "majorEvents": [],
+    "majorPeople": [],
+    "majorPlaces": [],
+    "outline": [
+      "1-6 Night visions",
+      "7-8 Fasting, justice, and restoration",
+      "9-11 Coming king and rejected shepherd",
+      "12-14 Jerusalem, cleansing, and the Lord's reign"
+    ],
+    "keyVerses": [
+      "Zechariah 4:6",
+      "Zechariah 9:9",
+      "Zechariah 12:10",
+      "Zechariah 14:9"
+    ],
+    "connections": [
+      {
+        "bookId": "haggai",
+        "note": "Zechariah connects with Haggai through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "matthew",
+        "note": "Zechariah connects with Matthew through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "revelation",
+        "note": "Zechariah connects with Revelation through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "malachi",
+    "name": "Malachi",
+    "testament": "OT",
+    "orderInCanon": 39,
+    "author": "Malachi",
+    "date": "approx. 460-430 BC",
+    "period": "Postexilic covenant correction",
+    "timelinePlacement": "After temple rebuilding, before the intertestamental period",
+    "majorEvents": [
+      "malachi-ministry",
+      "intertestamental-period"
+    ],
+    "majorPeople": [
+      "malachi",
+      "ezra",
+      "nehemiah",
+      "god"
+    ],
+    "majorPlaces": [
+      "jerusalem"
+    ],
+    "outline": [
+      "1:1-5 The Lord's love for Israel",
+      "1:6-2:9 Corrupt worship and priests",
+      "2:10-16 Covenant unfaithfulness",
+      "2:17-3:5 Coming messenger and judgment",
+      "3:6-12 Tithes and covenant return",
+      "3:13-4:6 Day of the Lord and Elijah promise"
+    ],
+    "keyVerses": [
+      "Malachi 3:1",
+      "Malachi 3:6",
+      "Malachi 4:2",
+      "Malachi 4:5-6"
+    ],
+    "connections": [
+      {
+        "bookId": "nehemiah",
+        "note": "Malachi connects with Nehemiah through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "matthew",
+        "note": "Malachi connects with Matthew through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "matthew",
+    "name": "Matthew",
+    "testament": "NT",
+    "orderInCanon": 40,
+    "author": "Traditionally Matthew the apostle",
+    "date": "approx. AD 60-90",
+    "period": "Life, teaching, death, and resurrection of Jesus",
+    "timelinePlacement": "Jesus' birth to resurrection and Great Commission",
+    "majorEvents": [
+      "visit-of-the-magi",
+      "flight-to-egypt",
+      "temptation-of-jesus",
+      "sermon-on-the-mount",
+      "parables-of-the-kingdom",
+      "jesus-walks-on-water",
+      "peters-confession",
+      "transfiguration",
+      "triumphal-entry",
+      "olivet-discourse",
+      "gethsemane",
+      "great-commission"
+    ],
+    "majorPeople": [
+      "jesus",
+      "mary",
+      "joseph-of-nazareth",
+      "herod-the-great",
+      "god",
+      "peter",
+      "andrew",
+      "james-son-of-zebedee",
+      "john-the-apostle",
+      "matthew",
+      "moses",
+      "elijah"
+    ],
+    "majorPlaces": [
+      "bethlehem",
+      "jerusalem",
+      "egypt",
+      "nazareth",
+      "jordan-river",
+      "sea-of-galilee",
+      "capernaum",
+      "caesarea-philippi",
+      "mount-of-olives",
+      "bethany"
+    ],
+    "outline": [
+      "1-2 Birth and early life of Jesus",
+      "3-4 Preparation and early ministry",
+      "5-7 Sermon on the Mount",
+      "8-12 Kingdom authority and opposition",
+      "13 Parables of the kingdom",
+      "14-20 Discipleship and Messiah revealed",
+      "21-25 Jerusalem conflict and Olivet discourse",
+      "26-28 Death, resurrection, and commission"
+    ],
+    "keyVerses": [
+      "Matthew 1:21",
+      "Matthew 5:17",
+      "Matthew 16:16",
+      "Matthew 28:18-20"
+    ],
+    "connections": [
+      {
+        "bookId": "isaiah",
+        "note": "Matthew connects with Isaiah through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "mark",
+        "note": "Matthew connects with Mark through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "mark",
+    "name": "Mark",
+    "testament": "NT",
+    "orderInCanon": 41,
+    "author": "Traditionally John Mark, associated with Peter's testimony",
+    "date": "approx. AD 55-70",
+    "period": "Jesus' public ministry, death, and resurrection",
+    "timelinePlacement": "John the Baptist to the empty tomb",
+    "majorEvents": [
+      "ministry-of-john-the-baptist",
+      "baptism-of-jesus",
+      "twelve-apostles-chosen",
+      "jesus-calms-the-storm",
+      "feeding-the-five-thousand"
+    ],
+    "majorPeople": [
+      "john-the-baptist",
+      "jesus",
+      "herod-antipas",
+      "god",
+      "peter",
+      "andrew",
+      "james-son-of-zebedee",
+      "john-the-apostle",
+      "philip-the-apostle",
+      "bartholomew",
+      "thomas",
+      "matthew"
+    ],
+    "majorPlaces": [
+      "jordan-river",
+      "jerusalem",
+      "sea-of-galilee",
+      "bethsaida"
+    ],
+    "outline": [
+      "1:1-13 Preparation for Jesus' ministry",
+      "1:14-8:26 Authority in Galilee and beyond",
+      "8:27-10:52 The way of the cross",
+      "11-13 Jerusalem and coming judgment",
+      "14-16 Passion and resurrection"
+    ],
+    "keyVerses": [
+      "Mark 1:1",
+      "Mark 8:29",
+      "Mark 10:45",
+      "Mark 15:39"
+    ],
+    "connections": [
+      {
+        "bookId": "matthew",
+        "note": "Mark connects with Matthew through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "1-peter",
+        "note": "Mark connects with 1 Peter through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "luke",
+    "name": "Luke",
+    "testament": "NT",
+    "orderInCanon": 42,
+    "author": "Traditionally Luke the physician and companion of Paul",
+    "date": "approx. AD 60-90",
+    "period": "Jesus' birth, ministry, death, resurrection, and ascension",
+    "timelinePlacement": "Birth announcements to Jesus' ascension",
+    "majorEvents": [
+      "birth-of-john-the-baptist-foretold",
+      "annunciation",
+      "birth-of-jesus",
+      "boy-jesus-in-the-temple",
+      "last-supper",
+      "ascension"
+    ],
+    "majorPeople": [
+      "zechariah-the-priest",
+      "elizabeth",
+      "john-the-baptist",
+      "god",
+      "mary",
+      "jesus",
+      "joseph-of-nazareth",
+      "herod-the-great",
+      "peter",
+      "john-the-apostle",
+      "judas-iscariot",
+      "andrew"
+    ],
+    "majorPlaces": [
+      "jerusalem",
+      "nazareth",
+      "bethlehem",
+      "mount-of-olives"
+    ],
+    "outline": [
+      "1-2 Birth narratives",
+      "3-4 Preparation and early ministry",
+      "5-9 Galilean ministry",
+      "10-19 Journey toward Jerusalem",
+      "20-21 Teaching in Jerusalem",
+      "22-24 Passion, resurrection, and ascension"
+    ],
+    "keyVerses": [
+      "Luke 1:3-4",
+      "Luke 4:18-19",
+      "Luke 19:10",
+      "Luke 24:46-49"
+    ],
+    "connections": [
+      {
+        "bookId": "acts",
+        "note": "Luke connects with Acts through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "mark",
+        "note": "Luke connects with Mark through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "john",
+    "name": "John",
+    "testament": "NT",
+    "orderInCanon": 43,
+    "author": "Traditionally John the apostle",
+    "date": "approx. AD 80-95",
+    "period": "Jesus as the incarnate Word, signs, death, and resurrection",
+    "timelinePlacement": "Jesus' ministry with theological reflection from the beginning to resurrection",
+    "majorEvents": [
+      "first-disciples-called",
+      "wedding-at-cana",
+      "nicodemus",
+      "samaritan-woman",
+      "lazarus-raised",
+      "temple-cleansing",
+      "trials-of-jesus",
+      "crucifixion",
+      "burial-of-jesus",
+      "resurrection"
+    ],
+    "majorPeople": [
+      "jesus",
+      "peter",
+      "andrew",
+      "james-son-of-zebedee",
+      "john-the-apostle",
+      "philip-the-apostle",
+      "bartholomew",
+      "john-the-baptist",
+      "mary",
+      "nicodemus",
+      "lazarus",
+      "martha"
+    ],
+    "majorPlaces": [
+      "sea-of-galilee",
+      "bethsaida",
+      "capernaum",
+      "cana",
+      "nazareth",
+      "jerusalem",
+      "samaria",
+      "bethany",
+      "golgotha"
+    ],
+    "outline": [
+      "1 Prologue and witness",
+      "2-4 Early signs and encounters",
+      "5-10 Signs, controversy, and shepherd teaching",
+      "11-12 Lazarus and final public ministry",
+      "13-17 Farewell discourse",
+      "18-21 Passion, resurrection, and epilogue"
+    ],
+    "keyVerses": [
+      "John 1:1",
+      "John 3:16",
+      "John 20:30-31",
+      "John 21:25"
+    ],
+    "connections": [
+      {
+        "bookId": "1-john",
+        "note": "John connects with 1 John through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "revelation",
+        "note": "John connects with Revelation through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "acts",
+    "name": "Acts",
+    "testament": "NT",
+    "orderInCanon": 44,
+    "author": "Traditionally Luke the physician and companion of Paul",
+    "date": "approx. AD 60-90",
+    "period": "Early church witness from Jerusalem to Rome",
+    "timelinePlacement": "AD 30s-60s",
+    "majorEvents": [
+      "pentecost",
+      "early-church-in-jerusalem",
+      "stephen-martyred",
+      "philip-and-the-ethiopian",
+      "sauls-conversion",
+      "peter-and-cornelius",
+      "church-at-antioch",
+      "first-missionary-journey",
+      "jerusalem-council",
+      "second-missionary-journey",
+      "third-missionary-journey",
+      "pauls-arrest-in-jerusalem"
+    ],
+    "majorPeople": [
+      "peter",
+      "john-the-apostle",
+      "mary",
+      "matthias",
+      "jesus",
+      "god",
+      "barnabas",
+      "james-brother-of-jesus",
+      "stephen",
+      "paul",
+      "philip-the-evangelist",
+      "cornelius"
+    ],
+    "majorPlaces": [
+      "jerusalem",
+      "gaza",
+      "damascus",
+      "tarsus",
+      "caesarea",
+      "joppa",
+      "antioch",
+      "cyprus",
+      "lystra",
+      "philippi"
+    ],
+    "outline": [
+      "1 Ascension and commission",
+      "2-7 Jerusalem witness",
+      "8-12 Judea, Samaria, and Gentile opening",
+      "13-15 First mission and Jerusalem council",
+      "16-20 Wider Gentile mission",
+      "21-28 Paul's arrest, trials, and Rome"
+    ],
+    "keyVerses": [
+      "Acts 1:8",
+      "Acts 2:42",
+      "Acts 4:12",
+      "Acts 28:31"
+    ],
+    "connections": [
+      {
+        "bookId": "luke",
+        "note": "Acts connects with Luke through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "romans",
+        "note": "Acts connects with Romans through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "romans",
+    "name": "Romans",
+    "testament": "NT",
+    "orderInCanon": 45,
+    "author": "Paul",
+    "date": "approx. AD 56-57",
+    "period": "Paul's mature exposition of the gospel to Rome",
+    "timelinePlacement": "During Paul's third missionary journey, before his Roman imprisonment",
+    "majorEvents": [],
+    "majorPeople": [],
+    "majorPlaces": [],
+    "outline": [
+      "1-3 Universal sin and God's righteousness",
+      "4 Abraham and justification by faith",
+      "5-8 New life in Christ and the Spirit",
+      "9-11 Israel and God's promises",
+      "12-15 Gospel-shaped community",
+      "16 Greetings and doxology"
+    ],
+    "keyVerses": [
+      "Romans 1:16-17",
+      "Romans 3:23-24",
+      "Romans 5:1",
+      "Romans 12:1-2"
     ],
     "connections": [
       {
         "bookId": "genesis",
-        "note": "The Davidic promise develops the earlier promise of blessing and kingship."
+        "note": "Romans connects with Genesis through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "galatians",
+        "note": "Romans connects with Galatians through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "1-corinthians",
+    "name": "1 Corinthians",
+    "testament": "NT",
+    "orderInCanon": 46,
+    "author": "Paul",
+    "date": "approx. AD 53-55",
+    "period": "Paul addresses church disorders and resurrection hope",
+    "timelinePlacement": "During Paul's Ephesian ministry on the third missionary journey",
+    "majorEvents": [],
+    "majorPeople": [],
+    "majorPlaces": [],
+    "outline": [
+      "1-4 Divisions and apostolic ministry",
+      "5-7 Holiness, lawsuits, and marriage",
+      "8-10 Food offered to idols and Christian freedom",
+      "11-14 Worship, gifts, and love",
+      "15 Resurrection",
+      "16 Collection and final instructions"
+    ],
+    "keyVerses": [
+      "1 Corinthians 1:18",
+      "1 Corinthians 10:31",
+      "1 Corinthians 13:13",
+      "1 Corinthians 15:3-4"
+    ],
+    "connections": [
+      {
+        "bookId": "2-corinthians",
+        "note": "1 Corinthians connects with 2 Corinthians through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "acts",
+        "note": "1 Corinthians connects with Acts through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "2-corinthians",
+    "name": "2 Corinthians",
+    "testament": "NT",
+    "orderInCanon": 47,
+    "author": "Paul",
+    "date": "approx. AD 55-56",
+    "period": "Paul defends apostolic ministry and calls for generosity",
+    "timelinePlacement": "After 1 Corinthians during Paul's Macedonian travels",
+    "majorEvents": [],
+    "majorPeople": [],
+    "majorPlaces": [],
+    "outline": [
+      "1-2 Comfort, travel plans, and forgiveness",
+      "3-7 New covenant ministry and reconciliation",
+      "8-9 Collection for Jerusalem",
+      "10-13 Defense of Paul's apostleship"
+    ],
+    "keyVerses": [
+      "2 Corinthians 3:18",
+      "2 Corinthians 4:7",
+      "2 Corinthians 5:17-21",
+      "2 Corinthians 12:9"
+    ],
+    "connections": [
+      {
+        "bookId": "1-corinthians",
+        "note": "2 Corinthians connects with 1 Corinthians through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "acts",
+        "note": "2 Corinthians connects with Acts through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "galatians",
+    "name": "Galatians",
+    "testament": "NT",
+    "orderInCanon": 48,
+    "author": "Paul",
+    "date": "approx. AD 48-55",
+    "period": "Gospel freedom and justification by faith",
+    "timelinePlacement": "Early Pauline mission to churches in Galatia",
+    "majorEvents": [],
+    "majorPeople": [],
+    "majorPlaces": [],
+    "outline": [
+      "1-2 Paul's gospel and apostleship defended",
+      "3-4 Faith, promise, and sonship",
+      "5 Freedom by the Spirit",
+      "6 Life together and final appeal"
+    ],
+    "keyVerses": [
+      "Galatians 2:20",
+      "Galatians 3:28",
+      "Galatians 5:1",
+      "Galatians 5:22-23"
+    ],
+    "connections": [
+      {
+        "bookId": "romans",
+        "note": "Galatians connects with Romans through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "acts",
+        "note": "Galatians connects with Acts through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "ephesians",
+    "name": "Ephesians",
+    "testament": "NT",
+    "orderInCanon": 49,
+    "author": "Paul",
+    "date": "approx. AD 60-62 during Roman imprisonment",
+    "period": "Church identity and unity in Christ",
+    "timelinePlacement": "Paul's imprisonment letters",
+    "majorEvents": [],
+    "majorPeople": [],
+    "majorPlaces": [],
+    "outline": [
+      "1-3 God's saving plan and the united church",
+      "4-6:9 Worthy walk, unity, holiness, household life",
+      "6:10-24 Spiritual armor and final greetings"
+    ],
+    "keyVerses": [
+      "Ephesians 1:10",
+      "Ephesians 2:8-10",
+      "Ephesians 2:14-16",
+      "Ephesians 6:10-11"
+    ],
+    "connections": [
+      {
+        "bookId": "colossians",
+        "note": "Ephesians connects with Colossians through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "acts",
+        "note": "Ephesians connects with Acts through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "philippians",
+    "name": "Philippians",
+    "testament": "NT",
+    "orderInCanon": 50,
+    "author": "Paul",
+    "date": "approx. AD 60-62 during imprisonment",
+    "period": "Joy, partnership, humility, and perseverance",
+    "timelinePlacement": "Paul's imprisonment letters to a Macedonian church",
+    "majorEvents": [],
+    "majorPeople": [],
+    "majorPlaces": [],
+    "outline": [
+      "1 Gospel partnership amid imprisonment",
+      "2 Humility of Christ and faithful servants",
+      "3 Knowing Christ above all",
+      "4 Unity, joy, contentment, and thanks"
+    ],
+    "keyVerses": [
+      "Philippians 1:6",
+      "Philippians 2:5-11",
+      "Philippians 3:8-10",
+      "Philippians 4:13"
+    ],
+    "connections": [
+      {
+        "bookId": "acts",
+        "note": "Philippians connects with Acts through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "colossians",
+        "note": "Philippians connects with Colossians through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "colossians",
+    "name": "Colossians",
+    "testament": "NT",
+    "orderInCanon": 51,
+    "author": "Paul",
+    "date": "approx. AD 60-62 during Roman imprisonment",
+    "period": "Supremacy of Christ and faithful Christian living",
+    "timelinePlacement": "Paul's imprisonment letters",
+    "majorEvents": [],
+    "majorPeople": [],
+    "majorPlaces": [],
+    "outline": [
+      "1 Christ supreme in creation and redemption",
+      "2 Fullness in Christ against false teaching",
+      "3-4:6 Put on the new life",
+      "4:7-18 Messengers and greetings"
+    ],
+    "keyVerses": [
+      "Colossians 1:15-20",
+      "Colossians 2:9-10",
+      "Colossians 3:1-4",
+      "Colossians 3:17"
+    ],
+    "connections": [
+      {
+        "bookId": "ephesians",
+        "note": "Colossians connects with Ephesians through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "philemon",
+        "note": "Colossians connects with Philemon through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "1-thessalonians",
+    "name": "1 Thessalonians",
+    "testament": "NT",
+    "orderInCanon": 52,
+    "author": "Paul",
+    "date": "approx. AD 50-51",
+    "period": "Encouragement for a young church awaiting Christ",
+    "timelinePlacement": "After Paul's second missionary journey visit to Thessalonica",
+    "majorEvents": [],
+    "majorPeople": [],
+    "majorPlaces": [],
+    "outline": [
+      "1 Thanksgiving for faith",
+      "2 Paul's ministry and longing",
+      "3 Timothy's report and prayer",
+      "4 Holiness and the Lord's coming",
+      "5 Watchfulness and church life"
+    ],
+    "keyVerses": [
+      "1 Thessalonians 1:9-10",
+      "1 Thessalonians 4:3",
+      "1 Thessalonians 4:16-17",
+      "1 Thessalonians 5:16-18"
+    ],
+    "connections": [
+      {
+        "bookId": "2-thessalonians",
+        "note": "1 Thessalonians connects with 2 Thessalonians through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "acts",
+        "note": "1 Thessalonians connects with Acts through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "2-thessalonians",
+    "name": "2 Thessalonians",
+    "testament": "NT",
+    "orderInCanon": 53,
+    "author": "Paul",
+    "date": "approx. AD 50-52",
+    "period": "Perseverance, correction, and the day of the Lord",
+    "timelinePlacement": "Soon after 1 Thessalonians",
+    "majorEvents": [],
+    "majorPeople": [],
+    "majorPlaces": [],
+    "outline": [
+      "1 Encouragement under persecution",
+      "2 Correction about the day of the Lord",
+      "3 Prayer, work, and discipline"
+    ],
+    "keyVerses": [
+      "2 Thessalonians 1:11-12",
+      "2 Thessalonians 2:15",
+      "2 Thessalonians 3:3",
+      "2 Thessalonians 3:10"
+    ],
+    "connections": [
+      {
+        "bookId": "1-thessalonians",
+        "note": "2 Thessalonians connects with 1 Thessalonians through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "revelation",
+        "note": "2 Thessalonians connects with Revelation through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "1-timothy",
+    "name": "1 Timothy",
+    "testament": "NT",
+    "orderInCanon": 54,
+    "author": "Paul",
+    "date": "approx. AD 62-65; some scholarly opinion questions Pauline authorship and dates later",
+    "period": "Pastoral instruction for church order",
+    "timelinePlacement": "After the events covered in Acts, during Paul's later ministry if Pauline chronology is followed",
+    "majorEvents": [],
+    "majorPeople": [
+      "paul",
+      "timothy"
+    ],
+    "majorPlaces": [
+      "ephesus"
+    ],
+    "outline": [
+      "1 Guard the gospel",
+      "2 Prayer and ordered worship",
+      "3 Qualifications for overseers and deacons",
+      "4 False teaching and faithful ministry",
+      "5-6 Household, elder, and wealth instructions"
+    ],
+    "keyVerses": [
+      "1 Timothy 1:15",
+      "1 Timothy 3:15",
+      "1 Timothy 4:12",
+      "1 Timothy 6:12"
+    ],
+    "connections": [
+      {
+        "bookId": "2-timothy",
+        "note": "1 Timothy connects with 2 Timothy through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "titus",
+        "note": "1 Timothy connects with Titus through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "2-timothy",
+    "name": "2 Timothy",
+    "testament": "NT",
+    "orderInCanon": 55,
+    "author": "Paul",
+    "date": "approx. AD 64-67; some scholarly opinion questions Pauline authorship and dates later",
+    "period": "Final charge to endure and guard the gospel",
+    "timelinePlacement": "Paul's final imprisonment according to traditional chronology",
+    "majorEvents": [],
+    "majorPeople": [],
+    "majorPlaces": [],
+    "outline": [
+      "1 Guard the entrusted gospel",
+      "2 Endure as a faithful worker",
+      "3 Last days and Scripture",
+      "4 Preach the word and final testimony"
+    ],
+    "keyVerses": [
+      "2 Timothy 1:7",
+      "2 Timothy 2:2",
+      "2 Timothy 3:16-17",
+      "2 Timothy 4:7-8"
+    ],
+    "connections": [
+      {
+        "bookId": "1-timothy",
+        "note": "2 Timothy connects with 1 Timothy through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "acts",
+        "note": "2 Timothy connects with Acts through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "titus",
+    "name": "Titus",
+    "testament": "NT",
+    "orderInCanon": 56,
+    "author": "Paul",
+    "date": "approx. AD 62-65; some scholarly opinion questions Pauline authorship and dates later",
+    "period": "Church order and good works in Crete",
+    "timelinePlacement": "After Acts in traditional Pauline chronology",
+    "majorEvents": [],
+    "majorPeople": [
+      "paul",
+      "titus"
+    ],
+    "majorPlaces": [],
+    "outline": [
+      "1 Appoint elders and confront false teachers",
+      "2 Sound doctrine for households",
+      "3 Grace, good works, and final instructions"
+    ],
+    "keyVerses": [
+      "Titus 2:11-14",
+      "Titus 3:5-7",
+      "Titus 3:8"
+    ],
+    "connections": [
+      {
+        "bookId": "1-timothy",
+        "note": "Titus connects with 1 Timothy through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "2-timothy",
+        "note": "Titus connects with 2 Timothy through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "philemon",
+    "name": "Philemon",
+    "testament": "NT",
+    "orderInCanon": 57,
+    "author": "Paul",
+    "date": "approx. AD 60-62 during Roman imprisonment",
+    "period": "Personal appeal for Onesimus and gospel-shaped reconciliation",
+    "timelinePlacement": "Paul's imprisonment letters",
+    "majorEvents": [],
+    "majorPeople": [],
+    "majorPlaces": [],
+    "outline": [
+      "1-3 Greeting",
+      "4-7 Thanksgiving for Philemon",
+      "8-16 Appeal for Onesimus",
+      "17-25 Partnership, repayment, and greetings"
+    ],
+    "keyVerses": [
+      "Philemon 1:6",
+      "Philemon 1:15-16",
+      "Philemon 1:17"
+    ],
+    "connections": [
+      {
+        "bookId": "colossians",
+        "note": "Philemon connects with Colossians through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "ephesians",
+        "note": "Philemon connects with Ephesians through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "hebrews",
+    "name": "Hebrews",
+    "testament": "NT",
+    "orderInCanon": 58,
+    "author": "Unknown; suggestions include Paul, Barnabas, Apollos, Luke, or Priscilla, but the book itself is anonymous",
+    "date": "approx. AD 60-90, likely before or around the temple's destruction according to many proposals",
+    "period": "Christ's superiority and perseverance in faith",
+    "timelinePlacement": "Early Christian exhortation to believers with deep Old Testament grounding",
+    "majorEvents": [],
+    "majorPeople": [
+      "jesus",
+      "moses",
+      "aaron",
+      "abraham",
+      "melchizedek"
+    ],
+    "majorPlaces": [
+      "jerusalem",
+      "mount-sinai"
+    ],
+    "outline": [
+      "1-2 Son superior to angels",
+      "3-4 Jesus greater than Moses and Joshua",
+      "5-7 Priesthood of Christ and Melchizedek",
+      "8-10 Better covenant and sacrifice",
+      "11 Faith examples",
+      "12-13 Endurance and final exhortations"
+    ],
+    "keyVerses": [
+      "Hebrews 1:1-3",
+      "Hebrews 4:14-16",
+      "Hebrews 10:19-23",
+      "Hebrews 11:1"
+    ],
+    "connections": [
+      {
+        "bookId": "leviticus",
+        "note": "Hebrews connects with Leviticus through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "psalms",
+        "note": "Hebrews connects with Psalms through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "james",
+    "name": "James",
+    "testament": "NT",
+    "orderInCanon": 59,
+    "author": "Traditionally James, brother of Jesus",
+    "date": "approx. AD 40-60",
+    "period": "Practical wisdom for scattered believers",
+    "timelinePlacement": "Early church instruction to the diaspora",
+    "majorEvents": [],
+    "majorPeople": [
+      "james-brother-of-jesus",
+      "jesus"
+    ],
+    "majorPlaces": [
+      "jerusalem"
+    ],
+    "outline": [
+      "1 Trials, wisdom, and true religion",
+      "2 Partiality and living faith",
+      "3 The tongue and wisdom",
+      "4 Humility and repentance",
+      "5 Wealth, patience, prayer, and restoration"
+    ],
+    "keyVerses": [
+      "James 1:2-4",
+      "James 1:22",
+      "James 2:17",
+      "James 5:16"
+    ],
+    "connections": [
+      {
+        "bookId": "proverbs",
+        "note": "James connects with Proverbs through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "acts",
+        "note": "James connects with Acts through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "1-peter",
+    "name": "1 Peter",
+    "testament": "NT",
+    "orderInCanon": 60,
+    "author": "Peter",
+    "date": "approx. AD 60-64",
+    "period": "Hope and holiness amid suffering",
+    "timelinePlacement": "Before Nero's persecution or during early imperial pressure",
+    "majorEvents": [],
+    "majorPeople": [
+      "peter",
+      "john-mark",
+      "jesus"
+    ],
+    "majorPlaces": [
+      "rome"
+    ],
+    "outline": [
+      "1 Living hope and holiness",
+      "2 God's people and honorable conduct",
+      "3 Suffering and witness",
+      "4 Stewardship and fiery trials",
+      "5 Elders, humility, and final greetings"
+    ],
+    "keyVerses": [
+      "1 Peter 1:3",
+      "1 Peter 1:15-16",
+      "1 Peter 2:9",
+      "1 Peter 5:10"
+    ],
+    "connections": [
+      {
+        "bookId": "mark",
+        "note": "1 Peter connects with Mark through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "2-peter",
+        "note": "1 Peter connects with 2 Peter through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "2-peter",
+    "name": "2 Peter",
+    "testament": "NT",
+    "orderInCanon": 61,
+    "author": "Peter; some scholarly opinion disputes Petrine authorship and dates later",
+    "date": "traditional approx. AD 64-68; critical proposals often later in the 1st century or early 2nd century",
+    "period": "Growth, apostolic witness, and warning against false teachers",
+    "timelinePlacement": "Late apostolic exhortation before Peter's death in traditional chronology",
+    "majorEvents": [],
+    "majorPeople": [],
+    "majorPlaces": [],
+    "outline": [
+      "1 Growth in godliness and eyewitness testimony",
+      "2 False teachers judged",
+      "3 The day of the Lord and patient hope"
+    ],
+    "keyVerses": [
+      "2 Peter 1:3-4",
+      "2 Peter 1:16-21",
+      "2 Peter 3:9",
+      "2 Peter 3:18"
+    ],
+    "connections": [
+      {
+        "bookId": "1-peter",
+        "note": "2 Peter connects with 1 Peter through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "jude",
+        "note": "2 Peter connects with Jude through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "1-john",
+    "name": "1 John",
+    "testament": "NT",
+    "orderInCanon": 62,
+    "author": "Traditionally John the apostle",
+    "date": "approx. AD 85-95",
+    "period": "Assurance, truth, love, and eternal life",
+    "timelinePlacement": "Late apostolic teaching to churches facing false teaching",
+    "majorEvents": [],
+    "majorPeople": [
+      "john-the-apostle",
+      "jesus"
+    ],
+    "majorPlaces": [],
+    "outline": [
+      "1:1-2:2 Word of life and walking in light",
+      "2:3-27 Obedience, love, and antichrists",
+      "2:28-3:24 Children of God and love",
+      "4 Testing spirits and God's love",
+      "5 Faith, assurance, and eternal life"
+    ],
+    "keyVerses": [
+      "1 John 1:9",
+      "1 John 3:16",
+      "1 John 4:8",
+      "1 John 5:13"
+    ],
+    "connections": [
+      {
+        "bookId": "john",
+        "note": "1 John connects with John through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "2-john",
+        "note": "1 John connects with 2 John through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "2-john",
+    "name": "2 John",
+    "testament": "NT",
+    "orderInCanon": 63,
+    "author": "Traditionally John the apostle, writing as the elder",
+    "date": "approx. AD 85-95",
+    "period": "Truth, love, and discernment in a local church setting",
+    "timelinePlacement": "Late apostolic warning about deceivers",
+    "majorEvents": [],
+    "majorPeople": [
+      "john-the-apostle"
+    ],
+    "majorPlaces": [],
+    "outline": [
+      "1-3 Greeting in truth and love",
+      "4-6 Walking in love",
+      "7-11 Warning against deceivers",
+      "12-13 Closing"
+    ],
+    "keyVerses": [
+      "2 John 1:6",
+      "2 John 1:9",
+      "2 John 1:10"
+    ],
+    "connections": [
+      {
+        "bookId": "1-john",
+        "note": "2 John connects with 1 John through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "3-john",
+        "note": "2 John connects with 3 John through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "3-john",
+    "name": "3 John",
+    "testament": "NT",
+    "orderInCanon": 64,
+    "author": "Traditionally John the apostle, writing as the elder",
+    "date": "approx. AD 85-95",
+    "period": "Hospitality, truth, and church leadership conflict",
+    "timelinePlacement": "Late apostolic local church correspondence",
+    "majorEvents": [],
+    "majorPeople": [
+      "john-the-apostle"
+    ],
+    "majorPlaces": [],
+    "outline": [
+      "1-4 Greeting and joy in truth",
+      "5-8 Support for faithful workers",
+      "9-10 Diotrephes opposed",
+      "11-15 Demetrius commended and closing"
+    ],
+    "keyVerses": [
+      "3 John 1:4",
+      "3 John 1:8",
+      "3 John 1:11"
+    ],
+    "connections": [
+      {
+        "bookId": "2-john",
+        "note": "3 John connects with 2 John through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "1-john",
+        "note": "3 John connects with 1 John through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "jude",
+    "name": "Jude",
+    "testament": "NT",
+    "orderInCanon": 65,
+    "author": "Jude, servant of Jesus Christ and brother of James",
+    "date": "approx. AD 60-90",
+    "period": "Contending for the faith against false teachers",
+    "timelinePlacement": "Late apostolic warning to believers",
+    "majorEvents": [],
+    "majorPeople": [
+      "jude",
+      "james-brother-of-jesus",
+      "jesus"
+    ],
+    "majorPlaces": [],
+    "outline": [
+      "1-4 Greeting and call to contend",
+      "5-16 Examples and judgment of false teachers",
+      "17-23 Perseverance and mercy",
+      "24-25 Doxology"
+    ],
+    "keyVerses": [
+      "Jude 1:3",
+      "Jude 1:20-21",
+      "Jude 1:24-25"
+    ],
+    "connections": [
+      {
+        "bookId": "2-peter",
+        "note": "Jude connects with 2 Peter through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "revelation",
+        "note": "Jude connects with Revelation through shared history, theology, or literary development."
+      }
+    ]
+  },
+  {
+    "id": "revelation",
+    "name": "Revelation",
+    "testament": "NT",
+    "orderInCanon": 66,
+    "author": "John; traditionally John the apostle exiled on Patmos",
+    "date": "approx. AD 90-95, though some propose a pre-AD 70 date",
+    "period": "Apocalyptic prophecy of Christ, judgment, perseverance, and new creation",
+    "timelinePlacement": "John's vision on Patmos reaching to final judgment and new creation",
+    "majorEvents": [
+      "john-exiled-on-patmos",
+      "revelation-given"
+    ],
+    "majorPeople": [
+      "john-the-apostle",
+      "jesus",
+      "god"
+    ],
+    "majorPlaces": [
+      "patmos",
+      "ephesus"
+    ],
+    "outline": [
+      "1 Vision of the risen Christ",
+      "2-3 Messages to seven churches",
+      "4-5 Heavenly throne and the Lamb",
+      "6-18 Seals, trumpets, bowls, and Babylon judged",
+      "19-20 Christ's victory and final judgment",
+      "21-22 New heaven, new earth, and final invitation"
+    ],
+    "keyVerses": [
+      "Revelation 1:8",
+      "Revelation 5:9-10",
+      "Revelation 21:3-4",
+      "Revelation 22:20"
+    ],
+    "connections": [
+      {
+        "bookId": "daniel",
+        "note": "Revelation connects with Daniel through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "ezekiel",
+        "note": "Revelation connects with Ezekiel through shared history, theology, or literary development."
+      },
+      {
+        "bookId": "john",
+        "note": "Revelation connects with John through shared history, theology, or literary development."
       }
     ]
   }
