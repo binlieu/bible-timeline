@@ -605,6 +605,28 @@ function scriptureBooksInHtml(html) {
   return Array.from(books).sort((a, b) => (USFM_ORDER.get(a) ?? 999) - (USFM_ORDER.get(b) ?? 999) || a.localeCompare(b));
 }
 
+// Cache-busting asset version: a short hash of the files that determine the
+// generated CSS/JS. It changes only when those inputs change, so the build
+// stays idempotent, and every deploy that alters assets gets a fresh URL
+// (so CDNs / browsers can't serve a stale stylesheet or script).
+const ASSET_VERSION = (function computeAssetVersion() {
+  const hash = require("crypto").createHash("md5");
+  const inputs = [path.join(rootDir, "tools", "build.js"), path.join(rootDir, "css", "style.css")];
+  ["search.js", "timeline.js", "nav.js", "map.js", "graph.js", "timeline-visual.js", "genealogy.js", "scripture.js"]
+    .forEach((name) => inputs.push(path.join(rootDir, "js", name)));
+  (function walk(dir) {
+    fs.readdirSync(dir).forEach((name) => {
+      const full = path.join(dir, name);
+      if (fs.statSync(full).isDirectory()) walk(full);
+      else if (name.endsWith(".json") && full !== path.join(dataDir, "graph.json")) inputs.push(full);
+    });
+  })(dataDir);
+  inputs.sort().forEach((file) => {
+    try { hash.update(fs.readFileSync(file)); } catch (err) { /* ignore missing optional inputs */ }
+  });
+  return hash.digest("hex").slice(0, 8);
+})();
+
 function pageLayout(options) {
   const rootPrefix = options.rootPrefix || "";
   let scripts = options.timelineScript
@@ -628,7 +650,7 @@ function pageLayout(options) {
       '\n<script src="' + rootPrefix + 'js/scripture.js"></script>';
   }
 
-  return '<!doctype html>\n' +
+  const doc = '<!doctype html>\n' +
     '<html lang="en">\n' +
     '<head>\n' +
     '  <meta charset="utf-8">\n' +
@@ -645,6 +667,9 @@ function pageLayout(options) {
     scripts + '\n' +
     '</body>\n' +
     '</html>\n';
+  // Append the cache-busting version to every local CSS/JS reference.
+  return doc.replace(/((?:href|src)=")((?:\.\.\/)*(?:css|js)\/[^"?]*\.(?:css|js))"/g,
+    '$1$2?v=' + ASSET_VERSION + '"');
 }
 
 function renderHeader(rootPrefix) {
