@@ -20,6 +20,7 @@ const data = {
   connections: readJson("connections.json"),
   timeline: readJson("timeline.json"),
   categories: readJson("categories.json"),
+  reigns: readJson("reigns.json"),
   basemap: readJson("geo/basemap.json")
 };
 
@@ -401,6 +402,9 @@ function pageLayout(options) {
   if (options.graphScript) {
     scripts += '\n<script src="' + rootPrefix + 'js/graph-data.js"></script>\n<script src="' + rootPrefix + 'js/graph.js"></script>';
   }
+  if (options.timelineVisualScript) {
+    scripts += '\n<script src="' + rootPrefix + 'js/timeline-visual.js"></script>';
+  }
 
   return '<!doctype html>\n' +
     '<html lang="en">\n' +
@@ -554,6 +558,18 @@ function validateData() {
 
   data.timeline.forEach((group) => {
     checkRefs("timeline group " + group.era, group.eventIds, "event", maps.events);
+  });
+
+  validateUnique("reigns", data.reigns);
+  data.reigns.forEach((reign) => {
+    const label = "reign " + reign.id;
+    checkRefs(label, [reign.id], "person", maps.people);
+    if (reign.type !== "king" && reign.type !== "prophet") {
+      warn(label + " has unsupported type: " + reign.type);
+    }
+    if (typeof reign.start !== "number" || typeof reign.end !== "number" || reign.end < reign.start) {
+      warn(label + " has invalid start/end years.");
+    }
   });
 
   (data.categories.miracles || []).forEach((miracle) => {
@@ -1111,10 +1127,217 @@ function renderMapsBrowse() {
   );
 }
 
+const VT = {
+  primevalPx: 150,
+  histStart: -2100,
+  histEnd: 100,
+  pxPerYear: 0.62,
+  histPx: (100 - -2100) * 0.62,
+  topPad: 30,
+  botPad: 40,
+  minX: -680,
+  width: 1900,
+  axisX: 70,
+  eventDotX: 92,
+  barTopX: 120,
+  barBottomX: 930,
+  labelGap: 15
+};
+VT.totalHeight = VT.topPad + VT.primevalPx + VT.histPx + VT.botPad;
+VT.histY = VT.topPad + VT.primevalPx;
+
+function slugify(value) {
+  return String(value || "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+}
+
+function yForTimeline(year, isSymbolic, symbolicIndex) {
+  if (isSymbolic) {
+    return VT.topPad + 20 + (symbolicIndex / 6) * (VT.primevalPx - 40);
+  }
+  const clamped = Math.min(Math.max(year, VT.histStart), VT.histEnd);
+  return VT.histY + (clamped - VT.histStart) * VT.pxPerYear;
+}
+
+function formatTimelineYear(year) {
+  if (year < 0) return Math.abs(year) + " BC";
+  if (year === 1) return "AD 1";
+  if (year > 0) return "AD " + year;
+  return "1 BC/AD 1";
+}
+
+function formatTimelineRange(start, end) {
+  return formatTimelineYear(start) + "-" + formatTimelineYear(end);
+}
+
+function truncateSvgLabel(value, maxLength) {
+  const text = String(value || "");
+  return text.length > maxLength ? text.slice(0, Math.max(0, maxLength - 3)) + "..." : text;
+}
+
+function tooltipAttrs(parts) {
+  const text = parts.filter(Boolean).join(" | ");
+  return ' data-vt-title="' + escapeHtml(text) + '" aria-label="' + escapeHtml(text) + '"';
+}
+
+function assignVerticalLanes(items, laneXs, maxLeader) {
+  const lanes = laneXs.map((x) => ({ x, lastY: -Infinity }));
+  return items.map((item) => {
+    const selected = lanes.reduce((best, lane) => lane.lastY < best.lastY ? lane : best, lanes[0]);
+    const labelY = Math.max(item.rawY, selected.lastY + VT.labelGap);
+    // In over-dense clusters, drop the label (keep dot + hover) instead of
+    // pushing it far from its dot and spilling into a tangle of leader lines.
+    if (maxLeader && labelY - item.rawY > maxLeader) {
+      return Object.assign({}, item, { labelX: selected.x, labelY: item.rawY, labelSkip: true });
+    }
+    selected.lastY = labelY;
+    return Object.assign({}, item, { labelX: selected.x, labelY });
+  });
+}
+
+function assignIntervalLanes(records) {
+  const lanes = [];
+  return records.slice().sort((a, b) => a.start - b.start || a.end - b.end).map((record) => {
+    let laneIndex = lanes.findIndex((lastEnd) => lastEnd <= record.start);
+    if (laneIndex === -1) {
+      laneIndex = lanes.length;
+      lanes.push(record.end);
+    } else {
+      lanes[laneIndex] = record.end;
+    }
+    return Object.assign({}, record, { lane: laneIndex });
+  });
+}
+
+function renderTimelineVisualSvg() {
+  const symbolicEvents = data.events
+    .filter((event) => event.datePrecision === "symbolic")
+    .sort((a, b) => (a.order || 0) - (b.order || 0));
+  const symbolicIndex = new Map(symbolicEvents.map((event, index) => [event.id, index]));
+  const eraIndex = new Map(data.timeline.map((group, index) => [group.era, index + 1]));
+  const eraSlug = new Map(data.timeline.map((group) => [group.era, slugify(group.era)]));
+  const eventPoints = sortedEvents().map((event) => {
+    const isSymbolic = event.datePrecision === "symbolic";
+    return {
+      event,
+      rawY: yForTimeline(event.dateSort, isSymbolic, symbolicIndex.get(event.id) || 0),
+      eraNumber: eraIndex.get(event.era) || 1,
+      eraSlug: eraSlug.get(event.era) || slugify(event.era)
+    };
+  }).sort((a, b) => a.rawY - b.rawY || (a.event.order || 0) - (b.event.order || 0));
+
+  const eraBands = data.timeline.map((group) => {
+    const points = group.eventIds.map((id) => eventPoints.find((point) => point.event.id === canonicalId("event", id))).filter(Boolean);
+    const ys = points.map((point) => point.rawY);
+    const minY = Math.max(VT.topPad, Math.min.apply(null, ys) - 12);
+    const maxY = Math.min(VT.totalHeight - VT.botPad, Math.max.apply(null, ys) + 12);
+    const index = eraIndex.get(group.era) || 1;
+    const slug = eraSlug.get(group.era) || slugify(group.era);
+    return '<g class="vt-era vt-era-' + escapeHtml(slug) + '">' +
+      '<rect class="vt-era-band vt-era-fill-' + index + '" x="' + VT.minX + '" y="' + minY.toFixed(1) + '" width="' + VT.width + '" height="' + Math.max(18, maxY - minY).toFixed(1) + '"></rect>' +
+      '<text class="vt-era-label" x="1050" y="' + (minY + 15).toFixed(1) + '">' + escapeHtml(group.era) + '</text>' +
+      '</g>';
+  }).join("\n");
+
+  const ticks = [];
+  for (let year = -2000; year <= 100; year += 100) {
+    const y = yForTimeline(year, false, 0);
+    const major = year % 500 === 0 || year === 1 || year === 0;
+    ticks.push('<line class="' + (major ? "vt-axis-tick major" : "vt-axis-tick") + '" x1="' + (VT.axisX - (major ? 10 : 6)) + '" y1="' + y.toFixed(1) + '" x2="' + (VT.axisX + (major ? 10 : 6)) + '" y2="' + y.toFixed(1) + '"></line>');
+    if (year % 500 === 0 || year === 0) {
+      const label = year === 0 ? "AD 1" : formatTimelineYear(year);
+      ticks.push('<text class="vt-axis-label" x="' + (VT.minX + 12) + '" y="' + (y + 3).toFixed(1) + '">' + escapeHtml(label) + '</text>');
+    }
+  }
+
+  const labeledEvents = assignVerticalLanes(eventPoints, [62, -86, -234, -382, -530], 65);
+  const eventsSvg = labeledEvents.map((point) => {
+    const labelDelta = Math.abs(point.labelY - point.rawY);
+    const label = truncateSvgLabel(point.event.name, 22);
+    const leader = (!point.labelSkip && labelDelta > 2)
+      ? '<line class="vt-event-leader" x1="' + (point.labelX + 4) + '" y1="' + point.labelY.toFixed(1) + '" x2="' + VT.eventDotX + '" y2="' + point.rawY.toFixed(1) + '"></line>'
+      : "";
+    const text = point.labelSkip
+      ? ""
+      : '<text class="vt-event-label" x="' + point.labelX + '" y="' + point.labelY.toFixed(1) + '">' + escapeHtml(label) + '</text>';
+    return '<a class="vt-event vt-era-' + escapeHtml(point.eraSlug) + '" href="events/' + escapeHtml(point.event.id) + '.html"' + tooltipAttrs([point.event.name, point.event.date, point.event.reference]) + '>' +
+      '<title>' + escapeHtml(point.event.name + " - " + point.event.date + " - " + point.event.reference) + '</title>' +
+      leader +
+      '<circle class="vt-event-dot vt-era-fill-' + point.eraNumber + '" cx="' + VT.eventDotX + '" cy="' + point.rawY.toFixed(1) + '" r="4"></circle>' +
+      text +
+      '</a>';
+  }).join("\n");
+
+  const groups = [
+    { type: "king", className: "vt-kings", title: "Kings", x: 130, width: 360 },
+    { type: "prophet", className: "vt-prophets", title: "Prophets", x: 535, width: 360 }
+  ];
+  const barGroups = groups.map((group) => {
+    const records = assignIntervalLanes(data.reigns.filter((reign) => reign.type === group.type));
+    const laneCount = Math.max(1, records.reduce((max, record) => Math.max(max, record.lane + 1), 0));
+    const laneWidth = Math.min(44, Math.max(22, (group.width - 4) / laneCount));
+    const bars = records.map((record) => {
+      const y1 = yForTimeline(record.start, false, 0);
+      const y2 = yForTimeline(record.end, false, 0);
+      const barHeight = Math.max(10, y2 - y1);
+      const x = group.x + record.lane * laneWidth;
+      const barClass = record.type === "king" ? "vt-king-bar vt-kingdom-" + slugify(record.kingdom) : "vt-prophet-bar";
+      const title = record.name + " (" + record.kingdom + "): " + formatTimelineRange(record.start, record.end) + " - " + record.note;
+      return '<a class="vt-reign vt-' + escapeHtml(record.type) + '" href="people/' + escapeHtml(record.id) + '.html"' + tooltipAttrs([record.name, record.kingdom, formatTimelineRange(record.start, record.end), record.note, record.reference]) + '>' +
+        '<title>' + escapeHtml(title) + '</title>' +
+        '<rect class="' + escapeHtml(barClass) + '" x="' + x.toFixed(1) + '" y="' + y1.toFixed(1) + '" width="' + (laneWidth - 5).toFixed(1) + '" height="' + barHeight.toFixed(1) + '" rx="4"></rect>' +
+        '<text class="vt-reign-label" x="' + (x + laneWidth + 1).toFixed(1) + '" y="' + (y1 + 9).toFixed(1) + '">' + escapeHtml(truncateSvgLabel(record.name, 20)) + '</text>' +
+        '</a>';
+    }).join("\n");
+    return '<g class="' + group.className + '">' +
+      '<text class="vt-group-heading" x="' + group.x + '" y="' + (VT.histY - 10) + '">' + escapeHtml(group.title) + '</text>' +
+      bars +
+      '</g>';
+  }).join("\n");
+
+  return '<svg class="vt" data-vtimeline-svg xmlns="http://www.w3.org/2000/svg" viewBox="' + VT.minX + ' 0 ' + VT.width + ' ' + VT.totalHeight.toFixed(1) + '" role="img" aria-labelledby="vt-title vt-desc">\n' +
+    '<title id="vt-title">To-scale Bible timeline</title>\n' +
+    '<desc id="vt-desc">Events are positioned by date. Kings and prophets are shown as vertical reign and ministry bars so overlaps are visible.</desc>\n' +
+    '<g class="vt-eras">\n' + eraBands + '\n</g>\n' +
+    '<g class="vt-axis">\n' +
+    '<rect class="vt-primeval-band" x="' + VT.minX + '" y="' + VT.topPad + '" width="' + VT.width + '" height="' + VT.primevalPx + '"></rect>\n' +
+    '<line class="vt-primeval-divider" x1="' + VT.minX + '" y1="' + VT.histY + '" x2="' + (VT.minX + VT.width) + '" y2="' + VT.histY + '"></line>\n' +
+    '<text class="vt-primeval-label" x="1050" y="' + (VT.topPad + 18) + '">Primeval (symbolic dates)</text>\n' +
+    '<line class="vt-axis-line" x1="' + VT.axisX + '" y1="' + VT.histY + '" x2="' + VT.axisX + '" y2="' + (VT.totalHeight - VT.botPad) + '"></line>\n' +
+    ticks.join("\n") +
+    '\n</g>\n' +
+    '<g class="vt-events">\n' + eventsSvg + '\n</g>\n' +
+    barGroups +
+    '\n</svg>';
+}
+
+function renderTimelineVisualSection() {
+  const eraToggles = data.timeline.map((group) => {
+    const slug = slugify(group.era);
+    return '<label><input type="checkbox" data-vt-era="' + escapeHtml(slug) + '" checked> ' + escapeHtml(group.era) + '</label>';
+  }).join("");
+  const legendEras = data.timeline.map((group, index) => (
+    '<span class="vt-legend-item"><span class="vt-swatch vt-era-fill-' + (index + 1) + '"></span>' + escapeHtml(group.era) + '</span>'
+  )).join("");
+  return '<section class="section vtimeline-section" aria-labelledby="visual-timeline-title"><div class="container">\n' +
+    '<div class="page-title"><span class="eyebrow">Chronological Scale</span><h1 id="visual-timeline-title">Visual Timeline</h1><p>Events are placed by date, with kings and prophets shown as parallel bars so overlapping reigns and ministries are visible.</p></div>\n' +
+    '<div class="vtimeline-legend" aria-label="Timeline legend">' +
+    legendEras +
+    '<span class="vt-legend-item"><span class="vt-swatch vt-king-swatch"></span>King bar</span>' +
+    '<span class="vt-legend-item"><span class="vt-swatch vt-prophet-swatch"></span>Prophet bar</span>' +
+    '<span class="vt-legend-note">Dates are approximate and follow a traditional chronology; the primeval period is shown with symbolic dates in a compressed band.</span>' +
+    '</div>\n' +
+    '<div class="vtimeline-controls" aria-label="Visual timeline filters">\n' +
+    '<fieldset><legend>Layers</legend><label><input type="checkbox" data-vt-layer="events" checked> Events</label><label><input type="checkbox" data-vt-layer="kings" checked> Kings</label><label><input type="checkbox" data-vt-layer="prophets" checked> Prophets</label></fieldset>\n' +
+    '<fieldset><legend>Eras</legend><label><input type="checkbox" data-vt-all-eras checked> All eras</label>' + eraToggles + '</fieldset>\n' +
+    '</div>\n' +
+    '<div class="vtimeline-scroll">' + renderTimelineVisualSvg() + '</div>\n' +
+    '</div></section>';
+}
+
 function renderTimeline() {
   const eras = data.timeline.map((group) => group.era);
   const filters = '<section class="section"><div class="container">\n' +
-    '<div class="page-title"><span class="eyebrow">Chronological Listing</span><h1>Bible Timeline</h1><p>Filter events by era or text. All data is loaded from generated local JavaScript for file:// support.</p></div>\n' +
+    '<div class="page-title"><span class="eyebrow">Chronological Listing</span><h2>Browse events by era</h2><p>Filter events by era or text. All data is loaded from generated local JavaScript for file:// support.</p></div>\n' +
     '<div class="filter-panel">\n' +
     '  <label>Era <select data-era-filter><option value="">All eras</option>' + eras.map((era) => '<option value="' + escapeHtml(era) + '">' + escapeHtml(era) + '</option>').join("") + '</select></label>\n' +
     '  <label>Text <input data-timeline-filter type="search" placeholder="Filter by event, person, place, reference"></label>\n' +
@@ -1128,12 +1351,13 @@ function renderTimeline() {
       '\n</section>';
   }).join("\n");
 
-  const body = filters + groups + '\n</div></div></section>';
+  const body = renderTimelineVisualSection() + filters + groups + '\n</div></div></section>';
   writeFile("timeline.html", pageLayout({
     title: "Timeline - Bible Timeline",
     description: "Full chronological Bible timeline with client-side filters.",
     rootPrefix: "",
     timelineScript: true,
+    timelineVisualScript: true,
     body
   }));
 }

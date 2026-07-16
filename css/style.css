@@ -1176,3 +1176,352 @@ main {
     max-height: none;
   }
 }
+
+/* --- Visual timeline ----------------------------------------------------- */
+:root {
+  --vt-era-1: #b85c4f;
+  --vt-era-2: #b47a2b;
+  --vt-era-3: #9a8a28;
+  --vt-era-4: #5d8c45;
+  --vt-era-5: #2f8a72;
+  --vt-era-6: #2b789a;
+  --vt-era-7: #4d6fb0;
+  --vt-era-8: #7658a8;
+  --vt-era-9: #9b5d96;
+  --vt-era-10: #aa5570;
+  --vt-era-11: #6a7c42;
+  --vt-era-12: #487f86;
+  --vt-era-13: #7a6a38;
+  --vt-band-opacity: 0.13;
+  --vt-axis: color-mix(in srgb, var(--text) 70%, var(--border));
+  --vt-line: color-mix(in srgb, var(--border) 78%, transparent);
+  --vt-king: #9c4f28;
+  --vt-king-stroke: #653017;
+  --vt-prophet: #246f8f;
+  --vt-prophet-stroke: #17485f;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --vt-era-1: #f08a7b;
+    --vt-era-2: #dda85a;
+    --vt-era-3: #c6bb5b;
+    --vt-era-4: #84bd72;
+    --vt-era-5: #60bca8;
+    --vt-era-6: #64b4d4;
+    --vt-era-7: #8aa4ee;
+    --vt-era-8: #ad96df;
+    --vt-era-9: #d68ccc;
+    --vt-era-10: #df879f;
+    --vt-era-11: #aabb70;
+    --vt-era-12: #76bec3;
+    --vt-era-13: #b5a15c;
+    --vt-band-opacity: 0.18;
+    --vt-king: #df9366;
+    --vt-king-stroke: #ffd0b5;
+    --vt-prophet: #72bddc;
+    --vt-prophet-stroke: #c7efff;
+  }
+}
+
+:root[data-theme="dark"] {
+  --vt-era-1: #f08a7b;
+  --vt-era-2: #dda85a;
+  --vt-era-3: #c6bb5b;
+  --vt-era-4: #84bd72;
+  --vt-era-5: #60bca8;
+  --vt-era-6: #64b4d4;
+  --vt-era-7: #8aa4ee;
+  --vt-era-8: #ad96df;
+  --vt-era-9: #d68ccc;
+  --vt-era-10: #df879f;
+  --vt-era-11: #aabb70;
+  --vt-era-12: #76bec3;
+  --vt-era-13: #b5a15c;
+  --vt-band-opacity: 0.18;
+  --vt-king: #df9366;
+  --vt-king-stroke: #ffd0b5;
+  --vt-prophet: #72bddc;
+  --vt-prophet-stroke: #c7efff;
+}
+
+.vtimeline-section .page-title {
+  margin-bottom: 1rem;
+}
+
+.vtimeline-legend,
+.vtimeline-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 0.9rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.vtimeline-controls {
+  align-items: flex-start;
+}
+
+.vtimeline-controls fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem 0.9rem;
+  min-width: min(100%, 18rem);
+  margin: 0;
+  padding: 0.2rem 0 0;
+  border: 0;
+}
+
+.vtimeline-controls legend {
+  width: 100%;
+  margin-bottom: 0.2rem;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.vtimeline-controls label,
+.vt-legend-item,
+.vt-legend-note {
+  color: var(--text);
+  font-size: 0.9rem;
+}
+
+.vt-legend-note {
+  flex: 1 1 20rem;
+  color: var(--muted);
+}
+
+.vt-swatch {
+  display: inline-block;
+  width: 0.85rem;
+  height: 0.85rem;
+  margin-right: 0.35rem;
+  border: 1px solid color-mix(in srgb, var(--text) 28%, transparent);
+  border-radius: 3px;
+  vertical-align: -0.12em;
+}
+
+.vt-king-swatch {
+  background: var(--vt-king);
+}
+
+.vt-prophet-swatch {
+  background: var(--vt-prophet);
+}
+
+.vtimeline-scroll {
+  overflow: auto;
+  padding: 0.5rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.vt {
+  display: block;
+  width: 100%;
+  min-width: 880px;
+  height: auto;
+  color: var(--text);
+  background: var(--surface);
+}
+
+.vt a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.vt a:focus-visible .vt-event-dot,
+.vt a:focus-visible rect {
+  outline: 2px solid var(--accent-strong);
+  outline-offset: 2px;
+}
+
+.vt-era-band,
+.vt-primeval-band {
+  opacity: var(--vt-band-opacity);
+}
+
+.vt-primeval-band {
+  fill: var(--surface-muted);
+  opacity: 0.6;
+}
+
+.vt-era-fill-1 { fill: var(--vt-era-1); background: var(--vt-era-1); }
+.vt-era-fill-2 { fill: var(--vt-era-2); background: var(--vt-era-2); }
+.vt-era-fill-3 { fill: var(--vt-era-3); background: var(--vt-era-3); }
+.vt-era-fill-4 { fill: var(--vt-era-4); background: var(--vt-era-4); }
+.vt-era-fill-5 { fill: var(--vt-era-5); background: var(--vt-era-5); }
+.vt-era-fill-6 { fill: var(--vt-era-6); background: var(--vt-era-6); }
+.vt-era-fill-7 { fill: var(--vt-era-7); background: var(--vt-era-7); }
+.vt-era-fill-8 { fill: var(--vt-era-8); background: var(--vt-era-8); }
+.vt-era-fill-9 { fill: var(--vt-era-9); background: var(--vt-era-9); }
+.vt-era-fill-10 { fill: var(--vt-era-10); background: var(--vt-era-10); }
+.vt-era-fill-11 { fill: var(--vt-era-11); background: var(--vt-era-11); }
+.vt-era-fill-12 { fill: var(--vt-era-12); background: var(--vt-era-12); }
+.vt-era-fill-13 { fill: var(--vt-era-13); background: var(--vt-era-13); }
+
+.vt-axis-line,
+.vt-axis-tick,
+.vt-primeval-divider,
+.vt-event-leader {
+  stroke: var(--vt-line);
+  stroke-width: 1;
+}
+
+.vt-axis-line {
+  stroke: var(--vt-axis);
+  stroke-width: 1.5;
+}
+
+.vt-axis-tick.major {
+  stroke: var(--vt-axis);
+}
+
+.vt-axis-label,
+.vt-era-label,
+.vt-primeval-label,
+.vt-group-heading,
+.vt-event-label,
+.vt-reign-label {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0;
+}
+
+.vt-axis-label,
+.vt-era-label,
+.vt-primeval-label {
+  fill: var(--muted);
+  font-size: 12px;
+}
+
+.vt-era-label {
+  font-weight: 700;
+  opacity: 0.58;
+}
+
+.vt-group-heading {
+  fill: var(--text);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.vt-event-label {
+  fill: var(--text);
+  font-size: 11px;
+  text-anchor: end;
+}
+
+.vt-event-dot {
+  stroke: var(--surface);
+  stroke-width: 1.5;
+}
+
+.vt-king-bar,
+.vt-prophet-bar {
+  stroke-width: 1.2;
+}
+
+.vt-king-bar {
+  fill: var(--vt-king);
+  stroke: var(--vt-king-stroke);
+}
+
+.vt-kingdom-judah {
+  fill: color-mix(in srgb, var(--vt-king) 82%, var(--vt-era-2));
+}
+
+.vt-kingdom-israel-north {
+  fill: color-mix(in srgb, var(--vt-king) 75%, var(--vt-era-5));
+}
+
+.vt-kingdom-babylon {
+  fill: color-mix(in srgb, var(--vt-king) 70%, var(--vt-era-8));
+}
+
+.vt-kingdom-persia,
+.vt-kingdom-persia-media {
+  fill: color-mix(in srgb, var(--vt-king) 70%, var(--vt-era-4));
+}
+
+.vt-prophet-bar {
+  fill: var(--vt-prophet);
+  stroke: var(--vt-prophet-stroke);
+}
+
+.vt-reign-label {
+  fill: var(--text);
+  font-size: 11px;
+}
+
+.vt.hide-events .vt-events,
+.vt.hide-kings .vt-kings,
+.vt.hide-prophets .vt-prophets,
+.vt.hide-era-primeval-history .vt-era-primeval-history,
+.vt.hide-era-the-patriarchs .vt-era-the-patriarchs,
+.vt.hide-era-exodus-wilderness .vt-era-exodus-wilderness,
+.vt.hide-era-conquest-of-canaan .vt-era-conquest-of-canaan,
+.vt.hide-era-the-judges .vt-era-the-judges,
+.vt.hide-era-united-kingdom .vt-era-united-kingdom,
+.vt.hide-era-divided-kingdom .vt-era-divided-kingdom,
+.vt.hide-era-exile .vt-era-exile,
+.vt.hide-era-return-from-exile .vt-era-return-from-exile,
+.vt.hide-era-between-the-testaments .vt-era-between-the-testaments,
+.vt.hide-era-life-of-jesus .vt-era-life-of-jesus,
+.vt.hide-era-the-early-church .vt-era-the-early-church {
+  display: none;
+}
+
+.vtimeline-tooltip {
+  position: fixed;
+  z-index: 20;
+  max-width: min(24rem, calc(100vw - 1rem));
+  padding: 0.45rem 0.6rem;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  box-shadow: var(--shadow);
+  font-size: 0.82rem;
+  line-height: 1.35;
+  pointer-events: none;
+}
+
+@media (max-width: 700px) {
+  .vtimeline-legend,
+  .vtimeline-controls {
+    padding: 0.75rem;
+  }
+
+  .vt {
+    min-width: 760px;
+  }
+}
+
+@media print {
+  .vtimeline-controls,
+  .vtimeline-tooltip {
+    display: none;
+  }
+
+  .vtimeline-scroll {
+    overflow: visible;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+  }
+
+  .vt {
+    width: 100%;
+    min-width: 0;
+  }
+}
