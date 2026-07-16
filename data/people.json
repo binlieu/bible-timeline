@@ -1,12 +1,2294 @@
 [
-  { "id": "god", "name": "God", "nameMeaning": "The one true God; Creator and covenant Lord", "birth": null, "death": null, "parents": [], "children": [], "spouses": [], "occupation": null, "nationality": null, "tribe": null, "kingdom": null, "roles": ["Creator", "Lord"], "summary": "God creates, judges, redeems, and keeps covenant throughout the biblical timeline.", "events": ["creation", "fall", "flood", "babel", "call-of-abraham", "isaac-born", "joseph-egypt", "exodus-egypt", "ten-commandments", "davids-reign"], "references": ["Genesis 1", "Exodus 3", "2 Samuel 7"], "relatedPeople": [], "relatedPlaces": ["eden", "mount-sinai", "jerusalem"], "books": ["genesis", "exodus", "2-samuel"] },
-  { "id": "adam", "name": "Adam", "nameMeaning": "man / from the ground (Heb. adam)", "birth": null, "death": "approx. 930 years after creation (Genesis 5:5)", "parents": [], "children": [], "spouses": ["eve"], "occupation": "Gardener/keeper of Eden", "nationality": null, "tribe": null, "kingdom": null, "roles": ["first man"], "summary": "Adam is the first man, created in God's image and placed in Eden.", "events": ["creation", "fall", "cain-abel"], "references": ["Genesis 1-5", "Romans 5:12-21"], "relatedPeople": ["eve"], "relatedPlaces": ["eden"], "books": ["genesis"] },
-  { "id": "eve", "name": "Eve", "nameMeaning": "living / life-giver", "birth": null, "death": null, "parents": [], "children": [], "spouses": ["adam"], "occupation": null, "nationality": null, "tribe": null, "kingdom": null, "roles": ["first woman"], "summary": "Eve is the first woman and mother of all living.", "events": ["creation", "fall", "cain-abel"], "references": ["Genesis 2-4"], "relatedPeople": ["adam"], "relatedPlaces": ["eden"], "books": ["genesis"] },
-  { "id": "noah", "name": "Noah", "nameMeaning": "rest / comfort", "birth": null, "death": "950 years old (Genesis 9:29)", "parents": [], "children": [], "spouses": [], "occupation": "Builder of the ark", "nationality": null, "tribe": null, "kingdom": null, "roles": ["patriarch"], "summary": "Noah obeys God and is preserved with his family through the flood.", "events": ["flood", "babel"], "references": ["Genesis 6-9", "Hebrews 11:7"], "relatedPeople": [], "relatedPlaces": ["canaan", "babel"], "books": ["genesis"] },
-  { "id": "abraham", "name": "Abraham", "nameMeaning": "father of a multitude", "birth": "approx. 2166 BC (traditional)", "death": "approx. 1991 BC (traditional)", "parents": [], "children": ["isaac"], "spouses": [], "occupation": "Nomadic herdsman", "nationality": "Hebrew", "tribe": null, "kingdom": null, "roles": ["patriarch"], "summary": "Abraham receives God's covenant promises of land, offspring, and blessing to the nations.", "events": ["call-of-abraham", "isaac-born"], "references": ["Genesis 12-25", "Romans 4"], "relatedPeople": ["isaac"], "relatedPlaces": ["ur", "canaan"], "books": ["genesis"] },
-  { "id": "isaac", "name": "Isaac", "nameMeaning": "he laughs", "birth": "approx. 2066 BC (traditional)", "death": "approx. 1886 BC (traditional)", "parents": ["abraham"], "children": ["jacob"], "spouses": [], "occupation": "Patriarch and herdsman", "nationality": "Hebrew", "tribe": null, "kingdom": null, "roles": ["patriarch"], "summary": "Isaac is the promised son of Abraham through whom the covenant line continues.", "events": ["isaac-born", "jacob-esau"], "references": ["Genesis 21-28"], "relatedPeople": ["abraham", "jacob"], "relatedPlaces": ["canaan"], "books": ["genesis"] },
-  { "id": "jacob", "name": "Jacob", "nameMeaning": "heel-holder / supplanter; later named Israel", "birth": "approx. 2006 BC (traditional)", "death": "approx. 1859 BC (traditional)", "parents": ["isaac"], "children": ["joseph"], "spouses": [], "occupation": "Patriarch and herdsman", "nationality": "Hebrew", "tribe": null, "kingdom": null, "roles": ["patriarch"], "summary": "Jacob becomes Israel and fathers the family that becomes the twelve tribes.", "events": ["jacob-esau", "joseph-egypt"], "references": ["Genesis 25-50"], "relatedPeople": ["isaac", "joseph"], "relatedPlaces": ["canaan", "egypt"], "books": ["genesis"] },
-  { "id": "joseph", "name": "Joseph", "nameMeaning": "may he add", "birth": "approx. 1915 BC (traditional)", "death": "approx. 1805 BC (traditional)", "parents": ["jacob"], "children": [], "spouses": [], "occupation": "Administrator in Egypt", "nationality": "Hebrew", "tribe": null, "kingdom": "Egyptian administration", "roles": [], "summary": "Joseph is sold into Egypt and later preserves his family during famine.", "events": ["joseph-egypt"], "references": ["Genesis 37-50"], "relatedPeople": ["jacob"], "relatedPlaces": ["canaan", "egypt"], "books": ["genesis"] },
-  { "id": "moses", "name": "Moses", "nameMeaning": "drawn out", "birth": "approx. 1526 BC (traditional)", "death": "approx. 1406 BC (traditional)", "parents": [], "children": [], "spouses": [], "occupation": "Prophet and leader of Israel", "nationality": "Israelite", "tribe": "Levi", "kingdom": null, "roles": ["prophet", "leader"], "summary": "Moses leads Israel out of Egypt and receives the law at Sinai.", "events": ["exodus-egypt", "ten-commandments"], "references": ["Exodus 1-Deuteronomy 34"], "relatedPeople": ["joseph"], "relatedPlaces": ["egypt", "mount-sinai"], "books": ["exodus"] },
-  { "id": "david", "name": "David", "nameMeaning": "beloved", "birth": "approx. 1040 BC", "death": "approx. 970 BC", "parents": [], "children": [], "spouses": [], "occupation": "Shepherd, warrior, king", "nationality": "Israelite", "tribe": "Judah", "kingdom": "United Israel", "roles": ["king"], "summary": "David becomes Israel's king and receives the promise of an enduring dynasty.", "events": ["davids-reign"], "references": ["1 Samuel 16-31", "2 Samuel"], "relatedPeople": ["moses"], "relatedPlaces": ["bethlehem", "jerusalem"], "books": ["2-samuel"] }
+  {
+    "id": "god",
+    "name": "God",
+    "nameMeaning": "The one true God; Creator and covenant Lord",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": null,
+    "nationality": null,
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "Creator",
+      "Lord"
+    ],
+    "summary": "God creates, judges, redeems, and keeps covenant throughout the biblical story.",
+    "events": [
+      "creation",
+      "fall",
+      "cain-abel",
+      "godly-line-of-seth",
+      "flood",
+      "noahic-covenant",
+      "tower-of-babel",
+      "call-of-abraham",
+      "abram-in-egypt",
+      "abrahamic-covenant",
+      "hagar-and-ishmael",
+      "sodom-and-gomorrah",
+      "birth-of-isaac",
+      "sacrifice-of-isaac",
+      "isaac-marries-rebekah",
+      "jacob-and-esau-born",
+      "jacob-steals-blessing",
+      "jacobs-ladder",
+      "jacob-marries-leah-rachel",
+      "jacob-wrestles-god",
+      "joseph-interprets-dreams",
+      "joseph-rules-egypt",
+      "jacob-moves-to-egypt",
+      "israel-enslaved-in-egypt",
+      "birth-of-moses",
+      "moses-flees-to-midian",
+      "burning-bush",
+      "ten-plagues",
+      "first-passover",
+      "red-sea-crossing",
+      "manna-and-quail",
+      "ten-commandments",
+      "golden-calf",
+      "tabernacle-built",
+      "wilderness-wanderings",
+      "bronze-serpent",
+      "balaam",
+      "death-of-moses",
+      "joshua-commissioned",
+      "crossing-the-jordan",
+      "fall-of-jericho",
+      "sun-stands-still",
+      "land-divided-among-tribes",
+      "joshuas-farewell",
+      "cycle-of-the-judges",
+      "deborah-and-barak",
+      "gideon",
+      "jephthah",
+      "samson",
+      "ruth-and-boaz",
+      "samuel-called",
+      "ark-captured-and-returned"
+    ],
+    "references": [
+      "Genesis 1:1-2:3",
+      "Genesis 3",
+      "Genesis 4:1-16",
+      "Genesis 4:25-5:32",
+      "Genesis 6-8",
+      "Genesis 9:1-17",
+      "Genesis 11:1-9",
+      "Genesis 12:1-9",
+      "Genesis 12:10-20",
+      "Genesis 15; 17",
+      "Genesis 16; 21:8-21",
+      "Genesis 18-19",
+      "Genesis 21:1-7",
+      "Genesis 22:1-19",
+      "Genesis 24",
+      "Genesis 25:19-34",
+      "Genesis 27",
+      "Genesis 28:10-22",
+      "Genesis 29",
+      "Genesis 32:22-32",
+      "Genesis 40-41",
+      "Genesis 41:37-57",
+      "Genesis 46-47",
+      "Exodus 1",
+      "Exodus 2:1-10",
+      "Exodus 2:11-25",
+      "Exodus 3-4",
+      "Exodus 7-11",
+      "Exodus 12",
+      "Exodus 14",
+      "Exodus 16",
+      "Exodus 19-20",
+      "Exodus 32",
+      "Exodus 35-40",
+      "Numbers 15-36",
+      "Numbers 21:4-9",
+      "Numbers 22-24",
+      "Deuteronomy 34",
+      "Joshua 1",
+      "Joshua 3-4",
+      "Joshua 6",
+      "Joshua 10:1-15",
+      "Joshua 13-21",
+      "Joshua 23-24",
+      "Judges 2:6-23",
+      "Judges 4-5",
+      "Judges 6-8",
+      "Judges 11",
+      "Judges 13-16",
+      "Ruth 1-4",
+      "1 Samuel 1-3",
+      "1 Samuel 4-6"
+    ],
+    "relatedPeople": [
+      "adam",
+      "eve",
+      "cain",
+      "abel",
+      "seth",
+      "enoch",
+      "methuselah",
+      "noah"
+    ],
+    "relatedPlaces": [
+      "eden",
+      "mount-ararat",
+      "babel",
+      "ur",
+      "haran",
+      "canaan",
+      "shechem",
+      "bethel",
+      "egypt",
+      "hebron",
+      "beersheba",
+      "sodom",
+      "jordan-river",
+      "goshen",
+      "midian",
+      "mount-sinai",
+      "kadesh-barnea",
+      "moab",
+      "gilgal",
+      "jericho",
+      "shiloh",
+      "gaza",
+      "bethlehem"
+    ],
+    "books": [
+      "genesis",
+      "exodus"
+    ]
+  },
+  {
+    "id": "adam",
+    "name": "Adam",
+    "nameMeaning": "אָדָם (Adam), man; related to ground",
+    "birth": null,
+    "death": "930 years old (Genesis 5:5)",
+    "parents": [],
+    "children": [
+      "cain",
+      "abel",
+      "seth"
+    ],
+    "spouses": [
+      "eve"
+    ],
+    "occupation": "Keeper of Eden",
+    "nationality": null,
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "first man"
+    ],
+    "summary": "Adam is the first man, created in God’s image and placed in Eden.",
+    "events": [
+      "creation",
+      "fall",
+      "cain-abel",
+      "godly-line-of-seth"
+    ],
+    "references": [
+      "Genesis 1:1-2:3",
+      "Genesis 3",
+      "Genesis 4:1-16",
+      "Genesis 4:25-5:32"
+    ],
+    "relatedPeople": [
+      "god",
+      "eve",
+      "cain",
+      "abel",
+      "seth",
+      "enoch",
+      "methuselah",
+      "noah"
+    ],
+    "relatedPlaces": [
+      "eden"
+    ],
+    "books": [
+      "genesis"
+    ]
+  },
+  {
+    "id": "eve",
+    "name": "Eve",
+    "nameMeaning": "חַוָּה (Chavvah), life/living",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [
+      "cain",
+      "abel",
+      "seth"
+    ],
+    "spouses": [
+      "adam"
+    ],
+    "occupation": null,
+    "nationality": null,
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "first woman"
+    ],
+    "summary": "Eve is the first woman and mother of all living.",
+    "events": [
+      "creation",
+      "fall",
+      "cain-abel",
+      "godly-line-of-seth"
+    ],
+    "references": [
+      "Genesis 1:1-2:3",
+      "Genesis 3",
+      "Genesis 4:1-16",
+      "Genesis 4:25-5:32"
+    ],
+    "relatedPeople": [
+      "god",
+      "adam",
+      "cain",
+      "abel",
+      "seth",
+      "enoch",
+      "methuselah",
+      "noah"
+    ],
+    "relatedPlaces": [
+      "eden"
+    ],
+    "books": [
+      "genesis"
+    ]
+  },
+  {
+    "id": "cain",
+    "name": "Cain",
+    "nameMeaning": "קַיִן (Qayin), acquired/produced",
+    "birth": null,
+    "death": null,
+    "parents": [
+      "adam",
+      "eve"
+    ],
+    "children": [],
+    "spouses": [],
+    "occupation": "Farmer",
+    "nationality": null,
+    "tribe": null,
+    "kingdom": null,
+    "roles": [],
+    "summary": "Cain is Adam and Eve’s son who murdered Abel and was sent away from the Lord’s presence.",
+    "events": [
+      "cain-abel"
+    ],
+    "references": [
+      "Genesis 4:1-16"
+    ],
+    "relatedPeople": [
+      "abel",
+      "adam",
+      "eve",
+      "god"
+    ],
+    "relatedPlaces": [
+      "eden"
+    ],
+    "books": [
+      "genesis"
+    ]
+  },
+  {
+    "id": "abel",
+    "name": "Abel",
+    "nameMeaning": "הֶבֶל (Hevel), breath/vapor",
+    "birth": null,
+    "death": null,
+    "parents": [
+      "adam",
+      "eve"
+    ],
+    "children": [],
+    "spouses": [],
+    "occupation": "Shepherd",
+    "nationality": null,
+    "tribe": null,
+    "kingdom": null,
+    "roles": [],
+    "summary": "Abel is Adam and Eve’s son whose offering was accepted and whose blood cried out after Cain killed him.",
+    "events": [
+      "cain-abel"
+    ],
+    "references": [
+      "Genesis 4:1-16"
+    ],
+    "relatedPeople": [
+      "cain",
+      "adam",
+      "eve",
+      "god"
+    ],
+    "relatedPlaces": [
+      "eden"
+    ],
+    "books": [
+      "genesis"
+    ]
+  },
+  {
+    "id": "seth",
+    "name": "Seth",
+    "nameMeaning": "שֵׁת (Shet), appointed/placed",
+    "birth": null,
+    "death": null,
+    "parents": [
+      "adam",
+      "eve"
+    ],
+    "children": [
+      "enoch"
+    ],
+    "spouses": [],
+    "occupation": null,
+    "nationality": null,
+    "tribe": null,
+    "kingdom": null,
+    "roles": [],
+    "summary": "Seth is the son given to Adam and Eve after Abel’s death and part of the line leading to Noah.",
+    "events": [
+      "godly-line-of-seth"
+    ],
+    "references": [
+      "Genesis 4:25-5:32"
+    ],
+    "relatedPeople": [
+      "enoch",
+      "methuselah",
+      "noah",
+      "adam",
+      "eve",
+      "god"
+    ],
+    "relatedPlaces": [
+      "eden"
+    ],
+    "books": [
+      "genesis"
+    ]
+  },
+  {
+    "id": "enoch",
+    "name": "Enoch",
+    "nameMeaning": "חֲנוֹךְ (Chanokh), dedicated",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [
+      "methuselah"
+    ],
+    "spouses": [],
+    "occupation": null,
+    "nationality": null,
+    "tribe": null,
+    "kingdom": null,
+    "roles": [],
+    "summary": "Enoch walked with God and was taken by God according to Genesis 5.",
+    "events": [
+      "godly-line-of-seth"
+    ],
+    "references": [
+      "Genesis 4:25-5:32"
+    ],
+    "relatedPeople": [
+      "seth",
+      "methuselah",
+      "noah",
+      "adam",
+      "eve",
+      "god"
+    ],
+    "relatedPlaces": [
+      "eden"
+    ],
+    "books": [
+      "genesis"
+    ]
+  },
+  {
+    "id": "methuselah",
+    "name": "Methuselah",
+    "nameMeaning": "מְתוּשֶׁלַח (Metushelach), meaning uncertain",
+    "birth": null,
+    "death": "969 years old (Genesis 5:27)",
+    "parents": [
+      "enoch"
+    ],
+    "children": [],
+    "spouses": [],
+    "occupation": null,
+    "nationality": null,
+    "tribe": null,
+    "kingdom": null,
+    "roles": [],
+    "summary": "Methuselah is remembered in Genesis 5 as the longest-lived man in the genealogy from Adam to Noah.",
+    "events": [
+      "godly-line-of-seth"
+    ],
+    "references": [
+      "Genesis 4:25-5:32"
+    ],
+    "relatedPeople": [
+      "seth",
+      "enoch",
+      "noah",
+      "adam",
+      "eve",
+      "god"
+    ],
+    "relatedPlaces": [
+      "eden"
+    ],
+    "books": [
+      "genesis"
+    ]
+  },
+  {
+    "id": "noah",
+    "name": "Noah",
+    "nameMeaning": "נֹחַ (Noach), rest/comfort",
+    "birth": null,
+    "death": "950 years old (Genesis 9:29)",
+    "parents": [],
+    "children": [
+      "shem",
+      "ham",
+      "japheth"
+    ],
+    "spouses": [],
+    "occupation": "Builder of the ark",
+    "nationality": null,
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "patriarch"
+    ],
+    "summary": "Noah obeyed God, built the ark, and became the covenant head of humanity after the flood.",
+    "events": [
+      "godly-line-of-seth",
+      "flood",
+      "noahic-covenant"
+    ],
+    "references": [
+      "Genesis 4:25-5:32",
+      "Genesis 6-8",
+      "Genesis 9:1-17"
+    ],
+    "relatedPeople": [
+      "seth",
+      "enoch",
+      "methuselah",
+      "adam",
+      "eve",
+      "god",
+      "shem",
+      "ham"
+    ],
+    "relatedPlaces": [
+      "eden",
+      "mount-ararat"
+    ],
+    "books": [
+      "genesis"
+    ]
+  },
+  {
+    "id": "shem",
+    "name": "Shem",
+    "nameMeaning": "שֵׁם (Shem), name",
+    "birth": null,
+    "death": null,
+    "parents": [
+      "noah"
+    ],
+    "children": [],
+    "spouses": [],
+    "occupation": null,
+    "nationality": null,
+    "tribe": null,
+    "kingdom": null,
+    "roles": [],
+    "summary": "Shem is one of Noah’s sons and ancestor of the line that leads toward Abraham.",
+    "events": [
+      "flood",
+      "noahic-covenant",
+      "tower-of-babel"
+    ],
+    "references": [
+      "Genesis 6-8",
+      "Genesis 9:1-17",
+      "Genesis 11:1-9"
+    ],
+    "relatedPeople": [
+      "noah",
+      "god",
+      "ham",
+      "japheth"
+    ],
+    "relatedPlaces": [
+      "mount-ararat",
+      "babel"
+    ],
+    "books": [
+      "genesis"
+    ]
+  },
+  {
+    "id": "ham",
+    "name": "Ham",
+    "nameMeaning": "חָם (Cham), meaning uncertain, possibly hot",
+    "birth": null,
+    "death": null,
+    "parents": [
+      "noah"
+    ],
+    "children": [],
+    "spouses": [],
+    "occupation": null,
+    "nationality": null,
+    "tribe": null,
+    "kingdom": null,
+    "roles": [],
+    "summary": "Ham is one of Noah’s sons and is named among those preserved through the flood.",
+    "events": [
+      "flood",
+      "noahic-covenant",
+      "tower-of-babel"
+    ],
+    "references": [
+      "Genesis 6-8",
+      "Genesis 9:1-17",
+      "Genesis 11:1-9"
+    ],
+    "relatedPeople": [
+      "noah",
+      "god",
+      "shem",
+      "japheth"
+    ],
+    "relatedPlaces": [
+      "mount-ararat",
+      "babel"
+    ],
+    "books": [
+      "genesis"
+    ]
+  },
+  {
+    "id": "japheth",
+    "name": "Japheth",
+    "nameMeaning": "יֶפֶת (Yefet), may he enlarge",
+    "birth": null,
+    "death": null,
+    "parents": [
+      "noah"
+    ],
+    "children": [],
+    "spouses": [],
+    "occupation": null,
+    "nationality": null,
+    "tribe": null,
+    "kingdom": null,
+    "roles": [],
+    "summary": "Japheth is one of Noah’s sons and is named among the families preserved through the flood.",
+    "events": [
+      "flood",
+      "noahic-covenant",
+      "tower-of-babel"
+    ],
+    "references": [
+      "Genesis 6-8",
+      "Genesis 9:1-17",
+      "Genesis 11:1-9"
+    ],
+    "relatedPeople": [
+      "noah",
+      "god",
+      "shem",
+      "ham"
+    ],
+    "relatedPlaces": [
+      "mount-ararat",
+      "babel"
+    ],
+    "books": [
+      "genesis"
+    ]
+  },
+  {
+    "id": "abraham",
+    "name": "Abraham",
+    "nameMeaning": "אַבְרָהָם (Avraham), father of a multitude",
+    "birth": "approx. 2166 BC",
+    "death": "approx. 1991 BC",
+    "parents": [],
+    "children": [
+      "ishmael",
+      "isaac"
+    ],
+    "spouses": [
+      "sarah",
+      "hagar"
+    ],
+    "occupation": "Nomadic herdsman",
+    "nationality": "Hebrew",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "patriarch"
+    ],
+    "summary": "Abraham receives God’s covenant promises of land, offspring, and blessing to the nations.",
+    "events": [
+      "call-of-abraham",
+      "abram-in-egypt",
+      "abram-lot-separate",
+      "abrahamic-covenant",
+      "hagar-and-ishmael",
+      "sodom-and-gomorrah",
+      "birth-of-isaac",
+      "sacrifice-of-isaac",
+      "isaac-marries-rebekah",
+      "jacob-and-esau-born"
+    ],
+    "references": [
+      "Genesis 12:1-9",
+      "Genesis 12:10-20",
+      "Genesis 13",
+      "Genesis 15; 17",
+      "Genesis 16; 21:8-21",
+      "Genesis 18-19",
+      "Genesis 21:1-7",
+      "Genesis 22:1-19",
+      "Genesis 24",
+      "Genesis 25:19-34"
+    ],
+    "relatedPeople": [
+      "god",
+      "sarah",
+      "lot",
+      "ishmael",
+      "isaac",
+      "hagar",
+      "rebekah",
+      "jacob"
+    ],
+    "relatedPlaces": [
+      "ur",
+      "haran",
+      "canaan",
+      "shechem",
+      "bethel",
+      "egypt",
+      "hebron",
+      "sodom",
+      "beersheba"
+    ],
+    "books": [
+      "genesis"
+    ]
+  },
+  {
+    "id": "sarah",
+    "name": "Sarah",
+    "nameMeaning": "שָׂרָה (Sarah), princess",
+    "birth": "approx. 2156 BC",
+    "death": "approx. 2029 BC",
+    "parents": [],
+    "children": [
+      "isaac"
+    ],
+    "spouses": [
+      "abraham"
+    ],
+    "occupation": null,
+    "nationality": "Hebrew",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "matriarch"
+    ],
+    "summary": "Sarah is Abraham’s wife and Isaac’s mother, through whom God preserved the promised line.",
+    "events": [
+      "call-of-abraham",
+      "abram-in-egypt",
+      "abram-lot-separate",
+      "abrahamic-covenant",
+      "hagar-and-ishmael",
+      "sodom-and-gomorrah",
+      "birth-of-isaac",
+      "sacrifice-of-isaac"
+    ],
+    "references": [
+      "Genesis 12:1-9",
+      "Genesis 12:10-20",
+      "Genesis 13",
+      "Genesis 15; 17",
+      "Genesis 16; 21:8-21",
+      "Genesis 18-19",
+      "Genesis 21:1-7",
+      "Genesis 22:1-19"
+    ],
+    "relatedPeople": [
+      "abraham",
+      "god",
+      "lot",
+      "ishmael",
+      "isaac",
+      "hagar"
+    ],
+    "relatedPlaces": [
+      "ur",
+      "haran",
+      "canaan",
+      "shechem",
+      "bethel",
+      "egypt",
+      "hebron",
+      "sodom",
+      "beersheba"
+    ],
+    "books": [
+      "genesis"
+    ]
+  },
+  {
+    "id": "hagar",
+    "name": "Hagar",
+    "nameMeaning": "הָגָר (Hagar), meaning uncertain",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [
+      "ishmael"
+    ],
+    "spouses": [
+      "abraham"
+    ],
+    "occupation": "Servant of Sarah",
+    "nationality": "Egyptian",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [],
+    "summary": "Hagar is Sarah’s Egyptian servant and Ishmael’s mother, seen by God in the wilderness.",
+    "events": [
+      "hagar-and-ishmael",
+      "birth-of-isaac"
+    ],
+    "references": [
+      "Genesis 16; 21:8-21",
+      "Genesis 21:1-7"
+    ],
+    "relatedPeople": [
+      "ishmael",
+      "abraham",
+      "sarah",
+      "god",
+      "isaac"
+    ],
+    "relatedPlaces": [
+      "beersheba",
+      "canaan"
+    ],
+    "books": [
+      "genesis"
+    ]
+  },
+  {
+    "id": "ishmael",
+    "name": "Ishmael",
+    "nameMeaning": "יִשְׁמָעֵאל (Yishma el), God hears",
+    "birth": "approx. 2080 BC",
+    "death": null,
+    "parents": [
+      "abraham",
+      "hagar"
+    ],
+    "children": [],
+    "spouses": [],
+    "occupation": null,
+    "nationality": "Hebrew/Egyptian",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [],
+    "summary": "Ishmael is Abraham and Hagar’s son, preserved by God and promised a great nation.",
+    "events": [
+      "abrahamic-covenant",
+      "hagar-and-ishmael",
+      "birth-of-isaac"
+    ],
+    "references": [
+      "Genesis 15; 17",
+      "Genesis 16; 21:8-21",
+      "Genesis 21:1-7"
+    ],
+    "relatedPeople": [
+      "abraham",
+      "god",
+      "sarah",
+      "isaac",
+      "hagar"
+    ],
+    "relatedPlaces": [
+      "hebron",
+      "canaan",
+      "beersheba"
+    ],
+    "books": [
+      "genesis"
+    ]
+  },
+  {
+    "id": "lot",
+    "name": "Lot",
+    "nameMeaning": "לוֹט (Lot), meaning uncertain",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Herdsman",
+    "nationality": null,
+    "tribe": null,
+    "kingdom": null,
+    "roles": [],
+    "summary": "Lot is Abraham’s nephew who settled near Sodom and was rescued before its destruction.",
+    "events": [
+      "call-of-abraham",
+      "abram-lot-separate",
+      "sodom-and-gomorrah"
+    ],
+    "references": [
+      "Genesis 12:1-9",
+      "Genesis 13",
+      "Genesis 18-19"
+    ],
+    "relatedPeople": [
+      "abraham",
+      "god",
+      "sarah"
+    ],
+    "relatedPlaces": [
+      "ur",
+      "haran",
+      "canaan",
+      "shechem",
+      "bethel",
+      "hebron",
+      "sodom"
+    ],
+    "books": [
+      "genesis"
+    ]
+  },
+  {
+    "id": "melchizedek",
+    "name": "Melchizedek",
+    "nameMeaning": "מַלְכִּי־צֶדֶק (Malki-tsedeq), king of righteousness",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "King of Salem",
+    "nationality": null,
+    "tribe": null,
+    "kingdom": "Salem",
+    "roles": [
+      "priest"
+    ],
+    "summary": "Melchizedek is king of Salem and priest of God Most High who blessed Abram.",
+    "events": [
+      "abrahamic-covenant"
+    ],
+    "references": [
+      "Genesis 14:18-20",
+      "Psalm 110:4",
+      "Hebrews 7"
+    ],
+    "relatedPeople": [
+      "abraham"
+    ],
+    "relatedPlaces": [
+      "canaan"
+    ],
+    "books": [
+      "genesis"
+    ]
+  },
+  {
+    "id": "isaac",
+    "name": "Isaac",
+    "nameMeaning": "יִצְחָק (Yitschaq), he laughs",
+    "birth": "approx. 2066 BC",
+    "death": "approx. 1886 BC",
+    "parents": [
+      "abraham",
+      "sarah"
+    ],
+    "children": [
+      "jacob",
+      "esau"
+    ],
+    "spouses": [
+      "rebekah"
+    ],
+    "occupation": "Herdsman",
+    "nationality": "Hebrew",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "patriarch"
+    ],
+    "summary": "Isaac is the promised son of Abraham and Sarah through whom the covenant line continues.",
+    "events": [
+      "abrahamic-covenant",
+      "birth-of-isaac",
+      "sacrifice-of-isaac",
+      "isaac-marries-rebekah",
+      "jacob-and-esau-born",
+      "jacob-steals-blessing",
+      "jacobs-ladder"
+    ],
+    "references": [
+      "Genesis 15; 17",
+      "Genesis 21:1-7",
+      "Genesis 22:1-19",
+      "Genesis 24",
+      "Genesis 25:19-34",
+      "Genesis 27",
+      "Genesis 28:10-22"
+    ],
+    "relatedPeople": [
+      "abraham",
+      "god",
+      "sarah",
+      "ishmael",
+      "hagar",
+      "rebekah",
+      "jacob",
+      "esau"
+    ],
+    "relatedPlaces": [
+      "hebron",
+      "canaan",
+      "beersheba",
+      "haran",
+      "bethel"
+    ],
+    "books": [
+      "genesis"
+    ]
+  },
+  {
+    "id": "rebekah",
+    "name": "Rebekah",
+    "nameMeaning": "רִבְקָה (Rivqah), meaning uncertain",
+    "birth": "approx. early 2nd millennium BC",
+    "death": null,
+    "parents": [],
+    "children": [
+      "jacob",
+      "esau"
+    ],
+    "spouses": [
+      "isaac"
+    ],
+    "occupation": null,
+    "nationality": "Aramean/Hebrew family",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "matriarch"
+    ],
+    "summary": "Rebekah becomes Isaac’s wife and mother of Jacob and Esau.",
+    "events": [
+      "isaac-marries-rebekah",
+      "jacob-and-esau-born",
+      "jacob-steals-blessing",
+      "jacobs-ladder"
+    ],
+    "references": [
+      "Genesis 24",
+      "Genesis 25:19-34",
+      "Genesis 27",
+      "Genesis 28:10-22"
+    ],
+    "relatedPeople": [
+      "isaac",
+      "abraham",
+      "god",
+      "jacob",
+      "esau"
+    ],
+    "relatedPlaces": [
+      "beersheba",
+      "haran",
+      "canaan",
+      "bethel"
+    ],
+    "books": [
+      "genesis"
+    ]
+  },
+  {
+    "id": "jacob",
+    "name": "Jacob",
+    "nameMeaning": "יַעֲקֹב (Ya aqov), heel-holder/supplanter; Israel means God strives",
+    "birth": "approx. 2006 BC",
+    "death": "approx. 1859 BC",
+    "parents": [
+      "isaac",
+      "rebekah"
+    ],
+    "children": [
+      "joseph",
+      "judah",
+      "benjamin"
+    ],
+    "spouses": [
+      "leah",
+      "rachel"
+    ],
+    "occupation": "Herdsman",
+    "nationality": "Hebrew",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "patriarch"
+    ],
+    "summary": "Jacob, later named Israel, fathers the family that becomes the twelve tribes.",
+    "events": [
+      "jacob-and-esau-born",
+      "jacob-steals-blessing",
+      "jacobs-ladder",
+      "jacob-marries-leah-rachel",
+      "jacob-wrestles-god",
+      "joseph-sold-into-slavery",
+      "joseph-rules-egypt",
+      "jacob-moves-to-egypt",
+      "deaths-of-jacob-and-joseph"
+    ],
+    "references": [
+      "Genesis 25:19-34",
+      "Genesis 27",
+      "Genesis 28:10-22",
+      "Genesis 29",
+      "Genesis 32:22-32",
+      "Genesis 37",
+      "Genesis 41:37-57",
+      "Genesis 46-47",
+      "Genesis 49-50"
+    ],
+    "relatedPeople": [
+      "isaac",
+      "rebekah",
+      "esau",
+      "god",
+      "abraham",
+      "leah",
+      "rachel",
+      "joseph"
+    ],
+    "relatedPlaces": [
+      "beersheba",
+      "canaan",
+      "bethel",
+      "haran",
+      "jordan-river",
+      "egypt",
+      "goshen"
+    ],
+    "books": [
+      "genesis"
+    ]
+  },
+  {
+    "id": "esau",
+    "name": "Esau",
+    "nameMeaning": "עֵשָׂו (Esav), meaning uncertain",
+    "birth": "approx. 2006 BC",
+    "death": null,
+    "parents": [
+      "isaac",
+      "rebekah"
+    ],
+    "children": [],
+    "spouses": [],
+    "occupation": "Hunter",
+    "nationality": "Edomite ancestor",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [],
+    "summary": "Esau is Jacob’s twin brother who sold his birthright and lost Isaac’s blessing.",
+    "events": [
+      "jacob-and-esau-born",
+      "jacob-steals-blessing",
+      "jacob-wrestles-god"
+    ],
+    "references": [
+      "Genesis 25:19-34",
+      "Genesis 27",
+      "Genesis 32:22-32"
+    ],
+    "relatedPeople": [
+      "isaac",
+      "rebekah",
+      "jacob",
+      "god",
+      "abraham",
+      "leah",
+      "rachel"
+    ],
+    "relatedPlaces": [
+      "beersheba",
+      "canaan",
+      "jordan-river"
+    ],
+    "books": [
+      "genesis"
+    ]
+  },
+  {
+    "id": "leah",
+    "name": "Leah",
+    "nameMeaning": "לֵאָה (Leah), meaning uncertain",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [
+      "judah"
+    ],
+    "spouses": [
+      "jacob"
+    ],
+    "occupation": null,
+    "nationality": null,
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "matriarch"
+    ],
+    "summary": "Leah is Jacob’s wife and mother of several sons, including Judah.",
+    "events": [
+      "jacob-marries-leah-rachel",
+      "jacob-wrestles-god"
+    ],
+    "references": [
+      "Genesis 29",
+      "Genesis 32:22-32"
+    ],
+    "relatedPeople": [
+      "jacob",
+      "rachel",
+      "god",
+      "esau"
+    ],
+    "relatedPlaces": [
+      "haran",
+      "canaan",
+      "jordan-river"
+    ],
+    "books": [
+      "genesis"
+    ]
+  },
+  {
+    "id": "rachel",
+    "name": "Rachel",
+    "nameMeaning": "רָחֵל (Rachel), ewe",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [
+      "joseph",
+      "benjamin"
+    ],
+    "spouses": [
+      "jacob"
+    ],
+    "occupation": null,
+    "nationality": null,
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "matriarch"
+    ],
+    "summary": "Rachel is Jacob’s beloved wife and mother of Joseph and Benjamin.",
+    "events": [
+      "jacob-marries-leah-rachel",
+      "jacob-wrestles-god"
+    ],
+    "references": [
+      "Genesis 29",
+      "Genesis 32:22-32"
+    ],
+    "relatedPeople": [
+      "jacob",
+      "leah",
+      "god",
+      "esau"
+    ],
+    "relatedPlaces": [
+      "haran",
+      "canaan",
+      "jordan-river"
+    ],
+    "books": [
+      "genesis"
+    ]
+  },
+  {
+    "id": "joseph",
+    "name": "Joseph",
+    "nameMeaning": "יוֹסֵף (Yosef), may he add",
+    "birth": "approx. 1915 BC",
+    "death": "approx. 1805 BC",
+    "parents": [
+      "jacob",
+      "rachel"
+    ],
+    "children": [],
+    "spouses": [],
+    "occupation": "Administrator in Egypt",
+    "nationality": "Hebrew",
+    "tribe": null,
+    "kingdom": "Egyptian administration",
+    "roles": [],
+    "summary": "Joseph is sold into Egypt and later preserves his family during famine.",
+    "events": [
+      "joseph-sold-into-slavery",
+      "joseph-interprets-dreams",
+      "joseph-rules-egypt",
+      "jacob-moves-to-egypt",
+      "deaths-of-jacob-and-joseph"
+    ],
+    "references": [
+      "Genesis 37",
+      "Genesis 40-41",
+      "Genesis 41:37-57",
+      "Genesis 46-47",
+      "Genesis 49-50"
+    ],
+    "relatedPeople": [
+      "jacob",
+      "judah",
+      "benjamin",
+      "god",
+      "potiphar"
+    ],
+    "relatedPlaces": [
+      "canaan",
+      "egypt",
+      "goshen"
+    ],
+    "books": [
+      "genesis"
+    ]
+  },
+  {
+    "id": "judah",
+    "name": "Judah",
+    "nameMeaning": "יְהוּדָה (Yehudah), praise",
+    "birth": "approx. early 2nd millennium BC",
+    "death": null,
+    "parents": [
+      "jacob",
+      "leah"
+    ],
+    "children": [],
+    "spouses": [],
+    "occupation": null,
+    "nationality": "Hebrew",
+    "tribe": "Judah",
+    "kingdom": null,
+    "roles": [],
+    "summary": "Judah is Jacob and Leah’s son whose tribe later carries royal significance.",
+    "events": [
+      "joseph-sold-into-slavery",
+      "jacob-moves-to-egypt",
+      "deaths-of-jacob-and-joseph"
+    ],
+    "references": [
+      "Genesis 37",
+      "Genesis 46-47",
+      "Genesis 49-50"
+    ],
+    "relatedPeople": [
+      "joseph",
+      "jacob",
+      "benjamin",
+      "god"
+    ],
+    "relatedPlaces": [
+      "canaan",
+      "egypt",
+      "goshen"
+    ],
+    "books": [
+      "genesis"
+    ]
+  },
+  {
+    "id": "benjamin",
+    "name": "Benjamin",
+    "nameMeaning": "בִּנְיָמִין (Binyamin), son of the right hand",
+    "birth": null,
+    "death": null,
+    "parents": [
+      "jacob",
+      "rachel"
+    ],
+    "children": [],
+    "spouses": [],
+    "occupation": null,
+    "nationality": "Hebrew",
+    "tribe": "Benjamin",
+    "kingdom": null,
+    "roles": [],
+    "summary": "Benjamin is Jacob and Rachel’s youngest son and part of the family that went to Egypt.",
+    "events": [
+      "joseph-sold-into-slavery",
+      "jacob-moves-to-egypt",
+      "deaths-of-jacob-and-joseph"
+    ],
+    "references": [
+      "Genesis 37",
+      "Genesis 46-47",
+      "Genesis 49-50"
+    ],
+    "relatedPeople": [
+      "joseph",
+      "jacob",
+      "judah",
+      "god"
+    ],
+    "relatedPlaces": [
+      "canaan",
+      "egypt",
+      "goshen"
+    ],
+    "books": [
+      "genesis"
+    ]
+  },
+  {
+    "id": "potiphar",
+    "name": "Potiphar",
+    "nameMeaning": "פּוֹטִיפַר (Potiphar), Egyptian name meaning uncertain",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Officer of Pharaoh",
+    "nationality": "Egyptian",
+    "tribe": null,
+    "kingdom": "Egypt",
+    "roles": [],
+    "summary": "Potiphar is the Egyptian official who bought Joseph as a slave.",
+    "events": [
+      "joseph-interprets-dreams"
+    ],
+    "references": [
+      "Genesis 40-41"
+    ],
+    "relatedPeople": [
+      "joseph",
+      "god"
+    ],
+    "relatedPlaces": [
+      "egypt"
+    ],
+    "books": [
+      "genesis"
+    ]
+  },
+  {
+    "id": "moses",
+    "name": "Moses",
+    "nameMeaning": "מֹשֶׁה (Moshe), drawn out",
+    "birth": "approx. 1526 BC",
+    "death": "approx. 1406 BC",
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Prophet and leader of Israel",
+    "nationality": "Israelite",
+    "tribe": "Levi",
+    "kingdom": null,
+    "roles": [
+      "prophet"
+    ],
+    "summary": "Moses leads Israel out of Egypt, receives the law, and shepherds the people through the wilderness.",
+    "events": [
+      "israel-enslaved-in-egypt",
+      "birth-of-moses",
+      "moses-flees-to-midian",
+      "burning-bush",
+      "ten-plagues",
+      "first-passover",
+      "red-sea-crossing",
+      "manna-and-quail",
+      "ten-commandments",
+      "golden-calf",
+      "tabernacle-built",
+      "twelve-spies",
+      "wilderness-wanderings",
+      "bronze-serpent",
+      "balaam",
+      "death-of-moses",
+      "joshua-commissioned"
+    ],
+    "references": [
+      "Exodus 1",
+      "Exodus 2:1-10",
+      "Exodus 2:11-25",
+      "Exodus 3-4",
+      "Exodus 7-11",
+      "Exodus 12",
+      "Exodus 14",
+      "Exodus 16",
+      "Exodus 19-20",
+      "Exodus 32",
+      "Exodus 35-40",
+      "Numbers 13-14",
+      "Numbers 15-36",
+      "Numbers 21:4-9",
+      "Numbers 22-24",
+      "Deuteronomy 34",
+      "Joshua 1"
+    ],
+    "relatedPeople": [
+      "god",
+      "aaron",
+      "miriam",
+      "jethro",
+      "joshua",
+      "caleb",
+      "balaam"
+    ],
+    "relatedPlaces": [
+      "egypt",
+      "goshen",
+      "midian",
+      "mount-sinai",
+      "kadesh-barnea",
+      "canaan",
+      "moab",
+      "jordan-river"
+    ],
+    "books": [
+      "exodus"
+    ]
+  },
+  {
+    "id": "aaron",
+    "name": "Aaron",
+    "nameMeaning": "אַהֲרֹן (Aharon), meaning uncertain",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "High priest",
+    "nationality": "Israelite",
+    "tribe": "Levi",
+    "kingdom": null,
+    "roles": [
+      "priest"
+    ],
+    "summary": "Aaron is Moses’ brother, Israel’s first high priest, and Moses’ spokesman before Pharaoh.",
+    "events": [
+      "israel-enslaved-in-egypt",
+      "burning-bush",
+      "ten-plagues",
+      "first-passover",
+      "red-sea-crossing",
+      "manna-and-quail",
+      "ten-commandments",
+      "golden-calf",
+      "tabernacle-built",
+      "twelve-spies",
+      "wilderness-wanderings",
+      "bronze-serpent",
+      "death-of-moses"
+    ],
+    "references": [
+      "Exodus 1",
+      "Exodus 3-4",
+      "Exodus 7-11",
+      "Exodus 12",
+      "Exodus 14",
+      "Exodus 16",
+      "Exodus 19-20",
+      "Exodus 32",
+      "Exodus 35-40",
+      "Numbers 13-14",
+      "Numbers 15-36",
+      "Numbers 21:4-9",
+      "Deuteronomy 34"
+    ],
+    "relatedPeople": [
+      "god",
+      "moses",
+      "miriam",
+      "jethro",
+      "joshua",
+      "caleb"
+    ],
+    "relatedPlaces": [
+      "egypt",
+      "goshen",
+      "mount-sinai",
+      "midian",
+      "kadesh-barnea",
+      "canaan",
+      "moab"
+    ],
+    "books": [
+      "exodus"
+    ]
+  },
+  {
+    "id": "miriam",
+    "name": "Miriam",
+    "nameMeaning": "מִרְיָם (Miryam), meaning uncertain",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Prophet",
+    "nationality": "Israelite",
+    "tribe": "Levi",
+    "kingdom": null,
+    "roles": [
+      "prophet"
+    ],
+    "summary": "Miriam is Moses and Aaron’s sister, a prophet who led worship after the sea crossing.",
+    "events": [
+      "israel-enslaved-in-egypt",
+      "birth-of-moses",
+      "ten-plagues",
+      "first-passover",
+      "red-sea-crossing",
+      "manna-and-quail",
+      "ten-commandments",
+      "golden-calf",
+      "tabernacle-built",
+      "twelve-spies",
+      "wilderness-wanderings",
+      "death-of-moses"
+    ],
+    "references": [
+      "Exodus 1",
+      "Exodus 2:1-10",
+      "Exodus 7-11",
+      "Exodus 12",
+      "Exodus 14",
+      "Exodus 16",
+      "Exodus 19-20",
+      "Exodus 32",
+      "Exodus 35-40",
+      "Numbers 13-14",
+      "Numbers 15-36",
+      "Deuteronomy 34"
+    ],
+    "relatedPeople": [
+      "god",
+      "moses",
+      "aaron",
+      "joshua",
+      "caleb"
+    ],
+    "relatedPlaces": [
+      "egypt",
+      "goshen",
+      "mount-sinai",
+      "kadesh-barnea",
+      "canaan",
+      "moab"
+    ],
+    "books": [
+      "exodus"
+    ]
+  },
+  {
+    "id": "jethro",
+    "name": "Jethro",
+    "nameMeaning": "יִתְרוֹ (Yitro), excellence/abundance",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Priest of Midian",
+    "nationality": "Midianite",
+    "tribe": null,
+    "kingdom": "Midian",
+    "roles": [
+      "priest"
+    ],
+    "summary": "Jethro is Moses’ father-in-law and priest of Midian who counseled Moses.",
+    "events": [
+      "moses-flees-to-midian",
+      "burning-bush"
+    ],
+    "references": [
+      "Exodus 2:11-25",
+      "Exodus 3-4"
+    ],
+    "relatedPeople": [
+      "moses",
+      "god",
+      "aaron"
+    ],
+    "relatedPlaces": [
+      "midian",
+      "egypt",
+      "mount-sinai"
+    ],
+    "books": [
+      "exodus"
+    ]
+  },
+  {
+    "id": "joshua",
+    "name": "Joshua",
+    "nameMeaning": "יְהוֹשֻׁעַ (Yehoshua), the Lord saves",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Leader of Israel",
+    "nationality": "Israelite",
+    "tribe": "Ephraim",
+    "kingdom": null,
+    "roles": [],
+    "summary": "Joshua succeeds Moses and leads Israel into Canaan.",
+    "events": [
+      "twelve-spies",
+      "wilderness-wanderings",
+      "death-of-moses",
+      "joshua-commissioned",
+      "crossing-the-jordan",
+      "fall-of-jericho",
+      "sun-stands-still",
+      "land-divided-among-tribes",
+      "joshuas-farewell",
+      "cycle-of-the-judges",
+      "deborah-and-barak"
+    ],
+    "references": [
+      "Numbers 13-14",
+      "Numbers 15-36",
+      "Deuteronomy 34",
+      "Joshua 1",
+      "Joshua 3-4",
+      "Joshua 6",
+      "Joshua 10:1-15",
+      "Joshua 13-21",
+      "Joshua 23-24",
+      "Judges 2:6-23",
+      "Judges 4-5"
+    ],
+    "relatedPeople": [
+      "moses",
+      "caleb",
+      "aaron",
+      "miriam",
+      "god",
+      "rahab",
+      "deborah",
+      "barak"
+    ],
+    "relatedPlaces": [
+      "kadesh-barnea",
+      "canaan",
+      "moab",
+      "mount-sinai",
+      "jordan-river",
+      "gilgal",
+      "jericho",
+      "shiloh",
+      "hebron",
+      "shechem"
+    ],
+    "books": []
+  },
+  {
+    "id": "caleb",
+    "name": "Caleb",
+    "nameMeaning": "כָּלֵב (Kalev), meaning uncertain",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": null,
+    "nationality": "Israelite",
+    "tribe": "Judah",
+    "kingdom": null,
+    "roles": [],
+    "summary": "Caleb is the faithful spy who trusted God and later received Hebron.",
+    "events": [
+      "twelve-spies",
+      "wilderness-wanderings",
+      "joshua-commissioned",
+      "crossing-the-jordan",
+      "fall-of-jericho",
+      "sun-stands-still",
+      "land-divided-among-tribes",
+      "joshuas-farewell"
+    ],
+    "references": [
+      "Numbers 13-14",
+      "Numbers 15-36",
+      "Joshua 1",
+      "Joshua 3-4",
+      "Joshua 6",
+      "Joshua 10:1-15",
+      "Joshua 13-21",
+      "Joshua 23-24"
+    ],
+    "relatedPeople": [
+      "moses",
+      "joshua",
+      "aaron",
+      "miriam",
+      "god",
+      "rahab"
+    ],
+    "relatedPlaces": [
+      "kadesh-barnea",
+      "canaan",
+      "moab",
+      "mount-sinai",
+      "jordan-river",
+      "gilgal",
+      "jericho",
+      "shiloh",
+      "hebron",
+      "shechem"
+    ],
+    "books": []
+  },
+  {
+    "id": "rahab",
+    "name": "Rahab",
+    "nameMeaning": "רָחָב (Rachav), broad/spacious",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": null,
+    "nationality": "Canaanite",
+    "tribe": null,
+    "kingdom": "Jericho",
+    "roles": [],
+    "summary": "Rahab protected Israel’s spies in Jericho and was spared when the city fell.",
+    "events": [
+      "fall-of-jericho"
+    ],
+    "references": [
+      "Joshua 6"
+    ],
+    "relatedPeople": [
+      "joshua",
+      "god",
+      "caleb"
+    ],
+    "relatedPlaces": [
+      "jericho",
+      "gilgal"
+    ],
+    "books": []
+  },
+  {
+    "id": "balaam",
+    "name": "Balaam",
+    "nameMeaning": "בִּלְעָם (Bil am), meaning uncertain",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Diviner/seer",
+    "nationality": null,
+    "tribe": null,
+    "kingdom": null,
+    "roles": [],
+    "summary": "Balaam was hired to curse Israel but spoke blessings under God’s constraint.",
+    "events": [
+      "balaam"
+    ],
+    "references": [
+      "Numbers 22-24"
+    ],
+    "relatedPeople": [
+      "god",
+      "moses"
+    ],
+    "relatedPlaces": [
+      "moab"
+    ],
+    "books": []
+  },
+  {
+    "id": "deborah",
+    "name": "Deborah",
+    "nameMeaning": "דְּבוֹרָה (Devorah), bee",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Prophet and judge",
+    "nationality": "Israelite",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "prophet",
+      "judge"
+    ],
+    "summary": "Deborah judged Israel and summoned Barak in the conflict with Sisera.",
+    "events": [
+      "deborah-and-barak",
+      "gideon"
+    ],
+    "references": [
+      "Judges 4-5",
+      "Judges 6-8"
+    ],
+    "relatedPeople": [
+      "barak",
+      "god",
+      "joshua",
+      "gideon"
+    ],
+    "relatedPlaces": [
+      "canaan"
+    ],
+    "books": []
+  },
+  {
+    "id": "barak",
+    "name": "Barak",
+    "nameMeaning": "בָּרָק (Baraq), lightning",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Military leader",
+    "nationality": "Israelite",
+    "tribe": "Naphtali",
+    "kingdom": null,
+    "roles": [],
+    "summary": "Barak led Israel’s forces at Deborah’s command against Sisera.",
+    "events": [
+      "deborah-and-barak"
+    ],
+    "references": [
+      "Judges 4-5"
+    ],
+    "relatedPeople": [
+      "deborah",
+      "god",
+      "joshua"
+    ],
+    "relatedPlaces": [
+      "canaan"
+    ],
+    "books": []
+  },
+  {
+    "id": "gideon",
+    "name": "Gideon",
+    "nameMeaning": "גִּדְעוֹן (Gid on), cutter/hewer",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Judge",
+    "nationality": "Israelite",
+    "tribe": "Manasseh",
+    "kingdom": null,
+    "roles": [
+      "judge"
+    ],
+    "summary": "Gideon was called by God to deliver Israel from Midian.",
+    "events": [
+      "gideon",
+      "jephthah"
+    ],
+    "references": [
+      "Judges 6-8",
+      "Judges 11"
+    ],
+    "relatedPeople": [
+      "god",
+      "deborah",
+      "jephthah"
+    ],
+    "relatedPlaces": [
+      "canaan",
+      "moab"
+    ],
+    "books": []
+  },
+  {
+    "id": "jephthah",
+    "name": "Jephthah",
+    "nameMeaning": "יִפְתָּח (Yiftach), he opens",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Judge",
+    "nationality": "Israelite",
+    "tribe": "Gilead",
+    "kingdom": null,
+    "roles": [
+      "judge"
+    ],
+    "summary": "Jephthah led Gilead against the Ammonites and is remembered for a tragic vow.",
+    "events": [
+      "jephthah",
+      "samson"
+    ],
+    "references": [
+      "Judges 11",
+      "Judges 13-16"
+    ],
+    "relatedPeople": [
+      "god",
+      "gideon",
+      "samson",
+      "delilah"
+    ],
+    "relatedPlaces": [
+      "moab",
+      "canaan",
+      "gaza"
+    ],
+    "books": []
+  },
+  {
+    "id": "samson",
+    "name": "Samson",
+    "nameMeaning": "שִׁמְשׁוֹן (Shimshon), sun-like",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Judge",
+    "nationality": "Israelite",
+    "tribe": "Dan",
+    "kingdom": null,
+    "roles": [
+      "judge"
+    ],
+    "summary": "Samson was a Nazirite judge whose strength was used against the Philistines.",
+    "events": [
+      "samson"
+    ],
+    "references": [
+      "Judges 13-16"
+    ],
+    "relatedPeople": [
+      "delilah",
+      "god",
+      "jephthah"
+    ],
+    "relatedPlaces": [
+      "gaza",
+      "canaan"
+    ],
+    "books": []
+  },
+  {
+    "id": "delilah",
+    "name": "Delilah",
+    "nameMeaning": "דְּלִילָה (Delilah), meaning disputed",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": null,
+    "nationality": null,
+    "tribe": null,
+    "kingdom": null,
+    "roles": [],
+    "summary": "Delilah betrayed Samson to the Philistines after discovering the secret of his strength.",
+    "events": [
+      "samson"
+    ],
+    "references": [
+      "Judges 13-16"
+    ],
+    "relatedPeople": [
+      "samson",
+      "god",
+      "jephthah"
+    ],
+    "relatedPlaces": [
+      "gaza",
+      "canaan"
+    ],
+    "books": []
+  },
+  {
+    "id": "ruth",
+    "name": "Ruth",
+    "nameMeaning": "רוּת (Rut), meaning uncertain, often associated with friend/companion",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [
+      "boaz"
+    ],
+    "occupation": null,
+    "nationality": "Moabite",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [],
+    "summary": "Ruth is a Moabite woman whose loyalty to Naomi led her to Bethlehem and Boaz.",
+    "events": [
+      "ruth-and-boaz",
+      "samuel-called"
+    ],
+    "references": [
+      "Ruth 1-4",
+      "1 Samuel 1-3"
+    ],
+    "relatedPeople": [
+      "naomi",
+      "boaz",
+      "god",
+      "samuel",
+      "hannah",
+      "eli"
+    ],
+    "relatedPlaces": [
+      "bethlehem",
+      "moab",
+      "shiloh"
+    ],
+    "books": []
+  },
+  {
+    "id": "naomi",
+    "name": "Naomi",
+    "nameMeaning": "נָעֳמִי (Naomi), pleasant",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": null,
+    "nationality": "Israelite",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [],
+    "summary": "Naomi is Ruth’s mother-in-law who returned from Moab to Bethlehem.",
+    "events": [
+      "ruth-and-boaz"
+    ],
+    "references": [
+      "Ruth 1-4"
+    ],
+    "relatedPeople": [
+      "ruth",
+      "boaz",
+      "god"
+    ],
+    "relatedPlaces": [
+      "bethlehem",
+      "moab"
+    ],
+    "books": []
+  },
+  {
+    "id": "boaz",
+    "name": "Boaz",
+    "nameMeaning": "בֹּעַז (Boaz), meaning uncertain",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [
+      "ruth"
+    ],
+    "occupation": "Landowner/redeemer",
+    "nationality": "Israelite",
+    "tribe": "Judah",
+    "kingdom": null,
+    "roles": [],
+    "summary": "Boaz redeemed Naomi’s family line and married Ruth.",
+    "events": [
+      "ruth-and-boaz",
+      "samuel-called"
+    ],
+    "references": [
+      "Ruth 1-4",
+      "1 Samuel 1-3"
+    ],
+    "relatedPeople": [
+      "ruth",
+      "naomi",
+      "god",
+      "samuel",
+      "hannah",
+      "eli"
+    ],
+    "relatedPlaces": [
+      "bethlehem",
+      "moab",
+      "shiloh"
+    ],
+    "books": []
+  },
+  {
+    "id": "eli",
+    "name": "Eli",
+    "nameMeaning": "עֵלִי (Eli), high/exalted",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Priest and judge",
+    "nationality": "Israelite",
+    "tribe": "Levi",
+    "kingdom": null,
+    "roles": [
+      "priest",
+      "judge"
+    ],
+    "summary": "Eli was priest and judge at Shiloh when Samuel was called.",
+    "events": [
+      "samuel-called",
+      "ark-captured-and-returned"
+    ],
+    "references": [
+      "1 Samuel 1-3",
+      "1 Samuel 4-6"
+    ],
+    "relatedPeople": [
+      "samuel",
+      "hannah",
+      "god",
+      "ruth",
+      "boaz"
+    ],
+    "relatedPlaces": [
+      "shiloh",
+      "gaza"
+    ],
+    "books": []
+  },
+  {
+    "id": "hannah",
+    "name": "Hannah",
+    "nameMeaning": "חַנָּה (Channah), favor/grace",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [
+      "samuel"
+    ],
+    "spouses": [],
+    "occupation": null,
+    "nationality": "Israelite",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [],
+    "summary": "Hannah prayed for a son and dedicated Samuel to the Lord.",
+    "events": [
+      "samuel-called",
+      "ark-captured-and-returned"
+    ],
+    "references": [
+      "1 Samuel 1-3",
+      "1 Samuel 4-6"
+    ],
+    "relatedPeople": [
+      "samuel",
+      "eli",
+      "god",
+      "ruth",
+      "boaz"
+    ],
+    "relatedPlaces": [
+      "shiloh",
+      "gaza"
+    ],
+    "books": []
+  },
+  {
+    "id": "samuel",
+    "name": "Samuel",
+    "nameMeaning": "שְׁמוּאֵל (Shemu el), heard by God/Name of God",
+    "birth": null,
+    "death": null,
+    "parents": [
+      "hannah"
+    ],
+    "children": [],
+    "spouses": [],
+    "occupation": "Prophet and judge",
+    "nationality": "Israelite",
+    "tribe": "Levi",
+    "kingdom": null,
+    "roles": [
+      "prophet",
+      "judge"
+    ],
+    "summary": "Samuel was called by God as a prophet and judged Israel at the transition toward monarchy.",
+    "events": [
+      "samuel-called",
+      "ark-captured-and-returned"
+    ],
+    "references": [
+      "1 Samuel 1-3",
+      "1 Samuel 4-6"
+    ],
+    "relatedPeople": [
+      "hannah",
+      "eli",
+      "god",
+      "ruth",
+      "boaz"
+    ],
+    "relatedPlaces": [
+      "shiloh",
+      "gaza"
+    ],
+    "books": []
+  }
 ]
