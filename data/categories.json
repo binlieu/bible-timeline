@@ -1,0 +1,192 @@
+{
+  "miracles": [
+    {
+      "eventId": "burning-bush",
+      "note": "The Lord appears to Moses in a bush that burns without being consumed."
+    },
+    {
+      "eventId": "ten-plagues",
+      "note": "Judgments on Egypt display divine power and distinguish Israel."
+    },
+    {
+      "eventId": "first-passover",
+      "note": "Judgment passes over marked Israelite homes while Egypt's firstborn are struck."
+    },
+    {
+      "eventId": "red-sea-crossing",
+      "note": "Waters part for Israel and return over Pharaoh's army."
+    },
+    {
+      "eventId": "manna-and-quail",
+      "note": "God provides wilderness food for Israel."
+    },
+    {
+      "eventId": "bronze-serpent",
+      "note": "Those who look at the lifted bronze serpent live."
+    },
+    {
+      "eventId": "crossing-the-jordan",
+      "note": "The Jordan stops while Israel crosses on dry ground."
+    },
+    {
+      "eventId": "fall-of-jericho",
+      "note": "Jericho falls after Israel follows the commanded march."
+    },
+    {
+      "eventId": "sun-stands-still",
+      "note": "The narrative reports extended daylight as the Lord fights for Israel."
+    },
+    {
+      "eventId": "elijah-on-mount-carmel",
+      "note": "The Lord answers Elijah by fire."
+    },
+    {
+      "eventId": "elijah-taken-to-heaven",
+      "note": "Elijah is taken up by a whirlwind."
+    },
+    {
+      "eventId": "elisha-ministry",
+      "note": "Elisha's ministry includes multiple signs and healings."
+    },
+    {
+      "eventId": "fiery-furnace",
+      "note": "God preserves Shadrach, Meshach, and Abednego in the furnace."
+    },
+    {
+      "eventId": "daniel-in-the-lions-den",
+      "note": "God preserves Daniel from the lions."
+    },
+    {
+      "eventId": "transfiguration",
+      "note": "Jesus is transfigured and the Father's voice identifies him."
+    },
+    {
+      "eventId": "wedding-at-cana",
+      "note": "Jesus turns water into wine."
+    },
+    {
+      "eventId": "jesus-calms-the-storm",
+      "note": "Jesus commands the wind and sea."
+    },
+    {
+      "eventId": "feeding-the-five-thousand",
+      "note": "Jesus feeds the crowd with five loaves and two fish."
+    },
+    {
+      "eventId": "jesus-walks-on-water",
+      "note": "Jesus walks on the Sea of Galilee."
+    },
+    {
+      "eventId": "lazarus-raised",
+      "note": "Jesus raises Lazarus from the dead."
+    },
+    {
+      "eventId": "resurrection",
+      "note": "Jesus is raised from the dead."
+    },
+    {
+      "eventId": "ascension",
+      "note": "Jesus is taken up from the Mount of Olives."
+    },
+    {
+      "eventId": "pentecost",
+      "note": "The Holy Spirit is poured out with visible and audible signs."
+    },
+    {
+      "eventId": "sauls-conversion",
+      "note": "Saul encounters the risen Jesus on the Damascus road."
+    }
+  ],
+  "parables": [
+    {
+      "name": "The Sower",
+      "reference": "Matthew 13:1-23",
+      "eventId": "parables-of-the-kingdom"
+    },
+    {
+      "name": "The Weeds",
+      "reference": "Matthew 13:24-30, 36-43",
+      "eventId": "parables-of-the-kingdom"
+    },
+    {
+      "name": "The Mustard Seed",
+      "reference": "Matthew 13:31-32",
+      "eventId": "parables-of-the-kingdom"
+    },
+    {
+      "name": "The Leaven",
+      "reference": "Matthew 13:33",
+      "eventId": "parables-of-the-kingdom"
+    },
+    {
+      "name": "The Hidden Treasure",
+      "reference": "Matthew 13:44",
+      "eventId": "parables-of-the-kingdom"
+    },
+    {
+      "name": "The Pearl of Great Value",
+      "reference": "Matthew 13:45-46",
+      "eventId": "parables-of-the-kingdom"
+    },
+    {
+      "name": "The Net",
+      "reference": "Matthew 13:47-50",
+      "eventId": "parables-of-the-kingdom"
+    },
+    {
+      "name": "The Good Samaritan",
+      "reference": "Luke 10:25-37",
+      "eventId": null
+    },
+    {
+      "name": "The Lost Sheep",
+      "reference": "Luke 15:1-7",
+      "eventId": null
+    },
+    {
+      "name": "The Prodigal Son",
+      "reference": "Luke 15:11-32",
+      "eventId": null
+    },
+    {
+      "name": "The Rich Man and Lazarus",
+      "reference": "Luke 16:19-31",
+      "eventId": null
+    },
+    {
+      "name": "The Pharisee and the Tax Collector",
+      "reference": "Luke 18:9-14",
+      "eventId": null
+    },
+    {
+      "name": "Workers in the Vineyard",
+      "reference": "Matthew 20:1-16",
+      "eventId": null
+    },
+    {
+      "name": "The Wedding Banquet",
+      "reference": "Matthew 22:1-14",
+      "eventId": null
+    },
+    {
+      "name": "The Unmerciful Servant",
+      "reference": "Matthew 18:21-35",
+      "eventId": null
+    },
+    {
+      "name": "The Ten Virgins",
+      "reference": "Matthew 25:1-13",
+      "eventId": "olivet-discourse"
+    },
+    {
+      "name": "The Talents",
+      "reference": "Matthew 25:14-30",
+      "eventId": "olivet-discourse"
+    },
+    {
+      "name": "The Sheep and the Goats",
+      "reference": "Matthew 25:31-46",
+      "eventId": "olivet-discourse"
+    }
+  ]
+}
