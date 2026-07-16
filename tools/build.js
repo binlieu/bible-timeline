@@ -14,6 +14,10 @@ const data = {
   places: readJson("places.json"),
   journeys: readJson("journeys.json"),
   books: readJson("books.json"),
+  nations: readJson("nations.json"),
+  prophecies: readJson("prophecies.json"),
+  themes: readJson("themes.json"),
+  connections: readJson("connections.json"),
   timeline: readJson("timeline.json"),
   categories: readJson("categories.json"),
   basemap: readJson("geo/basemap.json")
@@ -23,7 +27,11 @@ const maps = {
   events: new Map(data.events.map((item) => [item.id, item])),
   people: new Map(data.people.map((item) => [item.id, item])),
   places: new Map(data.places.map((item) => [item.id, item])),
-  books: new Map(data.books.map((item) => [item.id, item]))
+  journeys: new Map(data.journeys.map((item) => [item.id, item])),
+  books: new Map(data.books.map((item) => [item.id, item])),
+  nations: new Map(data.nations.map((item) => [item.id, item])),
+  prophecies: new Map(data.prophecies.map((item) => [item.id, item])),
+  themes: new Map(data.themes.map((item) => [item.id, item]))
 };
 
 let warnings = 0;
@@ -54,7 +62,11 @@ function slugPath(type, id) {
   if (type === "event") return "events/" + id + ".html";
   if (type === "person") return "people/" + id + ".html";
   if (type === "place") return "locations/" + id + ".html";
+  if (type === "journey") return "journeys/" + id + ".html";
   if (type === "book") return "books/" + id + ".html";
+  if (type === "nation") return "nations/" + id + ".html";
+  if (type === "prophecy") return "prophecies/" + id + ".html";
+  if (type === "theme") return "themes/" + id + ".html";
   return "#";
 }
 
@@ -62,7 +74,16 @@ function relativeUrl(rootPrefix, type, id) {
   return rootPrefix + slugPath(type, id);
 }
 
-const typeToCollection = { event: "events", person: "people", place: "places", book: "books" };
+const typeToCollection = {
+  event: "events",
+  person: "people",
+  place: "places",
+  journey: "journeys",
+  book: "books",
+  nation: "nations",
+  prophecy: "prophecies",
+  theme: "themes"
+};
 
 const idAliases = {
   event: {
@@ -97,6 +118,28 @@ function linkToWithLabel(rootPrefix, type, id, label) {
   return '<a href="' + escapeHtml(relativeUrl(rootPrefix, type, canonicalId(type, id))) + '">' + escapeHtml(label || item.name) + "</a>";
 }
 
+function graphKey(type, id) {
+  return type + ":" + canonicalId(type, id);
+}
+
+function keyType(key) {
+  return String(key).split(":")[0];
+}
+
+function keyId(key) {
+  return String(key).slice(String(key).indexOf(":") + 1);
+}
+
+function graphNode(type, id) {
+  return graphModel.nodeMap.get(graphKey(type, id));
+}
+
+function linkToKey(rootPrefix, key) {
+  const node = graphModel.nodeMap.get(key);
+  if (!node) return escapeHtml(key);
+  return '<a href="' + escapeHtml(rootPrefix + node.url) + '">' + escapeHtml(node.name) + "</a>";
+}
+
 const journeysByEvent = new Map();
 data.journeys.forEach((journey) => {
   (journey.relatedEvents || []).forEach((eventId) => {
@@ -117,6 +160,19 @@ function linkToJourney(rootPrefix, journey) {
 function listLinks(rootPrefix, type, ids) {
   if (!ids || !ids.length) return "<p>None listed.</p>";
   return '<ul class="link-list">' + ids.map((id) => "<li>" + linkTo(rootPrefix, type, id) + "</li>").join("") + "</ul>";
+}
+
+function listTypedLinks(rootPrefix, items, type, idField, noteField, refField) {
+  if (!items || !items.length) return "<p>None listed.</p>";
+  return '<ul class="link-list">' + items.map((item) => {
+    const id = typeof item === "string" ? item : item[idField];
+    const note = typeof item === "string" ? "" : item[noteField];
+    const ref = typeof item === "string" ? "" : item[refField];
+    return "<li>" + linkTo(rootPrefix, type, id) +
+      (note ? ' <small class="muted">' + escapeHtml(note) + '</small>' : "") +
+      (ref ? ' <small class="muted">' + escapeHtml(ref) + '</small>' : "") +
+      "</li>";
+  }).join("") + "</ul>";
 }
 
 function textList(items) {
@@ -185,6 +241,85 @@ function metaRows(rows) {
   )).join("") + "</dl>";
 }
 
+const relationLabels = {
+  "participated-in": ["Participated in events", "People involved"],
+  "occurred-at": ["Occurred at", "Events here"],
+  "associated-with": ["Associated with places", "People associated"],
+  "parent-of": ["Children", "Parents"],
+  "spouse-of": ["Spouses", "Spouses"],
+  records: ["Records events", "Recorded in books"],
+  "appears-in": ["Appears in books", "People appearing"],
+  maps: ["Maps events", "Mapped in journeys"],
+  features: ["Features people", "Featured in journeys"],
+  "ruled-by": ["Ruled by", "King of"],
+  "warned-by": ["Warned by prophets", "Prophet to nations"],
+  "territory-included": ["Territory included", "Nations whose territory included this place"],
+  "involved-in": ["Involved in events", "Nations involved"],
+  "related-to": ["Related", "Related"],
+  "spoken-by": ["Spoken by", "Prophecies spoken"],
+  "given-during": ["Given during event", "Prophecy given during this event"],
+  "recorded-in": ["Recorded in book", "Prophecies recorded"],
+  concerns: ["Concerns", "Prophecies concerning this"],
+  "fulfilled-in": ["Fulfilled in events", "Prophecies fulfilled here"],
+  "expressed-in": ["Expressed in events", "Themes"],
+  "embodied-by": ["Embodied by people", "Themes"],
+  develops: ["Develops themes", "Prophecies that develop this theme"],
+  "prophet-to-king": ["Prophet to king", "Confronted by prophet / Prophet to king"],
+  "prophet-to-nation": ["Prophet to nation", "Warned by prophet"],
+  "nation-of-person": ["Nation of person", "People of this nation"]
+};
+
+function relationLabel(rel, forward) {
+  const labels = relationLabels[rel];
+  if (!labels) return rel.replace(/-/g, " ");
+  return forward ? labels[0] : labels[1];
+}
+
+function addEdgeToBuckets(buckets, label, edge, otherKey) {
+  if (!buckets.has(label)) buckets.set(label, []);
+  buckets.get(label).push({ edge, otherKey });
+}
+
+function renderConnectionsPanel(rootPrefix, type, id) {
+  const key = graphKey(type, id);
+  const node = graphModel.nodeMap.get(key);
+  const edges = graphModel.edgesByKey.get(key) || [];
+  const explore = node
+    ? '<a class="panel-action" href="' + escapeHtml(rootPrefix + "graph.html#" + key) + '">Explore in graph &rarr;</a>'
+    : "";
+  if (!edges.length) {
+    return '<section class="content-panel connections-panel"><div class="panel-heading"><h2>Connections</h2>' + explore + '</div><p>None listed.</p></section>\n';
+  }
+
+  const buckets = new Map();
+  edges.forEach((edge) => {
+    const forward = edge.s === key;
+    const otherKey = forward ? edge.t : edge.s;
+    addEdgeToBuckets(buckets, relationLabel(edge.r, forward), edge, otherKey);
+  });
+
+  const sections = Array.from(buckets.entries()).sort((a, b) => a[0].localeCompare(b[0])).map(([label, items]) => {
+    const sorted = items.slice().sort((a, b) => {
+      const aNode = graphModel.nodeMap.get(a.otherKey);
+      const bNode = graphModel.nodeMap.get(b.otherKey);
+      const aName = aNode ? aNode.name : a.otherKey;
+      const bName = bNode ? bNode.name : b.otherKey;
+      return aName.localeCompare(bName);
+    });
+    const shown = sorted.slice(0, 12);
+    const more = sorted.length - shown.length;
+    return '<div class="connection-group"><h3>' + escapeHtml(label) + '</h3><ul class="connection-list">' +
+      shown.map(({ edge, otherKey }) => '<li>' + linkToKey(rootPrefix, otherKey) +
+        (edge.note ? ' <small>' + escapeHtml(edge.note) + '</small>' : "") +
+        (edge.ref ? ' <small>' + escapeHtml(edge.ref) + '</small>' : "") +
+        '</li>').join("") +
+      (more > 0 ? '<li class="muted">+' + escapeHtml(more) + ' more</li>' : "") +
+      '</ul></div>';
+  }).join("");
+
+  return '<section class="content-panel connections-panel"><div class="panel-heading"><h2>Connections</h2>' + explore + '</div>' + sections + '</section>\n';
+}
+
 function pageLayout(options) {
   const rootPrefix = options.rootPrefix || "";
   let scripts = options.timelineScript
@@ -192,6 +327,9 @@ function pageLayout(options) {
     : '<script src="' + rootPrefix + 'js/data.js"></script>\n<script src="' + rootPrefix + 'js/search.js"></script>';
   if (options.mapScript) {
     scripts += '\n<script src="' + rootPrefix + 'js/map-data.js"></script>\n<script src="' + rootPrefix + 'js/map.js"></script>';
+  }
+  if (options.graphScript) {
+    scripts += '\n<script src="' + rootPrefix + 'js/graph-data.js"></script>\n<script src="' + rootPrefix + 'js/graph.js"></script>';
   }
 
   return '<!doctype html>\n' +
@@ -224,6 +362,10 @@ function renderHeader(rootPrefix) {
     '        <li><a href="' + rootPrefix + 'people.html">People</a></li>\n' +
     '        <li><a href="' + rootPrefix + 'locations.html">Places</a></li>\n' +
     '        <li><a href="' + rootPrefix + 'books.html">Books</a></li>\n' +
+    '        <li><a href="' + rootPrefix + 'prophecies.html">Prophecies</a></li>\n' +
+    '        <li><a href="' + rootPrefix + 'nations.html">Nations</a></li>\n' +
+    '        <li><a href="' + rootPrefix + 'themes.html">Themes</a></li>\n' +
+    '        <li><a href="' + rootPrefix + 'graph.html">Graph</a></li>\n' +
     '      </ul>\n' +
     '    </nav>\n' +
     '    <div class="header-actions">\n' +
@@ -275,6 +417,9 @@ function validateData() {
   validateUnique("places", data.places);
   validateUnique("journeys", data.journeys);
   validateUnique("books", data.books);
+  validateUnique("nations", data.nations);
+  validateUnique("prophecies", data.prophecies);
+  validateUnique("themes", data.themes);
 
   data.events.forEach((event) => {
     const label = "event " + event.id;
@@ -341,7 +486,171 @@ function validateData() {
       });
     });
   });
+
+  data.nations.forEach((nation) => {
+    const label = "nation " + nation.id;
+    checkRefs(label, nation.capital ? [nation.capital] : [], "place", maps.places);
+    checkRefs(label, nation.territoryPlaces, "place", maps.places);
+    checkRefs(label, nation.kings, "person", maps.people);
+    checkRefs(label, (nation.prophets || []).map((prophet) => prophet.personId), "person", maps.people);
+    checkRefs(label, nation.events, "event", maps.events);
+    checkRefs(label, nation.relatedNations, "nation", maps.nations);
+    checkRefs(label, nation.notablePeople, "person", maps.people);
+  });
+
+  data.prophecies.forEach((prophecy) => {
+    const label = "prophecy " + prophecy.id;
+    checkRefs(label, prophecy.prophetId ? [prophecy.prophetId] : [], "person", maps.people);
+    checkRefs(label, prophecy.givenEvent ? [prophecy.givenEvent] : [], "event", maps.events);
+    checkRefs(label, prophecy.recordedBook ? [prophecy.recordedBook] : [], "book", maps.books);
+    if (prophecy.subject && prophecy.subject.type && prophecy.subject.id) {
+      const targetCollection = typeToCollection[prophecy.subject.type];
+      if (!targetCollection || !maps[targetCollection].has(canonicalId(prophecy.subject.type, prophecy.subject.id))) {
+        warn(label + " references missing " + prophecy.subject.type + " id: " + prophecy.subject.id);
+      }
+    }
+    checkRefs(label, (prophecy.fulfillments || []).map((fulfillment) => fulfillment.eventId).filter(Boolean), "event", maps.events);
+    checkRefs(label, prophecy.themes, "theme", maps.themes);
+  });
+
+  data.themes.forEach((theme) => {
+    const label = "theme " + theme.id;
+    checkRefs(label, theme.events, "event", maps.events);
+    checkRefs(label, theme.people, "person", maps.people);
+    checkRefs(label, theme.relatedThemes, "theme", maps.themes);
+  });
+
+  (data.connections.edges || []).forEach((edge) => {
+    const fromCollection = typeToCollection[edge.from.type];
+    const toCollection = typeToCollection[edge.to.type];
+    if (!fromCollection || !maps[fromCollection].has(canonicalId(edge.from.type, edge.from.id))) {
+      warn("connection references missing " + edge.from.type + " id: " + edge.from.id);
+    }
+    if (!toCollection || !maps[toCollection].has(canonicalId(edge.to.type, edge.to.id))) {
+      warn("connection references missing " + edge.to.type + " id: " + edge.to.id);
+    }
+  });
 }
+
+function buildGraphModel() {
+  const nodes = [];
+  const nodeMap = new Map();
+  const edges = [];
+  const edgeKeys = new Set();
+
+  function addNode(type, item, options) {
+    const id = canonicalId(type, item.id);
+    const node = {
+      key: graphKey(type, id),
+      type,
+      id,
+      name: item.name,
+      url: slugPath(type, id)
+    };
+    if (options && options.era) node.era = options.era;
+    nodes.push(node);
+    nodeMap.set(node.key, node);
+  }
+
+  function addEdge(fromType, fromId, rel, toType, toId, meta) {
+    if (!fromId || !toId) return;
+    const s = graphKey(fromType, fromId);
+    const t = graphKey(toType, toId);
+    if (!nodeMap.has(s) || !nodeMap.has(t)) return;
+    const edge = { s, r: rel, t };
+    if (meta && meta.note) edge.note = meta.note;
+    if (meta && meta.ref) edge.ref = meta.ref;
+    const dedupeKey = [edge.s, edge.r, edge.t, edge.note || "", edge.ref || ""].join("|");
+    if (edgeKeys.has(dedupeKey)) return;
+    edgeKeys.add(dedupeKey);
+    edges.push(edge);
+  }
+
+  sortedEvents().forEach((event) => addNode("event", event, { era: event.era }));
+  data.people.forEach((person) => addNode("person", person));
+  data.places.forEach((place) => addNode("place", place, { era: place.ancientRegion || "" }));
+  data.books.forEach((book) => addNode("book", book, { era: book.period || "" }));
+  data.journeys.forEach((journey) => addNode("journey", journey, { era: journey.era || "" }));
+  data.nations.forEach((nation) => addNode("nation", nation, { era: nation.dateRange || "" }));
+  data.prophecies.forEach((prophecy) => addNode("prophecy", prophecy));
+  data.themes.forEach((theme) => addNode("theme", theme));
+
+  data.events.forEach((event) => {
+    Array.from(new Set((event.mainPeople || []).concat(event.relatedPeople || []))).forEach((personId) => {
+      addEdge("person", personId, "participated-in", "event", event.id);
+    });
+    if (event.location && event.location.placeId) {
+      addEdge("event", event.id, "occurred-at", "place", event.location.placeId);
+    }
+    if (event.book) addEdge("book", event.book, "records", "event", event.id);
+  });
+
+  data.people.forEach((person) => {
+    (person.events || []).forEach((eventId) => addEdge("person", person.id, "participated-in", "event", eventId));
+    (person.parents || []).forEach((parentId) => addEdge("person", parentId, "parent-of", "person", person.id));
+    (person.children || []).forEach((childId) => addEdge("person", person.id, "parent-of", "person", childId));
+    (person.spouses || []).forEach((spouseId) => addEdge("person", person.id, "spouse-of", "person", spouseId));
+    (person.books || []).forEach((bookId) => addEdge("person", person.id, "appears-in", "book", bookId));
+  });
+
+  data.places.forEach((place) => {
+    (place.people || []).forEach((personId) => addEdge("person", personId, "associated-with", "place", place.id));
+  });
+
+  data.books.forEach((book) => {
+    (book.majorEvents || []).forEach((eventId) => addEdge("book", book.id, "records", "event", eventId));
+  });
+
+  data.journeys.forEach((journey) => {
+    (journey.relatedEvents || []).forEach((eventId) => addEdge("journey", journey.id, "maps", "event", eventId));
+    (journey.relatedPeople || []).forEach((personId) => addEdge("journey", journey.id, "features", "person", personId));
+  });
+
+  data.nations.forEach((nation) => {
+    (nation.kings || []).forEach((personId) => addEdge("nation", nation.id, "ruled-by", "person", personId));
+    (nation.prophets || []).forEach((prophet) => addEdge("nation", nation.id, "warned-by", "person", prophet.personId, { note: prophet.note, ref: prophet.reference }));
+    Array.from(new Set((nation.territoryPlaces || []).concat(nation.capital ? [nation.capital] : []))).forEach((placeId) => {
+      addEdge("nation", nation.id, "territory-included", "place", placeId);
+    });
+    (nation.events || []).forEach((eventId) => addEdge("nation", nation.id, "involved-in", "event", eventId));
+    (nation.relatedNations || []).forEach((nationId) => addEdge("nation", nation.id, "related-to", "nation", nationId));
+  });
+
+  data.prophecies.forEach((prophecy) => {
+    if (prophecy.prophetId) addEdge("prophecy", prophecy.id, "spoken-by", "person", prophecy.prophetId);
+    if (prophecy.givenEvent) addEdge("prophecy", prophecy.id, "given-during", "event", prophecy.givenEvent, { ref: prophecy.givenReference });
+    if (prophecy.recordedBook) addEdge("prophecy", prophecy.id, "recorded-in", "book", prophecy.recordedBook, { ref: prophecy.givenReference });
+    if (prophecy.subject && prophecy.subject.type && prophecy.subject.id) {
+      addEdge("prophecy", prophecy.id, "concerns", prophecy.subject.type, prophecy.subject.id);
+    }
+    (prophecy.fulfillments || []).forEach((fulfillment) => {
+      if (fulfillment.eventId) addEdge("prophecy", prophecy.id, "fulfilled-in", "event", fulfillment.eventId, { note: fulfillment.note, ref: fulfillment.reference });
+    });
+    (prophecy.themes || []).forEach((themeId) => addEdge("prophecy", prophecy.id, "develops", "theme", themeId));
+  });
+
+  data.themes.forEach((theme) => {
+    (theme.events || []).forEach((eventId) => addEdge("theme", theme.id, "expressed-in", "event", eventId));
+    (theme.people || []).forEach((personId) => addEdge("theme", theme.id, "embodied-by", "person", personId));
+    (theme.relatedThemes || []).forEach((themeId) => addEdge("theme", theme.id, "related-to", "theme", themeId));
+  });
+
+  (data.connections.edges || []).forEach((edge) => {
+    addEdge(edge.from.type, edge.from.id, edge.rel, edge.to.type, edge.to.id, { note: edge.note, ref: edge.reference });
+  });
+
+  const edgesByKey = new Map();
+  edges.forEach((edge) => {
+    if (!edgesByKey.has(edge.s)) edgesByKey.set(edge.s, []);
+    if (!edgesByKey.has(edge.t)) edgesByKey.set(edge.t, []);
+    edgesByKey.get(edge.s).push(edge);
+    edgesByKey.get(edge.t).push(edge);
+  });
+
+  return { nodes, edges, nodeMap, edgesByKey };
+}
+
+let graphModel = { nodes: [], edges: [], nodeMap: new Map(), edgesByKey: new Map() };
 
 function sortedEvents(ids) {
   const events = ids ? ids.map((id) => maps.events.get(canonicalId("event", id))).filter(Boolean) : data.events.slice();
@@ -398,12 +707,16 @@ function renderIndex() {
     '  <div class="container">\n' +
     '    <nav class="content-panel" aria-label="Study navigation">\n' +
     '      <ul class="link-list">' +
-    ['Timeline', 'People', 'Places', 'Books', 'Maps', 'Journeys', 'Kings', 'Prophets', 'Miracles', 'Parables', 'Genealogy'].map((label) => {
+    ['Timeline', 'People', 'Places', 'Books', 'Prophecies', 'Nations', 'Themes', 'Graph', 'Maps', 'Journeys', 'Kings', 'Prophets', 'Miracles', 'Parables', 'Genealogy'].map((label) => {
       const hrefs = {
         Timeline: 'timeline.html',
         People: 'people.html',
         Places: 'locations.html',
         Books: 'books.html',
+        Prophecies: 'prophecies.html',
+        Nations: 'nations.html',
+        Themes: 'themes.html',
+        Graph: 'graph.html',
         Maps: 'maps.html',
         Journeys: 'journeys.html',
         Kings: 'kings.html',
@@ -442,7 +755,7 @@ function renderIndex() {
     '<div class="grid">' + data.books.map((book) => '<article class="card"><h3>' + linkTo("", "book", book.id) + '</h3><p>' + escapeHtml(book.timelinePlacement) + '</p></article>').join("") + '</div></div>\n' +
     '</section>\n' +
     '<section class="section" id="maps"><div class="container"><h2>Study Index</h2><div class="grid">' +
-    ["Maps", "Kings", "Prophets", "Miracles", "Parables", "Genealogy"].map((label) => '<article class="card"><h3>' + escapeHtml(label) + '</h3><p><a href="' + label.toLowerCase() + '.html">Browse ' + escapeHtml(label) + '</a></p></article>').join("") +
+    ["Prophecies", "Nations", "Themes", "Graph", "Maps", "Kings", "Prophets", "Miracles", "Parables", "Genealogy"].map((label) => '<article class="card"><h3>' + escapeHtml(label) + '</h3><p><a href="' + label.toLowerCase() + '.html">Browse ' + escapeHtml(label) + '</a></p></article>').join("") +
     '</div></div></section>';
 
   writeFile("index.html", pageLayout({
@@ -667,6 +980,7 @@ function renderJourneyPage(journey, index) {
     routeSections + '\n' +
     '<section class="content-panel"><h2>Related Events</h2>' + listLinks(rootPrefix, "event", journey.relatedEvents) + '</section>\n' +
     '<section class="content-panel"><h2>Related People</h2>' + listLinks(rootPrefix, "person", journey.relatedPeople) + '</section>\n' +
+    renderConnectionsPanel(rootPrefix, "journey", journey.id) +
     nav + '\n' +
     '</div></section>';
 
@@ -767,6 +1081,7 @@ function renderEventPage(event) {
     journeySection +
     '<section class="content-panel"><h2>Related People</h2>' + listLinks(rootPrefix, "person", event.relatedPeople) + '</section>\n' +
     '<section class="content-panel"><h2>Related Locations</h2>' + listLinks(rootPrefix, "place", event.relatedPlaces) + '</section>\n' +
+    renderConnectionsPanel(rootPrefix, "event", event.id) +
     '</div></section>';
 
   writeFile("events/" + event.id + ".html", pageLayout({
@@ -798,6 +1113,7 @@ function renderPersonPage(person) {
     '<section class="content-panel"><h2>Related People</h2>' + listLinks(rootPrefix, "person", person.relatedPeople) + '</section>\n' +
     '<section class="content-panel"><h2>Related Places</h2>' + listLinks(rootPrefix, "place", person.relatedPlaces) + '</section>\n' +
     '<section class="content-panel"><h2>Books Appeared In</h2>' + listLinks(rootPrefix, "book", person.books) + '</section>\n' +
+    renderConnectionsPanel(rootPrefix, "person", person.id) +
     '</div></section>';
 
   writeFile("people/" + person.id + ".html", pageLayout({
@@ -824,6 +1140,7 @@ function renderPlacePage(place) {
     '<section class="content-panel"><h2>References</h2>' + textList(place.references) + '</section>\n' +
     '<section class="content-panel"><h2>Related Places</h2>' + listLinks(rootPrefix, "place", place.relatedPlaces) + '</section>\n' +
     '<section class="content-panel"><h2>Photo</h2><div class="photo-placeholder">Photo placeholder</div></section>\n' +
+    renderConnectionsPanel(rootPrefix, "place", place.id) +
     '</div></section>';
 
   writeFile("locations/" + place.id + ".html", pageLayout({
@@ -850,13 +1167,161 @@ function renderBookPage(book) {
     '<section class="content-panel"><h2>Major Places</h2>' + listLinks(rootPrefix, "place", book.majorPlaces) + '</section>\n' +
     '<section class="content-panel"><h2>Outline</h2>' + textList(book.outline) + '</section>\n' +
     '<section class="content-panel"><h2>Key Verses</h2>' + textList(book.keyVerses) + '</section>\n' +
-    '<section class="content-panel"><h2>Connections</h2>' + ((book.connections || []).length ? '<ul>' + book.connections.map((connection) => '<li>' + linkTo(rootPrefix, "book", connection.bookId) + ' - ' + escapeHtml(connection.note) + '</li>').join("") + '</ul>' : '<p>None listed.</p>') + '</section>\n' +
+    '<section class="content-panel"><h2>Related Books</h2>' + ((book.connections || []).length ? '<ul>' + book.connections.map((connection) => '<li>' + linkTo(rootPrefix, "book", connection.bookId) + ' - ' + escapeHtml(connection.note) + '</li>').join("") + '</ul>' : '<p>None listed.</p>') + '</section>\n' +
+    renderConnectionsPanel(rootPrefix, "book", book.id) +
     '</div></section>';
 
   writeFile("books/" + book.id + ".html", pageLayout({
     title: book.name + " - Bible Timeline",
     rootPrefix,
     body
+  }));
+}
+
+function prophecyTypeLabel(type) {
+  const labels = {
+    narrative: "fulfilled within the narrative",
+    "nt-cited": "cited in the NT",
+    historical: "historical fulfillment",
+    debated: "interpretation debated"
+  };
+  return labels[type] || type || "fulfillment";
+}
+
+function renderNationPage(nation) {
+  const rootPrefix = "../";
+  const territory = Array.from(new Set((nation.capital ? [nation.capital] : []).concat(nation.territoryPlaces || [])));
+  const body = '<section class="section"><div class="container">\n' +
+    '<div class="page-title"><span class="badge">' + escapeHtml(nation.dateRange) + '</span><h1>' + escapeHtml(nation.name) + '</h1><p>' + escapeHtml(nation.description) + '</p></div>\n' +
+    '<section class="content-panel"><h2>Historical Arc</h2><p>' + escapeHtml(nation.fate || "None listed.") + '</p></section>\n' +
+    '<section class="content-panel"><h2>Capital and Territory</h2>' + metaRows([
+      ["Capital", nation.capital ? linkTo(rootPrefix, "place", nation.capital) : "None listed."]
+    ]) + '<h3>Territory</h3>' + listLinks(rootPrefix, "place", territory) + '</section>\n' +
+    '<section class="content-panel"><h2>Kings</h2>' + listLinks(rootPrefix, "person", nation.kings) + '</section>\n' +
+    '<section class="content-panel"><h2>Prophets Sent to Them</h2>' + listTypedLinks(rootPrefix, nation.prophets, "person", "personId", "note", "reference") + '</section>\n' +
+    '<section class="content-panel"><h2>Key Events</h2>' + listLinks(rootPrefix, "event", nation.events) + '</section>\n' +
+    '<section class="content-panel"><h2>Related Nations</h2>' + listLinks(rootPrefix, "nation", nation.relatedNations) + '</section>\n' +
+    '<section class="content-panel"><h2>References</h2>' + textList(nation.references) + '</section>\n' +
+    renderConnectionsPanel(rootPrefix, "nation", nation.id) +
+    '</div></section>';
+
+  writeFile("nations/" + nation.id + ".html", pageLayout({
+    title: nation.name + " - Bible Timeline",
+    description: nation.description,
+    rootPrefix,
+    body
+  }));
+}
+
+function renderProphecyPage(prophecy) {
+  const rootPrefix = "../";
+  const subject = prophecy.subject ? linkTo(rootPrefix, prophecy.subject.type, prophecy.subject.id) : "None listed.";
+  const fulfillments = (prophecy.fulfillments || []).length
+    ? '<ul>' + prophecy.fulfillments.map((fulfillment) => '<li><span class="badge">' + escapeHtml(prophecyTypeLabel(fulfillment.type)) + '</span> <strong>' + escapeHtml(fulfillment.reference) + '</strong>' +
+      (fulfillment.eventId ? ' - ' + linkTo(rootPrefix, "event", fulfillment.eventId) : "") +
+      (fulfillment.note ? '<br><span class="muted">' + escapeHtml(fulfillment.note) + '</span>' : "") + '</li>').join("") + '</ul>'
+    : '<p>None listed.</p>';
+  const body = '<section class="section"><div class="container">\n' +
+    '<div class="page-title"><span class="badge">Prophecy</span><h1>' + escapeHtml(prophecy.name) + '</h1><p>' + escapeHtml(prophecy.summary) + '</p></div>\n' +
+    '<section class="content-panel"><h2>Given</h2>' + metaRows([
+      ["Reference", escapeHtml(prophecy.givenReference)],
+      ["Spoken By", escapeHtml(prophecy.spokenBy || "None listed")],
+      ["Prophet", prophecy.prophetId ? linkTo(rootPrefix, "person", prophecy.prophetId) : escapeHtml(prophecy.spokenBy || "None listed")],
+      ["Given Event", prophecy.givenEvent ? linkTo(rootPrefix, "event", prophecy.givenEvent) : "None listed."],
+      ["Recorded Book", prophecy.recordedBook ? linkTo(rootPrefix, "book", prophecy.recordedBook) : "None listed."]
+    ]) + '</section>\n' +
+    '<section class="content-panel"><h2>Subject</h2><p>' + subject + '</p></section>\n' +
+    '<section class="content-panel"><h2>Fulfillments</h2>' + fulfillments + '</section>\n' +
+    '<section class="content-panel"><h2>Status</h2><p>' + escapeHtml(prophecy.status || "None listed.") + '</p></section>\n' +
+    '<section class="content-panel"><h2>Themes</h2>' + listLinks(rootPrefix, "theme", prophecy.themes) + '</section>\n' +
+    renderConnectionsPanel(rootPrefix, "prophecy", prophecy.id) +
+    '</div></section>';
+
+  writeFile("prophecies/" + prophecy.id + ".html", pageLayout({
+    title: prophecy.name + " - Bible Timeline",
+    description: prophecy.summary,
+    rootPrefix,
+    body
+  }));
+}
+
+function renderThemePage(theme) {
+  const rootPrefix = "../";
+  const prophecies = data.prophecies.filter((prophecy) => (prophecy.themes || []).indexOf(theme.id) !== -1);
+  const verses = (theme.keyVerses || []).length
+    ? '<ul>' + theme.keyVerses.map((verse) => '<li><strong>' + escapeHtml(verse.reference) + '</strong> - ' + escapeHtml(verse.note || "") + '</li>').join("") + '</ul>'
+    : '<p>None listed.</p>';
+  const body = '<section class="section"><div class="container">\n' +
+    '<div class="page-title"><span class="badge">Theme</span><h1>' + escapeHtml(theme.name) + '</h1><p>' + escapeHtml(theme.description) + '</p></div>\n' +
+    '<section class="content-panel"><h2>Key Verses</h2>' + verses + '</section>\n' +
+    '<section class="content-panel"><h2>Events</h2>' + listLinks(rootPrefix, "event", theme.events) + '</section>\n' +
+    '<section class="content-panel"><h2>People</h2>' + listLinks(rootPrefix, "person", theme.people) + '</section>\n' +
+    '<section class="content-panel"><h2>Related Themes</h2>' + listLinks(rootPrefix, "theme", theme.relatedThemes) + '</section>\n' +
+    '<section class="content-panel"><h2>Prophecies That Develop This Theme</h2>' + listLinks(rootPrefix, "prophecy", prophecies.map((prophecy) => prophecy.id)) + '</section>\n' +
+    renderConnectionsPanel(rootPrefix, "theme", theme.id) +
+    '</div></section>';
+
+  writeFile("themes/" + theme.id + ".html", pageLayout({
+    title: theme.name + " - Bible Timeline",
+    description: theme.description,
+    rootPrefix,
+    body
+  }));
+}
+
+function renderNationsBrowse() {
+  const cards = sortByName(data.nations).map((nation) => (
+    '<article class="card"><span class="badge">' + escapeHtml(nation.dateRange) + '</span><h3>' + linkTo("", "nation", nation.id) + '</h3><p>' + escapeHtml(firstSentence(nation.description)) + '</p></article>'
+  )).join("");
+  renderBrowsePage("nations.html", "Nations", "Nations and kingdoms connected to the Bible timeline.", '<section class="content-panel"><h2>All Nations</h2><div class="grid">' + cards + '</div></section>\n');
+}
+
+function prophecyGroup(prophecy) {
+  if (prophecy.prophetId === "jesus") return "Spoken by Jesus";
+  if ((prophecy.subject && prophecy.subject.type === "person" && prophecy.subject.id === "jesus") || (prophecy.themes || []).indexOf("messiah") !== -1) return "Messianic";
+  return "National & historical";
+}
+
+function renderPropheciesBrowse() {
+  const groups = ["Messianic", "National & historical", "Spoken by Jesus"].map((label) => {
+    const prophecies = data.prophecies.filter((prophecy) => prophecyGroup(prophecy) === label).sort((a, b) => a.name.localeCompare(b.name));
+    return '<section class="content-panel"><h2>' + escapeHtml(label) + '</h2><div class="grid">' + prophecies.map((prophecy) => (
+      '<article class="card"><h3>' + linkTo("", "prophecy", prophecy.id) + '</h3><p><strong>' + escapeHtml(prophecy.givenReference) + '</strong></p><p>' + escapeHtml(firstSentence(prophecy.summary)) + '</p></article>'
+    )).join("") + '</div></section>\n';
+  }).join("");
+  renderBrowsePage("prophecies.html", "Prophecies", "Prophecies with subjects, fulfillments, and theme links.", groups);
+}
+
+function renderThemesBrowse() {
+  const cards = sortByName(data.themes).map((theme) => (
+    '<article class="card"><h3>' + linkTo("", "theme", theme.id) + '</h3><p>' + escapeHtml(firstSentence(theme.description)) + '</p></article>'
+  )).join("");
+  renderBrowsePage("themes.html", "Themes", "Biblical themes connected to events, people, and prophecies.", '<section class="content-panel"><h2>All Themes</h2><div class="grid">' + cards + '</div></section>\n');
+}
+
+function renderGraphPage() {
+  const body = '<section class="section"><div class="container graph-page">\n' +
+    '<div class="page-title"><span class="badge">Explorer</span><h1>Cross-Reference Graph</h1><p>Explore typed links between events, people, places, books, journeys, nations, prophecies, and themes.</p></div>\n' +
+    '<section class="content-panel graph-controls" aria-label="Graph controls">\n' +
+    '  <label>Center node <input data-node-search list="graph-node-list" type="search" placeholder="Person: Jesus"></label>\n' +
+    '  <datalist id="graph-node-list"></datalist>\n' +
+    '  <label>Depth <select data-depth><option value="1">1 step</option><option value="2">2 steps</option></select></label>\n' +
+    '  <fieldset><legend>Types</legend><div data-type-filters></div></fieldset>\n' +
+    '  <label>Relations <select data-relation-filter multiple size="6"></select></label>\n' +
+    '</section>\n' +
+    '<section class="content-panel graph-shell">\n' +
+    '  <div class="panel-heading"><div><h2 data-current-title>Graph</h2><p class="muted" data-current-meta></p></div><a data-current-link href="#">Open page</a></div>\n' +
+    '  <p class="muted" data-render-note></p>\n' +
+    '  <div data-graph-legend class="graph-legend"></div>\n' +
+    '  <svg data-graph-svg class="graph-svg" role="img" aria-label="Bible cross-reference graph"></svg>\n' +
+    '</section>\n' +
+    '</div></section>';
+  writeFile("graph.html", pageLayout({
+    title: "Graph Explorer - Bible Timeline",
+    description: "Offline graph explorer for Bible Timeline data.",
+    rootPrefix: "",
+    body,
+    graphScript: true
   }));
 }
 
@@ -905,10 +1370,60 @@ function emitDataJs() {
       keywords: [book.testament, book.author, book.timelinePlacement].filter(Boolean),
       summary: book.timelinePlacement,
       url: slugPath("book", book.id)
+    })),
+    journeys: data.journeys.map((journey) => ({
+      id: journey.id,
+      type: "journey",
+      name: journey.name,
+      date: "",
+      era: journey.era,
+      reference: journey.reference,
+      keywords: [journey.era].filter(Boolean),
+      summary: journey.summary,
+      url: slugPath("journey", journey.id)
+    })),
+    nations: data.nations.map((nation) => ({
+      id: nation.id,
+      type: "nation",
+      name: nation.name,
+      date: nation.dateRange,
+      era: nation.dateRange,
+      reference: (nation.references || []).join("; "),
+      keywords: [],
+      summary: nation.description,
+      url: slugPath("nation", nation.id)
+    })),
+    prophecies: data.prophecies.map((prophecy) => ({
+      id: prophecy.id,
+      type: "prophecy",
+      name: prophecy.name,
+      date: prophecy.givenReference,
+      era: prophecy.status || "",
+      reference: prophecy.givenReference,
+      keywords: [prophecy.spokenBy].concat(prophecy.themes || []).filter(Boolean),
+      summary: prophecy.summary,
+      url: slugPath("prophecy", prophecy.id)
+    })),
+    themes: data.themes.map((theme) => ({
+      id: theme.id,
+      type: "theme",
+      name: theme.name,
+      date: "",
+      era: "",
+      reference: (theme.keyVerses || []).map((verse) => verse.reference).join("; "),
+      keywords: [],
+      summary: theme.description,
+      url: slugPath("theme", theme.id)
     }))
   };
 
   writeFile("js/data.js", "window.BIBLE_DATA = " + JSON.stringify(compact) + ";\n");
+}
+
+function emitGraphData() {
+  const graph = { nodes: graphModel.nodes, edges: graphModel.edges };
+  writeFile("js/graph-data.js", "window.BIBLE_GRAPH = " + JSON.stringify(graph) + ";\n");
+  writeFile("data/graph.json", JSON.stringify(graph, null, 2) + "\n");
 }
 
 function emitMapDataJs() {
@@ -936,7 +1451,10 @@ function pruneOrphanPages() {
     people: new Set(data.people.map((item) => item.id)),
     locations: new Set(data.places.map((item) => item.id)),
     journeys: new Set(data.journeys.map((item) => item.id)),
-    books: new Set(data.books.map((item) => item.id))
+    books: new Set(data.books.map((item) => item.id)),
+    nations: new Set(data.nations.map((item) => item.id)),
+    prophecies: new Set(data.prophecies.map((item) => item.id)),
+    themes: new Set(data.themes.map((item) => item.id))
   };
   Object.keys(dirToIds).forEach((dir) => {
     const dirPath = path.join(rootDir, dir);
@@ -952,8 +1470,9 @@ function pruneOrphanPages() {
 }
 
 function build() {
-  ["events", "people", "locations", "journeys", "books", "js"].forEach(ensureDir);
+  ["events", "people", "locations", "journeys", "books", "nations", "prophecies", "themes", "js"].forEach(ensureDir);
   validateData();
+  graphModel = buildGraphModel();
   pruneOrphanPages();
   renderIndex();
   renderTimeline();
@@ -967,22 +1486,33 @@ function build() {
   renderMiraclesBrowse();
   renderParablesBrowse();
   renderGenealogyBrowse();
+  renderNationsBrowse();
+  renderPropheciesBrowse();
+  renderThemesBrowse();
   renderJourneysBrowse();
   renderMapsBrowse();
+  renderGraphPage();
   data.events.forEach(renderEventPage);
   data.people.forEach(renderPersonPage);
   data.places.forEach(renderPlacePage);
   data.journeys.forEach(renderJourneyPage);
   data.books.forEach(renderBookPage);
+  data.nations.forEach(renderNationPage);
+  data.prophecies.forEach(renderProphecyPage);
+  data.themes.forEach(renderThemePage);
   emitDataJs();
   emitMapDataJs();
+  emitGraphData();
 
   console.log("Generated " + data.events.length + " event pages.");
   console.log("Generated " + data.people.length + " person pages.");
   console.log("Generated " + data.places.length + " location pages.");
   console.log("Generated " + data.journeys.length + " journey pages.");
   console.log("Generated " + data.books.length + " book pages.");
-  console.log("Generated timeline.html, index.html, browse pages, js/data.js, and js/map-data.js.");
+  console.log("Generated " + data.nations.length + " nation pages.");
+  console.log("Generated " + data.prophecies.length + " prophecy pages.");
+  console.log("Generated " + data.themes.length + " theme pages.");
+  console.log("Generated timeline.html, index.html, browse pages, graph.html, js/data.js, js/map-data.js, and js/graph-data.js.");
 
   if (warnings > 0) {
     console.log("Completed with " + warnings + " warning(s).");

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Graph Explorer - Bible Timeline</title>
+  <meta name="description" content="Offline graph explorer for Bible Timeline data.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-root="">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="index.html">Bible Timeline</a>
+    <nav aria-label="Main navigation">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="timeline.html">Timeline</a></li>
+        <li><a href="people.html">People</a></li>
+        <li><a href="locations.html">Places</a></li>
+        <li><a href="books.html">Books</a></li>
+        <li><a href="prophecies.html">Prophecies</a></li>
+        <li><a href="nations.html">Nations</a></li>
+        <li><a href="themes.html">Themes</a></li>
+        <li><a href="graph.html">Graph</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <form class="search-form" data-search-form role="search">
+        <label class="visually-hidden" for="site-search">Search</label>
+        <input id="site-search" data-search-input type="search" autocomplete="off" placeholder="Search timeline">
+        <div class="search-results" data-search-results hidden></div>
+      </form>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">Theme</button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<section class="section"><div class="container graph-page">
+<div class="page-title"><span class="badge">Explorer</span><h1>Cross-Reference Graph</h1><p>Explore typed links between events, people, places, books, journeys, nations, prophecies, and themes.</p></div>
+<section class="content-panel graph-controls" aria-label="Graph controls">
+  <label>Center node <input data-node-search list="graph-node-list" type="search" placeholder="Person: Jesus"></label>
+  <datalist id="graph-node-list"></datalist>
+  <label>Depth <select data-depth><option value="1">1 step</option><option value="2">2 steps</option></select></label>
+  <fieldset><legend>Types</legend><div data-type-filters></div></fieldset>
+  <label>Relations <select data-relation-filter multiple size="6"></select></label>
+</section>
+<section class="content-panel graph-shell">
+  <div class="panel-heading"><div><h2 data-current-title>Graph</h2><p class="muted" data-current-meta></p></div><a data-current-link href="#">Open page</a></div>
+  <p class="muted" data-render-note></p>
+  <div data-graph-legend class="graph-legend"></div>
+  <svg data-graph-svg class="graph-svg" role="img" aria-label="Bible cross-reference graph"></svg>
+</section>
+</div></section>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <p>Bible Timeline is a static, offline-capable study site generated from local JSON data.</p>
+  </div>
+</footer>
+<script src="js/data.js"></script>
+<script src="js/search.js"></script>
+<script src="js/graph-data.js"></script>
+<script src="js/graph.js"></script>
+</body>
+</html>

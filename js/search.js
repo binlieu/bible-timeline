@@ -31,7 +31,11 @@
       .concat(data.events || [])
       .concat(data.people || [])
       .concat(data.places || [])
-      .concat(data.books || []);
+      .concat(data.books || [])
+      .concat(data.journeys || [])
+      .concat(data.nations || [])
+      .concat(data.prophecies || [])
+      .concat(data.themes || []);
     var q = normalize(query).trim();
 
     if (!q) {
