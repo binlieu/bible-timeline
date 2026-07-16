@@ -69,7 +69,47 @@
       "samson",
       "ruth-and-boaz",
       "samuel-called",
-      "ark-captured-and-returned"
+      "ark-captured-and-returned",
+      "saul-anointed-king",
+      "saul-rejected",
+      "david-anointed",
+      "david-and-goliath",
+      "david-flees-saul",
+      "david-becomes-king",
+      "ark-brought-to-jerusalem",
+      "davidic-covenant",
+      "david-and-bathsheba",
+      "absaloms-rebellion",
+      "solomon-becomes-king",
+      "solomons-wisdom",
+      "temple-built",
+      "queen-of-sheba",
+      "solomons-decline",
+      "kingdom-divides",
+      "elijah-on-mount-carmel",
+      "elijah-taken-to-heaven",
+      "elisha-ministry",
+      "jonah-and-nineveh",
+      "amos-and-hosea-warn-israel",
+      "fall-of-samaria",
+      "hezekiah-and-sennacherib",
+      "isaiah-ministry",
+      "josiahs-reforms",
+      "jeremiah-ministry",
+      "fall-of-jerusalem",
+      "daniel-in-babylon",
+      "nebuchadnezzars-dream",
+      "fiery-furnace",
+      "ezekiel-ministry",
+      "belshazzars-feast",
+      "daniel-in-the-lions-den",
+      "cyrus-decree",
+      "temple-rebuilt",
+      "esther-saves-her-people",
+      "ezra-returns",
+      "nehemiah-rebuilds-walls",
+      "malachi-ministry",
+      "intertestamental-period"
     ],
     "references": [
       "Genesis 1:1-2:3",
@@ -123,7 +163,47 @@
       "Judges 13-16",
       "Ruth 1-4",
       "1 Samuel 1-3",
-      "1 Samuel 4-6"
+      "1 Samuel 4-6",
+      "1 Samuel 8-10",
+      "1 Samuel 15",
+      "1 Samuel 16",
+      "1 Samuel 17",
+      "1 Samuel 18-31",
+      "2 Samuel 2; 5",
+      "2 Samuel 6",
+      "2 Samuel 7",
+      "2 Samuel 11-12",
+      "2 Samuel 15-18",
+      "1 Kings 1-2",
+      "1 Kings 3",
+      "1 Kings 6-8",
+      "1 Kings 10",
+      "1 Kings 11",
+      "1 Kings 12",
+      "1 Kings 18",
+      "2 Kings 2:1-14",
+      "2 Kings 2-13",
+      "Jonah 1-4",
+      "Amos; Hosea",
+      "2 Kings 17",
+      "2 Kings 18-19",
+      "Isaiah 1-66",
+      "2 Kings 22-23",
+      "Jeremiah 1-52",
+      "2 Kings 25",
+      "Daniel 1",
+      "Daniel 2",
+      "Daniel 3",
+      "Ezekiel 1-48",
+      "Daniel 5",
+      "Daniel 6",
+      "Ezra 1",
+      "Ezra 3-6",
+      "Esther 1-10",
+      "Ezra 7-10",
+      "Nehemiah 1-6",
+      "Malachi 1-4",
+      "(no canonical text; cf. Daniel 8; 11)"
     ],
     "relatedPeople": [
       "adam",
@@ -133,7 +213,50 @@
       "seth",
       "enoch",
       "methuselah",
-      "noah"
+      "noah",
+      "samuel",
+      "saul",
+      "david",
+      "goliath",
+      "jonathan",
+      "joab",
+      "nathan",
+      "solomon",
+      "bathsheba",
+      "absalom",
+      "rehoboam",
+      "jeroboam",
+      "elijah",
+      "ahab",
+      "jezebel",
+      "elisha",
+      "naaman",
+      "jonah",
+      "amos",
+      "hosea",
+      "hezekiah",
+      "sennacherib",
+      "isaiah",
+      "josiah",
+      "jeremiah",
+      "nebuchadnezzar",
+      "daniel",
+      "shadrach",
+      "meshach",
+      "abednego",
+      "ezekiel",
+      "belshazzar",
+      "darius-the-mede",
+      "cyrus",
+      "zerubbabel",
+      "haggai",
+      "zechariah",
+      "esther",
+      "mordecai",
+      "ahasuerus",
+      "ezra",
+      "nehemiah",
+      "malachi"
     ],
     "relatedPlaces": [
       "eden",
@@ -158,7 +281,16 @@
       "jericho",
       "shiloh",
       "gaza",
-      "bethlehem"
+      "bethlehem",
+      "valley-of-elah",
+      "en-gedi",
+      "jerusalem",
+      "mount-carmel",
+      "samaria",
+      "damascus",
+      "nineveh",
+      "babylon",
+      "susa"
     ],
     "books": [
       "genesis",
@@ -2272,22 +2404,1622 @@
     "summary": "Samuel was called by God as a prophet and judged Israel at the transition toward monarchy.",
     "events": [
       "samuel-called",
-      "ark-captured-and-returned"
+      "ark-captured-and-returned",
+      "saul-anointed-king",
+      "saul-rejected",
+      "david-anointed",
+      "david-flees-saul"
     ],
     "references": [
       "1 Samuel 1-3",
-      "1 Samuel 4-6"
+      "1 Samuel 4-6",
+      "1 Samuel 8-10",
+      "1 Samuel 15",
+      "1 Samuel 16",
+      "1 Samuel 18-31"
     ],
     "relatedPeople": [
       "hannah",
       "eli",
       "god",
       "ruth",
-      "boaz"
+      "boaz",
+      "saul",
+      "david",
+      "jonathan"
     ],
     "relatedPlaces": [
       "shiloh",
-      "gaza"
+      "gaza",
+      "bethlehem",
+      "en-gedi"
+    ],
+    "books": []
+  },
+  {
+    "id": "saul",
+    "name": "Saul",
+    "nameMeaning": "Asked/borrowed",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "First king of Israel",
+    "nationality": "Israelite",
+    "tribe": "Benjamin",
+    "kingdom": null,
+    "roles": [
+      "king"
+    ],
+    "summary": "Saul was Israel's first king, anointed by Samuel and later rejected for disobedience.",
+    "events": [
+      "saul-anointed-king",
+      "saul-rejected",
+      "david-anointed",
+      "david-and-goliath",
+      "david-flees-saul",
+      "david-becomes-king"
+    ],
+    "references": [
+      "1 Samuel 8-10",
+      "1 Samuel 15",
+      "1 Samuel 16",
+      "1 Samuel 17",
+      "1 Samuel 18-31",
+      "2 Samuel 2; 5"
+    ],
+    "relatedPeople": [
+      "samuel",
+      "god",
+      "david",
+      "goliath",
+      "jonathan",
+      "joab"
+    ],
+    "relatedPlaces": [
+      "shiloh",
+      "bethlehem",
+      "valley-of-elah",
+      "en-gedi",
+      "jerusalem",
+      "hebron"
+    ],
+    "books": []
+  },
+  {
+    "id": "jonathan",
+    "name": "Jonathan",
+    "nameMeaning": "The Lord has given",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Prince and warrior",
+    "nationality": "Israelite",
+    "tribe": "Benjamin",
+    "kingdom": null,
+    "roles": [],
+    "summary": "Jonathan was Saul's son and David's covenant friend.",
+    "events": [
+      "david-and-goliath",
+      "david-flees-saul",
+      "david-becomes-king"
+    ],
+    "references": [
+      "1 Samuel 17",
+      "1 Samuel 18-31",
+      "2 Samuel 2; 5"
+    ],
+    "relatedPeople": [
+      "david",
+      "goliath",
+      "saul",
+      "god",
+      "samuel",
+      "joab"
+    ],
+    "relatedPlaces": [
+      "valley-of-elah",
+      "en-gedi",
+      "bethlehem",
+      "jerusalem",
+      "hebron"
+    ],
+    "books": []
+  },
+  {
+    "id": "david",
+    "name": "David",
+    "nameMeaning": "Beloved",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "King of Israel",
+    "nationality": "Israelite",
+    "tribe": "Judah",
+    "kingdom": null,
+    "roles": [
+      "king"
+    ],
+    "summary": "David was the shepherd from Bethlehem who became king over all Israel and received the Davidic covenant.",
+    "events": [
+      "david-anointed",
+      "david-and-goliath",
+      "david-flees-saul",
+      "david-becomes-king",
+      "ark-brought-to-jerusalem",
+      "davidic-covenant",
+      "david-and-bathsheba",
+      "absaloms-rebellion",
+      "solomon-becomes-king",
+      "temple-built"
+    ],
+    "references": [
+      "1 Samuel 16",
+      "1 Samuel 17",
+      "1 Samuel 18-31",
+      "2 Samuel 2; 5",
+      "2 Samuel 6",
+      "2 Samuel 7",
+      "2 Samuel 11-12",
+      "2 Samuel 15-18",
+      "1 Kings 1-2",
+      "1 Kings 6-8"
+    ],
+    "relatedPeople": [
+      "samuel",
+      "saul",
+      "god",
+      "goliath",
+      "jonathan",
+      "joab",
+      "nathan",
+      "solomon",
+      "bathsheba",
+      "absalom"
+    ],
+    "relatedPlaces": [
+      "bethlehem",
+      "valley-of-elah",
+      "en-gedi",
+      "jerusalem",
+      "hebron"
+    ],
+    "books": []
+  },
+  {
+    "id": "goliath",
+    "name": "Goliath",
+    "nameMeaning": null,
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Philistine champion",
+    "nationality": "Philistine",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "warrior"
+    ],
+    "summary": "Goliath was the Philistine champion defeated by David in the Valley of Elah.",
+    "events": [
+      "david-and-goliath"
+    ],
+    "references": [
+      "1 Samuel 17"
+    ],
+    "relatedPeople": [
+      "david",
+      "saul",
+      "jonathan",
+      "god"
+    ],
+    "relatedPlaces": [
+      "valley-of-elah"
+    ],
+    "books": []
+  },
+  {
+    "id": "bathsheba",
+    "name": "Bathsheba",
+    "nameMeaning": "Daughter of the oath",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Queen mother",
+    "nationality": "Israelite",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "queen mother"
+    ],
+    "summary": "Bathsheba was the wife of David and mother of Solomon.",
+    "events": [
+      "david-and-bathsheba",
+      "absaloms-rebellion",
+      "solomon-becomes-king"
+    ],
+    "references": [
+      "2 Samuel 11-12",
+      "2 Samuel 15-18",
+      "1 Kings 1-2"
+    ],
+    "relatedPeople": [
+      "david",
+      "nathan",
+      "solomon",
+      "god",
+      "absalom",
+      "joab"
+    ],
+    "relatedPlaces": [
+      "jerusalem"
+    ],
+    "books": []
+  },
+  {
+    "id": "nathan",
+    "name": "Nathan",
+    "nameMeaning": "He has given",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Prophet",
+    "nationality": "Israelite",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "prophet"
+    ],
+    "summary": "Nathan was the prophet who delivered the Davidic covenant promise and confronted David's sin.",
+    "events": [
+      "davidic-covenant",
+      "david-and-bathsheba",
+      "solomon-becomes-king"
+    ],
+    "references": [
+      "2 Samuel 7",
+      "2 Samuel 11-12",
+      "1 Kings 1-2"
+    ],
+    "relatedPeople": [
+      "david",
+      "solomon",
+      "god",
+      "bathsheba",
+      "joab"
+    ],
+    "relatedPlaces": [
+      "jerusalem"
+    ],
+    "books": []
+  },
+  {
+    "id": "absalom",
+    "name": "Absalom",
+    "nameMeaning": "Father of peace",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Prince",
+    "nationality": "Israelite",
+    "tribe": "Judah",
+    "kingdom": null,
+    "roles": [
+      "prince"
+    ],
+    "summary": "Absalom was David's son who led a rebellion against his father.",
+    "events": [
+      "absaloms-rebellion"
+    ],
+    "references": [
+      "2 Samuel 15-18"
+    ],
+    "relatedPeople": [
+      "david",
+      "joab",
+      "bathsheba",
+      "god"
+    ],
+    "relatedPlaces": [
+      "jerusalem"
+    ],
+    "books": []
+  },
+  {
+    "id": "joab",
+    "name": "Joab",
+    "nameMeaning": "The Lord is father",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Army commander",
+    "nationality": "Israelite",
+    "tribe": "Judah",
+    "kingdom": null,
+    "roles": [
+      "commander"
+    ],
+    "summary": "Joab was David's powerful army commander.",
+    "events": [
+      "david-becomes-king",
+      "absaloms-rebellion",
+      "solomon-becomes-king"
+    ],
+    "references": [
+      "2 Samuel 2; 5",
+      "2 Samuel 15-18",
+      "1 Kings 1-2"
+    ],
+    "relatedPeople": [
+      "david",
+      "saul",
+      "jonathan",
+      "god",
+      "absalom",
+      "bathsheba",
+      "solomon",
+      "nathan"
+    ],
+    "relatedPlaces": [
+      "jerusalem",
+      "hebron"
+    ],
+    "books": []
+  },
+  {
+    "id": "solomon",
+    "name": "Solomon",
+    "nameMeaning": "Peaceful",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "King of Israel",
+    "nationality": "Israelite",
+    "tribe": "Judah",
+    "kingdom": null,
+    "roles": [
+      "king"
+    ],
+    "summary": "Solomon was David's son, known for wisdom, wealth, and building the temple.",
+    "events": [
+      "davidic-covenant",
+      "david-and-bathsheba",
+      "solomon-becomes-king",
+      "solomons-wisdom",
+      "temple-built",
+      "queen-of-sheba",
+      "solomons-decline",
+      "kingdom-divides"
+    ],
+    "references": [
+      "2 Samuel 7",
+      "2 Samuel 11-12",
+      "1 Kings 1-2",
+      "1 Kings 3",
+      "1 Kings 6-8",
+      "1 Kings 10",
+      "1 Kings 11",
+      "1 Kings 12"
+    ],
+    "relatedPeople": [
+      "david",
+      "nathan",
+      "god",
+      "bathsheba",
+      "joab",
+      "rehoboam",
+      "jeroboam"
+    ],
+    "relatedPlaces": [
+      "jerusalem"
+    ],
+    "books": []
+  },
+  {
+    "id": "rehoboam",
+    "name": "Rehoboam",
+    "nameMeaning": "The people enlarge",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "King of Judah",
+    "nationality": "Israelite",
+    "tribe": "Judah",
+    "kingdom": null,
+    "roles": [
+      "king"
+    ],
+    "summary": "Rehoboam was Solomon's son whose harsh rule helped divide the kingdom.",
+    "events": [
+      "solomons-decline",
+      "kingdom-divides"
+    ],
+    "references": [
+      "1 Kings 11",
+      "1 Kings 12"
+    ],
+    "relatedPeople": [
+      "solomon",
+      "jeroboam",
+      "god"
+    ],
+    "relatedPlaces": [
+      "jerusalem"
+    ],
+    "books": []
+  },
+  {
+    "id": "jeroboam",
+    "name": "Jeroboam",
+    "nameMeaning": "The people contend/increase",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "King of Israel",
+    "nationality": "Israelite",
+    "tribe": "Ephraim",
+    "kingdom": null,
+    "roles": [
+      "king"
+    ],
+    "summary": "Jeroboam became the first king of the northern kingdom of Israel.",
+    "events": [
+      "solomons-decline",
+      "kingdom-divides"
+    ],
+    "references": [
+      "1 Kings 11",
+      "1 Kings 12"
+    ],
+    "relatedPeople": [
+      "solomon",
+      "rehoboam",
+      "god"
+    ],
+    "relatedPlaces": [
+      "jerusalem"
+    ],
+    "books": []
+  },
+  {
+    "id": "ahab",
+    "name": "Ahab",
+    "nameMeaning": "Father's brother",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "King of Israel",
+    "nationality": "Israelite",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "king"
+    ],
+    "summary": "Ahab was a northern king whose reign was marked by Baal worship and conflict with Elijah.",
+    "events": [
+      "elijah-on-mount-carmel"
+    ],
+    "references": [
+      "1 Kings 18"
+    ],
+    "relatedPeople": [
+      "elijah",
+      "jezebel",
+      "god"
+    ],
+    "relatedPlaces": [
+      "mount-carmel",
+      "samaria"
+    ],
+    "books": []
+  },
+  {
+    "id": "jezebel",
+    "name": "Jezebel",
+    "nameMeaning": null,
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Queen of Israel",
+    "nationality": "Phoenician",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "queen"
+    ],
+    "summary": "Jezebel was Ahab's queen and a major promoter of Baal worship in Israel.",
+    "events": [
+      "elijah-on-mount-carmel"
+    ],
+    "references": [
+      "1 Kings 18"
+    ],
+    "relatedPeople": [
+      "elijah",
+      "ahab",
+      "god"
+    ],
+    "relatedPlaces": [
+      "mount-carmel",
+      "samaria"
+    ],
+    "books": []
+  },
+  {
+    "id": "elijah",
+    "name": "Elijah",
+    "nameMeaning": "My God is the Lord",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Prophet",
+    "nationality": "Israelite",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "prophet"
+    ],
+    "summary": "Elijah was a prophet who confronted Ahab, Jezebel, and Baal worship in Israel.",
+    "events": [
+      "elijah-on-mount-carmel",
+      "elijah-taken-to-heaven",
+      "elisha-ministry"
+    ],
+    "references": [
+      "1 Kings 18",
+      "2 Kings 2:1-14",
+      "2 Kings 2-13"
+    ],
+    "relatedPeople": [
+      "ahab",
+      "jezebel",
+      "god",
+      "elisha",
+      "naaman"
+    ],
+    "relatedPlaces": [
+      "mount-carmel",
+      "samaria",
+      "jordan-river",
+      "damascus"
+    ],
+    "books": []
+  },
+  {
+    "id": "elisha",
+    "name": "Elisha",
+    "nameMeaning": "God is salvation",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Prophet",
+    "nationality": "Israelite",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "prophet"
+    ],
+    "summary": "Elisha succeeded Elijah and ministered in the northern kingdom through signs and prophetic counsel.",
+    "events": [
+      "elijah-taken-to-heaven",
+      "elisha-ministry"
+    ],
+    "references": [
+      "2 Kings 2:1-14",
+      "2 Kings 2-13"
+    ],
+    "relatedPeople": [
+      "elijah",
+      "god",
+      "naaman"
+    ],
+    "relatedPlaces": [
+      "jordan-river",
+      "samaria",
+      "damascus"
+    ],
+    "books": []
+  },
+  {
+    "id": "naaman",
+    "name": "Naaman",
+    "nameMeaning": "Pleasant",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Aramean commander",
+    "nationality": "Aramean",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "commander"
+    ],
+    "summary": "Naaman was an Aramean commander healed through Elisha's prophetic word.",
+    "events": [
+      "elisha-ministry"
+    ],
+    "references": [
+      "2 Kings 2-13"
+    ],
+    "relatedPeople": [
+      "elisha",
+      "elijah",
+      "god"
+    ],
+    "relatedPlaces": [
+      "samaria",
+      "damascus",
+      "jordan-river"
+    ],
+    "books": []
+  },
+  {
+    "id": "jonah",
+    "name": "Jonah",
+    "nameMeaning": "Dove",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Prophet",
+    "nationality": "Israelite",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "prophet"
+    ],
+    "summary": "Jonah was the prophet sent to warn Nineveh.",
+    "events": [
+      "jonah-and-nineveh"
+    ],
+    "references": [
+      "Jonah 1-4"
+    ],
+    "relatedPeople": [
+      "god"
+    ],
+    "relatedPlaces": [
+      "nineveh"
+    ],
+    "books": []
+  },
+  {
+    "id": "amos",
+    "name": "Amos",
+    "nameMeaning": "Burden bearer",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Prophet",
+    "nationality": "Israelite",
+    "tribe": "Judah",
+    "kingdom": null,
+    "roles": [
+      "prophet"
+    ],
+    "summary": "Amos warned Israel about injustice, false worship, and coming judgment.",
+    "events": [
+      "amos-and-hosea-warn-israel"
+    ],
+    "references": [
+      "Amos; Hosea"
+    ],
+    "relatedPeople": [
+      "hosea",
+      "god"
+    ],
+    "relatedPlaces": [
+      "samaria"
+    ],
+    "books": []
+  },
+  {
+    "id": "hosea",
+    "name": "Hosea",
+    "nameMeaning": "Salvation",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Prophet",
+    "nationality": "Israelite",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "prophet"
+    ],
+    "summary": "Hosea warned the northern kingdom through a message of covenant betrayal and restoring mercy.",
+    "events": [
+      "amos-and-hosea-warn-israel",
+      "fall-of-samaria"
+    ],
+    "references": [
+      "Amos; Hosea",
+      "2 Kings 17"
+    ],
+    "relatedPeople": [
+      "amos",
+      "god"
+    ],
+    "relatedPlaces": [
+      "samaria"
+    ],
+    "books": []
+  },
+  {
+    "id": "isaiah",
+    "name": "Isaiah",
+    "nameMeaning": "The Lord saves",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Prophet",
+    "nationality": "Israelite",
+    "tribe": "Judah",
+    "kingdom": null,
+    "roles": [
+      "prophet"
+    ],
+    "summary": "Isaiah ministered in Judah during the Assyrian crisis and proclaimed judgment, comfort, and servant hope.",
+    "events": [
+      "hezekiah-and-sennacherib",
+      "isaiah-ministry"
+    ],
+    "references": [
+      "2 Kings 18-19",
+      "Isaiah 1-66"
+    ],
+    "relatedPeople": [
+      "hezekiah",
+      "sennacherib",
+      "god"
+    ],
+    "relatedPlaces": [
+      "jerusalem"
+    ],
+    "books": []
+  },
+  {
+    "id": "hezekiah",
+    "name": "Hezekiah",
+    "nameMeaning": "The Lord strengthens",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "King of Judah",
+    "nationality": "Israelite",
+    "tribe": "Judah",
+    "kingdom": null,
+    "roles": [
+      "king"
+    ],
+    "summary": "Hezekiah was a king of Judah who sought the Lord during Sennacherib's invasion.",
+    "events": [
+      "hezekiah-and-sennacherib",
+      "isaiah-ministry"
+    ],
+    "references": [
+      "2 Kings 18-19",
+      "Isaiah 1-66"
+    ],
+    "relatedPeople": [
+      "sennacherib",
+      "isaiah",
+      "god"
+    ],
+    "relatedPlaces": [
+      "jerusalem"
+    ],
+    "books": []
+  },
+  {
+    "id": "sennacherib",
+    "name": "Sennacherib",
+    "nameMeaning": null,
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "King of Assyria",
+    "nationality": "Assyrian",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "king"
+    ],
+    "summary": "Sennacherib was the Assyrian king who invaded Judah in 701 BC.",
+    "events": [
+      "hezekiah-and-sennacherib"
+    ],
+    "references": [
+      "2 Kings 18-19"
+    ],
+    "relatedPeople": [
+      "hezekiah",
+      "isaiah",
+      "god"
+    ],
+    "relatedPlaces": [
+      "jerusalem"
+    ],
+    "books": []
+  },
+  {
+    "id": "josiah",
+    "name": "Josiah",
+    "nameMeaning": "The Lord supports/heals",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "King of Judah",
+    "nationality": "Israelite",
+    "tribe": "Judah",
+    "kingdom": null,
+    "roles": [
+      "king"
+    ],
+    "summary": "Josiah was a reforming king of Judah who renewed the covenant after the law was found.",
+    "events": [
+      "josiahs-reforms",
+      "jeremiah-ministry"
+    ],
+    "references": [
+      "2 Kings 22-23",
+      "Jeremiah 1-52"
+    ],
+    "relatedPeople": [
+      "jeremiah",
+      "god",
+      "nebuchadnezzar"
+    ],
+    "relatedPlaces": [
+      "jerusalem",
+      "babylon"
+    ],
+    "books": []
+  },
+  {
+    "id": "jeremiah",
+    "name": "Jeremiah",
+    "nameMeaning": "The Lord appoints/exalts",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Prophet",
+    "nationality": "Israelite",
+    "tribe": "Benjamin",
+    "kingdom": null,
+    "roles": [
+      "prophet"
+    ],
+    "summary": "Jeremiah warned Judah before Jerusalem fell and promised a new covenant.",
+    "events": [
+      "josiahs-reforms",
+      "jeremiah-ministry",
+      "fall-of-jerusalem",
+      "ezekiel-ministry"
+    ],
+    "references": [
+      "2 Kings 22-23",
+      "Jeremiah 1-52",
+      "2 Kings 25",
+      "Ezekiel 1-48"
+    ],
+    "relatedPeople": [
+      "josiah",
+      "god",
+      "nebuchadnezzar",
+      "ezekiel"
+    ],
+    "relatedPlaces": [
+      "jerusalem",
+      "babylon"
+    ],
+    "books": []
+  },
+  {
+    "id": "nebuchadnezzar",
+    "name": "Nebuchadnezzar",
+    "nameMeaning": null,
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "King of Babylon",
+    "nationality": "Babylonian",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "king"
+    ],
+    "summary": "Nebuchadnezzar was the Babylonian king who conquered Jerusalem and ruled the exiles.",
+    "events": [
+      "jeremiah-ministry",
+      "fall-of-jerusalem",
+      "daniel-in-babylon",
+      "nebuchadnezzars-dream",
+      "fiery-furnace"
+    ],
+    "references": [
+      "Jeremiah 1-52",
+      "2 Kings 25",
+      "Daniel 1",
+      "Daniel 2",
+      "Daniel 3"
+    ],
+    "relatedPeople": [
+      "jeremiah",
+      "josiah",
+      "god",
+      "daniel",
+      "shadrach",
+      "meshach",
+      "abednego"
+    ],
+    "relatedPlaces": [
+      "jerusalem",
+      "babylon"
+    ],
+    "books": []
+  },
+  {
+    "id": "daniel",
+    "name": "Daniel",
+    "nameMeaning": "God is my judge",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Prophet and court official",
+    "nationality": "Jewish",
+    "tribe": "Judah",
+    "kingdom": null,
+    "roles": [
+      "prophet"
+    ],
+    "summary": "Daniel was a Judean exile who served in foreign courts and interpreted dreams and visions.",
+    "events": [
+      "daniel-in-babylon",
+      "nebuchadnezzars-dream",
+      "fiery-furnace",
+      "belshazzars-feast",
+      "daniel-in-the-lions-den"
+    ],
+    "references": [
+      "Daniel 1",
+      "Daniel 2",
+      "Daniel 3",
+      "Daniel 5",
+      "Daniel 6"
+    ],
+    "relatedPeople": [
+      "nebuchadnezzar",
+      "shadrach",
+      "meshach",
+      "abednego",
+      "god",
+      "belshazzar",
+      "darius-the-mede",
+      "cyrus"
+    ],
+    "relatedPlaces": [
+      "babylon"
+    ],
+    "books": []
+  },
+  {
+    "id": "shadrach",
+    "name": "Shadrach",
+    "nameMeaning": null,
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Court official",
+    "nationality": "Jewish",
+    "tribe": "Judah",
+    "kingdom": null,
+    "roles": [],
+    "summary": "Shadrach was one of Daniel's faithful friends in Babylon.",
+    "events": [
+      "daniel-in-babylon",
+      "nebuchadnezzars-dream",
+      "fiery-furnace"
+    ],
+    "references": [
+      "Daniel 1",
+      "Daniel 2",
+      "Daniel 3"
+    ],
+    "relatedPeople": [
+      "daniel",
+      "nebuchadnezzar",
+      "meshach",
+      "abednego",
+      "god"
+    ],
+    "relatedPlaces": [
+      "babylon"
+    ],
+    "books": []
+  },
+  {
+    "id": "meshach",
+    "name": "Meshach",
+    "nameMeaning": null,
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Court official",
+    "nationality": "Jewish",
+    "tribe": "Judah",
+    "kingdom": null,
+    "roles": [],
+    "summary": "Meshach was one of Daniel's faithful friends in Babylon.",
+    "events": [
+      "daniel-in-babylon",
+      "nebuchadnezzars-dream",
+      "fiery-furnace"
+    ],
+    "references": [
+      "Daniel 1",
+      "Daniel 2",
+      "Daniel 3"
+    ],
+    "relatedPeople": [
+      "daniel",
+      "nebuchadnezzar",
+      "shadrach",
+      "abednego",
+      "god"
+    ],
+    "relatedPlaces": [
+      "babylon"
+    ],
+    "books": []
+  },
+  {
+    "id": "abednego",
+    "name": "Abednego",
+    "nameMeaning": null,
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Court official",
+    "nationality": "Jewish",
+    "tribe": "Judah",
+    "kingdom": null,
+    "roles": [],
+    "summary": "Abednego was one of Daniel's faithful friends in Babylon.",
+    "events": [
+      "daniel-in-babylon",
+      "nebuchadnezzars-dream",
+      "fiery-furnace"
+    ],
+    "references": [
+      "Daniel 1",
+      "Daniel 2",
+      "Daniel 3"
+    ],
+    "relatedPeople": [
+      "daniel",
+      "nebuchadnezzar",
+      "shadrach",
+      "meshach",
+      "god"
+    ],
+    "relatedPlaces": [
+      "babylon"
+    ],
+    "books": []
+  },
+  {
+    "id": "ezekiel",
+    "name": "Ezekiel",
+    "nameMeaning": "God strengthens",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Prophet and priest",
+    "nationality": "Jewish",
+    "tribe": "Levi",
+    "kingdom": null,
+    "roles": [
+      "prophet",
+      "priest"
+    ],
+    "summary": "Ezekiel was a priest-prophet who ministered among the exiles in Babylon.",
+    "events": [
+      "ezekiel-ministry"
+    ],
+    "references": [
+      "Ezekiel 1-48"
+    ],
+    "relatedPeople": [
+      "jeremiah",
+      "god"
+    ],
+    "relatedPlaces": [
+      "babylon",
+      "jerusalem"
+    ],
+    "books": []
+  },
+  {
+    "id": "belshazzar",
+    "name": "Belshazzar",
+    "nameMeaning": null,
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Ruler in Babylon",
+    "nationality": "Babylonian",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "king"
+    ],
+    "summary": "Belshazzar was the Babylonian ruler in Daniel 5 when Babylon fell.",
+    "events": [
+      "belshazzars-feast"
+    ],
+    "references": [
+      "Daniel 5"
+    ],
+    "relatedPeople": [
+      "daniel",
+      "god"
+    ],
+    "relatedPlaces": [
+      "babylon"
+    ],
+    "books": []
+  },
+  {
+    "id": "darius-the-mede",
+    "name": "Darius the Mede",
+    "nameMeaning": null,
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Ruler",
+    "nationality": "Mede/Persian",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "king"
+    ],
+    "summary": "Darius the Mede is the ruler named in Daniel 6 during the transition after Babylon's fall.",
+    "events": [
+      "daniel-in-the-lions-den"
+    ],
+    "references": [
+      "Daniel 6"
+    ],
+    "relatedPeople": [
+      "daniel",
+      "cyrus",
+      "god"
+    ],
+    "relatedPlaces": [
+      "babylon"
+    ],
+    "books": []
+  },
+  {
+    "id": "cyrus",
+    "name": "Cyrus",
+    "nameMeaning": "Possibly sun or throne",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "King of Persia",
+    "nationality": "Persian",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "king"
+    ],
+    "summary": "Cyrus was the Persian king whose decree allowed the exiles to return and rebuild the temple.",
+    "events": [
+      "daniel-in-the-lions-den",
+      "cyrus-decree",
+      "temple-rebuilt"
+    ],
+    "references": [
+      "Daniel 6",
+      "Ezra 1",
+      "Ezra 3-6"
+    ],
+    "relatedPeople": [
+      "daniel",
+      "darius-the-mede",
+      "god",
+      "zerubbabel",
+      "haggai",
+      "zechariah"
+    ],
+    "relatedPlaces": [
+      "babylon",
+      "jerusalem"
+    ],
+    "books": []
+  },
+  {
+    "id": "zerubbabel",
+    "name": "Zerubbabel",
+    "nameMeaning": "Seed of Babylon",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Governor / Davidic descendant",
+    "nationality": "Jewish",
+    "tribe": "Judah",
+    "kingdom": null,
+    "roles": [
+      "governor"
+    ],
+    "summary": "Zerubbabel led early returnees and oversaw the rebuilding of the temple.",
+    "events": [
+      "cyrus-decree",
+      "temple-rebuilt"
+    ],
+    "references": [
+      "Ezra 1",
+      "Ezra 3-6"
+    ],
+    "relatedPeople": [
+      "cyrus",
+      "god",
+      "haggai",
+      "zechariah"
+    ],
+    "relatedPlaces": [
+      "babylon",
+      "jerusalem"
+    ],
+    "books": []
+  },
+  {
+    "id": "esther",
+    "name": "Esther",
+    "nameMeaning": "Star; Hadassah means myrtle",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Queen of Persia",
+    "nationality": "Jewish",
+    "tribe": "Benjamin",
+    "kingdom": null,
+    "roles": [
+      "queen"
+    ],
+    "summary": "Esther was the Jewish queen who interceded to save her people in Persia.",
+    "events": [
+      "esther-saves-her-people"
+    ],
+    "references": [
+      "Esther 1-10"
+    ],
+    "relatedPeople": [
+      "mordecai",
+      "ahasuerus",
+      "god"
+    ],
+    "relatedPlaces": [
+      "susa"
+    ],
+    "books": []
+  },
+  {
+    "id": "mordecai",
+    "name": "Mordecai",
+    "nameMeaning": null,
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Court official",
+    "nationality": "Jewish",
+    "tribe": "Benjamin",
+    "kingdom": null,
+    "roles": [],
+    "summary": "Mordecai was Esther's cousin and guardian who helped expose Haman's plot.",
+    "events": [
+      "esther-saves-her-people"
+    ],
+    "references": [
+      "Esther 1-10"
+    ],
+    "relatedPeople": [
+      "esther",
+      "ahasuerus",
+      "god"
+    ],
+    "relatedPlaces": [
+      "susa"
+    ],
+    "books": []
+  },
+  {
+    "id": "ahasuerus",
+    "name": "Ahasuerus",
+    "nameMeaning": null,
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "King of Persia",
+    "nationality": "Persian",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "king"
+    ],
+    "summary": "Ahasuerus was the Persian king in Esther, commonly identified with Xerxes I.",
+    "events": [
+      "esther-saves-her-people",
+      "ezra-returns"
+    ],
+    "references": [
+      "Esther 1-10",
+      "Ezra 7-10"
+    ],
+    "relatedPeople": [
+      "esther",
+      "mordecai",
+      "god",
+      "ezra"
+    ],
+    "relatedPlaces": [
+      "susa",
+      "jerusalem",
+      "babylon"
+    ],
+    "books": []
+  },
+  {
+    "id": "ezra",
+    "name": "Ezra",
+    "nameMeaning": "Help",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Priest and scribe",
+    "nationality": "Jewish",
+    "tribe": "Levi",
+    "kingdom": null,
+    "roles": [
+      "priest",
+      "scribe"
+    ],
+    "summary": "Ezra was a priest and scribe who taught the law in postexilic Jerusalem.",
+    "events": [
+      "ezra-returns",
+      "nehemiah-rebuilds-walls",
+      "malachi-ministry"
+    ],
+    "references": [
+      "Ezra 7-10",
+      "Nehemiah 1-6",
+      "Malachi 1-4"
+    ],
+    "relatedPeople": [
+      "ahasuerus",
+      "god",
+      "nehemiah",
+      "malachi"
+    ],
+    "relatedPlaces": [
+      "jerusalem",
+      "babylon",
+      "susa"
+    ],
+    "books": []
+  },
+  {
+    "id": "nehemiah",
+    "name": "Nehemiah",
+    "nameMeaning": "The Lord comforts",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Governor",
+    "nationality": "Jewish",
+    "tribe": "Judah",
+    "kingdom": null,
+    "roles": [
+      "governor"
+    ],
+    "summary": "Nehemiah led the rebuilding of Jerusalem's walls under Persian authority.",
+    "events": [
+      "nehemiah-rebuilds-walls",
+      "malachi-ministry"
+    ],
+    "references": [
+      "Nehemiah 1-6",
+      "Malachi 1-4"
+    ],
+    "relatedPeople": [
+      "ezra",
+      "god",
+      "malachi"
+    ],
+    "relatedPlaces": [
+      "jerusalem",
+      "susa"
+    ],
+    "books": []
+  },
+  {
+    "id": "haggai",
+    "name": "Haggai",
+    "nameMeaning": "Festive",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Prophet",
+    "nationality": "Jewish",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "prophet"
+    ],
+    "summary": "Haggai encouraged the returned exiles to finish rebuilding the temple.",
+    "events": [
+      "temple-rebuilt"
+    ],
+    "references": [
+      "Ezra 3-6"
+    ],
+    "relatedPeople": [
+      "zerubbabel",
+      "zechariah",
+      "cyrus",
+      "god"
+    ],
+    "relatedPlaces": [
+      "jerusalem"
+    ],
+    "books": []
+  },
+  {
+    "id": "zechariah",
+    "name": "Zechariah",
+    "nameMeaning": "The Lord remembers",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Prophet",
+    "nationality": "Jewish",
+    "tribe": "Levi",
+    "kingdom": null,
+    "roles": [
+      "prophet"
+    ],
+    "summary": "Zechariah encouraged the restored community with visions of renewal and future hope.",
+    "events": [
+      "temple-rebuilt"
+    ],
+    "references": [
+      "Ezra 3-6"
+    ],
+    "relatedPeople": [
+      "zerubbabel",
+      "haggai",
+      "cyrus",
+      "god"
+    ],
+    "relatedPlaces": [
+      "jerusalem"
+    ],
+    "books": []
+  },
+  {
+    "id": "malachi",
+    "name": "Malachi",
+    "nameMeaning": "My messenger",
+    "birth": null,
+    "death": null,
+    "parents": [],
+    "children": [],
+    "spouses": [],
+    "occupation": "Prophet",
+    "nationality": "Jewish",
+    "tribe": null,
+    "kingdom": null,
+    "roles": [
+      "prophet"
+    ],
+    "summary": "Malachi rebuked postexilic covenant unfaithfulness and promised a coming messenger.",
+    "events": [
+      "malachi-ministry",
+      "intertestamental-period"
+    ],
+    "references": [
+      "Malachi 1-4",
+      "(no canonical text; cf. Daniel 8; 11)"
+    ],
+    "relatedPeople": [
+      "ezra",
+      "nehemiah",
+      "god"
+    ],
+    "relatedPlaces": [
+      "jerusalem"
     ],
     "books": []
   }

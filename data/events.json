@@ -2746,7 +2746,8 @@
       "gaza"
     ],
     "relatedEvents": [
-      "samuel-called"
+      "samuel-called",
+      "saul-anointed-king"
     ],
     "keywords": [
       "ark",
@@ -2760,5 +2761,1924 @@
     "crossReferences": [],
     "prevEvent": "samuel-called",
     "nextEvent": "saul-anointed-king"
+  },
+  {
+    "id": "saul-anointed-king",
+    "name": "Saul Anointed King",
+    "order": 57,
+    "date": "approx. 1050 BC",
+    "dateSort": -1049,
+    "datePrecision": "traditional",
+    "era": "United Kingdom",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "1 Samuel 8-10",
+    "location": {
+      "placeId": "shiloh",
+      "name": "Shiloh",
+      "modernCountry": "West Bank",
+      "lat": 32.06,
+      "lng": 35.29
+    },
+    "mainPeople": [
+      "samuel",
+      "saul"
+    ],
+    "relatedPeople": [
+      "god"
+    ],
+    "relatedPlaces": [
+      "shiloh"
+    ],
+    "relatedEvents": [
+      "ark-captured-and-returned",
+      "saul-rejected"
+    ],
+    "keywords": [
+      "Saul",
+      "Samuel",
+      "king",
+      "monarchy"
+    ],
+    "summary": "Israel asks Samuel for a king, and God directs him to anoint Saul of Benjamin. Saul is publicly presented at Mizpah as Israel moves from judge-led leadership into monarchy.",
+    "longDescription": "Israel asks for a king like the surrounding nations, and Samuel warns them about the burdens royal rule will bring. God tells Samuel to heed the request while making clear that Israel is rejecting divine kingship, not merely Samuel's leadership.\n\nSaul, a Benjamite, is privately anointed and then publicly chosen by lot before the tribes. The event begins Israel's united monarchy and sets the tension that runs through 1 Samuel: the king must rule under the word of the Lord rather than imitate the power politics of the nations.",
+    "historicalNotes": "Historical reconstruction: The rise of monarchy in Israel fits the Iron Age pressure of Philistine military power and the need for centralized defense. Scholarly opinion: Dates for Saul are approximate and are usually reconstructed from the later regnal chronology of David and Solomon.",
+    "crossReferences": [
+      "Deuteronomy 17:14-20"
+    ],
+    "prevEvent": "ark-captured-and-returned",
+    "nextEvent": "saul-rejected"
+  },
+  {
+    "id": "saul-rejected",
+    "name": "Saul Rejected as King",
+    "order": 58,
+    "date": "approx. 1045 BC",
+    "dateSort": -1045,
+    "datePrecision": "traditional",
+    "era": "United Kingdom",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "1 Samuel 15",
+    "location": {
+      "placeId": "shiloh",
+      "name": "Shiloh",
+      "modernCountry": "West Bank",
+      "lat": 32.06,
+      "lng": 35.29
+    },
+    "mainPeople": [
+      "saul",
+      "samuel"
+    ],
+    "relatedPeople": [
+      "god"
+    ],
+    "relatedPlaces": [
+      "shiloh"
+    ],
+    "relatedEvents": [
+      "saul-anointed-king",
+      "david-anointed"
+    ],
+    "keywords": [
+      "Saul",
+      "Amalek",
+      "obedience",
+      "rejection"
+    ],
+    "summary": "Saul disobeys the command concerning Amalek and tries to justify his actions to Samuel. Samuel announces that the Lord has rejected Saul from continuing as king.",
+    "longDescription": "Saul defeats Amalek but spares Agag and keeps the best livestock, directly disobeying the command Samuel delivered. When confronted, Saul frames the spoil as material for sacrifice, but Samuel declares that obedience is better than sacrifice.\n\nThe rejection does not immediately remove Saul from the throne, but it marks the decisive theological break in his reign. From this point the narrative looks for a king whose rule will be shaped by covenant obedience rather than selective compliance.",
+    "historicalNotes": "Historical reconstruction: The Amalekite conflict reflects Israel's memory of long hostility with desert raiding groups. Scholarly opinion: The passage is primarily theological history, explaining why Saul's dynasty did not continue.",
+    "crossReferences": [
+      "1 Samuel 13:13-14"
+    ],
+    "prevEvent": "saul-anointed-king",
+    "nextEvent": "david-anointed"
+  },
+  {
+    "id": "david-anointed",
+    "name": "David Anointed",
+    "order": 59,
+    "date": "approx. 1040 BC",
+    "dateSort": -1040,
+    "datePrecision": "traditional",
+    "era": "United Kingdom",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "1 Samuel 16",
+    "location": {
+      "placeId": "bethlehem",
+      "name": "Bethlehem",
+      "modernCountry": "West Bank",
+      "lat": 31.705,
+      "lng": 35.2
+    },
+    "mainPeople": [
+      "samuel",
+      "david"
+    ],
+    "relatedPeople": [
+      "saul",
+      "god"
+    ],
+    "relatedPlaces": [
+      "bethlehem"
+    ],
+    "relatedEvents": [
+      "saul-rejected",
+      "david-and-goliath"
+    ],
+    "keywords": [
+      "David",
+      "anointed",
+      "Bethlehem",
+      "Samuel"
+    ],
+    "summary": "Samuel goes to Bethlehem and anoints David, the youngest son of Jesse. The Spirit of the Lord comes upon David while Saul's reign begins to unravel.",
+    "longDescription": "God sends Samuel to Jesse's house in Bethlehem, where outward appearance is set aside and David is chosen. The anointing is quiet and local, not yet a public transfer of the throne.\n\nDavid then enters Saul's orbit as a musician, bringing relief to the troubled king. The chapter places the rejected king and the chosen king side by side, preparing for the long conflict before David actually rules.",
+    "historicalNotes": "Scholarly opinion: David's early life is known mainly from biblical narrative, while later external evidence supports the historical memory of a Davidic royal house. Historical reconstruction: Bethlehem was a small Judean town, fitting the narrative's emphasis on unexpected selection.",
+    "crossReferences": [
+      "Psalm 78:70-72"
+    ],
+    "prevEvent": "saul-rejected",
+    "nextEvent": "david-and-goliath"
+  },
+  {
+    "id": "david-and-goliath",
+    "name": "David and Goliath",
+    "order": 60,
+    "date": "approx. 1035 BC",
+    "dateSort": -1035,
+    "datePrecision": "traditional",
+    "era": "United Kingdom",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "1 Samuel 17",
+    "location": {
+      "placeId": "valley-of-elah",
+      "name": "Valley of Elah",
+      "modernCountry": "Israel",
+      "lat": 31.69,
+      "lng": 34.98
+    },
+    "mainPeople": [
+      "david",
+      "goliath",
+      "saul"
+    ],
+    "relatedPeople": [
+      "jonathan",
+      "god"
+    ],
+    "relatedPlaces": [
+      "valley-of-elah"
+    ],
+    "relatedEvents": [
+      "david-anointed",
+      "david-flees-saul"
+    ],
+    "keywords": [
+      "David",
+      "Goliath",
+      "Philistines",
+      "Elah"
+    ],
+    "summary": "David confronts Goliath in the Valley of Elah while Saul and Israel fear the Philistine champion. David defeats him in the name of the Lord, and Israel wins a major victory.",
+    "longDescription": "Goliath challenges Israel's army, and David interprets the crisis as defiance against the living God. Refusing Saul's armor, David uses a sling and stone and then strikes down the Philistine champion.\n\nThe victory reveals David's faith and courage, but it also begins the fame that will provoke Saul's jealousy. The event is therefore both a deliverance story and the first public step toward David's rise.",
+    "historicalNotes": "Historical reconstruction: The Valley of Elah lay near the border zone where Israelite and Philistine forces contested control. Archaeological evidence: Excavations in the Shephelah show fortified Iron Age settlements in the wider region, though the individual combat itself is known from Scripture.",
+    "crossReferences": [
+      "1 Samuel 18:6-7"
+    ],
+    "prevEvent": "david-anointed",
+    "nextEvent": "david-flees-saul"
+  },
+  {
+    "id": "david-flees-saul",
+    "name": "David Flees Saul",
+    "order": 61,
+    "date": "approx. 1030-1010 BC",
+    "dateSort": -1030,
+    "datePrecision": "traditional",
+    "era": "United Kingdom",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "1 Samuel 18-31",
+    "location": {
+      "placeId": "en-gedi",
+      "name": "En-gedi",
+      "modernCountry": "Israel",
+      "lat": 31.46,
+      "lng": 35.39
+    },
+    "mainPeople": [
+      "david",
+      "saul",
+      "jonathan"
+    ],
+    "relatedPeople": [
+      "samuel",
+      "god"
+    ],
+    "relatedPlaces": [
+      "en-gedi",
+      "bethlehem"
+    ],
+    "relatedEvents": [
+      "david-and-goliath",
+      "david-becomes-king"
+    ],
+    "keywords": [
+      "David",
+      "Saul",
+      "Jonathan",
+      "fugitive"
+    ],
+    "summary": "Saul grows jealous of David and repeatedly seeks his life. David lives as a fugitive, spares Saul when he has opportunity, and waits for God to give the kingdom.",
+    "longDescription": "David's success, covenant friendship with Jonathan, and public acclaim intensify Saul's hostility. The chapters trace David through court danger, wilderness hiding places, Philistine territory, and repeated moral tests.\n\nDavid refuses to seize the throne by killing Saul, even when Saul is vulnerable at En-gedi. The long fugitive period forms David as a leader and contrasts his restraint with Saul's fear-driven rule.",
+    "historicalNotes": "Historical reconstruction: Wilderness strongholds around En-gedi provided natural refuge near the Dead Sea. Scholarly opinion: The narratives preserve court, clan, and frontier memories from the period before David consolidated rule.",
+    "crossReferences": [
+      "Psalm 57",
+      "Psalm 142"
+    ],
+    "prevEvent": "david-and-goliath",
+    "nextEvent": "david-becomes-king"
+  },
+  {
+    "id": "david-becomes-king",
+    "name": "David Becomes King",
+    "order": 62,
+    "date": "approx. 1010 BC",
+    "dateSort": -1010,
+    "datePrecision": "traditional",
+    "era": "United Kingdom",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "2 Samuel 2; 5",
+    "location": {
+      "placeId": "jerusalem",
+      "name": "Jerusalem",
+      "modernCountry": "Israel",
+      "lat": 31.778,
+      "lng": 35.235
+    },
+    "mainPeople": [
+      "david",
+      "joab"
+    ],
+    "relatedPeople": [
+      "saul",
+      "jonathan",
+      "god"
+    ],
+    "relatedPlaces": [
+      "jerusalem",
+      "hebron"
+    ],
+    "relatedEvents": [
+      "david-flees-saul",
+      "ark-brought-to-jerusalem"
+    ],
+    "keywords": [
+      "David",
+      "king",
+      "Hebron",
+      "Jerusalem"
+    ],
+    "summary": "After Saul's death, David is first made king over Judah at Hebron and later over all Israel. He captures Jerusalem and makes it his capital.",
+    "longDescription": "David mourns Saul and Jonathan, then begins ruling Judah from Hebron. After conflict with Saul's remaining house, the tribes of Israel come to David and acknowledge him as king.\n\nDavid takes Jerusalem, a strategically placed Jebusite stronghold, and establishes it as the political center of the united kingdom. This move gives Israel a capital not previously identified with one northern or southern tribe.",
+    "historicalNotes": "Archaeological evidence: The Tel Dan stele refers to the House of David, providing important extrabiblical evidence for a Davidic dynasty. Scholarly opinion: The scale of David's kingdom is debated, but Jerusalem became the enduring center of Judahite kingship.",
+    "crossReferences": [
+      "1 Chronicles 11"
+    ],
+    "prevEvent": "david-flees-saul",
+    "nextEvent": "ark-brought-to-jerusalem"
+  },
+  {
+    "id": "ark-brought-to-jerusalem",
+    "name": "Ark Brought to Jerusalem",
+    "order": 63,
+    "date": "approx. 1000 BC",
+    "dateSort": -1000,
+    "datePrecision": "traditional",
+    "era": "United Kingdom",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "2 Samuel 6",
+    "location": {
+      "placeId": "jerusalem",
+      "name": "Jerusalem",
+      "modernCountry": "Israel",
+      "lat": 31.778,
+      "lng": 35.235
+    },
+    "mainPeople": [
+      "david"
+    ],
+    "relatedPeople": [
+      "god"
+    ],
+    "relatedPlaces": [
+      "jerusalem"
+    ],
+    "relatedEvents": [
+      "david-becomes-king",
+      "davidic-covenant"
+    ],
+    "keywords": [
+      "ark",
+      "Jerusalem",
+      "David",
+      "worship"
+    ],
+    "summary": "David brings the ark of the covenant to Jerusalem with public worship. The event marks Jerusalem as both royal capital and central worship location.",
+    "longDescription": "David first attempts to bring the ark to Jerusalem but the death of Uzzah halts the procession and teaches the seriousness of holy worship. Afterward the ark is brought with sacrifices, music, and rejoicing.\n\nDavid's dancing before the Lord shows royal humility before Israel's true King. The ark's arrival links Jerusalem's political role to covenant worship and prepares for the later temple.",
+    "historicalNotes": "Historical reconstruction: Moving the ark to Jerusalem strengthened the city's national and religious role. Scholarly opinion: The narrative emphasizes ordered worship and covenant legitimacy more than administrative detail.",
+    "crossReferences": [
+      "1 Chronicles 13",
+      "1 Chronicles 15-16"
+    ],
+    "prevEvent": "david-becomes-king",
+    "nextEvent": "davidic-covenant"
+  },
+  {
+    "id": "davidic-covenant",
+    "name": "Davidic Covenant",
+    "order": 64,
+    "date": "approx. 1000 BC",
+    "dateSort": -999,
+    "datePrecision": "traditional",
+    "era": "United Kingdom",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "2 Samuel 7",
+    "location": {
+      "placeId": "jerusalem",
+      "name": "Jerusalem",
+      "modernCountry": "Israel",
+      "lat": 31.778,
+      "lng": 35.235
+    },
+    "mainPeople": [
+      "david",
+      "nathan"
+    ],
+    "relatedPeople": [
+      "solomon",
+      "god"
+    ],
+    "relatedPlaces": [
+      "jerusalem"
+    ],
+    "relatedEvents": [
+      "ark-brought-to-jerusalem",
+      "david-and-bathsheba"
+    ],
+    "keywords": [
+      "Davidic covenant",
+      "house",
+      "kingdom",
+      "promise"
+    ],
+    "summary": "David desires to build a house for the Lord, but God promises instead to build David a house. The covenant promises an enduring dynasty and shapes later messianic hope.",
+    "longDescription": "Through Nathan, God reminds David that divine grace, not royal achievement, established his rule. David will not build the temple, but his offspring will build the house for God's name.\n\nThe promise that David's throne will be established gives theological meaning to Judah's monarchy. Later biblical writers return to this covenant when interpreting the hope for a righteous Davidic king.",
+    "historicalNotes": "Scholarly opinion: 2 Samuel 7 is central to biblical royal theology and later messianic expectation. Historical reconstruction: Dynastic promises were remembered in Judah even after the monarchy fell, giving the text ongoing importance in exile and return.",
+    "crossReferences": [
+      "Psalm 89",
+      "Luke 1:32-33"
+    ],
+    "prevEvent": "ark-brought-to-jerusalem",
+    "nextEvent": "david-and-bathsheba"
+  },
+  {
+    "id": "david-and-bathsheba",
+    "name": "David and Bathsheba",
+    "order": 65,
+    "date": "approx. 990 BC",
+    "dateSort": -990,
+    "datePrecision": "traditional",
+    "era": "United Kingdom",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "2 Samuel 11-12",
+    "location": {
+      "placeId": "jerusalem",
+      "name": "Jerusalem",
+      "modernCountry": "Israel",
+      "lat": 31.778,
+      "lng": 35.235
+    },
+    "mainPeople": [
+      "david",
+      "bathsheba",
+      "nathan"
+    ],
+    "relatedPeople": [
+      "solomon",
+      "god"
+    ],
+    "relatedPlaces": [
+      "jerusalem"
+    ],
+    "relatedEvents": [
+      "davidic-covenant",
+      "absaloms-rebellion"
+    ],
+    "keywords": [
+      "David",
+      "Bathsheba",
+      "Nathan",
+      "repentance"
+    ],
+    "summary": "David takes Bathsheba and arranges Uriah's death, but Nathan confronts him with his sin. David repents, yet the consequences bring turmoil into his house.",
+    "longDescription": "While his army is at war, David abuses royal power by taking Bathsheba and then concealing the pregnancy through the arranged death of Uriah. Nathan exposes the sin through a parable and announces judgment within David's family.\n\nDavid confesses, and the Lord forgives him, but the narrative does not minimize the harm done. Solomon is later born to David and Bathsheba, keeping the royal line moving through grace after judgment.",
+    "historicalNotes": "Historical reconstruction: The account is unusually candid royal historiography, preserving a severe critique of Israel's most important king. Scholarly opinion: The passage explains later family violence in David's house as moral consequence, not mere court intrigue.",
+    "crossReferences": [
+      "Psalm 51"
+    ],
+    "prevEvent": "davidic-covenant",
+    "nextEvent": "absaloms-rebellion"
+  },
+  {
+    "id": "absaloms-rebellion",
+    "name": "Absalom's Rebellion",
+    "order": 66,
+    "date": "approx. 980 BC",
+    "dateSort": -980,
+    "datePrecision": "traditional",
+    "era": "United Kingdom",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "2 Samuel 15-18",
+    "location": {
+      "placeId": "jerusalem",
+      "name": "Jerusalem",
+      "modernCountry": "Israel",
+      "lat": 31.778,
+      "lng": 35.235
+    },
+    "mainPeople": [
+      "absalom",
+      "david",
+      "joab"
+    ],
+    "relatedPeople": [
+      "bathsheba",
+      "god"
+    ],
+    "relatedPlaces": [
+      "jerusalem"
+    ],
+    "relatedEvents": [
+      "david-and-bathsheba",
+      "solomon-becomes-king"
+    ],
+    "keywords": [
+      "Absalom",
+      "David",
+      "rebellion",
+      "Joab"
+    ],
+    "summary": "Absalom steals the hearts of Israel and launches a rebellion against David. David flees Jerusalem, Absalom is killed, and the king grieves over his son.",
+    "longDescription": "Absalom builds public support through calculated displays of concern for justice, then declares himself king at Hebron. David leaves Jerusalem to avoid immediate bloodshed, and the conflict becomes a national crisis.\n\nJoab's forces defeat Absalom's army, and Joab kills Absalom despite David's command to deal gently with him. The rebellion shows the bitter consequences within David's household and the fragility of royal power.",
+    "historicalNotes": "Historical reconstruction: Palace succession struggles were common in ancient monarchies, and the narrative presents Absalom's revolt in those terms while tying it to David's earlier sin. Scholarly opinion: The account preserves political realism alongside theological interpretation.",
+    "crossReferences": [
+      "2 Samuel 12:10-12"
+    ],
+    "prevEvent": "david-and-bathsheba",
+    "nextEvent": "solomon-becomes-king"
+  },
+  {
+    "id": "solomon-becomes-king",
+    "name": "Solomon Becomes King",
+    "order": 67,
+    "date": "approx. 970 BC",
+    "dateSort": -970,
+    "datePrecision": "traditional",
+    "era": "United Kingdom",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "1 Kings 1-2",
+    "location": {
+      "placeId": "jerusalem",
+      "name": "Jerusalem",
+      "modernCountry": "Israel",
+      "lat": 31.778,
+      "lng": 35.235
+    },
+    "mainPeople": [
+      "solomon",
+      "david",
+      "bathsheba",
+      "nathan"
+    ],
+    "relatedPeople": [
+      "joab",
+      "god"
+    ],
+    "relatedPlaces": [
+      "jerusalem"
+    ],
+    "relatedEvents": [
+      "absaloms-rebellion",
+      "solomons-wisdom"
+    ],
+    "keywords": [
+      "Solomon",
+      "David",
+      "succession",
+      "king"
+    ],
+    "summary": "As David nears death, Solomon is anointed king in Jerusalem. The succession secures the Davidic line after Adonijah's failed attempt to claim the throne.",
+    "longDescription": "Adonijah attempts to make himself king while David is old and weak, but Bathsheba and Nathan appeal to David's promise concerning Solomon. David orders Solomon anointed at Gihon, and the city receives him as king.\n\nDavid charges Solomon to walk in the Lord's ways and to govern decisively. The transition preserves the Davidic covenant line but also exposes the dangers of court rivalry around succession.",
+    "historicalNotes": "Historical reconstruction: Royal succession often involved public anointing, military support, and control of the capital. Scholarly opinion: The narrative frames Solomon's accession as legitimate because it rests on David's command and prophetic support.",
+    "crossReferences": [
+      "1 Chronicles 28-29"
+    ],
+    "prevEvent": "absaloms-rebellion",
+    "nextEvent": "solomons-wisdom"
+  },
+  {
+    "id": "solomons-wisdom",
+    "name": "Solomon's Wisdom",
+    "order": 68,
+    "date": "approx. 970 BC",
+    "dateSort": -969,
+    "datePrecision": "traditional",
+    "era": "United Kingdom",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "1 Kings 3",
+    "location": {
+      "placeId": "jerusalem",
+      "name": "Jerusalem",
+      "modernCountry": "Israel",
+      "lat": 31.778,
+      "lng": 35.235
+    },
+    "mainPeople": [
+      "solomon"
+    ],
+    "relatedPeople": [
+      "god"
+    ],
+    "relatedPlaces": [
+      "jerusalem"
+    ],
+    "relatedEvents": [
+      "solomon-becomes-king",
+      "temple-built"
+    ],
+    "keywords": [
+      "Solomon",
+      "wisdom",
+      "judgment",
+      "prayer"
+    ],
+    "summary": "Solomon asks God for wisdom to govern Israel rather than for long life or wealth. God grants wisdom and also gives riches and honor.",
+    "longDescription": "At Gibeon, Solomon recognizes his youth and the weight of ruling God's people. He asks for an understanding heart to discern between good and evil, and God approves the request.\n\nThe famous judgment between two women demonstrates practical wisdom in public justice. Solomon's reign begins with divine generosity, but the gift also creates responsibility to walk faithfully.",
+    "historicalNotes": "Scholarly opinion: Solomon's wisdom traditions are linked with Israel's later wisdom literature. Historical reconstruction: Ancient Near Eastern kings were expected to embody justice, and 1 Kings presents Solomon's wisdom as a divine gift for that task.",
+    "crossReferences": [
+      "Proverbs 1:1",
+      "Ecclesiastes 1:1"
+    ],
+    "prevEvent": "solomon-becomes-king",
+    "nextEvent": "temple-built"
+  },
+  {
+    "id": "temple-built",
+    "name": "Temple Built",
+    "order": 69,
+    "date": "approx. 966-959 BC",
+    "dateSort": -966,
+    "datePrecision": "traditional",
+    "era": "United Kingdom",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "1 Kings 6-8",
+    "location": {
+      "placeId": "jerusalem",
+      "name": "Jerusalem",
+      "modernCountry": "Israel",
+      "lat": 31.778,
+      "lng": 35.235
+    },
+    "mainPeople": [
+      "solomon"
+    ],
+    "relatedPeople": [
+      "david",
+      "god"
+    ],
+    "relatedPlaces": [
+      "jerusalem"
+    ],
+    "relatedEvents": [
+      "solomons-wisdom",
+      "queen-of-sheba"
+    ],
+    "keywords": [
+      "Solomon",
+      "temple",
+      "Jerusalem",
+      "dedication"
+    ],
+    "summary": "Solomon builds and dedicates the temple in Jerusalem. The ark is placed inside, and Solomon prays that God will hear his people when they pray toward this house.",
+    "longDescription": "Solomon begins building the temple in the fourth year of his reign, using costly materials and skilled labor. The temple gives permanent architectural expression to Israel's worship, though Solomon confesses that heaven itself cannot contain God.\n\nAt the dedication, the glory of the Lord fills the house, and Solomon prays for mercy, justice, forgiveness, and restoration. The prayer anticipates exile and return, making the temple both a place of worship and a witness to covenant accountability.",
+    "historicalNotes": "Historical reconstruction: The first temple stood in Jerusalem until the Babylonian destruction in 586 BC. Scholarly opinion: Its exact architectural details are known from biblical description; no uncontested remains of Solomon's temple are available for direct excavation.",
+    "crossReferences": [
+      "2 Chronicles 3-7"
+    ],
+    "prevEvent": "solomons-wisdom",
+    "nextEvent": "queen-of-sheba"
+  },
+  {
+    "id": "queen-of-sheba",
+    "name": "Queen of Sheba Visits Solomon",
+    "order": 70,
+    "date": "approx. 950 BC",
+    "dateSort": -950,
+    "datePrecision": "traditional",
+    "era": "United Kingdom",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "1 Kings 10",
+    "location": {
+      "placeId": "jerusalem",
+      "name": "Jerusalem",
+      "modernCountry": "Israel",
+      "lat": 31.778,
+      "lng": 35.235
+    },
+    "mainPeople": [
+      "solomon"
+    ],
+    "relatedPeople": [
+      "god"
+    ],
+    "relatedPlaces": [
+      "jerusalem"
+    ],
+    "relatedEvents": [
+      "temple-built",
+      "solomons-decline"
+    ],
+    "keywords": [
+      "Queen of Sheba",
+      "Solomon",
+      "wisdom",
+      "wealth"
+    ],
+    "summary": "The queen of Sheba visits Solomon to test his wisdom with hard questions. She praises the Lord when she sees Solomon's wisdom, wealth, and ordered kingdom.",
+    "longDescription": "The queen arrives with a large caravan and questions Solomon extensively. The narrative presents Solomon's wisdom and prosperity as internationally recognized, fulfilling the promise of honor given in 1 Kings 3.\n\nHer praise directs attention beyond Solomon to the Lord who loved Israel and set him on the throne. The episode is a high point before the account turns to the dangers of wealth, horses, and foreign alliances.",
+    "historicalNotes": "Historical reconstruction: Sheba is commonly associated with South Arabian trade networks, though the exact identity of the queen is not independently attested. Scholarly opinion: The account reflects the prestige of long-distance trade and royal diplomacy.",
+    "crossReferences": [
+      "Matthew 12:42"
+    ],
+    "prevEvent": "temple-built",
+    "nextEvent": "solomons-decline"
+  },
+  {
+    "id": "solomons-decline",
+    "name": "Solomon's Decline",
+    "order": 71,
+    "date": "approx. 940-930 BC",
+    "dateSort": -940,
+    "datePrecision": "traditional",
+    "era": "United Kingdom",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "1 Kings 11",
+    "location": {
+      "placeId": "jerusalem",
+      "name": "Jerusalem",
+      "modernCountry": "Israel",
+      "lat": 31.778,
+      "lng": 35.235
+    },
+    "mainPeople": [
+      "solomon"
+    ],
+    "relatedPeople": [
+      "rehoboam",
+      "jeroboam",
+      "god"
+    ],
+    "relatedPlaces": [
+      "jerusalem"
+    ],
+    "relatedEvents": [
+      "queen-of-sheba",
+      "kingdom-divides"
+    ],
+    "keywords": [
+      "Solomon",
+      "idolatry",
+      "decline",
+      "Jeroboam"
+    ],
+    "summary": "Solomon's foreign marriages turn his heart after other gods. God announces that the kingdom will be torn from his house, though one tribe will remain for David's sake.",
+    "longDescription": "Solomon's later reign contradicts the covenant warnings for Israel's king. Foreign alliances and idolatrous worship draw his heart away from the Lord, and adversaries rise against him.\n\nThe prophet Ahijah announces that Jeroboam will receive ten tribes after Solomon's death. The united kingdom ends not simply because of politics but because covenant unfaithfulness fractures the royal house.",
+    "historicalNotes": "Historical reconstruction: Solomon's reign likely involved extensive labor, taxation, diplomacy, and trade, factors that help explain later northern resentment. Scholarly opinion: 1 Kings interprets the division chiefly through covenant faithfulness and idolatry.",
+    "crossReferences": [
+      "Deuteronomy 17:16-17"
+    ],
+    "prevEvent": "queen-of-sheba",
+    "nextEvent": "kingdom-divides"
+  },
+  {
+    "id": "kingdom-divides",
+    "name": "Kingdom Divides",
+    "order": 72,
+    "date": "approx. 930 BC",
+    "dateSort": -930,
+    "datePrecision": "historical",
+    "era": "Divided Kingdom",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "1 Kings 12",
+    "location": {
+      "placeId": "jerusalem",
+      "name": "Jerusalem",
+      "modernCountry": "Israel",
+      "lat": 31.778,
+      "lng": 35.235
+    },
+    "mainPeople": [
+      "rehoboam",
+      "jeroboam"
+    ],
+    "relatedPeople": [
+      "solomon",
+      "god"
+    ],
+    "relatedPlaces": [
+      "jerusalem"
+    ],
+    "relatedEvents": [
+      "solomons-decline",
+      "elijah-on-mount-carmel"
+    ],
+    "keywords": [
+      "Kingdom",
+      "Divides"
+    ],
+    "summary": "After Solomon dies, Rehoboam rejects the elders' counsel and the northern tribes follow Jeroboam. Israel and Judah become separate kingdoms.",
+    "longDescription": "Rehoboam's harsh answer to the northern tribes turns their grievance into revolt. Jeroboam becomes king over Israel, while Rehoboam continues the Davidic line in Judah.\n\nJeroboam establishes alternate worship centers to keep the north from returning to Jerusalem. The division becomes the political and spiritual setting for the ministries of Elijah, Elisha, Amos, Hosea, Isaiah, Jeremiah, and later prophets.",
+    "historicalNotes": "Historical reconstruction: The division reflects regional tensions, taxation, and forced labor after Solomon. Scholarly opinion: The biblical account interprets those pressures through Solomon's idolatry and Rehoboam's folly.",
+    "crossReferences": [],
+    "prevEvent": "solomons-decline",
+    "nextEvent": "elijah-on-mount-carmel"
+  },
+  {
+    "id": "elijah-on-mount-carmel",
+    "name": "Elijah on Mount Carmel",
+    "order": 73,
+    "date": "approx. 860 BC",
+    "dateSort": -860,
+    "datePrecision": "approximate",
+    "era": "Divided Kingdom",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "1 Kings 18",
+    "location": {
+      "placeId": "mount-carmel",
+      "name": "Mount Carmel",
+      "modernCountry": "Israel",
+      "lat": 32.73,
+      "lng": 35.05
+    },
+    "mainPeople": [
+      "elijah",
+      "ahab",
+      "jezebel"
+    ],
+    "relatedPeople": [
+      "god"
+    ],
+    "relatedPlaces": [
+      "mount-carmel",
+      "samaria"
+    ],
+    "relatedEvents": [
+      "kingdom-divides",
+      "elijah-taken-to-heaven"
+    ],
+    "keywords": [
+      "Elijah",
+      "on",
+      "Mount",
+      "Carmel"
+    ],
+    "summary": "Elijah confronts Ahab, the prophets of Baal, and Israel on Mount Carmel. The Lord answers by fire, exposing Baal as powerless and calling Israel back to covenant loyalty.",
+    "longDescription": "Elijah gathers Israel and asks why they are limping between two opinions. The prophets of Baal cry out without answer, but Elijah repairs the Lord's altar, prays, and fire falls from heaven.\n\nThe event is a covenant confrontation, not a contest of technique. It exposes the religious crisis under Ahab and Jezebel and prepares for Elijah's flight, despair, and renewed commission.",
+    "historicalNotes": "Historical reconstruction: Mount Carmel overlooked territories influenced by Phoenician Baal worship, making it a fitting site for the confrontation. Scholarly opinion: The account is theological narrative focused on exclusive worship of the Lord.",
+    "crossReferences": [],
+    "prevEvent": "kingdom-divides",
+    "nextEvent": "elijah-taken-to-heaven"
+  },
+  {
+    "id": "elijah-taken-to-heaven",
+    "name": "Elijah Taken to Heaven",
+    "order": 74,
+    "date": "approx. 850 BC",
+    "dateSort": -850,
+    "datePrecision": "approximate",
+    "era": "Divided Kingdom",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "2 Kings 2:1-14",
+    "location": {
+      "placeId": "jordan-river"
+    },
+    "mainPeople": [
+      "elijah",
+      "elisha"
+    ],
+    "relatedPeople": [
+      "god"
+    ],
+    "relatedPlaces": [
+      "jordan-river"
+    ],
+    "relatedEvents": [
+      "elijah-on-mount-carmel",
+      "elisha-ministry"
+    ],
+    "keywords": [
+      "Elijah",
+      "Taken",
+      "to",
+      "Heaven"
+    ],
+    "summary": "Elijah crosses the Jordan with Elisha and is taken up by a whirlwind. Elisha receives Elijah's mantle and begins his prophetic ministry.",
+    "longDescription": "Elisha refuses to leave Elijah as they travel from Gilgal to Bethel, Jericho, and the Jordan. After Elijah is taken, Elisha takes up the mantle and strikes the water, showing continuity in prophetic authority.\n\nThe transition joins judgment and hope: the prophetic word will continue in Israel even after Elijah's departure. Elisha's ministry follows with signs of mercy, warning, and judgment.",
+    "historicalNotes": "Historical reconstruction: The Jordan crossing deliberately echoes earlier acts of divine power in Israel's story. Scholarly opinion: The account presents prophetic succession through divine authorization rather than institutional appointment.",
+    "crossReferences": [],
+    "prevEvent": "elijah-on-mount-carmel",
+    "nextEvent": "elisha-ministry"
+  },
+  {
+    "id": "elisha-ministry",
+    "name": "Elisha's Ministry",
+    "order": 75,
+    "date": "approx. 850-800 BC",
+    "dateSort": -849,
+    "datePrecision": "approximate",
+    "era": "Divided Kingdom",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "2 Kings 2-13",
+    "location": {
+      "placeId": "samaria",
+      "name": "Samaria",
+      "modernCountry": "West Bank",
+      "lat": 32.28,
+      "lng": 35.2
+    },
+    "mainPeople": [
+      "elisha",
+      "naaman"
+    ],
+    "relatedPeople": [
+      "elijah",
+      "god"
+    ],
+    "relatedPlaces": [
+      "samaria",
+      "damascus",
+      "jordan-river"
+    ],
+    "relatedEvents": [
+      "elijah-taken-to-heaven",
+      "jonah-and-nineveh"
+    ],
+    "keywords": [
+      "Elishas",
+      "Ministry"
+    ],
+    "summary": "Elisha ministers in the northern kingdom through miracles, counsel, and prophetic warnings. His work touches kings, widows, soldiers, foreigners, and the suffering people of Israel.",
+    "longDescription": "Elisha's ministry spans several reigns in Israel and includes acts of provision, healing, resurrection, and military counsel. The healing of Naaman shows that the God of Israel is not limited by national borders or social rank.\n\nThe duration of the ministry gives the books of Kings a long prophetic witness in the north. Elisha's signs show mercy while his warnings expose the kingdom's continuing instability and unbelief.",
+    "historicalNotes": "Historical reconstruction: The Aramean conflicts in the Elisha narratives fit the ninth-century struggle between Israel and Damascus. Scholarly opinion: The miracle cycles preserve prophetic traditions centered on the northern kingdom.",
+    "crossReferences": [],
+    "prevEvent": "elijah-taken-to-heaven",
+    "nextEvent": "jonah-and-nineveh"
+  },
+  {
+    "id": "jonah-and-nineveh",
+    "name": "Jonah and Nineveh",
+    "order": 76,
+    "date": "approx. 780 BC",
+    "dateSort": -780,
+    "datePrecision": "approximate",
+    "era": "Divided Kingdom",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Jonah 1-4",
+    "location": {
+      "placeId": "nineveh",
+      "name": "Nineveh",
+      "modernCountry": "Iraq",
+      "lat": 36.36,
+      "lng": 43.15
+    },
+    "mainPeople": [
+      "jonah"
+    ],
+    "relatedPeople": [
+      "god"
+    ],
+    "relatedPlaces": [
+      "nineveh"
+    ],
+    "relatedEvents": [
+      "elisha-ministry",
+      "amos-and-hosea-warn-israel"
+    ],
+    "keywords": [
+      "Jonah",
+      "and",
+      "Nineveh"
+    ],
+    "summary": "Jonah is sent to Nineveh, flees, and is brought back to his mission through divine discipline. Nineveh repents at his warning, and God exposes Jonah's resentment of mercy.",
+    "longDescription": "Jonah attempts to run from the Lord by sea, but the storm, the great fish, and the renewed commission bring him to Nineveh. His brief warning leads the city to humble itself, and God relents from the announced disaster.\n\nThe book presses Israel to recognize the wideness of divine mercy. Jonah's anger over Nineveh's repentance reveals how difficult grace can be when it is extended to enemies.",
+    "historicalNotes": "Historical reconstruction: Nineveh was a major Assyrian city, though it became imperial capital later under Sennacherib. Scholarly opinion: The book uses historical setting and prophetic satire to teach God's compassion toward nations.",
+    "crossReferences": [],
+    "prevEvent": "elisha-ministry",
+    "nextEvent": "amos-and-hosea-warn-israel"
+  },
+  {
+    "id": "amos-and-hosea-warn-israel",
+    "name": "Amos and Hosea Warn Israel",
+    "order": 77,
+    "date": "approx. 760-725 BC",
+    "dateSort": -760,
+    "datePrecision": "approximate",
+    "era": "Divided Kingdom",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Amos; Hosea",
+    "location": {
+      "placeId": "samaria",
+      "name": "Samaria",
+      "modernCountry": "West Bank",
+      "lat": 32.28,
+      "lng": 35.2
+    },
+    "mainPeople": [
+      "amos",
+      "hosea"
+    ],
+    "relatedPeople": [
+      "god"
+    ],
+    "relatedPlaces": [
+      "samaria"
+    ],
+    "relatedEvents": [
+      "jonah-and-nineveh",
+      "fall-of-samaria"
+    ],
+    "keywords": [
+      "Amos",
+      "and",
+      "Hosea",
+      "Warn",
+      "Israel"
+    ],
+    "summary": "Amos and Hosea warn the northern kingdom that injustice, idolatry, and covenant betrayal will bring judgment. Their messages also hold out hope for restoration beyond punishment.",
+    "longDescription": "Amos denounces oppression, false worship, and complacency during a period of prosperity. Hosea portrays Israel's unfaithfulness through the language of a broken marriage, calling the people to return to the Lord.\n\nTogether these prophets interpret Israel's decline before Assyria not as bad luck but as covenant judgment. Their ministry spans years of warning before Samaria finally falls.",
+    "historicalNotes": "Historical reconstruction: The eighth century BC brought Assyrian expansion and pressure on Israel and Judah. Scholarly opinion: Amos and Hosea are among the earliest writing prophets and preserve major evidence for northern Israel's religious crisis.",
+    "crossReferences": [],
+    "prevEvent": "jonah-and-nineveh",
+    "nextEvent": "fall-of-samaria"
+  },
+  {
+    "id": "fall-of-samaria",
+    "name": "Fall of Samaria",
+    "order": 78,
+    "date": "722 BC",
+    "dateSort": -722,
+    "datePrecision": "historical",
+    "era": "Divided Kingdom",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "2 Kings 17",
+    "location": {
+      "placeId": "samaria",
+      "name": "Samaria",
+      "modernCountry": "West Bank",
+      "lat": 32.28,
+      "lng": 35.2
+    },
+    "mainPeople": [
+      "hosea"
+    ],
+    "relatedPeople": [
+      "god"
+    ],
+    "relatedPlaces": [
+      "samaria"
+    ],
+    "relatedEvents": [
+      "amos-and-hosea-warn-israel",
+      "hezekiah-and-sennacherib"
+    ],
+    "keywords": [
+      "Fall",
+      "of",
+      "Samaria"
+    ],
+    "summary": "Assyria captures Samaria and exiles the northern kingdom of Israel. The biblical writer explains the fall as the result of persistent idolatry and refusal to heed the prophets.",
+    "longDescription": "After years of Assyrian pressure, Samaria falls and many Israelites are deported. Foreign populations are settled in the land, reshaping the region that later becomes associated with the Samaritans.\n\n2 Kings 17 gives a theological explanation: Israel feared other gods, rejected the covenant, and ignored prophetic warnings. The northern kingdom ends as a political state, while Judah remains under growing Assyrian threat.",
+    "historicalNotes": "Archaeological evidence: Assyrian royal inscriptions describe campaigns and deportations connected with the fall of Samaria. Historical reconstruction: The fall is dated to 722 BC, during the transition from Shalmaneser V to Sargon II.",
+    "crossReferences": [],
+    "prevEvent": "amos-and-hosea-warn-israel",
+    "nextEvent": "hezekiah-and-sennacherib"
+  },
+  {
+    "id": "hezekiah-and-sennacherib",
+    "name": "Hezekiah and Sennacherib",
+    "order": 79,
+    "date": "701 BC",
+    "dateSort": -701,
+    "datePrecision": "historical",
+    "era": "Divided Kingdom",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "2 Kings 18-19",
+    "location": {
+      "placeId": "jerusalem",
+      "name": "Jerusalem",
+      "modernCountry": "Israel",
+      "lat": 31.778,
+      "lng": 35.235
+    },
+    "mainPeople": [
+      "hezekiah",
+      "sennacherib",
+      "isaiah"
+    ],
+    "relatedPeople": [
+      "god"
+    ],
+    "relatedPlaces": [
+      "jerusalem"
+    ],
+    "relatedEvents": [
+      "fall-of-samaria",
+      "isaiah-ministry"
+    ],
+    "keywords": [
+      "Hezekiah",
+      "and",
+      "Sennacherib"
+    ],
+    "summary": "Sennacherib of Assyria invades Judah and threatens Jerusalem during Hezekiah's reign. Hezekiah seeks the Lord, Isaiah delivers God's word, and Jerusalem is spared.",
+    "longDescription": "Assyria captures fortified cities of Judah and sends officials to intimidate Jerusalem. Hezekiah brings the threat before the Lord, and Isaiah announces that the Assyrian king will not take the city.\n\nThe deliverance preserves Jerusalem but leaves Judah deeply damaged. The event becomes one of the clearest points where biblical narrative and external imperial records overlap.",
+    "historicalNotes": "Archaeological evidence: Sennacherib's prism records his 701 BC campaign and says he shut Hezekiah in Jerusalem like a bird in a cage. Archaeological evidence: The Lachish reliefs depict the Assyrian siege of Lachish, matching the campaign context in 2 Kings.",
+    "crossReferences": [],
+    "prevEvent": "fall-of-samaria",
+    "nextEvent": "isaiah-ministry"
+  },
+  {
+    "id": "isaiah-ministry",
+    "name": "Isaiah's Ministry",
+    "order": 80,
+    "date": "approx. 740-681 BC",
+    "dateSort": -700,
+    "datePrecision": "approximate",
+    "era": "Divided Kingdom",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Isaiah 1-66",
+    "location": {
+      "placeId": "jerusalem",
+      "name": "Jerusalem",
+      "modernCountry": "Israel",
+      "lat": 31.778,
+      "lng": 35.235
+    },
+    "mainPeople": [
+      "isaiah",
+      "hezekiah"
+    ],
+    "relatedPeople": [
+      "god"
+    ],
+    "relatedPlaces": [
+      "jerusalem"
+    ],
+    "relatedEvents": [
+      "hezekiah-and-sennacherib",
+      "josiahs-reforms"
+    ],
+    "keywords": [
+      "Isaiahs",
+      "Ministry"
+    ],
+    "summary": "Isaiah ministers in Judah across the reigns of Uzziah, Jotham, Ahaz, and Hezekiah. He announces judgment, calls for trust in the Lord, and gives sweeping promises of restoration and a coming servant.",
+    "longDescription": "Isaiah's ministry spans decades of Assyrian pressure, royal crisis, and spiritual compromise in Judah. He warns against empty religion and foreign dependence while calling the people to holiness and faith.\n\nThe book also looks beyond immediate judgment to comfort, return, and the Lord's servant. Its long horizon connects eighth-century Judah with exile, restoration, and later messianic hope.",
+    "historicalNotes": "Historical reconstruction: Isaiah's call is dated to the year King Uzziah died, commonly placed around 740 BC. Scholarly opinion: The book contains material addressing multiple historical horizons, including Assyrian crisis, Babylonian exile, and restoration hope.",
+    "crossReferences": [],
+    "prevEvent": "hezekiah-and-sennacherib",
+    "nextEvent": "josiahs-reforms"
+  },
+  {
+    "id": "josiahs-reforms",
+    "name": "Josiah's Reforms",
+    "order": 81,
+    "date": "622 BC",
+    "dateSort": -622,
+    "datePrecision": "historical",
+    "era": "Divided Kingdom",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "2 Kings 22-23",
+    "location": {
+      "placeId": "jerusalem",
+      "name": "Jerusalem",
+      "modernCountry": "Israel",
+      "lat": 31.778,
+      "lng": 35.235
+    },
+    "mainPeople": [
+      "josiah"
+    ],
+    "relatedPeople": [
+      "jeremiah",
+      "god"
+    ],
+    "relatedPlaces": [
+      "jerusalem"
+    ],
+    "relatedEvents": [
+      "isaiah-ministry",
+      "jeremiah-ministry"
+    ],
+    "keywords": [
+      "Josiahs",
+      "Reforms"
+    ],
+    "summary": "Josiah repairs the temple, hears the Book of the Law, and leads Judah in covenant renewal. He removes idolatrous practices and celebrates Passover, though judgment on Judah is not fully turned away.",
+    "longDescription": "The discovery of the law during temple repairs leads Josiah to humble himself before the Lord. He gathers the people, renews the covenant, and carries out reforms against unauthorized worship.\n\nJosiah's reforms are the last major covenant renewal before Judah's fall. The narrative honors his wholehearted obedience while still showing that generations of sin have brought Judah near judgment.",
+    "historicalNotes": "Historical reconstruction: Josiah's reform fits the late seventh-century weakening of Assyrian control and renewed Judean independence. Scholarly opinion: Many scholars connect the discovered law with Deuteronomic covenant traditions.",
+    "crossReferences": [],
+    "prevEvent": "isaiah-ministry",
+    "nextEvent": "jeremiah-ministry"
+  },
+  {
+    "id": "jeremiah-ministry",
+    "name": "Jeremiah's Ministry",
+    "order": 82,
+    "date": "approx. 627-586 BC",
+    "dateSort": -605,
+    "datePrecision": "approximate",
+    "era": "Divided Kingdom",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Jeremiah 1-52",
+    "location": {
+      "placeId": "jerusalem",
+      "name": "Jerusalem",
+      "modernCountry": "Israel",
+      "lat": 31.778,
+      "lng": 35.235
+    },
+    "mainPeople": [
+      "jeremiah",
+      "nebuchadnezzar"
+    ],
+    "relatedPeople": [
+      "josiah",
+      "god"
+    ],
+    "relatedPlaces": [
+      "jerusalem",
+      "babylon"
+    ],
+    "relatedEvents": [
+      "josiahs-reforms",
+      "fall-of-jerusalem"
+    ],
+    "keywords": [
+      "Jeremiahs",
+      "Ministry"
+    ],
+    "summary": "Jeremiah ministers from Josiah's reign through Jerusalem's destruction. He warns Judah to surrender to Babylonian judgment while also promising a new covenant and future restoration.",
+    "longDescription": "Jeremiah's ministry spans the final decades of Judah, from reform hopes under Josiah to crisis under Babylon. He confronts false confidence in the temple, calls for repentance, and suffers rejection for announcing judgment.\n\nThe duration of his ministry lets the book document the slow collapse of Judah's political and spiritual life. Yet Jeremiah also promises that God will write his law on the heart and restore his people after exile.",
+    "historicalNotes": "Historical reconstruction: Jeremiah's career overlaps the rise of Babylon after Assyria's decline and Egypt's failed intervention. Archaeological evidence: Bullae from late monarchic Judah preserve names also known from Jeremiah, though not every identification is certain.",
+    "crossReferences": [],
+    "prevEvent": "josiahs-reforms",
+    "nextEvent": "fall-of-jerusalem"
+  },
+  {
+    "id": "fall-of-jerusalem",
+    "name": "Fall of Jerusalem",
+    "order": 83,
+    "date": "586 BC",
+    "dateSort": -586,
+    "datePrecision": "historical",
+    "era": "Divided Kingdom",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "2 Kings 25",
+    "location": {
+      "placeId": "jerusalem",
+      "name": "Jerusalem",
+      "modernCountry": "Israel",
+      "lat": 31.778,
+      "lng": 35.235
+    },
+    "mainPeople": [
+      "nebuchadnezzar",
+      "jeremiah"
+    ],
+    "relatedPeople": [
+      "god"
+    ],
+    "relatedPlaces": [
+      "jerusalem",
+      "babylon"
+    ],
+    "relatedEvents": [
+      "jeremiah-ministry",
+      "daniel-in-babylon"
+    ],
+    "keywords": [
+      "Fall",
+      "of",
+      "Jerusalem"
+    ],
+    "summary": "Babylon destroys Jerusalem and the temple and exiles many people of Judah. The fall marks the end of the Davidic monarchy as a ruling institution in the land.",
+    "longDescription": "After rebellion against Babylon, Jerusalem is besieged, breached, and burned. The temple, palace, and city walls are destroyed, and leading survivors are taken into exile.\n\nThe event is the great covenant catastrophe of the Old Testament historical books. It confirms prophetic warnings while creating the setting for exile hope, restoration promises, and the longing for renewed Davidic rule.",
+    "historicalNotes": "Archaeological evidence: Burn layers and destruction remains in Jerusalem correspond to the Babylonian destruction horizon. Historical reconstruction: The fall of Jerusalem is dated to 586 BC, with Babylonian imperial activity also reflected in external chronicle evidence.",
+    "crossReferences": [],
+    "prevEvent": "jeremiah-ministry",
+    "nextEvent": "daniel-in-babylon"
+  },
+  {
+    "id": "daniel-in-babylon",
+    "name": "Daniel in Babylon",
+    "order": 84,
+    "date": "605 BC",
+    "dateSort": -585,
+    "datePrecision": "historical",
+    "era": "Exile",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Daniel 1",
+    "location": {
+      "placeId": "babylon",
+      "name": "Babylon",
+      "modernCountry": "Iraq",
+      "lat": 32.54,
+      "lng": 44.42
+    },
+    "mainPeople": [
+      "daniel",
+      "nebuchadnezzar",
+      "shadrach",
+      "meshach",
+      "abednego"
+    ],
+    "relatedPeople": [
+      "god"
+    ],
+    "relatedPlaces": [
+      "babylon"
+    ],
+    "relatedEvents": [
+      "fall-of-jerusalem",
+      "nebuchadnezzars-dream"
+    ],
+    "keywords": [
+      "Daniel",
+      "in",
+      "Babylon"
+    ],
+    "summary": "Daniel and his friends are taken to Babylon and trained for royal service. They remain faithful in diet and worship, and God gives them wisdom.",
+    "longDescription": "Daniel 1 opens the exile by showing young Judeans serving in Babylon without surrendering covenant identity. Their refusal of the royal food tests whether faithfulness can survive away from the land and temple.\n\nGod gives Daniel and his friends wisdom and favor, placing them in positions where they will bear witness before imperial rulers. The event introduces the exilic question of how God's people live faithfully under foreign power.",
+    "historicalNotes": "Historical reconstruction: The first Babylonian deportations from Judah began before Jerusalem's final destruction. Scholarly opinion: Daniel 1 is set in the early Babylonian period and frames the court stories that follow.",
+    "crossReferences": [],
+    "prevEvent": "fall-of-jerusalem",
+    "nextEvent": "nebuchadnezzars-dream"
+  },
+  {
+    "id": "nebuchadnezzars-dream",
+    "name": "Nebuchadnezzar's Dream",
+    "order": 85,
+    "date": "approx. 603 BC",
+    "dateSort": -584,
+    "datePrecision": "approximate",
+    "era": "Exile",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Daniel 2",
+    "location": {
+      "placeId": "babylon",
+      "name": "Babylon",
+      "modernCountry": "Iraq",
+      "lat": 32.54,
+      "lng": 44.42
+    },
+    "mainPeople": [
+      "daniel",
+      "nebuchadnezzar"
+    ],
+    "relatedPeople": [
+      "shadrach",
+      "meshach",
+      "abednego",
+      "god"
+    ],
+    "relatedPlaces": [
+      "babylon"
+    ],
+    "relatedEvents": [
+      "daniel-in-babylon",
+      "fiery-furnace"
+    ],
+    "keywords": [
+      "Nebuchadnezzars",
+      "Dream"
+    ],
+    "summary": "Daniel interprets Nebuchadnezzar's dream of a great statue and a stone that becomes a mountain. The dream declares that earthly kingdoms rise and fall under God's rule.",
+    "longDescription": "Nebuchadnezzar demands both the dream and its interpretation, exposing the limits of Babylon's wise men. Daniel prays with his friends, receives the mystery from God, and gives credit to the God who reveals secrets.\n\nThe dream places Babylon within a larger sequence of kingdoms and announces a kingdom established by God. In exile, Daniel's interpretation teaches that imperial power is real but not ultimate.",
+    "historicalNotes": "Scholarly opinion: Interpretations of the statue's kingdoms vary, but the central claim is clear: God rules over history. Historical reconstruction: Babylonian courts valued divination and dream interpretation, making Daniel's role culturally recognizable.",
+    "crossReferences": [],
+    "prevEvent": "daniel-in-babylon",
+    "nextEvent": "fiery-furnace"
+  },
+  {
+    "id": "fiery-furnace",
+    "name": "Fiery Furnace",
+    "order": 86,
+    "date": "approx. 600 BC",
+    "dateSort": -583,
+    "datePrecision": "approximate",
+    "era": "Exile",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Daniel 3",
+    "location": {
+      "placeId": "babylon",
+      "name": "Babylon",
+      "modernCountry": "Iraq",
+      "lat": 32.54,
+      "lng": 44.42
+    },
+    "mainPeople": [
+      "shadrach",
+      "meshach",
+      "abednego",
+      "nebuchadnezzar"
+    ],
+    "relatedPeople": [
+      "daniel",
+      "god"
+    ],
+    "relatedPlaces": [
+      "babylon"
+    ],
+    "relatedEvents": [
+      "nebuchadnezzars-dream",
+      "ezekiel-ministry"
+    ],
+    "keywords": [
+      "Fiery",
+      "Furnace"
+    ],
+    "summary": "Shadrach, Meshach, and Abednego refuse to worship Nebuchadnezzar's image. God preserves them in the furnace, and the king acknowledges their deliverer.",
+    "longDescription": "The three Judean officials refuse idolatrous worship even under threat of death. Their answer leaves room for either deliverance or martyrdom, but not for compromise.\n\nWhen they are thrown into the furnace, a fourth figure appears with them and they emerge unharmed. The story shows covenant loyalty under pressure and God's power to save in exile.",
+    "historicalNotes": "Historical reconstruction: Imperial images and loyalty ceremonies were common tools of royal authority. Scholarly opinion: The account functions as a model of faithful resistance to idolatrous state power.",
+    "crossReferences": [],
+    "prevEvent": "nebuchadnezzars-dream",
+    "nextEvent": "ezekiel-ministry"
+  },
+  {
+    "id": "ezekiel-ministry",
+    "name": "Ezekiel's Ministry",
+    "order": 87,
+    "date": "approx. 593-571 BC",
+    "dateSort": -582,
+    "datePrecision": "historical",
+    "era": "Exile",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Ezekiel 1-48",
+    "location": {
+      "placeId": "babylon",
+      "name": "Babylon",
+      "modernCountry": "Iraq",
+      "lat": 32.54,
+      "lng": 44.42
+    },
+    "mainPeople": [
+      "ezekiel"
+    ],
+    "relatedPeople": [
+      "jeremiah",
+      "god"
+    ],
+    "relatedPlaces": [
+      "babylon",
+      "jerusalem"
+    ],
+    "relatedEvents": [
+      "fiery-furnace",
+      "belshazzars-feast"
+    ],
+    "keywords": [
+      "Ezekiels",
+      "Ministry"
+    ],
+    "summary": "Ezekiel ministers among the exiles in Babylon before and after Jerusalem's fall. He announces judgment, explains the exile, and promises restoration, a new heart, and a renewed temple vision.",
+    "longDescription": "Ezekiel is called by the Kebar canal and sees the glory of the Lord far from Jerusalem. His ministry spans the years around the city's destruction, confronting idolatry and false hope among the exiles.\n\nAfter news of Jerusalem's fall, Ezekiel's message turns strongly toward restoration. He promises renewed shepherding, a new heart and spirit, national resurrection imagery, and a final vision of ordered worship.",
+    "historicalNotes": "Historical reconstruction: Ezekiel dates several visions, beginning in 593 BC among Judean exiles in Babylonia. Scholarly opinion: His ministry bridges priestly concerns, prophetic judgment, and restoration hope during the exile.",
+    "crossReferences": [],
+    "prevEvent": "fiery-furnace",
+    "nextEvent": "belshazzars-feast"
+  },
+  {
+    "id": "belshazzars-feast",
+    "name": "Belshazzar's Feast",
+    "order": 88,
+    "date": "539 BC",
+    "dateSort": -581,
+    "datePrecision": "historical",
+    "era": "Exile",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Daniel 5",
+    "location": {
+      "placeId": "babylon",
+      "name": "Babylon",
+      "modernCountry": "Iraq",
+      "lat": 32.54,
+      "lng": 44.42
+    },
+    "mainPeople": [
+      "belshazzar",
+      "daniel"
+    ],
+    "relatedPeople": [
+      "god"
+    ],
+    "relatedPlaces": [
+      "babylon"
+    ],
+    "relatedEvents": [
+      "ezekiel-ministry",
+      "daniel-in-the-lions-den"
+    ],
+    "keywords": [
+      "Belshazzars",
+      "Feast"
+    ],
+    "summary": "Belshazzar profanes vessels from the Jerusalem temple during a feast. Daniel interprets the writing on the wall, and Babylon falls that night.",
+    "longDescription": "Belshazzar's feast treats the holy vessels as trophies for idol praise. The mysterious writing announces that his kingdom has been weighed and given to the Medes and Persians.\n\nDaniel's interpretation marks the end of Babylonian dominance in the book. The fall opens the way for Persian rule and the later decree allowing return.",
+    "historicalNotes": "Historical reconstruction: Babylon fell to Cyrus in 539 BC. Archaeological evidence: Babylonian records identify Belshazzar as the son of Nabonidus who exercised royal authority, explaining his role in Daniel's court setting.",
+    "crossReferences": [],
+    "prevEvent": "ezekiel-ministry",
+    "nextEvent": "daniel-in-the-lions-den"
+  },
+  {
+    "id": "daniel-in-the-lions-den",
+    "name": "Daniel in the Lions' Den",
+    "order": 89,
+    "date": "approx. 538 BC",
+    "dateSort": -580,
+    "datePrecision": "historical",
+    "era": "Exile",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Daniel 6",
+    "location": {
+      "placeId": "babylon",
+      "name": "Babylon",
+      "modernCountry": "Iraq",
+      "lat": 32.54,
+      "lng": 44.42
+    },
+    "mainPeople": [
+      "daniel",
+      "darius-the-mede"
+    ],
+    "relatedPeople": [
+      "cyrus",
+      "god"
+    ],
+    "relatedPlaces": [
+      "babylon"
+    ],
+    "relatedEvents": [
+      "belshazzars-feast",
+      "cyrus-decree"
+    ],
+    "keywords": [
+      "Daniel",
+      "in",
+      "the",
+      "Lions",
+      "Den"
+    ],
+    "summary": "Daniel continues praying to God despite a royal prohibition and is thrown into a lions' den. God preserves him, and the king publicly honors Daniel's God.",
+    "longDescription": "Daniel's enemies exploit his faithfulness by persuading the king to issue a law against petitioning anyone but the king. Daniel keeps his regular pattern of prayer, making his loyalty visible rather than defensive.\n\nGod shuts the lions' mouths, and Daniel is vindicated. The story continues the exile theme that faithful witness can endure under changing empires.",
+    "historicalNotes": "Scholarly opinion: The identity of Darius the Mede is debated, with proposals ranging from a title or governor to a literary designation for early Persian rule. Historical reconstruction: The story is placed at the transition from Babylonian to Medo-Persian authority.",
+    "crossReferences": [],
+    "prevEvent": "belshazzars-feast",
+    "nextEvent": "cyrus-decree"
+  },
+  {
+    "id": "cyrus-decree",
+    "name": "Cyrus's Decree",
+    "order": 90,
+    "date": "538 BC",
+    "dateSort": -579,
+    "datePrecision": "historical",
+    "era": "Return from Exile",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Ezra 1",
+    "location": {
+      "placeId": "babylon",
+      "name": "Babylon",
+      "modernCountry": "Iraq",
+      "lat": 32.54,
+      "lng": 44.42
+    },
+    "mainPeople": [
+      "cyrus",
+      "zerubbabel"
+    ],
+    "relatedPeople": [
+      "god"
+    ],
+    "relatedPlaces": [
+      "babylon",
+      "jerusalem"
+    ],
+    "relatedEvents": [
+      "daniel-in-the-lions-den",
+      "temple-rebuilt"
+    ],
+    "keywords": [
+      "Cyruss",
+      "Decree"
+    ],
+    "summary": "Cyrus of Persia issues a decree allowing the Jews to return and rebuild the temple in Jerusalem. The return from exile begins under Persian rule.",
+    "longDescription": "Ezra opens by connecting Cyrus's decree to the word of the Lord spoken by Jeremiah. Cyrus authorizes return, temple rebuilding, and the restoration of temple vessels taken by Nebuchadnezzar.\n\nThe decree does not end all hardship, but it begins the restoration period. Exiles return in stages, rebuild worship, and live as a covenant community under imperial oversight.",
+    "historicalNotes": "Archaeological evidence: The Cyrus Cylinder shows Cyrus's broader policy of restoring sanctuaries and repatriating divine images, though it does not name Judah. Historical reconstruction: The decree is dated to 538 BC, shortly after Persia took Babylon.",
+    "crossReferences": [],
+    "prevEvent": "daniel-in-the-lions-den",
+    "nextEvent": "temple-rebuilt"
+  },
+  {
+    "id": "temple-rebuilt",
+    "name": "Temple Rebuilt",
+    "order": 91,
+    "date": "516 BC",
+    "dateSort": -516,
+    "datePrecision": "historical",
+    "era": "Return from Exile",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Ezra 3-6",
+    "location": {
+      "placeId": "jerusalem",
+      "name": "Jerusalem",
+      "modernCountry": "Israel",
+      "lat": 31.778,
+      "lng": 35.235
+    },
+    "mainPeople": [
+      "zerubbabel",
+      "haggai",
+      "zechariah"
+    ],
+    "relatedPeople": [
+      "cyrus",
+      "god"
+    ],
+    "relatedPlaces": [
+      "jerusalem"
+    ],
+    "relatedEvents": [
+      "cyrus-decree",
+      "esther-saves-her-people"
+    ],
+    "keywords": [
+      "Temple",
+      "Rebuilt"
+    ],
+    "summary": "The returned exiles rebuild the altar and eventually complete the second temple. Prophets Haggai and Zechariah encourage the people to finish the work despite opposition and delay.",
+    "longDescription": "The returnees first restore sacrifice, then lay the temple foundation amid both joy and grief. Opposition and discouragement halt progress until Haggai and Zechariah call the community back to obedience.\n\nThe temple is completed in 516 BC, giving the restored community a renewed center for worship. It is smaller than Solomon's temple, but it marks a major act of covenant restoration after exile.",
+    "historicalNotes": "Historical reconstruction: The second temple was completed in the sixth year of Darius I, commonly dated 516 BC. Scholarly opinion: Ezra 3-6 combines local restoration memory with Persian administrative correspondence.",
+    "crossReferences": [],
+    "prevEvent": "cyrus-decree",
+    "nextEvent": "esther-saves-her-people"
+  },
+  {
+    "id": "esther-saves-her-people",
+    "name": "Esther Saves Her People",
+    "order": 92,
+    "date": "approx. 474 BC",
+    "dateSort": -474,
+    "datePrecision": "historical",
+    "era": "Return from Exile",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Esther 1-10",
+    "location": {
+      "placeId": "susa",
+      "name": "Susa",
+      "modernCountry": "Iran",
+      "lat": 32.19,
+      "lng": 48.25
+    },
+    "mainPeople": [
+      "esther",
+      "mordecai",
+      "ahasuerus"
+    ],
+    "relatedPeople": [
+      "god"
+    ],
+    "relatedPlaces": [
+      "susa"
+    ],
+    "relatedEvents": [
+      "temple-rebuilt",
+      "ezra-returns"
+    ],
+    "keywords": [
+      "Esther",
+      "Saves",
+      "Her",
+      "People"
+    ],
+    "summary": "Esther becomes queen in Persia and risks her life to intercede for her people. Haman's plot is overturned, and the Jews are delivered from destruction.",
+    "longDescription": "Esther lives in the Persian court under Ahasuerus, traditionally identified with Xerxes I. When Haman plots against the Jews, Mordecai urges Esther to act, and she approaches the king at great personal risk.\n\nThe reversal of Haman's plan leads to Jewish deliverance and the celebration of Purim. The book never names God directly, yet it portrays providence working through timing, courage, and reversal.",
+    "historicalNotes": "Historical reconstruction: Susa was a major Persian royal city, and Ahasuerus is commonly identified with Xerxes I. Scholarly opinion: Esther reflects Jewish life in diaspora and the vulnerability of minority communities under imperial power.",
+    "crossReferences": [],
+    "prevEvent": "temple-rebuilt",
+    "nextEvent": "ezra-returns"
+  },
+  {
+    "id": "ezra-returns",
+    "name": "Ezra Returns",
+    "order": 93,
+    "date": "458 BC",
+    "dateSort": -458,
+    "datePrecision": "historical",
+    "era": "Return from Exile",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Ezra 7-10",
+    "location": {
+      "placeId": "jerusalem",
+      "name": "Jerusalem",
+      "modernCountry": "Israel",
+      "lat": 31.778,
+      "lng": 35.235
+    },
+    "mainPeople": [
+      "ezra",
+      "ahasuerus"
+    ],
+    "relatedPeople": [
+      "god"
+    ],
+    "relatedPlaces": [
+      "jerusalem",
+      "babylon"
+    ],
+    "relatedEvents": [
+      "esther-saves-her-people",
+      "nehemiah-rebuilds-walls"
+    ],
+    "keywords": [
+      "Ezra",
+      "Returns"
+    ],
+    "summary": "Ezra the priest and scribe returns to Jerusalem with authority to teach the law. He leads reforms aimed at covenant faithfulness among the restored community.",
+    "longDescription": "Ezra comes from Babylon to Jerusalem with Persian authorization and a mission centered on the law of Moses. His calling is to study, practice, and teach the law in Israel.\n\nThe reforms in Ezra 9-10 address covenant compromise after the return. The episode is difficult and sobering, showing that restoration from exile still requires holiness and communal obedience.",
+    "historicalNotes": "Historical reconstruction: Ezra's return is commonly dated to 458 BC during the reign of Artaxerxes I. Scholarly opinion: Ezra represents the growing importance of scribal teaching and Torah-centered community identity in the postexilic period.",
+    "crossReferences": [],
+    "prevEvent": "esther-saves-her-people",
+    "nextEvent": "nehemiah-rebuilds-walls"
+  },
+  {
+    "id": "nehemiah-rebuilds-walls",
+    "name": "Nehemiah Rebuilds the Walls",
+    "order": 94,
+    "date": "445 BC",
+    "dateSort": -445,
+    "datePrecision": "historical",
+    "era": "Return from Exile",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Nehemiah 1-6",
+    "location": {
+      "placeId": "jerusalem",
+      "name": "Jerusalem",
+      "modernCountry": "Israel",
+      "lat": 31.778,
+      "lng": 35.235
+    },
+    "mainPeople": [
+      "nehemiah",
+      "ezra"
+    ],
+    "relatedPeople": [
+      "god"
+    ],
+    "relatedPlaces": [
+      "jerusalem",
+      "susa"
+    ],
+    "relatedEvents": [
+      "ezra-returns",
+      "malachi-ministry"
+    ],
+    "keywords": [
+      "Nehemiah",
+      "Rebuilds",
+      "the",
+      "Walls"
+    ],
+    "summary": "Nehemiah receives permission from Persia to rebuild Jerusalem's walls. Despite opposition, the work is completed and the city gains renewed security.",
+    "longDescription": "Nehemiah hears that Jerusalem's walls are broken and prays before asking the Persian king for permission to go. In Jerusalem he organizes the work, answers opposition, and keeps the people focused.\n\nThe wall is completed in a remarkably short period, strengthening the restored community. Nehemiah's leadership combines prayer, planning, courage, and public accountability.",
+    "historicalNotes": "Historical reconstruction: Nehemiah served under Artaxerxes I, and the wall rebuilding is commonly dated to 445 BC. Archaeological evidence: Persian-period remains in Jerusalem are debated, but the city was smaller and more fragile than in the late monarchy.",
+    "crossReferences": [],
+    "prevEvent": "ezra-returns",
+    "nextEvent": "malachi-ministry"
+  },
+  {
+    "id": "malachi-ministry",
+    "name": "Malachi's Ministry",
+    "order": 95,
+    "date": "approx. 430-400 BC",
+    "dateSort": -430,
+    "datePrecision": "approximate",
+    "era": "Return from Exile",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "Malachi 1-4",
+    "location": {
+      "placeId": "jerusalem",
+      "name": "Jerusalem",
+      "modernCountry": "Israel",
+      "lat": 31.778,
+      "lng": 35.235
+    },
+    "mainPeople": [
+      "malachi"
+    ],
+    "relatedPeople": [
+      "ezra",
+      "nehemiah",
+      "god"
+    ],
+    "relatedPlaces": [
+      "jerusalem"
+    ],
+    "relatedEvents": [
+      "nehemiah-rebuilds-walls",
+      "intertestamental-period"
+    ],
+    "keywords": [
+      "Malachis",
+      "Ministry"
+    ],
+    "summary": "Malachi addresses the restored community after temple worship has resumed. He rebukes corrupt worship, covenant unfaithfulness, and spiritual cynicism while promising the coming day of the Lord.",
+    "longDescription": "Malachi's ministry belongs to the later postexilic period, when the temple stands but devotion has grown careless. Priests offer blemished sacrifices, the people question God's justice, and covenant faithfulness is weak.\n\nThe book closes the Old Testament prophetic witness by calling for covenant remembrance and future hope. It anticipates a messenger who will prepare the way before the Lord comes.",
+    "historicalNotes": "Scholarly opinion: Malachi is usually dated to the fifth century BC because its concerns fit the Persian-period restored community. Historical reconstruction: The ministry likely followed the rebuilding of the temple and overlaps the kinds of issues addressed by Ezra and Nehemiah.",
+    "crossReferences": [],
+    "prevEvent": "nehemiah-rebuilds-walls",
+    "nextEvent": "intertestamental-period"
+  },
+  {
+    "id": "intertestamental-period",
+    "name": "Intertestamental Period",
+    "order": 96,
+    "date": "approx. 400-4 BC",
+    "dateSort": -400,
+    "datePrecision": "historical",
+    "era": "Between the Testaments",
+    "book": null,
+    "chapter": null,
+    "verseStart": null,
+    "verseEnd": null,
+    "reference": "(no canonical text; cf. Daniel 8; 11)",
+    "location": {
+      "placeId": "jerusalem",
+      "name": "Jerusalem",
+      "modernCountry": "Israel",
+      "lat": 31.778,
+      "lng": 35.235
+    },
+    "mainPeople": [
+      "malachi"
+    ],
+    "relatedPeople": [
+      "god"
+    ],
+    "relatedPlaces": [
+      "jerusalem"
+    ],
+    "relatedEvents": [
+      "malachi-ministry",
+      "birth-of-john-the-baptist-foretold"
+    ],
+    "keywords": [
+      "Intertestamental",
+      "Period"
+    ],
+    "summary": "After Malachi, the biblical timeline enters the period between the Old and New Testaments. Persian, Hellenistic, Maccabean, and Roman rule reshape the world into which the New Testament opens.",
+    "longDescription": "This period is historical reconstruction rather than a narrative section of the Protestant Old Testament canon. Judah moves from Persian rule into the Hellenistic age after Alexander the Great, then through Ptolemaic and Seleucid control, the Maccabean revolt, Hasmonean rule, and eventually Roman dominance.\n\nMajor developments include the spread of Greek language and culture, the Septuagint translation, the growth of synagogue life, and the rise of groups such as Pharisees and Sadducees. These developments form the historical background for the Gospels without adding new canonical events between Malachi and the New Testament opening.",
+    "historicalNotes": "Historical reconstruction: The period includes Persian, Hellenistic, Maccabean, Hasmonean, and Roman phases before the birth narratives. Scholarly opinion: Daniel 8 and 11 are often discussed in relation to later Hellenistic conflicts, but this event is framed as historical background rather than direct narrative record.",
+    "crossReferences": [],
+    "prevEvent": "malachi-ministry",
+    "nextEvent": "birth-of-john-the-baptist-foretold"
   }
 ]

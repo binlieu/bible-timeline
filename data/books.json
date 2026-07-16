@@ -1,5 +1,122 @@
 [
-  { "id": "genesis", "name": "Genesis", "testament": "OT", "orderInCanon": 1, "author": "Traditionally Moses", "date": "approx. 1445-1405 BC (traditional)", "period": "Creation through the patriarchs", "timelinePlacement": "Creation to Joseph's death", "majorEvents": ["creation", "fall", "flood", "babel", "call-of-abraham", "isaac-born", "jacob-esau", "joseph-egypt"], "majorPeople": ["adam", "eve", "noah", "abraham", "isaac", "jacob", "joseph"], "majorPlaces": ["eden", "ur", "canaan", "egypt", "babel"], "outline": ["1-11 Primeval history", "12-50 Patriarchs"], "keyVerses": ["Genesis 1:1", "Genesis 12:1-3"], "connections": [{ "bookId": "exodus", "note": "Exodus continues Israel's story from family in Egypt to redeemed nation." }] },
-  { "id": "exodus", "name": "Exodus", "testament": "OT", "orderInCanon": 2, "author": "Traditionally Moses", "date": "approx. 1445-1405 BC (traditional)", "period": "Israel's deliverance from Egypt and covenant at Sinai", "timelinePlacement": "From slavery in Egypt to Sinai", "majorEvents": ["exodus-egypt", "ten-commandments"], "majorPeople": ["moses"], "majorPlaces": ["egypt", "mount-sinai"], "outline": ["1-18 Deliverance from Egypt", "19-24 Covenant at Sinai", "25-40 Tabernacle instructions and construction"], "keyVerses": ["Exodus 3:14", "Exodus 20:2"], "connections": [{ "bookId": "genesis", "note": "Exodus fulfills God's promise to remember Abraham, Isaac, and Jacob." }] },
-  { "id": "2-samuel", "name": "2 Samuel", "testament": "OT", "orderInCanon": 10, "author": "Traditionally associated with prophetic sources", "date": "final form after David's reign", "period": "United monarchy under David", "timelinePlacement": "David's reign over Judah and Israel", "majorEvents": ["davids-reign"], "majorPeople": ["david"], "majorPlaces": ["jerusalem", "bethlehem"], "outline": ["1-5 David becomes king", "6-10 Jerusalem and covenant promises", "11-24 David's sin, consequences, and final years"], "keyVerses": ["2 Samuel 7:12-16"], "connections": [{ "bookId": "genesis", "note": "The Davidic promise develops the earlier promise of blessing and kingship." }] }
+  {
+    "id": "genesis",
+    "name": "Genesis",
+    "testament": "OT",
+    "orderInCanon": 1,
+    "author": "Traditionally Moses",
+    "date": "approx. 1445-1405 BC (traditional)",
+    "period": "Creation through the patriarchs",
+    "timelinePlacement": "Creation to Joseph's death",
+    "majorEvents": [
+      "creation",
+      "fall",
+      "flood",
+      "babel",
+      "call-of-abraham",
+      "isaac-born",
+      "jacob-esau",
+      "joseph-egypt"
+    ],
+    "majorPeople": [
+      "adam",
+      "eve",
+      "noah",
+      "abraham",
+      "isaac",
+      "jacob",
+      "joseph"
+    ],
+    "majorPlaces": [
+      "eden",
+      "ur",
+      "canaan",
+      "egypt",
+      "babel"
+    ],
+    "outline": [
+      "1-11 Primeval history",
+      "12-50 Patriarchs"
+    ],
+    "keyVerses": [
+      "Genesis 1:1",
+      "Genesis 12:1-3"
+    ],
+    "connections": [
+      {
+        "bookId": "exodus",
+        "note": "Exodus continues Israel's story from family in Egypt to redeemed nation."
+      }
+    ]
+  },
+  {
+    "id": "exodus",
+    "name": "Exodus",
+    "testament": "OT",
+    "orderInCanon": 2,
+    "author": "Traditionally Moses",
+    "date": "approx. 1445-1405 BC (traditional)",
+    "period": "Israel's deliverance from Egypt and covenant at Sinai",
+    "timelinePlacement": "From slavery in Egypt to Sinai",
+    "majorEvents": [
+      "exodus-egypt",
+      "ten-commandments"
+    ],
+    "majorPeople": [
+      "moses"
+    ],
+    "majorPlaces": [
+      "egypt",
+      "mount-sinai"
+    ],
+    "outline": [
+      "1-18 Deliverance from Egypt",
+      "19-24 Covenant at Sinai",
+      "25-40 Tabernacle instructions and construction"
+    ],
+    "keyVerses": [
+      "Exodus 3:14",
+      "Exodus 20:2"
+    ],
+    "connections": [
+      {
+        "bookId": "genesis",
+        "note": "Exodus fulfills God's promise to remember Abraham, Isaac, and Jacob."
+      }
+    ]
+  },
+  {
+    "id": "2-samuel",
+    "name": "2 Samuel",
+    "testament": "OT",
+    "orderInCanon": 10,
+    "author": "Traditionally associated with prophetic sources",
+    "date": "final form after David's reign",
+    "period": "United monarchy under David",
+    "timelinePlacement": "David's reign over Judah and Israel",
+    "majorEvents": [
+      "david-becomes-king"
+    ],
+    "majorPeople": [
+      "david"
+    ],
+    "majorPlaces": [
+      "jerusalem",
+      "bethlehem"
+    ],
+    "outline": [
+      "1-5 David becomes king",
+      "6-10 Jerusalem and covenant promises",
+      "11-24 David's sin, consequences, and final years"
+    ],
+    "keyVerses": [
+      "2 Samuel 7:12-16"
+    ],
+    "connections": [
+      {
+        "bookId": "genesis",
+        "note": "The Davidic promise develops the earlier promise of blessing and kingship."
+      }
+    ]
+  }
 ]
