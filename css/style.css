@@ -254,6 +254,17 @@ select:focus-visible {
   box-shadow: var(--shadow);
 }
 
+/* Transparent bridge across the gap between the toggle and the panel so the
+   pointer never leaves .nav-group while moving from the toggle to the menu. */
+.nav-group > .nav-menu::before {
+  content: "";
+  position: absolute;
+  top: -0.5rem;
+  left: 0;
+  right: 0;
+  height: 0.5rem;
+}
+
 .nav-group.open > .nav-menu,
 .nav-group-toggle[aria-expanded="true"] + .nav-menu {
   display: block;

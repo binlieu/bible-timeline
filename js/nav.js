@@ -85,8 +85,11 @@
       }
     });
 
+    var closeTimer = null;
+
     group.addEventListener("mouseenter", function () {
       if (desktopQuery.matches) {
+        clearTimeout(closeTimer);
         closeGroups(group);
         setGroupOpen(group, true);
       }
@@ -94,7 +97,11 @@
 
     group.addEventListener("mouseleave", function () {
       if (desktopQuery.matches) {
-        setGroupOpen(group, false);
+        clearTimeout(closeTimer);
+        // Grace period so brief moves across the toggle/menu gap don't close it.
+        closeTimer = setTimeout(function () {
+          setGroupOpen(group, false);
+        }, 240);
       }
     });
 
